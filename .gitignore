@@ -3,6 +3,8 @@ _theme_packages/*
 _trash/*
 _backup/*
 
+*.lock
+
 Thumbs.db
 .DS_Store
 
