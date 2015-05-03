@@ -1,7 +1,12 @@
-_site
-_themes
+_site/*
+_theme_packages/*
+_trash/*
+_backup/*
 
 Thumbs.db
 .DS_Store
-*.lock
-.sass-cache
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc
