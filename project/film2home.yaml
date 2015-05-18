@@ -1,0 +1,23 @@
+Title: Plejmo (former Film2Home)
+Location: Stockholm, Sweden
+StartDate: 2014-11-03
+EndDate:
+Description: >
+ Increased productivity and reduced errors during deployment by implementing automated deployment.
+ Increased code quality by re-working the unit test base and implementing automated acceptance tests and living documentation.
+Roles: Backend, Frontend, Upend, Downend developer. TDD mentor.
+Skills:
+ - C#
+ - Asp.Net MVC 5
+ - TDD 
+ - Continuous Integration
+ - Application Lifecycle Management
+ - NHibernate
+ - CSS
+ - HTML5
+ - JavaScript
+ - jQuery
+ - EPiServer
+ - SQL Server
+ - IIS
+ - Octopus Deploy

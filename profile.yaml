@@ -1,0 +1,66 @@
+Title: Henrik Becker - Software Engineer
+
+ContactInfo:
+ Address:
+  Street: Torsvikssvängen 12
+  City: Lidingö
+  PostalCode: 181 34
+  Country: Sweden
+ Phone: "+46734228343"
+
+Summary: |
+ A system developer dedicated to building robust, maintainable and testable systems.
+ An expert in .Net development using C#.
+ A practitioner of agile processes and Test Driven Development.
+ Self-educated with 14 years of working experience as a consultant.
+ Efficient and a fast learner
+
+Skills:
+ - "C#"
+ - "Test Driven Development"
+ - "Specification by Example"
+ - "Continuous Integration"
+ - "Asp.Net MVC"
+ - "Asp.Net Web Forms"
+ - "WCF"
+ - "JavaScript"
+ - "jQuery"
+ - "HTML"
+ - "CSS"
+ - "VB.Net"
+ - "T-SQL"
+
+Languages:
+ - Code: sv
+   Proficiency: Native
+ - Code: en
+   Proficiency: Fluent
+
+Certifications:
+ - Name: "MSCD: Web Applications"
+   Date: 2014-09-05
+   Expires: 2016-09-05
+ - Name: Certified Scrum Master
+   Date: 2008-08-30
+
+Education:
+ - School: KomVux Lidingö
+   Description: Municipal adult education
+   StartYear: 1995
+   EndYear: 1997
+
+ - School: Kulturama
+   Description: Music
+   StartYear: 1992
+   EndYear: 1993
+
+Interests:
+ - Music
+ - Playing Guitar
+ - Motorcycling
+ - Australia
+ - Sicily
+ - Good food
+ - Reading
+ - Beer
+ - Travelling

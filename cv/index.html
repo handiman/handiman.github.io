@@ -1,0 +1,22 @@
+---
+layout: default
+title: Henrik Becker - CV
+tagline: 
+---
+
+{% for project in site.data.projects %}
+	<section>
+		<h2>{{ project.title }}</h2>
+		<div>{{ project.location }}</div>
+		<div>{{ project.start_date }} {% if project.end_date %} {% if project.end_date != project.start_date %} - {{ project.end_date }} {% endif %} {% endif %}</div>
+		<div>{{ project.description }}</div>
+		{% if project.roles %}
+		<div>Roles: {{ project.roles }}</div>
+		{% endif %}
+		{% if project.skills %}
+		<div>Buzzwords used: {{ project.skills | array_to_sentence_string }}
+		{% endif %}
+	</section>
+{% endfor %}
+
+{% include JB/setup %}

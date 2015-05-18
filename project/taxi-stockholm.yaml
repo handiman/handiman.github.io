@@ -1,0 +1,14 @@
+Title: Taxi Stockholm
+Location: Stockholm, Sweden
+StartDate: 2005-05-01
+EndDate: 2005-07-01
+
+Description: >
+ Migration of Taxi Stockholm's intranet and external web site from Spirello to EpiServer.
+ Integration with the client's Unix based booking system.
+
+Skills:
+ - Asp.Net
+ - C#
+ - EPiServer 4
+ - SQL Server
