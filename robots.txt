@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /assets
-Disallow: /employment
-Disallow: /project
+Disallow: /

@@ -19,14 +19,21 @@ module HB
 	end
 
 	class EmployersGenerator < HB::Generator
-		# Generates the _data/projects.yml file.
+		# Generates the _data/employers.yml file.
 		# I wanted to use Jekyll collections but that seems
 		# to be broken in the Jekyll version GitHub pages use.
 		def generate(site)
-			#file = File.new(site.config['source'] + '/_data/employers.yml', File::CREAT|File::TRUNC|File::RDWR)
-			get_employers(site).each do |p|
-				#print p.path
-				#print "\n"
+			file = File.new(site.config['source'] + '/_data/employers.yml', File::CREAT|File::TRUNC|File::RDWR)
+			get_employers(site).each do |e|
+				file.puts "- title: " + e['Title']
+				file.puts "  organization: " + e["Organization"]["Name"]
+				file.puts "  start_date: " + e['StartDate'].to_s
+				if e['EndDate']
+					file.puts "  end_date: " + e['EndDate'].to_s
+				end 
+				if (e["Description"])
+					file.puts "  description: >\n   " + e["Description"]
+				end
 			end
 		end
 		
@@ -41,15 +48,22 @@ module HB
 	end
 
 	class ProjectsGenerator < HB::Generator
+		#
 		# Generates the _data/projects.yml file.
 		# I wanted to use Jekyll collections but that seems
 		# to be broken in the Jekyll version GitHub pages use.
+		#
+		# Maybe I should create a custom collection that 
+		# inherits from Jekyll::Collection 
+		#
 		def generate(site)
 			file = File.new(site.config['source'] + '/_data/projects.yml', File::CREAT|File::TRUNC|File::RDWR)
 			get_projects(site).each do |project|
 				file.puts "- title: " + project['Title']
 				file.puts "  start_date: " + project['StartDate'].to_s
-				file.puts "  end_date: " + project["EndDate"].to_s
+				if project["EndDate"]
+					file.puts "  end_date: " + project["EndDate"].to_s
+				end
 				file.puts "  location: " + project["Location"]
 				roles = project["Roles"]
 				if roles 
