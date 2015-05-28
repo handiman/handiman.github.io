@@ -1,0 +1,22 @@
+title: Wasa Kredit
+location: Stockholm, Sweden
+start_date: 2012-03-12
+end_date: 2013-11-14
+description: >
+ Employed as Lead Developer.
+ Reduced complexity and system decay through refactoring and the application of well-known design patterns.
+ Steered the development teams towards an iterative approach to software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle.
+ Introduced the idea of living documentation in the form of executable specifications.
+skills:
+ - C#
+ - WinForms
+ - Asp.Net MVC4 
+ - HTML
+ - CSS3
+ - WCF
+ - TDD
+ - BDD
+ - SpecFlow
+ - Continuous Integration
+ - Team Foundation Server- XML
+ - XSLT
