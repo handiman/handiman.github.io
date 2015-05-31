@@ -5,7 +5,8 @@ title: CV Henrik Becker
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE resume PUBLIC "-//Sean Kelly//DTD Resume 1.5.1//EN" "http://xmlresume.sourceforge.net/dtd/resume.dtd">
 <resume>
-	{% for profile in site.data.profile %}<header>
+{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}
+	<header>
 		<name>
 			<firstname>{{ profile.first_name }}</firstname>
 			<surname>{{ profile.last_name }}</surname>
@@ -27,7 +28,7 @@ title: CV Henrik Becker
 		{% for p in site.data.projectorder %}
 		{% assign project = site.data.projects[p.name] %}
 		{% assign employer = site.data.employment[project.employer] %}<job>
-			<jobtitle>{{ project.title }}</jobtitle>
+			<jobtitle>{{ project.title | replace: "&amp;", "&" | replace: "&", "&amp;" }}</jobtitle>
 			<employer>{{ employer.organization.name }}</employer>
 			<period>
 				<from>
@@ -72,7 +73,6 @@ title: CV Henrik Becker
 		{% endfor %}			
 		</skillset>
 	</skillarea>
-	{% endfor %}
 	<copyright>
 		<year>{{ site.time | date: '%Y' }}</year>
 		<legalnotice>
