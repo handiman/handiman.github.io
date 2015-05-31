@@ -1,11 +1,12 @@
 title: Länsförsäkringar
+employer: avega-group-ab
 location: Stockholm, Sweden
 start_date: 2009-09-01
 end_date: 2011-05-01
-description: >
- Worked with the development of a WCF based payment platform adding support for automatic payment services and prompts.
- Was instrumental in the migration of the payment platform's database from Oracle to SQL Server.
- Worked with quality assurance and performance optimization of connecting systems.
+achievements:
+ - Worked with the development of a WCF based payment platform adding support for automatic payment services and prompts.
+ - Was instrumental in the migration of the payment platform's database from Oracle to SQL Server.
+ - Worked with quality assurance and performance optimization of connecting systems.
 skills:
  - VB.Net
  - WCF

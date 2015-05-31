@@ -1,0 +1,82 @@
+---
+layout: null
+title: CV Henrik Becker
+---
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resume PUBLIC "-//Sean Kelly//DTD Resume 1.5.1//EN" "http://xmlresume.sourceforge.net/dtd/resume.dtd">
+<resume>
+	{% for profile in site.data.profile %}<header>
+		<name>
+			<firstname>{{ profile.first_name }}</firstname>
+			<surname>{{ profile.last_name }}</surname>
+		</name>
+		<address>
+			<street>{{ profile.address.street }}</street>
+			<city>{{ profile.address.city }}</city>
+			<postalCode>{{ profile.address.postal_code	 }}</postalCode>
+			<country>{{ profile.address.country }}</country>
+		</address>
+		<contact>
+			<phone>{{ profile.phone }}</phone>
+		</contact>
+	</header>
+	<objective>
+		<para>{{ profile.summary }}</para>
+	</objective>
+	<history>
+		{% for p in site.data.projectorder %}
+		{% assign project = site.data.projects[p.name] %}
+		{% assign employer = site.data.employment[project.employer] %}<job>
+			<jobtitle>{{ project.title }}</jobtitle>
+			<employer>{{ employer.organization.name }}</employer>
+			<period>
+				<from>
+					<date>
+						<month>{{ project.start_date | date: "%B" }}</month>
+						<year>{{ project.start_date | date: "%Y" }}</year>
+					</date>
+				</from>
+				<to>
+					{% if end_date %}<date>
+						<month>{{ project.end_date | date: "%B" }}</month>
+						<year>{{ project.end_date | date: "%Y" }}</year>
+					</date>{% else %}<present />
+					{% endif %}
+				</to>
+			</period>
+			<achievements>
+			{% if project.achievements %}
+				{% for achievement in project.achievements %}<achievement>{{ achievement | strip_newlines }}</achievement>
+				{% endfor %}
+			{% else %}
+				<achievement>{{ project.description | strip_newlines }}</achievement>
+			{% endif %}</achievements>
+		</job>
+	{% endfor %}{% assign project = nil %}
+	</history>
+	<academics>
+		<degrees>
+		{% for education in profile.education %}<degree>
+				<institution>{{ education.school }}</institution>
+				<date>
+					<month>{{ employer.start_date | date: "%B" }}</month>
+					<year>{{ employer.start_date | date: "%Y" }}</year>
+				</date>
+			</degree>{% endfor %}	
+		</degrees>
+	</academics>
+	<skillarea>
+		<title>Skills</title>
+		<skillset>
+		{% for skill in profile.skills %}<skill>{{ skill }}</skill>
+		{% endfor %}			
+		</skillset>
+	</skillarea>
+	{% endfor %}
+	<copyright>
+		<year>{{ site.time | date: '%Y' }}</year>
+		<legalnotice>
+			<para>{{ site.author.name }}</para>
+		</legalnotice>
+	</copyright>
+</resume>

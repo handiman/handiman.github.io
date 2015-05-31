@@ -5,14 +5,6 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
-# page_collections: 
-# - projects:
-#    permalink: pretty
-#    source: _projects
-# - employment:
-#    permalink: pretty
-#    source: _employment	
-
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
