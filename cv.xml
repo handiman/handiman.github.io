@@ -8,17 +8,17 @@ title: CV Henrik Becker
 {% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}
 	<header>
 		<name>
-			<firstname>{{ profile.first_name }}</firstname>
-			<surname>{{ profile.last_name }}</surname>
+			<firstname>{{ profile.contact_info.first_name }}</firstname>
+			<surname>{{ profile.contact_info.last_name }}</surname>
 		</name>
 		<address>
-			<street>{{ profile.address.street }}</street>
-			<city>{{ profile.address.city }}</city>
-			<postalCode>{{ profile.address.postal_code	 }}</postalCode>
-			<country>{{ profile.address.country }}</country>
+			<street>{{ profile.contact_info.address.street }}</street>
+			<city>{{ profile.contact_info.address.city }}</city>
+			<postalCode>{{ profile.contact_info.address.postal_code	 }}</postalCode>
+			<country>{{ profile.contact_info.address.country }}</country>
 		</address>
 		<contact>
-			<phone>{{ profile.phone }}</phone>
+			<phone>{{ profile.contact_info.phone }}</phone>
 		</contact>
 	</header>
 	<objective>
