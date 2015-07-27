@@ -3,8 +3,7 @@ employer: qbranch-stockholm-ab
 location: Stockholm, Sweden
 start_date: 2005-07-01
 end_date: 2005-07-31
-achievement: 
- - Maintenance of the client's system inventory tool.
+description: Maintenance of the client's system inventory tool.
 skills:
  - VBScript
  - VBA

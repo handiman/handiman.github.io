@@ -2,111 +2,124 @@
 <header class="page-header">
 	<h1>Henrik Becker <small>Software Engineer</small></h1>
 </header>
-<main class="row" role="main">
-	<div class="col-xs-12">
-		<section id="summary">
-			<h2>I am</h2>
-			<ul class="list-unstyled">
-				{% for line in profile.summary %}
-				<li>{{ line }}</li>{% endfor %}
-			</ul>
-		</section>
-		<section id="skills">
-			<h2>Skills</h2>
-			<ul class="list-unstyled list-inline">
-				{% for skill in profile.skills %}
-				<li>{{ skill }}</li>{% endfor %}
-			</ul>
-		</section>
-		<section id="assignments">
-			<h2>Assignments</h2>
-			<div>
-				<ul class="list-unstyled">
-					{% for p in site.data.projectorder %}
-					{% assign project = site.data.projects[p.name] %}
-					{% assign start_date = (project.start_date | date: "%b %Y") %}
-					{% assign end_date = (project.end_date | date: "%b %Y") %}
-					<li>
-						<h3>{{ project.title }}</h3>
-						<div>{{ project.location }}</div>
-						<div>{{ start_date }}{% if end_date %}{% if end_date != start_date %} - {{ end_date }}{% endif %}{% endif %}</div>
-						<div>
-							{% if project.achievements %}
-								<ul class="list-unstyled">
-									{% for achievement in project.achievements %}
-									<li>{{ achievement | strip_newlines }}</li>{% endfor %}
-								</ul>
-							{% endif %}
-							{{ project.description }}
-						</div>
-						{% if project.roles %}
-						<div>Roles: {{ project.roles }}</div>
-						{% endif %}
-						{% if project.skills %}
-						<div>Buzzwords used: {{ project.skills | array_to_sentence_string }}</div>
-						{% endif %}
-					</li>
-					{% endfor %}
-				</ul>
-			</div>
-		</section>
-		<section id="certifications">
-			<h2>Certifications</h2>
-			{% for certification in profile.certifications %}
-			<div class="row">
-				<div class="col-xs-2">{{ certification.name }}</div>
-				<div class="col-xs-8">{{ certification.date }}</div>
-			</div>
-			{% endfor %}
-		</section>
-		<section id="languages">
-			<h2>Languages</h2>
-			{% for language in profile.languages %}
-			<div class="row">
-				<div class="col-xs-2">{{ language.name }}</div>
-				<div class="col-xs-8">{{ language.proficiency }}</div>
-			</div>
-			{% endfor %}
-		</section>
-		<section id="education">
-			<h2>Education</h2>
-			{% for education in profile.education %}
-			<div class="row">
-				<div class="col-xs-2">{{ education.start_year }} - {{ education.end_year }}</div>
-				<div class="col-xs-8">{{ education.school }} ({{ education.description }})</div>
-			</div>
-			{% endfor %}
-		</section>
-		<section id="employment">
-			<h2>Employment History</h2>
-			{% for e in site.data.employmentorder %}{% assign employer = site.data.employment[e.name] %}
-			<div class="row">
-				<div class="col-xs-2">
-				{% assign start_date = (employer.start_date | date: "%Y-%m") %}
-				{% assign end_date = (employer.end_date | date: "%Y-%m") %}
-				{% if end_date %}
-					{{ start_date }} {% if end_date != start_date %} - {{ end_date }}{% endif %}
-				{% else %}
-					{{ start_date }} - present
+<div role="main">
+	<section id="summary">
+		<h2>I am</h2>
+		<ul class="list-unstyled">
+			{% for line in profile.summary %}
+			<li>{{ line }}</li>{% endfor %}
+		</ul>
+	</section>
+	
+	<section id="skills">
+		<h2>Technological Summary</h2>
+		<dl>
+			<dt>Languages:</dt>
+			<dd>{{ profile.skills.languages | join: ', '  }}</dd>
+		</dl>
+		<dl>
+			<dt>Frameworks:</dt>
+			<dd>{{ profile.skills.frameworks | join: ', '  }}</dd>
+		</dl>
+		<dl>
+			<dt>Certifications:</dt>
+			<dd>{{ profile.certifications | map: 'to_liquid' | map: 'name' | join: ', '  }}</dd>
+		</dl>		
+		<dl>
+			<dt>Methods:</dt>
+			<dd>{{ profile.skills.methods | join: ', '  }}</dd>
+		</dl>		
+		<dl>
+			<dt>Tools:</dt>
+			<dd>{{ profile.skills.tools | join: ', '  }}</dd>
+		</dl>		
+	</section>
+	
+	<section id="assignments">
+		<h2>Professional Experience</h2>
+		<ul class="list-unstyled">
+			{% for p in site.data.projectorder %}
+			{% assign project = site.data.projects[p.name] %}
+			{% assign start_date = (project.start_date | date: "%b %Y") %}
+			{% assign end_date = (project.end_date | date: "%b %Y") %}
+			<li>
+				<h3>{{ project.title }}</h3>
+				<div>{{ project.location }}</div>
+				<div>{{ start_date }}{% if end_date %}{% if end_date != start_date %} - {{ end_date }}{% endif %}{% endif %}</div>
+				<div>
+					{% if project.description %}
+					<div>{{ project.description }}</div>{% endif %}
+					{% if project.achievements %}
+						<h5>Achievements:</h5>
+						<ul>
+							{% for achievement in project.achievements %}
+							<li>{{ achievement | strip_newlines }}</li>{% endfor %}
+						</ul>
+					{% endif %}
+				</div>
+				{% comment %}{% if project.roles %}
+				<div>
+					<h5>Roles:</h5> 
+					<div>{{ project.roles }}</div>
+				</div>
+				{% endif %}{% endcomment %}
+				{% if project.skills %}
+				<div>
+					<h5>Technologies used:</h5> 
+					<div>{{ project.skills | join: ', ' }}</div>
+				</div>
 				{% endif %}
-				</div>
-				<div class="col-xs-8">
-					{{ employer.title }} at {{ employer.organization.name }}
-				</div>
-			</div>
+			</li>
 			{% endfor %}
-		</section>
-		<section id="interests">
-			<h2>Hobbies &amp; Interests</h2>
-			<div>
-				<ul class="list-unstyled list-inline">
-				{% for interest in profile.interests %}<li>{{ interest }}</li>
-				{% endfor %}
-				</ul>
+		</ul>
+	</section>
+	
+	<section id="languages">
+		<h2>Languages</h2>
+		<div class="row">
+			{% for language in profile.languages %}
+			<div class="col-sm-4">
+				<div class="h3">{{ language.name }}</div>
+				<div>{{ language.proficiency }}</div>
+			</div>{% endfor %}
+		</div>
+	</section>
+	
+	<section id="interests">
+		<h2>Hobbies &amp; Interests</h2>
+		<div>{{ profile.interests | join: ', ' }}</div>
+	</section>
+	
+	<section id="employment">
+		<h2>Employment History</h2>
+		<div class="row">
+		{% for e in site.data.employmentorder %}{% assign employer = site.data.employment[e.name] %}
+			<div class="col-md-2">
+			{% assign start_date = (employer.start_date | date: "%Y-%m") %}
+			{% assign end_date = (employer.end_date | date: "%Y-%m") %}
+			{% if end_date %}
+				{{ start_date }} {% if end_date != start_date %} - {{ end_date }}{% endif %}
+			{% else %}
+				{{ start_date }} - present
+			{% endif %}
 			</div>
-		</section>
-	</div>
-</main>
+			<div class="col-md-10">
+				{{ employer.title }} at {{ employer.organization.name }}
+			</div>
+		{% endfor %}
+		</div>
+	</section>
+	
+	<section id="education">
+		<h2>Education</h2>
+		<div class="row">
+		{% for education in profile.education %}
+			<div class="col-md-2">{{ education.start_year }} - {{ education.end_year }}</div>
+			<div class="col-md-10">{{ education.school }} ({{ education.description }})</div>
+		{% endfor %}
+		</div>
+	</section>
+</div>
 {% assign employer = nil %}
 {% assign project = nil %}
 {% assign profile = nil %}

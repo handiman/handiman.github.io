@@ -3,10 +3,14 @@ employer: film2home
 title: Plejmo (former Film2Home)
 location: Stockholm, Sweden
 start_date: 2014-11-03
-roles: Backend, Frontend, Upend, Downend developer. TDD mentor.
+end_date: Present
+roles: Devops. TDD mentor. Software Engineer.
+description: >
+ Back- and front end development of a Video On Demand (VOD) service based on Asp.Net MVC and EpiServer. DevOps tasks including configuring web sites, configuring automated builds and setting up automated deployment.
 achievements:
- - Increased productivity and reduced errors during deployment by implementing automated deployment.
- - Increased code quality by re-working the unit test base and implementing automated acceptance tests and living documentation.
+ - Increased system performance by refactoring the system to the CQRS pattern with a denormalized, read optimized database for querying.
+ - Reduced errors during deployment by implementing automated deployment.
+ - Increased code quality by introducing automated acceptance tests and living documentation.
 skills:
  - C#
  - Asp.Net MVC 5
@@ -14,7 +18,7 @@ skills:
  - Continuous Integration
  - Application Lifecycle Management
  - NHibernate
- - CSS
+ - CSS3
  - HTML5
  - JavaScript
  - jQuery

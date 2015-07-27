@@ -1,0 +1,21 @@
+---
+layout: page
+title: Pages 
+header: Pages
+#group: navigation
+---
+{% include JB/setup %}
+
+<form id="contact-form">
+	<input type="hidden" id="ip"/>
+	Subject:<br />
+	<input id="subject"/><br/>
+	
+	Message:<br/>
+	<textarea id="message"></textarea>
+	
+	Your e-mail address:<br/>
+	<input id="from"/><br/>
+	<input type="submit" value="Send"/>
+	<div id="status"></div>
+</form>

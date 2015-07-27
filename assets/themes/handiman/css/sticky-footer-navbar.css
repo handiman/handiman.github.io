@@ -14,7 +14,6 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #FFF; 
 }
 
 
@@ -22,15 +21,11 @@ body {
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
-body > .container {
-  padding: 60px 15px 0;
-}
 .container .text-muted {
   margin: 20px 0;
 }
 
 .footer > .container {
-  border-top:1px solid #ddd;
   padding-right: 15px;
   padding-left: 15px;
 }

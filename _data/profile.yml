@@ -5,36 +5,53 @@
    address:
     street: Torsvikssvängen 12
     city: Lidingö
-    postal_code: 181 34
+    postal_code: "18134"
     country: Sweden
    phone: "+46734228343"
+   email: spam@henrikbecker.se
+  objective:
   summary: 
    - A system developer dedicated to building robust, maintainable and testable systems.
    - An expert in .Net development using C#.
-   - A practitioner of agile processes and Test Driven Development.
-   - Self-educated with 14 years of working experience as a consultant.
-   - Efficient and a fast learner
+   - A practitioner of Test Driven Development and agile processes.
+   - Self-educated with 16 years of working experience as a consultant.
+   - Efficient and a fast learner.
   skills:
-   - "C#"
-   - "Test Driven Development"
-   - "Specification by Example"
-   - "Continuous Integration"
-   - "Asp.Net MVC"
-   - "Asp.Net Web Forms"
-   - "WCF"
-   - "JavaScript"
-   - "jQuery"
-   - "HTML"
-   - "CSS"
-   - "VB.Net"
-   - "T-SQL"
+   languages:
+    - C#
+    - JavaScript
+    - HTML
+    - CSS
+    - VB.Net
+    - T-SQL
+    - XML
+    - XSLT
+   frameworks:
+    - Asp.Net MVC
+    - Asp.Net Web Forms
+    - jQuery
+    - WCF
+   methods:	
+    - Test Driven Development
+    - Specification by Example
+    - Continuous Integration
+    - Scrum
+   tools:
+    - Visual Studio
+    - Git
+    - ReSharper
+    - TeamCity
+   databases:
+    - SQL Server
+    - MySql
+    - Oracle
   languages:
    - code: sv
      name: Swedish
      proficiency: Native
    - code: en
      name: English
-     proficiency: Fluent
+     proficiency: Fluent (IELTS overall score 8.5)
   certifications:
    - name: MSCD Web Applications
      date: 2014-09-05

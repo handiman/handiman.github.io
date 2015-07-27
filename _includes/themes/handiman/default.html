@@ -15,10 +15,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Bootstrap styles -->
-		<link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.yeti.css" rel="stylesheet">
+		<link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.sandstone.css" rel="stylesheet">
 		<!-- Optional theme -->
 		<!--<link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">-->
-		<!-- Sticky Footer -->
+		<link href="{{ ASSET_PATH }}/css/starter-template.css" rel="stylesheet">
 		<link href="{{ ASSET_PATH }}/css/sticky-footer-navbar.css" rel="stylesheet">
 		
 		<!-- Custom styles -->
@@ -30,7 +30,7 @@
 		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
-
+		{% comment %}
 		<!-- Fav and touch icons -->
 		<!-- Update these with your own images
 		  <link rel="shortcut icon" href="images/favicon.ico">
@@ -38,11 +38,10 @@
 		  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 		  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 		-->
-
 		<!-- atom & rss feed -->
 		<link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
 		<link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
+		{% endcomment %}
 	</head>
 
 	<body>
@@ -65,13 +64,13 @@
  						{% assign group = 'navigation' %}
 						{% include JB/pages_list %}
 						<li><a href="https://www.linkedin.com/in/prettygoodprogrammer">LinkedIn</a></li>
-					</ul>
+					</ul>{% comment %}
 					<!--<form class="navbar-form navbar-right" role="search">
 							<div class="form-group">
 								<input type="text" class="form-control" placeholder="Search">
 							</div>
 							<button type="submit" class="btn btn-default">Submit</button>
-					</form>-->
+					</form>-->{% endcomment %}
 				</div><!--/.nav-collapse -->
 			</div>
 		</nav>
@@ -82,9 +81,7 @@
 
 		<footer class="footer" role="contentinfo">
 			<div class="container">
-				<p class="text-muted">Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-				with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-				and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></p>
+				<p class="text-muted">Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
 			</div>
 		</footer>
 
@@ -95,7 +92,27 @@
 		<script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="{{ ASSET_PATH }}/js/ie10-viewport-bug-workaround.js"></script>
-
+		<script>
+			$(function() {
+				if ($('#contact-form').length) {
+					$.get('http://www.henrikbecker.se/api/ip')
+					 .done(function(ip){ 
+						console.log(ip);
+						$('#contact-form #ip').val(ip); 
+					});
+					$('#contact-form').submit(function(e) {
+						e.preventDefault();
+						$.post('http://localhost:58110/command', {
+							subject: 'Contact Form',
+							from: $('#contact-form #from').val(),
+							ipAddress: $('#contact-form #ip').val(),
+							message: $('#contact-form #message').val()
+						}).fail(function (a, b, c) { $('#contact-form #status').html(c); });
+						return false;
+					});
+				}
+			});
+		</script>
 		{% include JB/analytics %}
 	</body>
 </html>
