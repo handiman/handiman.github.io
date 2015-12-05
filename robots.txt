@@ -1,2 +1,7 @@
 User-agent: *
-Disallow: /
+Disallow: /_data/
+Disallow: /_includes/
+Disallow: /_layouts/
+Disallow: /_plugins/
+Disallow: /_posts/
+Disallow: /assets/
