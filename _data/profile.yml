@@ -41,6 +41,7 @@
     - Git
     - ReSharper
     - TeamCity
+    - Octopus Deploy
    databases:
     - SQL Server
     - MySql
