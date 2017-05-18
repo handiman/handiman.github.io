@@ -12,17 +12,20 @@ achievements:
  - Reduced errors during deployment by implementing automated deployment.
  - Increased code quality by introducing automated acceptance tests and living documentation.
 skills:
- - C#
  - Asp.Net MVC 5
+ - Asp.Net Web Api
+ - C#
  - TDD 
  - Continuous Integration
  - Application Lifecycle Management
- - NHibernate
- - CSS3
- - HTML5
+ - Octopus Deploy
  - JavaScript
  - jQuery
+ - Knockout JS
+ - CSS3
+ - HTML5
  - EPiServer
+ - NHibernate
  - SQL Server
  - IIS
- - Octopus Deploy
+ 
