@@ -35,19 +35,13 @@
 		<!-- Bootstrap styles -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<!-- Optional theme -->
+		{% comment %}
 		<!--<link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">-->
 		<!--<link href="{{ ASSET_PATH }}/css/starter-template.css" rel="stylesheet">-->
-		<!--<link href="{{ ASSET_PATH }}/css/sticky-footer-navbar.css" rel="stylesheet">-->
-		
+		{% endcomment %}
+		<link href="{{ ASSET_PATH }}/css/sticky-footer-navbar.css" rel="stylesheet">
 		<!-- Custom styles -->
 		<link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-		<style>
-		.affix {
-    top: 0;
-    width: 100%;
-  }
-
-		</style>
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -104,12 +98,11 @@
 			{{ content }}
 		</div>
 
-	<!--	<footer class="footer" role="contentinfo">
+		<footer class="footer" role="contentinfo">
 			<div class="container">
 				<p class="text-muted">Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
 			</div>
 		</footer>
--->
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
