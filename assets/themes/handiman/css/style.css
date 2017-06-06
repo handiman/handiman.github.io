@@ -2,9 +2,6 @@
     top: 0;
     width: 100%;
   }
-.affix, .affix-top {
-	border-radius:0;
-}
 section {
 	border-bottom: 1px solid #ddd;
 	padding-bottom: 20px;
