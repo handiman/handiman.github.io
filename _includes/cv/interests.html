@@ -1,0 +1,18 @@
+<section id="interests" class="content-section">
+    <div class="container">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2><span class="no-print">I enjoy</span><span class="print">Hobbies &amp; Interests</span></h2>
+            <ul class="no-print list-unstyled">
+                {% for p in profile.interests %}<li>{{ p }}</li>{% endfor %}
+            </ul>
+            <div class="print">{{ profile.interests | join: ', ' }}</div>
+        </div>
+    </div>
+</section>
+<div id="scroll-to-employment">
+    <div class="container section-scroll">
+        <div class="col-lg-8 col-lg-offset-2">
+            <a href="#employment" class="btn page-scroll"><i class="fa fa-angle-down animated"></i></a>
+        </div>
+    </div>
+</div>

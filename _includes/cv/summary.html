@@ -1,0 +1,18 @@
+<section id="summary" class="content-section">
+    <div class="container">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>I am</h2>
+            <ul class="list-unstyled">
+                {% for line in profile.summary %}
+                <li>{{ line }}</li>{% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+<div id="scroll-to-skills">
+    <div class="container section-scroll">
+        <div class="col-lg-8 col-lg-offset-2">
+            <a href="#skills" class="btn page-scroll"><i class="fa fa-angle-down animated"></i></a>
+        </div>
+    </div>
+</div>

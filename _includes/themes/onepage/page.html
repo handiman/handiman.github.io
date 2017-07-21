@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body class="page">
+    {% include navigation.html %}
+    <div class="container" role="main">
+        <h1 class="page-header">{{ page.title }} {% if page.tagline %} - {{ page.tagline }}{% endif %}</h1>
+        {{ content }}
+    </div>
+    {% include footer.html %}
+    {% include global-scripts.html %}
+    {% include JB/analytics %}
+</body>
+</html>
