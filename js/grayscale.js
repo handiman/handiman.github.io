@@ -15,6 +15,9 @@ function collapseNavbar() {
 
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
+$("#interests div div").click(function() {
+    document.location = "http://www.henrikbecker.se/music/";
+});
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
