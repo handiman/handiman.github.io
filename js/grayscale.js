@@ -5,6 +5,27 @@
  */
 (function($) {
     "use strict";
+
+    function setupContactForm() {
+        if ($("#contact-form").length) {
+            $.get('http://www.henrikbecker.se/api/ip')
+                .done(function (ip) {
+                    console.log(ip);
+                    $("#contact-form #ip").val(ip);
+                });
+            $("#contact-form").submit(function (e) {
+                e.preventDefault();
+                $.post('http://www.henrikbecker.se/api/command', {
+                    subject: "Contact Form",
+                    from: $("#contact-form #from").val(),
+                    ipAddress: $("#contact-form #ip").val(),
+                    message: $("#contact-form #message").val()
+                }).fail(function (a, b, c) { $("#contact-form #status").html(c); });
+                return false;
+            });
+        }
+    }
+
     // jQuery to collapse the navbar on scroll
     function collapseNavbar() {
         if ($(".navbar").offset().top > 50) {
@@ -21,7 +42,8 @@
     }
 
     $(window).scroll(collapseNavbar);
-    $(document).ready(collapseNavbar);
+    $(collapseNavbar);
+    $(setupContactForm);
     $("li.project").click(function (event) {
         event.preventDefault();
         pageScroll($(this).data("next"));
