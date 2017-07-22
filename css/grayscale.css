@@ -38,17 +38,27 @@
   .print {
     display: none;
   }
+  #projects div div h2 {
+    margin-bottom: 0;
+  }
   #interests div div {
     background: url(../img/interests.png) no-repeat bottom right scroll;
+  }
+  li.project {
+    padding-top: 55px;
+  }
+  li.project div.row {
+    background-color: #3D3D3D;
+    padding: 15px 20px;
+    margin: 0 0 0 0;
+    border-radius: 15px !important;
   }
   li.project div.project {
     padding: 15px 35px;
   }
   li.project h3 {
-    background-color: #3D3D3D;
-    padding: 15px 35px;
-    margin: 35px 0 10px 0;
-    border-radius: 15px !important;
+    margin: 0;
+    padding: 0;
   }
   li.project h4,
   li.project h5,
@@ -303,7 +313,13 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(../img/feet.jpg) no-repeat bottom center scroll;
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+  /* Microsoft Edge and Firefox 35+ */
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -397,7 +413,7 @@ a:focus {
   }
 }
 .content-section {
-  padding-top: 25px;
+  padding-top: 75px;
   padding-bottom: 25px;
 }
 /*.download-section {
@@ -419,7 +435,7 @@ a:focus {
 @media (min-width: 767px) {
   .content-section {
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 75px;
   }
   /*.download-section {
         padding: 100px 0;

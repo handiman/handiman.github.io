@@ -143,7 +143,10 @@ a {
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/feet.jpg) no-repeat bottom center scroll;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -256,8 +259,7 @@ a {
 }
 
 .content-section {
-    //padding-top: 100px;
-    padding-top: 25px;
+    padding-top: 75px;
     padding-bottom: 25px;
 }
 
@@ -283,7 +285,7 @@ a {
     .content-section {
         //padding-top: 250px;
         padding-bottom: 50px;
-        padding-top: 50px;
+        padding-top: 75px;
     }
 
     /*.download-section {

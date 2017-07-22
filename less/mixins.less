@@ -23,23 +23,32 @@
     .print {
         display: none;
     }
+    #projects div div h2 {
+        margin-bottom: 0;
+    }
 
     #interests div div {
         background: url(../img/interests.png) no-repeat bottom right scroll;
     }
 
     li.project {
+        padding-top: 55px;
+
+        div.row {
+            background-color: @color-primary-3;
+            padding: 15px 20px;
+            margin: 0 0 0 0;
+            border-radius: 15px !important;
+        }
+
         div.project {
             padding: 15px 35px;
         }
 
         h3 {
-            background-color: @color-primary-3;
-            padding: 15px 35px;
-            margin: 35px 0 10px 0;
-            border-radius: 15px !important;
+            margin:0;
+            padding:0;
         }
-
         h4, h5, h6 {
             margin: 20px 0;
         }

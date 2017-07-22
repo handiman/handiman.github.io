@@ -4,41 +4,53 @@
             <h2><span class="no-print">I am experienced</span><span class="print">Project History</span></h2>
             <ul class="list-unstyled">
                 {% for p in site.data.projectorder %}
-                {% assign project = site.data.projects[p.name] %}
-                {% assign start_date = (project.start_date | date: "%b %Y") %}
-                {% assign end_date = (project.end_date | date: "%b %Y") %}
-                <li class="project">
-                    <h3>{{ project.title }}</h3>
-                    <div class="project">
-                        <ul class="list-inline">
-                            <li>{{ project.location }}</li>
-                            <li>{{ start_date }}{% if end_date %}{% if end_date != start_date %} - {{ end_date }}{% endif %}{% endif %}</li>
-                        </ul>
-                        <div>
-                            {% if project.description %}
-                            <div>{{ project.description }}</div>{% endif %}
-                            {% if project.achievements %}
-                            <h5>Achievements:</h5>
-                            <ul>
-                                {% for achievement in project.achievements %}
-                                <li>{{ achievement | strip_newlines }}</li>{% endfor %}
+                    {% assign project = site.data.projects[p.name] %}
+                    {% assign next = 'languages' %}
+                    {% unless forloop.last %}
+                        {% assign next = site.data.projectorder[forloop.index].name %}
+                    {% endunless %}
+                    {% assign start_date = (project.start_date | date: "%b %Y") %}
+                    {% assign end_date = (project.end_date | date: "%b %Y") %}
+                    <li class="project" id="{{p.name}}" data-next="#{{next}}">
+                        <div class="row">
+                            <div class="col-md-11">
+                                <h3>{{ project.title }}</h3>
+                            </div>                        
+                            <div class="col-md-1">
+                                <a href="#{{next}}" class="btn page-scroll"><i class="fa fa-angle-down"></i></a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <ul class="list-inline">
+                                <li>{{ project.location }}</li>
+                                <li>{{ start_date }}{% if end_date %}{% if end_date != start_date %} - {{ end_date }}{% endif %}{% endif %}</li>
                             </ul>
+                            <div>
+                                {% if project.description %}
+                                <div>{{ project.description }}</div>{% endif %}
+                                {% if project.achievements %}
+                                <h5>Achievements:</h5>
+                                <ul>
+                                    {% for achievement in project.achievements %}
+                                    <li>{{ achievement | strip_newlines }}</li>{% endfor %}
+                                </ul>
+                                {% endif %}
+                            </div>
+                            {% comment %}{% if project.roles %}
+                            <div>
+                                <h5>Roles:</h5>
+                                <div>{{ project.roles }}</div>
+                            </div>
+                            {% endif %}{% endcomment %}
+                            {% if project.skills %}
+                            <div>
+                                <h5>Technologies used:</h5>
+                                <div>{{ project.skills | join: ', ' }}</div>
+                            </div>
                             {% endif %}
                         </div>
-                        {% comment %}{% if project.roles %}
-                        <div>
-                            <h5>Roles:</h5>
-                            <div>{{ project.roles }}</div>
-                        </div>
-                        {% endif %}{% endcomment %}
-                        {% if project.skills %}
-                        <div>
-                            <h5>Technologies used:</h5>
-                            <div>{{ project.skills | join: ', ' }}</div>
-                        </div>
-                        {% endif %}
-                    </div>
-                </li>
+                    </li>
+                    {% assign prev = p %}
                 {% endfor %}
             </ul>
         </div>
