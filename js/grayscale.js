@@ -10,7 +10,6 @@
         if ($("#contact-form").length) {
             $.get('http://www.henrikbecker.se/api/ip')
                 .done(function (ip) {
-                    console.log(ip);
                     $("#contact-form #ip").val(ip);
                 });
             $("#contact-form").submit(function (e) {
