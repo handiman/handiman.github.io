@@ -4,17 +4,16 @@
             <h2>Would you like to get in touch?</h2>
             <input type="hidden" id="ip" />
             <input type="hidden" id="subject" value="Contact Form" />
-
             <div class="form-group">
                 <input class="form-control" id="from" placeholder="Your e-mail address" />
             </div>
-
             <div class="form-group">
                 <textarea class="form-control" id="message" style="height: 200px;" placeholder="Message"></textarea>
             </div>
-
-            <button class="btn btn-default btn-lg" type="submit">Send</button>
-            <div id="status"></div>
+            <div class="row">
+                <div class="col-md-4"><button class="btn btn-default btn-lg" type="submit">Send</button></div>
+                <div id="status" class="col-md-8 text-right"></div>
+            </div>
         </form>
     </div>
 </section>

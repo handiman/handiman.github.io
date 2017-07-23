@@ -24,6 +24,7 @@
                 }).done(function() {
                     $("#contact-form #from, #contact-form #message").val("");
                     $("#contact-form #status").html("Message sent!").show();
+                    window.setTimeout(function () { $("#contact-form #status").fadeOut(); }, 3000);
                 });
                 return false;
             });
