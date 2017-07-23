@@ -19,7 +19,11 @@
                     from: $("#contact-form #from").val(),
                     ipAddress: $("#contact-form #ip").val(),
                     message: $("#contact-form #message").val()
-                }).fail(function (a, b, c) { $("#contact-form #status").html(c); });
+                }).fail(function (a, b, c) { $("#contact-form #status").html(c); })
+                    .done(function() {
+                        $("#contact-form #from, #contact-form #message").val("");
+                        $("#contact-form #status").html("Message sent!");
+                    });
                 return false;
             });
         }
