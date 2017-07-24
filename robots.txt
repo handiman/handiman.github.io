@@ -5,3 +5,4 @@ Disallow: /_layouts/
 Disallow: /_plugins/
 Disallow: /_posts/
 Disallow: /assets/
+Disallow: /less/
