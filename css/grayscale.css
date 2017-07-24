@@ -386,7 +386,7 @@ body {
   li.project h4,
   li.project h5,
   li.project h6 {
-    margin: 0;
+    margin: 20px 0;
   }
 }
 @media (min-width: 767px) {
