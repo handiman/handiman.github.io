@@ -314,12 +314,6 @@ a:focus {
   text-align: center;
   color: white;
   background: url(../img/feet.jpg) no-repeat bottom center scroll;
-  filter: gray;
-  /* IE6-9 */
-  -webkit-filter: grayscale(1);
-  /* Google Chrome, Safari 6+ & Opera 15+ */
-  filter: grayscale(1);
-  /* Microsoft Edge and Firefox 35+ */
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
