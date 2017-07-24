@@ -313,7 +313,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/feet.jpg) no-repeat bottom center;
+  background: url(../img/feet.jpg) no-repeat bottom center scroll;
   filter: gray;
   /* IE6-9 */
   -webkit-filter: grayscale(1);
