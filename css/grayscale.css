@@ -321,10 +321,10 @@ a:focus {
   filter: grayscale(1);
   /* Microsoft Edge and Firefox 35+ */
   background-color: black;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  background-size: 100% 100%;
-  -o-background-size: 100% 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 .intro .intro-body {
   display: table-cell;
