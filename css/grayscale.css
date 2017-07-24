@@ -314,6 +314,7 @@ a:focus {
   text-align: center;
   color: white;
   background: url(../img/feet.jpg) no-repeat bottom center scroll;
+  background-size: contain;
   filter: gray;
   /* IE6-9 */
   -webkit-filter: grayscale(1);
