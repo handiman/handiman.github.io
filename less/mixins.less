@@ -3,9 +3,11 @@
     .section-scroll, .btn-page-scroll, .page-scroll, .no-print {
         display: none;
     }
+
     .content-section {
         padding: 0 0 35px 0;
     }
+
     li.project {
         div.project {
             padding: 15px;
@@ -25,6 +27,7 @@
     .print {
         display: none;
     }
+
     #projects div div h2 {
         margin-bottom: 0;
     }
@@ -37,10 +40,10 @@
         padding-top: 55px;
 
         div.row {
-            background-color: @color-primary-3;
-            padding: 15px 20px;
+            //background-color: @color-primary-2;
+            padding: 0; //15px 20px;
             margin: 0 0 0 0;
-            border-radius: 15px !important;
+            //border-radius: 15px !important;
         }
 
         div.project {
@@ -48,11 +51,17 @@
         }
 
         h3 {
-            margin:0;
-            padding:0;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+
+            a {
+                padding: 0 15px 0 0;
+            }
         }
+
         h4, h5, h6 {
-            margin: 20px 0;
+            margin: 0; //20px 0;
         }
     }
 }

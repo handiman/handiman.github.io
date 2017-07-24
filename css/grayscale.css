@@ -369,10 +369,8 @@ body {
     padding-top: 55px;
   }
   li.project div.row {
-    background-color: #3D3D3D;
-    padding: 15px 20px;
+    padding: 0;
     margin: 0 0 0 0;
-    border-radius: 15px !important;
   }
   li.project div.project {
     padding: 15px 35px;
@@ -380,11 +378,15 @@ body {
   li.project h3 {
     margin: 0;
     padding: 0;
+    cursor: pointer;
+  }
+  li.project h3 a {
+    padding: 0 15px 0 0;
   }
   li.project h4,
   li.project h5,
   li.project h6 {
-    margin: 20px 0;
+    margin: 0;
   }
 }
 @media (min-width: 767px) {
@@ -470,22 +472,22 @@ body {
 }
 #summary,
 #scroll-to-skills a.btn {
-  background-color: #191A1A;
+  background-color: #030303;
 }
 #skills,
 #scroll-to-skills,
 #scroll-to-projects a.btn {
-  background-color: #3D3D3D;
+  background-color: #191A1A;
 }
 #projects,
 #scroll-to-projects,
 #scroll-to-languages a.btn {
-  background-color: #737373;
+  background-color: #3D3D3D;
 }
 #languages,
 #scroll-to-languages,
 #scroll-to-interests a.btn {
-  background-color: #929292;
+  background-color: #737373;
 }
 #interests,
 #scroll-to-interests,

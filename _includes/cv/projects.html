@@ -12,14 +12,7 @@
                     {% assign start_date = (project.start_date | date: "%b %Y") %}
                     {% assign end_date = (project.end_date | date: "%b %Y") %}
                     <li class="project" id="{{p.name}}" data-next="#{{next}}">
-                        <div class="row">
-                            <div class="col-md-11">
-                                <h3>{{ project.title }}</h3>
-                            </div>                        
-                            <div class="col-md-1">
-                                <a href="#{{next}}" class="btn page-scroll"><i class="fa fa-angle-down"></i></a>
-                            </div>
-                        </div>
+                        <h3><a href="#{{next}}" class="page-scroll"><i class="fa fa-angle-down"></i></a>{{ project.title }}</h3>
                         <div class="project">
                             <ul class="list-inline">
                                 <li>{{ project.location }}</li>
