@@ -8,4 +8,3 @@ Disallow: /assets/
 Disallow: /js/
 Disallow: /css/
 Disallow: /img/
-Disallow: /vendor/
