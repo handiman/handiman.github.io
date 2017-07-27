@@ -29,8 +29,10 @@
     - XSLT
    frameworks:
     - Asp.Net MVC
+    - Asp.Net Web Api
     - Asp.Net Web Forms
     - jQuery
+    - KnockoutJS
     - WCF
    methods:	
     - Test Driven Development
