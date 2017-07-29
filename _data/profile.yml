@@ -1,4 +1,14 @@
-- title: Henrik Becker - Software Engineer
+- name: Henrik Becker
+  title: Software Engineer
+  birth_date: 1969-06-23
+  nationality: Swedish
+  url: http://www.henrikbecker.net
+  same_as:
+   - https://www.linkedin.com/in/prettygoodprogrammer
+  work_location: Stockholm
+  works_for: 
+    name: Self Employed
+    url: http://www.henrikbecker.net
   contact_info:
    first_name: Henrik
    last_name: Becker 

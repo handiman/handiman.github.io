@@ -2,7 +2,22 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "less", "sass", "node_modules", "*.sln" ]
+exclude: [ 
+    "sitemap.txt", 
+    "package.json", 
+    "gulpfile.js", 
+    "Gemfile", 
+    "Gemfile.lock", 
+    ".rvmrc", 
+    ".rbenv-version", 
+    "README.md", 
+    "Rakefile", 
+    "changelog.md", 
+    "less", 
+    "sass", 
+    "node_modules", 
+    "*.sln",
+    "*.suo"]
 highlighter: rouge
 
 # Themes are encouraged to use these universal variables 

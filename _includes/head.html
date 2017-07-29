@@ -2,19 +2,16 @@
 {
 	"@context": "http://schema.org",
 	"@type": "Person",
-	"name": "Henrik Becker",
-	"birthDate": "1969-06-23",
-	"jobTitle": "Software Engineer",
-	"url": "http://www.henrikbecker.net",
-	"sameAs": [ "https://www.linkedin.com/in/prettygoodprogrammer" ],
-	"worksFor": {
-		"name": "Plejmo",
-		"url": "https://www.plejmo.com/",
-		"image": "https://d1jo0zet24jmxt.cloudfront.net/content/plejmo/plejmo-32x32.png",
-		"parentOrganization": {
-			"name": "Magine TV",
-			"url": "https://magine.com/"
-		}
+	"name": "{{ profile.name }}",
+    "nationality": "{{ profile.nationality }}",
+    "jobTitle": "{{ profile.title }}",
+	"birthDate": "{{ profile.birth_date }}",
+	"url": "{{ profile.url }}",
+	"sameAs": [ {% for url in profile.same_as %}"{{ url }}"{% endfor %} ],
+	"workLocation": "{{ profile.work_location }}",
+    "worksFor": {
+		"name": "{{ profile.works_for.name }}",
+		"url": "{{ profile.works_for.url }}"
 	}
 }
 </script>
