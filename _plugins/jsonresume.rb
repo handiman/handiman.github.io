@@ -4,8 +4,6 @@ module Jekyll
 	class JSONResumeGenerator < Generator
 		def generate(site)
 			projects = []
-			skills = []
-			languages = []
 			for projectorder in site.data["projectorder"]
 				project = site.data["projects"][projectorder["name"]]
 				projects << { 
@@ -20,6 +18,16 @@ module Jekyll
 			end
 
 			for profile in site.data["profile"]
+				skills = []
+				profile["skills"].each do |key, values|
+				  skills << { 
+						"name" => key.to_s.capitalize ,
+						"keywords" => values
+					}
+				end
+				languages = []
+				interests = []
+
 				json = JSON.generate({
 					"basics" => {
 						"name" => profile["name"],
@@ -29,13 +37,15 @@ module Jekyll
 							"region" => profile["work_location"]
 						}
 					},
+					"skills" => skills,
 					"work" => projects
 				})
 
 				#p profile
 				#p json
 
-				File.write("resume.json", json)
+				path = File.join(site.source, "resume.json")
+				File.write(path, json)
 				site.static_files << Jekyll::StaticFile.new(site, site.source, nil, "resume.json")
 			end
 		end
