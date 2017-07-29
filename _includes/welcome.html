@@ -1,3 +1,4 @@
+{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}
 {% include navigation.html %}
 {% include intro.html %}
 {% include cv/summary.html %}
@@ -10,3 +11,4 @@
 {% include contact.html %}
 {% assign employer = nil %}
 {% assign project = nil %}
+{% assign profile = nil %}

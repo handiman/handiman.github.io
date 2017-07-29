@@ -2,7 +2,5 @@
 theme :
   name : onepage
 ---
-{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}
 {% include JB/setup %}
 {% include themes/onepage/default.html %}
-{% assign profile = nil %}
