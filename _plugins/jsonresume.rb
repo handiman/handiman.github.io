@@ -44,9 +44,8 @@ module Jekyll
 				#p profile
 				#p json
 
-				path = File.join(site.source, "resume.json")
-				File.write(path, json)
-				site.static_files << Jekyll::StaticFile.new(site, site.source, nil, "resume.json")
+				File.write(File.join(site.source, "resume.json"), json)
+				site.static_files << Jekyll::StaticFile.new(site, site.source, '/', "resume.json")
 			end
 		end
 	end # JSONResumeGenerator
