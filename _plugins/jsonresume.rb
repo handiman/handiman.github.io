@@ -4,6 +4,8 @@ module Jekyll
 	class JSONResumeGenerator < Generator
 		def generate(site)
 			projects = []
+			skills = []
+			languages = []
 			for projectorder in site.data["projectorder"]
 				project = site.data["projects"][projectorder["name"]]
 				projects << { 
