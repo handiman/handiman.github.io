@@ -5,10 +5,8 @@
             <h2><span class="no-print">I enjoy</span><span class="print">Hobbies &amp; Interests</span></h2>
             <ul class="no-print list-unstyled">
                 {% for hobby in profile.interests %}
-                    {% if hobby.url %}
-                        <li><a href="{{ hobby.url }}">{{ hobby.name }}</a></li>
-                    {% else %}
-                        <li>{{ hobby.name }}</li>
+                    {% if hobby.url %}<li><a href="{{ hobby.url }}">{{ hobby.name }}</a></li>
+                    {% else %}<li>{{ hobby.name }}</li>
                     {% endif %}
                 {% endfor %}
             </ul>
