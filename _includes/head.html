@@ -1,4 +1,5 @@
-﻿<script type="application/ld+json">
+﻿{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}
+<script type="application/ld+json">
 {
 	"@context": "http://schema.org",
 	"@type": "Person",
