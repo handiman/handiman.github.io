@@ -7,7 +7,7 @@
     "jobTitle": "{{ profile.title }}",
 	"birthDate": "{{ profile.birth_date }}",
 	"url": "{{ profile.url }}",
-	"sameAs": [ {% for url in profile.same_as %}"{{ url }}"{% endfor %} ],
+	"sameAs": [ {% for network in profile.same_as %}"{{ network.url }}"{% endfor %} ],
 	"workLocation": "{{ profile.work_location }}",
     "worksFor": {
 		"name": "{{ profile.works_for.name }}",
@@ -36,3 +36,4 @@
 <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
 <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 {% endcomment %}
+<link href="{{ BASE_PATH}}resume.json" type="application/json" rel="alternate" title="JSON Resume">

@@ -2,6 +2,17 @@ module Jekyll
 	require 'json'
 	
 	class JSONResumeGenerator < Generator
+		def getnetworks(profile)
+			networks = []
+			profile["same_as"].each do |network|
+				networks << { 
+					"network" => network["network"],
+					"url" => network["url"]
+				}
+			end
+			return networks
+		end
+
 		def geteducation(profile)
 			education = []
 			profile["education"].each do |key|
@@ -28,10 +39,10 @@ module Jekyll
 
 		def getlanguages(profile)
 			languages = []
-			profile["languages"].each do |key|
+			profile["languages"].each do |language|
 				languages << { 
-					"name" => key["name"],
-					"keywords" => key["proficiency"]
+					"name" => language["name"],
+					"keywords" => language["proficiency"]
 				}
 			end
 			return languages
@@ -39,9 +50,9 @@ module Jekyll
 
 		def getinterests(profile)
 			interests = []
-			profile["interests"].each do |key|
+			profile["interests"].each do |interest|
 				interests << { 
-					"name" => key
+					"name" => interest
 				}
 			end
 			return interests
@@ -73,8 +84,10 @@ module Jekyll
 						"website" => profile["url"],
 						"summary" =>  profile["summary"].join("\n"),
 						"location" => {
-							"region" => profile["work_location"]
-						}
+							"region" => profile["work_location"],
+							"countryCode" => profile["country_code"]
+						},
+						"profiles" => getnetworks(profile)
 					},
 					"skills" => getskills(profile),
 					"languages" => getlanguages(profile),
