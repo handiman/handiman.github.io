@@ -12,7 +12,8 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <div class="print">{{ profile.interests | join: ', ' }}</div>
+            <div class="print">{% for hobby in profile.interests %}{{ hobby.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+            </div>
         </div>  
     </div>
 </section>
