@@ -8,7 +8,7 @@
     "jobTitle": "{{ profile.title }}",
 	"birthDate": "{{ profile.birth_date }}",
 	"url": "{{ profile.url }}",
-	"sameAs": [ {% for network in profile.same_as %}"{{ network.url }}"{% endfor %} ],
+	"sameAs": [ {% for network in profile.same_as %}"{{ network.url }}",{% endfor %} ],
 	"workLocation": "{{ profile.work_location }}",
     "worksFor": {
 		"name": "{{ profile.works_for.name }}",
