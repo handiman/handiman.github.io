@@ -5,8 +5,8 @@ body {
     height: 100%;
     /*font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: white;
-    background-color: black;
+    color: @primary;
+    background-color: @background-color;
 }
 
 html {
@@ -59,11 +59,11 @@ a {
     border-bottom: 1px solid fade(white, 30%);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: black;
+    background-color: @background-color;
 
     .navbar-toggle {
         color: white;
-        background-color: fade(white, 20%);
+        background-color: fade(@primary, 20%);
         font-size: 12px;
 
         &:focus,
@@ -92,7 +92,7 @@ a {
                 transition: background .3s ease-in-out;
 
                 &:hover {
-                    color: fade(white, 80%);
+                    color: fade(@primary, 80%);
                     outline: none;
                     background-color: transparent;
                 }
@@ -108,7 +108,7 @@ a {
                 outline: none;
 
                 a {
-                    background-color: fade(white, 30%);
+                    background-color: fade(@primary, 30%);
 
                     &:hover {
                         color: white;
@@ -130,7 +130,7 @@ a {
         &.top-nav-collapse {
             padding: 0;
             background: black;
-            border-bottom: 1px solid fade(white, 30%);
+            border-bottom: 1px solid fade(@primary, 30%);
         }
     }
 }
@@ -141,12 +141,12 @@ a {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: white;
-    background: url(../img/feet.jpg) no-repeat bottom center scroll;
-    // filter: gray; /* IE6-9 */
-    // -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-    // filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-    background-color: black;
+    color: @primary;
+    background: url(@intro-background-image) no-repeat bottom center scroll;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+    background-color: @background-color;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -186,10 +186,10 @@ a {
     height: 70px;*/
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid white;
+    border: 2px solid @primary;
     border-radius: 100% !important;
     font-size: 40px;
-    color: white;
+    color: @primary;
     background: transparent;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -198,8 +198,8 @@ a {
     &:hover,
     &:focus {
         outline: none;
-        color: white;
-        background: fade(white, 10%);
+        color: @primary;
+        background: fade(@primary, 10%);
     }
 
     i.animated {
@@ -315,7 +315,7 @@ a {
     &:focus {
         border: 1px solid @primary;
         outline: none;
-        color: black;
+        color: @background-color;
         background-color: @primary;
     }
 }
@@ -347,13 +347,13 @@ footer {
 ::-moz-selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: fade(white, 20%);
+    background: fade(@primary, 20%);
 }
 
 ::selection {
     text-shadow: none;
     background: #fcfcfc;
-    background: fade(white, 20%);
+    background: fade(@primary, 20%);
 }
 
 img::selection {
@@ -365,7 +365,7 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: fade(white, 20%);
+    webkit-tap-highlight-color: fade(@primary, 20%);
 }
 
 @import "mixins.less";
