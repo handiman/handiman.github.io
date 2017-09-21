@@ -1,6 +1,13 @@
----
-theme :
-  name : onepage
----
-{% include JB/setup %}
-{% include themes/onepage/default.html %}
+{% include JB/setup %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body id="page-top">
+{{ content }}
+{% include footer.html %}
+{% include scripts.html %}
+<script src="/js/grayscale.min.js"></script>
+{% include JB/analytics %}
+</body>
+</html>
