@@ -499,7 +499,7 @@ body {
 #languages,
 #scroll-to-languages,
 #scroll-to-interests a.btn {
-  background-color: #737373;
+  background-color: #929292;
 }
 #interests,
 #scroll-to-interests,
@@ -513,8 +513,13 @@ body {
 }
 #education,
 #scroll-to-education,
-#scroll-to-contact a.btn {
+#scroll-to-recommendations a.btn {
   background-color: #3D3D3D;
+}
+#recommendations,
+#scroll-to-recommendations,
+#scroll-to-contact a.btn {
+  background-color: #737373;
 }
 #contact,
 #scroll-to-contact {

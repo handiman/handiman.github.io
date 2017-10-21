@@ -12,6 +12,7 @@ description: Henrik Becker is a senior full stack developer based in Stockholm, 
 {% include cv/interests.html %}
 {% include cv/employment.html %}
 {% include cv/education.html %}
+{% include cv/recommendations.html %}
 {% include contact.html %}
 {% assign employer = nil %}
 {% assign project = nil %}
