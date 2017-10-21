@@ -33,7 +33,7 @@
     }
 
     #interests div div {
-        background: url(../img/interests.png) no-repeat bottom right scroll;
+        background: url(@interests-background-image) no-repeat bottom right scroll;
     }
 
     li.project {
@@ -86,14 +86,12 @@
     /*-webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;*/
-
     &:hover,
     &:focus {
         outline: none;
         color: white;
-        /*background: fade(white, 10%);*/
+        /*background: fade(@primary, 10%);*/
     }
-
     /*i.animated {
         -webkit-transition-property: -webkit-transform;
         -webkit-transition-duration: 1s;
@@ -125,19 +123,17 @@
     border: none;
     border-radius: 0 0 15px 15px;
     font-size: 40px;
-    color: white;
+    color: @primary;
     background: transparent;
     /*-webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;*/
-
     &:hover,
     &:focus {
         outline: none;
-        color: white;
-        background: fade(white, 10%);
+        color: @primary;
+        background: fade(@primary, 10%);
     }
-
     /*i.animated {
         -webkit-transition-property: -webkit-transform;
         -webkit-transition-duration: 1s;
@@ -196,7 +192,6 @@
 }
 
 body.page, body.post {
-    background-color: #808080 !important;
-    /*color: #333;*/
+    background-color: @posts-background-color !important;
     margin-top: 50px !important;
 }
