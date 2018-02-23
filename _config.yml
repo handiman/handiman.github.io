@@ -18,16 +18,12 @@ exclude: [
     "node_modules", 
     "*.sln",
     "*.suo"]
+    
 highlighter: rouge
 
-collections:
-  jobb:
-    permalink: /jobb/:title/
-    output: false
+sass:
+  style: compressed
 
-# Themes are encouraged to use these universal variables 
-# so be sure to set them if your theme uses them.
-#
 title : Henrik Becker
 tagline: Software Engineer
 author :

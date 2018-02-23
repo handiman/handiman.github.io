@@ -1,4 +1,3 @@
-//  Mixins
 @media print {
     .section-scroll, .btn-page-scroll, .page-scroll, .no-print {
         display: none;
@@ -33,7 +32,7 @@
     }
 
     #interests div div {
-        background: url(@interests-background-image) no-repeat bottom right scroll;
+        background: url($interests-background-image) no-repeat bottom right scroll;
     }
 
     li.project {
@@ -90,7 +89,7 @@
     &:focus {
         outline: none;
         color: white;
-        /*background: fade(@primary, 10%);*/
+        /*background: fade($primary, 10%);*/
     }
     /*i.animated {
         -webkit-transition-property: -webkit-transform;
@@ -98,7 +97,6 @@
         -moz-transition-property: -moz-transform;
         -moz-transition-duration: 1s;
     }
-
     &:hover {
         i.animated {
             -webkit-animation-name: pulse;
@@ -123,7 +121,7 @@
     border: none;
     border-radius: 0 0 15px 15px;
     font-size: 40px;
-    color: @primary;
+    color: $primary;
     background: transparent;
     /*-webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -131,8 +129,8 @@
     &:hover,
     &:focus {
         outline: none;
-        color: @primary;
-        background: fade(@primary, 10%);
+        color: $primary;
+        background: fade($primary, 10%);
     }
     /*i.animated {
         -webkit-transition-property: -webkit-transform;
@@ -140,7 +138,6 @@
         -moz-transition-property: -moz-transform;
         -moz-transition-duration: 1s;
     }
-
     &:hover {
         i.animated {
             -webkit-animation-name: pulse;
@@ -156,42 +153,42 @@
 }
 
 #summary, #scroll-to-skills a.btn {
-    background-color: @summary;
+    background-color: $summary;
 }
 
 #skills, #scroll-to-skills, #scroll-to-projects a.btn {
-    background-color: @skills;
+    background-color: $skills;
 }
 
 #projects, #scroll-to-projects, #scroll-to-languages a.btn {
-    background-color: @projects;
+    background-color: $projects;
 }
 
 #languages, #scroll-to-languages, #scroll-to-interests a.btn {
-    background-color: @languages;
+    background-color: $languages;
 }
 
 #interests, #scroll-to-interests, #scroll-to-employment a.btn {
-    background-color: @interests;
+    background-color: $interests;
 }
 
 #employment, #scroll-to-employment, #scroll-to-education a.btn {
-    background-color: @employment;
+    background-color: $employment;
 }
 
 #education, #scroll-to-education, #scroll-to-recommendations a.btn {
-    background-color: @education;
+    background-color: $education;
 }
 
 #recommendations, #scroll-to-recommendations, #scroll-to-contact a.btn {
-    background-color: @recommendations;
+    background-color: $recommendations;
 }
 
 #contact, #scroll-to-contact {
-    background-color: @contact;
+    background-color: $contact;
 }
 
 body.page, body.post {
-    background-color: @posts-background-color !important;
+    background-color: $posts-background-color !important;
     margin-top: 50px !important;
 }
