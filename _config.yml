@@ -1,9 +1,15 @@
-# This is the default format. 
-# For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
+title: Henrik Becker - Software Engineer
+author:
+  name: Henrik Becker
+  email: 
+  github: handiman
+  twitter: 
+  feedburner: 
+
+permalink: pretty
 
 exclude: [ 
-    "sitemap.txt", 
+    ".vs",
     "package.json", 
     "gulpfile.js", 
     "Gemfile", 
@@ -24,15 +30,6 @@ highlighter: rouge
 sass:
   style: compressed
 
-title : Henrik Becker
-tagline: Software Engineer
-author :
-  name : Henrik Becker
-  email : 
-  github : handiman
-  twitter : 
-  feedburner : 
-
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
@@ -41,4 +38,5 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://handiman.github.io
+#production_url: http://handiman.github.io
+production_url: http://www.henrikbecker.net
