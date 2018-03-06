@@ -1,0 +1,12 @@
+---
+---
+{
+	"lang": "en-AU",
+	"name": "{{ site.title }}",
+	"short_name": "{{ site.author.name }}",
+	"description": "{{ site.description }}",
+	"display": "standalone",
+	"start_url":"/",
+	"background-color": "{{ site.tile_color }}",
+	"theme_color": "{{ site.tile_color }}"
+}
