@@ -1,21 +1,16 @@
-﻿{% include ld.html %}
-<meta charset="utf-8" />
+﻿<meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+{% include ld.html %}
+{% include og.html %}
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="{{ page.description }}" />
 <meta name="author" content="{{ site.author.name }}" />
 <meta name="msapplication-config" content="/tile.config" />
 <meta name="theme-color" content="#333333">
-<meta property="og:title" content="Henrik Becker - {% if page.title %}{{ page.title }}{% else %}Software Engineer{% endif %}" />
-<meta property="og:locale" content="en_AU" />
-<meta property="og:description" content="{{ page.description }}" />
-<meta property="og:site_name" content="Henrik Becker Consulting AB" />
-<meta property="og:url" content="{{ page.url | absolute_url }}" />
-<meta property="og:type" content="profile" />
-<meta property="profile:first_name" content="Henrik" />
-<meta property="profile:last_name" content="Becker" />
-<meta property="profile:gender" content="male" />
 <title>Henrik Becker - {% if page.title %}{{ page.title }}{% else %}Software Engineer{% endif %}</title>
+<link href="{{ '/atom.xml' | absolute_url }}" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
+<link href="{{ '/rss.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="RSS Feed" />
+<link href="{{ '/resume.json' | absolute_url }}" type="application/json" rel="alternate" title="JSON Resume" />
 <link rel="manifest" href="/manifest.json">
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
 <link rel="canonical" href="{{ page.url | absolute_url }}" />
@@ -29,8 +24,4 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-{% comment %}
-<link href="{{ '/atom.xml' | absolute_url }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed" />
-<link href="{{ '/rss.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed" />
-{% endcomment %}
-<link href="{{ '/resume.json' | absolute_url }}" type="application/json" rel="alternate" title="JSON Resume" />
+{% include favicon.html %}
