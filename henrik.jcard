@@ -1,0 +1,19 @@
+---
+---
+{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}["vcard",
+  [
+    ["version", {}, "text", "4.0"],
+    ["n", {}, "text", ["{{ profile.contact_info.last_name }}", "{{ profile.contact_info.first_name }}", "", "", ""]],
+    ["fn", {}, "text", "{{ profile.contact_info.first_name }} {{ profile.contact_info.last_name }}"],
+    ["org", {}, "text", "{{ profile.company }}"],
+    ["title", {} ,"text", "{{ profile.title }}"],
+    ["tel", {"type":["work", "voice"]}, "uri", "tel:{{ profile.contact_info.phone }}"],
+    ["adr",
+      {"label":"{{ profile.contact_info.address.street }}\n{{ profile.contact_info.address.postal_code }} {{ profile.contact_info.address.city }}\n{{ profile.contact_info.address.country }}", "type":"home"},
+      "text",
+      ["", "", "{{ profile.contact_info.address.street }}", "{{ profile.contact_info.address.city }}", "", "{{ profile.contact_info.address.postal_code }}", "{{ profile.contact_info.address.country }}"]
+    ],
+    ["email", {}, "text", "{{ profile.contact_info.email }}"],
+    ["rev", {}, "timestamp", "{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}"]
+  ]
+]{% assign profile = nil %}

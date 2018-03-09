@@ -1,24 +1,55 @@
 ---
 ---
-<?xml version="1.0" encoding="UTF-8"?>
+{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}<?xml version="1.0" encoding="UTF-8"?>
 <vcards xmlns="urn:ietf:params:xml:ns:vcard-4.0">
 	<vcard>
 		<n>
-			<surname>Becker</surname>
-			<given>Henrik</given>
-			<prefix>Mr.</prefix>
+			<surname>{{ profile.contact_info.last_name }}</surname>
+			<given>{{ profile.contact_info.first_name }}</given>
+			<prefix></prefix>
 		</n>
 		<fn>
-			<text>Henrik Becker</text>
+			<text>{{ profile.contact_info.first_name }} {{ profile.contact_info.last_name }}</text>
 		</fn>
 		<org>
-			<text>Henrik Becker Consulting AB</text>
+			<text>{{ profile.company }}</text>
 		</org>
 		<title>
-			<text>Software Engineer</text>
+			<text>{{ profile.title }}</text>
 		</title>
+		<tel>
+			<parameters>
+				<type>	
+					<text>home</text>
+					<text>voice</text>
+				</type>
+			</parameters>
+			<uri>tel:{{ profile.contact_info.phone }}</uri>
+		</tel>
+		<adr>
+      <parameters>
+        <label>
+          <text>{{ profile.contact_info.address.street }}
+{{ profile.contact_info.address.postal_code }} {{ profile.contact_info.address.city }}
+{{ profile.contact_info.address.country }}</text>
+        </label>
+        <type>
+          <text>home</text>
+        </type>
+      </parameters>
+      <pobox/>
+      <ext/>
+      <street>{{ profile.contact_info.address.street }}</street>
+      <locality>{{ profile.contact_info.address.city }}</locality>
+      <region></region>
+      <code>{{ profile.contact_info.address.postal_code }}</code>
+      <country>{{ profile.contact_info.address.country }}</country>
+    </adr>
+		<email>
+			<text>{{ profile.contact_info.email }}</text>
+		</email>
 		<rev>
 		  <timestamp>{{ site.time | date: "%Y%m%dT%H%M%SZ" }}</timestamp>
 		</rev>
 	</vcard>
-</vcards>
+</vcards>{% assign profile = nil %}

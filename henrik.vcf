@@ -1,10 +1,12 @@
 ---
 ---
-BEGIN:VCARD
+{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}BEGIN:VCARD
 VERSION:3.0
-N:Becker;Henrik;;Mr.;
-FN:Henrik Becker
-ORG:Henrik Becker Consulting AB
-TITLE:Software Engineer
+N:{{ profile.contact_info.last_name }};{{ profile.contact_info.first_name }};;;
+FN:{{ profile.contact_info.first_name }} {{ profile.contact_info.last_name }}
+ORG:{{ profile.company }}
+TITLE:{{ profile.title }}
+EMAIL:{{ profile.contact_info.email }}
+TEL;HOME;VOICE:{{ profile.contact_info.phone }}
 REV:{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}
-END:VCARD
+END:VCARD{% assign profile = nil %}
