@@ -1,0 +1,24 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<vcards xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+	<vcard>
+		<n>
+			<surname>Becker</surname>
+			<given>Henrik</given>
+			<prefix>Mr.</prefix>
+		</n>
+		<fn>
+			<text>Henrik Becker</text>
+		</fn>
+		<org>
+			<text>Henrik Becker Consulting AB</text>
+		</org>
+		<title>
+			<text>Software Engineer</text>
+		</title>
+		<rev>
+		  <timestamp>{{ site.time | date: "%Y%m%dT%H%M%SZ" }}</timestamp>
+		</rev>
+	</vcard>
+</vcards>

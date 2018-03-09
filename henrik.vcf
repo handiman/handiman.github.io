@@ -1,0 +1,10 @@
+---
+---
+BEGIN:VCARD
+VERSION:3.0
+N:Becker;Henrik;;Mr.;
+FN:Henrik Becker
+ORG:Henrik Becker Consulting AB
+TITLE:Software Engineer
+REV:{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}
+END:VCARD
