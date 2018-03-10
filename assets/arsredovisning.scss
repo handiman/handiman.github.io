@@ -1,0 +1,73 @@
+---
+---
+@import "bootstrap";
+@import "variables";
+body { 
+	background-color:#000; 
+}
+
+td, th {
+	margin-right:15px;
+	padding-right:15px;
+}
+
+footer {
+	margin-top:30px;
+}
+article {
+	padding:50px 100px!important;
+}
+
+h1 { 
+	text-align:center;
+	margin-bottom:100px;
+}
+
+span.signature-day, span.signature-month {
+	padding-right:50px;
+}
+
+table {
+	width:100%;
+	td, th {
+		text-align:right;
+	}
+	td:nth-child(1), th:nth-child(1) {
+		text-align:left;
+	}
+
+	td.signature {
+		height: 80px;
+	}
+}
+
+table.signature {
+	td {
+		text-align:left;
+	}
+}
+
+@media screen {
+	h3, h4, h5, h6, strong, b, .bold {
+		color:#333;
+		font-weight:bold;
+		font-size:14px;
+	}
+	h1, h2 {
+		color:#75a434;
+	}
+	article, footer, header { 
+		background-color: #fff; 
+		color:#333;
+	}
+}
+@media print {
+	* {
+		color:#000;
+		background-color:#FFF;
+	}
+	article {
+		margin:30px!important;
+		padding:0!important;
+	}
+}

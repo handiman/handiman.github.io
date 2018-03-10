@@ -1,8 +1,6 @@
 User-agent: *
-Disallow: /_data/
-Disallow: /_includes/
-Disallow: /_layouts/
-Disallow: /_plugins/
-Disallow: /_posts/
+Disallow: /404/
 Disallow: /assets/
-Disallow: /less/
+Disallow: /arsredovisning/
+Disallow: /cv/
+Disallow: /img/
