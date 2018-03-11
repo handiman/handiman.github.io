@@ -38,5 +38,11 @@ author: Henrik Becker
 			</footer>
 		</article>
 		{% include scripts.html %}
+		<script>
+		$(function(){
+			$("td > em").parent().parent().addClass("header");
+			$("td > strong em").parent().parent().parent().addClass("header");
+		});
+		</script>
 	</body>
 </html>	
