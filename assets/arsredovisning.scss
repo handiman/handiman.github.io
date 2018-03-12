@@ -23,13 +23,6 @@ span.signature-day, span.signature-month {
 	padding-right:50px;
 }
 
-table:nth-child(1) {
-	th {
-		background-color:none;
-		text-transform:none;
-	}
-}
-
 table {
 	width:100%;
 	td, th {
@@ -73,6 +66,12 @@ th, tr.header {
 		em, strong em {
 			font-style:normal;
 		}
+	}
+}
+
+table:first-of-type {
+	th {
+		text-transform:none;
 	}
 }
 
