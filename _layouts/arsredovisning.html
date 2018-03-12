@@ -1,6 +1,8 @@
 ---
 title: Årsredovisning Henrik Becker Consulting AB
 author: Henrik Becker
+company: Henrik Becker Consulting AB
+org_no: 559120-2147
 --- 
 <!DOCTYPE html>
 <html lang="sv">
@@ -28,13 +30,14 @@ author: Henrik Becker
 	<body>
 		<article class="container" role="main">
 			<div class="col-12 text-right">
-				Henrik Becker Consulting AB<br />
-				559120-2147
+				{{ page.company }}<br />
+				{{ page.org_no }}
 			</div>
+			<h1>Årsredovisning<br/>{{ page.company }}</h1>
 			{{ content }}
 			<footer class="col-12 text-right">
-				Henrik Becker Consulting AB<br />
-				559120-2147
+				{{ page.company }}<br />
+				{{ page.org_no }}
 			</footer>
 		</article>
 		{% include scripts.html %}
