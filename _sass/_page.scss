@@ -1,0 +1,14 @@
+body.page div[role='main'] {
+	background-color:#FFF;
+	color:#555;
+}
+
+body.page {
+	a,
+	a:active,
+	a:link,
+	a:hover,
+	a:visited,  {
+		color:$color-primary-5;
+	}
+}
