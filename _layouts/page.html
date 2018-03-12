@@ -2,6 +2,7 @@
 <html lang="{% if page.lang %}{{ page.lang}}{% else %}en{% endif %}">
 <head>
     {% include head.html %}
+	<link rel="stylesheet" type="text/css" href="{{ '/assets/page.css' | absolute_url }}" />
 </head>
 <body class="page">
 {% include navigation.html %}
