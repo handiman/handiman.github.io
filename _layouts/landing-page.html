@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="{% if page.lang %}{{ page.lang}}{% else %}en{% endif %}" prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
-<head>
-	{% include head.html %}
-	<link rel="stylesheet" type="text/css" href="{{ '/assets/landing-page.css' | absolute_url }}" />
-</head>
-<body id="page-top">
-{{ content }}
-{% include footer.html %}
-{% include scripts.html %}
-<script src="/assets/landing-page.min.js"></script>
-</body>
+<html lang="en" prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
+	<head>
+		{% include ld.html %}
+		{% include head.html %}
+		<meta property="og:type" content="profile" />
+		<meta property="profile:first_name" content="Henrik" />
+		<meta property="profile:last_name" content="Becker" />
+		<meta property="profile:gender" content="male" />
+		<link rel="stylesheet" type="text/css" href="{{ '/assets/landing-page.css' | absolute_url }}" />
+	</head>
+	<body id="page-top">
+		{{ content }}
+		{% include footer.html %}
+		{% include scripts.html %}
+		<script src="/assets/landing-page.min.js"></script>
+	</body>
 </html>
