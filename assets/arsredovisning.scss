@@ -69,6 +69,12 @@ th, tr.header {
 	}
 }
 
+table:first-of-type {
+	th {
+		text-transform:none;
+	}
+}
+
 @media screen {
 	$text-color: #555;
 	h2, h2 {
