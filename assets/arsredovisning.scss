@@ -5,6 +5,10 @@
 
 $header-color: #EFfCEF;
 
+#resultaträkning, #balansräkning, #noter {
+	page-break-before: always;
+}
+
 body { 
 	background-color:#000; 
 }
