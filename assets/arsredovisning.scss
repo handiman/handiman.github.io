@@ -3,6 +3,8 @@
 @import "bootstrap";
 @import "variables";
 
+$header-color: #EFfCEF;
+
 body { 
 	background-color:#000; 
 }
@@ -61,7 +63,7 @@ th, td {
 }
 
 th, tr.header {
-	background-color:#EFEFEF;
+	background-color:$header-color;
 	td {
 		em, strong em {
 			font-style:normal;
