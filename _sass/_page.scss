@@ -1,20 +1,17 @@
 body.page div[role='main'] {
-	background-color:#FFF;
-	color:#555;
+	background-color: $color-primary-4;
 	margin-top:90px;
 	padding-bottom:20px;
 }
 
-body.page {
-	a,
-	a:active,
-	a:link,
-	a:hover,
-	a:visited,  {
-		color:$color-primary-5;
+.poll {
+	h4 {
+		margin-bottom:5px;
+		padding-top:20px;
 	}
-} 
-
-h5, h6 {
-	margin-bottom:5px;
+	button {
+		margin-top:20px;
+		margin-bottom:20px;
+	}
 }
+
