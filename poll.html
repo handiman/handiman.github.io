@@ -1,0 +1,79 @@
+---
+layout: page
+title: Poll
+---
+<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js" integrity="sha256-owX7sroiO/O1a7h3a4X29A1g3QgqdNvijRQ7V5TH45M=" crossorigin="anonymous"></script>
+
+<form data-bind="submit:submit,visible:showForm">
+	<h4>Deployment</h4>
+	<div>Which of the following statements apply to your deployment process?</div>
+	<ul style="list-style:none">
+		<li><input type="checkbox" id="deployment-slow" data-bind="checked:deploymentIsSlow"><label for="deployment-slow">Slow</label></li>
+		<li><input type="checkbox" id="deployment-manual" data-bind="checked:deploymentIsManual"><label for="deployment-manual">Manual</label></li>
+		<li><input type="checkbox" id="deployment-error-prone" data-bind="checked:deploymentIsScary"><label for="deployment-error-prone">Error prone</label></li>
+	</ul>
+
+	<h4>Testing</h4>
+	<div>Which of the following statments apply to your test code?</div>
+	<ul>
+		<li><input type="checkbox" id="testing-manual" data-bind="checked:testingIsManual"><label for="testing-manual">It's not automated</label></li>
+		<li><input type="checkbox" id="testing-failing" data-bind="checked:testsFailIntermittently"><label for="testing-failing">Automated tests fail intermittently</label></li>
+		<li><input type="checkbox" id="testing-poor-feedback" data-bind="checked:testsGivePoorFeedback"><label for="testing-poor-feedback">It's hard to tell why a test fails</label></li>
+		<li><input type="checkbox" id="testing-hard-to-understand" data-bind="checked:testsAreHardToUnderstand"><label for="testing-hard-to-understand">It's hard to tell what a test actually tests</label></li>
+	</ul>
+
+	<button type="submit">Show results</button>
+</form>
+
+<div data-bind="visible:showResults" style="display:none">
+	<div data-bind="visible:goodMatch" style="display:none">
+		<div>Hmm... interesting... You said:</div>
+		<ul style="list-style:none">
+			<li data-bind="visible:deploymentIsSlow">Our deployment process is slow</li>
+			<li data-bind="visible:deploymentIsManual">Our deployment process is manual</li>
+			<li data-bind="visible:deploymentIsScary">Our deployment process is error prone</li>
+			<li data-bind="visible:testingIsManual">Our deployment process is not automated</li>
+			<li data-bind="visible:testsFailIntermittently">Our tests fail intermittently</li>
+			<li data-bind="visible:testsGivePoorFeedback">It's hard to tell why a test fails</li>
+			<li data-bind="visible:testsAreHardToUnderstand">It's hard to tell what a test actually tests</li>
+		</ul>
+		<div>I think I might be a good match for your needs.</div>
+	</div>
+	<div data-bind="visible:poorMatch" style="display:none">
+		<div>Hmm... interesting...</div>
+		<div>It seems like you don't need me at all but who knows?</div>
+	</div>
+	{% include contact.html %}
+</div>
+
+<script>
+ko.applyBindings(new (function(){
+	var that = this;
+    that.deploymentIsSlow = ko.observable(false);
+	that.deploymentIsManual = ko.observable(false);
+	that.deploymentIsScary = ko.observable(false);
+	that.testingIsManual = ko.observable(false);
+	that.testsFailIntermittently = ko.observable(false);
+	that.testsAreHardToUnderstand = ko.observable(false);
+	that.testsGivePoorFeedback = ko.observable(false);
+	that.showResults = ko.observable(false);
+	that.showForm = ko.observable(true);
+	that.submit = function() {
+		that.showResults(true);
+		that.showForm(false);
+	},
+	that.goodMatch = ko.computed(function() {
+		return that.deploymentIsSlow()
+		|| that.deploymentIsManual()
+		|| that.deploymentIsScary()
+		|| that.testingIsManual()
+		|| that.testsFailIntermittently()
+		|| that.testsAreHardToUnderstand()
+		|| that.testsGivePoorFeedback();
+	});
+	that.poorMatch = ko.computed(function() {
+		return !that.goodMatch();
+	});
+	return that;
+})());
+</script>
