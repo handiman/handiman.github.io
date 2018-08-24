@@ -5,24 +5,27 @@ title: Poll
 <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js" integrity="sha256-owX7sroiO/O1a7h3a4X29A1g3QgqdNvijRQ7V5TH45M=" crossorigin="anonymous"></script>
 
 <form data-bind="submit:submit,visible:showForm">
-	<h4>Deployment</h4>
-	<div>Which of the following statements apply to your deployment process?</div>
-	<ul style="list-style:none">
-		<li><input type="checkbox" id="deployment-slow" data-bind="checked:deploymentIsSlow"><label for="deployment-slow">Slow</label></li>
-		<li><input type="checkbox" id="deployment-manual" data-bind="checked:deploymentIsManual"><label for="deployment-manual">Manual</label></li>
-		<li><input type="checkbox" id="deployment-error-prone" data-bind="checked:deploymentIsScary"><label for="deployment-error-prone">Error prone</label></li>
-	</ul>
+	<div class="form-group">
+		<h5>Deployment:</h5>
+		<div>Which of the following statements apply to your deployment process?</div>
+		<ul class="list-unstyled">
+			<li class="checkbox"><label for="deployment-slow"><input type="checkbox" id="deployment-slow" data-bind="checked:deploymentIsSlow" />Slow</label></li>
+			<li class="checkbox"><label for="deployment-manual"><input type="checkbox" id="deployment-manual" data-bind="checked:deploymentIsManual" />Manual</label></li>
+			<li class="checkbox"><label for="deployment-error-prone"><input type="checkbox" id="deployment-error-prone" data-bind="checked:deploymentIsScary" />Error prone</label></li>
+		</ul>
+	</div>
+	<div class="form-group">
+		<h5>Testing:</h5>
+		<div>Which of the following statments apply to your test code?</div>
+		<ul class="list-unstyled">
+			<li class="checkbox"><label for="testing-manual"><input type="checkbox" id="testing-manual" data-bind="checked:testingIsManual" />It's not automated</label></li>
+			<li class="checkbox"><label for="testing-failing"><input type="checkbox" id="testing-failing" data-bind="checked:testsFailIntermittently" />Automated tests fail intermittently</label></li>
+			<li class="checkbox"><label for="testing-poor-feedback"><input type="checkbox" id="testing-poor-feedback" data-bind="checked:testsGivePoorFeedback" />It's hard to tell why a test fails</label></li>
+			<li class="checkbox"><label for="testing-hard-to-understand"><input type="checkbox" id="testing-hard-to-understand" data-bind="checked:testsAreHardToUnderstand" />It's hard to tell what a test actually tests</label></li>
+		</ul>
+	</div>
 
-	<h4>Testing</h4>
-	<div>Which of the following statments apply to your test code?</div>
-	<ul>
-		<li><input type="checkbox" id="testing-manual" data-bind="checked:testingIsManual"><label for="testing-manual">It's not automated</label></li>
-		<li><input type="checkbox" id="testing-failing" data-bind="checked:testsFailIntermittently"><label for="testing-failing">Automated tests fail intermittently</label></li>
-		<li><input type="checkbox" id="testing-poor-feedback" data-bind="checked:testsGivePoorFeedback"><label for="testing-poor-feedback">It's hard to tell why a test fails</label></li>
-		<li><input type="checkbox" id="testing-hard-to-understand" data-bind="checked:testsAreHardToUnderstand"><label for="testing-hard-to-understand">It's hard to tell what a test actually tests</label></li>
-	</ul>
-
-	<button type="submit">Show results</button>
+	<button type="submit" class="btn btn-success btn-lg">Show results</button>
 </form>
 
 <div data-bind="visible:showResults" style="display:none">

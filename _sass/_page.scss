@@ -1,6 +1,8 @@
 body.page div[role='main'] {
 	background-color:#FFF;
 	color:#555;
+	margin-top:90px;
+	padding-bottom:20px;
 }
 
 body.page {
@@ -12,3 +14,7 @@ body.page {
 		color:$color-primary-5;
 	}
 } 
+
+h5, h6 {
+	margin-bottom:5px;
+}
