@@ -8,13 +8,13 @@
 
     function setupContactForm() {
         if ($("#contact-form").length) {
-            $.get('http://www.henrikbecker.se/api/ip')
+            $.get('https://www.henrikbecker.se/api/ip')
                 .done(function (ip) {
                     $("#contact-form #ip").val(ip);
                 });
             $("#contact-form").submit(function (e) {
                 e.preventDefault();
-                $.post('http://www.henrikbecker.se/api/command', {
+                $.post('https://www.henrikbecker.se/api/command', {
                     subject: "Contact Form",
                     from: $("#contact-form #from").val(),
                     ipAddress: $("#contact-form #ip").val(),
