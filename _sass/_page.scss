@@ -15,3 +15,15 @@ body.page div[role='main'] {
 	}
 }
 
+#usp {
+	text-align:center;
+	li {
+		background-color:$color-primary-4;
+		padding:20px;
+		margin:10px;
+	}
+	img {
+		width:100px;
+		margin-bottom:20px;
+	}
+}

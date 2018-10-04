@@ -1,0 +1,12 @@
+---
+---
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$primary-background-color: #444;
+$primary-foreground-color: #FFF;
+
+body {
+	background-color:$primary-background-color;
+	color:$primary-foreground-color;
+}

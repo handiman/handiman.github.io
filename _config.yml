@@ -43,6 +43,10 @@ sass:
 #
 production_url: http://www.henrikbecker.net
 
+collections:
+  usp:
+    output: false
+
 defaults:
  - scope: 
     path: "*.html"
