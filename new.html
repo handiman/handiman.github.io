@@ -1,0 +1,9 @@
+---
+layout: start
+title: Henrik Becker Consulting
+---
+<ul class="row list-unstyled usp">{% for usp in site.usp %}
+	<li class="col-sm-6"><img src="{{ usp.icon }}" alt="{{ usp.title }}" />
+		{{ usp }}
+	</li>{% endfor %}
+</ul>

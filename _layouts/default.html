@@ -2,22 +2,41 @@
 <html lang="{% if page.lang %}{{ page.lang}}{% else %}en{% endif %}">
 	<head>
 		<title>{{ site.title }}</title>
-	<meta charset="utf-8">
+		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="{{ '/style.css' | absolute_url }}" />
 	</head>
 	<body>
-		<div class="container">
-			<header>
-				<h1>{{ page.title }}{% if page.tagline %} - {{ page.tagline }}{% endif %}</h1>
-			</header>
-			<article role="main">
-				{{ content }}
-			</article>
-			<footer>
-			</footer>
-		</div>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">HOME</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					{% comment %}<form class="navbar-form navbar-right">
+						<div class="form-group">
+							<input type="text" placeholder="Email" class="form-control">
+						</div>
+						<div class="form-group">
+							<input type="password" placeholder="Password" class="form-control">
+						</div>
+						<button type="submit" class="btn btn-success">Sign in</button>
+					</form>{% endcomment %}
+				</div><!--/.navbar-collapse -->
+			</div>
+		</nav>
+		{{ content }}
+		<footer class="container">
+			<hr>
+			<p>&copy; {{ site.time | date: '%Y' }} Henrik Becker Consulting AB</p>
+		</footer>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	</body>
