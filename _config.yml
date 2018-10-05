@@ -47,6 +47,9 @@ collections:
   usp:
     output: false
 
+plugins:
+  - jekyll-coffeescript    
+    
 defaults:
  - scope: 
     path: "*.html"
