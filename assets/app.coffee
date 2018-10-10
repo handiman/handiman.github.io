@@ -7,8 +7,8 @@ collapseNavbar = ->
 		$(".navbar-fixed-top").removeClass "top-nav-collapse"
 
 $ -> 		
-	$(setupContactForm);
-	$(collapseNavbar);
+	setupContactForm();
+	collapseNavbar();
 	$(window).scroll(collapseNavbar);
 	$('.navbar-collapse ul li a').click(-> 
 		$(".navbar-collapse").collapse 'hide');
