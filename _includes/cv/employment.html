@@ -1,18 +1,17 @@
-{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}
 <section id="employment" class="content-section">
     <div class="container">
         <div class="col-lg-8 col-lg-offset-2">
             <h2><span class="no-print">I've been around</span><span class="print">Employment History</span></h2>
             <ul class="list-unstyled">
-                {% for e in site.data.employmentorder %}{% assign employer = site.data.employment[e.name] %}
+                {% for employer in site.employment reversed %}
+				{% assign start_date = (employer.start_date | date: "%Y-%m") %}
+				{% assign end_date = (employer.end_date | date: "%Y-%m") %}
                 <li class="row">
                     <div class="col-md-3">
-                        {% assign start_date = (employer.start_date | date: "%Y-%m") %}
-                        {% assign end_date = (employer.end_date | date: "%Y-%m") %}
                         {% if end_date %}
-                        {{ start_date }} {% if end_date != start_date %} - {{ end_date }}{% endif %}
+							{{ start_date }} {% if end_date != start_date %}- {{ end_date }}{% endif %}
                         {% else %}
-                        {{ start_date }} - present
+							{{ start_date }} - present
                         {% endif %}
                     </div>
                     <div class="col-md-9">

@@ -1,3 +1,4 @@
+---
 title: Plejmo Backend Developer
 organization:
  id: magine
@@ -6,3 +7,4 @@ organization:
   city: Stockholm
 start_date: 2015-09-14
 end_date: 2017-07-05
+---
