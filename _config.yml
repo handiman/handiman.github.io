@@ -43,8 +43,11 @@ sass:
 #
 production_url: http://www.henrikbecker.net
 
+collections_dir: _collections
 collections:
   usp:
+    output: false
+  recommendations:
     output: false
 
 plugins:

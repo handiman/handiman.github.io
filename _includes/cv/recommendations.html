@@ -1,12 +1,10 @@
-{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}
 <section id="recommendations" class="content-section no-print">
     <div class="container">
         <div class="col-lg-8 col-lg-offset-2">
             <h2>I Deliver</h2>
-            {% for recommendation in profile.recommendations %}
+            {% for recommendation in site.recommendations %}
             <blockquote class="col-lg-12">
-                <p>{{ recommendation.text }}</p>
-                <small align="right"><a href="{{ recommendation.url }}">{{ recommendation.name }}</a></small>
+				{{ recommendation }}<small align="right"><a href="{{ recommendation.link }}">{{ recommendation.name }}</a></small>
             </blockquote>{% endfor %}
         </div>
     </div>
