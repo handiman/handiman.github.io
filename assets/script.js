@@ -26,4 +26,5 @@
         }
     }
 	
+	$(setupContactForm);
 })(jQuery);
