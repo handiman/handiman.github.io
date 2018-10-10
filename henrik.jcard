@@ -1,6 +1,6 @@
 ---
 ---
-{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}["vcard",
+{% assign profile = site.data.profile %}["vcard",
   [
     ["version", {}, "text", "4.0"],
     ["n", {}, "text", ["{{ profile.contact_info.last_name }}", "{{ profile.contact_info.first_name }}", "", "", ""]],
@@ -16,4 +16,4 @@
     ["email", {}, "text", "{{ profile.contact_info.email }}"],
     ["rev", {}, "timestamp", "{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}"]
   ]
-]{% assign profile = nil %}
+]

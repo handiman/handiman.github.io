@@ -1,6 +1,6 @@
 ---
 ---
-{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>{% assign profile = site.data.profile %}
 <vcards xmlns="urn:ietf:params:xml:ns:vcard-4.0">
 	<vcard>
 		<n>

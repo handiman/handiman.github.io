@@ -1,6 +1,6 @@
 ---
 ---
-{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}BEGIN:VCARD
+{% assign profile = site.data.profile %}BEGIN:VCARD
 VERSION:3.0
 N:{{ profile.contact_info.last_name }};{{ profile.contact_info.first_name }};;;
 FN:{{ profile.contact_info.first_name }} {{ profile.contact_info.last_name }}
