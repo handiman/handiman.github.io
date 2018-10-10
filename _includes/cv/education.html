@@ -3,7 +3,7 @@
         <div class="col-lg-8 col-lg-offset-2">
             <h2><span class="no-print">I went to school</span><span class="print">Education</span></h2>
             <div class="row">
-                {% for education in side.data.profile.education %}
+                {% for education in site.data.profile.education %}
                 <div class="col-md-2">{{ education.start_year }} - {{ education.end_year }}</div>
                 <div class="col-md-10">{{ education.school }} ({{ education.description }})</div>
                 {% endfor %}
