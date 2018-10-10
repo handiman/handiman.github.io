@@ -1,3 +1,4 @@
+---
 title: hitta.se
 employer: aftonbladet-tillvaxtteknik-2-ab
 location: Stockholm, Sweden
@@ -6,9 +7,6 @@ end_date: 2008-02-28
 achievements:
  - Was a key person in the development of hitta.se - one of Swedens top 10 most popular sites.
  - Created the services hitta.se/trafiknytt (traffic information) and hitta.se/vader (weather information).
-description: >
- Hitta.se is a Swedish search engine that offers telephone directory, addresses and maps.
- It has been one of Sweden's 10 most popular sites for quite some time, I worked with hitta.se's internal order system and improved the public map site with services such as weather and traffic information.
 skills:
  - C#
  - Asp.Net
@@ -20,3 +18,6 @@ skills:
  - XHTML
  - SQL Server
  - IIS
+---
+Hitta.se is a Swedish search engine that offers telephone directory, addresses and maps.
+It has been one of Sweden's 10 most popular sites for quite some time, I worked with hitta.se's internal order system and improved the public map site with services such as weather and traffic information.

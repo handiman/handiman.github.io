@@ -1,3 +1,4 @@
+---
 group: projects
 employer: magine
 title: Plejmo
@@ -5,8 +6,6 @@ location: Stockholm, Sweden
 start_date: 2014-11-03
 end_date: 2017-07-05
 roles: Devops. TDD mentor. Software Engineer.
-description: >
- Back- and front end development of a Video On Demand (VOD) service based on Asp.Net MVC and EpiServer. DevOps tasks including configuring web sites, configuring automated builds and setting up automated deployment.
 achievements:
  - Increased system performance by refactoring the system to the CQRS pattern with a denormalized, read optimized database for querying.
  - Increased stability and scalability by creating Micro Services for third party integration.
@@ -31,4 +30,5 @@ skills:
  - NHibernate
  - SQL Server
  - IIS
- 
+--- 
+Back- and front end development of a Video On Demand (VOD) service based on Asp.Net MVC and EpiServer. DevOps tasks including configuring web sites, configuring automated builds and setting up automated deployment.

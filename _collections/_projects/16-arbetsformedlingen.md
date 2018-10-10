@@ -1,3 +1,4 @@
+---
 title: Arbetsförmedlingen
 employer: qbranch-stockholm-ab-2
 location: Stockholm, Sweden
@@ -10,5 +11,5 @@ skills:
  - WCF
  - WebServices
  - Oracle
-description: >  
- Maintenance of a legacy solution for managing requisitions at Sweden's public employment services.
+--- 
+Maintenance of a legacy solution for managing requisitions at Sweden's public employment services.

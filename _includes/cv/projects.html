@@ -1,27 +1,20 @@
-{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}
 <section id="projects" class="content-section">
     <div class="container">
         <div class="col-lg-8 col-lg-offset-2">
             <h2><span class="no-print">I am experienced</span><span class="print">Project History</span></h2>
             <ul class="list-unstyled">
-                {% for p in site.data.projectorder %}
-                    {% assign project = site.data.projects[p.name] %}
-                    {% assign next = 'languages' %}
-                    {% unless forloop.last %}
-                        {% assign next = site.data.projectorder[forloop.index].name %}
-                    {% endunless %}
+                {% for project in site.projects reversed %}
                     {% assign start_date = (project.start_date | date: "%b %Y") %}
                     {% assign end_date = (project.end_date | date: "%b %Y") %}
-                    <li class="project" id="{{p.name}}" data-next="#{{next}}">
-                        <h3><a href="#{{next}}" class="page-scroll"><i class="fa fa-angle-down"></i></a>{{ project.title }}</h3>
+                    <li class="project">
+					
+                        <h3>{{ project.title }}</h3>
                         <div class="project">
                             <ul class="list-inline">
                                 <li>{{ project.location }}</li>
                                 <li>{{ start_date }}{% if end_date %}{% if end_date != start_date %} - {{ end_date }}{% endif %}{% endif %}</li>
                             </ul>
-                            <div>
-                                {% if project.description %}
-                                <div>{{ project.description }}</div>{% endif %}
+                            <div>{{ project }}
                                 {% if project.achievements %}
                                 <h5>Achievements:</h5>
                                 <ul>
@@ -44,7 +37,6 @@
                             {% endif %}
                         </div>
                     </li>
-                    {% assign prev = p %}
                 {% endfor %}
             </ul>
         </div>

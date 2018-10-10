@@ -1,3 +1,4 @@
+---
 title: Qbranch Competence Manager
 employer: qbranch-stockholm-ab-2
 location: Stockholm, Sweden
@@ -14,3 +15,4 @@ skills:
  - EntityFramework 6
  - Test Driven Development
  - Continuous Integration
+--- 

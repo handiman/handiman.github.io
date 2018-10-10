@@ -1,9 +1,9 @@
+---
 title: Wasa Kredit
 employer: wasa-kredit-ab
 location: Stockholm, Sweden
 start_date: 2012-03-12
 end_date: 2013-11-14
-description: Employed as Lead Developer.
 achievements: 
  - Reduced complexity and system decay through refactoring and the application of common software architecture patterns.
  - Guided the development teams towards an iterative approach to software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle.
@@ -21,3 +21,5 @@ skills:
  - Continuous Integration
  - Team Foundation Server- XML
  - XSLT
+---
+Employed as Lead Developer. 

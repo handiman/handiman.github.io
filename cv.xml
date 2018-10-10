@@ -25,9 +25,8 @@ title: CV Henrik Becker
 		<para>{{ profile.summary }}</para>
 	</objective>
 	<history>
-		{% for p in site.data.projectorder %}
-		{% assign project = site.data.projects[p.name] %}
-		{% assign employer = site.data.employment[project.employer] %}<job>
+		{% for project in site.projects reversed %}
+		{% assign employer = site.employment[project.employer] %}<job>
 			<jobtitle>{{ project.title | replace: "&amp;", "&" | replace: "&", "&amp;" }}</jobtitle>
 			<employer>{{ employer.organization.name }}</employer>
 			<period>

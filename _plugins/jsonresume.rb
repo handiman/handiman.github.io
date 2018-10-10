@@ -60,8 +60,7 @@ module Jekyll
 
 		def getprojects(site)
 			projects = []
-			for projectorder in site.data["projectorder"]
-				project = site.data["projects"][projectorder["name"]]
+			site.collections["projects"].docs.reverse_each do |project|
 				projects << { 
 					"name" => project["title"].to_s,
 					"position" => project["position"].to_s,

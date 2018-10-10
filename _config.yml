@@ -50,7 +50,9 @@ collections:
   recommendations:
     output: false
   employment:
-    output: false        
+    output: false
+  projects:
+    output: false
 
 plugins:
   - jekyll-coffeescript    

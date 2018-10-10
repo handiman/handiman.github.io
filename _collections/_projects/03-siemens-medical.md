@@ -1,9 +1,9 @@
+---
 title: Siemens Medical
 employer: iconmedialab-ab
 location: Stockholm, Sweden
 start_date: 2000-01-01
 end_date: 2001-01-01
-description: QA and supporting colleges during development and maintenance of Siemens Medical's intranet "EMPower".
 skills:
  - Visual Basic 6
  - COM
@@ -14,3 +14,5 @@ skills:
  - CSS
  - HTML
  - SQL Server
+--- 
+QA and supporting colleges during development and maintenance of Siemens Medical's intranet "EMPower".

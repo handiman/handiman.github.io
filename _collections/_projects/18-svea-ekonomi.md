@@ -1,3 +1,4 @@
+--- 
 title: Svea Ekonomi AB
 employer: self-employed
 location: Solna, Sweden
@@ -17,8 +18,8 @@ skills:
 - Team Foundation Server
 - Entity Framework
 - DocNet
-description: >
- Development of Svea Checkout - an e-commerce payment solution being rolled out in Sweden, Norway and Finland.
 achievements:
   - Improved api documentation by generating most of it automatically
   - Improved tests by rewriting them as executable specifications  
+--- 
+Development of Svea Checkout - an e-commerce payment solution being rolled out in Sweden, Norway and Finland.
