@@ -52,17 +52,19 @@ skills:
   - Test Driven Development
   - Specification by Example
   - Continuous Integration
+  - Continuous Deployment
   - Scrum
  tools:
-  - Visual Studio
+  - Octopus Deploy
+  - TeamCity
   - Git
   - ReSharper
-  - TeamCity
-  - Octopus Deploy
+  - Visual Studio
  databases:
   - SQL Server
   - MySql
   - Oracle
+  - Postgres
 languages:
  - code: sv
    name: Swedish
