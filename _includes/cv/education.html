@@ -1,10 +1,9 @@
-{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}
 <section id="education" class="content-section">
     <div class="container">
         <div class="col-lg-8 col-lg-offset-2">
             <h2><span class="no-print">I went to school</span><span class="print">Education</span></h2>
             <div class="row">
-                {% for education in profile.education %}
+                {% for education in side.data.profile.education %}
                 <div class="col-md-2">{{ education.start_year }} - {{ education.end_year }}</div>
                 <div class="col-md-10">{{ education.school }} ({{ education.description }})</div>
                 {% endfor %}

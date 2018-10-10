@@ -75,29 +75,28 @@ module Jekyll
 		end
 
 		def generate(site)
-			for profile in site.data["profile"]
-				json = JSON.generate({
-					"basics" => {
-						"name" => profile["name"],
-						"label" => profile["title"],
-						"website" => profile["url"],
-						"summary" =>  profile["summary"].join("\n"),
-						"location" => {
-							"region" => profile["work_location"],
-							"countryCode" => profile["country_code"]
-						},
-						"profiles" => getnetworks(profile)
+			profile = site.data["profile"]
+			json = JSON.generate({
+				"basics" => {
+					"name" => profile["name"],
+					"label" => profile["title"],
+					"website" => profile["url"],
+					"summary" =>  profile["summary"].join("\n"),
+					"location" => {
+						"region" => profile["work_location"],
+						"countryCode" => profile["country_code"]
 					},
-					"skills" => getskills(profile),
-					"languages" => getlanguages(profile),
-					"interests" => getinterests(profile),
-					"education" => geteducation(profile),
-					"work" => getprojects(site)
-				})
+					"profiles" => getnetworks(profile)
+				},
+				"skills" => getskills(profile),
+				"languages" => getlanguages(profile),
+				"interests" => getinterests(profile),
+				"education" => geteducation(profile),
+				"work" => getprojects(site)
+			})
 
-				File.write(File.join(site.source, "resume.json"), json)
-				site.static_files << Jekyll::StaticFile.new(site, site.source, '/', "resume.json")
-			end
+			File.write(File.join(site.source, "resume.json"), json)
+			site.static_files << Jekyll::StaticFile.new(site, site.source, '/', "resume.json")
 		end
 	end # JSONResumeGenerator
 

@@ -1,16 +1,15 @@
-{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}
 <section id="interests" class="content-section">
     <div class="container">
         <div class="col-lg-8 col-lg-offset-2">
             <h2><span class="no-print">I enjoy</span><span class="print">Hobbies &amp; Interests</span></h2>
             <ul class="no-print list-unstyled">
-                {% for hobby in profile.interests %}
+                {% for hobby in site.data.profile.interests %}
                     {% if hobby.url %}<li><a href="{{ hobby.url }}">{{ hobby.name }}</a></li>
                     {% else %}<li>{{ hobby.name }}</li>
                     {% endif %}
                 {% endfor %}
             </ul>
-            <div class="print">{% for hobby in profile.interests %}{{ hobby.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+            <div class="print">{% for hobby in side.data.profile.interests %}{{ hobby.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}
             </div>
         </div>  
     </div>

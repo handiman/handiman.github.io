@@ -1,10 +1,9 @@
-{% for profile in site.data.profile %}{% assign profile = site.data.profile[0] %}{% endfor %}
 <section id="summary" class="content-section">
     <div class="container">
         <div class="col-lg-8 col-lg-offset-2">
             <h2>I am</h2>
             <ul class="list-unstyled">
-                {% for line in profile.summary %}
+                {% for line in site.data.profile.summary %}
                 <li>{{ line }}</li>{% endfor %}
             </ul>
         </div>

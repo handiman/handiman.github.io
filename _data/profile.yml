@@ -1,101 +1,100 @@
-- name: Henrik Becker
-  title: Software Engineer
-  birth_date: 1969-06-23
-  nationality: Swedish
+name: Henrik Becker
+title: Software Engineer
+birth_date: 1969-06-23
+nationality: Swedish
+url: http://www.henrikbecker.net
+company: Henrik Becker Consulting AB
+work_location: Stockholm
+works_for: 
+  name: Self Employed
   url: http://www.henrikbecker.net
-  company: Henrik Becker Consulting AB
-  work_location: Stockholm
-  works_for: 
-    name: Self Employed
-    url: http://www.henrikbecker.net
-  contact_info:
-   first_name: Henrik
-   last_name: Becker 
-   address:
-    street: Torsvikssvängen 12
-    city: Lidingö
-    postal_code: "18134"
-    country: Sweden
-    country_code: SE
-   phone: "+46734228343"
-   email: spam@henrikbecker.se
-  same_as:
-    - network: LinkedIn
-      url: https://www.linkedin.com/prettygoodprogrammer
-    - network: Wordpress
-      url: https://vacationbyexample.wordpress.com/
-  objective:
-  summary: 
-   - A senior full stack developer dedicated to building robust, maintainable and testable systems.
-   - A practitioner of Test Driven Development and agile processes.
-   - An expert in .Net development using C#.
-   - MSCD Web Applications.
-   - Self-educated with 18 years of working experience.
-   - Efficient and a fast learner.
-  skills:
-   languages:
-    - C#
-    - JavaScript
-    - HTML
-    - CSS
-    - VB.Net
-    - T-SQL
-    - XML
-    - XSLT
-   frameworks:
-    - Asp.Net MVC
-    - Asp.Net Web Api
-    - Asp.Net Web Forms
-    - jQuery
-    - KnockoutJS
-    - WCF
-   methods:	
-    - Test Driven Development
-    - Specification by Example
-    - Continuous Integration
-    - Scrum
-   tools:
-    - Visual Studio
-    - Git
-    - ReSharper
-    - TeamCity
-    - Octopus Deploy
-   databases:
-    - SQL Server
-    - MySql
-    - Oracle
-  languages:
-   - code: sv
-     name: Swedish
-     proficiency: Native
-   - code: en
-     name: English
-     proficiency: Fluent (IELTS overall score 8.5)
-  certifications:
-   - name: MSCD Web Applications
-     date: 2014-09-05
-     expires: 2016-09-05
-   - name: Certified Scrum Master
-     date: 2008-08-30
-  education:
-   - school: KomVux Lidingö
-     description: Municipal adult education
-     start_year: 1995
-     end_year: 1997
-   - school: Kulturama
-     description: Music
-     start_year: 1992
-     end_year: 1993
-  interests:
-   - name: Music
-     url: https://www.henrikbecker.se/music
-   - name: Playing Guitar
-     url: https://www.henrikbecker.se/music
-   - name: Motorcycling
-   - name: Australia
-   - name: Sicily
-   - name: Good food
-   - name: Reading
-   - name: Beer
-   - name: Travelling
-     url: https://vacationbyexample.wordpress.com
+contact_info:
+ first_name: Henrik
+ last_name: Becker 
+ address:
+  street: Torsvikssvängen 12
+  city: Lidingö
+  postal_code: "18134"
+  country: Sweden
+  country_code: SE
+ phone: "+46734228343"
+ email: spam@henrikbecker.se
+same_as:
+  - network: LinkedIn
+    url: https://www.linkedin.com/prettygoodprogrammer
+  - network: Wordpress
+    url: https://vacationbyexample.wordpress.com/
+summary: 
+  - A senior full stack developer dedicated to building robust, maintainable and testable systems.
+  - A practitioner of Test Driven Development and agile processes.
+  - An expert in .Net development using C#.
+  - MSCD Web Applications.
+  - Self-educated with 18 years of working experience.
+  - Efficient and a fast learner.
+skills:
+ languages:
+  - C#
+  - JavaScript
+  - HTML
+  - CSS
+  - VB.Net
+  - T-SQL
+  - XML
+  - XSLT
+ frameworks:
+  - Asp.Net MVC
+  - Asp.Net Web Api
+  - Asp.Net Web Forms
+  - jQuery
+  - KnockoutJS
+  - WCF
+ methods:	
+  - Test Driven Development
+  - Specification by Example
+  - Continuous Integration
+  - Scrum
+ tools:
+  - Visual Studio
+  - Git
+  - ReSharper
+  - TeamCity
+  - Octopus Deploy
+ databases:
+  - SQL Server
+  - MySql
+  - Oracle
+languages:
+ - code: sv
+   name: Swedish
+   proficiency: Native
+ - code: en
+   name: English
+   proficiency: Fluent (IELTS overall score 8.5)
+certifications:
+ - name: MSCD Web Applications
+   date: 2014-09-05
+   expires: 2016-09-05
+ - name: Certified Scrum Master
+   date: 2008-08-30
+education:
+ - school: KomVux Lidingö
+   description: Municipal adult education
+   start_year: 1995
+   end_year: 1997
+ - school: Kulturama
+   description: Music
+   start_year: 1992
+   end_year: 1993
+interests:
+ - name: Music
+   url: https://www.henrikbecker.se/music
+ - name: Playing Guitar
+   url: https://www.henrikbecker.se/music
+ - name: Motorcycling
+ - name: Australia
+ - name: Sicily
+ - name: Good food
+ - name: Reading
+ - name: Beer
+ - name: Travelling
+   url: https://vacationbyexample.wordpress.com
