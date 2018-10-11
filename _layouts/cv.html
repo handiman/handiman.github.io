@@ -13,33 +13,5 @@
 		{{ content }}
 		{% include footer.html %}
 		{% include scripts.html %}
-		<script>
-			/*!
-			 * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
-			 * Code licensed under the Apache License v2.0.
-			 * For details, see http://www.apache.org/licenses/LICENSE-2.0.
-			 */
-			(function($) {
-				"use strict";
-				function pageScroll(target) {
-					$('html, body').stop().animate({
-						scrollTop: $(target).offset().top
-					}, 1500, 'easeInOutExpo');
-				}
-
-				$("li.project").click(function (event) {
-					event.preventDefault();
-					pageScroll($(this).data("next"));
-				});
-
-				// jQuery for page scrolling feature - requires jQuery Easing plugin
-				$(function () {
-					$('a.page-scroll').bind('click', function (event) {
-						event.preventDefault();
-						pageScroll($(this).attr('href'));
-					});
-				});
-			})(jQuery);
-		</script>
 	</body>
 </html>

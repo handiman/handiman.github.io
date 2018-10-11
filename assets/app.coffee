@@ -38,3 +38,26 @@ $ ->
 	$(window).scroll(collapseNavbar);
 	$('.navbar-collapse ul li a').click(-> 
 		$(".navbar-collapse").collapse 'hide');
+
+#! Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+#  Code licensed under the Apache License v2.0.
+# For details, see http://www.apache.org/licenses/LICENSE-2.0.
+
+pageScroll = (target) ->
+	$('html, body').stop().animate({
+		scrollTop: $(target).offset().top
+	}, 1500, 'easeInOutExpo');
+
+$ ->
+	$("li.project").click((event) ->
+		event.preventDefault();
+		pageScroll($(this).data("next"));
+	);
+
+# jQuery for page scrolling feature - requires jQuery Easing plugin
+$ ->
+	$('a.page-scroll').bind('click', (event) ->
+		event.preventDefault();
+		pageScroll($(this).attr('href'));
+	);
+

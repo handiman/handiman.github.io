@@ -13,6 +13,10 @@ $secondary-background-color: #444;
 			width: 64px;
 		}
 	}
+	a, a:link, a:active, a:visited, a:hover {
+		text-decoration: none;
+		color: $primary-foreground-color;
+	}
 }
 
 .jumbotron {

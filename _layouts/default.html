@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="{% if page.lang %}{{ page.lang}}{% else %}en{% endif %}">
+{% assign description = page.description %}
+{% if include.description %}
+	{% assign description = include.description %}
+{% endif %}
+{% assign title = site.title %}
+{% if page.title %}
+	{% assign title = page.title %}
+{% endif %}
+<html lang="{% if page.lang %}{{ page.lang}}{% else %}en{% endif %}" prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
 	<head>
-		<title>{{ site.title }}</title>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="{{ '/style.css' | absolute_url }}" />
+		{% include ld.html %}
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="{{ description }}" />
+		<meta name="twitter.description" content="{{ description }}" />
+		<meta name="author" content="{{ site.author.name }}" />
+		<meta name="msapplication-config" content="/tile.config" />
+		<meta name="theme-color" content="#333333" />
+		<meta property="og:title" content="Henrik Becker - {% if page.title %}{{ page.title }}{% else %}Software Engineer{% endif %}" />
+		<meta property="og:locale" content="en_AU" />
+		<meta property="og:locale:alternate" content="sv_SE" />
+		<meta property="og:description" content="{{ page.description }}" />
+		<meta property="og:site_name" content="Henrik Becker Consulting AB" />
+		<meta property="og:url" content="{{ page.url | absolute_url }}" />
+		<title>{{ title }}</title>
+		<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+		<link rel="canonical" href="{{ page.url }}" />
+		<link rel="manifest" type="application/json" href="/manifest.json" />
+		<link rel="alternate" type="application/atom+xml" href="/atom.xml" title="ATOM Feed" />
+		<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS Feed" />
+		<link rel="alternate" type="application/json" href="/resume.json" title="JSON Resume" />
+		<link rel="alternate" type="text/vcard" href="/henrik.vcf" title="vCard" />
+		<link rel="alternate" type="application/xml" href="/henrik.xcard" title="xCard" />
+		<link rel="alternate" type="application/json" href="/henrik.jcard" title="jCard" />
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" />
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
+		<link rel="stylesheet" type="text/css" href="{{ '/assets/app.css' | absolute_url }}" />
+		{% include favicon.html %}
 	</head>
 	<body>
 		<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -37,8 +70,6 @@
 			<hr>
 			<p>&copy; {{ site.time | date: '%Y' }} Henrik Becker Consulting AB</p>
 		</footer>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<script src="/app.js"></script>
+		{% include scripts.html %}
 	</body>
 </html>
