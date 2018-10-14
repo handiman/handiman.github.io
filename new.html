@@ -5,11 +5,23 @@ title: Henrik Becker Consulting
 <ul class="list-unstyled usp">
 	{% for usp in site.usp %}
 	<li class="col-md-4">
-		{% if usp.link %}
-		<a href="{{ usp.link }}"><img src="{{ usp.icon }}" alt="{{ usp.title }}" />{{ usp }}</a>
-		{% else %}
-		<img src="{{ usp.icon }}" alt="{{ usp.title }}" />{{ usp }}
+		{% if usp.link %}<a href="{{ usp.link }}"><img src="{{ usp.icon }}" alt="{{ usp.title }}" />{{ usp }}</a>
+		{% else %}<img src="{{ usp.icon }}" alt="{{ usp.title }}" />{{ usp }}
 		{% endif %}
 	</li>
 	{% endfor %}
 </ul>
+
+<section class="recommendations">
+	{% for recommendation in site.recommendations %}
+	<blockquote class="col-md-6">
+		{{ recommendation }}
+		<small align="right">
+		{% if recommendation.link %}<a href="{{ recommendation.link }}">{{ recommendation.name }}</a>
+		{% else %}{{ recommendation.name }}
+		{% endif %}
+		</small>
+	</blockquote>
+	{% endfor %}
+</section>
+	
