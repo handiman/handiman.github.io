@@ -2,18 +2,23 @@
 layout: start
 title: Henrik Becker Consulting
 ---
-<ul class="list-unstyled usp">
-	{% for usp in site.usp %}
-	<li class="col-md-4">
-		<h2>{{ usp.title }}</h2>
-		{% if usp.link %}
-		{% else %}<img src="{{ usp.icon }}" alt="{{ usp.title }}" />{{ usp }}
-		{% endif %}
-	</li>
-	{% endfor %}
-</ul>
+
+<section class="usp">
+	<h2>What I do</h2>
+	<ul class="list-unstyled">
+		{% for usp in site.usp %}
+		<li class="col-md-4">
+			<h2>{{ usp.title }}</h2>
+			{% if usp.link %}
+			{% else %}<img src="{{ usp.icon }}" alt="{{ usp.title }}" />{{ usp }}
+			{% endif %}
+		</li>
+		{% endfor %}
+	</ul>
+</section>
 
 <section class="recommendations">
+	<h2>What do people have to say about me?</h2>
 	{% for recommendation in site.recommendations %}
 	<blockquote class="col-md-6">
 		{{ recommendation }}

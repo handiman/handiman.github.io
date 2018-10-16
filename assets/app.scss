@@ -31,3 +31,17 @@ body {
 	background-color:$primary-background-color;
 	color:$primary-foreground-color;
 }
+
+blockquote {
+	border:none;
+}
+blockquote:before {
+	content: "\f10d";
+    display: block;
+    font: normal normal normal 30px/1 FontAwesome;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .3;
+}
