@@ -1,5 +1,5 @@
 ---
-title: Octopus Deploy
+title: CD
 icon: /img/Logo-Blue_140px_rgb.png
 ---
-It's a Windows System... I know this!
+Continuous Deployment... I know this!

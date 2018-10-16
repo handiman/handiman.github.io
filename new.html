@@ -5,6 +5,7 @@ title: Henrik Becker Consulting
 <ul class="list-unstyled usp">
 	{% for usp in site.usp %}
 	<li class="col-md-4">
+		<h2>{{ usp.title }}</h2>
 		{% if usp.link %}
 		<a href="{{ usp.link }}"><img src="{{ usp.icon }}" alt="{{ usp.title }}" />{{ usp }}</a>
 		{% else %}
