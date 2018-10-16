@@ -2,15 +2,23 @@
 ---
 @import "bootstrap-sprockets";
 @import "bootstrap";
+/*@import "font-awesome";*/
+@import "full-width-pics";
+@import "variables";
 
-$primary-background-color: #222;
-$primary-foreground-color: #FFF;
-$secondary-background-color: #444;
+$primary-foreground-color: $primary;
+$primary-background-color: $color-primary-4;
 
-.usp, .recommendations {
-	li {
+.navbar {
+	text-transform: uppercase;
+}
+
+.usp, .recommendations, .links {
+	div {
+		text-align:center;
 		img {
-			width: 64px;
+			height: 64px;
+			margin-bottom: 15px;
 		}
 	}
 	a, a:link, a:active, a:visited, a:hover {
@@ -19,29 +27,86 @@ $secondary-background-color: #444;
 	}
 }
 
-.jumbotron {
+header {
+	h1:first-of-type {
+		font-size:4em;
+		padding-top:80px;
+		padding-bottom:50px;
+	}
+}
+
+.links {
+	background-color: $color-primary-3;
+	.fa, .fab {
+		display:block;
+		margin-bottom: 15px;
+	}
+}
+
+.image-bg-fluid-height {
+	&:nth-of-type(1) {	
+		background-image:url('/img/horizon-4.jpg');
+	}
+}
+
+.image-bg-fixed-height {
+	&:nth-of-type(1){
+		background-image:url('/img/hat-head.jpg');
+	}
+	&:nth-of-type(2) {
+		background-image:url('/img/horizon-4.jpg');
+	}
+}
+
+.recommendations {
+		background-color:$recommendations;
+}
+
+.contact {
+	background-color:$contact;
+	/*button {
+		background-color:$green;
+	}*/
+}
+
+footer {
+	text-align:center;
+}
+
+/*.jumbotron {
 	@media screen {
 		padding-top:50px;
 		padding-bottom:20px;
 	}
 	background-color:$secondary-background-color;
-}
+}*/
 
 body {
 	background-color:$primary-background-color;
 	color:$primary-foreground-color;
 }
 
+section {
+	h1, h2 {
+		text-align:center;	
+	}
+}
+
 blockquote {
 	border:none;
+	p {
+		padding-left:20px;
+	}
+	p:before {
+		content: '\201D'; /*\201D*/ /*'\f10d';*/
+		display: block;
+		font-size:90px;	
+		/*font: normal normal normal 30px/1 FontAwesome;*/
+		line-height: 1;
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: .3;
+	}
 }
-blockquote:before {
-	content: "\f10d";
-    display: block;
-    font: normal normal normal 30px/1 FontAwesome;
-    line-height: 1;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: .3;
-}
+	

@@ -1,0 +1,4 @@
+{% if page.link %}<a href="{{ page.link }}">{% endif %}
+{% if page.icon %}<img src="{{ page.icon }}" />{% endif %}
+<h2>{{ page.title }}</h2>{{ content }}
+{% if page.link %}</a>{% endif %}

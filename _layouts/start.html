@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+
+{% comment %}
 <header class="jumbotron">
 	<div class="container">
 		<h1>{{ page.title }}{% if page.tagline %} - {{ page.tagline }}{% endif %}</h1>
@@ -8,7 +10,7 @@ layout: default
 		<p></p>
 	</div>
 </header>
-<article class="container">
-	{{ content }}
-</article>
+{% endcomment %}
+
+{{ content }}
 

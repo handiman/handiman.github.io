@@ -1,5 +1,7 @@
 title: Henrik Becker - Software Engineer
 repository: handiman/handiman.github.io
+production_url: https://www.henrikbecker.net
+
 author:
   name: Henrik Becker
   email: 
@@ -32,16 +34,6 @@ highlighter: rouge
 
 sass: 
   style: compressed
-    
-# The production_url is only used when full-domain names are needed
-# such as sitemap.txt 
-# Most places will/should use BASE_PATH to make the urls
-#
-# If you have set a CNAME (pages.github.com) set your custom domain here.
-# Else if you are pushing to username.github.io, replace with your username.
-# Finally if you are pushing to a GitHub project page, include the project name at the end.
-#
-production_url: http://www.henrikbecker.net
 
 collections_dir: _collections
 collections:
@@ -66,3 +58,8 @@ defaults:
     path: "*.md"
    values: 
     layout: "default"
+ - scope:
+    path: ""
+    type: "usp"
+   values:
+    layout: "usp"

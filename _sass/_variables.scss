@@ -18,12 +18,14 @@ $posts-background-color: $background-color; //#808080;
 
 // As hex codes */
 
+$green: #75a434;
 $color-primary-0: #595959;	// Main Primary color */
 $color-primary-1: #929292;
 $color-primary-2: #737373;
 $color-primary-3: #3D3D3D;
 $color-primary-4: #191A1A;
-$color-primary-5: #75a434; //#43427c;
+$color-primary-5: $green; //#43427c;
+
 
 // As RGBa codes */
 
@@ -43,7 +45,7 @@ $skills: $color-primary-4;
 $projects: $color-primary-3;
 $recommendations: $color-primary-2;
 $languages: $color-primary-1;
-$interests: $color-primary-5;
+$interests: $green;
 $employment: $color-primary-2;
 $education: $color-primary-3;
 $contact: $color-primary-4;
