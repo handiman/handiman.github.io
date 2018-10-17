@@ -90,13 +90,21 @@ education:
 interests:
  - name: Music
    url: https://www.henrikbecker.se/music
+   fa: fas fa-headphones
  - name: Playing Guitar
    url: https://www.henrikbecker.se/music
+   fa: fas fa-guitar
  - name: Motorcycling
- - name: Australia
- - name: Sicily
- - name: Good food
- - name: Reading
- - name: Beer
+   fa: fa fa-motorcycle
  - name: Travelling
    url: https://vacationbyexample.wordpress.com
+   fa: fas fa-globe-asia
+ - name: Good food
+   fa: fas fa-utensils
+ - name: Reading
+   fa: fa fa-book
+ - name: Beer
+   fa: fa fa-beer
+ - name: Cats
+   fa: fa fa-paw
+ 

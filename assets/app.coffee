@@ -49,15 +49,12 @@ pageScroll = (target) ->
 	}, 1500, 'easeInOutExpo');
 
 $ ->
-	$("li.project").click((event) ->
-		event.preventDefault();
+	$("li.project").click((e) ->
+		e.preventDefault();
 		pageScroll($(this).data("next"));
 	);
-
-# jQuery for page scrolling feature - requires jQuery Easing plugin
-$ ->
-	$('a.page-scroll').bind('click', (event) ->
-		event.preventDefault();
+	$("a.page-scroll").click((e) ->
+		e.preventDefault();
 		pageScroll($(this).attr('href'));
 	);
-
+	return;

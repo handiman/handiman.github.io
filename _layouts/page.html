@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="{% if page.lang %}{{ page.lang}}{% else %}en{% endif %}">
-	<head>
-		{% include head.html %}
-		<link rel="stylesheet" type="text/css" href="{{ '/assets/page.css' | absolute_url }}" />
-	</head>
-	<body class="page">
-		{% include navigation.html %}
-		<div class="container" role="main">
-			<h1 class="page-header">{{ page.title }} {% if page.tagline %} - {{ page.tagline }}{% endif %}</h1>
-			{{ content }}
-		</div>
-		{% include footer.html %}
-		{% include scripts.html %}
-	</body>
-</html>
+---
+layout: default
+---
+{{ content }}

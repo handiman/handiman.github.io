@@ -1,4 +1,7 @@
-{% if page.link %}<a href="{{ page.link }}">{% endif %}
-{% if page.icon %}<img src="{{ page.icon }}" />{% endif %}
-<h2>{{ page.title }}</h2>{{ content }}
-{% if page.link %}</a>{% endif %}
+{% if page.fontawesome %}
+<i class="{{ page.fontawesome }} fa-4x"></i>
+{% else if page.icon %}
+<img src="{{ page.icon }}" />
+{% endif %}
+<h2>{{ page.title }}</h2>
+{% if page.description %}<p>{{ page.description }}</p>{% endif %}
