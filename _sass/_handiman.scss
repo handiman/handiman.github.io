@@ -6,6 +6,7 @@
 
 $primary-foreground-color: $primary;
 $primary-background-color: $color-primary-4;
+$bottom-margin-adjustment-for-small-screens : 14px;
 
 body {
 	width: 100%;
@@ -71,7 +72,15 @@ header {
 header {
 	h1:first-of-type {
 		font-size:4em;
-		padding-top:80px;
+		padding-top:40px;
+		padding-bottom:70px;
+	}
+}
+
+aside:last-of-type {
+	h1 {
+		font-size:4em;
+		padding-top:190px;
 		padding-bottom:50px;
 	}
 }
@@ -185,3 +194,20 @@ body.page, body.post {
     }
 }
 
+div.usp, div.link { 
+		@media(max-width:767px) {
+			padding-top: $bottom-margin-adjustment-for-small-screens;
+			padding-bottom: $bottom-margin-adjustment-for-small-screens;
+		}
+	
+}
+
+#contact-form.section-paragraph {
+	@media(min-width:767px) {
+		padding-left:124px;
+		padding-right:124px;
+	}
+	.form-control {
+		margin-bottom: $bottom-margin-adjustment-for-small-screens;
+	}
+}

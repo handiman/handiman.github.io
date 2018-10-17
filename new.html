@@ -20,7 +20,7 @@ title: Henrik Becker Consulting
 				{% endcomment %}
 				<p class="section-paragraph">
 					{% for usp in site.usp  limit:3 %}
-					<div class="col-sm-4">
+					<div class="col-md-4 usp">
 						{{ usp }}
 					</div>
 					{% endfor %}
@@ -37,7 +37,7 @@ title: Henrik Becker Consulting
 		<div class="row">
 			<div class="col-lg-12">
 				<h2 class="section-heading">What do people have to say about me?</h2>
-				<p class="section-paragraph">
+				<p class="section-paragraph row">
 					{% for recommendation in site.recommendations %}
 					<blockquote class="col-md-6">
 						{{ recommendation }}
@@ -59,20 +59,20 @@ title: Henrik Becker Consulting
 		<div class="row">	
 			<div class="col-lg-12">
 				<h2 class="section-heading">Sound good so far?</h2>
-				<p class="section-paragraph">
-					<div class="col-md-4">
-							<a href="/cv">
-								<i class="fa fa-file-alt fa-4x"></i>
-								Read my full CV
-							</a>
+				<p class="section-paragraph row">
+					<div class="col-md-4 link">
+						<a href="/cv">
+							<i class="fa fa-file-alt fa-4x"></i>
+							Read my full CV
+						</a>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 link">
 						<a href="#contact">
 							<i class="fa fa-envelope fa-4x"></i>
 							Contact me using the form below
 						</a>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 link">
 						<a href="https://www.linkedin.com/in/prettygoodprogrammer">
 							<i class="fab fa-linkedin fa-4x"></i>
 							Or look me up on LinkedIn
@@ -89,22 +89,20 @@ title: Henrik Becker Consulting
 		<div class="row">
 			<div class="col-lg-12">
 				<!--<h2 class="section-heading">Would you like to get in touch?</h2>-->
-				<form class="section-paragraph" id="contact-form">
+				<form class="section-paragraph row" id="contact-form">
 					<input type="hidden" id="ip" />
 					<input type="hidden" id="subject" value="Contact Form" />
-					<div class="row">
-						<div class="col-md-6">
-							<input class="form-control" id="from-name" placeholder="Your name" />
-						</div>
-						<div class="col-md-6">
-							<input class="form-control" id="from" placeholder="Your e-mail address" />
-						</div>
-						<div class="col-md-12">
-							<textarea class="form-control" id="message" style="height: 200px;" placeholder="Message"></textarea>
-						</div>
-						<div class="col-md-4"><button class="btn btn-default btn-lg" type="submit">Send</button></div>
-						<div id="status" class="col-md-8 text-right"></div>
+					<div class="col-md-6">
+						<input class="form-control" id="from-name" placeholder="Your name" />
 					</div>
+					<div class="col-md-6">
+						<input class="form-control" id="from" placeholder="Your e-mail address" />
+					</div>
+					<div class="col-md-12">
+						<textarea class="form-control" id="message" style="height: 200px;" placeholder="Message"></textarea>
+					</div>
+					<div class="col-md-4"><button class="btn btn-default btn-lg" type="submit">Send</button></div>
+					<div id="status" class="col-md-8 text-right"></div>
 				</form>
 			</div>
 		</div>
@@ -112,4 +110,6 @@ title: Henrik Becker Consulting
 </section>
 	
 
-<aside class="image-bg-fixed-height"></aside>
+<aside class="image-bg-fixed-height">
+	<h1>Thanks for visiting!</h1>
+</aside>
