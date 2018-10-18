@@ -176,6 +176,9 @@ blockquote {
 	}
 }
 
+div.link, div.usp, blockquote p, #contact.form {
+	font-size:1.2em;
+}
 
 body.page, body.post {
     background-color: $posts-background-color !important;
