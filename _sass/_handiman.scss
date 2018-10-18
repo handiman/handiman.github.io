@@ -123,7 +123,8 @@ aside:last-of-type {
 
 .image-bg-fluid-height {
 	&:nth-of-type(1) {	
-		background-image:url('/img/horizon-4.jpg');
+		/*background-image:url('/img/horizon-4.jpg');*/
+		background-image:url($intro-background-image);
 	}
 }
 
@@ -246,6 +247,9 @@ section.usp {
 }
 
 body {
+	/*background-image:url('/img/paisley-1.jpg');*/
+	background-repeat:repeat-x;
+	background-position:center;
 	/*'Montserrat', */
 	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size:14px;
