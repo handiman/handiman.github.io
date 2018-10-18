@@ -16,7 +16,6 @@ contactFormSuccess = ->
 	
 contactFormError = (a, b, c) ->
 	$("#contact-form #status").html(c).show();
-	console.error c
 
 submitContactForm = (e) ->
 	e.preventDefault()

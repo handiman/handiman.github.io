@@ -53,11 +53,11 @@ defaults:
  - scope: 
     path: "*.html"
    values: 
-    layout: "default"
+    layout: "page"
  - scope: 
     path: "*.md"
    values: 
-    layout: "default"
+    layout: "page"
  - scope:
     path: ""
     type: "usp"
