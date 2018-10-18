@@ -36,11 +36,11 @@ section h2 {
 }
 
 #recommendations, #scroll-to-recommendations, #scroll-to-contact a.btn {
-    background-color: $recommendations;
+    background-color: $skills;
 }
 
 #contact, #scroll-to-contact {
-    background-color: $contact;
+    background-color: $summary;
 }
 
 
@@ -149,6 +149,9 @@ a {
     padding-bottom: 25px;
 }
 
+.content-section[data-next], header.intro {
+	cursor:pointer;
+}
 
 @media(min-width:767px) {
     .content-section {
@@ -178,28 +181,7 @@ a {
 }
 }
 
-.btn {
-    text-transform: uppercase;
-    font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    /*border-radius: 0;*/
-}
 
-.btn-default {
-    border: 1px solid $primary;
-    color: $primary;
-    background-color: transparent;
-    &:hover,
-    &:focus {
-        border: 1px solid $primary;
-        outline: none;
-        color: $background-color;
-        background-color: $primary;
-    }
-}
 
 ul.banner-social-buttons {
     margin-top: 0;
@@ -218,12 +200,13 @@ ul.banner-social-buttons {
     }
 }
 
+/*
 footer {
     padding: 50px 0;
     p {
         margin: 0;
     }
-}
+}*/
 
 ::-moz-selection {
     text-shadow: none;
@@ -250,11 +233,6 @@ body {
 }
 
 
-@media(min-width:767px) {
-    .section-scroll {
-        padding-top: 0;
-    }
-}
 
 .section-scroll {
     padding-top: 0;
@@ -276,9 +254,12 @@ body {
     }
 }
 
+/*
 .btn-lg, .form-control {
-    /*border-radius: 15px !important;*/
+    border-radius: 15px !important;
 }
+
+*/
 
 .section-scroll a.btn {
     padding: 0 15px;

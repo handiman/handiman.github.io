@@ -5,26 +5,30 @@ collapseNavbar = ->
 		$(".navbar-fixed-top").addClass "top-nav-collapse" 
 	else 
 		$(".navbar-fixed-top").removeClass "top-nav-collapse"
-
-contactFormError = (a, b, c) ->
-	$("#contact-form #status").html(c).show();
 	
 hideContactForm = ->
 	$("#contact-form #status").fadeOut();
 
 contactFormSuccess = ->
-	$("#contact-form #from, #contact-form #message").val("");
+	$("#contact-form input, #contact-form textarea").val("");
 	$("#contact-form #status").html("Message sent!").show();
 	window.setTimeout(hideContactForm, 3000);
+	
+contactFormError = (a, b, c) ->
+	$("#contact-form #status").html(c).show();
+	console.error c
 
 submitContactForm = (e) ->
-	e.preventDefault();
-	$.post('https://www.henrikbecker.se/api/command', {
-		subject: "Contact Form",
-		from: $("#contact-form #from").val(),
-		ipAddress: $("#contact-form #ip").val(),
-		message: $("#contact-form #message").val()
-	}).fail(contactFormError).done(contactFormSuccess);
+	e.preventDefault()
+	form = $(e.target);
+	fromAddress = $("#from", form).val()
+	fromName = $("#from-name", form).val() or fromAddress
+	command = 
+		"subject": "Contact Form",
+		"from": fromName + " <" + fromAddress + ">",
+		"ipAddress": $("#contact-form #ip").val(),
+		"message": $("#contact-form #message").val()
+	$.post('https://www.henrikbecker.se/api/command', command).done(contactFormSuccess).fail(contactFormError);
 	return false;
 
 setupContactForm = ->
@@ -39,22 +43,20 @@ $ ->
 	$('.navbar-collapse ul li a').click(-> 
 		$(".navbar-collapse").collapse 'hide');
 
-#! Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
-#  Code licensed under the Apache License v2.0.
-# For details, see http://www.apache.org/licenses/LICENSE-2.0.
-
 pageScroll = (target) ->
 	$('html, body').stop().animate({
 		scrollTop: $(target).offset().top
 	}, 1500, 'easeInOutExpo');
 
 $ ->
-	$("li.project").click((e) ->
+	$("li.project, section.content-section[data-next], header.intro").click((e) ->
 		e.preventDefault();
 		pageScroll($(this).data("next"));
 	);
 	$("a.page-scroll").click((e) ->
 		e.preventDefault();
-		pageScroll($(this).attr('href'));
+		pageScroll($(this).attr("href"));
 	);
-	return;
+	$("a").click((e) ->
+		e.stopPropagation();
+	);

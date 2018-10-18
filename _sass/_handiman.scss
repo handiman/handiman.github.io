@@ -22,6 +22,29 @@ html {
     height: 100%;
 }
 
+.btn {
+    text-transform: uppercase;
+    font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    /*border-radius: 0;*/
+}
+
+.btn-default {
+    border: 1px solid $primary;
+    color: $primary;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+        border: 1px solid $primary;
+        outline: none;
+        color: $background-color;
+        background-color: $primary;
+    }
+}
+
 h1,
 h2,
 h3,
