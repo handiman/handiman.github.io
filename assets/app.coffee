@@ -45,7 +45,7 @@ $ ->
 
 pageScroll = (target) ->
 	$('html, body').stop().animate({
-		scrollTop: $(target).offset().top();
+		scrollTop: $(target).offset().top
 	}, 1500, 'easeInOutExpo');
 
 $ ->
