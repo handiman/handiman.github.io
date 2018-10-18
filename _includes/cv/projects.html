@@ -6,7 +6,7 @@
                 {% for project in site.projects reversed %}
                     {% assign start_date = (project.start_date | date: "%b %Y") %}
                     {% assign end_date = (project.end_date | date: "%b %Y") %}
-                    <li class="project" id="project{{ forloop.index0 }}" data-next="#{% if forloop.last %}languages{% else %}project{{ forloop.index }}{% endif %}">
+                    <li class="project" id="project-{{ forloop.index0 }}" data-next="#{% if forloop.last %}languages{% else %}project{-{ forloop.index }}{% endif %}">
 					
                         <h3>{{ project.title }}</h3>
                         <div class="project">
