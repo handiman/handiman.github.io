@@ -24,10 +24,10 @@ submitContactForm = (e) ->
 	fromAddress = $("#from", form).val()
 	fromName = $("#from-name", form).val() or fromAddress
 	command = 
-		"subject": "Contact Form",
-		"from": fromName + " <" + fromAddress + ">",
-		"ipAddress": $("#contact-form #ip").val(),
-		"message": $("#contact-form #message").val()
+		subject: "Contact Form",
+		from: fromName + " <" + fromAddress + ">",
+		ipAddress: $("#contact-form #ip").val(),
+		message: $("#contact-form #message").val()
 	$.post('https://www.henrikbecker.se/api/command', command).done(contactFormSuccess).fail(contactFormError);
 	return false;
 
