@@ -59,3 +59,31 @@ $ ->
 	$("a").click((e) ->
 		e.stopPropagation();
 	);
+
+
+ko.applyBindings(new (->
+	that = this
+	that.deploymentIsSlow = ko.observable(false)
+	that.deploymentIsManual = ko.observable(false)
+	that.deploymentIsScary = ko.observable(false)
+	that.testingIsManual = ko.observable(false)
+	that.testsFailIntermittently = ko.observable(false)
+	that.testsAreHardToUnderstand = ko.observable(false)
+	that.testsGivePoorFeedback = ko.observable(false)
+	that.showResults = ko.observable(false)
+	that.showForm = ko.observable(true)
+	that.submit = ->
+		that.showResults(true)
+		that.showForm(false)
+	that.goodMatch = ko.computed(->
+		that.deploymentIsSlow() || 
+		that.deploymentIsManual() || 
+		that.deploymentIsScary() || 
+		that.testingIsManual() || 
+		that.testsFailIntermittently() ||
+		that.testsAreHardToUnderstand() || 
+		that.testsGivePoorFeedback();
+	)
+	that.poorMatch = ko.computed(-> !that.goodMatch())
+	return that
+));

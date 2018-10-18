@@ -224,16 +224,19 @@ body.page, body.post {
 }
 
 div.usp, div.link { 
-		@media(max-width:767px) {
+		@media(max-width:992px) {
 			padding-top: $bottom-margin-adjustment-for-small-screens;
 			padding-bottom: $bottom-margin-adjustment-for-small-screens;
 		}
 	
 }
 
+section.usp {
+	background-color:$green;
+}
 
 #contact-form.section-paragraph {
-	@media(min-width:767px) {
+	@media(min-width:992px) {
 		padding-left:124px;
 		padding-right:124px;
 	}
