@@ -23,7 +23,7 @@ submitContactForm = (e) ->
 		name: $("#from-name", form).val(),
 		address: $("#ip", form).val()
 		message: $("#message", form).val()
-	$.post('https://www.henrikbecker.se/api/mail', command).done(onsuccess).fail(onerror);
+	$.post('https://www.henrikbecker.se/api/contact-form', command).done(onsuccess).fail(onerror);
 	return false;
 
 setupContactForm = ->
