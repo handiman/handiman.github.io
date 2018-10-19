@@ -21,7 +21,7 @@ submitContactForm = (e) ->
 		subject: "Contact Form"
 		from: $("#from", form).val()
 		name: $("#from-name", form).val(),
-		ipAddress: $("#ip", form).val()
+		address: $("#ip", form).val()
 		message: $("#message", form).val()
 	$.post('https://www.henrikbecker.se/api/mail', command).done(onsuccess).fail(onerror);
 	return false;
