@@ -11,7 +11,7 @@ submitContactForm = (e) ->
 	form = $(e.target);
 	hide = -> 
 		$("#status", form).fadeOut();
-	onsuccess ->
+	onsuccess = ->
 		$("input, textarea", form).val("");
 		$("#status", form).html("Message sent!").show();
 		window.setTimeout(hide, 3000);
