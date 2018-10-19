@@ -85,7 +85,7 @@ header {
 	div {
 		text-align:center;
 		img {
-			height: 14px * 4; /*font-awesome icons are 14px by default and we use fa-4x on the site so this gives the same size as the font-awesome icons.*/
+			height: 67px; /* We use fa-4x on the site so this gives the same size as the font-awesome icons. font-awesome icons are 14px by default. */
 		}
 	}
 	a, a:link, a:active, a:visited, a:hover {
@@ -202,7 +202,7 @@ blockquote {
 	}
 }
 
-div.link, blockquote p, #contact.form {
+div.link, div.usp, #contact.form {
 	font-size:1.2em;
 }
 

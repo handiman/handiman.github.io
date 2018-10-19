@@ -5,29 +5,25 @@ collapseNavbar = ->
 		$(".navbar-fixed-top").addClass "top-nav-collapse" 
 	else 
 		$(".navbar-fixed-top").removeClass "top-nav-collapse"
-	
-hideContactForm = ->
-	$("#contact-form #status").fadeOut();
-
-contactFormSuccess = ->
-	$("#contact-form input, #contact-form textarea").val("");
-	$("#contact-form #status").html("Message sent!").show();
-	window.setTimeout(hideContactForm, 3000);
-	
-contactFormError = (a, b, c) ->
-	$("#contact-form #status").html(c).show();
 
 submitContactForm = (e) ->
 	e.preventDefault()
 	form = $(e.target);
-	fromAddress = $("#from", form).val()
-	fromName = $("#from-name", form).val() or fromAddress
+	hide = -> 
+		$("#status", form).fadeOut();
+	onsuccess ->
+		$("input, textarea", form).val("");
+		$("#status", form).html("Message sent!").show();
+		window.setTimeout(hide, 3000);
+	onerror = (a, b, c) -> 
+		$("#status", form).html(c).show();
 	command = 
-		subject: "Contact Form",
-		from: fromName + " <" + fromAddress + ">",
-		ipAddress: $("#contact-form #ip").val(),
-		message: $("#contact-form #message").val()
-	$.post('https://www.henrikbecker.se/api/command', command).done(contactFormSuccess).fail(contactFormError);
+		subject: "Contact Form"
+		from: $("#from", form).val()
+		name: $("#from-name", form).val(),
+		ipAddress: $("#ip", form).val()
+		message: $("#message", form).val()
+	$.post('https://www.henrikbecker.se/api/mail', command).done(onsuccess).fail(onerror);
 	return false;
 
 setupContactForm = ->
