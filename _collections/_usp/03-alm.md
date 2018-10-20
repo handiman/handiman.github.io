@@ -4,5 +4,5 @@ icon: /img/Logo-White_140px.png
 ---
 Is your deployment slow? Error prone? Undocumented? Person dependent?
 
-Let me help you automate your deployment process.
-I have several years of experience doing just that using Octopus Deploy.
+I can help you save time and avoid headache - possibly even make you sleep better - by automating your deployment process. 
+I have several years of experience doing this using Octopus Deploy.
