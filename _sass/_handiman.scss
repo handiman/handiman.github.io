@@ -145,6 +145,7 @@ header {
 
 aside:last-of-type {
 	h1 {
+		margin-top:0px;
 		font-size:4em;
 		padding-top:190px;
 		padding-bottom:50px;
@@ -276,7 +277,7 @@ section.usp {
 	background-color:$skills;
 }
 
-#contact-form.section-paragraph {
+.contact-form.section-paragraph {
 	@media(min-width:992px) {
 		padding-left:124px;
 		padding-right:124px;
