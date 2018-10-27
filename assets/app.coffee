@@ -5,7 +5,7 @@ setupContactForms = ->
 		e.preventDefault()
 		form = $(e.target);
 		hide = -> 
-			$(".status", form).fadeOut()
+			$(".status", form).html("")
 		onsuccess = ->
 			$("input, textarea", form).val("");
 			$(".status", form).html("Message sent!").show();
