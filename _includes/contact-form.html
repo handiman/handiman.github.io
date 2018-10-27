@@ -1,17 +1,17 @@
-<form id="contact-form" >
-	<input type="hidden" id="ip" />
-	<input type="hidden" id="subject" value="Contact Form" />
+<form class="contact-form" >
+	<input type="hidden" name="ip" />
+	<input type="hidden" name="subject" value="Contact Form" />
 	<div class="form-group">
-		<input class="form-control" id="from-name" placeholder="Your name" />
+		<input class="form-control" name="from-name" placeholder="Your name" />
 	</div>
 	<div class="form-group">
-		<input class="form-control" id="from" placeholder="Your e-mail address" />
+		<input class="form-control" name="from" placeholder="Your e-mail address" />
 	</div>
 	<div class="form-group">
-		<textarea class="form-control" id="message" style="height: 200px;" placeholder="Message"></textarea>
+		<textarea class="form-control" name="message" placeholder="Message"></textarea>
 	</div>
 	<div class="row">
 		<div class="col-md-4"><button class="btn btn-default btn-lg" type="submit">Send</button></div>
-		<div id="status" class="col-md-8 text-right"></div>
+		<div class="col-md-8 text-right status"></div>
 	</div>
 </form>

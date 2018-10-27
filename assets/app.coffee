@@ -1,49 +1,37 @@
 ---
 ---
-collapseNavbar = -> 
-	if $(".navbar").offset().top > 50
-		$(".navbar-fixed-top").addClass "top-nav-collapse" 
-	else 
-		$(".navbar-fixed-top").removeClass "top-nav-collapse"
-
 submitContactForm = (e) ->
 	e.preventDefault()
 	form = $(e.target);
 	hide = -> 
-		$("#status", form).fadeOut();
+		$(".status", form).fadeOut();
 	onsuccess = ->
 		$("input, textarea", form).val("");
-		$("#status", form).html("Message sent!").show();
+		$(".status", form).html("Message sent!").show();
 		window.setTimeout(hide, 3000);
 	onerror = (a, b, c) -> 
-		$("#status", form).html(c).show();
+		$(".status", form).html(c).show();
 	command = 
 		subject: "Contact Form"
-		from: $("#from", form).val()
-		name: $("#from-name", form).val(),
-		address: $("#ip", form).val()
-		message: $("#message", form).val()
+		from: $("input[name='from']", form).val()
+		name: $("input[name='from-name']", form).val(),
+		address: $("input[name='ip']", form).val()
+		message: $("textarea[name='message']", form).val()
 	$.post('https://www.henrikbecker.se/api/contact-form', command).done(onsuccess).fail(onerror);
 	return false;
 
-setupContactForm = ->
-	if $("#contact-form").length
-		$.get('https://www.henrikbecker.se/api/ip').done((ip) -> $("#contact-form #ip").val(ip));
-		$("#contact-form").submit(submitContactForm);
+setupContactForms = ->
+	if $(".contact-form").length
+		$.get('https://www.henrikbecker.se/api/ip').done((ip) -> $(".contact-form input[name='ip']").val(ip));
+		$(".contact-form").submit(submitContactForm);
 		
-$ -> 
-    setupContactForm();		
-	collapseNavbar();
-	$(window).scroll(collapseNavbar);
-	$('.navbar-collapse ul li a').click(-> 
-		$(".navbar-collapse").collapse 'hide');
-
 pageScroll = (target) ->
 	$('html, body').stop().animate({
 		scrollTop: $(target).offset().top
 	}, 1500, 'easeInOutExpo');
 
 $ ->
+	setupContactForms();		
 	$("li.project, section.content-section[data-next], header.intro").click((e) ->
 		e.preventDefault();
 		pageScroll($(this).data("next"));
@@ -55,7 +43,6 @@ $ ->
 	$("a").click((e) ->
 		e.stopPropagation();
 	);
-
 
 ko.applyBindings(new (->
 	that = this

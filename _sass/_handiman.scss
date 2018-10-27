@@ -16,7 +16,9 @@ body {
 	background-color: $primary-background-color;
 }
 
-
+textarea[name='message'] {
+	height:200px;
+}
 
 html {
     width: 100%;
