@@ -15,21 +15,49 @@
                     <a href="/cv">CV</a>
                 </li>
                 <li>
-                    <a href="#contact" class="page-scroll">Contact</a>
+                    <a href="#modal-contact-form" data-toggle="modal" data-backdrop="true">Contact</a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/prettygoodprogrammer" class="btn-lg"><i class="fab fa-linkedin-in"></i></a>
                 </li>
 			</ul>
-			{% comment %}<form class="navbar-form navbar-right">
-				<div class="form-group">
-					<input type="text" placeholder="Email" class="form-control">
-				</div>
-				<div class="form-group">
-					<input type="password" placeholder="Password" class="form-control">
-				</div>
-				<button type="submit" class="btn btn-success">Sign in</button>
-			</form>{% endcomment %}
 		</div>
 	</div>
 </nav>
+
+<div id="modal-contact-form" class="modal fade" role="dialog">
+	<div class="modal-dialog" role="document">
+		<form class="modal-content contact-form">
+			<input type="hidden" name="ip" />
+			<input type="hidden" name="subject" value="Contact Form" />
+			<div class="modal-header">
+				<div class="col-md-11">
+					<h3 class="modal-title">Would you like to get in touch?</h3>
+				</div>
+				<div class="col-md-1">
+					<button type="button" class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+					<input class="form-control" name="from-name" placeholder="Your name" />
+				</div>
+				<div class="form-group">
+					<input class="form-control" name="from" placeholder="Your e-mail address" />
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" name="message" placeholder="Message"></textarea>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="col-md-6 status text-left"></div>
+				<div class="col-md-6">
+					<button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Close</button>
+					<button type="submit" class="btn btn-default btn-lg" >Send</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

@@ -48,6 +48,45 @@ html {
     }
 }
 
+.modal-header {
+	div.col-md-1 {
+		padding-top:7px;
+	}
+}
+.modal-content {
+	background-color:$projects;
+	
+}
+.modal-dialog {
+	color: $primary;
+	button {
+		color: $primary;
+		span {
+			color: $primary;
+		}
+	}
+}
+.modal-footer {
+	.status {
+		padding-top:12px;
+	}
+}
+
+.btn-default {
+	background-color:$recommendations;
+	&:hover, &:focus {
+		color: $primary;
+		background-color:$green;
+	}
+}
+.btn-secondary {
+	background-color:$projects;
+	&:hover, &:focus {
+		color: $primary;
+		background-color:$projects;
+	}
+}
+
 
 h1,
 h2,
@@ -140,7 +179,7 @@ aside:last-of-type {
 }
 
 .recommendations {
-		background-color:$recommendations;
+	background-color:$recommendations;
 }
 
 .contact {
@@ -212,7 +251,6 @@ body.page, body.post {
     background-color: $posts-background-color !important;
     margin-top: 50px !important;
 }
-
 
 @media print {
 	.no-print {
