@@ -1,7 +1,6 @@
-{% if page.fontawesome %}
-<i class="{{ page.fontawesome }} fa-4x"></i>
-{% else if page.icon %}
-<img src="{{ page.icon }}" />
-{% endif %}
-<h2>{{ page.title }}</h2>
+---
+layout: page
+---
+<p>{{ page.intro | newline_to_br }}</p>
+
 {{ content }}

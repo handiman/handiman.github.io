@@ -21,7 +21,18 @@ layout: default
 				<p class="section-paragraph">
 					{% for usp in site.usp  limit:3 %}
 					<div class="col-md-4 usp">
-						{{ usp }}
+						{% if usp.fontawesome %}
+						<i class="{{ usp.fontawesome }} fa-4x"></i>
+						{% else if usp.icon %}
+						<img src="{{ usp.icon }}" />
+						{% endif %}
+						<h2>{{ usp.title }}</h2>
+						<p>
+							{{ usp.intro | newline_to_br }}
+							{% unless usp.no_link %}<br/> <br />
+							<a href="{{ usp.url }}">Read more...</a>
+							{% endunless %}
+						</p>
 					</div>
 					{% endfor %}
 				</p>

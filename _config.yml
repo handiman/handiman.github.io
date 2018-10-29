@@ -38,7 +38,7 @@ sass:
 collections_dir: _collections
 collections:
   usp:
-    output: false
+    output: true
   recommendations:
     output: false
   employment:

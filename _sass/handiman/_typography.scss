@@ -1,0 +1,46 @@
+
+body {
+	/*'Montserrat', */
+	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:14px;
+}
+
+header {
+
+	.brand-heading {
+		font-size: 40px !important;
+	}
+
+	.intro-text {
+		font-size: 18px !important; 
+	}
+	
+	h1:first-of-type {
+		font-size:4em;
+	}
+
+	@media(min-width:768px) {
+		.brand-heading {
+			font-size: 100px !important;
+		}
+
+		.intro-text {
+			font-size: 26px !important;
+		}
+	}
+}
+
+aside:last-of-type {
+	h1 {
+		font-size:4em;
+	}
+}
+
+
+.error-page {
+	font-size:15em;
+}
+
+div.link, div.usp, #contact.form {
+	font-size:1.2em;
+}
