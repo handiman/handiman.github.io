@@ -1,13 +1,14 @@
 ---
 title: Automated Deployment
 icon: /img/Logo-White_140px.png
-intro: 
- Is your deployment process slow? Error prone? Undocumented? Person dependent? Plain scary?
-
- 
- I can help you save time and money, avoid headache and possibly even make you sleep better by automating your deployment process. 
- I have several years of experience doing just that using Octopus Deploy.
 ---
+Is your deployment process slow? Error prone? Undocumented? Person dependent? Plain scary?
+ 
+I can help you save time and money, avoid headache and possibly even make you sleep better by automating your deployment process. 
+I have several years of experience doing just that using Octopus Deploy.
+
+<!--more-->
+
 An automated deployment process has a number of benefits:
 
 * #### It saves time

@@ -16,7 +16,6 @@ permalink: pretty
 exclude: [ 
     ".vs",
     "package.json", 
-    "gulpfile.js", 
     "Gemfile", 
     "Gemfile.lock", 
     ".rvmrc", 
@@ -24,8 +23,6 @@ exclude: [
     "README.md", 
     "Rakefile", 
     "changelog.md", 
-    "less", 
-    "sass", 
     "node_modules", 
     "*.sln",
     "*.suo"]
@@ -35,7 +32,6 @@ highlighter: rouge
 sass: 
   style: compressed
 
-collections_dir: _collections
 collections:
   usp:
     output: true
@@ -52,11 +48,21 @@ plugins:
 defaults:
  - scope: 
     path: ""
-    type: "pages"
+    type: pages
    values: 
-    layout: "page"
+    layout: page
+ - scope: 
+    path: ""
+    type: posts
+   values: 
+    layout: page
  - scope:
     path: ""
-    type: "usp"
+    type: usp
    values:
-    layout: "usp"
+    layout: usp
+ - scope: 
+    path: ""
+   values: 
+    excerpt_separator: <!--more-->
+    

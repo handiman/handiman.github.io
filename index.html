@@ -28,8 +28,8 @@ layout: default
 						{% endif %}
 						<h2>{{ usp.title }}</h2>
 						<p>
-							{{ usp.intro | newline_to_br }}
-							{% unless usp.no_link %}<br/> <br />
+							{{ usp.excerpt }}
+							{% unless usp.no_link %}
 							<a href="{{ usp.url }}">Read more...</a>
 							{% endunless %}
 						</p>
