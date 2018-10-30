@@ -3,13 +3,90 @@
 @import "full-width-pics";
 @import "handiman/variables";
 @import "handiman/navbar";
-@import "handiman/layout";
-@import "handiman/typography";
-@import "handiman/colors";
+@import "handiman/forms";
 @import "handiman/buttons";
 @import "handiman/modal";
+@import "handiman/headers";
+@import "handiman/jumbotron";
+@import "handiman/images";
 
-.usp, .recommendations, .links {
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	/*'Montserrat', */
+	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color: $primary-foreground-color;
+	background-color: $primary-background-color;
+}
+
+.error-page {
+	font-size:15em;
+	text-align:center;
+	padding-top:50px;
+}
+
+article {
+	margin-top:50px;
+}
+
+a, a:link, a:visited, a:active, a:hover, a:focus {
+	color:$primary;
+}
+
+.recommendations {
+	background-color:$recommendations;
+}
+
+.contact {
+	background-color:$contact;
+}
+
+.links {
+	background-color: $color-primary-3;
+}
+
+section.usp {
+	background-color:$skills;
+}
+
+footer {
+	text-align:center;
+}
+
+@media print {
+	.no-print {
+        display: none;
+    }
+}
+
+@media screen {
+    .print {
+        display: none;
+    }
+}
+
+.usp {
+	p {
+		a {
+			display: block;
+		}
+	}
+}
+
+.usp, .links {
+	.fa, .fab {
+		display:block;
+		margin-bottom: 15px;
+	}
+}
+
+.usp, .links, .recommendations {
 	div {
 		text-align:center;
 		img {
@@ -22,22 +99,13 @@
 	}
 }
 
-.image-bg-fluid-height {
-	&:nth-of-type(1) {	
-		/*background-image:url('/img/horizon-4.jpg');*/
-		background-image:url($intro-background-image);
+div.usp, div.link { 
+	font-size:1.2em;
+	@media(max-width:992px) {
+		padding-top: $bottom-margin-adjustment-for-small-screens;
+		padding-bottom: $bottom-margin-adjustment-for-small-screens;
 	}
 }
-
-.image-bg-fixed-height {
-	&:nth-of-type(1){
-		background-image:url('/img/hat-head.jpg');
-	}
-	&:nth-of-type(2) {
-		background-image:url('/img/horizon-4.jpg');
-	}
-}
-
 
 blockquote {
 	text-align:left;

@@ -1,12 +1,4 @@
-
-body {
-	/*'Montserrat', */
-	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size:14px;
-}
-
 header {
-
 	.brand-heading {
 		font-size: 40px !important;
 	}
@@ -17,6 +9,8 @@ header {
 	
 	h1:first-of-type {
 		font-size:4em;
+		padding-top:40px;
+		padding-bottom:70px;
 	}
 
 	@media(min-width:768px) {
@@ -33,14 +27,27 @@ header {
 aside:last-of-type {
 	h1 {
 		font-size:4em;
+		margin-top:0px;
+		padding-top:190px;
+		padding-bottom:50px;
+	}
+}
+	
+.poll {
+	h4 {
+		margin-bottom:5px;
+		padding-top:20px;
 	}
 }
 
-
-.error-page {
-	font-size:15em;
+section {
+	h1, h2 {
+		text-align:center;	
+	}
 }
 
-div.link, div.usp, #contact.form {
-	font-size:1.2em;
+article {
+	h2 {
+		margin-top:50px;
+	}
 }

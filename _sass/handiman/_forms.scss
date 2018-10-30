@@ -1,0 +1,18 @@
+.contact-form.section-paragraph {
+	@media(min-width:992px) {
+		padding-left:124px;
+		padding-right:124px;
+	}
+	.form-control {
+		margin-bottom: $bottom-margin-adjustment-for-small-screens;
+	}
+}
+
+textarea[name='message'] {
+	height:200px;
+}
+
+/*
+.contact.form {
+	font-size:1.2em;
+}*/
