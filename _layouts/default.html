@@ -7,6 +7,7 @@
 {% if page.title %}
 	{% assign title = page.title %}
 {% endif %}
+{% assign class = page.name | split: '.' | first | downcase %}
 <html lang="{% if page.lang %}{{ page.lang}}{% else %}en{% endif %}" prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
 	<head>
 		{% include ld.html %}
@@ -46,7 +47,7 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body>
+	<body{% unless class == "" %} class="{{ class }}"{% endunless %}>
 		{% include navigation.html %}
 		{{ content }}
 		{% include footer.html %}

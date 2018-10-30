@@ -11,9 +11,10 @@ author:
 
 tile_color: "#333333"
 
-permalink: pretty
+permalink: /blog/:categories/:year/:month/:day/:title/
 
 exclude: [ 
+    "_drafts",
     ".vs",
     "package.json", 
     "Gemfile", 
@@ -55,7 +56,7 @@ defaults:
     path: ""
     type: posts
    values: 
-    layout: page
+    layout: post
  - scope:
     path: ""
     type: usp
