@@ -9,6 +9,9 @@ author:
   twitter: 
   feedburner: 
 
+feed:
+  path: atom.xml
+  
 tile_color: "#333333"
 
 permalink: /blog/:categories/:year/:month/:day/:title/
@@ -66,4 +69,8 @@ defaults:
     path: ""
    values: 
     excerpt_separator: <!--more-->
+ - scope:
+    path: "googlef0bc3dbe928e1f73.html"
+   values:
+    sitemap: false
     
