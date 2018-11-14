@@ -72,3 +72,7 @@ ko.applyBindings(new (->
 $ ->
 	setupContactForms();		
 	setupPageScroll();
+	$("*[data-href]").click((e) ->
+		e.preventDefault();
+		document.location = $(this).data("href");
+	);

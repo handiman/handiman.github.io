@@ -20,7 +20,7 @@ layout: default
 				{% endcomment %}
 				<p class="section-paragraph">
 					{% for usp in site.usp  limit:3 %}
-					<div class="col-md-4 usp">
+					<div class="col-md-4 usp"{% unless usp.no_link %} data-href="{{ usp.url }}"{% endunless %}>
 						{% if usp.fontawesome %}
 						<i class="{{ usp.fontawesome }} fa-4x"></i>
 						{% else if usp.icon %}

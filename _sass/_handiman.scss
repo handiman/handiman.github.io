@@ -25,6 +25,10 @@ body {
 	background-color: $primary-background-color;
 }
 
+*[data-href] {
+	cursor:pointer;
+}
+
 .error-page {
 	font-size:15em;
 	text-align:center;
