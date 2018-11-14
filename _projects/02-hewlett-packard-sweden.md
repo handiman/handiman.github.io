@@ -1,6 +1,6 @@
 ---
 title: Hewlett Packard Sweden
-employer: ework
+employer: /employment/08-ework
 location: Solna, Sweden
 start_date: 1999-09-01
 end_date: 2005-03-31

@@ -1,6 +1,6 @@
 ---
 title: Norconsult Astando
-employer: self-employed
+employer: /employment/17-self-employed
 location: Stockholm, Sweden
 start_date: 2018-04-18
 end_date: 2018-11-30

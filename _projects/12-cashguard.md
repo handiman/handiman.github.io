@@ -1,6 +1,6 @@
 ---
 title: CashGuard
-employer: avega-group-ab
+employer: /employment/12-avega-group-ab
 location: Stockholm, Sweden
 start_date: 2011-06-01
 end_date: 2011-09-01

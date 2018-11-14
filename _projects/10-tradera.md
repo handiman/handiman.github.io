@@ -1,6 +1,6 @@
 ---
 title: Tradera
-employer: avega-group-ab
+employer: /employment/12-avega-group-ab
 location: Stockholm, Sweden
 start_date: 2009-08-01
 end_date: 2009-08-31

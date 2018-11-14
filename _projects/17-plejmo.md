@@ -1,6 +1,6 @@
 ---
 group: projects
-employer: magine
+employer: /employment/16-magine-tv
 title: Plejmo
 location: Stockholm, Sweden
 start_date: 2014-11-03

@@ -1,6 +1,6 @@
 ---
 title: Looström & Gelin AB
-employer: innitek-ab
+employer: /employment/06-innitek-ab
 location: Danderyd, Sweden
 start_date: 1998-10-01
 end_date: 1999-07-31

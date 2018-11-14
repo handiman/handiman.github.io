@@ -1,6 +1,6 @@
 ---
 title: Qbranch Competence Manager
-employer: qbranch-stockholm-ab-2
+employer: /employment/14-qbranch-stockholm-ab-2
 location: Stockholm, Sweden
 start_date: 2014-04-28
 end_date: 2014-06-23

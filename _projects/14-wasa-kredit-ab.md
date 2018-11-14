@@ -1,6 +1,6 @@
 ---
 title: Wasa Kredit
-employer: wasa-kredit-ab
+employer: /employment/13-wasa-kredit-ab
 location: Stockholm, Sweden
 start_date: 2012-03-12
 end_date: 2013-11-14

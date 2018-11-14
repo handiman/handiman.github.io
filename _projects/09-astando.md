@@ -1,6 +1,6 @@
 ---
 title: Astando
-employer: avega-group-ab
+employer: /employment/12-avega-group-ab
 location: Stockholm, Sweden
 start_date: 2008-02-28
 end_date: 2009-05-01

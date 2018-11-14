@@ -1,6 +1,6 @@
 --- 
 title: Svea Ekonomi AB
-employer: self-employed
+employer: /employment/17-self-employed
 location: Solna, Sweden
 start_date: 2017-10-11
 end_date: 2018-04-11

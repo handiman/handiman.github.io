@@ -1,6 +1,6 @@
 ---
 title: hitta.se
-employer: aftonbladet-tillvaxtteknik-2-ab
+employer: /employment/11-aftonbladet-tillvaxtteknik-2-ab
 location: Stockholm, Sweden
 start_date: 2006-03-01
 end_date: 2008-02-28

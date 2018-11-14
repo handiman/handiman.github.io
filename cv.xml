@@ -21,13 +21,14 @@ title: CV Henrik Becker
 		</contact>
 	</header>
 	<objective>
-		<para>{{ profile.summary }}</para>
+		<para>{% for line in profile.summary %}
+			{{ line }}{% endfor %}
+		</para>
 	</objective>
 	<history>
-		{% for project in site.projects reversed %}
-		{% assign employer = site.employment[project.employer] %}<job>
+		{% for project in site.projects reversed %}<job>
 			<jobtitle>{{ project.title | replace: "&amp;", "&" | replace: "&", "&amp;" }}</jobtitle>
-			<employer>{{ employer.organization.name }}</employer>
+			{% assign employers = site.employment | where:'id', project.employer %}{% for employer in employers limit: 1 %}<employer>{{ employer.organization.name }}</employer>{% endfor %}
 			<period>
 				<from>
 					<date>
