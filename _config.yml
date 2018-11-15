@@ -53,7 +53,7 @@ plugins:
     
 defaults:
  - scope: 
-    path: ""
+    path: "**/*.html,**/*.md"
     type: pages
    values: 
     layout: page
