@@ -44,26 +44,26 @@ setupPageScroll = ->
 
 ko.applyBindings(new (->
 	that = this
-	that.deploymentIsSlow = ko.observable(false)
-	that.deploymentIsManual = ko.observable(false)
-	that.deploymentIsScary = ko.observable(false)
-	that.testingIsManual = ko.observable(false)
-	that.testsFailIntermittently = ko.observable(false)
-	that.testsAreHardToUnderstand = ko.observable(false)
-	that.testsGivePoorFeedback = ko.observable(false)
+	that.deployment_slow = ko.observable(false)
+	that.deployment_manual = ko.observable(false)
+	that.deployment_errorprone = ko.observable(false)
+	that.testing_manual = ko.observable(false)
+	that.testing_failing = ko.observable(false)
+	that.testing_hardtounderstand = ko.observable(false)
+	that.testing_poorfeedback = ko.observable(false)
 	that.showResults = ko.observable(false)
 	that.showForm = ko.observable(true)
 	that.submit = ->
 		that.showResults(true)
 		that.showForm(false)
 	that.goodMatch = ko.computed(->
-		that.deploymentIsSlow() || 
-		that.deploymentIsManual() || 
-		that.deploymentIsScary() || 
-		that.testingIsManual() || 
-		that.testsFailIntermittently() ||
-		that.testsAreHardToUnderstand() || 
-		that.testsGivePoorFeedback();
+		that.deployment_slow() || 
+		that.deployment_manual() || 
+		that.deployment_errorprone() || 
+		that.testing_manual() || 
+		that.testing_failing() ||
+		that.testing_hardtounderstand() || 
+		that.testing_poorfeedback();
 	)
 	that.poorMatch = ko.computed(-> !that.goodMatch())
 	return that

@@ -1,0 +1,31 @@
+- id: deployment
+  title: Deployment
+  question: Which of the following statements apply to your deployment process?
+  answers: 
+    - id: slow
+      short: Slow
+      long: Our deployment process is slow
+    - id: manual
+      short: Manual
+      long: Our deployment process is manual
+    - id: errorprone
+      short: Error Prone
+      long: Our deployment process is error prone
+- id: testing
+  title: Testing
+  question: Which of the following statments apply to your test code?
+  answers: 
+   - id: manual
+     short: It's not automated
+     long: Our deployment process is not automated
+   - id: failing
+     short: Automated tests fail intermittently
+     long: Our tests fail intermittently
+   - id: poorfeedback
+     short: It's hard to tell why a test fails
+     long: It's hard to tell why a test fails
+   - id: hardtounderstand
+     short: It's hard to tell what a test actually tests
+     long: It's hard to tell what a test actually tests
+   
+   
