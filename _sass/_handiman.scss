@@ -1,7 +1,10 @@
+$intro-background-image-position: bottom center; 
+$bottom-margin-adjustment-for-small-screens : 14px;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "full-width-pics";
-@import "handiman/variables";
+@import "handiman/colors";
 @import "handiman/navbar";
 @import "handiman/forms";
 @import "handiman/buttons";
