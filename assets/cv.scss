@@ -6,7 +6,6 @@ section h2 {
 	text-align:left;
 }
 
-
 #summary, #scroll-to-skills a.btn {
     background-color: $summary;
 }
@@ -162,23 +161,23 @@ a {
 }
 
 .intro-body {
-.brand-heading {
-	font-size: 40px;
-}
-
-.intro-text {
-	font-size: 18px;
-}
-
-@media(min-width:768px) {
 	.brand-heading {
-		font-size: 100px;
+		font-size: 40px;
 	}
 
 	.intro-text {
-		font-size: 26px;
+		font-size: 18px;
 	}
-}
+
+	@media(min-width:768px) {
+		.brand-heading {
+			font-size: 100px;
+		}
+
+		.intro-text {
+			font-size: 26px;
+		}
+	}
 }
 
 
@@ -199,14 +198,6 @@ ul.banner-social-buttons {
         }
     }
 }
-
-/*
-footer {
-    padding: 50px 0;
-    p {
-        margin: 0;
-    }
-}*/
 
 ::-moz-selection {
     text-shadow: none;
@@ -254,13 +245,6 @@ body {
     }
 }
 
-/*
-.btn-lg, .form-control {
-    border-radius: 15px !important;
-}
-
-*/
-
 .section-scroll a.btn {
     padding: 0 15px;
     margin: 0;
@@ -282,19 +266,38 @@ body {
 
 
 @media print {
-
+	
+	header.intro, 
+	#project-0,
+	#project-3,
+	#project-6,
+	#project-9,
+	#project-12,
+    #project-16,
+	#languages	{
+		page-break-after: always;
+	}
+	
 	.content-section {
         padding: 0 0 35px 0;
     }
 
-	
-	.section-scroll, .btn-page-scroll, .page-scroll, .no-print {
+	footer, #interests, .section-scroll, .btn-page-scroll, .page-scroll, .no-print {
         display: none;
     }
 	
+	section {
+		margin:0 50px;
+	}
+	
+	#summary {
+		margin-top:50px;
+	}
+	
 	li.project {
+		margin-top: 25px;
         div.project {
-            padding: 15px;
+            /*padding: 15px;*/
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -305,7 +308,7 @@ body {
             margin: 10px 0;
         }
 	}
-}
+} 
 
 @media screen {
 
@@ -344,4 +347,4 @@ body {
         }
     }
 
-}
+}  
