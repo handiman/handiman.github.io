@@ -6,16 +6,15 @@ start_date: 2018-04-18
 end_date: 2018-11-30
 roles: Software Engineer
 achievements:
- - Reduced deployment time from ~45 minutes to ~5 minutes per application instance
- - Reduced deployment releated errors by nearly 100 %
+ - "Automated deployment for the project IsyRoad resulting in:"
+ - Deployment time decreasing from ~ 45 minutes to ~ 5 minutes per application instance
+ - Deployment releated errors reduced by nearly 100 %
 skills: 
- - C#
- - Asp.Net Web Api
- - WCF
  - Octopus Deploy
  - TeamCity
- - KnockoutJS
- - TypeScript
+ - Asp.Net Web Api
  - .Net Core
+ - WCF
  - NHibernate
+ - C#
 ---
