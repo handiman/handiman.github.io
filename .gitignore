@@ -1,3 +1,4 @@
+*.orig
 .sass-cache
 *.sln
 *.suo
