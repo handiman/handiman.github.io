@@ -3,10 +3,7 @@
 {% if include.description %}
 	{% assign description = include.description %}
 {% endif %}
-{% assign title = site.title %}
-{% if page.title %}
-	{% assign title = page.title %}
-{% endif %}
+{% assign title = page.title %}
 {% assign class = page.name | split: '.' | first | downcase %}
 <html lang="{% if page.lang %}{{ page.lang}}{% else %}en{% endif %}" prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
 	<head>
@@ -25,7 +22,7 @@
 		<meta property="og:description" content="{{ page.description }}" />
 		<meta property="og:site_name" content="Henrik Becker Consulting AB" />
 		<meta property="og:url" content="{{ page.url | absolute_url }}" />
-		<title>{{ title }}</title>
+		<title>{{ page.title }} | {{ site.title }}</title>
 		<link rel="dns-prefetch" href="//fonts.googleapis.com" />
 		<link rel="canonical" href="{{ page.url }}" />
 		<link rel="manifest" type="application/json" href="/manifest.json" />

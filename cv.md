@@ -1,5 +1,5 @@
 ---
 layout: cv
-description: This is from cv.md
+title: CV
 ---
 {% include cv.html %}
