@@ -1,6 +1,5 @@
 User-agent: *
+Sitemap: https://www.henrikbecker.net/sitemap.xml
 Disallow: /404/
 Disallow: /assets/
-Disallow: /arsredovisning/
-Disallow: /cv/
 Disallow: /img/
