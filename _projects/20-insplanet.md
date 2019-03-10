@@ -11,4 +11,5 @@ skills:
  - .Net Core
  - C#
  - Azure DevOps
+ - Octopus Deploy
 ---

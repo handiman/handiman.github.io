@@ -56,6 +56,7 @@ skills:
   - Scrum
  tools:
   - Octopus Deploy
+  - Azure DevOps
   - TeamCity
   - Git
   - ReSharper
@@ -97,6 +98,7 @@ interests:
  - name: Motorcycling
    fa: fa fa-motorcycle
  - name: Karate 
+   url: https://inoue.se
  - name: Travelling
    url: https://vacationbyexample.wordpress.com
    fa: fas fa-globe-asia
@@ -104,8 +106,4 @@ interests:
    fa: fas fa-utensils
  - name: Reading
    fa: fa fa-book
- - name: Beer
-   fa: fa fa-beer
- - name: Cats
-   fa: fa fa-paw
  
