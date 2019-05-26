@@ -2,6 +2,49 @@
 ---
 @import "handiman";
 
+/* <Parallax> */
+
+main {
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+article {
+	position: relative;
+	display: block;
+	z-index: 1;
+}
+
+section {
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	flex: 1 0 auto;
+	position: relative;
+	z-index: -1;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	transform: translateZ(-1px) scale(2);
+}
+
+/* </Parallax> */
+
+html, body {
+	overflow-x:hidden;
+	overflow-y:hidden;
+	scrolling-behavior:smooth;
+}
+
+html, body, main, article {
+	margin:0;
+	padding:0;
+}
+
 section h2 {
 	text-align:left;
 }
@@ -42,8 +85,8 @@ section h2 {
     background-color: $summary;
 }
 
-
 .intro {
+	cursor:pointer;
     display: table;
     width: 100%;
     height: auto;
@@ -51,9 +94,6 @@ section h2 {
     text-align: center;
     color: $primary;
     background: url($intro-background-image) no-repeat $intro-background-image-position scroll;
-    /*filter: gray;*/ /* IE6-9 */
-    /*-webkit-filter: grayscale(1);*/ /* Google Chrome, Safari 6+ & Opera 15+ */
-    /*filter: grayscale(1);*/ /* Microsoft Edge and Firefox 35+ */
     background-color: $primary-background-color;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -79,47 +119,6 @@ section h2 {
 
 
 
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid $primary;
-    border-radius: 100% !important;
-    font-size: 40px;
-    color: $primary;
-    background: transparent;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-
-    &:hover,
-    &:focus {
-        outline: none;
-        color: $primary;
-        background: fade($primary, 10%);
-    }
-
-    i.animated {
-        -webkit-transition-property: -webkit-transform;
-        -webkit-transition-duration: 1s;
-        -moz-transition-property: -moz-transform;
-        -moz-transition-duration: 1s;
-    }
-
-    &:hover {
-        i.animated {
-            -webkit-animation-name: pulse;
-            -moz-animation-name: pulse;
-            -webkit-animation-duration: 1.5s;
-            -moz-animation-duration: 1.5s;
-            -webkit-animation-iteration-count: infinite;
-            -moz-animation-iteration-count: infinite;
-            -webkit-animation-timing-function: linear;
-            -moz-animation-timing-function: linear;
-        }
-    }
-}
 
 p {
     margin: 0 0 25px;
@@ -149,12 +148,11 @@ a {
 }
 
 .content-section[data-next], header.intro {
-	cursor:pointer;
+	/* cursor: pointer; */
 }
 
 @media(min-width:767px) {
     .content-section {
-        //padding-top: 250px;
         padding-bottom: 50px;
         padding-top: 75px;
     }
@@ -174,96 +172,11 @@ a {
 			font-size: 100px;
 		}
 
-		.intro-text {
+		.intro-text, i.fa {
 			font-size: 26px;
 		}
 	}
 }
-
-
-
-ul.banner-social-buttons {
-    margin-top: 0;
-    @media(max-width:1199px) {
-        margin-top: 15px;
-    }
-    @media(max-width:767px) {
-        li {
-            display: block;
-            margin-bottom: 20px;
-            padding: 0;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
-}
-
-::-moz-selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: fade($primary, 20%);
-}
-
-::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: fade($primary, 20%);
-}
-
-img::selection {
-    background: transparent;
-}
-
-img::-moz-selection {
-    background: transparent;
-}
-
-body {
-    webkit-tap-highlight-color: fade($primary, 20%);
-}
-
-
-
-.section-scroll {
-    padding-top: 0;
-}
-
-.btn-page-scroll {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: none;
-    font-size: 40px;
-    color: white;
-    background: transparent;
-    &:hover,
-    &:focus {
-        outline: none;
-        color: white;
-    }
-}
-
-.section-scroll a.btn {
-    padding: 0 15px;
-    margin: 0;
-    border: none;
-    /*border-radius: 0 0 15px 15px;*/
-    font-size: 40px;
-    color: $primary;
-    background: transparent;
-    /*-webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;*/
-    &:hover,
-    &:focus {
-        outline: none;
-        color: $primary;
-        background: fade($primary, 10%);
-    }
-}
-
 
 @media print {
 	
@@ -322,7 +235,7 @@ body {
 	    
 	li.project {
         padding-top: 55px;
-        cursor: pointer;
+        /* cursor: pointer; */
 
         div.row {
             padding: 0;

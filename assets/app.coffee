@@ -30,14 +30,10 @@ setupContactForms = ->
 		
 setupPageScroll = ->
 	pageScroll = (target) ->
-		$('html, body').stop().animate({
+		$('main').stop().animate({
 			scrollTop: $(target).offset().top
 		}, 1500, 'easeInOutExpo');
-	$("a.page-scroll").click((e) ->
-		e.preventDefault();
-		pageScroll($(this).attr("href"));
-	);
-	$("li.project, section.content-section[data-next], header.intro").click((e) ->
+	$("header.intro").click((e) ->
 		e.preventDefault();
 		pageScroll($(this).data("next"));
 	);

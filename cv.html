@@ -3,13 +3,17 @@ layout: cv
 title: CV
 ---
 {% include navigation.html %}
-{% include cv/intro.html %}
-{% include cv/summary.html %}
-{% include cv/skills.html %}
-{% include cv/projects.html %}
-{% include cv/languages.html %}
-{% include cv/interests.html %}
-{% include cv/employment.html %}
-{% include cv/education.html %}
-{% include cv/recommendations.html %}
-{% include cv/contact.html %}
+<main>
+	{% include cv/intro.html %}
+	<article>
+		{% include cv/summary.html %}
+		{% include cv/skills.html %}
+		{% include cv/projects.html %}
+		{% include cv/languages.html %}
+		{% include cv/interests.html %}
+		{% include cv/employment.html %}
+		{% include cv/education.html %}
+		{% include cv/recommendations.html %}
+		{% include cv/contact.html %}
+	</article>
+</main>
