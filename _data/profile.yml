@@ -2,12 +2,12 @@ name: Henrik Becker
 title: Software Engineer
 birth_date: 1969-06-23
 nationality: Swedish
-url: http://www.henrikbecker.net
+url: https://www.henrikbecker.net
 company: Henrik Becker Consulting AB
 work_location: Stockholm
 works_for: 
   name: Self Employed
-  url: http://www.henrikbecker.net
+  url: https://www.henrikbecker.net
 contact_info:
  first_name: Henrik
  last_name: Becker 
@@ -29,7 +29,7 @@ summary:
   - A practitioner of Test Driven Development and agile processes.
   - An expert in .Net development using C#.
   - MSCD Web Applications.
-  - Self-educated with 18 years of working experience.
+  - Self-educated with 20 years of working experience.
   - Efficient and a fast learner.
 skills:
  languages:
@@ -56,8 +56,8 @@ skills:
   - Continuous Deployment
   - Scrum
  tools:
-  - Octopus Deploy
   - Azure DevOps
+  - Octopus Deploy
   - TeamCity
   - Git
   - ReSharper

@@ -2,8 +2,8 @@
   "basics": {
     "name": "Henrik Becker",
     "label": "Software Engineer",
-    "website": "http://www.henrikbecker.net",
-    "summary": "A senior full stack developer dedicated to building robust, maintainable and testable systems.\nA practitioner of Test Driven Development and agile processes.\nAn expert in .Net development using C#.\nMSCD Web Applications.\nSelf-educated with 18 years of working experience.\nEfficient and a fast learner.",
+    "website": "https://www.henrikbecker.net",
+    "summary": "A senior full stack developer dedicated to building robust, maintainable and testable systems.\nA practitioner of Test Driven Development and agile processes.\nAn expert in .Net development using C#.\nMSCD Web Applications.\nSelf-educated with 20 years of working experience.\nEfficient and a fast learner.",
     "location": {
       "region": "Stockholm",
       "countryCode": null
@@ -36,6 +36,7 @@
     {
       "name": "Frameworks",
       "keywords": [
+        "Asp.Net Core",
         "Asp.Net MVC",
         "Asp.Net Web Api",
         "Asp.Net Web Forms",
@@ -57,8 +58,8 @@
     {
       "name": "Tools",
       "keywords": [
-        "Octopus Deploy",
         "Azure DevOps",
+        "Octopus Deploy",
         "TeamCity",
         "Git",
         "ReSharper",
@@ -155,7 +156,9 @@
       "endDate": "present",
       "summary": "",
       "higlights": [
-        "Zero down time deployment"
+        "Zero down time deployment",
+        "Simplified the CI process with Azure DevOps build pipelines instead of an antiquated CI tool",
+        "Documentation"
       ]
     },
     {

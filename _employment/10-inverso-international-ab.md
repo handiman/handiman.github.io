@@ -1,5 +1,5 @@
 ---
-title: IT Consultant/System developer
+title: IT Consultant/System Developer
 organization:
  id: inverso-international-ab
  name: Inverso International AB
