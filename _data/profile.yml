@@ -42,6 +42,7 @@ skills:
   - XML
   - XSLT
  frameworks:
+  - Asp.Net Core
   - Asp.Net MVC
   - Asp.Net Web Api
   - Asp.Net Web Forms

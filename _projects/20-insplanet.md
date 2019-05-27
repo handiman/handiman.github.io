@@ -7,6 +7,8 @@ end_date: present
 roles: Software Engineer
 achievements:
  - Zero down time deployment
+ - Simplified the CI process with Azure DevOps build pipelines instead of an antiquated CI tool
+ - Documentation
 skills: 
  - Asp.Net MVC
  - Asp.Net Web Api
