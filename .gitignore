@@ -1,8 +1,16 @@
 *.user
 *.orig
-.sass-cache
 *.sln
 *.suo
+*.lock
+
+.DS_Store
+.sass-cache
+.jekyll-metadata
+.rbenv-version
+.rvmrc
+.vs
+
 node_modules
 _site/*
 _theme_packages/*
@@ -11,13 +19,7 @@ _backup/*
 _ignore
 _drafts
 
-*.lock
-
 Thumbs.db
-.DS_Store
+desktop.ini
 
 !.gitkeep
-
-.rbenv-version
-.rvmrc
-.vs
