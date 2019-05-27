@@ -76,7 +76,7 @@ module Jekyll
 
 		def generate(site)
 			profile = site.data["profile"]
-			json = JSON.generate({
+			json = JSON.pretty_generate({
 				"basics" => {
 					"name" => profile["name"],
 					"label" => profile["title"],
