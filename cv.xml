@@ -44,13 +44,10 @@ title: CV Henrik Becker
 					{% endif %}
 				</to>
 			</period>
-			<achievements>
-			{% if project.achievements %}
+			<description>{{ project.description | strip_newlines }}</description>
+			{% if project.achievements %}<achievements>
 				{% for achievement in project.achievements %}<achievement>{{ achievement | strip_newlines }}</achievement>
-				{% endfor %}
-			{% else %}
-				<achievement>{{ project.description | strip_newlines }}</achievement>
-			{% endif %}</achievements>
+				{% endfor %}</achievements>{% endif %}
 		</job>
 	{% endfor %}{% assign project = nil %}
 	</history>
