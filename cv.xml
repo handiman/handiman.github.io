@@ -44,7 +44,7 @@ title: CV Henrik Becker
 					{% endif %}
 				</to>
 			</period>
-			<description>{{ project }}</description>
+			<description>{{ project | strip_html }}</description>
 			{% if project.achievements %}<achievements>
 				{% for achievement in project.achievements %}<achievement>{{ achievement | strip_newlines }}</achievement>
 				{% endfor %}</achievements>{% endif %}
