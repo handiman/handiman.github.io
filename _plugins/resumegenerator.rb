@@ -108,47 +108,52 @@ module Jekyll
 		end
 	end # JSONResumeGenerator
 	
-	class DOCXResumeGenerator < ResumeGenerator
-		def generate(site)
-			puts "      Generating resume.docx..."
-			profile = site.data["profile"]
-			Caracal::Document.save 'resume.docx' do | docx |
-				# Cover page
-				docx.h1 "Henrik Becker"
-				
-				# Summary page
-				docx.page
-				docx.h1 "Hello, World!"
-			end
-			#json = JSON.pretty_generate({
-			#	"basics" => {
-			#		"name" => profile["name"],
-			#		"label" => profile["title"],
-			#		"website" => profile["url"],
-			#		"summary" =>  profile["summary"].join("\n"),
-			#		"location" => {
-			#			"region" => profile["work_location"],
-			#			"countryCode" => profile["country_code"]
-			#		},
-			#		"profiles" => getnetworks(profile)
-			#	},
-			#	"skills" => getskills(profile),
-			#	"languages" => getlanguages(profile),
-			#	"interests" => getinterests(profile),
-			#	"education" => geteducation(profile),
-			#	"work" => getprojects(site)
-			# })
-			
-
-			#File.write(File.join(site.source, "resume.json"), json)
-			
-			site.static_files << Jekyll::StaticFile.new(site, site.source, '/', "resume.docx")
-		end
-	end # DOCXResumeGenerator
+	#class DOCXResumeGenerator < ResumeGenerator
+	#	def generate(site)
+			#puts "      Generating resume.docx..."
+			#profile = site.data["profile"]
+			#Caracal::Document.save 'resume.docx' do | docx |
+			#	# Cover page
+			#	docx.h1 "Hello, World!"
+			#	docx.p do
+			#		anchor do
+			#			text 'Jag skriver text'
+			#			br
+			#			text 'Jag skriver å, ä och ö'
+			#		end	
+			#	end
+			#
+			#	
+			#	# Summary page
+			#	docx.page
+			#	docx.h1 "Page 2"
+			#end
+			#site.static_files << Jekyll::StaticFile.new(site, site.source, '/', "resume.docx")
+	#	end
+	#end # DOCXResumeGenerator
 	
 	class PDFResumeGenerator < ResumeGenerator
 		def generate(site)
+			h1 = 20
 			puts "      Generating resume.pdf..."
+			Prawn::Font::AFM.hide_m17n_warning = true
+			Prawn::Document.generate("resume.pdf", :margin => 100) do
+				font "Helvetica"
+			
+				# Cover page
+				bounding_box([0, 100], :width => 150, :height => 75) do
+					text "Hello World!", :size => h1
+					move_down 5
+					text "Å, ä, ö"
+					#stroke_bounds
+				end
+				
+				# Summary page
+				start_new_page
+				text "Lorem ipsum dolor sit amet"
+			end
+			
+			site.static_files << Jekyll::StaticFile.new(site, site.source, '/', "resume.pdf")
 		end
 	end # PDFResumeGenerator
 
