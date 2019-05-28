@@ -1,7 +1,9 @@
 module Jekyll
 	require 'json'
+	require 'caracal'
+	require 'prawn'
 	
-	class JSONResumeGenerator < Generator
+	class ResumeGenerator < Generator
 		def getnetworks(profile)
 			networks = []
 			profile["same_as"].each do |network|
@@ -73,7 +75,12 @@ module Jekyll
 			end
 			return projects
 		end
-
+		
+		def generate(site) 
+		end
+	end
+	
+	class JSONResumeGenerator < ResumeGenerator
 		def generate(site)
 			puts "      Generating resume.json..."
 			profile = site.data["profile"]
@@ -100,5 +107,49 @@ module Jekyll
 			site.static_files << Jekyll::StaticFile.new(site, site.source, '/', "resume.json")
 		end
 	end # JSONResumeGenerator
+	
+	class DOCXResumeGenerator < ResumeGenerator
+		def generate(site)
+			puts "      Generating resume.docx..."
+			profile = site.data["profile"]
+			Caracal::Document.save 'resume.docx' do | docx |
+				# Cover page
+				docx.h1 "Henrik Becker"
+				
+				# Summary page
+				docx.page
+				docx.h1 "Hello, World!"
+			end
+			#json = JSON.pretty_generate({
+			#	"basics" => {
+			#		"name" => profile["name"],
+			#		"label" => profile["title"],
+			#		"website" => profile["url"],
+			#		"summary" =>  profile["summary"].join("\n"),
+			#		"location" => {
+			#			"region" => profile["work_location"],
+			#			"countryCode" => profile["country_code"]
+			#		},
+			#		"profiles" => getnetworks(profile)
+			#	},
+			#	"skills" => getskills(profile),
+			#	"languages" => getlanguages(profile),
+			#	"interests" => getinterests(profile),
+			#	"education" => geteducation(profile),
+			#	"work" => getprojects(site)
+			# })
+			
+
+			#File.write(File.join(site.source, "resume.json"), json)
+			
+			site.static_files << Jekyll::StaticFile.new(site, site.source, '/', "resume.docx")
+		end
+	end # DOCXResumeGenerator
+	
+	class PDFResumeGenerator < ResumeGenerator
+		def generate(site)
+			puts "      Generating resume.pdf..."
+		end
+	end # PDFResumeGenerator
 
 end # Jekyll
