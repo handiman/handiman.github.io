@@ -134,23 +134,58 @@ module Jekyll
 	
 	class PDFResumeGenerator < ResumeGenerator
 		def generate(site)
-			h1 = 20
+			h1 = 22
+			h2 = 18
+			h3 = 14
 			puts "      Generating resume.pdf..."
 			Prawn::Font::AFM.hide_m17n_warning = true
-			Prawn::Document.generate("resume.pdf", :margin => 100) do
-				font "Helvetica"
+			Prawn::Document.generate("resume.pdf", :margin => 50) do
+				default_leading 3
+				font "Helvetica", :size => 10				
 			
-				# Cover page
-				bounding_box([0, 100], :width => 150, :height => 75) do
-					text "Hello World!", :size => h1
-					move_down 5
-					text "Å, ä, ö"
+				# <Cover>
+				bounding_box([0, 150], :width => 250, :height => 100) do
 					#stroke_bounds
+					text "Henrik Becker", :size => h1
+					stroke_horizontal_rule
+					move_down default_leading * 3
+					text "Software Engineer", :size => h2
+					move_down default_leading * 3
+					text "073-422 83 43"
+					text "www.henrikbecker.net"
 				end
+				# </Cover>
 				
-				# Summary page
+				# <Projects>
 				start_new_page
-				text "Lorem ipsum dolor sit amet"
+				text "Project History", :size => h1
+				stroke_horizontal_rule
+				site.collections["projects"].docs.reverse_each do | project |
+					span(500) do
+						move_down default_leading * 5
+						text project["title"].to_s, :size => h2
+						if (project["achievements"]) 
+							project["achievements"].each do | achievement |
+								text achievement
+							end
+						else 
+							text project.to_s
+						end
+					end
+				end
+				# </Projects>
+				
+				# <Employment>
+				start_new_page
+				text "Employment History", :size => h1
+				stroke_horizontal_rule
+				move_down default_leading * 5
+				site.collections["employment"].docs.reverse_each do | employment |
+					span(500) do
+						text employment["title"] + " at " + employment["organization"]["name"]
+					end
+				end
+				# </Employment>
 			end
 			
 			site.static_files << Jekyll::StaticFile.new(site, site.source, '/', "resume.pdf")
