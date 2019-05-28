@@ -1,7 +1,7 @@
 module Jekyll
-	require 'json'
+	require 'caracal'
 	
-	class JSONResumeGenerator < Generator
+	class DOCXResumeGenerator < Generator
 		def getnetworks(profile)
 			networks = []
 			profile["same_as"].each do |network|
@@ -75,30 +75,40 @@ module Jekyll
 		end
 
 		def generate(site)
-			puts "      Generating resume.json..."
+			puts "      Generating resume.docx..."
 			profile = site.data["profile"]
-			json = JSON.pretty_generate({
-				"basics" => {
-					"name" => profile["name"],
-					"label" => profile["title"],
-					"website" => profile["url"],
-					"summary" =>  profile["summary"].join("\n"),
-					"location" => {
-						"region" => profile["work_location"],
-						"countryCode" => profile["country_code"]
-					},
-					"profiles" => getnetworks(profile)
-				},
-				"skills" => getskills(profile),
-				"languages" => getlanguages(profile),
-				"interests" => getinterests(profile),
-				"education" => geteducation(profile),
-				"work" => getprojects(site)
-			})
+			Caracal::Document.save 'resume.docx' do | docx |
+				# Cover page
+				docx.h1 "Henrik Becker"
+				
+				# Summary page
+				docx.page
+				docx.h1 "Hello, World!"
+			end
+			#json = JSON.pretty_generate({
+			#	"basics" => {
+			#		"name" => profile["name"],
+			#		"label" => profile["title"],
+			#		"website" => profile["url"],
+			#		"summary" =>  profile["summary"].join("\n"),
+			#		"location" => {
+			#			"region" => profile["work_location"],
+			#			"countryCode" => profile["country_code"]
+			#		},
+			#		"profiles" => getnetworks(profile)
+			#	},
+			#	"skills" => getskills(profile),
+			#	"languages" => getlanguages(profile),
+			#	"interests" => getinterests(profile),
+			#	"education" => geteducation(profile),
+			#	"work" => getprojects(site)
+			# })
+			
 
-			File.write(File.join(site.source, "resume.json"), json)
-			site.static_files << Jekyll::StaticFile.new(site, site.source, '/', "resume.json")
+			#File.write(File.join(site.source, "resume.json"), json)
+			
+			site.static_files << Jekyll::StaticFile.new(site, site.source, '/', "resume.docx")
 		end
-	end # JSONResumeGenerator
+	end # DOCXResumeGenerator
 
 end # Jekyll
