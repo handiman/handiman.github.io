@@ -2,43 +2,45 @@
 ---
 @import "handiman";
 
-/* <Parallax> */
+@media screen {
+	/* <Parallax> */
+	
+	main {
+		perspective: 1px;
+		transform-style: preserve-3d;
+		height: 100vh;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+	article {
+		position: relative;
+		display: block;
+		z-index: 1;
+	}
 
-main {
-	perspective: 1px;
-	transform-style: preserve-3d;
-	height: 100vh;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-article {
-	position: relative;
-	display: block;
-	z-index: 1;
-}
+	section {
+		margin: 0 auto;
+	}
 
-section {
-	margin: 0 auto;
-}
+	header {
+		display: flex;
+		flex: 1 0 auto;
+		position: relative;
+		z-index: -1;
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
+		transform: translateZ(-1px) scale(2);
+	}
 
-header {
-	display: flex;
-	flex: 1 0 auto;
-	position: relative;
-	z-index: -1;
-	height: 100vh;
-	justify-content: center;
-	align-items: center;
-	transform: translateZ(-1px) scale(2);
-}
+	html, body {
+		overflow-x:hidden;
+		overflow-y:hidden;
+		scrolling-behavior:smooth;
+	}
 
-/* </Parallax> */
-
-html, body {
-	overflow-x:hidden;
-	overflow-y:hidden;
-	scrolling-behavior:smooth;
-}
+	/* </Parallax> */
+}	
 
 html, body, main, article {
 	margin:0;
@@ -188,7 +190,7 @@ a {
 	#project-12,
     #project-16,
 	#languages	{
-		page-break-after: always;
+		/*page-break-after: always;*/
 	}
 	
 	.content-section {
