@@ -84,12 +84,20 @@ module Jekyll
 						span(500) do
 							move_down separator
 							text project["title"].to_s, :size => h2
-							if (project["achievements"]) 
-								project["achievements"].each do | achievement |
-									text achievement
+							text project["start_date"].to_s + " - " + project["end_date"].to_s + ", " + project["location"].to_s
+							description = project.to_s
+							if !(description.nil? || description.empty?)
+								move_down separator
+								text description
+							end
+							move_down separator
+							if project["achievements"] 
+								font font_name, :style => :bold do
+									text "Achievements:"
 								end
-							else 
-								text project.to_s
+								project["achievements"].each do | achievement |
+									text "- " + achievement
+								end
 							end
 						end
 					end
@@ -101,8 +109,14 @@ module Jekyll
 					stroke_horizontal_rule
 					move_down separator
 					site.collections["employment"].docs.reverse_each do | employment |
+						start_date = employment["start_date"].strftime("%Y-%m")
+						end_date = employment["end_date"]
+						if end_date != "present" 
+							end_date = end_date.strftime("%Y-%m")
+						end
+
 						span(500) do
-							text employment["title"] + " at " + employment["organization"]["name"]
+							text start_date + " - " + end_date + " " + employment["title"] + " at " + employment["organization"]["name"]
 						end
 					end
 				# </Employment>

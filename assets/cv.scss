@@ -182,6 +182,10 @@ a {
 
 @media print {
 	
+	header.intro {
+		page-break-after: always;
+	}
+	
 	header.intro, 
 	#project-0,
 	#project-3,
