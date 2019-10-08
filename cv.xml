@@ -37,7 +37,7 @@ title: CV Henrik Becker
 					</date>
 				</from>
 				<to>
-					{% if end_date %}<date>
+					{% if project.end_date %}<date>
 						<month>{{ project.end_date | date: "%B" }}</month>
 						<year>{{ project.end_date | date: "%Y" }}</year>
 					</date>{% else %}<present />
