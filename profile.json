@@ -4,7 +4,7 @@ layout: null
 {% assign profile = site.data.profile %}{
 	"firstName": {{ profile.contact_info.first_name | jsonify }},
 	"lastName": {{ profile.contact_info.last_name | jsonify  }},
-	"address:" {
+	"address": {
 		"street": {{ profile.contact_info.address.street | jsonify  }},
 		"city": {{ profile.contact_info.address.city | jsonify  }},
 		"postalCode": {{ profile.contact_info.address.postal_code | jsonify  }},
