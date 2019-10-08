@@ -14,7 +14,7 @@ layout: null
 	"summary": {{ profile.summary | jsonify }},
 	"skills": {{ profile.skills | jsonify }},
 	"languages": {{ profile.languages | jsonify }},
-	"interests": {{ profile.interests | map: "name" | jsonify }}
+	"interests": {{ profile.interests | map: "name" | jsonify }},
 	"projects": [{% for project in site.projects reversed %}
 		{
 			"title": {{ project.title | jsonify }},
