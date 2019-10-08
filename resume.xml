@@ -56,8 +56,7 @@ title: CV Henrik Becker
 		{% for education in profile.education %}<degree>
 				<institution>{{ education.school }}</institution>
 				<date>
-					<month>{{ employer.start_date | date: "%B" }}</month>
-					<year>{{ employer.start_date | date: "%Y" }}</year>
+					<year>{{ education.start_year }}</year>
 				</date>
 			</degree>{% endfor %}	
 		</degrees>

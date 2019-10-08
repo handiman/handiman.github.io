@@ -1,0 +1,39 @@
+---
+layout: null
+---
+{% assign profile = site.data.profile %}{
+	"firstName": {{ profile.contact_info.first_name | jsonify }},
+	"lastName": {{ profile.contact_info.last_name | jsonify  }},
+	"address:" {
+		"street": {{ profile.contact_info.address.street | jsonify  }},
+		"city": {{ profile.contact_info.address.city | jsonify  }},
+		"postalCode": {{ profile.contact_info.address.postal_code | jsonify  }},
+		"contry": {{ profile.contact_info.address.country | jsonify  }}
+	},
+	"phone": {{ profile.contact_info.phone | jsonify }},
+	"summary": {{ profile.summary | jsonify }},
+	"skills": {{ profile.skills | jsonify }},
+	"languages": {{ profile.languages | jsonify }},
+	"interests": {{ profile.interests | map: "name" | jsonify }}
+	"projects": [{% for project in site.projects reversed %}
+		{
+			"title": {{ project.title | jsonify }},
+			"from": "{{ project.start_date | date: "%B" }} {{ project.start_date | date: "%Y" }}",
+			"to": {% if project.end_date %}"{{ project.end_date | date: "%B" }} {{ project.end_date | date: "%Y" }}"{% else %}"present"{% endif %},
+			"description": {{ project | strip_html | normalize_whitespace | jsonify }},
+			"achievements": {% if project.achievements %}{{ project.achievements | jsonify }}{% else %}null{% endif %}
+		}{% unless forloop.last %},{% endunless %}{% endfor %}{% assign project = nil %}],
+	"employment": [{% for employment in site.employment reversed %} 
+		{
+			"title": {{ employment.title | jsonify }},
+			"from": {{ employment.start_date | jsonify }},
+			"to:": {{ employment.end_date | jsonify }},
+			"organization": {{ employment.organization.name | jsonify }}
+		}{% unless forloop.last %},{% endunless %}{% endfor %}],
+	"education": [{% for education in profile.education %}
+		{
+			"school": {{ education.school | jsonify }},
+			"from": {{ education.start_year | jsonify }},
+			"to": {{ education.end_year | jsonify }}
+		}{% unless forloop.last %},{% endunless %}{% endfor %}]
+}
