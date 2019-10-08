@@ -27,7 +27,7 @@ layout: null
 		{
 			"title": {{ employment.title | jsonify }},
 			"from": {{ employment.start_date | jsonify }},
-			"to:": {{ employment.end_date | jsonify }},
+			"to": {{ employment.end_date | jsonify }},
 			"organization": {{ employment.organization.name | jsonify }}
 		}{% unless forloop.last %},{% endunless %}{% endfor %}],
 	"education": [{% for education in profile.education %}
