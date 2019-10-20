@@ -8,40 +8,10 @@
 <html lang="{% if page.lang %}{{ page.lang}}{% else %}en{% endif %}" prefix="og: http://ogp.me/ns# profile: http://ogp.me/ns/profile#">
 	<head>
 		{% include ld.html %}
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="{{ description }}" />
-		<meta name="twitter.description" content="{{ description }}" />
-		<meta name="author" content="{{ site.author.name }}" />
-		<meta name="msapplication-config" content="/tile.config" />
-		<meta name="theme-color" content="#333333" />
-		<meta property="og:title" content="Henrik Becker Consulting AB - {% if page.title %}{{ page.title }}{% else %}Software Engineer{% endif %}" />
-		<meta property="og:locale" content="en_AU" />
-		<meta property="og:locale:alternate" content="sv_SE" />
-		<meta property="og:description" content="{{ page.description }}" />
-		<meta property="og:site_name" content="Henrik Becker Consulting AB" />
-		<meta property="og:url" content="{{ page.url | absolute_url }}" />
-		<title>{{ page.title }} | {{ site.title }}</title>
-		<link rel="dns-prefetch" href="//fonts.googleapis.com" />
-		<link rel="canonical" href="{{ page.url }}" />
-		<link rel="manifest" type="application/json" href="/manifest.json" />
-		<link rel="alternate" type="application/json" href="/resume.json" title="JSON Resume" />
-		<link rel="alternate" type="text/vcard" href="/henrik.vcf" title="vCard" />
-		<link rel="alternate" type="application/xml" href="/henrik.xcard" title="xCard" />
-		<link rel="alternate" type="application/json" href="/henrik.jcard" title="jCard" />
-		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
+		{% include head.html %}
 		<link rel="stylesheet" type="text/css" href="{{ '/assets/app.css' | absolute_url }}" />
 		{% feed_meta %}
 		{% include favicon.html %}
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
 	</head>
 	<body{% unless class == "" %} class="{{ class }}"{% endunless %}>
 		{% include navigation.html %}

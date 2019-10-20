@@ -20,6 +20,8 @@ contact_info:
  phone: "+46734228343"
  email: spam@henrikbecker.se
 same_as:
+  - network: GitHub
+    url: https://github.com/handiman
   - network: LinkedIn
     url: https://www.linkedin.com/prettygoodprogrammer
   - network: Wordpress
@@ -46,7 +48,9 @@ skills:
   - Asp.Net MVC
   - Asp.Net Web Api
   - Asp.Net Web Forms
-  - React
+  - React.js
+  - Express.js
+  - Node.js
   - jQuery
   - KnockoutJS
   - WCF
