@@ -2,7 +2,6 @@
 title: Home
 layout: default
 ---
-
 <header class="image-bg-fluid-height">	
 	<h1 class="brand-heading">Henrik Becker</h1>
     <p class="intro-text">Software Engineer</p>
@@ -20,7 +19,11 @@ layout: default
 				{% endcomment %}
 				<p class="section-paragraph">
 					{% for usp in site.usp limit:3 %}
-					<div class="col-md-4 usp"{% unless usp.no_link %} data-href="{{ usp.url }}"{% endunless %}>
+						{% unless usp.no_link %}
+							{% if usp.link %}{% assign link = usp.link %}{% else %}{% assign link = usp.url %}{% endif %}
+							{% if usp.link_text %}{% assign link_text = usp.link_text %}{% else %}{% assign link_text = 'Read more' %}{% endif %}
+						{% endunless %} 
+					<div class="col-md-4 usp"{% unless usp.no_link %} data-href="{{ link }}" title="{{ link_text }}"{% endunless %}>
 						{% if usp.fontawesome %}
 						<i class="{{ usp.fontawesome }} fa-4x"></i>
 						{% else if usp.icon %}
@@ -30,7 +33,7 @@ layout: default
 						<p>
 							{{ usp.excerpt }}
 							{% unless usp.no_link %}
-							<a href="{{ usp.url }}">Read more...</a>
+							<a href="{{ link }}" title="{{ link_text }}"><i class="fa fa-angle-right animated"></i></a>
 							{% endunless %}
 						</p>
 					</div>

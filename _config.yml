@@ -19,6 +19,7 @@ permalink: /blog/:categories/:year/:month/:day/:title/
 exclude: [ 
     "_drafts",
     ".vs",
+    ".vscode",
     "package.json", 
     "Gemfile", 
     "Gemfile.lock", 

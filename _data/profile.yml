@@ -37,12 +37,13 @@ skills:
  languages:
   - C#
   - JavaScript
+  - TypeScript
   - HTML
   - CSS
-  - VB.Net
   - T-SQL
   - XML
   - XSLT
+  - VB.Net  
  frameworks:
   - Asp.Net Core
   - Asp.Net MVC
