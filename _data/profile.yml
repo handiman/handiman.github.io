@@ -38,8 +38,8 @@ skills:
   - C#
   - JavaScript
   - TypeScript
-  - HTML
   - CSS
+  - HTML5
   - T-SQL
   - XML
   - XSLT
@@ -56,10 +56,10 @@ skills:
   - KnockoutJS
   - WCF
  methods:	
-  - Test Driven Development
-  - Specification by Example
   - Continuous Integration
   - Continuous Deployment
+  - Test Driven Development
+  - Specification by Example
   - Scrum
  tools:
   - Azure DevOps

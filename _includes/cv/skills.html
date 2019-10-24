@@ -6,16 +6,12 @@
                 <span class="no-print">I know things</span><span class="print">Technological Summary</span>
             </h2>
             <dl>
-                <dt>Languages:</dt>
-                <dd>{{ profile.skills.languages | join: ', ' }}</dd>
-            </dl>
-            <dl>
                 <dt>Frameworks:</dt>
                 <dd>{{ profile.skills.frameworks | join: ', ' }}</dd>
             </dl>
             <dl>
-                <dt>Certifications:</dt>
-                <dd>{{ profile.certifications | map: 'to_liquid' | map: 'name' | join: ', ' }}</dd>
+                <dt>Languages:</dt>
+                <dd>{{ profile.skills.languages | join: ', ' }}</dd>
             </dl>
             <dl>
                 <dt>Methods:</dt>
@@ -24,6 +20,14 @@
             <dl>
                 <dt>Tools:</dt>
                 <dd>{{ profile.skills.tools | join: ', ' }}</dd>
+            </dl>
+            <dl>
+                <dt>Databases:</dt>
+                <dd>{{ profile.skills.databases | join: ', ' }}</dd>
+            </dl>
+            <dl>
+                <dt>Certifications:</dt>
+                <dd>{{ profile.certifications | map: 'to_liquid' | map: 'name' | join: ', ' }}</dd>
             </dl>
         </div>
     </div>
