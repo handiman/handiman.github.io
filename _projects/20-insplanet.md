@@ -13,9 +13,9 @@ skills:
  - Asp.Net Web Api
  - .Net Core
  - C#
+ - React
  - Azure DevOps
  - Octopus Deploy
- - Git
 ---
 The client needed a senior developer with architecture experience to fill in the gap after their architect and lead developer left them.
 My role was to make sure that knowledge wasn't lost during the transition so much of the assignment had to do with keeping documentation up to date and accessible. 
