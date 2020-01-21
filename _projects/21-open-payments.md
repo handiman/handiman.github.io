@@ -15,3 +15,6 @@ skills:
  - Azure DevOps
  - Git
 ---
+Open Payments provides a PSD2-compliant platform letting FinTech, 
+E-commerce businesses etc integrate with European banks through 
+a single unified API - the Open Payments Platform.
