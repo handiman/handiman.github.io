@@ -17,15 +17,15 @@ tile_color: "#333333"
 permalink: /blog/:categories/:year/:month/:day/:title/
 
 exclude: [ 
-    "package*.json", 
-    "Gemfile", 
-    "Gemfile.lock", 
-    "README.md", 
-    "Rakefile", 
-    "changelog.md", 
-    "node_modules", 
-    "*.sln",
-    "*.suo"]
+ "package*.json", 
+ "Gemfile", 
+ "Gemfile.lock", 
+ "README.md", 
+ "Rakefile", 
+ "changelog.md", 
+ "node_modules", 
+ "*.sln",
+ "*.suo"]
     
 highlighter: rouge
 
@@ -34,7 +34,7 @@ sass:
 
 collections:
  usp:
-  output: true
+  output: false
  recommendations:
   output: false
  employment:
@@ -50,17 +50,8 @@ plugins:
 defaults:
  - scope: 
     path: ""
-    type: posts
    values: 
-    layout: post
- - scope:
-    path: ""
-    type: usp
-   values:
-    layout: usp
- - scope: 
-    path: ""
-   values: 
+    layout: null
     excerpt_separator: <!--more-->
  - scope:
     path: "googlef0bc3dbe928e1f73.html"
