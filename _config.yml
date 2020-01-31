@@ -17,13 +17,15 @@ tile_color: "#333333"
 permalink: /blog/:categories/:year/:month/:day/:title/
 
 exclude: [ 
- "Gemfile", 
- "Gemfile.lock",
- "README.md", 
- "Rakefile", 
- "changelog.md", 
- "node_modules"
-]
+    "package*.json", 
+    "Gemfile", 
+    "Gemfile.lock", 
+    "README.md", 
+    "Rakefile", 
+    "changelog.md", 
+    "node_modules", 
+    "*.sln",
+    "*.suo"]
     
 highlighter: rouge
 
