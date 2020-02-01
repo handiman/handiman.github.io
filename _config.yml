@@ -17,52 +17,35 @@ tile_color: "#333333"
 permalink: /blog/:categories/:year/:month/:day/:title/
 
 exclude: [ 
-    "_drafts",
-    ".vs",
-    ".vscode",
-    "package.json", 
-    "Gemfile", 
-    "Gemfile.lock", 
-    ".rvmrc", 
-    ".rbenv-version", 
-    "README.md", 
-    "Rakefile", 
-    "changelog.md", 
-    "node_modules", 
-    "*.sln",
-    "*.suo"]
+ "Gemfile", 
+ "Gemfile.lock",
+ "README.md", 
+ "Rakefile", 
+ "changelog.md", 
+ "node_modules"
+]
     
 highlighter: rouge
 
 sass: 
-  style: compressed
+ style: compressed
 
 collections:
-  usp:
-    output: true
-  recommendations:
-    output: false
-  employment:
-    output: false
-  projects:
-    output: false
+ usp:
+  output: true
+ recommendations:
+  output: false
+ employment:
+  output: false
+ projects:
+  output: false
 
 plugins:
-  - jekyll-coffeescript    
-  - jekyll-feed
-  - jekyll-sitemap
+ - jekyll-coffeescript    
+ - jekyll-feed
+ - jekyll-sitemap
     
 defaults:
- - scope: 
-    path: "**/*.html"
-    type: pages
-   values: 
-    layout: page
- - scope: 
-    path: "**/*.md"
-    type: pages
-   values: 
-    layout: page
  - scope: 
     path: ""
     type: posts
