@@ -17,13 +17,16 @@ tile_color: "#333333"
 permalink: /blog/:categories/:year/:month/:day/:title/
 
 exclude: [ 
- "package*.json", 
+ "node_modules",
+ "src",
+ "package*.json",
+ "tsconfig.json",
+ "webpack.config.js", 
  "Gemfile", 
  "Gemfile.lock", 
  "README.md", 
  "Rakefile", 
  "changelog.md", 
- "node_modules", 
  "*.sln",
  "*.suo"]
     
@@ -43,9 +46,8 @@ collections:
   output: false
 
 plugins:
- - jekyll-coffeescript    
- - jekyll-feed
  - jekyll-sitemap
+ - jekyll-feed
     
 defaults:
  - scope: 

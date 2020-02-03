@@ -16,7 +16,7 @@
                             </ul>
                             <div>{{ project }}
                                 {% if project.achievements %}
-                                <h5>Highlights:</h5>
+                                <h5>Achievements:</h5>
                                 <ul>
                                     {% for achievement in project.achievements %}
                                     <li>{{ achievement | strip_newlines }}</li>{% endfor %}

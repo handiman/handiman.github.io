@@ -1,6 +1,6 @@
 ---
 title: .Net Development
-fontawesome: fab fa-microsoft
+font: microsoft
 link: https://github.com/handiman/code.henrikbecker.se
 link_text: Code examples
 ---

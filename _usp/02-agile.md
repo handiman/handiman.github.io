@@ -1,6 +1,6 @@
 ---
 title: Test Driven, Agile
-fontawesome: fa fa-recycle
+font: recycle
 no_link: true
 ---
 I have extensive experience of TDD, BDD and Specification by Example - I'm agile for real.
