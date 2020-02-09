@@ -113,7 +113,7 @@ export default class ModalContactForm extends Component {
             name: '', 
             message: '' 
         });
-        this.props.onShowModalContactFormChanged(false);
+        window.setTimeout(() => this.props.onShowModalContactFormChanged(false), 2000);
     }
 
     onChange(e, { name, value }) {
