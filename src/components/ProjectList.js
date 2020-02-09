@@ -44,8 +44,8 @@ export default class ProjectList extends Component {
                             <Header as="h3">{project.title}</Header>
                             <p>{project.from} - {project.to} {project.location}</p>
                             {highlights(project)}
-                            {skills(project)}
                             {description(project)}
+                            {skills(project)}
                         </List.Item>
                     ))}
                 </List>
