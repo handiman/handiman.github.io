@@ -10,9 +10,15 @@ const getIp = function() {
 }
 
 const submit = function(values) {
-    let body = JSON.stringify({ subject:"Contact Form", ...values });
-    fetch('https://www.henrikbecker.se/api/contact-form', { method: 'POST', body })
-    .catch(error => console.log(error.message));
+    let body = new FormData();
+    body.append("subject", "Contact Form");
+    body.append("from", values.from);
+    body.append("name", values.name);
+    body.append("address", values.address);
+    body.append("message", values.message);
+    var request = new XMLHttpRequest();
+    request.open('POST', 'https://www.henrikbecker.se/api/contact-form');
+    request.send(body);
 }
 
 export class StaticContactForm extends Component {
@@ -43,7 +49,7 @@ export class StaticContactForm extends Component {
         this.setState({ 
             sent: true 
         });
-        window.setTimeout(this.setState({ 
+        window.setTimeout(() => this.setState({ 
             sent: false,
             from: '', 
             name: '', 
@@ -105,7 +111,7 @@ export default class ModalContactForm extends Component {
         });
         this.setState({ 
             sent: false,
-            email: '', 
+            from: '', 
             name: '', 
             message: '' 
         });
