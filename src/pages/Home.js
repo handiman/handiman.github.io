@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Grid, Container, Icon } from 'semantic-ui-react';
+import { Grid, Container, Icon, Header } from 'semantic-ui-react';
 import { PageHeader, Section, UspList, RecommendationList } from '../components';
 
 export default class Home extends Component {
@@ -16,7 +16,9 @@ export default class Home extends Component {
     render() {
         return (<>
             <PageHeader title="Henrik Becker">
-                Software Engineer
+                <Header size="medium">
+                    Software Engineer
+                </Header>
             </PageHeader>
             <UspList />
             <RecommendationList title="What do people have to say about me?" textAlign="center" />
@@ -42,7 +44,7 @@ export default class Home extends Component {
                     </Grid.Column>
                 </Grid>
             </Section>
-            <Section title="Thanks for visiting!" textAlign="center" />
+            <Section as="aside" title="Thanks for visiting!" textAlign="center" id="thanks" />
         </>);
     }
 }

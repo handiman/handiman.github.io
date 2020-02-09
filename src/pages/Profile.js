@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Segment } from 'semantic-ui-react';
+import { Segment, Button, Icon, Container, Header } from 'semantic-ui-react';
 import { 
     PageHeader, 
     ProfileSummary,
@@ -23,17 +23,21 @@ export default class Profile extends Component {
     }
 
     componentDidMount() {
-        fetch('/data/profile.json')
+        fetch('/dist/profile.json')
             .then(response => response.json())
             .then(profile => this.setState({ isLoading: false, profile }));
     }
 
     render() {
+        let scrollToSummary = e => {
+            e.preventDefault();
+        };
+
         const { isLoading, profile } = this.state;
         const header = (
-            <PageHeader title="Hi, I'm Henrik Becker">
-                <>Software Engineer</>
-                <>You'll like me</>
+            <PageHeader title="Hi, I'm Henrik Becker" alternateTitle="Henrik Becker" id="profile-header">
+                <Header size="medium">Software Engineer</Header>
+                <Header size="medium" className="no-print">You'll like me</Header>
             </PageHeader>
         );
         

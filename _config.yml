@@ -12,7 +12,7 @@ author:
 feed:
   path: atom.xml
   
-tile_color: "#333333"
+tile_color: "#303030"
 
 permalink: /blog/:categories/:year/:month/:day/:title/
 

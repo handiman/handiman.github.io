@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Form, Button, Modal, Segment, Container, Header, Message } from 'semantic-ui-react';
+import { Form, Button, Modal, Header, Message } from 'semantic-ui-react';
+import { Section } from '../components';
 
 const header = "Would you like to get in touch?";
 
@@ -58,22 +59,20 @@ export class StaticContactForm extends Component {
         const { sent, name, from, message } = this.state;
 
         return (
-            <Segment as="section" vertical className="contact">
-                <Container>
-                    <Header as="h2">
-                        {header}
-                    </Header>
-                    <Form onSubmit={this.onSubmit}>
-                        <Form.Input name="name" placeholder="Your name" value={name} onChange={this.onChange} />
-                        <Form.Input name="from" placeholder="Your e-mail address" value={from} onChange={this.onChange} />
-                        <Form.TextArea name="message" placeholder="Message" rows="5" value={message} onChange={this.onChange} />
-                        <Message success visible={sent}>
-                            Message sent
-                        </Message>
-                        <Button primary type="submit">Send</Button>
-                    </Form>
-                </Container>
-            </Segment>
+            <Section id="contactForm" className="no-print">
+                <Header as="h2">
+                    {header}
+                </Header>
+                <Form onSubmit={this.onSubmit}>
+                    <Form.Input name="name" placeholder="Your name" value={name} onChange={this.onChange} />
+                    <Form.Input name="from" placeholder="Your e-mail address" value={from} onChange={this.onChange} />
+                    <Form.TextArea name="message" placeholder="Message" rows="5" value={message} onChange={this.onChange} />
+                    <Message success visible={sent}>
+                        Message sent
+                    </Message>
+                    <Button primary type="submit">Send</Button>
+                </Form>
+            </Section>
         );
     }
 }

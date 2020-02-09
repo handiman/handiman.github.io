@@ -45,8 +45,8 @@ export default class Navigation extends Component {
             </Menu.Item>
         </>);
 
-        const vertical = (
-            <Responsive minWidth={computer}>
+        const toolBar = (
+            <Responsive as="nav" minWidth={computer}>
                 <Menu fixed="top" inverted>
                     {header}
                     {pages}
@@ -66,9 +66,9 @@ export default class Navigation extends Component {
             </Responsive>
         );
 
-        const horizontal = (
+        const dropDown = (
             <Responsive maxWidth={mobile}>
-                <Menu fixed="top" inverted>
+                <Menu fixed="top" inverted id="menu">
                     {header}
                 </Menu>
                 <Sidebar as={Menu} inverted vertical visible={this.state.showSidebar} onHide={this.hideSidebar} onClick={this.hideSidebar}>
@@ -91,8 +91,8 @@ export default class Navigation extends Component {
         );
 
         return (<>
-            {vertical}
-            {horizontal}
+            {toolBar}
+            {dropDown}
         </>);
     }
 }

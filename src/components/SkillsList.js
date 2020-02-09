@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Segment, Container, List, Header } from 'semantic-ui-react';
+import { Section } from '../components';
 
 export default class Skills extends Component {
     render() {
@@ -16,22 +17,20 @@ export default class Skills extends Component {
         </>);
 
         return (
-            <Segment as="section" vertical className="skills">
-                <Container>
-                    <List>
-                        <List.Header as="h2">
-                            <span className="no-print">I know things</span>
-                            <span className="print">Technological Summary</span>
-                        </List.Header>
-                        {skillset('Frameworks', frameworks)}
-                        {skillset('Languages', languages)}
-                        {skillset('Methods', methods)}
-                        {skillset('Tools', tools)}
-                        {skillset('Databases', databases)}
-                        {skillset('Certifications', certifications)}
-                    </List>
-                </Container>
-            </Segment>
+            <Section id="skills">
+                <List>
+                    <List.Header as="h2">
+                        <span className="no-print">I know things</span>
+                        <span className="print">Technological Summary</span>
+                    </List.Header>
+                    {skillset('Frameworks', frameworks)}
+                    {skillset('Languages', languages)}
+                    {skillset('Methods', methods)}
+                    {skillset('Tools', tools)}
+                    {skillset('Databases', databases)}
+                    {skillset('Certifications', certifications)}
+                </List>
+            </Section>
         );
     }   
 }

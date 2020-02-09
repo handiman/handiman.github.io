@@ -1,5 +1,25 @@
 import React, { Component } from 'react';
-import { Grid, Segment, Container, Header, Icon, Image } from 'semantic-ui-react';
+import { Grid,  Container, Header, Icon, Image } from 'semantic-ui-react';
+import { Section } from '../components';
+
+const cursor = usp => false === usp.link ? null : { cursor: 'pointer' };
+const href = usp => false === usp.link ? null : usp.link.href;
+const toolTip = usp => false === usp.link ? null : usp.link.text;
+
+const noLink = usp => !usp.link;
+
+const children = usp => (<>
+    {usp.font && (
+        <Icon name={usp.font} size="huge" />
+    )}
+    {usp.icon && (
+        <Image src={usp.icon} className="usp" centered />
+    )}
+    <Header as="h4">
+        {usp.title}
+    </Header>
+    {usp.excerpt}
+</>);
 
 export default class UspList extends Component {
     constructor(props) {
@@ -11,7 +31,7 @@ export default class UspList extends Component {
     }
 
     componentDidMount() {
-        fetch('/data/usps.json')
+        fetch('/dist/usps.json')
             .then(response => response.json())
             .then(data => this.setState({
                 isLoading: false,
@@ -24,44 +44,31 @@ export default class UspList extends Component {
         
         if (isLoading) {
             return (
-                <Segment as="section" placeholder loading>
+                <Section placeholder loading>
                     <Container textAlign="center" />
-                </Segment>
+                </Section>
             );
         }
 
-        var cursor = usp => false === usp.link ? null : { cursor: 'pointer' };
-        var href = usp => false === usp.link ? null : usp.link.href;
-        var toolTip = usp => false === usp.link ? null : usp.link.text;
-        var imageStyle = {
-            backgroundColor: '#222',
-            paddingRight: '3px',
-            height: '56px'
-        };
-
         return (
-            <Segment as="section" vertical className="usps">
-                <Container>
-                    {usps.length > 0 && (
-                        <Grid columns={usps.length} stackable>{usps.map((usp, index) => (
-                            <Grid.Column key={index} style={cursor(usp)}>
+            <Section>
+                {usps.length > 0 && (
+                    <Grid columns={usps.length} stackable>{usps.map((usp, index) => (
+                        <Grid.Column key={index} style={cursor(usp)}>
+                            {!noLink(usp) && (
                                 <Container href={href(usp)} title={toolTip(usp)} textAlign="center">
-                                    {usp.font && (
-                                        <Icon name={usp.font} size="huge" />
-                                    )}
-                                    {usp.icon && (
-                                        <Image src={usp.icon} style={imageStyle} centered />
-                                    )}
-                                    <Header as="h4">
-                                        {usp.title}
-                                    </Header>
-                                    {usp.excerpt}
+                                    {children(usp)}
                                 </Container>
-                            </Grid.Column>
-                        ))}</Grid>
-                    )}
-                </Container>
-            </Segment>
+                            )}
+                            {noLink(usp) && (
+                                <Container title={toolTip(usp)} textAlign="center">
+                                    {children(usp)}
+                                </Container>
+                            )}
+                        </Grid.Column>
+                    ))}</Grid>
+                )}
+            </Section>
         );
     }
 }

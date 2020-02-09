@@ -1,18 +1,7 @@
 import React, { Component } from 'react';
-import {
-    HashRouter as Router,
-    Switch,
-    Route
-} from "react-router-dom";
-import { 
-    Home, 
-    Profile 
-} from './pages';
-import {
-    Navigation, 
-    Footer,
-    ModalContactForm
-} from './components';
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { Home, Profile, Usp } from './pages';
+import { Navigation, Footer, ModalContactForm } from './components';
 
 export default class App extends Component {
     constructor(props) {
@@ -33,7 +22,7 @@ export default class App extends Component {
                     <Route exact path="/">
                         <Home onShowModalContactFormChanged={this.onShowModalContactFormChanged} />
                     </Route>
-                    <Route path="/cv">
+                    <Route exact path="/cv">
                         <Profile />
                     </Route>
                 </Switch>

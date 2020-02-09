@@ -12,4 +12,3 @@ export { default as EmployerList } from './EmployerList';
 export { default as InterestList } from './InterestList';
 export { default as EducationList } from './EducationList';
 export { default as RecommendationList } from './RecommendationList';
-export { Colors as Colors } from './Settings';

@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import { Segment, Container } from 'semantic-ui-react';
+import { Section } from '../components';
 
 export default class Footer extends Component {
     render() {
         return (
-            <Segment as="footer" inverted vertical>
-                <Container textAlign="center" >
-                    Copyright &copy; Henrik Becker Consulting AB
-                </Container>
-            </Segment>
+            <Section as="footer" inverted textAlign="center" className="no-print">
+                Copyright &copy; Henrik Becker Consulting AB
+            </Section>
         );
     }
 }

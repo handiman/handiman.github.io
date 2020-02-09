@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Grid, Container, Segment, Header } from 'semantic-ui-react';
+import { Grid, Container } from 'semantic-ui-react';
+import { Section } from '../components';
 
 export default class RecommendationList extends Component {
     constructor(props) {
@@ -11,7 +12,7 @@ export default class RecommendationList extends Component {
     }
 
     componentDidMount() {
-        fetch('/data/recommendations.json')
+        fetch('/dist/recommendations.json')
             .then(response => response.json())
             .then(data => this.setState({
                 isLoading:false,
@@ -21,37 +22,29 @@ export default class RecommendationList extends Component {
 
     render() {
         const { isLoading, recommendations } = this.state;
-        const { title, textAlign } = this.props;
 
         if (isLoading) {
             return (
-                <Segment as="section" vertical loading placeholder>
-                    <Container textAlign={textAlign}>
-                        {title && <Header as="h2">{title}</Header>}
-                    </Container>
-                </Segment>
+                <Section loading placeholder id="recommendations" {...this.props} />
             );
         }
 
         return (
-            <Segment as="section" vertical className="no-print recommendations">
-                <Container textAlign={textAlign}>
-                    {title && <Header as="h2">{title}</Header>}
-                    {recommendations.length > 0 && (
-                        <Grid columns={recommendations.length} stackable>{recommendations.map((item, index) => (
-                            <Grid.Column key={index}>
-                                <Container as="blockquote" textAlign="left">
-                                    <>{item.text}</>
-                                    <Container textAlign="right">
-                                        {item.link && <a href={item.link}>{item.name}</a>}
-                                        {!(item.link) && <span>{item.name}</span>}
-                                    </Container>
+            <Section className="no-print" id="recommendations" {...this.props}>
+                {recommendations.length > 0 && (
+                    <Grid columns={recommendations.length} stackable>{recommendations.map((item, index) => (
+                        <Grid.Column key={index}>
+                            <Container as="blockquote" textAlign="left">
+                                <>{item.text}</>
+                                <Container textAlign="right">
+                                    {item.link && <a href={item.link}>{item.name}</a>}
+                                    {!(item.link) && <span>{item.name}</span>}
                                 </Container>
-                            </Grid.Column>
-                        ))}</Grid>
-                    )}
-                </Container>
-            </Segment>
+                            </Container>
+                        </Grid.Column>
+                    ))}</Grid>
+                )}
+            </Section>
         );
     }
 }
