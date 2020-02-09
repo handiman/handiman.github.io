@@ -87,7 +87,6 @@ export default class ModalContactForm extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            sent: false,
             address: 'unknown',
             from: '', 
             name: '', 
@@ -110,11 +109,11 @@ export default class ModalContactForm extends Component {
             message:this.state.message
         });
         this.setState({ 
-            sent: false,
             from: '', 
             name: '', 
             message: '' 
         });
+        this.props.onShowModalContactFormChanged(false);
     }
 
     onChange(e, { name, value }) {
