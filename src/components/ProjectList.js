@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { Segment, Container, Header, List } from 'semantic-ui-react';
+import { Header, List } from 'semantic-ui-react';
 import { Section } from '../components';
 
 export default class ProjectList extends Component {
@@ -7,10 +7,9 @@ export default class ProjectList extends Component {
         const { projects } = this.props;
         const comma = (<>, </>);
 
-        const description = project => project.description && (<>
-            <Header size="tiny">Description</Header>
+        const description = project => project.description && (
             <p>{project.description}</p>
-        </>);
+        );
 
         const highlights = project => project.achievements && (<>
             <Header size="tiny">Highlights</Header>
@@ -43,8 +42,8 @@ export default class ProjectList extends Component {
                         <List.Item key={index} className="project">
                             <Header as="h3">{project.title}</Header>
                             <p>{project.from} - {project.to} {project.location}</p>
-                            {highlights(project)}
                             {description(project)}
+                            {highlights(project)}
                             {skills(project)}
                         </List.Item>
                     ))}
