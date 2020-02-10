@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { List } from 'semantic-ui-react';
+import { Table, Header } from 'semantic-ui-react';
 import { Section } from '../components';
 
 export default class Employers extends Component {
@@ -7,18 +7,20 @@ export default class Employers extends Component {
         const { employers } = this.props;
         return (
             <Section id="employers">
-                <List>
-                    <List.Header as="h2">
-                        <span className="no-print">I've been around</span>
-                        <span className="print">Employment History</span>
-                    </List.Header>
+                <Header as="h2">
+                    <span className="no-print">I've been around</span>
+                    <span className="print">Employment History</span>
+                </Header>
+                <Table basic stackable style={{background:'transparent',border:0}} >
+                    <Table.Body>
                     {employers.map((employer, index) => (
-                        <List.Item key={index} className="employer">
-                            <span>{employer.from} - {employer.to}</span>
-                            <span>{employer.title} at {employer.organization}</span>
-                        </List.Item>
+                        <Table.Row key={index} className="employer" style={{border:0}}>
+                            <Table.Cell width={3} style={{paddingLeft:0, border:0}}>{employer.from} - {employer.to}</Table.Cell>
+                            <Table.Cell width={13} style={{border:0}}>{employer.title} at {employer.organization}</Table.Cell>
+                        </Table.Row>
                     ))}
-                </List>
+                    </Table.Body>
+                </Table>
             </Section>
         );
     }   
