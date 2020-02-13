@@ -11,6 +11,7 @@ skills:
  - Asp.Net Core
  - C#
  - React
+ - Redux
  - Azure
  - Azure DevOps
  - Git
