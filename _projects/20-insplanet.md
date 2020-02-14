@@ -14,6 +14,7 @@ skills:
  - .Net Core
  - C#
  - React
+ - TypeScript
  - Azure DevOps
  - Octopus Deploy
 ---
