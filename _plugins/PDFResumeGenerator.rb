@@ -116,8 +116,8 @@ module Jekyll
 								move_down separator
 								text description
 							end
-							move_down separator
 							if project["achievements"] 
+								move_down separator
 								font font_name, :style => :bold do
 									text "Achievements:"
 								end
@@ -125,7 +125,16 @@ module Jekyll
 									text "- " + achievement
 								end
 							end
-						end
+							if project["skills"]
+								move_down separator
+								font font_name, :style => :bold do
+									text "Technologies used:"
+								end
+								project["skills"].each do | skill |
+									text "- " + skill
+								end
+							end
+					end
 					end
 				# </Projects>
 				
