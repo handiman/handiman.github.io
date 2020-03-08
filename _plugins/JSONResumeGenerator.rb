@@ -96,8 +96,8 @@ module Jekyll
 				"work" => getprojects(site)
 			})
 
-			File.write(File.join(site.source, "resume.json"), json)
-			site.static_files << Jekyll::StaticFile.new(site, site.source, '/', "resume.json")
+			File.write(File.join(site.source, "static/resume.json"), json)
+			site.static_files << Jekyll::StaticFile.new(site, site.source, '/static/', "resume.json")
 		end
 	end # JSONResumeGenerator
 

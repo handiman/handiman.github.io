@@ -1,22 +1,13 @@
 title: Henrik Becker Consulting AB
 repository: handiman/handiman.github.io
 production_url: https://www.henrikbecker.net
-
 author:
   name: Henrik Becker
-  email: 
   github: handiman
-  twitter: 
-  feedburner: 
-
-feed:
-  path: atom.xml
-  
-tile_color: "#303030"
-
-permalink: /blog/:categories/:year/:month/:day/:title/
-
+tile_color: '#303030'
 exclude: [ 
+ "public",
+ "build",
  "node_modules",
  "src",
  "package*.json",
@@ -29,11 +20,6 @@ exclude: [
  "changelog.md", 
  "*.sln",
  "*.suo"]
-    
-highlighter: rouge
-
-sass: 
- style: compressed
 
 collections:
  usp:
@@ -44,10 +30,6 @@ collections:
   output: false
  projects:
   output: false
-
-plugins:
- - jekyll-sitemap
- - jekyll-feed
     
 defaults:
  - scope: 

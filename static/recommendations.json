@@ -1,0 +1,9 @@
+---
+---
+[{% for recommendation in site.recommendations %}{
+        "name": {{ recommendation.name | strip_html | trim | jsonify }},
+        "link": {% if recommendation.link %}{{ recommendation.link | jsonify }}{% else %}false{% endif %},
+        "text": {{ recommendation | strip_html | trim | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+]

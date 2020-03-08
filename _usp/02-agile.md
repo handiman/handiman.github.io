@@ -1,8 +1,8 @@
 ---
 title: Test Driven, Agile
-font: recycle
+font: fas fa-recycle
 no_link: true
-permalink: /dist/usp/agile
+permalink: /usp/agile
 ---
 I have extensive experience of TDD, BDD and Specification by Example - I'm agile for real.
 <!--more-->

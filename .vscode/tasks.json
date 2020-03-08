@@ -11,13 +11,23 @@
       }
     },
     {
+      "label": "post-npm-build",
+      "type": "shell",
+      "windows":{
+        "command": "del *.js;del static/js/*.*;del static/media/*.svg;del static/css/main.*.*;xcopy build . /Y /E /S"
+      },
+      "dependsOn": [
+        "npm-build"
+      ]
+    },
+    {
       "label": "jekyll-build",
       "type": "shell",
       "windows": {
         "command": "bundle exec jekyll build"
       },
       "dependsOn": [
-        "npm-build"
+        "post-npm-build"
       ],
       "group": {
         "kind": "build",

@@ -1,0 +1,17 @@
+---
+---
+[{% for usp in site.usp limit:3 %}
+            {% unless usp.no_link %}
+                {% if usp.link %}{% assign link = usp.link %}{% else %}{% assign link = usp.url %}{% endif %}
+                {% if usp.link_text %}{% assign link_text = usp.link_text %}{% else %}{% assign link_text = 'Read more' %}{% endif %}
+            {% endunless %}
+    {
+        "title": {{ usp.title | strip_html | trim | jsonify }},						
+        {% if usp.font %}"font": "{{ usp.font }}"{% else if usp.icon %}"icon": "{{ usp.icon }}"{% endif %},
+        "excerpt": {{ usp.excerpt | strip_html | trim | jsonify }},
+        "link": {% if usp.no_link %}false{% else %}{
+            "href": "{{ link }}",
+            "text": {{ link_text | strip_html | trim | jsonify  }}
+        }{% endif %}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+]

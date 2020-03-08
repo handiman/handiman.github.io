@@ -1,7 +1,7 @@
 ---
 title: Automated Deployment
-icon: /dist/images/Logo-White_140px.png
-permalink: /dist/usp/deploy
+icon: /static/images/Logo-White_140px.png
+permalink: /usp/deploy
 no_link: true
 ---
 I can help you save time and money, avoid headache and possibly even make you sleep better by automating your deployment process. 

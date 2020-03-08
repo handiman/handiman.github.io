@@ -1,9 +1,9 @@
 ---
 title: .Net Development
-font: microsoft
+font: fab fa-microsoft
 link: https://github.com/handiman/code.henrikbecker.se
 link_text: Code examples
-permalink: /dist/usp/dotnet
+permalink: /usp/dotnet
 ---
 I've been living and breathing .Net since its launch and am 
 an expert in web development on the Asp.Net platform.
