@@ -5,7 +5,7 @@ import { sendContactForm } from '../Api';
 
 const useStyles = makeStyles(_ => ({
   contactForm: {
-    padding: '2rem'
+    marginTop: '2rem'
   },
   bottomMargin: {
     marginBottom: '1rem'

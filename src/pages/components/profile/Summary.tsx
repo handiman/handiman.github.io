@@ -20,13 +20,13 @@ export default (props: { summary: any }) => {
   return (
     <Section className={classes.section}>
       <Typography variant="h2">I am</Typography>
-      <ul className={classes.list}>
+      <Typography variant="body1" component="ul" className={classes.list}>
         {summary.map((line: string, index: number) => (
           <li key={index}>
             {line}
           </li>
         ))}
-      </ul>
+      </Typography>
     </Section>
   );
 }

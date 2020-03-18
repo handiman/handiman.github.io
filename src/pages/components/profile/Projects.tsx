@@ -6,6 +6,7 @@ import { PROJECTS } from '../../../Theme';
 const useStyles = makeStyles(_ => ({
   list: {
     listStyle: 'none',
+    margin:0,
     paddingLeft: 0
   },
   section: {
@@ -29,9 +30,15 @@ const Project = (props: { project: any }) => {
         {project.from} - {project.to} {project.location}
       </Typography>
 
+      {project.description && (
+        <Typography variant="body1" gutterBottom>
+          {project.description}
+        </Typography>
+      )}
+
       {project.achievements && (
         <Typography variant="body1" gutterBottom>
-          <Typography variant="subtitle1">
+          <Typography variant="subtitle1" component="div">
             Highlights:
           </Typography>
           <ul className={classes.list}>
@@ -42,15 +49,9 @@ const Project = (props: { project: any }) => {
         </Typography>
       )}
 
-      {project.description && (
-        <Typography variant="body1" gutterBottom>
-          {project.description}
-        </Typography>
-      )}
-
       {project.skills && (
         <Typography variant="body1" gutterBottom>
-          <Typography variant="subtitle1" gutterBottom>
+          <Typography variant="subtitle1" component="div">
             Technologies used:
           </Typography>
           {project.skills.map((skill: string, index: number) => (
