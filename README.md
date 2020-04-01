@@ -1,3 +1,3 @@
-﻿Source code for http://www.henrikbecker.net
+﻿Source code for https://www.henrikbecker.net
 
 Copyright &copy; Henrik Becker
