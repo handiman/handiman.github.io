@@ -20,19 +20,17 @@ contact_info:
  phone: "+46734228343"
  email: spam@henrikbecker.se
 same_as:
-  - network: GitHub
-    url: https://github.com/handiman
-  - network: LinkedIn
-    url: https://www.linkedin.com/prettygoodprogrammer
-  - network: Wordpress
-    url: https://vacationbyexample.wordpress.com/
+ - network: GitHub
+   url: https://github.com/handiman
+ - network: LinkedIn
+   url: https://www.linkedin.com/prettygoodprogrammer
 summary: 
-  - A senior full stack developer dedicated to building robust, maintainable and testable systems.
-  - A practitioner of Test Driven Development and agile processes.
-  - An expert in .Net development using C#.
-  - MSCD Web Applications.
-  - Self-educated with 20 years of working experience.
-  - Efficient and a fast learner.
+ - A senior full stack developer dedicated to building robust, maintainable and testable systems.
+ - A practitioner of Test Driven Development and agile processes.
+ - An expert in .Net development using C#.
+ - MSCD Web Applications.
+ - Self-educated with 20 years of working experience.
+ - Efficient and a fast learner.
 skills:
  languages:
   - C#
