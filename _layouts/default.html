@@ -1,0 +1,28 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+  <title>Henrik Becker - Software Engineer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111111" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/static/images/favicon192x192.png" />
+  <link rel="stylesheet" type="text/css" href="/default.css" />
+  <script>
+    navigator.serviceWorker.getRegistrations().then(function (registrations) {
+      for (var registration in registrations) {
+        registration.unregister()
+      }
+    })
+  </script>
+</head>
+
+<body>
+  {{ content }}
+</body>
+
+</html>

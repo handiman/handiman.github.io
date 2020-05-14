@@ -5,9 +5,12 @@ author:
   name: Henrik Becker
   github: handiman
 tile_color: '#303030'
+permalink: pretty
+sass:
+ sass_dir: _sass
+ style: compressed
+
 exclude: [ 
- "public",
- "build",
  "node_modules",
  "src",
  "package*.json",
@@ -33,12 +36,17 @@ collections:
     
 defaults:
  - scope: 
-    path: ""
+    path: "*.html"
    values: 
-    layout: null
+    layout: default
+ - scope: 
+    path: "*.md"
+   values: 
+    layout: default
     excerpt_separator: <!--more-->
  - scope:
     path: "googlef0bc3dbe928e1f73.html"
+    layout: null
    values:
     sitemap: false
     
