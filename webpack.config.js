@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     "index": "./src/profile/index.tsx",
     "profile": "./src/profile/profile.tsx",
+    "music": "./src/music/index.tsx",
     "cha-ching": "./src/cha-ching/index.tsx"
   },
   output: {
