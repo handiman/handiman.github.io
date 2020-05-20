@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { ThemeProvider, CssBaseline, Box } from '@material-ui/core';
 import { Footer, ContactFormDialog, Header } from '.';
 import Navigation from './Navigation';
@@ -70,9 +70,21 @@ export default (props: {
 }) => {
   const { showContactForm, onToggleContactForm, onHideContactForm, children } = props;
 
+  const scrollToContent = (_: any) => {
+    const header = document.querySelector('header');
+    const nav = document.querySelector('nav');
+    if (header && nav) {
+      window.scrollTo({
+        top: header.clientHeight - nav.clientHeight,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   useEffect(() => {
-    const element = document.getElementById(document.location.hash ? document.location.hash.substring(1) : '');
-    element && element.scrollIntoView();
+    if ('#content' === document.location.hash)  {
+      scrollToContent(null);
+    }
   }, []);
 
   return (

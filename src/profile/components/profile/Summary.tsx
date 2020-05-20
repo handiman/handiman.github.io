@@ -18,7 +18,7 @@ export default (props: { summary: any }) => {
   const classes = useStyles();
 
   return (
-    <Section className={classes.section} id="start">
+    <Section className={classes.section}>
       <Typography variant="h2">I am</Typography>
       <Typography variant="body1" component="ul" className={classes.list}>
         {summary.map((line: string, index: number) => (
