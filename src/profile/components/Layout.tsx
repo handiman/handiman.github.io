@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ThemeProvider, CssBaseline, Box } from '@material-ui/core';
 import { Footer, ContactFormDialog, Header } from '.';
 import Navigation from './Navigation';
@@ -62,13 +62,18 @@ const theme = createMuiTheme({
   }
 });
 
-export default (props: { 
-  showContactForm:boolean;
-  onToggleContactForm:() => void;
-  onHideContactForm:() => void;
-  children:any 
+export default (props: {
+  showContactForm: boolean;
+  onToggleContactForm: () => void;
+  onHideContactForm: () => void;
+  children: any
 }) => {
   const { showContactForm, onToggleContactForm, onHideContactForm, children } = props;
+
+  useEffect(() => {
+    const element = document.getElementById(document.location.hash ? document.location.hash.substring(1) : '');
+    element && element.scrollIntoView();
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>

@@ -30,7 +30,7 @@ export default (props: { onToggleContactForm: () => void }) => {
         </Typography>
         <Grid container spacing={2}>
           <Grid item sm>
-            <Link href="/cv" className={classes.link}>
+            <Link href="/cv#start" className={classes.link}>
               <Card variant="outlined" elevation={0} className={classes.card}>
                 <CardContent>
                   <BookOutlined className={classes.font} />
