@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Typography, Dialog, DialogTitle, DialogActions, DialogContent, TextField, Button, makeStyles } from '@material-ui/core';
 import { Section, Loading } from '.';
 import { sendContactForm } from '../../Api';
+import { CONTACT } from './Layout';
 
 const useStyles = makeStyles(_ => ({
   contactForm: {
@@ -9,6 +10,9 @@ const useStyles = makeStyles(_ => ({
   },
   bottomMargin: {
     marginBottom: '1rem'
+  },
+  section: {
+    backgroundColor: CONTACT
   }
 }));
 
@@ -89,7 +93,7 @@ const ContactForm = () => {
   }
 
   return (
-    <Section className="no-print">
+    <Section className={`no-print ${classes.section}`}>
       <Typography variant="h2" className="no-print">Would you like to get in touch?</Typography>
       <Typography variant="body1" component="form" onSubmit={submit} className={classes.contactForm}>
         <TextField className={classes.bottomMargin} fullWidth variant="outlined" size="small" name="name" placeholder="Your name" value={name} onChange={(e: any) => setName(e.target.value)} />

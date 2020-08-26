@@ -1,5 +1,11 @@
 ---
 ---
+$dark-gray: #282828;
+$medium-gray: #484848;
+$light-gray: #909090;
+$off-white: #F1F2F3;
+$green: #75A434;
+
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap';
 @import 'https://use.fontawesome.com/releases/v5.4.1/css/all.css';
 
@@ -20,11 +26,11 @@ html,
     a:visited,
     a:hover {
       font-size: '14px';
-      color: #E7E7E7;
+      color: $off-white;
     }
 
     body {
-      background-color: #111111;
+      background-color: $dark-gray;
       font-family: Roboto, Helvetica, 'sans-serif';
     }
 
