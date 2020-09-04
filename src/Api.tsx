@@ -1,4 +1,4 @@
-const ApiRootUri = 'https://henrikbecker.azurewebsites.net/api/1.0';
+const ApiRootUri = 'https://henrikbecker.azurewebsites.net/api/v1';
 
 const get = async (resource: string) => {
   const response = await fetch(resource);
