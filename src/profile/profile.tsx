@@ -1,10 +1,9 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import { getProfile, getRecommendations } from '../Api';
+import { getProfile, getRecommendations, ping } from '../Api';
 import Layout from './components/Layout';
 import { ContactForm, Loading } from './components';
 import { Projects, Employers, Languages, Summary, Interests, Skills, Education, Recommendations } from './components/profile';
-import { CircularProgress } from '@material-ui/core';
 import { useContactForm } from './components/ContactForm';
 
 const Profile = () => {
@@ -15,6 +14,7 @@ const Profile = () => {
   useEffect(() => {
     getProfile().then(setProfile);
     getRecommendations().then(setRecommendations);
+    ping();
   }, []);
 
   if (profile) {

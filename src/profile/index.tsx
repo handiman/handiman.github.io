@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import Layout from './components/Layout';
 import {  Usp, Recommendations, Links, Aside } from './components/home';
-import { getUsps, getRecommendations } from '../Api';
+import { getUsps, getRecommendations, ping } from '../Api';
 import { useContactForm } from './components/ContactForm';
 
 const Home = () => {
@@ -12,6 +12,7 @@ const Home = () => {
   useEffect(() => {
     getUsps().then(setUsps);
     getRecommendations().then(setRecommendations);
+    ping();
   }, []);
   
   return (

@@ -13,6 +13,12 @@ const getIp = async function () {
   return await response.text();
 }
 
+const ping = async () => {
+  console.log("Ping");
+  var response = await fetch(`${ApiRootUri}/ping`);
+  console.log(await response.text());
+}
+
 const sendContactForm = async (form: {
   name: string,
   from: string,
@@ -38,5 +44,6 @@ export {
   getProfile,
   getUsps,
   getRecommendations,
+  ping,
   sendContactForm
 }
