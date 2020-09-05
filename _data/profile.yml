@@ -66,9 +66,10 @@ skills:
   - Visual Studio
  databases:
   - SQL Server
+  - Azure SQL Database
   - MySql
-  - Oracle
-  - Postgres
+ cloud: 
+  - Azure 
 languages:
  - code: sv
    name: Swedish
