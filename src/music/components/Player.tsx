@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { AppBar, Toolbar, IconButton, Button } from '@material-ui/core';
 import { PlayArrow as PlayIcon, Pause as PauseIcon } from '@material-ui/icons';
 import { makeStyles } from '@material-ui/core/styles';
-import { IAlbum, ITrack, apiRoot } from './';
+import { IAlbum, ITrack } from './';
 
 const useStyles = makeStyles(_ => ({
   player: {
@@ -78,7 +78,7 @@ export default (props: IProps) => {
           </Button>
         </form>
       </Toolbar>
-      <audio controls={false} src={track ? `${apiRoot}/${track.streamUrl}` : ''} ref={ref => player = ref} />
+      <audio controls={false} src={track ? track.streamUrl : ''} ref={ref => player = ref} />
     </AppBar>
   );
 }

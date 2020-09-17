@@ -23,7 +23,6 @@ export {
   Album,
   Lyrics,
   Player,
-  apiRoot,
   getAlbums,
   getTracks
 }
