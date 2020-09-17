@@ -3,7 +3,7 @@ import { default as Album } from './Album';
 import { default as Lyrics } from './Lyrics';
 
 const apiRoot = "https://henrikbecker.azurewebsites.net";
-const get = (relativeUrl: string) => fetch(`${apiRoot}/api/1.0/artists/henrik-becker/${relativeUrl}`).then(response => response.json());
+const get = (relativeUrl: string) => fetch(`${apiRoot}/api/v1/artists/henrik-becker/${relativeUrl}`).then(response => response.json());
 const getAlbums = () => get("albums");
 const getTracks = (albumId: string) => get(`albums/${albumId}/tracks`);
 
