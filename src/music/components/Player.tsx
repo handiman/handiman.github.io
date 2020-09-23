@@ -19,8 +19,12 @@ const useStyles = makeStyles(_ => ({
     backgroundSize: '120px 120px',
     marginRight: 20
   },
-  donateForm: {
-    maxWidth: 400
+  copyright: {
+    maxWidth: 400,
+    '& a': {
+      color: 'inherit',
+      textDecoration: 'none'
+    }
   }
 }));
 
@@ -68,15 +72,9 @@ export default (props: IProps) => {
         <div style={{ marginLeft: 20, flexGrow: 1 }}>
           {track ? track.title : 'No track selected'} {album ? `(${album.title})` : ''}
         </div>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" className={classes.donateForm}>
-          <input type="hidden" name="cmd" value="_s-xclick" />
-          <input type="hidden" name="hosted_button_id" value="T6HSS2R7WLQYQ" />
-          {false && <><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-            <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" /></>}
-          <Button type="submit">
-            If you've stumbled upon these songs and decide you like them, feel free to donate a few bucks so I can keep this up. Life's too short to waste inside an office space. Cheers!
-          </Button>
-        </form>
+        <div className={classes.copyright}>
+          <a href="https://www.henrikbecker.net">&copy; Henrik Becker</a>
+        </div>
       </Toolbar>
       <audio controls={false} src={track ? track.streamUrl : ''} ref={ref => player = ref} />
     </AppBar>
