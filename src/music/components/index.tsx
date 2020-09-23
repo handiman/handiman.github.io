@@ -3,17 +3,27 @@ import { default as Album } from './Album';
 import { default as Lyrics } from './Lyrics';
 
 const apiRoot = "https://henrikbecker.azurewebsites.net";
-const get = (relativeUrl: string) => fetch(`${apiRoot}/api/v1/artists/henrik-becker/${relativeUrl}`).then(response => response.json());
-const getAlbums = () => get("albums");
-const getTracks = (albumId: string) => get(`albums/${albumId}/tracks`);
+
+const getAlbums = async () => {
+  var response = await fetch(`${apiRoot}/music/api/graphql`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body: JSON.stringify({ query: '{albums{title,tracks{title,lyrics,streamUrl}}}' })
+  });
+  
+  var json = await response.json();
+  return json.albums;
+};
 
 export interface IAlbum {
-  id: string,
-  title: string
+  title: string,
+  tracks: Array<ITrack>
 }
 
 export interface ITrack {
-  id: string,
   title: string,
   lyrics: string,
   streamUrl: string
@@ -23,6 +33,5 @@ export {
   Album,
   Lyrics,
   Player,
-  getAlbums,
-  getTracks
+  getAlbums
 }

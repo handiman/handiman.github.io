@@ -61,7 +61,7 @@ const theme = createMuiTheme({
 });
 
 const Music = () => {
-  const [albums, setAlbums] = useState([]);
+  const [albums, setAlbums] = useState<Array<IAlbum>>();
   const [album, setAlbum] = useState<IAlbum>();
   const [track, setTrack] = useState<ITrack>();
   const onTrackSelected = (album: IAlbum, track: ITrack) => {
@@ -77,12 +77,12 @@ const Music = () => {
       <CssBaseline />
       <Container style={{ marginTop: 50, marginBottom: 170 }}>
         <Fragment>
-          <Grid container spacing={4} direction="row-reverse">
+          <Grid container spacing={0} direction="row-reverse">
             <Grid item md sm={12}>
               <Lyrics track={track} />
             </Grid>
             <Grid item md sm={12}>
-              {albums.map((album: any, index: number) => (
+              {albums && albums.map((album: IAlbum, index: number) => (
                 <Album key={index} album={album} onTrackSelected={onTrackSelected} />
               ))}
             </Grid>

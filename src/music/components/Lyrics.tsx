@@ -1,19 +1,27 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import { ITrack } from '.';
-import { Typography } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
+
+const useStyles = makeStyles(theme => ({
+  header: {
+    marginBottom: theme.spacing(2)
+  },
+  lyrics: {
+    '& p': {
+      marginBottom: theme.spacing(2)
+    }
+  }
+}));
 
 export default (props: { track?: ITrack }) => {
   const { track } = props;
+  const classes = useStyles();
 
-  const prettyLyrics = (lyrics:string) => lyrics
-      .replace(/(?:\n)/g, '<br />');
-
-  if (track && track.lyrics) {
-      return (<>
-          <Typography variant="h4" component="br"></Typography>
-          <div dangerouslySetInnerHTML={{ __html: prettyLyrics(track.lyrics) }} />
-      </>);
-  }
-
-  return null;
+  return track && track.lyrics ? (
+    <>
+      <Typography variant="h4" className={classes.header}>{track.title}</Typography>
+      <ReactMarkdown source={track.lyrics} className={classes.lyrics} />
+    </>
+  ): null;
 };
