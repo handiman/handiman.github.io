@@ -4,16 +4,19 @@ import { ThemeProvider, CssBaseline, createMuiTheme, Container, Grid, Typography
 import { SentimentDissatisfied as SadFace } from '@material-ui/icons';
 import { Player, Album, getAlbums, IAlbum, ITrack, Lyrics, Alert } from './components';
 
-const BLUEISH = '#bcbce2'; //'#7d79b4'; Neucha, Chilanka, Schoolbell, Shadows Into Light Two
+// Neucha, Chilanka, Schoolbell, Shadows Into Light Two
+
+const textColor = '#b8b6d3';
+const backgroundColor = '#101010';
 
 const theme = createMuiTheme({
   palette: {
     type: 'dark',
     background: {
-      default: '#111111'
+      default: backgroundColor
     },
     text: {
-      primary: BLUEISH
+      primary: textColor
     }
   },
   typography: {
@@ -30,8 +33,8 @@ const theme = createMuiTheme({
         opacity: .85
       },
       colorSecondary: {
-        backgroundColor: '#000000',
-        color: BLUEISH
+        backgroundColor: backgroundColor,
+        color: textColor
       }
     },
     MuiButton: {
@@ -41,17 +44,17 @@ const theme = createMuiTheme({
         textTransform: 'none'
       },
       label: {
-        color: BLUEISH
+        color: textColor
       }
     },
     MuiIconButton: {
       label: {
-        color: BLUEISH
+        color: textColor
       }
     },
     MuiLink: {
       root: {
-        color: BLUEISH,
+        color: textColor,
         '&:hover': {
           textDecoration: 'none!important'
         }

@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
-import { AppBar, Toolbar, IconButton, Button } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton } from '@material-ui/core';
 import { PlayArrow as PlayIcon, Pause as PauseIcon } from '@material-ui/icons';
 import { makeStyles } from '@material-ui/core/styles';
 import { IAlbum, ITrack } from './';
 
-const useStyles = makeStyles(_ => ({
+const folderIcon = "https://henrikbecker.azurewebsites.net/img/folder.jpg";
+
+const useStyles = makeStyles(theme => ({
   player: {
     top: 'auto',
     bottom: 0
@@ -17,7 +19,7 @@ const useStyles = makeStyles(_ => ({
     height: 120,
     backgroundRepeat: 'no-repeat',
     backgroundSize: '120px 120px',
-    marginRight: 20
+    marginRight: theme.spacing(2)
   },
   copyright: {
     maxWidth: 300,
@@ -35,7 +37,7 @@ interface IProps {
 export default (props: IProps) => {
   const classes = useStyles();
   const { track, album } = props;
-  const backgroundImage = { backgroundImage: 'url(https://henrikbecker.azurewebsites.net/img/folder.jpg)' };
+  const backgroundImage = { backgroundImage: `url(${folderIcon})` };
   var player: any;
 
   const duration = () => player ? player.duration : 0;
