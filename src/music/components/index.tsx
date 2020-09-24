@@ -1,3 +1,4 @@
+import { default as Alert } from './Alert';
 import { default as Player } from './Player';
 import { default as Album } from './Album';
 import { default as Lyrics } from './Lyrics';
@@ -30,6 +31,7 @@ export interface ITrack {
 }
 
 export {
+  Alert,
   Album,
   Lyrics,
   Player,
