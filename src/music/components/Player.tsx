@@ -20,9 +20,8 @@ const useStyles = makeStyles(_ => ({
     marginRight: 20
   },
   copyright: {
-    maxWidth: 400,
+    maxWidth: 300,
     '& a': {
-      color: 'inherit',
       textDecoration: 'none'
     }
   }
@@ -73,7 +72,9 @@ export default (props: IProps) => {
           {track ? track.title : 'No track selected'} {album ? `(${album.title})` : ''}
         </div>
         <div className={classes.copyright}>
-          <a href="https://www.henrikbecker.net">&copy; Henrik Becker</a>
+          <small>
+            The music on this site is <a href="https://www.henrikbecker.net">&copy; Henrik Becker</a> and licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">License</a>.
+          </small>
         </div>
       </Toolbar>
       <audio controls={false} src={track ? track.streamUrl : ''} ref={ref => player = ref} />
