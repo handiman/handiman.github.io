@@ -4,7 +4,7 @@ import { ThemeProvider, CssBaseline, createMuiTheme, Container, Grid, Typography
 import { SentimentDissatisfied as SadFace } from '@material-ui/icons';
 import { Player, Album, getAlbums, IAlbum, ITrack, Lyrics, Alert } from './components';
 
-const BLUEISH = '#bcbce2'; //'#7d79b4';
+const BLUEISH = '#bcbce2'; //'#7d79b4'; Neucha, Chilanka, Schoolbell, Shadows Into Light Two
 
 const theme = createMuiTheme({
   palette: {
@@ -18,7 +18,7 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: [
-      'Shadows Into Light',
+      'Neucha',
       'monospace',
       'sans-serif'
     ].join(','),
