@@ -9,7 +9,9 @@ const folderIcon = "https://henrikbecker.azurewebsites.net/img/folder.jpg";
 const useStyles = makeStyles(theme => ({
   player: {
     top: 'auto',
-    bottom: 0
+    bottom: 0,
+    backgroundColor:'#090909',
+    opacity:.9
   },
   toolbar: {
     paddingLeft: 0
