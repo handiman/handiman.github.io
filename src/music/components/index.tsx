@@ -3,7 +3,7 @@ import { default as Player } from './Player';
 import { default as Album } from './Album';
 import { default as Lyrics } from './Lyrics';
 
-const apiRoot = "https://localhost:5001"; //"https://henrikbecker.azurewebsites.net";
+const apiRoot = "https://henrikbecker.azurewebsites.net";
 
 const getAlbums = async () => {
   var response = await fetch(`${apiRoot}/music/api/graphql`, {
