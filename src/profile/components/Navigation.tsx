@@ -11,7 +11,7 @@ export default (props: { onToggleContactForm: () => void }) => {
           <Button href="/">Home</Button>
           <Button href="/cv">Profile</Button>
           <Button onClick={onToggleContactForm}>Contact</Button>
-          <IconButton href="/static/resume.pdf" title="CV in PDF format">
+          <IconButton href="/assets/resume.pdf" title="CV in PDF format">
             <PictureAsPdfOutlined />
           </IconButton>
           <IconButton href="https://www.linkedin.com/in/prettygoodprogrammer" title="Look me up on LinkedIn">

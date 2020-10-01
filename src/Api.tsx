@@ -4,9 +4,9 @@ const get = async (resource: string) => {
   const response = await fetch(resource);
   return await response.json();
 }
-const getProfile = async () => await get('/static/profile.json');
-const getUsps = async () => await get('/static/usps.json');
-const getRecommendations = async () => await get('/static/recommendations.json');
+const getProfile = async () => await get('/assets/profile.json');
+const getUsps = async () => await get('/assets/usps.json');
+const getRecommendations = async () => await get('/assets/recommendations.json');
 
 const getIp = async function () {
   const response = await fetch(`${ApiRootUri}/ip`);

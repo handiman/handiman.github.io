@@ -24,9 +24,9 @@ export const EDUCATION = LIGHT_GREY; //LANGUAGES;
 export const EMPLOYERS = LIGHT_GREY;
 export const CONTACT = BLACK;
 
-export const HEADER_BACKGROUND_IMAGE = '/static/images/horizon-4.jpg';
-export const ASIDE_BACKGROUND_IMAGE = '/static/images/hat-head.jpg'
-export const INTERESTS_BACKGROUND_IMAGE = '/static/images/interests_gray.png';
+export const HEADER_BACKGROUND_IMAGE = '/assets/img/horizon-4.jpg';
+export const ASIDE_BACKGROUND_IMAGE = '/assets/img/hat-head.jpg'
+export const INTERESTS_BACKGROUND_IMAGE = '/assets/img/interests_gray.png';
 
 const theme = createMuiTheme({
   palette: {

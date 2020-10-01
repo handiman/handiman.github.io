@@ -1,0 +1,44 @@
+---
+---
+{% assign profile = site.data.profile %}{
+  "basics": {
+    "name": {{ profile.contact_info.first_name | append: ' ' | append: profile.contact_info.last_name | jsonify }},
+    "label": {{ profile.title | jsonify }},
+    "website": {{ profile.url | jsonify }},
+    "summary": "{{ profile.summary | join : '\n' }}",
+    "location": {
+      "region": {{ profile.work_location | jsonify }},
+      "countryCode": {{ profile.address.country_code | jsonify }},
+      "profiles": [{% for social in profile.same_as %}{
+        "network": {{ social.network | jsonify }},
+        "url": {{ social.url | jsonify }}
+      }{% unless forloop.last %},{% endunless %}{% endfor %}]
+    },
+    "skills": [{% for skill in profile.skills %}{ 
+        "name": {{ skill[0] | capitalize | jsonify }}, 
+        "keywords": {{ skill[1] | jsonify }} 
+      }{% unless forloop.last %},{% endunless %}{% endfor %}],
+    "languages": [{% for language in profile.languages %}{ 
+        "name": {{ language.name | jsonify }}, 
+        "keywords": {{ language.proficiency | jsonify }} 
+      }{% unless forloop.last %},{% endunless %}{% endfor %}],
+    "interests": [{% for interest in profile.interests %}{ 
+      "name": {{ interest.name | jsonify }} 
+    }{% unless forloop.last %},{% endunless %}{% endfor %}],
+    "education": [{% for education in profile.education %}{
+      "institution": {{ education.school | jsonify }},
+      "area": {{ education.description | jsonify }},
+      "startDate" : {{ education.start_year | append : '-01-01' | jsonify }},
+      "endDate" : {{ education.end_year | append : '-01-01' | jsonify }}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}],
+    "work": [{% for project in site.projects reversed %}{
+      "name": {{ project.title | jsonify }},
+      "position": {% if project.position %}{{ project.position | jsonify }}{% else %}"System Developer"{% endif %},
+      "website": {{ project.url | jsonify }},
+      "startDate": {{ project.start_date | jsonify }},
+      "endDate": {{ project.end_date | jsonify }},
+      "summary": {{ project | strip_html | jsonify }}, 
+      "highlights": {{ project.achievements | jsonify }}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}]
+  }
+}

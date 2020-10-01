@@ -1,6 +1,6 @@
 ---
 title: Automated Deployment
-icon: /static/images/Logo-White_140px.png
+icon: /assets/img/Logo-White_140px.png
 permalink: /usp/deploy
 no_link: true
 ---

@@ -10,7 +10,7 @@ module.exports = {
     "cha-ching": "./src/cha-ching/index.tsx"
   },
   output: {
-    path: path.resolve(__dirname, "./static"),
+    path: path.resolve(__dirname, "./assets/js"),
     filename: "[name].js"
   },
   resolve: {

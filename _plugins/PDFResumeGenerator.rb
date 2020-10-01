@@ -13,7 +13,7 @@ module Jekyll
 			font_name = "Helvetica"
 			
 			Prawn::Font::AFM.hide_m17n_warning = true
-			Prawn::Document.generate("static/resume.pdf", :margin => 70) do
+			Prawn::Document.generate("assets/resume.pdf", :margin => 70) do
 				default_leading 3
 				font font_name, :size => 10
 				separator = 15
@@ -175,7 +175,7 @@ module Jekyll
 				# </Education>
 			end
 			
-			site.static_files << Jekyll::StaticFile.new(site, site.source, '/static/', "resume.pdf")
+			site.static_files << Jekyll::StaticFile.new(site, site.source, '/assets/', "resume.pdf")
 		end
 	end # PDFResumeGenerator
 
