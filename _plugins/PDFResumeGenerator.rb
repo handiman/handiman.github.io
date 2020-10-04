@@ -47,14 +47,14 @@ module Jekyll
 					bounding_box([0, page_top], :width => column_width - separator) do
 						text "Frameworks", :size => h2
 						profile["skills"]["frameworks"].each do | framework |
-							text framework
+							text framework["name"]
 						end
 					end
 
 					bounding_box([column_width + separator, page_top], :width => column_width - separator) do
 						text "Languages (programming)", :size => h2
 						profile["skills"]["languages"].each do | language |
-							text language
+							text language["name"]
 						end
 					end
 					
@@ -65,14 +65,14 @@ module Jekyll
 					bounding_box([0, page_top], :width => column_width - separator) do
 						text "Methods", :size => h2
 						profile["skills"]["methods"].each do | method |
-							text method
+							text method["name"]
 						end
 					end
 
 					bounding_box([column_width + separator, page_top], :width => column_width - separator) do
 						text "Tools", :size => h2
 						profile["skills"]["tools"].each do | tool |
-							text tool
+							text tool["name"]
 						end
 					end
 					
@@ -97,7 +97,7 @@ module Jekyll
 					bounding_box([column_width + separator, page_top], :width => column_width - separator) do
 						text "Databases", :size => h2
 						profile["skills"]["databases"].each do | database |
-							text database
+							text database["name"]
 						end
 					end
 				# </Skills>

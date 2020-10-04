@@ -33,44 +33,92 @@ summary:
  - Efficient and a fast learner.
 skills:
  languages:
-  - C#
-  - JavaScript
-  - TypeScript
-  - CSS
-  - HTML5
-  - T-SQL
-  - XML
-  - XSLT
-  - VB.Net  
+  - name: C#
+    level: Expert
+    featured: true
+  - name: JavaScript
+    level: Advanced
+    featured: true
+  - name: TypeScript
+    level: Advanced
+    featured: true
+  - name: CSS
+    level: Advanced
+  - name: HTML
+    level: Expert
+  - name: T-SQL
+    level: Advanced
+  - name: XML
+    level: Advanced
+  - name: XSLT
+    level: Advanced
+  - name: VB.Net  
+    level: Advanced
  frameworks:
-  - Asp.Net Core
-  - Asp.Net MVC
-  - Asp.Net Web Api
-  - Asp.Net Web Forms
-  - React
-  - jQuery
-  - KnockoutJS
-  - Bootstrap
-  - WCF
+  - name: Asp.Net Core
+    level: Expert
+    featured: true
+  - name: Asp.Net MVC
+    level: Expert 
+  - name: Asp.Net Web API
+    level: Expert
+  - name: Asp.Net Web Forms
+    level: Advanced
+  - name: React
+    level: Intermediate
+    featured: true
+  - name: jQuery
+    level: Advanced
+  - name: KnockoutJS
+    level: Advanced
+  - name: WCF
+    level: Advanced
  methods:	
-  - Continuous Integration
-  - Continuous Deployment
-  - Test Driven Development
-  - Specification by Example
-  - Scrum
+  - name: Continuous Integration
+    level: Advanced
+    featured: true
+  - name: Continuous Deployment
+    level: Advanced
+    featured: true
+  - name: Test Driven Development
+    level: Expert
+    featured: true
+  - name: Specification by Example
+    level: Advanced
+  - name: Scrum
  tools:
-  - Azure DevOps
-  - Octopus Deploy
-  - TeamCity
-  - Git
-  - ReSharper
-  - Visual Studio
+  - name: Azure DevOps
+    level: Intermediate
+    featured: true
+  - name: Octopus Deploy
+    level: Advanced
+    featured: true
+  - name: TeamCity
+    level: Intermediate
+  - name: Git
+  - name: ReSharper
+  - name: Visual Studio
  databases:
-  - SQL Server
-  - Azure SQL Database
-  - MySql
+  - name: SQL Server
+    level: Advanced
+  - name: Azure SQL Database
+    level: Intermediate
+ testing:
+  - name: NUnit
+    level: Expert
+  - name: XUnit
+    level: Advanced
+  - name: MSTest
+    level: Advanced
+  - name: Moq
+    level: Advanced
+  - name: SpecFlow
+    level: Advanced
  cloud: 
-  - Azure 
+  - name: Azure 
+    level: Intermediate
+  - name: AWS
+    level: Novice
 languages:
  - code: sv
    name: Swedish

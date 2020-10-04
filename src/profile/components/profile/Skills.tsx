@@ -28,23 +28,23 @@ export default (props:any) => {
       <ul className={classes.list}>
         {frameworks && (<li>
           <Typography variant="h6">Frameworks</Typography>
-          {frameworks.join(", ")}
+          {frameworks.map((skill:any) => skill.name).join(", ")}
         </li>)}
         {languages && (<li>
           <Typography variant="h6">Languages</Typography>
-          {languages.join(", ")}
+          {languages.map((skill:any) => skill.name).join(", ")}
         </li>)}
         {methods && (<li>
           <Typography variant="h6">Methods</Typography>
-          {methods.join(", ")}
+          {methods.map((skill:any) => skill.name).join(", ")}
         </li>)}
         {tools && (<li>
           <Typography variant="h6">Tools</Typography>
-          {tools.join(", ")}
+          {tools.map((skill:any) => skill.name).join(", ")}
         </li>)}
         {databases && (<li>
           <Typography variant="h6">Databases</Typography>
-          {databases.join(", ")}
+          {databases.map((skill:any) => skill.name).join(", ")}
         </li>)}
         {certifications && (<li>
           <Typography variant="h6">Certifications</Typography>
