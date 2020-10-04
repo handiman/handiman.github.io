@@ -50,6 +50,7 @@ skills:
   - React
   - jQuery
   - KnockoutJS
+  - Bootstrap
   - WCF
  methods:	
   - Continuous Integration

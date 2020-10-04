@@ -1,0 +1,60 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+  {% include head.html %}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/assets/css/profile.css?v={{ site.time | date: '%s' }}" />
+</head>
+
+<body>
+  {% include banner.html linktitle="Read my full CV" %}
+  <main class="container">
+    {{ content }}
+    <div id="contactForm" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Would you like to get in touch?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Contact form goes here
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Send</button>
+            <div class="errorMessage"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ceeaf2ba40.js" crossorigin="anonymous"></script>
+  <script>
+    $(".scrollToContent").click(function (e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: document.getElementsByTagName('header')[0].clientHeight,
+        behavior: 'smooth'
+      });
+      return false;
+    });
+  </script>
+</body>
+
+</html>

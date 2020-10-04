@@ -2,70 +2,8 @@
 ---
 <!DOCTYPE html>
 <html lang="en-AU">
-{% if page.title %}
-  {% assign title = page.title %}
-{% else %}
-  {% assign title = "Henrik Becker - Software Engineer" %}
-{% endif %}
-{% assign profile = site.data.profile %}
-{% assign companyName = "Henrik Becker Consulting AB" %}
 <head>
-  <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "Person",
-        "name": "{{ profile.name }}",
-        "description": "{{ page.description }}",
-        "nationality": "{{ profile.nationality }}",
-        "jobTitle": "{{ profile.title }}",
-        "birthDate": "{{ profile.birth_date }}",
-        "url": "{{ profile.url }}",
-        "sameAs": [ {% for network in profile.same_as %}"{{ network.url }}"{% unless forloop.last %},{% endunless %} {% endfor %}],
-        "workLocation": "{{ profile.work_location }}",
-        "worksFor": {
-            "name": "{{ profile.works_for.name }}",
-            "url": "{{ profile.works_for.url }}"
-        }
-    }
-  </script>
-  <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "url": "{{ profile.url }}",
-        "name": "{{ companyName }}",
-    }
-  </script>
-  <script>
-    if (navigator.serviceWorker && navigator.serviceWorker.getRegistrations) {
-      navigator.serviceWorker.getRegistrations().then(function (registrations) {
-        for (var registration in registrations) {
-          if (registration && registration.unregister) {
-            registration.unregister();
-          }
-        }
-      })
-    }
-  </script>
-  <title>{{ title }}</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="{{ description }}" />
-  <meta name="twitter.description" content="{{ description }}" />
-  <meta name="author" content="{{ site.author.name }}" />
-  <meta name="copyright" content="{{ companyName }}" />
-  <meta name="theme-color" content="#111111" />
-  <meta property="og:title" content="{{ title }}" />
-  <meta property="og:locale" content="en_AU" />
-  <meta property="og:locale:alternate" content="sv_SE" />
-  <meta property="og:description" content="{{ page.description }}" />
-  <meta property="og:site_name" content="{{ site.title }}" />
-  <meta property="og:url" content="{{ site.production_url }}{{ page.url }}" />
-  <link rel="canonical" href="{{ site.production_url }}{{ page.url }}" />
-  <link rel="home" href="{{ site.production_url }}" />
-  <link rel="manifest" href="/manifest.json" />
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" href="/assets/img/favicon192x192.png" />
+  {% include head.html %}
   <link rel="stylesheet" type="text/css" href="/assets/css/default.css" />
 </head>
 
