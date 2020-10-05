@@ -23,5 +23,4 @@ Open Payments provides a PSD2-compliant platform letting FinTech,
 E-commerce businesses etc integrate with European banks through 
 a single unified API - the Open Payments Platform.
 
-Much of my focus lay on implementing automated onboarding in the client's Customer Portal. 
-A project that involved integration with a variety of Azure resources, Dynamics CRM and KYC/AML services.
+Much of my focus lay on implementing automated onboarding in the client's Customer Portal - a single page React application with a .Net Core backend integrating with a Dynamics CRM and a variety of Azure resources.
