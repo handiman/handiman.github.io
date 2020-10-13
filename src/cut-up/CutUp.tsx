@@ -30,6 +30,7 @@ const Defaults = {
 
 export default () => {
   const [loadingRandomPoem, setLoadingRandomPoem] = useState(false);
+  const [generating, setGenerating] = useState(false);
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [method, setMethod] = useState(Defaults.Method);
@@ -55,7 +56,11 @@ export default () => {
     return '';
   }
 
-  const cutUp = async () => setOutput(await post(method));
+  const cutUp = async () => {
+    setGenerating(true);
+    setOutput(await post(method));
+    setGenerating(false);
+  };
 
   const getRandomPoem = async () => {
     setLoadingRandomPoem(true);
@@ -78,7 +83,7 @@ export default () => {
             variant="outlined"
             placeholder="Paste some text here and use the controls to see magic happen" />
             <Tooltip title={<>Gets a random poem from Poemist<br />https://poemist.github.io/poemist-apidoc</>}>
-              <Button fullWidth onClick={async () => setInput(await getRandomPoem())}>Get random poem</Button>
+              <Button disabled={loadingRandomPoem} fullWidth onClick={async () => setInput(await getRandomPoem())}>{ loadingRandomPoem ? 'Wait for it...' : 'Get random poem'}</Button>
             </Tooltip>
         </Grid>
         <Grid item md sm={12}>
@@ -134,7 +139,7 @@ export default () => {
               valueLabelDisplay="auto"
             />
           </FormGroup>
-          <Button fullWidth variant="outlined" color="secondary" onClick={cutUp}>Generate</Button>
+          <Button fullWidth disabled={generating} variant="outlined" color="secondary" onClick={cutUp}>{ generating ? 'Wait for it...' : 'Generate' }</Button>
         </Grid>
       </Grid>
       <Paper title={output ? '' : 'Watch the magic happen here'}>
