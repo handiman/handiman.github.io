@@ -58,9 +58,11 @@ export default () => {
   const cutUp = async () => setOutput(await post(method));
 
   const getRandomPoem = async () => {
+    setLoadingRandomPoem(true);
     var response = await fetch('https://www.poemist.com/api/v1/randompoems');
     var poems: Array<any> = await response.json();
     var poem = poems[Math.floor(Math.random() * poems.length)];
+    setLoadingRandomPoem(false);
     return poem.content;
   }
 
