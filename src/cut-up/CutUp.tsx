@@ -29,6 +29,7 @@ const Defaults = {
 }
 
 export default () => {
+  const [loadingRandomPoem, setLoadingRandomPoem] = useState(false);
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [method, setMethod] = useState(Defaults.Method);
@@ -43,7 +44,7 @@ export default () => {
       var url = `${apiHost()}/lyricizer/api/v1/${action}?numberOfSentences=${numberOfSentences}&insertLineBreaks=${insertLineBreaks}&sentenceMinLength=${sentenceMinLength}&sentenceMaxLength=${sentenceMaxLength}`;
       var response = await fetch(url, {
         method: 'post',
-        body: input,
+        body: input.substring(0, Math.min(300, input.length)),
         headers: {
           'Accept': 'text/plain',
           'Content-Type': 'text/plain'
@@ -53,19 +54,30 @@ export default () => {
     }
     return '';
   }
+
   const cutUp = async () => setOutput(await post(method));
+
+  const getRandomPoem = async () => {
+    var response = await fetch('https://www.poemist.com/api/v1/randompoems');
+    var poems: Array<any> = await response.json();
+    var poem = poems[Math.floor(Math.random() * poems.length)];
+    return poem.content;
+  }
 
   return (
     <Typography variant="body1" component={Box} className={classes.root}>
       <Grid container spacing={2}>
         <Grid item md sm={12}>
           <TextField
+            value={input} 
             fullWidth
             multiline
             rows={15}
             variant="outlined"
-            placeholder="Paste some text here and use the controls to see magic happen"
-            onChange={(e: any) => setInput(e.target.value)} />
+            placeholder="Paste some text here and use the controls to see magic happen" />
+            <Tooltip title={<>Gets a random poem from Poemist<br />https://poemist.github.io/poemist-apidoc</>}>
+              <Button fullWidth onClick={async () => setInput(await getRandomPoem())}>Get random poem</Button>
+            </Tooltip>
         </Grid>
         <Grid item md sm={12}>
           <RadioGroup value={method} onChange={(e: any) => setMethod(e.target.value)}>
