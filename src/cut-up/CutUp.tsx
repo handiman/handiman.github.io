@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Box, Button, ButtonGroup, FormControlLabel, Grid, makeStyles, Paper, RadioGroup, Radio, Slider, TextField, Tooltip, Typography, FormGroup } from '@material-ui/core';
+import React, { useState } from 'react';
+import { Box, Button, FormControlLabel, Grid, makeStyles, Paper, RadioGroup, Radio, Slider, TextField, Tooltip, Typography, FormGroup } from '@material-ui/core';
 import { apiHost } from '../Api';
 import ReactMarkdown from 'react-markdown';
 
@@ -55,13 +55,6 @@ export default () => {
   }
   const cutUp = async () => setOutput(await post(method));
 
-  useEffect(() => { cutUp(); }, [method]);
-  useEffect(() => { cutUp(); }, [input]);
-  useEffect(() => { cutUp(); }, [numberOfSentences]);
-  useEffect(() => { cutUp(); }, [insertLineBreaks]);
-  useEffect(() => { cutUp(); }, [sentenceMinLength]);
-  useEffect(() => { cutUp(); }, [sentenceMaxLength]);
-
   return (
     <Typography variant="body1" component={Box} className={classes.root}>
       <Grid container spacing={2}>
@@ -69,15 +62,15 @@ export default () => {
           <TextField
             fullWidth
             multiline
-            rows={10}
+            rows={15}
             variant="outlined"
             placeholder="Paste some text here and use the controls to see magic happen"
             onChange={(e: any) => setInput(e.target.value)} />
         </Grid>
         <Grid item md sm={12}>
           <RadioGroup value={method} onChange={(e: any) => setMethod(e.target.value)}>
-            <FormControlLabel control={<Radio />} onClick={cutUp} value={Methods.CutUpSentences} label="Re-arrange sentences in random order" />
-            <FormControlLabel control={<Radio />} onClick={cutUp} value={Methods.CutUpWords} label="Generate random sentences" />
+            <FormControlLabel control={<Radio />} value={Methods.CutUpSentences} label="Re-arrange sentences in random order" />
+            <FormControlLabel control={<Radio />} value={Methods.CutUpWords} label="Generate random sentences" />
           </RadioGroup>
           <FormGroup>
             <Typography variant="subtitle2" id="number-of-sentences">Number of Sentences</Typography>
@@ -102,31 +95,32 @@ export default () => {
               aria-labelledby="line-breaks"
               valueLabelDisplay="auto"
             />
-            {method === Methods.CutUpWords && (<>
-              <Typography variant="subtitle2" id="sentence-min-length">Sentence min length</Typography>
-              <Slider
-                onChange={(_: any, value: any) => setSentenceMinLength(value)}
-                step={1}
-                min={1}
-                max={20}
-                defaultValue={2}
-                getAriaValueText={(value: any) => value}
-                aria-labelledby="sentence-min-length"
-                valueLabelDisplay="auto"
-              />
-              <Typography variant="subtitle2" id="sentence-max-length">Sentence max length</Typography>
-              <Slider
-                onChange={(_: any, value: any) => setSentenceMaxLength(value)}
-                step={1}
-                min={1}
-                max={20}
-                defaultValue={15}
-                getAriaValueText={(value: any) => value}
-                aria-labelledby="sentence-min-length"
-                valueLabelDisplay="auto"
-              />
-            </>)}
+            <Typography variant="subtitle2" id="sentence-min-length">Sentence min length</Typography>
+            <Slider
+              disabled={method !== Methods.CutUpWords}
+              onChange={(_: any, value: any) => setSentenceMinLength(value)}
+              step={1}
+              min={1}
+              max={20}
+              defaultValue={2}
+              getAriaValueText={(value: any) => value}
+              aria-labelledby="sentence-min-length"
+              valueLabelDisplay="auto"
+            />
+            <Typography variant="subtitle2" id="sentence-max-length">Sentence max length</Typography>
+            <Slider
+              disabled={method !== Methods.CutUpWords}
+              onChange={(_: any, value: any) => setSentenceMaxLength(value)}
+              step={1}
+              min={1}
+              max={20}
+              defaultValue={15}
+              getAriaValueText={(value: any) => value}
+              aria-labelledby="sentence-min-length"
+              valueLabelDisplay="auto"
+            />
           </FormGroup>
+          <Button fullWidth variant="outlined" color="secondary" onClick={cutUp}>Generate</Button>
         </Grid>
       </Grid>
       <Paper title={output ? '' : 'Watch the magic happen here'}>
