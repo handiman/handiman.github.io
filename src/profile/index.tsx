@@ -12,7 +12,6 @@ const Home = () => {
   useEffect(() => {
     getUsps().then(setUsps);
     getRecommendations().then(setRecommendations);
-    ping();
   }, []);
   
   return (

@@ -1,4 +1,5 @@
-const apiHost = () => document.location.hostname === 'localhost' ? 'https://localhost:5001' : 'https://henrikbecker.azurewebsites.net';
+const isLocal = document.location.hostname === 'localhost';
+const apiHost = () => isLocal ? 'https://localhost:5001' : 'https://henrikbecker.azurewebsites.net';
 const ApiRootUri = `${apiHost()}/api/v1`;
 
 const get = async (resource: string) => {
@@ -12,12 +13,6 @@ const getRecommendations = async () => await get('/assets/recommendations.json')
 const getIp = async function () {
   const response = await fetch(`${ApiRootUri}/ip`);
   return await response.text();
-}
-
-const ping = async () => {
-  console.log("Ping");
-  var response = await fetch(`${ApiRootUri}/ping`);
-  console.log(await response.text());
 }
 
 const sendContactForm = async (form: {
@@ -46,6 +41,5 @@ export {
   getProfile,
   getUsps,
   getRecommendations,
-  ping,
   sendContactForm
 }

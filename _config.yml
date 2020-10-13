@@ -22,7 +22,8 @@ exclude: [
  "Rakefile", 
  "changelog.md", 
  "*.sln",
- "*.suo"]
+ "*.suo",
+ "*.orig"]
 
 collections:
  usp:

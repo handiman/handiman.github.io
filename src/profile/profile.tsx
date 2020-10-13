@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import { getProfile, getRecommendations, ping } from '../Api';
+import { getProfile, getRecommendations } from '../Api';
 import Layout from './components/Layout';
 import { ContactForm, Loading } from './components';
 import { Projects, Employers, Languages, Summary, Interests, Skills, Education, Recommendations } from './components/profile';
@@ -14,7 +14,6 @@ const Profile = () => {
   useEffect(() => {
     getProfile().then(setProfile);
     getRecommendations().then(setRecommendations);
-    ping();
   }, []);
 
   if (profile) {

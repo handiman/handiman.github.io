@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { AppBar, Toolbar, IconButton } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton, Link } from '@material-ui/core';
 import { PlayArrow as PlayIcon, Pause as PauseIcon } from '@material-ui/icons';
 import { makeStyles } from '@material-ui/core/styles';
 import { IAlbum, ITrack } from './';
@@ -77,7 +77,7 @@ export default (props: IProps) => {
         </div>
         <div className={classes.copyright}>
           <small>
-            The music on this site is <a href="https://www.henrikbecker.net">&copy; Henrik Becker</a> and licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">License</a>.
+            The music on this site is <Link href="https://www.henrikbecker.net">&copy; Henrik Becker</Link> and licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International <Link rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">License</Link>.
           </small>
         </div>
       </Toolbar>

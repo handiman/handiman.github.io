@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Box, Button, FormControlLabel, Grid, makeStyles, Paper, RadioGroup, Radio, Slider, TextField, Tooltip, Typography, FormGroup } from '@material-ui/core';
 import { apiHost } from '../Api';
 import ReactMarkdown from 'react-markdown';
@@ -29,11 +29,13 @@ const Defaults = {
 }
 
 export default () => {
-  const [loadingRandomPoem, setLoadingRandomPoem] = useState(false);
+  const poemistUrl = 'https://www.poemist.com/api/v1/randompoems';
+  const [loadingRandomPoems, setLoadingRandomPoems] = useState(false);
   const [generating, setGenerating] = useState(false);
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [method, setMethod] = useState(Defaults.Method);
+  const [poems, setPoems] = useState<Array<any>>([]);
   const [numberOfSentences, setNumberOfSentences] = useState(Defaults.NumberOfSentences);
   const [insertLineBreaks, setInsertLineBreaks] = useState(Defaults.LineBreaks);
   const [sentenceMinLength, setSentenceMinLength] = useState(Defaults.SentenceMinLength);
@@ -62,14 +64,21 @@ export default () => {
     setGenerating(false);
   };
 
-  const getRandomPoem = async () => {
-    setLoadingRandomPoem(true);
-    var response = await fetch('https://www.poemist.com/api/v1/randompoems');
-    var poems: Array<any> = await response.json();
-    var poem = poems[Math.floor(Math.random() * poems.length)];
-    setLoadingRandomPoem(false);
-    return poem.content;
+  const loadRandomPoems = async () => {
+    setLoadingRandomPoems(true);
+    var response = await fetch(poemistUrl);
+    setPoems(await response.json());
+    setLoadingRandomPoems(false);
   }
+
+  const getRandomPoem = async () => {
+    var poem = poems[Math.floor(Math.random() * poems.length)];
+    return poem?.content;
+  }
+
+  useEffect(() => {
+    loadRandomPoems();
+  }, []);
 
   return (
     <Typography variant="body1" component={Box} className={classes.root}>
@@ -82,8 +91,8 @@ export default () => {
             rows={15}
             variant="outlined"
             placeholder="Paste some text here and use the controls to see magic happen" />
-            <Tooltip title={<>Gets a random poem from Poemist<br />https://poemist.github.io/poemist-apidoc</>}>
-              <Button disabled={loadingRandomPoem} fullWidth onClick={async () => setInput(await getRandomPoem())}>{ loadingRandomPoem ? 'Wait for it...' : 'Get random poem'}</Button>
+            <Tooltip title={<>Gets a random poem from Poemist<br />{ poemistUrl }</>}>
+              <Button disabled={loadingRandomPoems} fullWidth onClick={async () => setInput(await getRandomPoem())}>{ loadingRandomPoems ? 'Wait for it...' : 'Get random poem'}</Button>
             </Tooltip>
         </Grid>
         <Grid item md sm={12}>
