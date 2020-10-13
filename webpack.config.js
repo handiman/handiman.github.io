@@ -7,7 +7,8 @@ module.exports = {
     "index": "./src/profile/index.tsx",
     "profile": "./src/profile/profile.tsx",
     "music": "./src/music/index.tsx",
-    "cha-ching": "./src/cha-ching/index.tsx"
+    "cha-ching": "./src/cha-ching/index.tsx",
+    "cut-up": "./src/cut-up/index.tsx"
   },
   output: {
     path: path.resolve(__dirname, "./assets/js"),

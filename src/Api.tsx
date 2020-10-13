@@ -1,4 +1,5 @@
-const ApiRootUri = 'https://henrikbecker.azurewebsites.net/api/v1';
+const apiHost = () => document.location.hostname === 'localhost' ? 'https://localhost:5001' : 'https://henrikbecker.azurewebsites.net';
+const ApiRootUri = `${apiHost()}/api/v1`;
 
 const get = async (resource: string) => {
   const response = await fetch(resource);
@@ -40,6 +41,7 @@ const sendContactForm = async (form: {
 }
 
 export {
+  apiHost,
   getIp,
   getProfile,
   getUsps,

@@ -2,13 +2,18 @@
 ---
 <!DOCTYPE html>
 <html lang="en-AU">
+
 <head>
-  {% include head.html %}
-  <link rel="stylesheet" type="text/css" href="/assets/css/default.css" />
+  {% include head.html %}{% for style in page.styles %}
+  <link rel="stylesheet" type="text/css" href="{{ style }}" />
+  {% endfor %}
 </head>
 
 <body>
-  {{ content }}
+  <main>
+    {{ content }}
+  </main>{% for script in page.scripts %}
+  <script src="{{ script }}"></script>{% endfor %}
 </body>
 
 </html>
