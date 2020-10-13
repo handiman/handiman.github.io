@@ -1,6 +1,6 @@
 ---
 title: Automated Deployment
-icon: /assets/img/Logo-White_140px.png
+font: fab fa-octopus-deploy
 permalink: /usp/deploy
 no_link: true
 ---

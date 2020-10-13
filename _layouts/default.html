@@ -2,18 +2,18 @@
 ---
 <!DOCTYPE html>
 <html lang="en-AU">
-
+{% assign timestamp = site.time | date: '%s' %}
 <head>
   {% include head.html %}{% for style in page.styles %}
-  <link rel="stylesheet" type="text/css" href="{{ style }}" />
+  <link rel="stylesheet" type="text/css" href="{{ style }}{% unless style contains 'http' %}?v={{ timestamp }}{% endunless %}" />
   {% endfor %}
 </head>
 
 <body>
   <main>
     {{ content }}
-  </main>{% for script in page.scripts %}
-  <script src="{{ script }}"></script>{% endfor %}
+  </main>{% for script in page.scripts %}{% if script.src %}{% assign src = script.src %}{% else %}{% assign src = script %}{% endif %}
+  <script src="{{ src }}{% unless src contains 'http' %}?v={{ timestamp }}{% endunless %}"{% if script.crossorigin %} crossorigin="{{ script.crossorigin }}"{% endif %}></script>{% endfor %}
   <script>
     (function() {
       var local = 'localhost' === document.location.hostname, ping = function() {
