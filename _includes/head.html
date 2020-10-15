@@ -5,17 +5,6 @@
 {% endif %}
 {% assign profile = site.data.profile %}
 {% assign companyName = "Henrik Becker Consulting AB" %}
-<script>
-  if (navigator.serviceWorker && navigator.serviceWorker.getRegistrations) {
-    navigator.serviceWorker.getRegistrations().then(function (registrations) {
-      for (var registration in registrations) {
-        if (registration && registration.unregister) {
-          registration.unregister();
-        }
-      }
-    })
-  }
-</script>
 <script type="application/ld+json">
   {
       "@context": "http://schema.org",

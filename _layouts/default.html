@@ -3,30 +3,71 @@
 <!DOCTYPE html>
 <html lang="en-AU">
 {% assign timestamp = site.time | date: '%s' %}
+
 <head>
+  <style type="text/css">
+    * { font-family: Roboto, sans-serif;}
+    #loading, #error { width: 100%; height: 100vh; display: table; }
+    #loading div, #error div { display: table-cell; text-align: center; vertical-align: middle; }
+    @media screen { .print { display: none }
+    @media print { .no-print { display: none } }
+  </style>
+  {% if page.redirect %}
+  <meta http-equiv="refresh" content="0;url={{ page.redirect }}" />{% endif %}
   {% include head.html %}{% for style in page.styles %}
-  <link rel="stylesheet" type="text/css" href="{{ style }}{% unless style contains 'http' %}?v={{ timestamp }}{% endunless %}" />
+  <link rel="stylesheet" type="text/css"
+    href="{{ style }}{% unless style contains 'http' %}?v={{ timestamp }}{% endunless %}" />
   {% endfor %}
 </head>
 
 <body>
+  {% unless page.redirect %}
   <main>
     {{ content }}
-  </main>{% for script in page.scripts %}{% if script.src %}{% assign src = script.src %}{% else %}{% assign src = script %}{% endif %}
-  <script src="{{ src }}{% unless src contains 'http' %}?v={{ timestamp }}{% endunless %}"{% if script.crossorigin %} crossorigin="{{ script.crossorigin }}"{% endif %}></script>{% endfor %}
+  </main>
+  {% for script in page.scripts %}{% if script.src %}{% assign src = script.src %}{% else %}{% assign src = script %}{% endif %}
+  <script src="{{ src }}{% unless src contains 'http' %}?v={{ timestamp }}{% endunless %}" {% if script.crossorigin %}
+    crossorigin="{{ script.crossorigin }}" {% endif %}></script>{% endfor %}
   <script>
-    (function() {
-      var local = 'localhost' === document.location.hostname, ping = function() {
-        console.log('Ping');
-        fetch(local ? 'https://localhost:5001/api/v1/ping' : 'https://henrikbecker.azurewebsites.net/api/v1/ping')
-        .then(function(response) { return response.text(); })
-        .then(function(response) { console.log(response); });
-      };
-      ping();
-      var handle = window.setInterval(ping, local ? 5000 : 30000);
-      window.addEventListener('unload', function() { window.clearInterval(handle); });
+    (function () {
+      var keepApiAlive = function () {
+        var local = 'localhost' === document.location.hostname, ping = function () {
+          console.log('Ping');
+          fetch(local ? 'https://localhost:5001/api/v1/ping' : 'https://henrikbecker.azurewebsites.net/api/v1/ping')
+            .then(function (response) { return response.text(); })
+            .then(function (response) { console.log(response); });
+        };
+        ping();
+        var handle = window.setInterval(ping, local ? 600000 : 30000);
+        window.addEventListener('unload', function () { window.clearInterval(handle); });
+      }
+
+      var unregisterServiceWorker = function () {
+        if (navigator.serviceWorker && navigator.serviceWorker.getRegistrations) {
+          navigator.serviceWorker.getRegistrations().then(function (registrations) {
+            for (var registration in registrations) {
+              if (registration && registration.unregister) {
+                registration.unregister();
+              }
+            }
+          })
+        }
+      }
+
+      unregisterServiceWorker();
+      keepApiAlive();
     })();
   </script>
+  {% else %}
+  <div id="error">
+    <div>
+      <h1><i class="fas fa-directions"></i></h1>
+      This page has moved.<br />
+      <a href="{{ page.redirect }}">Click here if you are not automatically redirected</a>.
+    </div>
+  </div>
+  {% endunless %}
+  </main>
 </body>
 
 </html>
