@@ -9,13 +9,13 @@
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
-    "build": "webpack"
+    "build": "webpack",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@material-ui/core": "^4.9.8",
-    "@material-ui/icons": "^4.9.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,25 +33,32 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
-    "@babel/preset-react": "^7.9.4",
-    "@babel/preset-typescript": "^7.9.0",
-    "@types/node": "^13.13.6",
-    "@types/react": "^16.9.31",
-    "@types/react-dom": "^16.9.6",
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "@storybook/addon-actions": "^6.0.27",
+    "@storybook/addon-essentials": "^6.0.27",
+    "@storybook/addon-links": "^6.0.27",
+    "@storybook/react": "^6.0.27",
+    "@types/node": "^13.13.29",
+    "@types/react": "^16.9.54",
+    "@types/react-dom": "^16.9.9",
     "babel-loader": "^8.1.0",
-    "css-loader": "^3.4.2",
+    "css-loader": "^3.6.0",
     "minimist": "^1.2.5",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-is": "^17.0.1",
     "react-markdown": "^4.3.1",
     "source-map-loader": "^0.2.4",
-    "style-loader": "^1.1.3",
+    "style-loader": "^1.3.0",
     "ts-loader": "^6.2.2",
-    "typescript": "^3.9.2",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   }
 }
