@@ -1,0 +1,59 @@
+---
+---
+<!DOCTYPE html>{% assign timestamp = site.time | date: '%s' %}
+<html lang="en-AU">
+{% if page.title %}{% assign title = page.title %}{% else %}{% assign title = site.data.person.name | append: ' - ' | append: site.data.person.jobTitle %}{% endif %}
+{% if page.description %}{% assign description = page.description %}{% else %}{% assign description = site.data.person.description %}{% endif %}
+<head>
+  {% if page.redirect %}
+  <meta http-equiv="refresh" content="0;url={{ page.redirect }}" />{% endif %}
+  <script type="application/ld+json">{{ site.data.person | jsonify }}</script>
+  <script type="application/ld+json">{{ site.data.organization | jsonify }}</script>
+  <script src="https://kit.fontawesome.com/ceeaf2ba40.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="{{ site.data.person.name }}" />
+  <meta name="copyright" content="{{ site.data.person.name }}" />
+  {% if page.robots %}<meta name="robots" content="{{ page.robots }}" />{% endif %}
+  <title>{{ title }}</title>
+  {% if description %}<meta name="description" content="{{ description }}" />
+  <meta name="twitter.description" content="{{ description }}" />
+  <meta property="og:description" content="{{ description }}" />{% endif %}
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:locale" content="en_AU" />
+  <meta property="og:locale:alternate" content="sv_SE" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:url" content="{{ site.production_url }}{{ page.url }}" />
+  <link rel="alternate" type="application/vnd.openxmlformats-officedocument.wordprocessing" title="My resumé in Word format" href="/assets/henrik-becker.docx" />
+  <link rel="alternate" type="application/pdf" title="My resumé in PDF format" href="/assets/henrik-becker.pdf" />
+  <link rel="alternate" type="text/markdown" title="My resumé in Markdown format" href="/assets/henrik-becker.txt" />
+  <link rel="canonical" href="{{ site.production_url }}{{ page.url }}" />
+  <link rel="home" href="{{ site.production_url }}" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/assets/img/favicon192x192.png" />
+  <link rel="stylesheet" href="/assets/css/wombat.css?v={{ timestamp }}" />
+</head>
+<body>
+  {% unless page.redirect %}
+  <div id="root">
+    {{ content }}
+  </div>
+  <script>window.henrikBeckerResume = {% include profile.json %}</script>
+  <script src="/assets/js/vendors.js?v={{ timestamp }}"></script>
+  <script src="/assets/js/keepAlive.js"></script>{% for script in page.scripts %}{% if script.src %}{% assign src =
+  script.src %}{% else %}{% assign src = script %}{% endif %}
+  <script src="{{ src }}{% unless src contains 'http' %}?v={{ timestamp }}{% endunless %}" {% if script.crossorigin %}crossorigin="{{ script.crossorigin }}" {% endif %}></script>{% endfor %}
+  {% else %}
+  <div id="error">
+    <div>
+      <h1><i class="fas fa-directions"></i></h1>
+      This page has moved.<br />
+      <a href="{{ page.redirect }}">Click here if you are not automatically redirected</a>.
+    </div>
+  </div>
+  {% endunless %}
+</body>
+</html>

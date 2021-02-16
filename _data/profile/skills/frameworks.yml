@@ -1,0 +1,16 @@
+- name: Asp.Net Core
+  level: Expert
+- name: Asp.Net MVC
+  level: Expert
+- name: Asp.Net Web API
+  level: Expert
+- name: Asp.Net Web Forms
+  level: Advanced
+- name: React
+  level: Intermediate
+- name: jQuery
+  level: Advanced
+- name: KnockoutJS
+  level: Intermediate
+- name: WCF
+  level: Advanced

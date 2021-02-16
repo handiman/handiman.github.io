@@ -1,0 +1,73 @@
+---
+layout: wombat
+scripts:
+- src: /assets/js/index.js
+---
+<script>document.write('{% include loading.html %}');</script>
+<noscript>
+  <div class="noscript">
+    <article>
+      <header>
+        <h1>{{ site.data.person.name }} - {{ site.data.person.jobTitle }}</h1>
+      </header>
+      <section>
+        <header>
+          <h2>Profile</h2>
+        </header>
+        <p>{{ site.data.person.description }}</p>
+      </section>        
+      <section>
+        <header>
+          <h2>Skills & Expertise</h2>
+        </header>
+        <div style="display: flex">{% for category in site.data.profile.featuredSkills %}
+          <div>
+            <h3>{{ category[0] }}</h3>
+            <ul>{% for skill in category[1] %}
+              <li>{{ skill.name }} - {{ skill.level }}</li>{% endfor %}
+            </ul>
+          </div>{% endfor %}
+        </div>
+      </section>
+      <section>
+        <header>
+          <h2>Languages</h2>
+        </header>
+        <ul>{% for language in site.data.profile.languages %}
+          <li>{{ language.name }} - {{ language.proficiency }}</li>{% endfor %}
+        </ul>
+      </section>
+      <section>
+        <header>
+          <h2>Featured Projects</h2>
+        </header>
+        <ul>{% for featuredProject in site.data.featuredProjects %}
+          {% assign projectId = '/projects/' | append: featuredProject %}
+          {% assign project = site.projects | where: "id", projectId | first %}
+          <li>
+            <h3>{{ project.title }}</h3>
+            <strong>{{ project.role }} | {{ project.start_date }} - {{ project.end_date }}</strong>
+            <ul>{% for summary in project.summary %}
+              <li>{{ summary }}</li>{% endfor %}
+            </ul>
+            <div><strong>Skills used: </strong>{{ project.skills | join: ', ' }}</div>
+          </li>{% endfor %}
+        </ul>
+      </section>
+      <section>
+        <header>
+          <h2>Work Experience</h2>
+        </header>
+        <ul>{% for employment in site.employment reversed %}
+          <li>
+            <h3>{{ employment.organization.name }}</h3>
+            <strong>{{ employment.role }} | {{ employment.start_date }} - {{ employment.end_date}}</strong>
+            <ul>{% for summary in employment.summary %}
+              <li>{{ summary }}</li>{% endfor %}
+            </ul>
+          </li>{% endfor %}
+        </ul>
+      </section>
+    </article>
+  </div>
+</noscript>

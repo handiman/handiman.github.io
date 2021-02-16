@@ -1,0 +1,35 @@
+{% assign profile = site.data.profile %}{
+  "summary": {{ profile.summary | jsonify }},
+  "skills": {{ profile.featuredSkills | jsonify }},
+  "languages": {{ profile.languages | jsonify }},
+  "interests": {{ profile.interests | map: "name" | jsonify }},
+  "certifications": {{ profile.certifications | map: "name" | jsonify }},
+  "recommendations": {{ profile.recommendations | jsonify }},
+  "projects": [{% for featuredProject in site.data.featuredProjects %}
+    {% assign projectId = '/projects/' | append: featuredProject %}
+    {% assign project = site.projects | where: "id", projectId | first %}
+    {% if project %}
+      {% if project.excerpt %}{% assign summary = project.excerpt %}
+      {% elsif project.summary %}{% assign summary = project.summary %}
+      {% elsif project.achievements %}{% assign summary = project.achievements | join: ' ' %}
+      {% elsif project.description %}{% assign summary = project.description %}
+      {% else %}{% assign summary = project %}{% endif %} {
+      "name": {{ project.title | jsonify }},
+      "role": {{ project.role | jsonify }},
+      "from": {{ project.start_date | date: "%b %Y" | jsonify }},
+      "to": {{ project.end_date | date: "%b %Y" | jsonify }},
+      "summary": {{ summary | jsonify }},
+      "skills": {{ project.skills | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endif %}{% endfor %}{% assign project = nil %}],
+  "employers": [{% for employment in site.employment reversed %}
+    {% if employment.excerpt %}{% assign summary = employment.excerpt %}
+    {% elsif employment.summary %}{% assign summary = employment.summary %}
+    {% else %}{% assign summary = employment %}{% endif %} {
+    "name": {{ employment.organization.name | jsonify }},
+    "role": {{ employment.role | jsonify }},
+    "from": {{ employment.start_date | date: "%b %Y" | jsonify }},
+    "to": {{ employment.end_date | date: "%b %Y" | jsonify }},
+    "summary": {{ summary | jsonify }}
+  }{% unless forloop.last %},{% endunless %}{% endfor %}]
+}
