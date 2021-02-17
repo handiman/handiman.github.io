@@ -4,10 +4,7 @@ module.exports = {
   mode: "production",
   devtool: "source-map",
   entry: {
-    index: "./src/wombat/index.tsx",
-    music: "./src/music/index.tsx",
-    "cha-ching": "./src/cha-ching/index.tsx",
-    "cut-up": "./src/cut-up/index.tsx"
+    index: "./src/wombat/index.tsx"
   },
   output: {
     path: path.resolve(__dirname, "./assets/js"),
