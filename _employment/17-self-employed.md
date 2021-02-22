@@ -10,6 +10,8 @@ start_date: 2017-07-06
 end_date: present
 mission: Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm region.
 clients:
+ - name: Adlibris
+   url: https://www.adlibris.com
  - name: Norconsult Astando
    url: https://www.norconsultastando.se
  - name: Open Payments
