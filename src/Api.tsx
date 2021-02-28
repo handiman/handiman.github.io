@@ -2,10 +2,10 @@ import React, { createContext, useContext } from "react";
 import { IProfile, mockProfile } from "./wombat/Profile";
 import { isLocal } from './Config';
 
-const apiHost = () => isLocal ? 'https://localhost:5001' : 'https://henrikbecker.azurewebsites.net';
-const ApiRootUri = `${apiHost()}/api/v1`;
+const apiHost = () => isLocal ? 'http://localhost:7071' : 'https://henrikbeckerapi.azurewebsites.net';
+const ApiRootUri = `${apiHost()}/api`;
 
-const getProfile = async () => await Promise.resolve((window as any).henrikBeckerResume); //get(`/assets/profile.json`);
+const getProfile = async () => await Promise.resolve((window as any).henrikBeckerResume);
 
 const getIp = async function () {
   const response = await fetch(`${ApiRootUri}/ip`);
@@ -20,18 +20,20 @@ const sendContactForm = async (form: {
   trace: string
 }) => {
   const { from, name, message, captcha, trace } = form;
-  let body = new FormData();
-  body.append("subject", "Contact Form");
-  body.append("from", from);
-  body.append("name", name);
-  body.append("address", await getIp());
-  body.append("message", message);
-  body.append("captcha", captcha);
-
-  const response = await fetch(`${ApiRootUri}/contact-form`, {
-    headers: { 'X-DEBUG': trace },
+  const address = await getIp();
+  const response = await fetch(`${ApiRootUri}/contact`, {
+    headers: { 
+      'Content-Type': 'application/json',
+      'X-DEBUG': trace 
+    },
     method: 'POST',
-    body
+    body: JSON.stringify({ 
+      name,
+      from,
+      message,
+      captcha,
+      address
+    })
   }); 
 
   if (response.status >= 400) {

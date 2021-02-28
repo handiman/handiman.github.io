@@ -42,8 +42,7 @@
     {{ content }}
   </div>
   <script>window.henrikBeckerResume = {% include profile.json %}</script>
-  <script src="/assets/js/vendors.js?v={{ timestamp }}"></script>
-  <script src="/assets/js/keepAlive.js"></script>{% for script in page.scripts %}{% if script.src %}{% assign src =
+  <script src="/assets/js/vendors.js?v={{ timestamp }}"></script>{% for script in page.scripts %}{% if script.src %}{% assign src =
   script.src %}{% else %}{% assign src = script %}{% endif %}
   <script src="{{ src }}{% unless src contains 'http' %}?v={{ timestamp }}{% endunless %}" {% if script.crossorigin %}crossorigin="{{ script.crossorigin }}" {% endif %}></script>{% endfor %}
   {% else %}
