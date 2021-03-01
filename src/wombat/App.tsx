@@ -12,12 +12,12 @@ export const App = () => {
   const [didCatch, setDidCatch] = useState(false);
   const { root } = useStyles();
   const Api = useApi();
-  const ping = async () => {
-    console.log("Ping");
-    console.log(await Api.ping());
-  }
-
+  
   useEffect(() => {
+    const ping = () => {
+      console.log("Ping");
+      Api.ping().then(response => console.log(response));
+    };
     ping();
     const handle = window.setInterval(ping, 30000);
     return () => window.clearInterval(handle);
