@@ -25,20 +25,17 @@ const sendContactForm = async (form: {
   trace: string
 }) => {
   const { from, name, message, captcha, trace } = form;
-  const address = await getIp();
-  const response = await fetch(`${ApiRootUri}/contact`, {
-    headers: { 
-      'Content-Type': 'application/json',
-      'X-DEBUG': trace 
-    },
+  let body = new FormData();
+  body.append("subject", "Contact Form");
+  body.append("from", from);
+  body.append("name", name);
+  body.append("address", await getIp());
+  body.append("message", message);
+  body.append("captcha", captcha);
+  const response = await fetch(`${ApiRootUri}/contact-form`, {
+    headers: { 'X-DEBUG': trace },
     method: 'POST',
-    body: JSON.stringify({ 
-      name,
-      from,
-      message,
-      captcha,
-      address
-    })
+    body
   }); 
 
   if (response.status >= 400) {
