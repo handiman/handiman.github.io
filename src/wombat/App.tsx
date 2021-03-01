@@ -11,13 +11,15 @@ export const App = () => {
   const { ErrorBoundary } = useErrorBoundary();
   const [didCatch, setDidCatch] = useState(false);
   const { root } = useStyles();
-  const { ping } = useApi();
+  const Api = useApi();
+  const ping = async () => {
+    console.log("Ping");
+    console.log(await Api.ping());
+  }
 
   useEffect(() => {
-    const handle = window.setInterval(() => {
-      console.log("Ping");
-      ping().then(response => console.log(response));
-    }, 30000);
+    ping();
+    const handle = window.setInterval(ping, 30000);
     return () => window.clearInterval(handle);
   }, []);
 
