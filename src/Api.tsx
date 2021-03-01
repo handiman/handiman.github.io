@@ -32,7 +32,7 @@ const sendContactForm = async (form: {
   body.append("address", await getIp());
   body.append("message", message);
   body.append("captcha", captcha);
-  const response = await fetch(`${ApiRootUri}/contact-form`, {
+  const response = await fetch(`${ApiRootUri}/contact`, {
     headers: { 'X-DEBUG': trace },
     method: 'POST',
     body
