@@ -7,7 +7,12 @@ const ApiRootUri = `${apiHost()}/api`;
 
 const getProfile = async () => await Promise.resolve((window as any).henrikBeckerResume);
 
-const getIp = async function () {
+const ping = async () => {
+  const response = await fetch(`${ApiRootUri}/ping`);
+  return await response.text();
+}
+
+const getIp = async () => {
   const response = await fetch(`${ApiRootUri}/ip`);
   return await response.text();
 }
@@ -48,14 +53,16 @@ interface IApi {
   apiHost(): string,
   getIp(): Promise<string>,
   getProfile(): Promise<IProfile>,
-  sendContactForm(form: any): Promise<void>
+  sendContactForm(form: any): Promise<void>,
+  ping(): Promise<string>
 }
 
 const Api = {
   apiHost,
   getIp,
   getProfile,
-  sendContactForm
+  sendContactForm,
+  ping
 };
 
 const ApiContext = createContext<IApi>(Api);
@@ -72,7 +79,8 @@ export const MockApi: React.FC<{ children?: any }> = ({ children }) => {
       apiHost: () => document.location.hostname,
       getIp: () => Promise.resolve('127.0.0.1'),
       getProfile: () => Promise.resolve(mockProfile),
-      sendContactForm: (form: any) => new Promise<void>(() => console.log("SEND CONTACT FORM", form))
+      sendContactForm: (form: any) => new Promise<void>(() => console.log("SEND CONTACT FORM", form)),
+      ping: () => Promise.resolve('Pong')
     }}>
       {children}
     </ApiContext.Provider>
