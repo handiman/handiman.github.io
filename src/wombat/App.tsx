@@ -14,7 +14,6 @@ export const App = () => {
   const { ping } = useApi();
 
   useEffect(() => {
-    alert("Ping");
     const handle = window.setInterval(() => {
       console.log("Ping");
       ping().then(response => console.log(response));
