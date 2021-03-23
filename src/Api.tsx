@@ -20,23 +20,15 @@ const getIp = async () => {
 const sendContactForm = async (form: {
   name: string,
   from: string,
-  message: string,
-  captcha: string,
-  trace: string
+  message: string
 }) => {
-  const { from, name, message, captcha, trace } = form;
+  const { from, name, message } = form;
   let body = new FormData();
   body.append("subject", "Contact Form");
   body.append("from", from);
   body.append("name", name);
-  body.append("address", await getIp());
   body.append("message", message);
-  body.append("captcha", captcha);
-  const response = await fetch(`${ApiRootUri}/contact`, {
-    headers: { 'X-DEBUG': trace },
-    method: 'POST',
-    body
-  }); 
+  const response = await fetch(`${ApiRootUri}/contact`, { method: 'POST', body }); 
 
   if (response.status >= 400) {
     const errors = await response.json();

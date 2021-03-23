@@ -1,11 +1,7 @@
-import React, { createRef, useState } from 'react';
-import ReCAPTCHA from "react-google-recaptcha";
-import { Typography, Dialog, DialogTitle, DialogActions, DialogContent, TextField, Button, makeStyles, CircularProgress, Theme, createStyles, WithStyles, withStyles, FormControl, Grid } from '@material-ui/core';
+import React, { useState } from 'react';
+import { Typography, Dialog, DialogTitle, DialogActions, DialogContent, TextField, Button, Theme, createStyles, WithStyles, withStyles, FormControl } from '@material-ui/core';
 import { SectionProps } from '.';
 import { useApi } from '../../Api';
-import { useConfig } from '../../Config';
-
-const { recaptchaSiteKey } = useConfig();
 
 const styles = (theme: Theme) => createStyles({
   root: {
@@ -24,9 +20,7 @@ interface ContactFormDialogProps extends SectionProps, WithStyles<typeof styles>
 const ContactFormDialogComponent: React.FC<ContactFormDialogProps> = ({
   open, onClose, title, classes
 }) => {
-  const recaptchaRef = createRef<ReCAPTCHA>();
   const { sendContactForm } = useApi();
-  const [captcha, setCaptcha] = useState<string | null>(null);
   const [name, setName] = useState('');
   const [from, setFrom] = useState('');
   const [message, setMessage] = useState('');
@@ -39,7 +33,7 @@ const ContactFormDialogComponent: React.FC<ContactFormDialogProps> = ({
     try {
       setError('');
       setSending(true);
-      await sendContactForm({ name, from, message, captcha });
+      await sendContactForm({ name, from, message });
       setSent(true);
       setSending(false);
       window.setTimeout(() => {
@@ -77,7 +71,6 @@ const ContactFormDialogComponent: React.FC<ContactFormDialogProps> = ({
           <TextField fullWidth variant="outlined" size="small" name="name" placeholder="Your name" value={name} onChange={(e: any) => setName(e.target.value)} />
           <TextField fullWidth variant="outlined" size="small" name="from" placeholder="Your e-mail address" value={from} onChange={(e: any) => setFrom(e.target.value)} />
           <TextField fullWidth variant="outlined" size="small" name="message" placeholder="Message" rows={5} value={message} onChange={(e: any) => setMessage(e.target.value)} multiline />
-          <ReCAPTCHA ref={recaptchaRef} sitekey={recaptchaSiteKey} onChange={setCaptcha} />
         </form>
       </DialogContent>
       <DialogActions>
@@ -93,13 +86,10 @@ const ContactFormDialogComponent: React.FC<ContactFormDialogProps> = ({
 interface ContactFormProps extends SectionProps, WithStyles<typeof styles> { }
 
 const ContactFormComponent: React.FC<ContactFormProps> = ({ title, classes }) => {
-  const recaptchaRef = createRef<ReCAPTCHA>();
   const { sendContactForm } = useApi();
-  const [captcha, setCaptcha] = useState<string | null>(null);
   const [name, setName] = useState('');
   const [from, setFrom] = useState('');
   const [message, setMessage] = useState('');
-  const [trace, setTrace] = useState('');
   const [sent, setSent] = useState(false);
   const [error, setError] = useState('');
   const [_, setSending] = useState(false);
@@ -109,7 +99,7 @@ const ContactFormComponent: React.FC<ContactFormProps> = ({ title, classes }) =>
     try {
       setError('');
       setSending(true);
-      await sendContactForm({ name, from, message, captcha, trace });
+      await sendContactForm({ name, from, message });
       setSending(false);
       setSent(true);
       window.setTimeout(reset, 2000);
@@ -133,19 +123,9 @@ const ContactFormComponent: React.FC<ContactFormProps> = ({ title, classes }) =>
   return (
     <form onSubmit={submit} className={classes.root}>
       {title && <Typography variant="h4" gutterBottom>{title}</Typography>}
-      <Grid container spacing={4}>
-        <Grid item xs={12} sm={12} md={6} lg={6} xl={6} component={FormControl}>
-          <TextField variant="outlined" size="small" name="name" placeholder="Your name" value={name} onChange={(e: any) => setName(e.target.value)} />
-          <TextField variant="outlined" size="small" name="from" placeholder="Your e-mail address" value={from} onChange={(e: any) => setFrom(e.target.value)} />
-          <TextField variant="outlined" size="small" name="message" placeholder="Message" rows={5} value={message} onChange={(e: any) => setMessage(e.target.value)} multiline />
-          <input name="trace" type="hidden" value={trace} onChange={(e: any) => setTrace(e.target.value)} />
-        </Grid>
-        <Grid item xs={12} sm={12} md={6} lg={6} xl={6} component={FormControl}>
-          <div className="MuiInputBase-root">
-            <ReCAPTCHA ref={recaptchaRef} sitekey={recaptchaSiteKey} onChange={setCaptcha} size="compact" />
-          </div>
-        </Grid>
-      </Grid>
+      <TextField variant="outlined" size="small" name="name" placeholder="Your name" value={name} onChange={(e: any) => setName(e.target.value)} />
+      <TextField variant="outlined" size="small" name="from" placeholder="Your e-mail address" value={from} onChange={(e: any) => setFrom(e.target.value)} />
+      <TextField variant="outlined" size="small" name="message" placeholder="Message" rows={5} value={message} onChange={(e: any) => setMessage(e.target.value)} multiline />
       <FormControl>
         <div className="MuiInputBase-root">
           <Button type="submit" variant="contained" color="primary">Send</Button>
