@@ -33,6 +33,8 @@ collections:
   output: false
  employment:
   output: false
+ badges:
+  output: false 
 # recommendations:
 #  output: false
 
