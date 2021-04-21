@@ -50,7 +50,7 @@ export const Personal = withStyles(styles)((props: PersonalComponentProps) => {
     return (
       <Dialog open={isDinghyVisible} onClose={hideDinghy} className={classes.dinghy}>
         <DialogContent>
-          <img src="//www.henrikbecker.se/assets/img/dinghy.jpg" alt={alt} />
+          <img src="https://henrikbeckerstorage.blob.core.windows.net/img/dinghy.jpg" alt={alt} />
           <figcaption>{alt}</figcaption>
         </DialogContent>
         <DialogActions>
