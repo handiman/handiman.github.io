@@ -1,28 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from '@material-ui/core';
 import { useErrorBoundary } from 'use-error-boundary';
 import { theme, useStyles } from './theme';
 import { ProfileProvider } from './Profile';
-import { ApiProvider, useApi } from '../Api';
+import { ApiProvider } from '../Api';
 import { Error, Resume } from './views';
 
 export const App = () => {
   const { ErrorBoundary } = useErrorBoundary();
   const [didCatch, setDidCatch] = useState(false);
   const { root } = useStyles();
-  const Api = useApi();
   
-  useEffect(() => {
-    const ping = () => {
-      console.log("Ping");
-      Api.ping().then(response => console.log(response));
-    };
-    ping();
-    const handle = window.setInterval(ping, 30000);
-    return () => window.clearInterval(handle);
-  }, []);
-
   return (
     <HashRouter>
       <ApiProvider>
