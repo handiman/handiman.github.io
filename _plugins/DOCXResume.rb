@@ -163,9 +163,6 @@ module Jekyll
 
       p do 
         text description
-        br
-        br
-        text 'References are available upon request'
       end
 
       skills

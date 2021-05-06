@@ -43,8 +43,3 @@
 {% endfor %}{% else %}{% for summary in employment.summary %}
 * {{ summary }}{% endfor %}{% assign summary = nil %}
 {% endif %}{% endfor %}{% assign employment = nil %}
-
-## References
-Available upon request
-
-
