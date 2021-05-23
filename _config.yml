@@ -11,20 +11,19 @@ sass:
  sass_dir: _sass
  style: compressed
 
-exclude: [ 
- "node_modules",
- "src",
- "package*.json",
- "tsconfig.json",
- "webpack.config.js", 
- "Gemfile", 
- "Gemfile.lock", 
- "README.md", 
- "Rakefile", 
- "changelog.md", 
- "*.sln",
- "*.suo",
- "*.orig"]
+include:
+  - ".well-known"
+
+exclude:  
+ - node_modules
+ - src
+ - "package*.json"
+ - tsconfig.json
+ - webpack.config.js
+ - Gemfile
+ - Gemfile.lock
+ - README.md
+ - "*.orig"
 
 collections:
  usp:
