@@ -80,6 +80,7 @@ const FooterComponent: React.FC<FooterProps> = ({
           <li><Link href="/assets/henrik-becker.pdf">PDF</Link></li>
           <li><Link href="/assets/henrik-becker.docx">Word</Link></li>
           <li><Link href="/assets/henrik-becker.txt">Markdown</Link></li>
+          <li><Link href="/assets/henrik-becker.json">JSON</Link></li>
         </ul>
       </div>
       <div>Copyright &copy; {new Date().getFullYear()} Henrik Becker</div>
