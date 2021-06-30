@@ -43,9 +43,17 @@
     {{ content }}
   </div>
   <script>window.henrikBeckerResume = {% include profile.json %}</script>
-  <script src="/assets/js/vendors.js?v={{ timestamp }}"></script>{% for script in page.scripts %}{% if script.src %}{% assign src =
-  script.src %}{% else %}{% assign src = script %}{% endif %}
+  <script src="/assets/js/vendors.js?v={{ timestamp }}"></script>{% for script in page.scripts %}{% if script.src %}{% assign src = script.src %}{% else %}{% assign src = script %}{% endif %}
   <script src="{{ src }}{% unless src contains 'http' %}?v={{ timestamp }}{% endunless %}" {% if script.crossorigin %}crossorigin="{{ script.crossorigin }}" {% endif %}></script>{% endfor %}
+  <script>(function() {
+    'use strict';
+    function ping() { 
+      console.log('Ping');
+      fetch('https://henrikbecker.azurewebsites.net/api/v1/ping').then(res => res.text()).then(res => console.log(res));
+    }
+    ping();
+    window.setInterval(ping, 60000);
+  })();</script>
   {% else %}
   <div id="error">
     <div>
