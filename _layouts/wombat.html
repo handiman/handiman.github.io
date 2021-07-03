@@ -50,6 +50,7 @@
     function ping() { 
       console.log('Ping');
       fetch('https://henrikbecker.azurewebsites.net/api/v1/ping').then(res => res.text()).then(res => console.log(res));
+      fetch('https://henrikbeckerapi.azurewebsites.net/api/ping').then(res => res.text()).then(res => console.log(res));
     }
     ping();
     window.setInterval(ping, 60000);
