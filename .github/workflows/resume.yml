@@ -7,5 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Update Gist
+        with:
+          auth_token: ${{ secrets.AUTH_TOKEN }}
         run: |
-          curl https://api.github.com/gists/3881a8e890dd1032cce3f5e655859717 -X PATCH -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer ${{ secrets.AUTH_TOKEN }}" -d '{"description":"CI","files":{"resume.json":{"filename":"resume.json","content":"$(curl -https://www.henrikbecker.net/assets/henrik-becker.json)"}}}'
+          content=$(curl -https://www.henrikbecker.net/assets/henrik-becker.json)
+          data='{"description":"CI","files":{"resume.json":{"filename":"resume.json","content":"$content"}}}'
+          curl https://api.github.com/gists/3881a8e890dd1032cce3f5e655859717 -X PATCH -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer $auth_token" -d $data
