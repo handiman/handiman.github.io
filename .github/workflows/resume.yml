@@ -1,7 +1,6 @@
 name: Update Gist
 on: 
   workflow_dispatch:
-  page_build: 
 jobs:
   update:
     runs-on: ubuntu-latest
