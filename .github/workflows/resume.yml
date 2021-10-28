@@ -10,6 +10,4 @@ jobs:
         env:
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
         run: |
-          content=$(curl -https://www.henrikbecker.net/assets/henrik-becker.json)
-          data='{"description":"CI","files":{"resume.json":{"filename":"resume.json","content":"$content"}}}'
-          curl https://api.github.com/gists/3881a8e890dd1032cce3f5e655859717 -X PATCH -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer $AUTH_TOKEN" -d $data
+          update-gist.sh $AUTH_TOKEN 3881a8e890dd1032cce3f5e655859717
