@@ -5,11 +5,6 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps: 
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Update Gist
-        shell: bash
-        env:
-          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
-        run: |
-          ./update-gist.sh $AUTH_TOKEN 3881a8e890dd1032cce3f5e655859717
+      - uses: actions/checkout@v2
+      - run: |
+          ./update-gist.sh ${{ secrets.AUTH_TOKEN }}$AUTH_TOKEN 3881a8e890dd1032cce3f5e655859717
