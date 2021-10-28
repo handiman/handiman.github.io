@@ -8,5 +8,4 @@ jobs:
     steps: 
       - name: Update Gist
         run: |
-          curl -o ./resume.json https://www.henrikbecker.net/assets/henrik-becker.json
-          curl https://api.github.com/gists/3881a8e890dd1032cce3f5e655859717 -X PATCH -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer ${{ secrets.AUTH_TOKEN }}" -d '{"description":"CI","files":{"resume.json":{"filename":"resume.json","content":"Test"}}}'
+          curl https://api.github.com/gists/3881a8e890dd1032cce3f5e655859717 -X PATCH -H "Accept: application/vnd.github.v3+json" -H "Authorization: Bearer ${{ secrets.AUTH_TOKEN }}" -d '{"description":"CI","files":{"resume.json":{"filename":"resume.json","content":"$(curl -https://www.henrikbecker.net/assets/henrik-becker.json)"}}}'
