@@ -10,4 +10,4 @@ jobs:
         env:
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
         run: |
-          update-gist.sh $AUTH_TOKEN 3881a8e890dd1032cce3f5e655859717
+          ./.github/workflows/update-gist.sh $AUTH_TOKEN 3881a8e890dd1032cce3f5e655859717
