@@ -7,6 +7,6 @@ jobs:
     steps: 
       - uses: actions/checkout@v2
       - run: |
-          git update-index --chmod=+x ./update-gist.sh
+          chmod +x ./update-gist.sh
       - run: |
           ./update-gist.sh ${{ secrets.AUTH_TOKEN }}$AUTH_TOKEN 3881a8e890dd1032cce3f5e655859717
