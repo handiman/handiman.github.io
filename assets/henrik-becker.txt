@@ -1,0 +1,45 @@
+---
+---
+{% assign person = site.data.person %}{% assign profile = site.data.profile %}
+# {{ person.name }}   
+{{ person.jobTitle }}   
+---
+
+## Profile
+{{ person.description }}
+
+## Skills & Expertise
+{% for category in profile.featuredSkills %}| {{ category[0] }} {% if forloop.last %}|{% endif %}{% endfor %}
+{% for category in profile.featuredSkills %}| {% for i in (1..category[0].size) %}{{'-'}}{% endfor %} {% if forloop.last %}|{% endif %}{% endfor %}
+{% for i in (0..3) %}{% for category in profile.featuredSkills %}| {{ category[1][i].name }} {% if forloop.last %}|{% endif %}{% endfor %}{% endfor %}{% assign category = nil %}
+
+## Languages
+| Language | Proficiency |
+|-|-|
+{% for language in profile.languages %}| {{ language.name }} | {{ language.proficiency }} |
+{% endfor %}{% assign language = nil %}
+
+## Featured Projects
+{% for featuredProject in site.data.featuredProjects %}{% assign projectId = '/projects/' | append: featuredProject %}{% assign project = site.projects | where: "id", projectId | first %}{% if project %}
+### {{ project.title }}    
+*{{ project.role }} | {{ project.start_date | date: "%b %Y" }}{% if project.end_date %} - {{ project.end_date | date: "%b %Y" }}{% endif %}*
+{% for summary in project.summary %}
+* {{ summary }}{% endfor %}{% assign summary = nil %}
+{% if project.skills %}
+*Skills used:*
+{{ project.skills | join: ', ' }}
+{% endif %}
+{% endif %}{% endfor %}{% assign project = nil %}
+
+## Work Experience
+{% for employment in site.employment reversed %}
+### {{ employment.organization.name }}
+*{{ employment.role }} | {{ employment.start_date | date: "%b %Y" }}{% if employment.end_date %} - {{ employment.end_date | date: "%b %Y" }}{% endif %}*
+{% if employment.id == '/employment/17-self-employed' %}
+{{ employment.mission }}
+
+*Clients:*
+{% for client in employment.clients %}* [{{client.name}}]({{client.url}})
+{% endfor %}{% else %}{% for summary in employment.summary %}
+* {{ summary }}{% endfor %}{% assign summary = nil %}
+{% endif %}{% endfor %}{% assign employment = nil %}

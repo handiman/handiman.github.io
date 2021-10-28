@@ -1,0 +1,41 @@
+---
+---
+<!DOCTYPE html>{% assign timestamp = site.time | date: '%s' %}
+<html lang="{% if page.language %}{{ page.language }}{% elsif site.language %}{{ site.language }}{% else %}en-AU{% endif %}">
+{% if page.title %}{% assign title = page.title %}{% else %}{% assign title = site.data.person.name | append: ' - ' | append: site.data.person.jobTitle %}{% endif %}
+{% if page.description %}{% assign description = page.description %}{% else %}{% assign description = site.data.person.description %}{% endif %}
+<head>
+  {% include head.html %}
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" />
+  <link rel="stylesheet" href="/assets/css/wombat.css?v={{ timestamp }}" />
+</head>
+<body>
+  {% unless page.redirect %}
+  <div id="root">
+    {{ content }}
+  </div>
+  <script>window.henrikBeckerResume = {% include profile.json %}</script>
+  <script src="/assets/js/vendors.js?v={{ timestamp }}"></script>{% for script in page.scripts %}{% if script.src %}{% assign src = script.src %}{% else %}{% assign src = script %}{% endif %}
+  <script src="{{ src }}{% unless src contains 'http' %}?v={{ timestamp }}{% endunless %}" {% if script.crossorigin %}crossorigin="{{ script.crossorigin }}" {% endif %}></script>{% endfor %}
+  <script>(function() {
+    'use strict';
+    function ping() { 
+      console.log('Ping');
+      fetch('https://henrikbecker.azure-api.net/ping').then(res => res.text()).then(res => console.log(res));
+    }
+    ping();
+    window.setInterval(ping, 90000);
+  })();</script>
+  {% else %}
+  <div id="error">
+    <div>
+      <h1><i class="fas fa-directions"></i></h1>
+      This page has moved.<br />
+      <a href="{{ page.redirect }}">Click here if you are not automatically redirected</a>.
+    </div>
+  </div>
+  {% endunless %}
+  {% include noie.html %}
+</body>
+</html>

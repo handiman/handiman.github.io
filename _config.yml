@@ -1,0 +1,56 @@
+title: Henrik Becker Consulting AB
+usp: Building the right software right
+repository: handiman/handiman.github.io
+production_url: https://www.henrikbecker.net
+author:
+  name: Henrik Becker
+  github: handiman
+tile_color: '#303030'
+permalink: pretty
+sass:
+ sass_dir: _sass
+ style: compressed
+
+exclude: [ 
+ "node_modules",
+ "src",
+ "package*.json",
+ "tsconfig.json",
+ "webpack.config.js", 
+ "Gemfile", 
+ "Gemfile.lock", 
+ "README.md", 
+ "Rakefile", 
+ "changelog.md", 
+ "*.sln",
+ "*.suo",
+ "*.orig"]
+
+collections:
+ usp:
+  output: false
+ projects:
+  output: false
+ employment:
+  output: false
+ badges:
+  output: false 
+# recommendations:
+#  output: false
+
+excerpt_separator: <!--more-->
+
+defaults:
+ - scope: 
+    path: "*.html"
+   values: 
+    layout: wombat
+ - scope: 
+    path: "*.md"
+   values: 
+    layout: wombat
+ - scope:
+    path: "googlef0bc3dbe928e1f73.html"
+   values:
+    sitemap: false
+    

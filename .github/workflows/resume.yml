@@ -1,0 +1,8 @@
+name: Update Gist
+on: 
+  workflow_dispatch:
+  page_build: 
+jobs:
+  steps: 
+    - name: Update Gist
+      run: ./update-gist.sh {{ secrets.OAUTH_TOKEN }} 171c100064ac9809bded620d2f3f230f

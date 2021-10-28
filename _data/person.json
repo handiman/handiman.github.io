@@ -1,0 +1,20 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Henrik Becker",
+  "description": "Henrik Becker is a senior .Net developer and solution architect dedicated to delivering quality software by practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of DevOps.",
+  "nationality": "Swedish",
+  "jobTitle": "Senior Fullstack .Net Developer",
+  "telephone": "+46 (0)73 422 83 43",
+  "birthDate": "1969-06-23",
+  "url": "https://www.henrikbecker.net",
+  "sameAs": [ 
+    "https://github.com/handiman",
+    "https://www.linkedin.com/prettygoodprogrammer"
+  ],
+  "workLocation": "Stockholm",
+  "worksFor": {
+    "name": "Self Employed",
+    "url": "https://www.henrikbecker.net"
+  }
+}
