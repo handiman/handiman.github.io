@@ -5,8 +5,15 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps: 
-      - uses: actions/checkout@v2
-      - run: |
-          chmod +x ./update-gist.sh
-      - run: |
-          ./update-gist.sh ${{ secrets.AUTH_TOKEN }}$AUTH_TOKEN 3881a8e890dd1032cce3f5e655859717
+      - name: Download
+        id: download
+        run: |
+          export content=$(curl https://www.henrikbecker.net/assets/henrik-becker.json)
+          echo "::set-output name=content::$(content)"
+      
+      - name: Update Gist
+        uses: sergeysova/gist-write-action@v1.0.0
+        with:
+          gist_id: 3881a8e890dd1032cce3f5e655859717
+          file_name: resume.json
+          content: ${{ steps.download.outputs.content }}
