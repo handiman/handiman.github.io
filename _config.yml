@@ -21,7 +21,8 @@ exclude: [
  "Gemfile.lock", 
  "README.md", 
  "Rakefile", 
- "changelog.md", 
+ "changelog.md",
+ "*.sh",
  "*.sln",
  "*.suo",
  "*.orig"]
