@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Update Gist
-        run: update-gist.sh {{ secrets.OAUTH_TOKEN }} 171c100064ac9809bded620d2f3f230f
+        run: ./.github/workflows/update-gist.sh {{ secrets.OAUTH_TOKEN }} 171c100064ac9809bded620d2f3f230f
