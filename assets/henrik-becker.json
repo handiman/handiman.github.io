@@ -27,7 +27,7 @@
       "location": "Stockholm",
       "startDate": "2015-09-14",
       "endDate":  "2017-07-05",
-      "summary": null,
+      
       "highlights": ["Continued development of the Video on Demand site Plejmo.","Designed version 2 of Plejmo's Rest API.","Continued improving the CI/CD processes I set up at Film2Home"]
     },{
       "name": "Film2Home AB",
@@ -35,7 +35,7 @@
       "location": "Stockholm",
       "startDate": "2014-11-03",
       "endDate":  "2015-08-27",
-      "summary": null,
+      
       "highlights": ["Development of the Video on Demand sites Film2Home and Plejmo.","Designed version 1 of Plejmo's Rest API.","Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.","Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites."]
     },{
       "name": "Qbranch Stockholm AB",
@@ -43,7 +43,7 @@
       "location": "Stockholm",
       "startDate": "2014-04-28",
       "endDate":  "2014-09-30",
-      "summary": null,
+      
       "highlights": ["Resource consulting at Organizations in Stockholm CBD.","Development of Qbranch Competence Manager used for finding the right consultant for an assignment."]
     },{
       "name": "Wasa Kredit AB",
@@ -51,7 +51,7 @@
       "location": "Stockholm",
       "startDate": "2012-03-12",
       "endDate":  "2013-11-14",
-      "summary": null,
+      
       "highlights": ["Reduced complexity through refactoring.","Introduced living documentation in the form of executable specifications.","Guided development teams towards a more agile approached software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle."]
     },{
       "name": "Avega Group AB",
@@ -59,7 +59,7 @@
       "location": "Stockholm",
       "startDate": "2008-01-28",
       "endDate":  "2012-03-09",
-      "summary": null,
+      
       "highlights": ["IT Consultant with assignments at Länsförsäkringar, Cale Access, Cash Guard, Tradera and Astando."]
     },{
       "name": "Aftonbladet Tillväxtteknik 2 AB",
@@ -67,7 +67,7 @@
       "location": "Stockholm",
       "startDate": "2007-12-01",
       "endDate":  "2008-01-01",
-      "summary": null,
+      
       "highlights": ["Fullstack Developer at hitta.se"]
     },{
       "name": "Inverso International AB",
@@ -75,7 +75,7 @@
       "location": "Stockholm",
       "startDate": "2007-04-01",
       "endDate":  "2007-12-01",
-      "summary": null,
+      
       "highlights": ["Fullstack Developer at hitta.se"]
     },{
       "name": "Qbranch Stockholm AB",
@@ -83,7 +83,7 @@
       "location": "Stockholm",
       "startDate": "2005-04-01",
       "endDate":  "2007-04-01",
-      "summary": null,
+      
       "highlights": ["Fullstack Developer at hitta.se","System Integration Consultant assignments at Sigtuna Council, ICA Banken, Taxi Stockholm.","Was the single developer on an identity management project at Sigtuna Council that would become Microsoft's reference project for Microsoft Identity Integration Server."]
     },{
       "name": "eWork",
@@ -91,7 +91,7 @@
       "location": "Stockholm",
       "startDate": "2002-01-01",
       "endDate":  "2005-03-31",
-      "summary": null,
+      
       "highlights": ["Web developement for Hewlett Packard Sweden"]
     },{
       "name": "IconMedialab AB",
@@ -99,7 +99,7 @@
       "location": "Stockholm",
       "startDate": "1999-09-01",
       "endDate":  "2002-01-01",
-      "summary": null,
+      
       "highlights": ["Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and IconMedialab's intranet."]
     },{
       "name": "Innitek AB",
@@ -107,7 +107,7 @@
       "location": "Stockholm",
       "startDate": "1998-10-01",
       "endDate":  "1999-07-31",
-      "summary": null,
+      
       "highlights": ["Developed a document management system based on Visual Basic 5 for Looström & Gelin AB.","Built the company web site based on ASP"]
     },{
       "name": "Lidingö Stad",
@@ -115,7 +115,7 @@
       "location": "Stockholm",
       "startDate": "1997-07-01",
       "endDate":  "1998-10-01",
-      "summary": null,
+      
       "highlights": []
     },{
       "name": "Konsumentföreningen Stockholm",
@@ -123,7 +123,7 @@
       "location": "Stockholm",
       "startDate": "1986-12-01",
       "endDate":  "1995-06-30",
-      "summary": null,
+      
       "highlights": []
     },{
       "name": "Sollentuna Jazz Workshop",
@@ -131,7 +131,7 @@
       "location": "Stockholm",
       "startDate": "1994-01-01",
       "endDate":  "1994-07-01",
-      "summary": null,
+      
       "highlights": []
     },{
       "name": "Kantarellen Livs AB",
@@ -139,7 +139,7 @@
       "location": "Stockholm",
       "startDate": "1992-06-01",
       "endDate":  "1992-09-01",
-      "summary": null,
+      
       "highlights": []
     },{
       "name": "Karena Zoo, Lek & Hobby",
@@ -147,7 +147,7 @@
       "location": "Stockholm",
       "startDate": "1986-08-01",
       "endDate":  "1986-12-31",
-      "summary": null,
+      
       "highlights": []
     }],
     "education": [{
