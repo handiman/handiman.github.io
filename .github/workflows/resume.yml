@@ -1,21 +1,14 @@
 name: Update Gist
 on: 
   workflow_dispatch:
-  workflow_run:
-    workflows: ['Page Build']
-    branches: ['gh-pages']
-    types:
-      - completed
+  page_build:
 jobs:
   update-gist:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps: 
-      - run: |
-          wget https://www.henrikbecker.net/assets/henrik-becker.json
       - uses: exuanbo/actions-deploy-gist@v1
         with:
           token: ${{ secrets.AUTH_TOKEN }}
           gist_id: 3881a8e890dd1032cce3f5e655859717
           gist_file_name: resume.json
-          file_path: ./henrik-becker.json
+          file_path: ./assets/henrik-becker.json

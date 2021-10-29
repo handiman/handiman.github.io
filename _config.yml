@@ -11,6 +11,10 @@ sass:
  sass_dir: _sass
  style: compressed
 
+include: [
+  ".github/workflows/resume.yml"
+]
+
 exclude: [ 
  "node_modules",
  "src",
