@@ -9,8 +9,12 @@
       "image": "https://avatars.githubusercontent.com/u/824009?v=4",
       "website": {{ site.production_url | jsonify }},
       "summary": {{ person.description | jsonify }},
+      "location": {
+        "city": "Lidingö",
+        "countryCode": "SE"
+      },
       "profiles": [
-        { "network": "GitHub", "url": "https://github.com/handiman" },
+        { "network": "GitHub", "url": "https://github.com/handiman", "username": "handiman" },
         { "network": "LinkedIn", "url": "https://www.linkedin.com/in/prettygoodprogrammer/" }
       ]
     },
@@ -20,7 +24,7 @@
       "location": {% unless employment.location %}"Stockholm"{% else %}{{ employment.location | jsonify }}{% endunless %},
       "startDate": {{ employment.start_date | date: "%F" | jsonify }},{% if employment.end_date %}{% if employment.end_date != 'present' %}
       "endDate":  {{ employment.end_date | date: "%F" | jsonify }},{% endif %}{% endif %}
-      {% if employment.mission %}"summary": {{ employment.mission | jsonify }},{% endif %}
+      "summary": {% if employment.mission %}{{ employment.mission | jsonify }}{% else %}""{% endif %},
       "highlights": {% if employment.summary %}{{ employment.summary | jsonify }}{% elsif employment.clients %}{{ employment.clients | map: 'name' | jsonify }}{% else %}[]{% endif %}
     }{% unless forloop.last %},{% endunless %}{% endfor %}],
     "education": [{% for education in profile.education %}{
