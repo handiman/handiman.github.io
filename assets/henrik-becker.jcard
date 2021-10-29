@@ -7,6 +7,6 @@
     ["title", {} ,"text", "Senior Fullstack .Net Developer"],
     ["tel", {"type":["work", "voice"]}, "uri", "tel:"]
     ["email", {}, "text", ""],
-    ["rev", {}, "timestamp", "2021-10-29T13:11:09Z"]
+    ["rev", {}, "timestamp", "2021-10-29T13:26:29Z"]
   ]
 ]
