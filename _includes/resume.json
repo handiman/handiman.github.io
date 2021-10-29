@@ -1,7 +1,7 @@
 {% assign profile = site.data.profile %}{% assign person = site.data.person %}{
     "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
     "meta": {
-        "theme": "elegant"
+        "theme": "kwan"
     },
     "basics": {
       "name": {{ person.name | jsonify }},
