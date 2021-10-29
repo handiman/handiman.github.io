@@ -1,8 +1,5 @@
 {% assign profile = site.data.profile %}{% assign person = site.data.person %}{
     "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
-    "meta": {
-        "theme": "kwan"
-    },
     "basics": {
       "name": {{ person.name | jsonify }},
       "label": {{ person.jobTitle | jsonify }},
@@ -38,5 +35,14 @@
       "keywords": {{ category.skills | jsonify }}
     }{% unless forloop.last %},{% endunless %}{% endfor %}],
     "languages": [{% for language in profile.languages %}{ "language": {{ language.name | jsonify }}, "fluency": {{ language.proficiency | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}],
-    "interests": [{% for interest in profile.interests %}{ "name": {{ interest.name | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}]
+    "interests": [{% for interest in profile.interests %}{ "name": {{ interest.name | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}],
+    "references": [{% for reference in site.data.profile.recommendations %}{
+      "name": {{ reference.name | jsonify }},
+      "reference": {{ reference.text | jsonify }}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}],
+    "meta": {
+      "theme": "kwan",
+      "lastUpdated": {{ site.time | date: '%FT%T' | jsonify }},
+      "canonical": "https://gist.githubusercontent.com/handiman/3881a8e890dd1032cce3f5e655859717/raw/01ba33f00c707670636d902546d7e50c4d4176e4/resume.json"
+    }
   }{% assign profile = nil %}{% assign person = nil %}
