@@ -12,7 +12,7 @@ sass:
  style: compressed
 
 include: [
-  ".github/workflows/resume.yml"
+  ".github"
 ]
 
 exclude: [ 
