@@ -6,7 +6,7 @@
     "basics": {
       "name": {{ person.name | jsonify }},
       "label": {{ person.jobTitle | jsonify }},
-      "picture": "",
+      "image": "https://avatars.githubusercontent.com/u/824009?v=4",
       "website": {{ site.production_url | jsonify }},
       "summary": {{ person.description | jsonify }},
       "profiles": [
