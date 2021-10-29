@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Henrik Becker - Senior Fullstack .Net Developer</title>
+        <link>https://www.henrikbecker.net</link>
+        <description>Henrik Becker is a senior .Net developer and solution architect dedicated to delivering quality software by practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of DevOps.</description>
+        <copyright>Copyright 2021 Henrik Becker</copyright>
+        <lastBuildDate>2021-10-29 13:11:09 +0000</lastBuildDate>
+        <category>CV</category>
+        <ttl>1440</ttl>
+        <item>
+            <title>Self Employed IT Consultant at Henrik Becker Consulting AB</title>
+            <description>
+                Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm urban area.
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/17-self-employed</guid>
+        </item>
+        <item>
+            <title>Fullstack Developer at Magine TV AB</title>
+            <description>
+                
+                Continued development of the Video on Demand site Plejmo.
+                Designed version 2 of Plejmo's Rest API.
+                Continued improving the CI/CD processes I set up at Film2Home
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/16-magine-tv</guid>
+        </item>
+        <item>
+            <title>Fullstack Developer at Film2Home AB</title>
+            <description>
+                
+                Development of the Video on Demand sites Film2Home and Plejmo.
+                Designed version 1 of Plejmo's Rest API.
+                Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
+                Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/15-film2home</guid>
+        </item>
+        <item>
+            <title>IT Consultant at Qbranch Stockholm AB</title>
+            <description>
+                
+                Resource consulting at Organizations in Stockholm CBD.
+                Development of Qbranch Competence Manager used for finding the right consultant for an assignment.
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/14-qbranch-stockholm-ab-2</guid>
+        </item>
+        <item>
+            <title>Lead Developer at Wasa Kredit AB</title>
+            <description>
+                
+                Reduced complexity through refactoring.
+                Introduced living documentation in the form of executable specifications.
+                Guided development teams towards a more agile approached software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle.
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/13-wasa-kredit-ab</guid>
+        </item>
+        <item>
+            <title>IT Consultant at Avega Group AB</title>
+            <description>
+                
+                IT Consultant with assignments at Länsförsäkringar, Cale Access, Cash Guard, Tradera and Astando.
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/12-avega-group-ab</guid>
+        </item>
+        <item>
+            <title>Fullstack Developer at Aftonbladet Tillväxtteknik 2 AB</title>
+            <description>
+                
+                Fullstack Developer at hitta.se
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/11-aftonbladet-tillvaxtteknik-2-ab</guid>
+        </item>
+        <item>
+            <title>IT Consultant at Inverso International AB</title>
+            <description>
+                
+                Fullstack Developer at hitta.se
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/10-inverso-international-ab</guid>
+        </item>
+        <item>
+            <title>IT Consultant at Qbranch Stockholm AB</title>
+            <description>
+                
+                Fullstack Developer at hitta.se
+                System Integration Consultant assignments at Sigtuna Council, ICA Banken, Taxi Stockholm.
+                Was the single developer on an identity management project at Sigtuna Council that would become Microsoft's reference project for Microsoft Identity Integration Server.
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/09-qbranch-stockholm-ab</guid>
+        </item>
+        <item>
+            <title>IT Consultant at eWork</title>
+            <description>
+                
+                Web developement for Hewlett Packard Sweden
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/08-ework</guid>
+        </item>
+        <item>
+            <title>IT Consultant at IconMedialab AB</title>
+            <description>
+                
+                Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and IconMedialab's intranet.
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/07-iconmedialab-ab</guid>
+        </item>
+        <item>
+            <title>IT Consultant at Innitek AB</title>
+            <description>
+                
+                Developed a document management system based on Visual Basic 5 for Looström &amp; Gelin AB.
+                Built the company web site based on ASP
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/06-innitek-ab</guid>
+        </item>
+        <item>
+            <title>PC Technician at Lidingö Stad</title>
+            <description>
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/05-lidingo-stad</guid>
+        </item>
+        <item>
+            <title>Shop Assistant at Konsumentföreningen Stockholm</title>
+            <description>
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/04-konsum</guid>
+        </item>
+        <item>
+            <title>Study Circle Leader at Sollentuna Jazz Workshop</title>
+            <description>
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/03-sollentuna-jazz-workshop</guid>
+        </item>
+        <item>
+            <title>Shop Assistant at Kantarellen Livs AB</title>
+            <description>
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/02-kantarellen-livs-ab</guid>
+        </item>
+        <item>
+            <title>Shop Assistant at Karena Zoo, Lek &amp; Hobby</title>
+            <description>
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/01-karena</guid>
+        </item>
+    </channel>
+</rss>

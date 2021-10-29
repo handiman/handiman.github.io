@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vcards xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+	<vcard>
+		<n>
+			<surname></surname>
+			<given></given>
+			<prefix></prefix>
+		</n>
+		<fn>
+			<text> </text>
+		</fn>
+		<org>
+			<text>Henrik Becker Consulting AB</text>
+		</org>
+		<title>
+			<text>Senior Fullstack .Net Developer</text>
+		</title>
+		<tel>
+			<parameters>
+				<type>	
+					<text>home</text>
+					<text>voice</text>
+				</type>
+			</parameters>
+			<uri>tel:</uri>
+		</tel>
+		<email>
+			<text></text>
+		</email>
+		<rev>
+		  <timestamp>20211029T131109Z</timestamp>
+		</rev>
+	</vcard>
+</vcards>

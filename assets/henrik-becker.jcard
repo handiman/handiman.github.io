@@ -1,0 +1,12 @@
+["vcard",
+  [
+    ["version", {}, "text", "4.0"],
+    ["n", {}, "text", ["", "", "", "", ""]],
+    ["fn", {}, "text", " "],
+    ["org", {}, "text", "Henrik Becker Consulting AB"],
+    ["title", {} ,"text", "Senior Fullstack .Net Developer"],
+    ["tel", {"type":["work", "voice"]}, "uri", "tel:"]
+    ["email", {}, "text", ""],
+    ["rev", {}, "timestamp", "2021-10-29T13:11:09Z"]
+  ]
+]
