@@ -38,10 +38,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: 'gh-pages'
-      - name: Merge
-        run: |
-          git config user.email="handiman@users.noreply.github.com"
-          git config user.username=handiman
-          git config user.
-          git add .
-          git commit -m "CI"
+      - uses: EndBug/add-and-commit@v7
+        with:
+          add: '.'          
+      
