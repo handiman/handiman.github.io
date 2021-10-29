@@ -34,5 +34,5 @@ jobs:
           token: ${{ secrets.AUTH_TOKEN }}
           gist_id: 3881a8e890dd1032cce3f5e655859717
           gist_file_name: resume.json
-          file_path: ./assets/henrik-becker.json
+          file_path: ./_site/assets/henrik-becker.json
    
