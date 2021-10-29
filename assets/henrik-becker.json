@@ -7,14 +7,10 @@
       "name": "Henrik Becker",
       "label": "Senior Fullstack .Net Developer",
       "image": "https://avatars.githubusercontent.com/u/824009?v=4",
-      "url": "https://avatars.githubusercontent.com/u/824009?v=4",
+      "picture": "https://avatars.githubusercontent.com/u/824009?v=4",
       "website": "https://www.henrikbecker.net",
       "url": "https://www.henrikbecker.net",
       "summary": "Henrik Becker is a senior .Net developer and solution architect dedicated to delivering quality software by practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of DevOps.",
-      "location": {
-        "city": "Lidingö",
-        "countryCode": "SE"
-      },
       "profiles": [
         { "network": "GitHub", "url": "https://github.com/handiman", "username": "handiman" },
         { "network": "LinkedIn", "url": "https://www.linkedin.com/in/prettygoodprogrammer/" }
