@@ -19,10 +19,20 @@ jobs:
       - run: bundler install
       - run: npx webpack --mode=production
       - run: bundle exec jekyll build
-      - uses: s0/git-publish-subdir-action@develop
+      
+      - name: Publish gh-pages
+        uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
           BRANCH: gh-pages
           FOLDER: _site
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Publish gist
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.AUTH_TOKEN }}
+          gist_id: 3881a8e890dd1032cce3f5e655859717
+          gist_file_name: resume.json
+          file_path: ./assets/henrik-becker.json
    

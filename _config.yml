@@ -11,10 +11,6 @@ sass:
  sass_dir: _sass
  style: compressed
 
-include: [
-  ".github"
-]
-
 exclude: [ 
  "node_modules",
  "src",
