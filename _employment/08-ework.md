@@ -7,7 +7,7 @@ organization:
 start_date: 2002-01-01
 end_date: 2005-03-31
 summary: 
- - Web developement for Hewlett Packard Sweden
+ - Web development for Hewlett Packard Sweden
 ---
 {% for summary in page.summary %}
 * {{ summary}}{% endfor %}
