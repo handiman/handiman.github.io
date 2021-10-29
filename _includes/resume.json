@@ -20,7 +20,7 @@
       "location": {% unless employment.location %}"Stockholm"{% else %}{{ employment.location | jsonify }}{% endunless %},
       "startDate": {{ employment.start_date | date: "%F" | jsonify }},{% if employment.end_date %}{% if employment.end_date != 'present' %}
       "endDate":  {{ employment.end_date | date: "%F" | jsonify }},{% endif %}{% endif %}
-      "summary": {% if employment.mission %}{{ employment.mission | jsonify }}{% else %}null{% endif %},
+      {% if employment.mission %}"summary": {{ employment.mission | jsonify }},{% endif %}
       "highlights": {% if employment.summary %}{{ employment.summary | jsonify }}{% elsif employment.clients %}{{ employment.clients | map: 'name' | jsonify }}{% else %}[]{% endif %}
     }{% unless forloop.last %},{% endunless %}{% endfor %}],
     "education": [{% for education in profile.education %}{
