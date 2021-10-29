@@ -32,9 +32,20 @@ jobs:
           npx webpack --mode=production
           bundle exec jekyll build
 
-      - name: Commit
-        uses: EndBug/add-and-commit@v7
-        with:
-          add: '.'
-
+      - name: Merge
+        run: |
+          git checkout gh-pages
+          git add .
+          git commit -m "CI"
+#      - name: Commit
+#        uses: EndBug/add-and-commit@v7
+#        with:
+#          add: '.'
+#          
+#      - name: 'Merge into gh-pages'
+#        uses: devmasx/merge-branch@1.4.0
+#        with:
+#          target_branch: 'gh-pages'
+#          from_branch: master
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
        
