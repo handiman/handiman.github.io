@@ -7,7 +7,9 @@
       "name": {{ person.name | jsonify }},
       "label": {{ person.jobTitle | jsonify }},
       "image": "https://avatars.githubusercontent.com/u/824009?v=4",
+      "url": "https://avatars.githubusercontent.com/u/824009?v=4",
       "website": {{ site.production_url | jsonify }},
+      "url": {{ site.production_url | jsonify }},
       "summary": {{ person.description | jsonify }},
       "location": {
         "city": "Lidingö",
@@ -20,6 +22,7 @@
     },
     "work": [{% for employment in site.employment reversed %}{
       "name": {{ employment.organization.name | jsonify }},
+      "company": {{ employment.organization.name | jsonify }},
       "position": {{ employment.role | jsonify }},
       "location": {% unless employment.location %}"Stockholm"{% else %}{{ employment.location | jsonify }}{% endunless %},
       "startDate": {{ employment.start_date | date: "%F" | jsonify }},{% if employment.end_date %}{% if employment.end_date != 'present' %}
