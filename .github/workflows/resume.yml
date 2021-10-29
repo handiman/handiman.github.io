@@ -1,0 +1,16 @@
+name: Update Gist
+on: 
+  workflow_dispatch:
+jobs:
+  publish:
+    runs-on: Linux
+    steps: 
+      - uses: actions/checkout@v2
+        repository: gist.github.com:3881a8e890dd1032cce3f5e655859717.git
+        token: ${{ secrets.AUTH_TOKEN }}
+        
+      - run: |
+          wget -o resume.json https://www.henrikbecker.net/assets/henrik-becker.json
+      - uses: EndBug/add-and-commit@v7
+        with:
+          add: '.'
