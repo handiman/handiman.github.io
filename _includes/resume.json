@@ -7,7 +7,7 @@
       "name": {{ person.name | jsonify }},
       "label": {{ person.jobTitle | jsonify }},
       "image": "https://avatars.githubusercontent.com/u/824009?v=4",
-      "url": "https://avatars.githubusercontent.com/u/824009?v=4",
+      "picture": "https://avatars.githubusercontent.com/u/824009?v=4",
       "website": {{ site.production_url | jsonify }},
       "url": {{ site.production_url | jsonify }},
       "summary": {{ person.description | jsonify }},
