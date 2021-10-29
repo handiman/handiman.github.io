@@ -18,7 +18,7 @@ jobs:
         run: npm install
 
       - name: Setup Ruby
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '2.6'
       - name: Install Gems
@@ -40,5 +40,8 @@ jobs:
           ref: 'gh-pages'
       - name: Merge
         run: |
+          git config user.email "handiman@users.noreply.github.com"
+          git config user.username handiman
+          git config user.
           git add .
           git commit -m "CI"
