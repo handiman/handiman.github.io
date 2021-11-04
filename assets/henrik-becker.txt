@@ -20,6 +20,14 @@ Henrik Becker is a senior .Net developer and solution architect dedicated to del
 
 ## Featured Projects
 
+### Betsson Group    
+*Backend Developer | Oct 2021 - present*
+
+
+*Skills used:*
+C#, Asp.Net Core
+
+
 ### Adlibris    
 *Fullstack Developer | Feb 2021 - Oct 2021*
 
@@ -29,17 +37,6 @@ Henrik Becker is a senior .Net developer and solution architect dedicated to del
 
 *Skills used:*
 C#, Asp.Net Core, Asp.Net MVC, JavaScript, jQuery, React, SQL Server, Octopus Deploy, Azure App Services, Identity Server
-
-
-### Norconsult Astando    
-*Fullstack Developer, DevOps | Oct 2020 - Jan 2021*
-
-* Automated deployment using Octopus Deploy
-* Improvements to code readability and testability
-* Implementing new functionality in legacy systems
-
-*Skills used:*
-C#, TypeScript, JavaScript, KnockoutJS, Asp.Net Core, Asp.Net Web Forms, WCF, TeamCity, Octopus Deploy
 
 
 ### Open Payments    

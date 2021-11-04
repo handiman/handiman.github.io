@@ -10,24 +10,24 @@
     
     
        {
-      "name": "Adlibris",
-      "role": "Fullstack Developer",
-      "from": "Feb 2021",
-      "to": "Oct 2021",
-      "summary": "\n<ul>\n  <li>OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app currently in development.</li>\n  <li>Account management API built with Asp.Net Core and .Net 5 hosted on Azure.</li>\n  <li>Contentful CMS content modeling and integration.</li>\n</ul>\n\n",
-      "skills": ["C#","Asp.Net Core","Asp.Net MVC","JavaScript","jQuery","React","SQL Server","Octopus Deploy","Azure App Services","Identity Server"]
+      "name": "Betsson Group",
+      "role": "Backend Developer",
+      "from": "Oct 2021",
+      "to": "present",
+      "summary": "\n",
+      "skills": ["C#","Asp.Net Core"]
     },
     
     
     
     
        {
-      "name": "Norconsult Astando",
-      "role": "Fullstack Developer, DevOps",
-      "from": "Oct 2020",
-      "to": "Jan 2021",
-      "summary": "\n<ul>\n  <li>Automated deployment using Octopus Deploy</li>\n  <li>Improvements to code readability and testability</li>\n  <li>Implementing new functionality in legacy systems</li>\n</ul>\n\n",
-      "skills": ["C#","TypeScript","JavaScript","KnockoutJS","Asp.Net Core","Asp.Net Web Forms","WCF","TeamCity","Octopus Deploy"]
+      "name": "Adlibris",
+      "role": "Fullstack Developer",
+      "from": "Feb 2021",
+      "to": "Oct 2021",
+      "summary": "\n<ul>\n  <li>OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app currently in development.</li>\n  <li>Account management API built with Asp.Net Core and .Net 5 hosted on Azure.</li>\n  <li>Contentful CMS content modeling and integration.</li>\n</ul>\n\n",
+      "skills": ["C#","Asp.Net Core","Asp.Net MVC","JavaScript","jQuery","React","SQL Server","Octopus Deploy","Azure App Services","Identity Server"]
     },
     
     
