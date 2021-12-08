@@ -8,6 +8,9 @@ end_date: present
 skills:
  - C#
  - Asp.Net Core
+ - .Net 5
+ - Blazor
+ - Docker
 summary:  
 ---
 {% for summary in page.summary %}
