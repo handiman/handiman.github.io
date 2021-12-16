@@ -5,6 +5,7 @@
     ["fn", {}, "text", "Henrik Becker"],
     ["org", {}, "text", "Henrik Becker Consulting AB"],
     ["title", {} ,"text", "Senior Fullstack .Net Developer"],
-    ["rev", {}, "timestamp", "2021-12-16T12:30:15Z"]
+    ["url", { "type": "work" }, "uri", "https://www.henrikbecker.net"],
+    ["rev", {}, "timestamp", "2021-12-16T12:56:28Z"]
   ]
 ]

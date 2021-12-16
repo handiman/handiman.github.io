@@ -15,8 +15,12 @@
 		<title>
 			<text>Senior Fullstack .Net Developer</text>
 		</title>
+		<url>
+			<parameters><type><text>work</text></type></parameters>
+			<uri>https://www.henrikbecker.net</uri>
+		</url>
 		<rev>
-		  <timestamp>20211216T123015Z</timestamp>
+		  <timestamp>20211216T125628Z</timestamp>
 		</rev>
 	</vcard>
 </vcards>
