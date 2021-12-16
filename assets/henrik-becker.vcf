@@ -1,12 +1,10 @@
 ---
 ---
-{% assign profile = site.data.profile %}BEGIN:VCARD
+{% assign person = site.data.person %}{% assign company = site.data.organization %}BEGIN:VCARD
 VERSION:3.0
-N:{{ profile.contact_info.last_name }};{{ profile.contact_info.first_name }};;;
-FN:{{ profile.contact_info.first_name }} {{ profile.contact_info.last_name }}
-ORG:{{ site.data.organization.name }}
-TITLE:{{ site.data.person.jobTitle }}
-EMAIL:{{ profile.contact_info.email }}
-TEL;HOME;VOICE:{{ profile.contact_info.phone }}
+N:{{ person.familyName }};{{ person.givenName }};;;
+FN:{{ person.givenName }} {{ person.familyName }}
+ORG:{{ company.name }}
+TITLE:{{ person.jobTitle }}
 REV:{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}
-END:VCARD{% assign profile = nil %}
+END:VCARD{% assign person = nil %}{% assign company = nil %}

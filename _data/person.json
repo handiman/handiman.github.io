@@ -2,6 +2,8 @@
   "@context": "http://schema.org",
   "@type": "Person",
   "name": "Henrik Becker",
+  "givenName": "Henrik",
+  "familyName": "Becker",
   "description": "Henrik Becker is a senior .Net developer and solution architect dedicated to delivering quality software by practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of DevOps.",
   "nationality": "Swedish",
   "jobTitle": "Senior Fullstack .Net Developer",

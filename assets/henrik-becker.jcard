@@ -1,14 +1,12 @@
 ---
 ---
-{% assign profile = site.data.profile %}["vcard",
+{% assign person = site.data.person %}{% assign company = site.data.organization %}["vcard",
   [
     ["version", {}, "text", "4.0"],
-    ["n", {}, "text", ["{{ profile.contact_info.last_name }}", "{{ profile.contact_info.first_name }}", "", "", ""]],
-    ["fn", {}, "text", "{{ profile.contact_info.first_name }} {{ profile.contact_info.last_name }}"],
-    ["org", {}, "text", "{{ site.data.organization.name }}"],
-    ["title", {} ,"text", "{{ site.data.person.jobTitle }}"],
-    ["tel", {"type":["work", "voice"]}, "uri", "tel:{{ profile.contact_info.phone }}"]
-    ["email", {}, "text", "{{ profile.contact_info.email }}"],
+    ["n", {}, "text", ["{{ person.familyName }}", "{{ person.givenName }}", "", "", ""]],
+    ["fn", {}, "text", "{{ person.givenName }} {{ person.familyName }}"],
+    ["org", {}, "text", "{{ company.name }}"],
+    ["title", {} ,"text", "{{ person.jobTitle }}"],
     ["rev", {}, "timestamp", "{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}"]
   ]
-]
+]{% assign person = nil %}{% assign company = nil %}
