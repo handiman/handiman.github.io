@@ -17,6 +17,10 @@
 		<title>
 			<text>{{ person.jobTitle }}</text>
 		</title>
+		<url>
+			<parameters><type><text>work</text></type></parameters>
+			<uri>{{ site.production_url }}</uri>
+		</url>
 		<rev>
 		  <timestamp>{{ site.time | date: "%Y%m%dT%H%M%SZ" }}</timestamp>
 		</rev>

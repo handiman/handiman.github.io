@@ -7,6 +7,7 @@
     ["fn", {}, "text", "{{ person.givenName }} {{ person.familyName }}"],
     ["org", {}, "text", "{{ company.name }}"],
     ["title", {} ,"text", "{{ person.jobTitle }}"],
+    ["url", { "type": "work" }, "uri", {{ site.production_url | jsonify }}],
     ["rev", {}, "timestamp", "{{ site.time | date: "%Y-%m-%dT%H:%M:%SZ" }}"]
   ]
 ]{% assign person = nil %}{% assign company = nil %}

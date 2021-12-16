@@ -8,8 +8,8 @@
     "basics": {
       "name": {{ person.name | jsonify }},
       "label": {{ person.jobTitle | jsonify }},
-      "image": "https://avatars.githubusercontent.com/u/824009?v=4",
-      "picture": "https://avatars.githubusercontent.com/u/824009?v=4",
+      "image": {{ person.image | jsonify }},
+      "picture": {{ person.image | jsonify }},
       "website": {{ site.production_url | jsonify }},
       "url": {{ site.production_url | jsonify }},
       "summary": {{ person.description | jsonify }},
