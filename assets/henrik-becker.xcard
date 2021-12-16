@@ -2,12 +2,12 @@
 <vcards xmlns="urn:ietf:params:xml:ns:vcard-4.0">
 	<vcard>
 		<n>
-			<surname></surname>
-			<given></given>
+			<surname>Becker</surname>
+			<given>Henrik</given>
 			<prefix></prefix>
 		</n>
 		<fn>
-			<text> </text>
+			<text>Henrik Becker</text>
 		</fn>
 		<org>
 			<text>Henrik Becker Consulting AB</text>
@@ -15,20 +15,8 @@
 		<title>
 			<text>Senior Fullstack .Net Developer</text>
 		</title>
-		<tel>
-			<parameters>
-				<type>	
-					<text>home</text>
-					<text>voice</text>
-				</type>
-			</parameters>
-			<uri>tel:</uri>
-		</tel>
-		<email>
-			<text></text>
-		</email>
 		<rev>
-		  <timestamp>20211208T162731Z</timestamp>
+		  <timestamp>20211216T123015Z</timestamp>
 		</rev>
 	</vcard>
 </vcards>

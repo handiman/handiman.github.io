@@ -1,12 +1,10 @@
 ["vcard",
   [
     ["version", {}, "text", "4.0"],
-    ["n", {}, "text", ["", "", "", "", ""]],
-    ["fn", {}, "text", " "],
+    ["n", {}, "text", ["Becker", "Henrik", "", "", ""]],
+    ["fn", {}, "text", "Henrik Becker"],
     ["org", {}, "text", "Henrik Becker Consulting AB"],
     ["title", {} ,"text", "Senior Fullstack .Net Developer"],
-    ["tel", {"type":["work", "voice"]}, "uri", "tel:"]
-    ["email", {}, "text", ""],
-    ["rev", {}, "timestamp", "2021-12-08T16:27:31Z"]
+    ["rev", {}, "timestamp", "2021-12-16T12:30:15Z"]
   ]
 ]
