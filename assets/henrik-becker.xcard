@@ -2,27 +2,27 @@
 ---
 <?xml version="1.0" encoding="UTF-8"?>{% assign person = site.data.person %}{% assign company = site.data.organization %}
 <vcards xmlns="urn:ietf:params:xml:ns:vcard-4.0">
-	<vcard>
-		<n>
-			<surname>{{ person.familyName }}</surname>
-			<given>{{ person.givenName }}</given>
-			<prefix></prefix>
-		</n>
-		<fn>
-			<text>{{  person.givenName }} {{ person.familyName  }}</text>
-		</fn>
-		<org>
-			<text>{{ company.name }}</text>
-		</org>
-		<title>
-			<text>{{ person.jobTitle }}</text>
-		</title>
-		<url>
-			<parameters><type><text>work</text></type></parameters>
-			<uri>{{ site.production_url }}</uri>
-		</url>
-		<rev>
-		  <timestamp>{{ site.time | date: "%Y%m%dT%H%M%SZ" }}</timestamp>
-		</rev>
-	</vcard>
+ <vcard>
+  <n>
+   <surname>{{ person.familyName }}</surname>
+   <given>{{ person.givenName }}</given>
+   <prefix></prefix>
+  </n>
+  <fn>
+   <text>{{  person.givenName }} {{ person.familyName  }}</text>
+  </fn>
+  <org>
+    <text>{{ company.name }}</text>
+  </org>
+  <title>
+   <text>{{ person.jobTitle }}</text>
+  </title>
+  <url>
+   <parameters><type><text>work</text></type></parameters>
+   <uri>{{ site.production_url }}</uri>
+  </url>
+  <rev>
+   <timestamp>{{ site.time | date: "%Y%m%dT%H%M%SZ" }}</timestamp>
+  </rev>
+ </vcard>
 </vcards>{% assign person = nil %}{% assign company = nil %}
