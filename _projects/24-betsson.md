@@ -9,6 +9,7 @@ skills:
  - C#
  - Asp.Net Core
  - .Net 5
+ - .Net 6
  - Blazor
  - Docker
 summary:  
