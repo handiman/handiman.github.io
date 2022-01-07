@@ -25,7 +25,7 @@ Henrik Becker is a senior .Net developer and solution architect dedicated to del
 
 
 *Skills used:*
-C#, Asp.Net Core, .Net 5, Blazor, Docker
+C#, Asp.Net Core, .Net 5, .Net 6, Blazor, Docker
 
 
 ### Adlibris    
