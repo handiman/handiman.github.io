@@ -54,21 +54,19 @@ const FooterComponent: React.FC<FooterProps> = ({
   certifications,
   onSelect = () => { }
 }) => {
-  return  (
+  return (
     <Box component="footer" textAlign="center" className={classes.root}>
       <ContactForm title="Contact Me" />
-      <ul>
-        <li>
-          <Link href="https://www.linkedin.com/in/prettygoodprogrammer" aria-label="LinkedIn">
-            <LinkedIn fontSize={iconSize} />
-          </Link>
-        </li>
-        <li>
-          <Link href="https://github.com/handiman" aria-label="GitHub">
-            <GitHub fontSize={iconSize} />
-          </Link>
-        </li>
-      </ul>
+      
+      {certifications && (<ul id="certifications">
+        {certifications.map((cert, index: number) => (
+          <li key={index} className={classes.cert}>
+            <a title={cert.name} href={cert.url}>
+              <img src={cert.badgeUrl} alt={cert.name} />
+            </a>
+          </li>
+        ))}
+      </ul>)}
       <ul className={classes.delimited}>
         {useArray(children).map((item: any, i: number) => {
           return item.props?.title ? (
@@ -88,16 +86,19 @@ const FooterComponent: React.FC<FooterProps> = ({
           <li><Link href="/assets/henrik-becker.rss.xml">RSS feed</Link></li>
         </ul>
       </div>
-      <div>Copyright &copy; {new Date().getFullYear()} Henrik Becker</div>
-      {certifications && (<ul id="certifications">{certifications.map((cert, index:number) => (
-        <li key={index} className={classes.cert}>
-          <a title={cert.name} href={cert.url}>
-            <img src={cert.badgeUrl} alt={cert.name} />
-          </a>
+      <div>Copyright &copy; {new Date().getFullYear()} Henrik Becker. Thanks for visiting!</div>
+      <ul>
+        <li>
+          <Link href="https://www.linkedin.com/in/prettygoodprogrammer" aria-label="LinkedIn">
+            <LinkedIn fontSize={iconSize} />
+          </Link>
         </li>
-      ))}
-      </ul>)}
-      <div>Thanks for visiting!</div>
+        <li>
+          <Link href="https://github.com/handiman" aria-label="GitHub">
+            <GitHub fontSize={iconSize} />
+          </Link>
+        </li>
+      </ul>
     </Box>
   );
 }
