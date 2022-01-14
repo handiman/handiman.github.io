@@ -3,7 +3,19 @@
   "skills": {"Languages":[{"name":"C#","level":"Expert"},{"name":"TypeScript","level":"Intermediate"},{"name":"JavaScript","level":"Advanced"},{"name":"HTML & CSS","level":"Advanced"}],"Frameworks":[{"name":"Asp.Net Core","level":"Expert"},{"name":"Asp.Net","level":"Expert"},{"name":"React","level":"Advanced"},{"name":"EF Core","level":"Advanced"}],"Methods":[{"name":"Test Driven Development","level":"Expert"},{"name":"CI/CD","level":"Advanced"},{"name":"Agile Methodologies","level":"Advanced"},{"name":"Specification by Example","level":"Advanced"}],"Tools & Databases":[{"name":"Azure","level":"Intermediate"},{"name":"Azure Devops","level":"Advanced"},{"name":"Octopus Deploy","level":"Advanced"},{"name":"SQL Server","level":"Advanced"}]},
   "languages": [{"name":"Swedish","proficiency":"Native"},{"name":"English","proficiency":"Fluent (IELTS overall score 8.5)"}],
   "interests": ["Music","Playing Guitar","Motorcycling","Karate","Travelling","Good food","Reading"],
-  "certifications": ["Microsoft Certified: Azure Developer Associate","Microsoft® Certified Solutions Associate: Web Applications Charter Member","MSCD Web Applications","Certified Scrum Master"],
+  "certifications": [{
+    "name": "Microsoft Certified: Azure Developer Associate",
+    "issuer": "Microsoft",
+    "date": "2021-06-24",
+    "url": "https://www.credly.com/badges/f273ba6a-0f57-49f1-8e5e-8f2e5cccf170",
+    "badgeUrl": "https://henrikbecker.blob.core.windows.net/badges/azure-developer-associate-600x600.png"
+  },{
+    "name": "MCSA: Web Applications - Certified 2016",
+    "issuer": "Microsoft",
+    "date": "2016-09-26",
+    "url": "https://www.credly.com/badges/54c4ab3b-4254-47e3-aabc-fea97f277130",
+    "badgeUrl": "https://henrikbecker.blob.core.windows.net/badges/MCSA_Web_Applications-01.png"
+  }],
   "recommendations": [{"name":"Niklas Hallenfur - Expicon AB","link":"https://www.linkedin.com/in/niklas-hallenfur-16ab99/","text":"Henrik was very humble on the interview, but he turned out to be a fantastic developer, among the best performing consultants I have encountered.  Contributed a lot of great ideas and knowledge to the team.  \n"},{"name":"Jannice Dybedahl - Hewlett Packard Sweden AB","link":"https://www.linkedin.com/in/jannicedybedahl/","text":"Henrik is, without a doubt, one of the best developers I have worked with during my years in the IT and Internet business.  He is fast, he understands customer needs and he contribute with great ideas when he think that systems or applications can be created in a better way than originally requested.  Henrik is a loyal and easy going person who I enjoyed working with a lot and who I recommend any company to hire!"}],
   "projects": [
     
