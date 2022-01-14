@@ -34,7 +34,7 @@ collections:
   output: false
  employment:
   output: false
- badges:
+ certs:
   output: false 
 # recommendations:
 #  output: false

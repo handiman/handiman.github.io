@@ -4,6 +4,7 @@ import { GitHub, LinkedIn } from '@material-ui/icons';
 import { Colors } from '../theme';
 import { useArray } from '../../Utils';
 import { ContactForm } from '.';
+import { ICertification } from '../Profile';
 
 const iconSize = "small";
 
@@ -33,24 +34,27 @@ const styles = (theme: Theme) => createStyles({
         borderRightStyle: 'none'
       }
     }
+  },
+  cert: {
+    '& img': {
+      width: 80
+    }
   }
 })
 
 interface FooterProps extends WithStyles<typeof styles> {
   onSelect?: (i: number) => void,
-  children?: any
+  children?: any,
+  certifications?: Array<ICertification>
 }
 
 const FooterComponent: React.FC<FooterProps> = ({
   children,
   classes,
+  certifications,
   onSelect = () => { }
 }) => {
-  const print = () => {
-    setTimeout(() => window.print(), 0);
-  };
-
-  return (
+  return  (
     <Box component="footer" textAlign="center" className={classes.root}>
       <ContactForm title="Contact Me" />
       <ul>
@@ -85,6 +89,14 @@ const FooterComponent: React.FC<FooterProps> = ({
         </ul>
       </div>
       <div>Copyright &copy; {new Date().getFullYear()} Henrik Becker</div>
+      {certifications && (<ul id="certifications">{certifications.map((cert, index:number) => (
+        <li key={index} className={classes.cert}>
+          <a title={cert.name} href={cert.url}>
+            <img src={cert.badgeUrl} alt={cert.name} />
+          </a>
+        </li>
+      ))}
+      </ul>)}
       <div>Thanks for visiting!</div>
     </Box>
   );

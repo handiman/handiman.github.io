@@ -51,13 +51,21 @@ export interface ISkillSet {
   [category: string]: Array<ISkill>
 }
 
+export interface ICertification {
+  name: string,
+  date: string,
+  issuer: string,
+  url: string,
+  badgeUrl: string
+}
+
 export interface IProfile {
   summary: Array<string>,
   languages: Array<ILanguage>,
   skills: ISkillSet,
   projects: Array<IExperience>,
   employers: Array<IExperience>,
-  certifications: Array<string>,
+  certifications: Array<ICertification>,
   interests: Array<string>,
   recommendations: Array<IRecommendation>
 }

@@ -18,6 +18,12 @@
         { "network": "LinkedIn", "url": "https://www.linkedin.com/in/prettygoodprogrammer/" }
       ]
     },
+    "certificates": [{%for cert in site.certs %}{
+      "name": {{ cert.title | jsonify }},
+      "issuer": {{ cert.issuer | jsonify }},
+      "date": {{ cert.achievement_date | jsonify }},
+      "url": {{ cert.link | jsonify }}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}],
     "projects": [{% for featuredProject in site.data.featuredProjects %}{% assign projectId = '/projects/' | append: featuredProject %}{% assign project = site.projects | where: "id", projectId | first %}{
       "name": {{ project.title | jsonify }},
       "roles": [{{ project.role | jsonify }}],

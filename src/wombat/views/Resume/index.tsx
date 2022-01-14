@@ -23,10 +23,10 @@ interface DefaultProps extends WithProfile, WithStyles<typeof styles> {
 }
 
 const DefaultResumeLayout: React.FC<DefaultProps> = ({ profile, classes, showContactForm = false }) => {
-  const { projects, employers, interests } = profile;
+  const { projects, employers, interests, certifications } = profile;
 
   return (
-    <DefaultLayout showContactForm={showContactForm}>
+    <DefaultLayout showContactForm={showContactForm} certifications={certifications}>
       <Splash title="Top of Page" />
 
       <Page title="Skills" component={Paper} centerVertically className={classes.paper}>

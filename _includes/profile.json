@@ -3,7 +3,13 @@
   "skills": {{ profile.featuredSkills | jsonify }},
   "languages": {{ profile.languages | jsonify }},
   "interests": {{ profile.interests | map: "name" | jsonify }},
-  "certifications": {{ profile.certifications | map: "name" | jsonify }},
+  "certifications": [{% for cert in site.certs %}{
+    "name": {{ cert.title | jsonify }},
+    "issuer": {{ cert.issuer | jsonify }},
+    "date": {{ cert.achievement_date | jsonify }},
+    "url": {{ cert.link | jsonify }},
+    "badgeUrl": {{ cert.badge | jsonify }}
+  }{% unless forloop.last %},{% endunless %}{% endfor %}],
   "recommendations": {{ profile.recommendations | jsonify }},
   "projects": [{% for featuredProject in site.data.featuredProjects %}
     {% assign projectId = '/projects/' | append: featuredProject %}

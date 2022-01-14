@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { Keys } from '../Types';
 import { ContactFormDialog, Footer, Menu, SectionIndicator, SectionNavigator } from '../components';
 import { useArray } from '../../Utils';
+import { ICertification } from '../Profile';
 
 interface DefaultLayoutProps {
   children?: any,
-  showContactForm?: boolean
+  showContactForm?: boolean,
+  certifications? : Array<ICertification>
 }
 
-const DefaultLayoutComponent: React.FC<DefaultLayoutProps> = ({ children, showContactForm = false }) => {
+const DefaultLayoutComponent: React.FC<DefaultLayoutProps> = ({ children, showContactForm = false, certifications = [] }) => {
   const [isContactFormOpen, setIsContactFormOpen] = useState(showContactForm);
   const [visibleIndex, setVisibleIndex] = useState(0);
   const sections = useArray(children);
@@ -72,7 +74,7 @@ const DefaultLayoutComponent: React.FC<DefaultLayoutProps> = ({ children, showCo
           {section}
         </section>
       ))}
-      <Footer children={sections} onSelect={onSelect} />
+      <Footer children={sections} certifications={certifications} onSelect={onSelect} />
       <ContactFormDialog title="Contact Me" open={isContactFormOpen} onClose={onHideContactForm} />
       <Menu showContactForm={onShowContactForm} />
       {(sections.length > 1) && (
