@@ -1,0 +1,18 @@
+---
+---
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": {{ site.title | jsonify }},
+  "language": "en-AU",
+  "description": {{ site.data.person.description | jsonify }},
+  "authors": [{ "name": {{ site.data.person.name | jsonify }} }],
+  "home_page_url": {{ site.production_url | jsonify }},
+  "feed_url": {{ site.production_url | append: page.url | jsonify }},
+  "items": [{% for project in site.projects reversed %}{
+    "id": {{ site.production_url | append: project.id | jsonify }},
+    "title": {{ project.role | append: " at " | append: project.title | jsonify }},
+    "date_published": "{{ project.start_date | date: '%FT%T.' }}{{ forloop.index | prepend: '000' | slice: -3, 3 | append: 'Z' }}",
+    "date_modified": "{{ project.start_date | date: '%FT%T.' }}{{ forloop.index | prepend: '000' | slice: -3, 3 | append: 'Z' }}",
+    "content_text": {{ project.role | append: ' at ' | append: project.title | append: ' ' | append: project.start_date | append: ' - ' | append: project.end_date | jsonify }}
+  }{% unless forloop.last %},{% endunless %}{% endfor %}]
+}

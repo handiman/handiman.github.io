@@ -1,0 +1,26 @@
+---
+---
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <link>{{ site.production_url }}</link>
+    <description>{{ site.data.person.description | xml_escape }}</description>
+    <language>en-AU</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <copyright>Copyright {{ site.time | date: '%Y' }} {{ site.data.person.name | xml_escape }}</copyright>
+    <atom:link href="{{ site.production_url }}{{ page.url }}" rel="self" type="application/rss+xml" />{% for project in site.projects reversed %}
+    <item>
+      <title>{{ project.role | xml_escape }} at {{ project.title | xml_escape }}</title>
+      <guid>{{ site.production_url }}{{ project.id }}</guid>
+      <pubDate>{{ project.start_date | date_to_rfc822 }}</pubDate>
+      <description>
+        {{ project.role | escape }} at {{ project.title | xml_escape }}
+        {{ project.start_date }} - {{ project.end_date }}
+        {% for summary in project.summary %}
+        {{ summary | xml_escape }}{% endfor %}
+        Skills used: {{ project.skills | join: ', ' | xml_escape }}
+      </description>
+    </item>{% endfor %}
+  </channel>
+</rss>

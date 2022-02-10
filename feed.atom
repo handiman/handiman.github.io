@@ -1,0 +1,27 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>{{ site.production_url | append: '/' }}</id>
+  <title>{{ site.title | xml_escape }}</title>
+  <link href="{{ site.production_url }}" />
+  <link href="{{ site.production_url }}{{ page.url }}" rel="self" />
+  <updated>{{ site.time | date: '%FT%T.000Z' }}</updated>
+  <author>
+    <name>{{ site.data.person.name | xml_escape }}</name>
+  </author>
+  <rights>Copyright {{ site.time | date: '%Y' }} {{ site.data.person.name | xml_escape }}</rights>{% for project in site.projects reversed %}
+  <entry>
+    <id>{{ site.production_url }}{{ project.id }}</id>
+    <title>{{ project.role | xml_escape }} at {{ project.title | xml_escape }}</title>
+    <published>{{ project.start_date | date: '%FT%T.' }}{{ forloop.index | prepend: '000' | slice: -3, 3 | append: 'Z' }}</published>
+    <updated>{{ project.start_date | date: '%FT%T.' }}{{ forloop.index | prepend: '000' | slice: -3, 3 | append: 'Z' }}</updated>
+    <content>
+      {{ project.role | escape }} at {{ project.title | xml_escape }}
+      {{ project.start_date }} - {{ project.end_date }}
+      {% for summary in project.summary %}
+      {{ summary | xml_escape }}{% endfor %}
+      Skills used: {{ project.skills | join: ', ' | xml_escape }}
+    </content>
+  </entry>{% endfor %}
+</feed>
