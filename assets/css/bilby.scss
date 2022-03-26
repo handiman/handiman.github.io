@@ -1,0 +1,28 @@
+---
+---
+$bilby: 'https://en.wikipedia.org/wiki/Macrotis';
+$text-color: #EFEFEF;
+$back-color: #222222;
+$link-color: #a7d663;
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: $back-color;
+}
+
+* {
+  font-size: 16px;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  color: $text-color !important;
+}
+
+@media print {
+  .noprint {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+}

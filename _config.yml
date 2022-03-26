@@ -43,13 +43,13 @@ excerpt_separator: <!--more-->
 
 defaults:
  - scope: 
-    path: "*.html"
+    path: "*.*"
    values: 
     layout: wombat
  - scope: 
-    path: "*.md"
+    path: "project-history.md"
    values: 
-    layout: wombat
+    layout: bilby
  - scope:
     path: "googlef0bc3dbe928e1f73.html"
    values:

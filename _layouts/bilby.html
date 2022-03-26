@@ -1,0 +1,34 @@
+---
+---
+<!DOCTYPE html>{% assign timestamp = site.time | date: '%s' %}
+{% if page.title %}{% assign title = page.title %}{% else %}{% assign title = site.data.person.name | append: ' - ' | append: site.data.person.jobTitle %}{% endif %}
+<html lang="{% if page.language %}{{ page.language }}{% elsif site.language %}{{ site.language }}{% else %}en-AU{% endif %}">
+{% if page.description %}{% assign description = page.description %}{% else %}{% assign description = site.data.person.description %}{% endif %}
+<head>
+  {% include head.html %}
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.4/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="/assets/css/bilby.css?v={{ timestamp }}" />
+</head>
+
+<body>
+  {% unless page.redirect %}
+  <main>
+    {{ content }}
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.4/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.4/dist/js/uikit-icons.min.js"></script>
+  {% else %}
+  <div id="error">
+    <div>
+      <h1><i class="fas fa-directions"></i></h1>
+      This page has moved.<br />
+      <a href="{{ page.redirect }}">Click here if you are not automatically redirected</a>.
+    </div>
+  </div>
+  {% endunless %}
+  {% include noie.html %}
+</body>
+
+</html>
