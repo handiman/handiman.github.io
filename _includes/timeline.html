@@ -1,0 +1,24 @@
+{% assign periods = '' %}
+{% for item in include.items %}
+  {% assign period = item.end_date | date: '%Y' %}
+  {% assign periods = periods | append: ',' | append: period %}
+{% endfor %}
+{% assign periods = periods | split: ',' | uniq %}
+<div class="timeline">
+{% for period in periods reversed %}{% assign item_ids = '' %}
+    <section>
+    <header>{{ period | capitalize }}</header>
+    <div class="content">
+    {% for item in include.items reversed %}{% assign year = item.end_date | date: '%Y' %}
+        {% if year == period %}{% assign item_ids = item_ids | append: item.id | append: ',' %}{% endif %}
+    {% endfor %}
+    {% assign item_ids = item_ids | split: ',' %}
+    {% for item_id in item_ids %}{% assign match = include.items | where: 'id', item_id %}
+        {% for item in match %}
+        <div>{{ item.title }}</div>
+        {% endfor %}
+    {% endfor %}
+    </div>
+    </section>
+    {% endfor %}
+</div>

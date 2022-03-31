@@ -1,9 +1,13 @@
 ---
 ---
 $bilby: 'https://en.wikipedia.org/wiki/Macrotis';
-$text-color: #EFEFEF;
-$back-color: #222222;
-$link-color: #a7d663;
+$white: #EFEFEF;
+$black: #222222;
+$green: #a7d663;
+$text-color: $white;
+$back-color: $black;
+$link-color: $green;
+$font-size: 16px;
 
 html, body {
   width: 100%;
@@ -12,9 +16,38 @@ html, body {
 }
 
 * {
-  font-size: 16px;
+  font-size: $font-size;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   color: $text-color !important;
+}
+
+.timeline {
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    //grid-template-columns: repeat(minmax(100px, 1fr), auto-fit);
+    header {
+      min-width: 58px;
+      padding-right: 1rem;
+      text-align: right;
+    }
+    .content {
+      border-left: 1px solid $green;
+      padding-left: 1rem;
+    }
+    /*.content::before {
+      content: '';
+      position: relative;
+      width: 16px;
+      height: 16px;
+      top: calc(50% - 8px);
+      right: -8px;
+      background: #ffffff;
+      border: 2px solid #006E51;
+      border-radius: 16px;
+      z-index: 1;
+    }*/
+  }
 }
 
 @media print {
