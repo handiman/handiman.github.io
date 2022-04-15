@@ -7,18 +7,30 @@
 <div class="timeline">
 {% for period in periods reversed %}{% assign item_ids = '' %}
     <section>
-    <header>{{ period | capitalize }}</header>
-    <div class="content">
-    {% for item in include.items reversed %}{% assign year = item.end_date | date: '%Y' %}
-        {% if year == period %}{% assign item_ids = item_ids | append: item.id | append: ',' %}{% endif %}
-    {% endfor %}
-    {% assign item_ids = item_ids | split: ',' %}
-    {% for item_id in item_ids %}{% assign match = include.items | where: 'id', item_id %}
-        {% for item in match %}
-        <div>{{ item.title }}</div>
-        {% endfor %}
-    {% endfor %}
-    </div>
+      <header>{{ period | capitalize }}</header>
+      <div class="content">
+      {% for item in include.items reversed %}{% assign year = item.end_date | date: '%Y' %}
+          {% if year == period %}{% assign item_ids = item_ids | append: item.id | append: ',' %}{% endif %}
+      {% endfor %}
+      {% assign item_ids = item_ids | split: ',' %}
+      {% for item_id in item_ids %}{% assign match = include.items | where: 'id', item_id %}
+          {% for item in match %}
+          <div>
+            <div>{{ item.title }}</div>
+            <div>
+              {% if item.organization %}{{ item.organization.name }} | {% elsif item.role %}{{ item.role }} | {% endif %}
+              {{ item.start_date | date: '%b %Y' }}{% if item.end_date != item.start_date %} - {{ item.end_date | date: '%b %Y' }}{% endif %}
+              {% if item.location %} | {{item.location}}{% endif %}
+            </div>
+            <div>
+              {{ item.excerpt }}
+              {% if item.skills %}<div>Skills used:</div>
+              <div>{{ item.skills | join: ', ' }}</div>{% endif %}
+            </div>
+          </div>
+          {% endfor %}
+      {% endfor %}
+      </div>
     </section>
     {% endfor %}
 </div>

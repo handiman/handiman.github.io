@@ -22,18 +22,22 @@ html, body {
 }
 
 .timeline {
+  display: table;
   section {
-    display: flex;
-    flex-wrap: wrap;
+    display: table-row;
     //grid-template-columns: repeat(minmax(100px, 1fr), auto-fit);
     header {
-      min-width: 58px;
+      display: table-cell;
       padding-right: 1rem;
       text-align: right;
     }
     .content {
+      display: table-cell;
       border-left: 1px solid $green;
       padding-left: 1rem;
+      div:last-child {
+        padding-bottom: .5rem;
+      }
     }
     /*.content::before {
       content: '';
