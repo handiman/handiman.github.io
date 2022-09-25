@@ -87,10 +87,6 @@ export const Personal = withStyles(styles)((props: PersonalComponentProps) => {
               <h6>I used to dream of being a professional musician</h6>
               Then I saw the light and became a developer but music is still very important to me.
             </li>
-            <li>
-              <h6><i className="fas fa-shield-virus"></i> I am Covid-19 resistant</h6>
-              Had it in november 2020 but survived <i className="far fa-smile-beam"></i> <i className="fas fa-glass-cheers"></i>
-            </li>
           </ul>
         </Grid>
       </Grid>
