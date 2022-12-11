@@ -8,10 +8,10 @@ end_date: present
 skills:
  - C#
  - Asp.Net Core
- - .Net 5
  - .Net 6
  - Blazor
  - Docker
+ - Event Sourcing
 summary:  
 ---
 {% for summary in page.summary %}
