@@ -1,6 +1,4 @@
-- name: Continuous Integration
-  level: Advanced
-- name: Continuous Deployment
+- name: CI/CD
   level: Advanced
 - name: Test Driven Development
   level: Expert

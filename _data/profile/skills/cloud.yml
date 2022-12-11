@@ -2,3 +2,5 @@
   level: Intermediate
 - name: Azure Devops  
   level: Advanced
+- name: AWS
+  level: Novice
