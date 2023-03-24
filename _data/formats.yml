@@ -1,0 +1,21 @@
+- name: Word
+  mime_type: application/vnd.openxmlformats-officedocument.wordprocessing
+  url: /assets/henrik-becker.docx
+- name: PDF
+  mime_type: application/pdf
+  url: /assets/henrik-becker.pdf
+- name: Markdown
+  mime_type: text/markdown
+  url: /assets/henrik-becker.txt
+- name: JSON
+  mime_type: application/json
+  url: /assets/henrik-becker.json
+- name: RSS feed
+  mime_type: application/rss+xml
+  url: /feed.rss.xml
+- name: Atom feed
+  mime_type: application/atom+xml
+  url: /feed.atom.xml
+- name: JSON feed
+  mime_type: application/json
+  url: /feed.json

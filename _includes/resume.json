@@ -24,7 +24,7 @@
       "date": {{ cert.achievement_date | jsonify }},
       "url": {{ cert.link | jsonify }}
     }{% unless forloop.last %},{% endunless %}{% endfor %}],
-    "projects": [{% for featuredProject in site.data.featuredProjects %}{% assign projectId = '/projects/' | append: featuredProject %}{% assign project = site.projects | where: "id", projectId | first %}{
+    "projects": [{% for featuredProject in site.data.profile.featuredProjects %}{% assign projectId = '/projects/' | append: featuredProject %}{% assign project = site.projects | where: "id", projectId | first %}{
       "name": {{ project.title | jsonify }},
       "roles": [{{ project.role | jsonify }}],
       "startDate": {{ project.start_date | jsonify }},{% if project.end_date %}{% if project.end_date != 'present' %}

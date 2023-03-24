@@ -7,17 +7,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '2.6'
       - uses: actions/checkout@v2
-      - run: npm install
       - run: gem install bundler
       - run: bundler install
-      - run: npx webpack --mode=production
       - run: bundle exec jekyll build
       
       - name: Publish gh-pages

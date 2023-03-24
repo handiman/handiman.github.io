@@ -11,6 +11,11 @@ sass:
  sass_dir: _sass
  style: compressed
 
+plugins:
+   - jekyll-remote-theme
+
+remote_theme: handiman/jekyll-theme-gnap  
+
 exclude: [ 
  "node_modules",
  "src",
@@ -36,6 +41,8 @@ collections:
   output: false
  certs:
   output: false 
+ fun_facts:
+  output: false
 # recommendations:
 #  output: false
 

@@ -11,7 +11,7 @@
     "badgeUrl": {{ cert.badge | jsonify }}
   }{% unless forloop.last %},{% endunless %}{% endfor %}],
   "recommendations": {{ profile.recommendations | jsonify }},
-  "projects": [{% for featuredProject in site.data.featuredProjects %}
+  "projects": [{% for featuredProject in profile.featuredProjects %}
     {% assign projectId = '/projects/' | append: featuredProject %}
     {% assign project = site.projects | where: "id", projectId | first %}
     {% if project %}

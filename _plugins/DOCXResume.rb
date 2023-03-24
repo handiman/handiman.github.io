@@ -214,7 +214,7 @@ module Jekyll
     def projects
       page
       h1 'Featured Projects'
-      @site.data["featuredProjects"].each do |feature|
+      @site.data["profile"]["featuredProjects"].each do |feature|
         @site.collections["projects"].docs.each do |project|
           if project.id == "/projects/" + feature
             experience(Experience.new(project, @site))

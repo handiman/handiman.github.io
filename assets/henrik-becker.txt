@@ -20,7 +20,7 @@
 {% endfor %}{% assign language = nil %}
 
 ## Featured Projects
-{% for featuredProject in site.data.featuredProjects %}{% assign projectId = '/projects/' | append: featuredProject %}{% assign project = site.projects | where: "id", projectId | first %}{% if project %}
+{% for featuredProject in profile.featuredProjects %}{% assign projectId = '/projects/' | append: featuredProject %}{% assign project = site.projects | where: "id", projectId | first %}{% if project %}
 ### {{ project.title }}    
 *{{ project.role }} | {{ project.start_date | date: "%b %Y" }}{% if project.end_date %} - {{ project.end_date | date: "%b %Y" }}{% endif %}*
 {% for summary in project.summary %}
