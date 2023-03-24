@@ -50,13 +50,9 @@ excerpt_separator: <!--more-->
 
 defaults:
  - scope: 
-    path: "*.html"
+    path: "index.html"
    values: 
-    layout: wombat
- - scope: 
-    path: "*.md"
-   values: 
-    layout: wombat
+    layout: index
  - scope:
     path: "googlef0bc3dbe928e1f73.html"
    values:
