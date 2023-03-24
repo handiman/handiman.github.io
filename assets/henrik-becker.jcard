@@ -3,7 +3,7 @@
  ["n", {}, "text", ["Becker", "Henrik", "", "", ""]],
  ["fn", {}, "text", "Henrik Becker"],
  ["org", {}, "text", "Henrik Becker Consulting AB"],
- ["title", {} ,"text", "Senior Fullstack .Net Developer"],
+ ["title", {} ,"text", "Fullstack .Net Developer"],
  ["url", { "type": "work" }, "uri", "https://www.henrikbecker.net"],
- ["rev", {}, "timestamp", "2022-10-02T09:00:02Z"]
+ ["rev", {}, "timestamp", "2023-03-24T10:17:06Z"]
 ]]

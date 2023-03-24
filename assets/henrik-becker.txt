@@ -1,10 +1,10 @@
 
 # Henrik Becker   
-Senior Fullstack .Net Developer   
+Fullstack .Net Developer   
 ---
 
 ## Profile
-Henrik Becker is a senior .Net developer and solution architect dedicated to delivering quality software by practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of DevOps.
+Henrik Becker is a fullstack .Net developer and solution architect with over 23 years of experience. He is dedicated to delivering quality software by practicing Agile Processes, Test Driven Development, applying SOLID principles, a healthy dose of DevOps and dad-jokes.
 
 ## Skills & Expertise
 | Languages | Frameworks | Methods | Tools & Databases |

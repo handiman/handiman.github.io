@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>Henrik Becker - Senior Fullstack .Net Developer</title>
+        <title>Henrik Becker - Fullstack .Net Developer</title>
         <link>https://www.henrikbecker.net</link>
-        <description>Henrik Becker is a senior .Net developer and solution architect dedicated to delivering quality software by practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of DevOps.</description>
-        <copyright>Copyright 2022 Henrik Becker</copyright>
-        <lastBuildDate>2022-10-02 09:00:02 +0000</lastBuildDate>
+        <description>Henrik Becker is a fullstack .Net developer and solution architect with over 23 years of experience. He is dedicated to delivering quality software by practicing Agile Processes, Test Driven Development, applying SOLID principles, a healthy dose of DevOps and dad-jokes.</description>
+        <copyright>Copyright 2023 Henrik Becker</copyright>
+        <lastBuildDate>2023-03-24 10:17:06 +0000</lastBuildDate>
         <category>CV</category>
         <ttl>1440</ttl>
         <item>

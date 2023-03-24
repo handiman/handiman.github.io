@@ -2,7 +2,7 @@
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Henrik Becker Consulting AB",
   "language": "en-AU",
-  "description": "Henrik Becker is a senior .Net developer and solution architect dedicated to delivering quality software by practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of DevOps.",
+  "description": "Henrik Becker is a fullstack .Net developer and solution architect with over 23 years of experience. He is dedicated to delivering quality software by practicing Agile Processes, Test Driven Development, applying SOLID principles, a healthy dose of DevOps and dad-jokes.",
   "authors": [{ "name": "Henrik Becker" }],
   "home_page_url": "https://www.henrikbecker.net",
   "feed_url": "https://www.henrikbecker.net/feed.json",
