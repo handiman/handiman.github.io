@@ -12,24 +12,15 @@ sass:
  style: compressed
 
 plugins:
-   - jekyll-remote-theme
-
+  - jekyll-remote-theme
+  - jekyll-readme-index
 remote_theme: handiman/jekyll-theme-gnap  
 
 exclude: [ 
  "node_modules",
- "src",
- "package*.json",
- "tsconfig.json",
- "webpack.config.js", 
  "Gemfile", 
  "Gemfile.lock", 
- "README.md", 
  "Rakefile", 
- "changelog.md",
- "*.sh",
- "*.sln",
- "*.suo",
  "*.orig"]
 
 collections:
@@ -49,8 +40,8 @@ collections:
 excerpt_separator: <!--more-->
 
 defaults:
- - scope: 
-    path: "index.html"
+ - scope:
+    path: README.md
    values: 
     layout: index
  - scope:
@@ -58,3 +49,7 @@ defaults:
    values:
     sitemap: false
     
+readme_index:
+  enabled:          true
+  remove_originals: false
+  with_frontmatter: false    
