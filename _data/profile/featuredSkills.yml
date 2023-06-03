@@ -1,4 +1,4 @@
-"Languages":
+Languages:
  - name: C#
    level: Expert
  - name: TypeScript
@@ -8,17 +8,17 @@
  - name: HTML & CSS
    level: Advanced 
 
-"Frameworks":
+Frameworks:
  - name: Asp.Net Core
    level: Expert
  - name: Asp.Net
    level: Expert  
- - name: React
+ - name: Blazor
    level: Advanced
- - name: EF Core
-   level: Advanced  
+ - name: React
+   level: Intermediate
 
-"Methods":
+Methods:
  - name: Test Driven Development
    level: Expert
  - name: CI/CD
@@ -28,12 +28,12 @@
  - name: Specification by Example
    level: Advanced
 
-"Tools & Databases":
- - name: Azure
-   level: Intermediate
+"Tools & Cloud":
+ - name: GitHub Actions
+   level: Advanced
  - name: Azure Devops
    level: Advanced
  - name: Octopus Deploy
    level: Advanced
- - name: SQL Server
-   level: Advanced
+ - name: Azure
+   level: Intermediate
