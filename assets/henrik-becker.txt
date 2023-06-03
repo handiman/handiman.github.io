@@ -7,9 +7,9 @@ Fullstack .Net Developer
 Henrik Becker is a fullstack .Net developer and solution architect with over 23 years of experience. He is dedicated to delivering quality software by practicing Agile Processes, Test Driven Development, applying SOLID principles, a healthy dose of DevOps and dad-jokes.
 
 ## Skills & Expertise
-| Languages | Frameworks | Methods | Tools & Databases |
-| --------- | ---------- | ------- | ----------------- |
-| C# | Asp.Net Core | Test Driven Development | Azure || TypeScript | Asp.Net | CI/CD | Azure Devops || JavaScript | React | Agile Methodologies | Octopus Deploy || HTML & CSS | EF Core | Specification by Example | SQL Server |
+| Languages | Frameworks | Methods | Tools & Cloud |
+| --------- | ---------- | ------- | ------------- |
+| C# | Asp.Net Core | Test Driven Development | GitHub Actions || TypeScript | Asp.Net | CI/CD | Azure Devops || JavaScript | Blazor | Agile Methodologies | Octopus Deploy || HTML & CSS | React | Specification by Example | Azure |
 
 ## Languages
 | Language | Proficiency |
