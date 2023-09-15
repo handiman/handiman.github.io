@@ -7,8 +7,8 @@ start_date: 2021-10-11
 end_date: present
 skills:
  - C#
- - .Net 6
- - Asp.Net Core
+ - .Net 7
+ - Asp.Net
  - Blazor
  - Docker
  - GitHub Actions
