@@ -25,7 +25,7 @@ Henrik Becker is a fullstack .Net developer and solution architect with over 23 
 
 
 *Skills used:*
-C#, .Net 6, Asp.Net Core, Blazor, Docker, GitHub Actions, Kafka
+C#, .Net 7, Asp.Net, Blazor, Docker, GitHub Actions, Kafka
 
 
 ### Adlibris    
