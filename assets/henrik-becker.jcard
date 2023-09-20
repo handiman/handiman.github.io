@@ -5,5 +5,5 @@
  ["org", {}, "text", "Henrik Becker Consulting AB"],
  ["title", {} ,"text", "Fullstack .Net Developer"],
  ["url", { "type": "work" }, "uri", "https://www.henrikbecker.net"],
- ["rev", {}, "timestamp", "2023-09-15T17:25:39Z"]
+ ["rev", {}, "timestamp", "2023-09-20T17:50:03Z"]
 ]]
