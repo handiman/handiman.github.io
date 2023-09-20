@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
     "meta": {
       "theme": "eloquent",
-      "lastUpdated": "2023-09-20T17:50:03",
+      "lastUpdated": "2023-09-20T19:23:52",
       "canonical": "https://gist.githubusercontent.com/handiman/3881a8e890dd1032cce3f5e655859717/raw/01ba33f00c707670636d902546d7e50c4d4176e4/resume.json"
     },
     "basics": {
@@ -12,7 +12,7 @@
       "picture": "https://avatars.githubusercontent.com/u/824009?v=4",
       "website": "https://www.henrikbecker.net",
       "url": "https://www.henrikbecker.net",
-      "summary": "Henrik Becker is a fullstack .Net developer and solution architect with over 23 years of experience. He is dedicated to delivering quality software by practicing Agile Processes, Test Driven Development, applying SOLID principles, a healthy dose of DevOps and dad-jokes.",
+      "summary": "SOLID Senior backend .Net developer and solution architect building the right software the right way.",
       "profiles": [
         { "network": "GitHub", "url": "https://github.com/handiman", "username": "handiman" },
         { "network": "LinkedIn", "url": "https://www.linkedin.com/in/prettygoodprogrammer/" }
