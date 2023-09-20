@@ -4,6 +4,8 @@ gem "caracal"
 gem "prawn"
 gem "prawn-table"
 gem "jekyll-readme-index"
+gem "rest-client"
+gem "json"
 
 if Gem.win_platform?
   gem "wdm", ">= 0.1.0"
