@@ -2,7 +2,7 @@
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Henrik Becker Consulting AB",
   "language": "en-AU",
-  "description": "SOLID Senior backend .Net developer and solution architect building the right software the right way.",
+  "description": "Henrik Becker is an experienced .Net developer and solution architect dedicated to delivering quality software practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of dad-jokes.\n",
   "authors": [{ "name": "Henrik Becker" }],
   "home_page_url": "https://www.henrikbecker.net",
   "feed_url": "https://www.henrikbecker.net/feed.json",

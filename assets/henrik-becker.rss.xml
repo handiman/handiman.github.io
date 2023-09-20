@@ -3,9 +3,10 @@
     <channel>
         <title>Henrik Becker - Fullstack .Net Developer</title>
         <link>https://www.henrikbecker.net</link>
-        <description>SOLID Senior backend .Net developer and solution architect building the right software the right way.</description>
+        <description>Henrik Becker is an experienced .Net developer and solution architect dedicated to delivering quality software practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of dad-jokes.
+</description>
         <copyright>Copyright 2023 Henrik Becker</copyright>
-        <lastBuildDate>2023-09-20 19:23:52 +0000</lastBuildDate>
+        <lastBuildDate>2023-09-20 19:29:29 +0000</lastBuildDate>
         <category>CV</category>
         <ttl>1440</ttl>
         <item>
