@@ -17,8 +17,6 @@ skills:
 summary:
  - Client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg.
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
 <!--more-->
 Astando is one of the leading companies in the GIS area and in the forefront of the Local Roaddatabase concept (LV). 
 LV is the foundation on top of which applications concerning the road network, traffic and road-users are built. 

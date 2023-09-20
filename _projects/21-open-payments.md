@@ -23,8 +23,6 @@ summary:
  - Improved test automation by making functional/integration tests require less manual intervention.
  - Reduced deployment time thanks to improved test automation.
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
 <!--more-->
 
 Open Payments provides a PSD2-compliant platform letting FinTech, 

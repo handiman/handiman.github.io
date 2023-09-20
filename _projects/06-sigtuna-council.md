@@ -21,6 +21,3 @@ summary:
  - Implemented automatic creation of GroupWise accounts and Novell Server home directories.
  - Wrote rules extensions for attribute flow and joins.
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more-->

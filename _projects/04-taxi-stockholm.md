@@ -14,7 +14,3 @@ summary:
  - Migration of Taxi Stockholm's intranet and external web site from Spirello to EpiServer.
  - Integration with the client's Unix based booking system.
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more-->
- 

@@ -42,7 +42,4 @@ summary:
  - Designed Plejmo's Rest API.
  - Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
  - Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.
---- 
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more-->
+---

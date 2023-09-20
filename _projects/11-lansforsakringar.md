@@ -18,7 +18,4 @@ summary:
  - Was instrumental in the migration of the payment platform's database from Oracle to SQL Server.
  - Worked with the development of a WCF based payment platform adding support for automatic payment services and prompts. 
  - Quality assurance and performance optimization of connecting systems.
---- 
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more--> 
+---

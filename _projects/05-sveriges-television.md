@@ -14,6 +14,3 @@ skills:
 summary:
  - Maintenance of the client's system inventory tool.
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more-->

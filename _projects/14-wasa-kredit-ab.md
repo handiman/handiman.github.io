@@ -23,6 +23,3 @@ summary:
  - Guided the development teams towards an iterative approach to software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle.
  - Introduced the idea of living documentation in the form of executable specifications.
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more-->

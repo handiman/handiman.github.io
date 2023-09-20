@@ -25,7 +25,4 @@ summary:
  - Development of the payment solution "Svea Checkout" being rolled out in Sweden, Norway and Finland.
  - Improved api documentation by generating most of it automatically
  - Improved test readability by rewriting them as executable specifications  
---- 
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more-->
+---

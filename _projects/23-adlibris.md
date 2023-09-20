@@ -22,6 +22,3 @@ summary:
  - Account management API built with Asp.Net Core and .Net 5 hosted on Azure. 
  - Contentful CMS content modeling and integration.
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more-->

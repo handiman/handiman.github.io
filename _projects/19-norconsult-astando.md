@@ -19,6 +19,3 @@ skills:
  - NHibernate
  - C#
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more-->

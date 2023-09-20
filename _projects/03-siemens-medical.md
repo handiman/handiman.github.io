@@ -18,6 +18,3 @@ skills:
 summary:
  - QA and supporting colleges during development and maintenance of Siemens Medical's intranet "EMPower".
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more-->

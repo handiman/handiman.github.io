@@ -13,8 +13,5 @@ skills:
 summary:
  - Development of a WPF-based sales support system for managing articles and campaigns published on tradera.se.
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
 <!--more-->
-
 This project was developed in-house at Avea Group AB.

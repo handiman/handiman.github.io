@@ -17,6 +17,3 @@ summary:
  - Trouble shooting and optimization of SQL scripts for data import/export and database maintenance. 
  - VBScript for SQL Server inventory using WMI. 
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more-->

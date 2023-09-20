@@ -25,6 +25,3 @@ summary:
  - Development of templates for the client's EpiServer based intranet.
  - Maintenance and further development of www.hp.se.
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more-->

@@ -21,8 +21,6 @@ summary:
  - Zero down time deployment
  - Simplified CI process with Azure DevOps build pipelines
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
 <!--more-->
 
 The client needed a senior developer with architecture experience to fill in the gap after their architect and lead developer left them.

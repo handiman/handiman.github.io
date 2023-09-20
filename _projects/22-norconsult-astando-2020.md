@@ -23,6 +23,3 @@ summary:
  - Improvements to code readability and testability 
  - Implementing new functionality in legacy systems
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more-->

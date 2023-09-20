@@ -14,7 +14,4 @@ skills:
  - Oracle
 summary:
  - Maintenance of a legacy solution for managing requisitions at Sweden's public employment services.
---- 
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more-->
+---

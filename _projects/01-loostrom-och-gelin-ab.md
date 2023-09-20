@@ -13,6 +13,3 @@ summary:
  - Designed and developed a document management system based on Visual Basic 5. 
  - Assisted in developing the company web site.
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more-->

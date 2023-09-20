@@ -17,6 +17,3 @@ skills:
 summary:
  - Development of an application for managing consultant CVs built on Asp.Net MVC and hosted on Windows Azure.
 ---
-{% for summary in page.summary %}
-* {{ summary}}{% endfor %}
-<!--more-->
