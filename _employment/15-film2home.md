@@ -1,6 +1,7 @@
 ---
-title: Plejmo Backend Developer
-role: Fullstack Developer
+name: Plejmo Backend Developer
+roles: 
+ - Fullstack Developer
 organization:
  id: film2home
  name: Film2Home AB

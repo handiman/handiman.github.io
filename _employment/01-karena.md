@@ -1,6 +1,7 @@
 ---
-title: Shop Assistant
-role: Shop Assistant
+name: Shop Assistant
+roles: 
+ - Shop Assistant
 organization:
  id: karena
  name: Karena Zoo, Lek & Hobby

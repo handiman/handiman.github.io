@@ -1,6 +1,7 @@
 ---
-title: Senior Software Engineer
-role: Senior Software Engineer
+name: Senior Software Engineer
+roles: 
+ - Senior Software Engineer
 organization:
  id: betssongroup-ab
  name: Betsson Group AB

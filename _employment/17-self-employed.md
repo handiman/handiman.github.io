@@ -1,6 +1,7 @@
 ---
-title: Self Employed
-role: Self Employed
+name: Self Employed
+roles: 
+ - Self Employed
 organization:
  id: henrik-becker-consulting-ab
  name: Henrik Becker Consulting AB
@@ -14,7 +15,7 @@ mission: Providing Fullstack .Net and DevOps expertise on a freelance basis in t
 
 ###### Clients:
 {% assign clients = site.projects | where: 'client', true %}
-{% for client in clients reversed %}* [{{client.title}}]({{ client.web_site }}) 
+{% for client in clients reversed %}* [{{client.title}}]({{ client.url }}) 
 {% endfor %}
 {% assign clients = nil %}
 <!--more-->

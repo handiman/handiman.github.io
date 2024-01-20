@@ -1,6 +1,7 @@
 ---
-title: Tradera
-role: System Developer
+name: Tradera
+roles: 
+ - System Developer
 employer: /employment/12-avega-group-ab
 location: Stockholm, Sweden
 start_date: 2009-08-01

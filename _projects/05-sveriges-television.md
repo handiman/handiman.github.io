@@ -1,6 +1,7 @@
 ---
-title: Sveriges Television
-role: IT Consultant
+name: Sveriges Television
+roles: 
+ - IT Consultant
 employer: /employment/09-qbranch-stockholm-ab
 location: Stockholm, Sweden
 start_date: 2005-07-01

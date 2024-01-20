@@ -1,8 +1,9 @@
 ---
-title: Adlibris
+name: Adlibris
 client: true
-web_site: https://www.adlibris.com
-role: Fullstack Developer
+url: https://www.adlibris.com
+roles: 
+ - Fullstack Developer
 location: Stockholm, Sweden
 start_date: 2021-02-22
 end_date: 2021-10-10

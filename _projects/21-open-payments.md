@@ -1,8 +1,9 @@
 ---
-title: Open Payments
+name: Open Payments
 client: true
-web_site: https://openpayments.io
-role: Fullstack Developer
+url: https://openpayments.io
+roles: 
+ - Fullstack Developer
 employer: /employment/17-self-employed
 location: Stockholm, Sweden
 start_date: 2019-12-02

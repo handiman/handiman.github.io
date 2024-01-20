@@ -1,6 +1,7 @@
 ---
-title: Hewlett Packard Sweden
-role: Web Developer
+name: Hewlett Packard Sweden
+roles: 
+ - Web Developer
 employer: /employment/08-ework
 location: Solna, Sweden
 start_date: 1999-09-01

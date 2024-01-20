@@ -1,6 +1,7 @@
 ---
-title: IT Consultant
-role: IT Consultant
+name: IT Consultant
+roles: 
+ - IT Consultant
 organization:
  id: innitek-ab
  name: Innitek AB

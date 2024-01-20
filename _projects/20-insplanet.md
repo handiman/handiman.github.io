@@ -1,8 +1,9 @@
 ---
-title: Insplanet
+name: Insplanet
 client: true
-web_site: https://www.inplanet.com
-role: Lead Developer
+url: https://www.inplanet.com
+roles: 
+ - Lead Developer
 employer: /employment/17-self-employed
 location: Stockholm, Sweden
 start_date: 2019-01-07

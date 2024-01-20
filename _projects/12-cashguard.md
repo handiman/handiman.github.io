@@ -1,6 +1,7 @@
 ---
-title: CashGuard
-role: System Developer
+name: CashGuard
+roles: 
+ - System Developer
 employer: /employment/12-avega-group-ab
 location: Stockholm, Sweden
 start_date: 2011-06-01

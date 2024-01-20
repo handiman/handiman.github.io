@@ -1,6 +1,7 @@
 ---
-title: Looström & Gelin AB
-role: Programmer
+name: Looström & Gelin AB
+roles: 
+ - Programmer
 employer: /employment/06-innitek-ab
 location: Danderyd, Sweden
 start_date: 1998-10-01

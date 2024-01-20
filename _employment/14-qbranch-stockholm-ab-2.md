@@ -1,6 +1,7 @@
 ---
-title: IT Consultant/Technical Manager
-role: IT Consultant
+name: IT Consultant/Technical Manager
+roles: 
+ - IT Consultant
 organization:
  id: qbranch-stockholm-ab-2
  name: Qbranch Stockholm AB

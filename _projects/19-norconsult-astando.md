@@ -1,6 +1,7 @@
 ---
-title: Norconsult Astando
-role: Fullstack Developer, DevOps
+name: Norconsult Astando
+roles: 
+ - Fullstack Developer, DevOps
 employer: /employment/17-self-employed
 location: Stockholm, Sweden
 start_date: 2018-04-18

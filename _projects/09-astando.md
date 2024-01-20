@@ -1,6 +1,7 @@
 ---
-title: Astando
-role: System Developer
+name: Astando
+roles: 
+ - System Developer
 employer: /employment/12-avega-group-ab
 location: Stockholm, Sweden
 start_date: 2008-02-28

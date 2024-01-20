@@ -1,6 +1,7 @@
 ---
-title: Plejmo Backend Developer
-role: Fullstack Developer
+name: Plejmo Backend Developer
+roles: 
+ - Fullstack Developer
 organization:
  id: magine
  name: Magine TV AB

@@ -1,6 +1,7 @@
 ---
-title: Cale Access AB
-role: System Developer
+name: Cale Access AB
+roles: 
+ - System Developer
 employer: /employment/12-avega-group-ab
 location: Stockholm, Sweden
 start_date: 2011-09-01

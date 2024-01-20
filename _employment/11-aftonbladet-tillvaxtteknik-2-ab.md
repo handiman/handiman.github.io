@@ -1,6 +1,7 @@
 ---
-title: System Developer
-role: Fullstack Developer
+name: System Developer
+roles: 
+ - Fullstack Developer
 organization:
  id: aftonbladet-tillvaxtteknik-2-ab
  name: Aftonbladet Tillväxtteknik 2 AB

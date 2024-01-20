@@ -1,8 +1,9 @@
 --- 
-title: Svea Ekonomi
+name: Svea Ekonomi
 client: true
-web_site: https://www.svea.com 
-role: Backend Developer
+url: https://www.svea.com 
+roles: 
+ - Backend Developer
 employer: /employment/17-self-employed
 location: Solna, Sweden
 start_date: 2017-10-11

@@ -1,6 +1,7 @@
 ---
-title: Qbranch Competence Manager
-role: Fullstack Developer
+name: Qbranch Competence Manager
+roles: 
+ - Fullstack Developer
 employer: /employment/14-qbranch-stockholm-ab-2
 location: Stockholm, Sweden
 start_date: 2014-04-28

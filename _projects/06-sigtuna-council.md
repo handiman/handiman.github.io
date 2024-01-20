@@ -1,6 +1,7 @@
 ---
-title: Sigtuna Council
-role: IT Consultant
+name: Sigtuna Council
+roles: 
+ - IT Consultant
 employer: /employment/09-qbranch-stockholm-ab
 location: Märsta, Sweden
 start_date: 2005-10-01

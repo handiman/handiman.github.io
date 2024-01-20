@@ -1,6 +1,7 @@
 ---
-title: hitta.se
-role: Fullstack Developer
+name: hitta.se
+roles: 
+ - Fullstack Developer
 employer: /employment/11-aftonbladet-tillvaxtteknik-2-ab
 location: Stockholm, Sweden
 start_date: 2006-03-01

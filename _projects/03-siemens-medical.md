@@ -1,6 +1,7 @@
 ---
-title: Siemens Medical
-role: Web Developer
+name: Siemens Medical
+roles: 
+ - Web Developer
 employer: /employment/07-iconmedialab-ab
 location: Stockholm, Sweden
 start_date: 2000-01-01

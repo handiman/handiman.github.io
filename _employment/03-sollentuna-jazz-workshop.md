@@ -1,6 +1,7 @@
 ---
-title: Study Circle Leader
-role: Study Circle Leader
+name: Study Circle Leader
+roles: 
+ - Study Circle Leader
 organization:
  id: sollentuna-jazz-workshop
  name: Sollentuna Jazz Workshop

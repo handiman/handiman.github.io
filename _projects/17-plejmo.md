@@ -1,8 +1,9 @@
 ---
+name: Film2Home/Plejmo
 group: projects
-role: Fullstack Developer, DevOps
+roles: 
+ - Fullstack Developer, DevOps
 employer: /employment/16-magine-tv
-title: Film2Home/Plejmo
 location: Stockholm, Sweden
 start_date: 2014-11-03
 end_date: 2017-07-05

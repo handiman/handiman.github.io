@@ -1,6 +1,7 @@
 ---
-title: Arbetsförmedlingen
-role: Backend Developer
+name: Arbetsförmedlingen
+roles: 
+ - Backend Developer
 employer: /employment/14-qbranch-stockholm-ab-2
 location: Stockholm, Sweden
 start_date: 2014-06-24

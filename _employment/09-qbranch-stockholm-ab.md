@@ -1,6 +1,7 @@
 ---
-title: IT Consultant/System Developer
-role: IT Consultant
+name: IT Consultant/System Developer
+roles: 
+ - IT Consultant
 organization:
  id: qbranch-stockholm-ab
  name: Qbranch Stockholm AB

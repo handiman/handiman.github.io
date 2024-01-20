@@ -1,6 +1,7 @@
 ---
-title: Lead Developer
-role: Lead Developer
+name: Lead Developer
+roles: 
+ - Lead Developer
 organization:
  id: wasa-kredit-ab
  name: Wasa Kredit AB

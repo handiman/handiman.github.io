@@ -1,6 +1,7 @@
 ---
-title: Wasa Kredit
-role: Lead Developer
+name: Wasa Kredit
+roles: 
+ - Lead Developer
 employer: /employment/13-wasa-kredit-ab
 location: Stockholm, Sweden
 start_date: 2012-03-12

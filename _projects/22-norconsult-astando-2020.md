@@ -1,8 +1,10 @@
 ---
-title: Norconsult Astando
+name: Norconsult Astando
 client: true
-web_site: https://www.norconsultastando.se
-role: Fullstack Developer, DevOps
+url: https://www.norconsultastando.se
+roles: 
+ - Fullstack Developer
+ - DevOps
 employer: /employment/17-self-employed
 location: Stockholm, Sweden
 start_date: 2020-10-19

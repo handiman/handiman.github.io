@@ -1,6 +1,7 @@
 ---
-title: Taxi Stockholm
-role: Web Developer
+name: Taxi Stockholm
+roles: 
+ - Web Developer
 employer: /employment/09-qbranch-stockholm-ab
 location: Stockholm, Sweden
 start_date: 2005-05-01

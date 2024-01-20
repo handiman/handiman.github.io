@@ -1,8 +1,9 @@
 ---
 title: .Net Development
 font: fab fa-microsoft
-link: https://github.com/handiman
-link_text: Code examples
+link:
+  url: https://github.com/handiman
+  text: Code examples
 permalink: /usp/dotnet
 ---
 I've been living and breathing .Net since its launch and am 

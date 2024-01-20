@@ -1,6 +1,7 @@
 ---
-title: PC Technician
-role: PC Technician
+name: PC Technician
+roles: 
+ - PC Technician
 organization:
  id: lidingo-stad
  name: Lidingö Stad

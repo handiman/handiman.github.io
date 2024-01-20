@@ -1,6 +1,7 @@
 ---
-title: ICA Banken AB
-role: IT Consultant
+name: ICA Banken AB
+roles: 
+ - IT Consultant
 employer: /employment/09-qbranch-stockholm-ab
 location: Sundbyberg, Sweden
 start_date: 2006-03-01
