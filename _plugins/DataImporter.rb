@@ -14,7 +14,12 @@ module Jekyll
                 person = JSON.parse(File.read(person_path))
                 person["description"] = readme
                 person["image"] = handiman["avatar_url"]
-                File.write(person_path, person.to_json)
+                File.write(person_path, person.to_json({
+                  array_nl: "\n",
+                  object_nl: "\n",
+                  indent: '  ',
+                  space: ' '
+                }))
             end                
         end
     end
