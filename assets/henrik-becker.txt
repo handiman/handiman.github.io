@@ -21,8 +21,8 @@ Henrik Becker is an experienced .Net developer and solution architect dedicated 
 
 ## Featured Projects
 
-### Betsson Group    
-*Backend Developer | Oct 2021 - present*
+### 24 Betsson    
+* | Oct 2021 - present*
 
 * Developing Betsson's Casino Tournaments/Sportsbook Leaderboards product
 * Event sourced .Net 7 application with realtime transaction processing, Rest API and back office tool.
@@ -32,8 +32,8 @@ Henrik Becker is an experienced .Net developer and solution architect dedicated 
 C#, .Net 7, Asp.Net, Blazor, Docker, GitHub Actions, Kafka
 
 
-### Adlibris    
-*Fullstack Developer | Feb 2021 - Oct 2021*
+### 23 Adlibris    
+* | Feb 2021 - Oct 2021*
 
 * OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app currently in development.
 * Account management API built with Asp.Net Core and .Net 5 hosted on Azure.
@@ -43,8 +43,8 @@ C#, .Net 7, Asp.Net, Blazor, Docker, GitHub Actions, Kafka
 C#, Asp.Net Core, Asp.Net MVC, JavaScript, jQuery, React, SQL Server, Octopus Deploy, Azure App Services, Identity Server
 
 
-### Open Payments    
-*Fullstack Developer | Dec 2019 - Jun 2020*
+### 21 Open Payments    
+* | Dec 2019 - Jun 2020*
 
 * Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.
 * Improved test automation by making functional/integration tests require less manual intervention.
@@ -54,8 +54,8 @@ C#, Asp.Net Core, Asp.Net MVC, JavaScript, jQuery, React, SQL Server, Octopus De
 Asp.Net Core, C#, React, Redux, TypeScript, Azure, Azure DevOps
 
 
-### Film2Home/Plejmo    
-*Fullstack Developer, DevOps | Nov 2014 - Jul 2017*
+### 17 Plejmo    
+* | Nov 2014 - Jul 2017*
 
 * Development of the Video on Demand sites Film2Home and Plejmo.
 * Designed Plejmo's Rest API.
@@ -69,22 +69,26 @@ Asp.Net MVC, Asp.Net Web Api, C#, TDD, CQRS, Continuous Integration, Octopus Dep
 
 ## Work Experience
 
+### Betsson Group AB
+* | Dec 2023 - present*
+
+
 ### Henrik Becker Consulting AB
-*Self Employed IT Consultant | Jul 2017 - present*
+* | Jul 2017 - present*
 
 Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm urban area.
 
 *Clients:*
 
 ### Magine TV AB
-*Fullstack Developer | Sep 2015 - Jul 2017*
+* | Sep 2015 - Jul 2017*
 
 * Continued development of the Video on Demand site Plejmo.
 * Designed version 2 of Plejmo's Rest API.
 * Continued improving the CI/CD processes I set up at Film2Home
 
 ### Film2Home AB
-*Fullstack Developer | Nov 2014 - Aug 2015*
+* | Nov 2014 - Aug 2015*
 
 * Development of the Video on Demand sites Film2Home and Plejmo.
 * Designed version 1 of Plejmo's Rest API.
@@ -92,73 +96,73 @@ Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockh
 * Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.
 
 ### Qbranch Stockholm AB
-*IT Consultant | Apr 2014 - Sep 2014*
+* | Apr 2014 - Sep 2014*
 
 * Resource consulting at Organizations in Stockholm CBD.
 * Development of Qbranch Competence Manager used for finding the right consultant for an assignment.
 
 ### Wasa Kredit AB
-*Lead Developer | Mar 2012 - Nov 2013*
+* | Mar 2012 - Nov 2013*
 
 * Reduced complexity through refactoring.
 * Introduced living documentation in the form of executable specifications.
 * Guided development teams towards a more agile approached software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle.
 
 ### Avega Group AB
-*IT Consultant | Jan 2008 - Mar 2012*
+* | Jan 2008 - Mar 2012*
 
 * IT Consultant with assignments at Länsförsäkringar, Cale Access, Cash Guard, Tradera and Astando.
 
 ### Aftonbladet Tillväxtteknik 2 AB
-*Fullstack Developer | Dec 2007 - Jan 2008*
+* | Dec 2007 - Jan 2008*
 
 * Fullstack Developer at hitta.se
 
 ### Inverso International AB
-*IT Consultant | Apr 2007 - Dec 2007*
+* | Apr 2007 - Dec 2007*
 
 * Fullstack Developer at hitta.se
 
 ### Qbranch Stockholm AB
-*IT Consultant | Apr 2005 - Apr 2007*
+* | Apr 2005 - Apr 2007*
 
 * Fullstack Developer at hitta.se
 * System Integration Consultant assignments at Sigtuna Council, ICA Banken, Taxi Stockholm.
 * Was the single developer on an identity management project at Sigtuna Council that would become Microsoft's reference project for Microsoft Identity Integration Server.
 
 ### eWork
-*IT Consultant | Jan 2002 - Mar 2005*
+* | Jan 2002 - Mar 2005*
 
 * Web development for Hewlett Packard Sweden
 
 ### IconMedialab AB
-*IT Consultant | Sep 1999 - Jan 2002*
+* | Sep 1999 - Jan 2002*
 
 * Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and IconMedialab's intranet.
 
 ### Innitek AB
-*IT Consultant | Oct 1998 - Jul 1999*
+* | Oct 1998 - Jul 1999*
 
 * Developed a document management system based on Visual Basic 5 for Looström & Gelin AB.
 * Built the company web site based on ASP
 
 ### Lidingö Stad
-*PC Technician | Jul 1997 - Oct 1998*
+* | Jul 1997 - Oct 1998*
 
 
 ### Konsumentföreningen Stockholm
-*Shop Assistant | Dec 1986 - Jun 1995*
+* | Dec 1986 - Jun 1995*
 
 
 ### Sollentuna Jazz Workshop
-*Study Circle Leader | Jan 1994 - Jul 1994*
+* | Jan 1994 - Jul 1994*
 
 
 ### Kantarellen Livs AB
-*Shop Assistant | Jun 1992 - Sep 1992*
+* | Jun 1992 - Sep 1992*
 
 
 ### Karena Zoo, Lek & Hobby
-*Shop Assistant | Aug 1986 - Dec 1986*
+* | Aug 1986 - Dec 1986*
 
 

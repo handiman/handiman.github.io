@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
     "meta": {
       "theme": "eloquent",
-      "lastUpdated": "2023-09-21T16:55:36",
+      "lastUpdated": "2024-02-05T12:44:58",
       "canonical": "https://gist.githubusercontent.com/handiman/3881a8e890dd1032cce3f5e655859717/raw/01ba33f00c707670636d902546d7e50c4d4176e4/resume.json"
     },
     "basics": {
@@ -30,41 +30,49 @@
       "url": "https://www.credly.com/badges/54c4ab3b-4254-47e3-aabc-fea97f277130"
     }],
     "projects": [{
-      "name": "Betsson Group",
-      "roles": ["Backend Developer"],
+      "name": "24 Betsson",
+      "roles": [null],
       "startDate": "2021-10-11",
       "highlights": ["Developing Betsson's Casino Tournaments/Sportsbook Leaderboards product","Event sourced .Net 7 application with realtime transaction processing, Rest API and back office tool.","Performance optimizations leading to near 1000% increase in the number of Kafka messages the application can process per second"]
     },{
-      "name": "Adlibris",
-      "roles": ["Fullstack Developer"],
+      "name": "23 Adlibris",
+      "roles": [null],
       "startDate": "2021-02-22",
       "endDate":  "2021-10-10",
       "highlights": ["OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app currently in development.","Account management API built with Asp.Net Core and .Net 5 hosted on Azure.","Contentful CMS content modeling and integration."]
     },{
-      "name": "Open Payments",
-      "roles": ["Fullstack Developer"],
+      "name": "21 Open Payments",
+      "roles": [null],
       "startDate": "2019-12-02",
       "endDate":  "2020-06-30",
       "highlights": ["Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.","Improved test automation by making functional/integration tests require less manual intervention.","Reduced deployment time thanks to improved test automation."]
     },{
-      "name": "Film2Home/Plejmo",
-      "roles": ["Fullstack Developer, DevOps"],
+      "name": "17 Plejmo",
+      "roles": [null],
       "startDate": "2014-11-03",
       "endDate":  "2017-07-05",
       "highlights": ["Development of the Video on Demand sites Film2Home and Plejmo.","Designed Plejmo's Rest API.","Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.","Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites."]
     }],
     "work": [{
+      "name": "Betsson Group AB",
+      "company": "Betsson Group AB",
+      "position": null,
+      "location": "Stockholm",
+      "startDate": "2023-12-18",
+      "summary": "",
+      "highlights": []
+    },{
       "name": "Henrik Becker Consulting AB",
       "company": "Henrik Becker Consulting AB",
-      "position": "Self Employed IT Consultant",
+      "position": null,
       "location": "Stockholm",
       "startDate": "2017-07-06",
       "summary": "Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm urban area.",
-      "highlights": ["Betsson Group","Adlibris","Norconsult Astando","Open Payments","Insplanet","Svea Ekonomi"]
+      "highlights": ["24 Betsson","23 Adlibris","22 Norconsult Astando 2020","21 Open Payments","20 Insplanet","18 Svea Ekonomi"]
     },{
       "name": "Magine TV AB",
       "company": "Magine TV AB",
-      "position": "Fullstack Developer",
+      "position": null,
       "location": "Stockholm",
       "startDate": "2015-09-14",
       "endDate":  "2017-07-05",
@@ -73,7 +81,7 @@
     },{
       "name": "Film2Home AB",
       "company": "Film2Home AB",
-      "position": "Fullstack Developer",
+      "position": null,
       "location": "Stockholm",
       "startDate": "2014-11-03",
       "endDate":  "2015-08-27",
@@ -82,7 +90,7 @@
     },{
       "name": "Qbranch Stockholm AB",
       "company": "Qbranch Stockholm AB",
-      "position": "IT Consultant",
+      "position": null,
       "location": "Stockholm",
       "startDate": "2014-04-28",
       "endDate":  "2014-09-30",
@@ -91,7 +99,7 @@
     },{
       "name": "Wasa Kredit AB",
       "company": "Wasa Kredit AB",
-      "position": "Lead Developer",
+      "position": null,
       "location": "Stockholm",
       "startDate": "2012-03-12",
       "endDate":  "2013-11-14",
@@ -100,7 +108,7 @@
     },{
       "name": "Avega Group AB",
       "company": "Avega Group AB",
-      "position": "IT Consultant",
+      "position": null,
       "location": "Stockholm",
       "startDate": "2008-01-28",
       "endDate":  "2012-03-09",
@@ -109,7 +117,7 @@
     },{
       "name": "Aftonbladet Tillväxtteknik 2 AB",
       "company": "Aftonbladet Tillväxtteknik 2 AB",
-      "position": "Fullstack Developer",
+      "position": null,
       "location": "Stockholm",
       "startDate": "2007-12-01",
       "endDate":  "2008-01-01",
@@ -118,7 +126,7 @@
     },{
       "name": "Inverso International AB",
       "company": "Inverso International AB",
-      "position": "IT Consultant",
+      "position": null,
       "location": "Stockholm",
       "startDate": "2007-04-01",
       "endDate":  "2007-12-01",
@@ -127,7 +135,7 @@
     },{
       "name": "Qbranch Stockholm AB",
       "company": "Qbranch Stockholm AB",
-      "position": "IT Consultant",
+      "position": null,
       "location": "Stockholm",
       "startDate": "2005-04-01",
       "endDate":  "2007-04-01",
@@ -136,7 +144,7 @@
     },{
       "name": "eWork",
       "company": "eWork",
-      "position": "IT Consultant",
+      "position": null,
       "location": "Stockholm",
       "startDate": "2002-01-01",
       "endDate":  "2005-03-31",
@@ -145,7 +153,7 @@
     },{
       "name": "IconMedialab AB",
       "company": "IconMedialab AB",
-      "position": "IT Consultant",
+      "position": null,
       "location": "Stockholm",
       "startDate": "1999-09-01",
       "endDate":  "2002-01-01",
@@ -154,7 +162,7 @@
     },{
       "name": "Innitek AB",
       "company": "Innitek AB",
-      "position": "IT Consultant",
+      "position": null,
       "location": "Stockholm",
       "startDate": "1998-10-01",
       "endDate":  "1999-07-31",
@@ -163,7 +171,7 @@
     },{
       "name": "Lidingö Stad",
       "company": "Lidingö Stad",
-      "position": "PC Technician",
+      "position": null,
       "location": "Stockholm",
       "startDate": "1997-07-01",
       "endDate":  "1998-10-01",
@@ -172,7 +180,7 @@
     },{
       "name": "Konsumentföreningen Stockholm",
       "company": "Konsumentföreningen Stockholm",
-      "position": "Shop Assistant",
+      "position": null,
       "location": "Stockholm",
       "startDate": "1986-12-01",
       "endDate":  "1995-06-30",
@@ -181,7 +189,7 @@
     },{
       "name": "Sollentuna Jazz Workshop",
       "company": "Sollentuna Jazz Workshop",
-      "position": "Study Circle Leader",
+      "position": null,
       "location": "Stockholm",
       "startDate": "1994-01-01",
       "endDate":  "1994-07-01",
@@ -190,7 +198,7 @@
     },{
       "name": "Kantarellen Livs AB",
       "company": "Kantarellen Livs AB",
-      "position": "Shop Assistant",
+      "position": null,
       "location": "Stockholm",
       "startDate": "1992-06-01",
       "endDate":  "1992-09-01",
@@ -199,7 +207,7 @@
     },{
       "name": "Karena Zoo, Lek & Hobby",
       "company": "Karena Zoo, Lek & Hobby",
-      "position": "Shop Assistant",
+      "position": null,
       "location": "Stockholm",
       "startDate": "1986-08-01",
       "endDate":  "1986-12-31",

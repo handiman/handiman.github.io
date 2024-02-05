@@ -5,12 +5,19 @@
         <link>https://www.henrikbecker.net</link>
         <description>Henrik Becker is an experienced .Net developer and solution architect dedicated to delivering quality software practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of dad-jokes.
 </description>
-        <copyright>Copyright 2023 Henrik Becker</copyright>
-        <lastBuildDate>2023-09-21 16:55:36 +0000</lastBuildDate>
+        <copyright>Copyright 2024 Henrik Becker</copyright>
+        <lastBuildDate>2024-02-05 12:44:58 +0000</lastBuildDate>
         <category>CV</category>
         <ttl>1440</ttl>
         <item>
-            <title>Self Employed IT Consultant at Henrik Becker Consulting AB</title>
+            <title> at Betsson Group AB</title>
+            <description>
+                
+            </description>
+            <guid>https://www.henrikbecker.net/employment/18-betsson</guid>
+        </item>
+        <item>
+            <title> at Henrik Becker Consulting AB</title>
             <description>
                 Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm urban area.
                 
@@ -18,7 +25,7 @@
             <guid>https://www.henrikbecker.net/employment/17-self-employed</guid>
         </item>
         <item>
-            <title>Fullstack Developer at Magine TV AB</title>
+            <title> at Magine TV AB</title>
             <description>
                 
                 Continued development of the Video on Demand site Plejmo.
@@ -29,7 +36,7 @@
             <guid>https://www.henrikbecker.net/employment/16-magine-tv</guid>
         </item>
         <item>
-            <title>Fullstack Developer at Film2Home AB</title>
+            <title> at Film2Home AB</title>
             <description>
                 
                 Development of the Video on Demand sites Film2Home and Plejmo.
@@ -41,7 +48,7 @@
             <guid>https://www.henrikbecker.net/employment/15-film2home</guid>
         </item>
         <item>
-            <title>IT Consultant at Qbranch Stockholm AB</title>
+            <title> at Qbranch Stockholm AB</title>
             <description>
                 
                 Resource consulting at Organizations in Stockholm CBD.
@@ -51,7 +58,7 @@
             <guid>https://www.henrikbecker.net/employment/14-qbranch-stockholm-ab-2</guid>
         </item>
         <item>
-            <title>Lead Developer at Wasa Kredit AB</title>
+            <title> at Wasa Kredit AB</title>
             <description>
                 
                 Reduced complexity through refactoring.
@@ -62,7 +69,7 @@
             <guid>https://www.henrikbecker.net/employment/13-wasa-kredit-ab</guid>
         </item>
         <item>
-            <title>IT Consultant at Avega Group AB</title>
+            <title> at Avega Group AB</title>
             <description>
                 
                 IT Consultant with assignments at Länsförsäkringar, Cale Access, Cash Guard, Tradera and Astando.
@@ -71,7 +78,7 @@
             <guid>https://www.henrikbecker.net/employment/12-avega-group-ab</guid>
         </item>
         <item>
-            <title>Fullstack Developer at Aftonbladet Tillväxtteknik 2 AB</title>
+            <title> at Aftonbladet Tillväxtteknik 2 AB</title>
             <description>
                 
                 Fullstack Developer at hitta.se
@@ -80,7 +87,7 @@
             <guid>https://www.henrikbecker.net/employment/11-aftonbladet-tillvaxtteknik-2-ab</guid>
         </item>
         <item>
-            <title>IT Consultant at Inverso International AB</title>
+            <title> at Inverso International AB</title>
             <description>
                 
                 Fullstack Developer at hitta.se
@@ -89,7 +96,7 @@
             <guid>https://www.henrikbecker.net/employment/10-inverso-international-ab</guid>
         </item>
         <item>
-            <title>IT Consultant at Qbranch Stockholm AB</title>
+            <title> at Qbranch Stockholm AB</title>
             <description>
                 
                 Fullstack Developer at hitta.se
@@ -100,7 +107,7 @@
             <guid>https://www.henrikbecker.net/employment/09-qbranch-stockholm-ab</guid>
         </item>
         <item>
-            <title>IT Consultant at eWork</title>
+            <title> at eWork</title>
             <description>
                 
                 Web development for Hewlett Packard Sweden
@@ -109,7 +116,7 @@
             <guid>https://www.henrikbecker.net/employment/08-ework</guid>
         </item>
         <item>
-            <title>IT Consultant at IconMedialab AB</title>
+            <title> at IconMedialab AB</title>
             <description>
                 
                 Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and IconMedialab's intranet.
@@ -118,7 +125,7 @@
             <guid>https://www.henrikbecker.net/employment/07-iconmedialab-ab</guid>
         </item>
         <item>
-            <title>IT Consultant at Innitek AB</title>
+            <title> at Innitek AB</title>
             <description>
                 
                 Developed a document management system based on Visual Basic 5 for Looström &amp; Gelin AB.
@@ -128,35 +135,35 @@
             <guid>https://www.henrikbecker.net/employment/06-innitek-ab</guid>
         </item>
         <item>
-            <title>PC Technician at Lidingö Stad</title>
+            <title> at Lidingö Stad</title>
             <description>
                 
             </description>
             <guid>https://www.henrikbecker.net/employment/05-lidingo-stad</guid>
         </item>
         <item>
-            <title>Shop Assistant at Konsumentföreningen Stockholm</title>
+            <title> at Konsumentföreningen Stockholm</title>
             <description>
                 
             </description>
             <guid>https://www.henrikbecker.net/employment/04-konsum</guid>
         </item>
         <item>
-            <title>Study Circle Leader at Sollentuna Jazz Workshop</title>
+            <title> at Sollentuna Jazz Workshop</title>
             <description>
                 
             </description>
             <guid>https://www.henrikbecker.net/employment/03-sollentuna-jazz-workshop</guid>
         </item>
         <item>
-            <title>Shop Assistant at Kantarellen Livs AB</title>
+            <title> at Kantarellen Livs AB</title>
             <description>
                 
             </description>
             <guid>https://www.henrikbecker.net/employment/02-kantarellen-livs-ab</guid>
         </item>
         <item>
-            <title>Shop Assistant at Karena Zoo, Lek &amp; Hobby</title>
+            <title> at Karena Zoo, Lek &amp; Hobby</title>
             <description>
                 
             </description>

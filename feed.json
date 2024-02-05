@@ -8,147 +8,147 @@
   "feed_url": "https://www.henrikbecker.net/feed.json",
   "items": [{
     "id": "https://www.henrikbecker.net/projects/24-betsson",
-    "title": "Backend Developer at Betsson Group",
+    "title": " at 24 Betsson",
     "date_published": "2021-10-11T00:00:00.001Z",
     "date_modified": "2021-10-11T00:00:00.001Z",
-    "content_text": "Backend Developer at Betsson Group 2021-10-11 - present"
+    "content_text": " at 24 Betsson 2021-10-11 - present"
   },{
     "id": "https://www.henrikbecker.net/projects/23-adlibris",
-    "title": "Fullstack Developer at Adlibris",
+    "title": " at 23 Adlibris",
     "date_published": "2021-02-22T00:00:00.002Z",
     "date_modified": "2021-02-22T00:00:00.002Z",
-    "content_text": "Fullstack Developer at Adlibris 2021-02-22 - 2021-10-10"
+    "content_text": " at 23 Adlibris 2021-02-22 - 2021-10-10"
   },{
     "id": "https://www.henrikbecker.net/projects/22-norconsult-astando-2020",
-    "title": "Fullstack Developer, DevOps at Norconsult Astando",
+    "title": " at 22 Norconsult Astando 2020",
     "date_published": "2020-10-19T00:00:00.003Z",
     "date_modified": "2020-10-19T00:00:00.003Z",
-    "content_text": "Fullstack Developer, DevOps at Norconsult Astando 2020-10-19 - 2021-01-15"
+    "content_text": " at 22 Norconsult Astando 2020 2020-10-19 - 2021-01-15"
   },{
     "id": "https://www.henrikbecker.net/projects/21-open-payments",
-    "title": "Fullstack Developer at Open Payments",
+    "title": " at 21 Open Payments",
     "date_published": "2019-12-02T00:00:00.004Z",
     "date_modified": "2019-12-02T00:00:00.004Z",
-    "content_text": "Fullstack Developer at Open Payments 2019-12-02 - 2020-06-30"
+    "content_text": " at 21 Open Payments 2019-12-02 - 2020-06-30"
   },{
     "id": "https://www.henrikbecker.net/projects/20-insplanet",
-    "title": "Lead Developer at Insplanet",
+    "title": " at 20 Insplanet",
     "date_published": "2019-01-07T00:00:00.005Z",
     "date_modified": "2019-01-07T00:00:00.005Z",
-    "content_text": "Lead Developer at Insplanet 2019-01-07 - 2019-06-13"
+    "content_text": " at 20 Insplanet 2019-01-07 - 2019-06-13"
   },{
     "id": "https://www.henrikbecker.net/projects/19-norconsult-astando",
-    "title": "Fullstack Developer, DevOps at Norconsult Astando",
+    "title": " at 19 Norconsult Astando",
     "date_published": "2018-04-18T00:00:00.006Z",
     "date_modified": "2018-04-18T00:00:00.006Z",
-    "content_text": "Fullstack Developer, DevOps at Norconsult Astando 2018-04-18 - 2018-11-30"
+    "content_text": " at 19 Norconsult Astando 2018-04-18 - 2018-11-30"
   },{
     "id": "https://www.henrikbecker.net/projects/18-svea-ekonomi",
-    "title": "Backend Developer at Svea Ekonomi",
+    "title": " at 18 Svea Ekonomi",
     "date_published": "2017-10-11T00:00:00.007Z",
     "date_modified": "2017-10-11T00:00:00.007Z",
-    "content_text": "Backend Developer at Svea Ekonomi 2017-10-11 - 2018-04-11"
+    "content_text": " at 18 Svea Ekonomi 2017-10-11 - 2018-04-11"
   },{
     "id": "https://www.henrikbecker.net/projects/17-plejmo",
-    "title": "Fullstack Developer, DevOps at Film2Home/Plejmo",
+    "title": " at 17 Plejmo",
     "date_published": "2014-11-03T00:00:00.008Z",
     "date_modified": "2014-11-03T00:00:00.008Z",
-    "content_text": "Fullstack Developer, DevOps at Film2Home/Plejmo 2014-11-03 - 2017-07-05"
+    "content_text": " at 17 Plejmo 2014-11-03 - 2017-07-05"
   },{
     "id": "https://www.henrikbecker.net/projects/16-arbetsformedlingen",
-    "title": "Backend Developer at Arbetsförmedlingen",
+    "title": " at 16 Arbetsformedlingen",
     "date_published": "2014-06-24T00:00:00.009Z",
     "date_modified": "2014-06-24T00:00:00.009Z",
-    "content_text": "Backend Developer at Arbetsförmedlingen 2014-06-24 - 2014-09-26"
+    "content_text": " at 16 Arbetsformedlingen 2014-06-24 - 2014-09-26"
   },{
     "id": "https://www.henrikbecker.net/projects/15-qbranch-competence-manager",
-    "title": "Fullstack Developer at Qbranch Competence Manager",
+    "title": " at 15 Qbranch Competence Manager",
     "date_published": "2014-04-28T00:00:00.010Z",
     "date_modified": "2014-04-28T00:00:00.010Z",
-    "content_text": "Fullstack Developer at Qbranch Competence Manager 2014-04-28 - 2014-06-23"
+    "content_text": " at 15 Qbranch Competence Manager 2014-04-28 - 2014-06-23"
   },{
     "id": "https://www.henrikbecker.net/projects/14-wasa-kredit-ab",
-    "title": "Lead Developer at Wasa Kredit",
+    "title": " at 14 Wasa Kredit Ab",
     "date_published": "2012-03-12T00:00:00.011Z",
     "date_modified": "2012-03-12T00:00:00.011Z",
-    "content_text": "Lead Developer at Wasa Kredit 2012-03-12 - 2013-11-14"
+    "content_text": " at 14 Wasa Kredit Ab 2012-03-12 - 2013-11-14"
   },{
     "id": "https://www.henrikbecker.net/projects/13-cale-access-ab",
-    "title": "System Developer at Cale Access AB",
+    "title": " at 13 Cale Access Ab",
     "date_published": "2011-09-01T00:00:00.012Z",
     "date_modified": "2011-09-01T00:00:00.012Z",
-    "content_text": "System Developer at Cale Access AB 2011-09-01 - 2012-03-09"
+    "content_text": " at 13 Cale Access Ab 2011-09-01 - 2012-03-09"
   },{
     "id": "https://www.henrikbecker.net/projects/12-cashguard",
-    "title": "System Developer at CashGuard",
+    "title": " at 12 Cashguard",
     "date_published": "2011-06-01T00:00:00.013Z",
     "date_modified": "2011-06-01T00:00:00.013Z",
-    "content_text": "System Developer at CashGuard 2011-06-01 - 2011-09-01"
+    "content_text": " at 12 Cashguard 2011-06-01 - 2011-09-01"
   },{
     "id": "https://www.henrikbecker.net/projects/11-lansforsakringar",
-    "title": "System Developer at Länsförsäkringar",
+    "title": " at 11 Lansforsakringar",
     "date_published": "2009-09-01T00:00:00.014Z",
     "date_modified": "2009-09-01T00:00:00.014Z",
-    "content_text": "System Developer at Länsförsäkringar 2009-09-01 - 2011-05-01"
+    "content_text": " at 11 Lansforsakringar 2009-09-01 - 2011-05-01"
   },{
     "id": "https://www.henrikbecker.net/projects/10-tradera",
-    "title": "System Developer at Tradera",
+    "title": " at 10 Tradera",
     "date_published": "2009-08-01T00:00:00.015Z",
     "date_modified": "2009-08-01T00:00:00.015Z",
-    "content_text": "System Developer at Tradera 2009-08-01 - 2009-08-31"
+    "content_text": " at 10 Tradera 2009-08-01 - 2009-08-31"
   },{
     "id": "https://www.henrikbecker.net/projects/09-astando",
-    "title": "System Developer at Astando",
+    "title": " at 09 Astando",
     "date_published": "2008-02-28T00:00:00.016Z",
     "date_modified": "2008-02-28T00:00:00.016Z",
-    "content_text": "System Developer at Astando 2008-02-28 - 2009-05-01"
+    "content_text": " at 09 Astando 2008-02-28 - 2009-05-01"
   },{
     "id": "https://www.henrikbecker.net/projects/08-hittapunktse",
-    "title": "Fullstack Developer at hitta.se",
+    "title": " at 08 Hittapunktse",
     "date_published": "2006-03-01T00:00:00.017Z",
     "date_modified": "2006-03-01T00:00:00.017Z",
-    "content_text": "Fullstack Developer at hitta.se 2006-03-01 - 2008-02-28"
+    "content_text": " at 08 Hittapunktse 2006-03-01 - 2008-02-28"
   },{
     "id": "https://www.henrikbecker.net/projects/07-ica-banken-ab",
-    "title": "IT Consultant at ICA Banken AB",
+    "title": " at 07 Ica Banken Ab",
     "date_published": "2006-03-01T00:00:00.018Z",
     "date_modified": "2006-03-01T00:00:00.018Z",
-    "content_text": "IT Consultant at ICA Banken AB 2006-03-01 - 2006-03-01"
+    "content_text": " at 07 Ica Banken Ab 2006-03-01 - 2006-03-01"
   },{
     "id": "https://www.henrikbecker.net/projects/06-sigtuna-council",
-    "title": "IT Consultant at Sigtuna Council",
+    "title": " at 06 Sigtuna Council",
     "date_published": "2005-10-01T00:00:00.019Z",
     "date_modified": "2005-10-01T00:00:00.019Z",
-    "content_text": "IT Consultant at Sigtuna Council 2005-10-01 - 2006-03-01"
+    "content_text": " at 06 Sigtuna Council 2005-10-01 - 2006-03-01"
   },{
     "id": "https://www.henrikbecker.net/projects/05-sveriges-television",
-    "title": "IT Consultant at Sveriges Television",
+    "title": " at 05 Sveriges Television",
     "date_published": "2005-07-01T00:00:00.020Z",
     "date_modified": "2005-07-01T00:00:00.020Z",
-    "content_text": "IT Consultant at Sveriges Television 2005-07-01 - 2005-07-31"
+    "content_text": " at 05 Sveriges Television 2005-07-01 - 2005-07-31"
   },{
     "id": "https://www.henrikbecker.net/projects/04-taxi-stockholm",
-    "title": "Web Developer at Taxi Stockholm",
+    "title": " at 04 Taxi Stockholm",
     "date_published": "2005-05-01T00:00:00.021Z",
     "date_modified": "2005-05-01T00:00:00.021Z",
-    "content_text": "Web Developer at Taxi Stockholm 2005-05-01 - 2005-07-01"
+    "content_text": " at 04 Taxi Stockholm 2005-05-01 - 2005-07-01"
   },{
     "id": "https://www.henrikbecker.net/projects/03-siemens-medical",
-    "title": "Web Developer at Siemens Medical",
+    "title": " at 03 Siemens Medical",
     "date_published": "2000-01-01T00:00:00.022Z",
     "date_modified": "2000-01-01T00:00:00.022Z",
-    "content_text": "Web Developer at Siemens Medical 2000-01-01 - 2001-01-01"
+    "content_text": " at 03 Siemens Medical 2000-01-01 - 2001-01-01"
   },{
     "id": "https://www.henrikbecker.net/projects/02-hewlett-packard-sweden",
-    "title": "Web Developer at Hewlett Packard Sweden",
+    "title": " at 02 Hewlett Packard Sweden",
     "date_published": "1999-09-01T00:00:00.023Z",
     "date_modified": "1999-09-01T00:00:00.023Z",
-    "content_text": "Web Developer at Hewlett Packard Sweden 1999-09-01 - 2005-03-31"
+    "content_text": " at 02 Hewlett Packard Sweden 1999-09-01 - 2005-03-31"
   },{
     "id": "https://www.henrikbecker.net/projects/01-loostrom-och-gelin-ab",
-    "title": "Programmer at Looström & Gelin AB",
+    "title": " at 01 Loostrom Och Gelin Ab",
     "date_published": "1998-10-01T00:00:00.024Z",
     "date_modified": "1998-10-01T00:00:00.024Z",
-    "content_text": "Programmer at Looström & Gelin AB 1998-10-01 - 1999-07-31"
+    "content_text": " at 01 Loostrom Och Gelin Ab 1998-10-01 - 1999-07-31"
   }]
 }
