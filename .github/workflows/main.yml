@@ -7,11 +7,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '2.6'
-      - uses: actions/checkout@v2
-      - run: gem install bundler
+      - run: gem install bundler -v 2.4.22
       - run: bundler install
       - run: bundle exec jekyll build
       
