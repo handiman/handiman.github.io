@@ -26,7 +26,6 @@
     }{% unless forloop.last %},{% endunless %}{% endfor %}],
     "projects": [{% for featuredProject in site.data.profile.featuredProjects %}{% assign projectId = '/projects/' | append: featuredProject %}{% assign project = site.projects | where: "id", projectId | first %}{
       "name": {{ project.name | jsonify }},
-      "roles": [{% for role in project.roles %}{{ role | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],
       "startDate": {{ project.start_date | jsonify }},{% if project.end_date %}{% if project.end_date != 'present' %}
       "endDate":  {{ project.end_date | date: "%F" | jsonify }},{% endif %}{% endif %}
       "highlights": {% if project.summary %}{{ project.summary | jsonify }}{% else %}[]{% endif %}
