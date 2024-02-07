@@ -271,7 +271,7 @@ module Jekyll
       h2 xp.name
       
       h5 do 
-        text "#{xp.role} | #{xp.from.strftime('%b %Y')}"
+        text "#{xp.role} | #{xp.from.is_a?(Date) ? xp.from.strftime('%b %Y') : xp.from}"
         unless xp.to.nil?
           text " - #{xp.to.is_a?(Date) ? xp.to.strftime('%b %Y') : xp.to}"
         end
