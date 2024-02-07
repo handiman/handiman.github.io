@@ -39,7 +39,7 @@
       "startDate": {{ employment.start_date | date: "%F" | jsonify }},{% if employment.end_date %}{% if employment.end_date != 'present' %}
       "endDate":  {{ employment.end_date | date: "%F" | jsonify }},{% endif %}{% endif %}
       "summary": {% if employment.mission %}{{ employment.mission | jsonify }}{% else %}""{% endif %},
-      "highlights": {% if employment.summary %}{{ employment.summary | jsonify }}{% elsif employment.mission %}{{ site.projects | where: 'client', true | reverse | map: 'title' | jsonify }}{% else %}[]{% endif %}
+      "highlights": {% if employment.summary %}{{ employment.summary | jsonify }}{% elsif employment.mission %}{{ site.projects | where: 'client', true | reverse | map: 'name' | jsonify }}{% else %}[]{% endif %}
     }{% unless forloop.last %},{% endunless %}{% endfor %}],
     "education": [{% for education in profile.education %}{
       "institution": {{ education.school | jsonify }},
