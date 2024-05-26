@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<style type="text/css">
+    .print, form .error, form .success { display: none }
+    .no-print { display: '' }
+    @media print {
+        .print { display: '' }
+        .no-print { display: none }
+    }
+</style>
+<main>
+    {% unless page.redirect %}
+        <article>
+            {% include header.html %}
+            {% include projects.html %}
+            {% include work.html %}
+            {% include education.html %}
+            {% include certificates.html %}
+            {% include recommendations.html %}
+            {% include personal.html %}
+        </article>
+        {% include footer.html %}
+    {% else %}
+        <div id="error">
+            <div>
+                <h1><i class="fas fa-directions"></i></h1>
+                This page has moved.<br />
+                <a href="{{ page.redirect }}">Click here if you are not automatically redirected</a>.
+            </div>
+        </div>
+    {% endunless %}
+</main>

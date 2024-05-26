@@ -1,0 +1,20 @@
+{% if site.certs %}
+<section id="certificates">
+  <header>
+    <h2>Certificates</h2>
+  </header>
+  <article>
+    <ul>
+    {% for cert in site.certs %}
+      <li>
+        <h4>{{ cert.title }}</h4>
+        <div>
+          {% if cert.issuer %}{{ cert.issuer }} | {% endif %}
+          {% if cert.achievement_date %}{{ cert.achievement_date }}{% endif %}
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </article>
+</section>
+{% endif %}

@@ -1,0 +1,46 @@
+<section id="projects">
+  <header>
+    <h2>Featured Projects</h2>
+  </header>
+  {% for featuredProject in site.data.profile.featuredProjects %}
+    {% assign projectId = '/projects/' | append: featuredProject %}
+    {% assign project = site.projects | where: "id", projectId | first %}
+    {% if project %}
+      <article itemscope itemtype="https://schema.org/Project">
+        <header>
+          <h4 itemprop="name">{{ project.name }}</h4>
+          <span>{{ project.roles | join: ", " }}</span>
+          <time datetime="{{project.start_date}}">{{project.start_date}}</time>{% if project.end_date%}
+          <time datetime="{{project.end_date}}">{{project.end_date}}</time>{% else %}<time datetime="{{site.time}}">present</time>{% endif %}
+        </header>
+        {% if project.description %}
+          {{ project.description | join: ' ' }}
+        {% else %}
+          {{ project.excerpt }}
+        {% endif %}
+
+
+          {% comment %}
+          <div>
+            <span>{% if project.roles %}{{ project.roles | join: ", " }}{% else %}{{ project.role }}{% endif %}</span> | <time datetime="{{project.start_date}}">{{project.start_date}}</time> - {% if project.end_date%}<time datetime="{{project.end_date}}">{{project.end_date}}</time>{% else %}<time datetime="{{site.time}}">present</time>{% endif %}
+          </div>
+          {% if project.summary %}
+          <ul>
+            {% for summary in project.summary %}
+              <li>{{ summary }}</li>
+            {% endfor %}
+          </ul>
+          {% else %}
+            <div>{{ project.excerpt }}</div>
+          {% endif %}
+          {% if project.skills %}
+          <div>
+            <div>Skills used:</div>
+            {{ project.skills | join: ', ' }}
+          </div>
+          {% endif %}
+        {% endcomment %}
+      </article>
+    {% endif %}
+  {% endfor %}
+</section>

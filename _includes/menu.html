@@ -1,0 +1,19 @@
+{% comment %}
+<div class="menu" role="navigation" aria-label="primary">
+  <div>
+    <ul>
+      {% comment %}
+      {{#if resume.meta.contactForm}}{{#if resume.meta.contactForm.header}}{{#if resume.meta.contactForm.action}}{{#if resume.meta.contactForm.fields}}
+      <li>
+        <a href="#contact" title="{{#if resume.meta.contactForm.header}}{{resume.meta.contactForm.header}}{{else}}Contact Form{{/if}}"><i class="fas fa-envelope"></i></a>
+      </li>{{/if}}{{/if}}{{/if}}
+      {{else}}{{#if resume.basics.email}}
+      <li><a href="mailto:{{resume.basics.email}}"><i class="fas fa-envelope"></i></a></li>
+      {{/if}}{{/if}}
+      {% endcomment %}
+      {% for network in site.data.profile.same_as %}
+        <li><a href="{{ network.url }}" title="{{ network.network }}"><i class="fab fa-{{ network.network | downcase }}"></i></a></li>{% endfor %}
+    </ul>
+  </div>
+</div>
+{% endcomment %}

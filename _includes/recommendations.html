@@ -1,0 +1,15 @@
+{% if site.recommendations %}
+<section id="recommendations">
+  <header>
+    <h2>Recommendations</h2>
+  </header>
+  <article>
+    {% for recommendation in site.recommendations %}
+    <blockquote>
+      <span>{{ recommendation.text }}</span>
+      {% if recommendation.name %}<cite>{% if recommendation.link %}<a href="{{ recommendation.link }}">{{ recommendation.name}}</a>{% else %}{{ recommendation.name}}{% endif %}</cite>{% endif %}
+    </blockquote>
+    {% endfor %}
+  </article>
+</section>
+{% endif %}

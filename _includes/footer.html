@@ -1,0 +1,35 @@
+<footer>
+  {% include contact-form.html %}
+
+  
+  {% comment %}
+  <div>
+    <ul>
+      {% for cert in site.certs %}
+        <li><a title="{{ cert.title }}" href="{{ cert.link }}"><img src="{{ cert.badge }}" alt="{{ cert.title }}" /></a></li>
+      {% endfor %}
+    </ul>
+    <ul>
+      <li><a href="#basics">Top of page</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Featured Projects</a></li>
+      <li><a href="#work">Work Experience</a></li>
+      <li><a href="#interests">Interests</a></li>
+    </ul>
+    <div>
+      <span>My resumé is also available as:</span>
+      <ul>
+        {% for format in site.data.formats | limit: 5 %}
+          <li><a href="{{ format.url | absolute_url }}" title="My resumé in {{ format.name }} format">{{ format.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. Thanks for visiting!</div>
+    <ul>
+      {% for network in site.data.profile.same_as %}
+        <li><a href="{{ network.url }}" title="{{ network.network }}"><i class="fab fa-{{ network.network | downcase }}"></i></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endcomment %}
+</footer>

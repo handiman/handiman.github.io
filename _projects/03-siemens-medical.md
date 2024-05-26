@@ -1,9 +1,12 @@
 ---
 name: Siemens Medical
+location: Stockholm, Sweden
+description:
+ - QA and supporting colleges during development and maintenance of Siemens Medical's intranet "EMPower".
+# Not in schema 
 roles: 
  - Web Developer
 employer: /employment/07-iconmedialab-ab
-location: Stockholm, Sweden
 start_date: 2000-01-01
 end_date: 2001-01-01
 skills:
@@ -16,6 +19,4 @@ skills:
  - CSS
  - HTML
  - SQL Server
-summary:
- - QA and supporting colleges during development and maintenance of Siemens Medical's intranet "EMPower".
 ---

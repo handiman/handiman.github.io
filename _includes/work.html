@@ -1,0 +1,35 @@
+<section id="work">
+  <header>
+    <h2>Work Experience</h2>
+  </header>
+  {% for employment in site.employment reversed %}
+  <article>
+    <header>
+      <h4>{{ employment.organization.name }}</h4>
+      <span>{{ employment.roles | join: ", " }}</span> 
+      <time datetime="{{employment.start_date}}">{{employment.start_date}}</time>{% if employment.end_date %}
+      <time datetime="{{employment.end_date}}">{{employment.end_date}}</time>{% else %}<time datetime="{{site.time}}">present</time>{% endif %}
+    </header>
+    {% if employment.description %}
+      {{ employment.description | join: ' ' }}
+    {% else %}
+      {{ employment.excerpt }}
+    {% endif %}
+
+    {% comment %}
+    <div>
+      <span>{% if employment.roles %}{{ employment.roles | join: ", " }}{% else %}{{ employment.role }}{% endif %}</span> | <time datetime="{{employment.start_date}}">{{employment.start_date}}</time> - {% if employment.end_date %}<time datetime="{{employment.end_date}}">{{employment.end_date}}</time>{% else %}<time datetime="{{site.time}}">present</time>{% endif %}
+    </div>
+    {% if employment.summary %}
+      <ul>
+        {% for summary in employment.summary %}
+          <li>{{ summary }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <div>{{ employment.excerpt }}</div>
+    {% endif %}
+    {% endcomment %}
+  </article>
+  {% endfor %}
+</section>

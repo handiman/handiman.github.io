@@ -1,5 +1,7 @@
 ---
 name: Study Circle Leader
+location: Sollentuna, Sweden
+# Not in schema
 roles: 
  - Study Circle Leader
 organization:

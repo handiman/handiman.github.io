@@ -1,0 +1,18 @@
+{% assign person = site.data.person %}{
+  "@context": "http://schema.org",
+  "@type": "Person"{% if person.name %},
+  "name": {{ person.name | jsonify }}{% endif %}{% if person.givenName %},
+  "givenName": {{ person.givenName | jsonify }}{% endif %}{% if person.familyName %},
+  "familyName": {{ person.familyName | jsonify }}{% endif %}{% if person.image %},
+  "image": {{ person.image | jsonify }}{% endif %}{% if person.url %},
+  "url": {{ person.url | jsonify }}{% endif %}{% if person.email %},
+  "email": {{ person.email | jsonify }}{% endif %}{% if person.telephone %},
+  "telephone": {{ person.telephone | jsonify }}{% endif %}{% if person.description %},
+  "description": {{ person.description | jsonify }}{% endif %}{% if person.nationality %},
+  "nationality": {{ person.nationality | jsonify }}{% endif %}{% if person.jobTitle %},
+  "jobTitle": {{ person.jobTitle | jsonify }}{% endif %}{% if person.birthDate %},
+  "birthDate": {{ person.birthDate | jsonify }}{% endif %}{% if person.sameAs %},
+  "sameAs": {{ person.sameAs | jsonify }}{% endif %}{% if person.workLocation %},
+  "workLocation": {{ person.workLocation | jsonify }}{% endif %}{% if person.worksFor %},
+  "worksFor": {{ person.worksFor | jsonify }}{% endif %}
+}{% assign person = nil %}

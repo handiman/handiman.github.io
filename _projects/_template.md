@@ -1,11 +1,12 @@
 ---
 # Namnen ska vara kompatibla med https://schema.org/Project
-name: Projektets namn
+name: <Projektets namn>
+location: <Ganska självklart>
 # Inte i schema
 roles: 
   - <Roll jag hade i projektet>
 # Inte i schema  
-client: true om det var en kund till Henrik Becker Consulting
+client: <true om det var en kund till Henrik Becker Consulting>
 organization: # Namnen ska vara kompatibla med https://schema.org/Organization 
  id: <Unique Id>
  name: <Organization Name>

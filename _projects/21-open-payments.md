@@ -1,11 +1,17 @@
 ---
 name: Open Payments
+location: Stockholm, Sweden
+description: 
+ - Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.
+ - Improved test automation by making functional/integration tests require less manual intervention.
+ - Reduced deployment time thanks to improved test automation.
+# Not in schema
+organization:
+  url: https://openpayments.io
 client: true
-url: https://openpayments.io
 roles: 
  - Fullstack Developer
 employer: /employment/17-self-employed
-location: Stockholm, Sweden
 start_date: 2019-12-02
 end_date: 2020-06-30
 roles: Software Engineer
@@ -19,10 +25,6 @@ skills:
  - Azure DevOps
  #- OData
  #- Git
-summary: 
- - Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.
- - Improved test automation by making functional/integration tests require less manual intervention.
- - Reduced deployment time thanks to improved test automation.
 ---
 <!--more-->
 

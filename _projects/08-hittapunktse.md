@@ -1,9 +1,14 @@
 ---
 name: hitta.se
+location: Stockholm, Sweden
+description:
+ - Key person in the development of hitta.se - one of Swedens top 10 most popular sites at the time.
+ - Creator of the services hitta.se/trafiknytt (traffic information) and hitta.se/vader (weather information).
+ - Maintenance of hitta.se's internal order system
+#Not in schema
 roles: 
  - Fullstack Developer
 employer: /employment/11-aftonbladet-tillvaxtteknik-2-ab
-location: Stockholm, Sweden
 start_date: 2006-03-01
 end_date: 2008-02-28
 skills:
@@ -17,10 +22,6 @@ skills:
  - XHTML
  - SQL Server
  - IIS
-summary:
- - Was a key person in the development of hitta.se - one of Swedens top 10 most popular sites.
- - Created the services hitta.se/trafiknytt (traffic information) and hitta.se/vader (weather information).
- - Maintenance of hitta.se's internal order system
 ---
 <!--more-->
 Hitta.se is a Swedish search engine that offers telephone directory, addresses and maps.

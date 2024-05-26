@@ -1,0 +1,34 @@
+{% if site.data.profile.interests || site.fun_facts %}
+<section id="personal">
+  <header>
+    <h2>Personal</h2>
+  </header>
+  {% if site.data.profile.interests %}
+    <article>
+      <header>
+        <h3>Interests</h3>
+      </header>
+      <ul>
+      {% for interest in site.data.profile.interests %}
+        <li>{% if interest.name %}{{ interest.name }}{% else %}{{ interest }}{% endif %}</li>
+      {% endfor %}
+      </ul>
+    </article>
+  {% endif %}
+  {% if site.fun_facts %}
+    <article>
+      <header>
+        <h3>Fun Facts</h3>
+      </header>
+      <ul>
+      {% for fun_fact in site.fun_facts %}
+        <li>
+          <h6>{{ fun_fact.title }}</h6>
+          {{ fun_fact.content }}
+        </li>
+      {% endfor %}
+      </ul>
+    </article>
+  {% endif %}
+</section>
+{% endif %}

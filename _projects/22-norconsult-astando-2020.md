@@ -1,12 +1,19 @@
 ---
 name: Norconsult Astando
+location: Stockholm, Sweden
+description: 
+ - Automated deployment using Octopus Deploy
+ - Improvements to code readability and testability 
+ - Implementing new functionality in legacy systems
+#Not in schema
+organization:
+  url: https://www.norconsultastando.se
 client: true
-url: https://www.norconsultastando.se
 roles: 
  - Fullstack Developer
  - DevOps
 employer: /employment/17-self-employed
-location: Stockholm, Sweden
+
 start_date: 2020-10-19
 end_date: 2021-01-15
 roles: Software Engineer
@@ -20,8 +27,4 @@ skills:
  - WCF
  - TeamCity
  - Octopus Deploy
-summary: 
- - Automated deployment using Octopus Deploy
- - Improvements to code readability and testability 
- - Implementing new functionality in legacy systems
 ---

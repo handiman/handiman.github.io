@@ -1,0 +1,12 @@
+{% assign organization = site.data.organization %}{ 
+  "@context": "http://schema.org", 
+  "@type": "Organization"{% if organization.name %},
+  "name": {{ organization.name | jsonify }}{% endif %}{% if organization.alternateName %},
+  "alternateName": {{ organization.alternateName | jsonify }}{% endif %}{% if organization.url %},
+  "url": {{ organization.url | jsonify }}{% endif %}{% if organization.vatId %},
+  "vatId": {{ organization.vatId | jsonify }}{% endif %}{% if organization.description %},
+  "description": {{ organization.description | jsonify }}{% endif %}{% if organization.sameAs %},
+  "sameAs": {{ organization.sameAs | jsonify }}{% endif %}{% if organization.founder %},
+  "founder": {{ organization.founder | jsonify }}{% endif %}{% if organization.address %},
+  "address": {{ organization.address | jsonify }}{% endif %}
+}{% assign organization = nil %}

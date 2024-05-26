@@ -1,27 +1,27 @@
 title: Henrik Becker Consulting AB
-usp: Building the right software right
+#usp: Building the right software right
 repository: handiman/handiman.github.io
 production_url: https://www.henrikbecker.net
 author:
   name: Henrik Becker
   github: handiman
-tile_color: '#303030'
+#tile_color: '#303030'
 permalink: pretty
-sass:
- sass_dir: _sass
- style: compressed
+#sass:
+# sass_dir: _sass
+# style: compressed
 
 plugins:
   - jekyll-remote-theme
   - jekyll-readme-index
-remote_theme: handiman/jekyll-theme-gnap  
+#remote_theme: handiman/jekyll-theme-gnap  
+#remote_theme: pages-themes/minimal@v0.2.0
 
-exclude: [ 
- "node_modules",
- "Gemfile", 
- "Gemfile.lock", 
- "Rakefile", 
- "*.orig"]
+exclude:  
+ - node_modules
+ - Gemfile
+ - Gemfile.lock, 
+ - "*.orig"
 
 collections:
  usp:
@@ -34,18 +34,18 @@ collections:
   output: false 
  fun_facts:
   output: false
-# recommendations:
-#  output: false
+ recommendations:
+  output: false
 
 excerpt_separator: <!--more-->
 
 defaults:
  - scope:
-    path: README.md
+    path: ""
    values: 
-    layout: index
+    layout: handiman
  - scope:
-    path: "googlef0bc3dbe928e1f73.html"
+    path: googlef0bc3dbe928e1f73.html
    values:
     sitemap: false
     

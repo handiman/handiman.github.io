@@ -1,9 +1,12 @@
 ---
 name: Qbranch Competence Manager
+description:
+ - Development of an application for managing consultant CVs built on Asp.Net MVC and hosted on Windows Azure.
+location: Stockholm, Sweden
+#Not in schema
 roles: 
  - Fullstack Developer
 employer: /employment/14-qbranch-stockholm-ab-2
-location: Stockholm, Sweden
 start_date: 2014-04-28
 end_date: 2014-06-23
 skills:
@@ -15,6 +18,4 @@ skills:
  - EntityFramework 6
  - Test Driven Development
  - Continuous Integration
-summary:
- - Development of an application for managing consultant CVs built on Asp.Net MVC and hosted on Windows Azure.
 ---

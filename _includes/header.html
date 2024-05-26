@@ -1,0 +1,19 @@
+<header id="basics">
+    {% assign content_parts = content | split: site.excerpt_separator %}
+    {% for part in content_parts %}
+        {{ part }}
+        {% break %}
+    {% endfor %}
+    {% assign person = site.data.person %}
+    {% comment %}
+    <div>
+        <div class="no-print">Hi, I'm</div>
+        <h1>{% if person.name %}{{ person.name }}{% else %}{{ site.author.name }}{% endif %}</h1>
+        <h4 id="job-title">{{ person.jobTitle }}</h4>
+        <div class="no-print">You'll like me</div>
+        <div class="print"><i class="fas fa-globe"></i> {{ site.url | absolute_url }}</div>
+        {% if person.telephone %}<div class="print"><i class="fas fa-phone"></i> {{ person.telephone }}</div>{% endif %}
+    </div>
+    {% endcomment %}
+    {% assign person = nil %}
+</header>

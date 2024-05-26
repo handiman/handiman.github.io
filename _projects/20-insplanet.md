@@ -1,11 +1,16 @@
 ---
 name: Insplanet
+location: Stockholm, Sweden
+description: 
+ - Zero down time deployment
+ - Simplified CI process with Azure DevOps build pipelines
+#Not in schema
 client: true
-url: https://www.inplanet.com
+organization:
+  url: https://www.inplanet.com
 roles: 
  - Lead Developer
 employer: /employment/17-self-employed
-location: Stockholm, Sweden
 start_date: 2019-01-07
 end_date: 2019-06-13
 roles: Software Engineer
@@ -18,9 +23,6 @@ skills:
  - TypeScript
  - Azure DevOps
  - Octopus Deploy
-summary: 
- - Zero down time deployment
- - Simplified CI process with Azure DevOps build pipelines
 ---
 <!--more-->
 

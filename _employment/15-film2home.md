@@ -1,5 +1,12 @@
 ---
 name: Plejmo Backend Developer
+location: Stockholm, Sweden
+description:
+ - Development of the Video on Demand sites Film2Home and Plejmo.
+ - Designed version 1 of Plejmo's Rest API.
+ - Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
+ - Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.
+# Not in schema
 roles: 
  - Fullstack Developer
 organization:
@@ -13,12 +20,7 @@ buzzwords:
  - CQRS
  - REST
  - OAuth
-summary:
- - Development of the Video on Demand sites Film2Home and Plejmo.
- - Designed version 1 of Plejmo's Rest API.
- - Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
- - Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.
 ---
-{% for summary in page.summary %}
+{% for summary in page.description %}
 * {{ summary}}{% endfor %}
 <!--more-->

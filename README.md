@@ -5,6 +5,8 @@ Experienced .Net developer and solution architect dedicated to delivering qualit
 
 Henrik has been running his own 1 man consulting practice since 2017 and is currently on a consulting assignment for [Betsson Group](https://www.betssongroup.com/).
 
+<!--more-->
+
 ## Skills & Expertise
 
 | Languages     | Frameworks    | Methods & Architecture    | Tools, Cloud & Databases  |

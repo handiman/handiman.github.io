@@ -1,5 +1,9 @@
 ---
 name: IT Consultant/System Developer
+location: Stockholm, Sweden
+description: 
+ - Fullstack Developer at hitta.se
+# Not in schema
 roles: 
  - IT Consultant
 organization:
@@ -7,9 +11,7 @@ organization:
  name: Inverso International AB
 start_date: 2007-04-01
 end_date: 2007-12-01
-summary: 
- - Fullstack Developer at hitta.se
 ---
-{% for summary in page.summary %}
+{% for summary in page.description %}
 * {{ summary}}{% endfor %}
 <!--more-->

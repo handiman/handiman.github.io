@@ -1,9 +1,12 @@
 ---
 name: Astando
+location: Stockholm, Sweden
+description:
+ - Client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg.
+#Not in schema
 roles: 
  - System Developer
 employer: /employment/12-avega-group-ab
-location: Stockholm, Sweden
 start_date: 2008-02-28
 end_date: 2009-05-01
 skills: 
@@ -15,8 +18,6 @@ skills:
 - Spring.Net
 - Test Driven Development
 - Continuous Integration
-summary:
- - Client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg.
 ---
 <!--more-->
 Astando is one of the leading companies in the GIS area and in the forefront of the Local Roaddatabase concept (LV). 

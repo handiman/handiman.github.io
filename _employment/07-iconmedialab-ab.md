@@ -1,5 +1,9 @@
 ---
 name: IT Consultant/System Developer
+location: Stockholm, Sweden
+description: 
+ - Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and IconMedialab's intranet.
+# Not in schema
 roles: 
  - IT Consultant
 organization:
@@ -7,9 +11,7 @@ organization:
  name: IconMedialab AB
 start_date: 1999-09-01
 end_date: 2002-01-01
-summary: 
- - Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and IconMedialab's intranet.
 ---
-{% for summary in page.summary %}
+{% for summary in page.description %}
 * {{ summary}}{% endfor %}
 <!--more-->

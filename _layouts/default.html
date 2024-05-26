@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html{% if site.lang %} lang="{{ site.lang }}" {% endif %}>
+
+<head>
+    {% seo %}{% include person.html %}{% include organization.html %}
+</head>
+
+<body>
+    {{ content }}
+</body>
+
+</html>

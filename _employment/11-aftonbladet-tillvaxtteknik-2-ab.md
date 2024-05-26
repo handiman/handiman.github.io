@@ -1,5 +1,9 @@
 ---
 name: System Developer
+location: Stockholm, Sweden
+description: 
+ - Fullstack Developer at hitta.se
+# Not in schema
 roles: 
  - Fullstack Developer
 organization:
@@ -7,9 +11,7 @@ organization:
  name: Aftonbladet Tillväxtteknik 2 AB
 start_date: 2007-12-01
 end_date: 2008-01-01
-summary: 
- - Fullstack Developer at hitta.se
 --- 
-{% for summary in page.summary %}
+{% for summary in page.description %}
 * {{ summary}}{% endfor %}
 <!--more-->

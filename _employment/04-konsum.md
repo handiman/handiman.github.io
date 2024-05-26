@@ -1,5 +1,7 @@
 ---
 name: Shop Assistant
+location: Lidingö/Nacka, Sweden
+# Not in schema
 roles: 
  - Shop Assistant
 organization:

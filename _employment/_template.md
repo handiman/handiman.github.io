@@ -8,6 +8,7 @@ roles:
 organization:
  id: <Unique Id>
  name: <Organization Name>
+ url: <Url>
 # Inte i schema
 start_date: <Date>
 # Not in schema
