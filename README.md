@@ -3,7 +3,7 @@
 ## Profile
 Experienced .Net developer and solution architect dedicated to delivering quality software practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of dad-jokes.
 
-Henrik has been running his own 1 man consulting practice since 2017 and is currently on a consulting assignment for [Betsson Group](https://www.betssongroup.com/).
+Henrik has been running his own one man consulting practice since 2017 and is currently employed at [Betsson Group](https://www.betssongroup.com/).
 
 ## Skills & Expertise
 
