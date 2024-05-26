@@ -10,11 +10,14 @@
       <time datetime="{{employment.start_date}}">{{employment.start_date}}</time>{% if employment.end_date %}
       <time datetime="{{employment.end_date}}">{{employment.end_date}}</time>{% else %}<time datetime="{{site.time}}">present</time>{% endif %}
     </header>
-    {% if employment.description %}
-      {{ employment.description | join: ' ' }}
-    {% else %}
-      {{ employment.excerpt }}
-    {% endif %}
+    <p>
+      {% if employment.description %}
+        {{ employment.description | join: ' ' }}
+      {% else %}
+        {{ employment.excerpt }}
+      {% endif %}
+    </p>
+    <footer></footer>
 
     {% comment %}
     <div>

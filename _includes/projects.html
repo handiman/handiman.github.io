@@ -13,12 +13,14 @@
           <time datetime="{{project.start_date}}">{{project.start_date}}</time>{% if project.end_date%}
           <time datetime="{{project.end_date}}">{{project.end_date}}</time>{% else %}<time datetime="{{site.time}}">present</time>{% endif %}
         </header>
-        {% if project.description %}
-          {{ project.description | join: ' ' }}
-        {% else %}
-          {{ project.excerpt }}
-        {% endif %}
-
+        <p>
+          {% if project.description %}
+            {{ project.description | join: ' ' }}
+          {% else %}
+            {{ project.excerpt }}
+          {% endif %}
+        </p>
+        <footer></footer>
 
           {% comment %}
           <div>

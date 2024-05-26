@@ -1,0 +1,33 @@
+// @import "pico.min.css";
+@import "milligram";
+
+ul {
+    list-style: none;
+}
+
+main>article {
+    @extend .container;
+}
+
+main>footer {
+    @extend .container;
+}
+
+section#work,
+section#projects {
+    header {
+        span {
+            &:after {
+                content: ' | ';
+            }
+        }
+
+        time {
+            &:first-of-type {
+                &:after {
+                    content: ' - ';
+                }
+            }
+        }
+    }
+}

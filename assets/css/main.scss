@@ -1,0 +1,9 @@
+---
+---
+.print, form .error, form .success { display: none }
+.no-print { display: '' }
+@media print {
+    .print { display: '' }
+    .no-print { display: none }
+}
+@import "koala";
