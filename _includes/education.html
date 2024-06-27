@@ -1,16 +1,18 @@
-<section id="education">
+<section>
   <header>
-    <h2>Education</h2>
+    <h2 id="education">Education</h2>
   </header>
   <article>
     <ul>
     {% for education in site.data.profile.education reversed %}
       <li>
-        <h4>{{education.school}}</h4>
-        <div>
-          {% if education.description %}{{ education.description }} | {% endif %}
-          {% if education.start_year %}{{ education.start_year }}{% endif %} - {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}
-        </div>
+        <h4>
+          <div>{{education.school}}</div>
+          <small>
+            {% if education.description %}{{ education.description }} | {% endif %}
+            {% if education.start_year %}{{ education.start_year }}{% endif %} - {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}
+          </small>
+        </h4>
       </li>
     {% endfor %}
     </ul>

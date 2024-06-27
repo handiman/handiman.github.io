@@ -7,11 +7,13 @@ author:
   github: handiman
 #tile_color: '#303030'
 permalink: pretty
-#sass:
-# sass_dir: _sass
-# style: compressed
+sass:
+ sass_dir: _sass
+ style: compressed
 
 plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
   - jekyll-remote-theme
   - jekyll-readme-index
 #remote_theme: handiman/jekyll-theme-gnap  
@@ -34,8 +36,6 @@ collections:
   output: false 
  fun_facts:
   output: false
- recommendations:
-  output: false
 
 excerpt_separator: <!--more-->
 
@@ -43,7 +43,11 @@ defaults:
  - scope:
     path: ""
    values: 
-    layout: handiman
+    layout: default
+ - scope:
+    path: README.md
+   values: 
+    layout: cv
  - scope:
     path: googlef0bc3dbe928e1f73.html
    values:

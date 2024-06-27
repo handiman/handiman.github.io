@@ -3,7 +3,7 @@
   "@type": "Organization",
   "url": "https://www.henrikbecker.net/",
   "name": "Henrik Becker Consulting AB",
-  "alternateName": "Becker Consulting",
+  "alternateName": "Becker Solutions",
   "description": "Building the right software right",
   "vatId": "SE559120214701",
   "sameAs": "https://becker-consulting.github.io/",
@@ -14,7 +14,7 @@
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Torsvikssvängen 37",
-    "postalCode": "18134",
+    "postalCode": "181 34",
     "addressLocality": "Lidingö",
     "adressRegion": "Stockholm",
     "addressCountry": "Sweden"

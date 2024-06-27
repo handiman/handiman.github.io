@@ -1,6 +1,6 @@
-<form id="contact-form">
+<form>
   <header>
-    <h2>Get in touch</h2>
+    <h2 id="contact">Get in touch</h2>
   </header>
   <div>
 
@@ -12,19 +12,19 @@
 
 {% comment %}
 {{#if resume.meta.contactForm}}{{#if resume.meta.contactForm.action}}{{#if resume.meta.contactForm.fields}}{{#resume.meta.contactForm}}
-  <form id="contact" class="contact-form row" action="{{action}}" method="{{#if method}}{{method}}{{else}}post{{/if}}">
+  <form action="{{action}}" method="{{#if method}}{{method}}{{else}}post{{/if}}">
     {{#if header}}<h4>{{header}}</h4>{{/if}}
     {{#each fields}}
-    <div class="input-field">
+    <div>
       <label for="{{name}}">{{label}}</label>
       {{#if multiline}}
-      <textarea id="{{name}}" name="{{name}}" class="materialize-textarea">{{value}}</textarea>
+      <textarea id="{{name}}" name="{{name}}">{{value}}</textarea>
       {{else}}
       <input id="{{name}}" name="{{name}}" type="{{#if type}}{{type}}{{else}}text{{/if}}"{{#if value}} value="{{value}}"{{/if}} />
       {{/if}}
     </div>
     {{/each}}
-    <button type="submit" class="btn waves-effect">{{#if buttons.submit.text}}{{buttons.submit.text}}{{else}}Send{{/if}}</button>
+    <button type="submit">{{#if buttons.submit.text}}{{buttons.submit.text}}{{else}}Send{{/if}}</button>
     <span class="success">{{#if messages.success}}{{messages.success}}{{else}}Message sent{{/if}}</span>
     <span class="error">{{#if messages.failure}}{{messages.failure}}{{else}}Failed to send message{{/if}}</span>
   </form>

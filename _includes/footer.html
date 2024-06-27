@@ -1,9 +1,10 @@
 <footer>
+  {% include recommendations.html %}
   {% include contact-form.html %}
 
   
-  {% comment %}
   <div>
+    {% comment %}
     <ul>
       {% for cert in site.certs %}
         <li><a title="{{ cert.title }}" href="{{ cert.link }}"><img src="{{ cert.badge }}" alt="{{ cert.title }}" /></a></li>
@@ -24,12 +25,12 @@
         {% endfor %}
       </ul>
     </div>
+    {% endcomment %}
     <div>Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. Thanks for visiting!</div>
     <ul>
       {% for network in site.data.profile.same_as %}
-        <li><a href="{{ network.url }}" title="{{ network.network }}"><i class="fab fa-{{ network.network | downcase }}"></i></a></li>
+        <li><a href="{{ network.url }}" title="{{ network.network }}"><i class="fab fa-{{ network.network | downcase }}">{{ network.network }}</i></a></li>
       {% endfor %}
     </ul>
   </div>
-{% endcomment %}
 </footer>

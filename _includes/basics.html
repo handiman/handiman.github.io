@@ -1,4 +1,5 @@
-<section id="basics">
+<section>
+    {% comment %}
     <article>{% assign content_parts = content | split: site.excerpt_separator %}
         <p>
             {% for part in content_parts %}
@@ -7,18 +8,20 @@
             {% endfor %}
         </p>
     </article>
-    {% comment %}
+    {% endcomment %}
     {% assign profile = site.data.profile %}
-    <div class="container">
-        <div id="summary">
-            <h2>Profile</h2>
+    <div>
+        {% comment %}
+        <div>
+            <h2 id="profile">Profile</h2>
             <div>{{ site.data.person.description }}</div>
         </div>
-        <div id="skills">
-            <h2>Skills & Expertise</h2>
-            <ul class="row">{% for category in profile.featuredSkills %}
-                <li class="col s12 m4 l3">
-                    <div class="caption">{{ category[0] }}</div>
+        {% endcomment %}
+        <div>
+            <h2 id="skills">Skills & Expertise</h2>
+            <ul>{% for category in profile.featuredSkills %}
+                <li>
+                    <div>{{ category[0] }}</div>
                     <ul>{% for skill in category[1] %}
                         <li title="{{ skill.name }} - {{ skill.level }}" class="{{ skill.level | downcase }} skill">
                             <div>{{ skill.name }}</div>
@@ -34,14 +37,14 @@
                 </li>{% endfor %}
             </ul>
         </div>
-        <div id="languages">
-            <h2>Languages</h2>
-            <ul class="languages">{% for language in profile.languages %}
+        <div>
+            <h2 id="languages">Languages</h2>
+            <ul>{% for language in profile.languages %}
                 <li>
                     <div>{{ language.name }}</div>
                     <div>{{ language.proficiency }}</div>
                 </li>{% endfor %}
             </ul>
         </div>
-    </div>{% assign profile = nil %}{% endcomment %}
+    </div>{% assign profile = nil %}
 </section>

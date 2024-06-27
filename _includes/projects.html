@@ -1,6 +1,6 @@
-<section id="projects">
+<section class="work">
   <header>
-    <h2>Featured Projects</h2>
+    <h2 id="projects">Featured Projects</h2>
   </header>
   {% for featuredProject in site.data.profile.featuredProjects %}
     {% assign projectId = '/projects/' | append: featuredProject %}
@@ -8,17 +8,23 @@
     {% if project %}
       <article itemscope itemtype="https://schema.org/Project">
         <header>
-          <h4 itemprop="name">{{ project.name }}</h4>
-          <span>{{ project.roles | join: ", " }}</span>
-          <time datetime="{{project.start_date}}">{{project.start_date}}</time>{% if project.end_date%}
-          <time datetime="{{project.end_date}}">{{project.end_date}}</time>{% else %}<time datetime="{{site.time}}">present</time>{% endif %}
+          <h4 itemprop="name">
+            <div>{{ project.name }}</div>
+            <small>
+              <span>{{ project.roles | join: ", " }}</span>
+              <time datetime="{{project.start_date}}">{{project.start_date}}</time>{% if project.end_date%}
+              <time datetime="{{project.end_date}}">{{project.end_date}}</time>{% else %}<time datetime="{{site.time}}">present</time>{% endif %}
+            </small>
+          </h4>
         </header>
-        {% if project.description %}
-          {{ project.description | join: ' ' }}
-        {% else %}
-          {{ project.excerpt }}
-        {% endif %}
-
+        <p>
+          {% if project.description %}
+            {{ project.description | join: ' ' }}
+          {% else %}
+            {{ project.excerpt }}
+          {% endif %}
+        </p>
+        <footer></footer>
 
           {% comment %}
           <div>

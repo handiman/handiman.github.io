@@ -1,0 +1,79 @@
+// @import "pico.min.css";
+@import "milligram";
+
+// Colors:
+$black: #010101;
+$darkGrey: #282828;
+$lightGrey: #aeaeae;
+$grey: #484848;
+$white: #fafafa;
+$lightGreen: #a7d663;
+$mediumGreen: #75a434;
+$darkGreen: #457500;
+
+a {
+   color: $mediumGreen;
+   &:active, &:link {
+    color: $mediumGreen;
+   } 
+   &:hover, &:visited {
+    color: $darkGreen;
+   }
+}
+
+button, input[type='button'], input[type='submit'], input[type='reset'] {
+    background-color: $mediumGreen;
+    border-color: $darkGreen;
+    &:hover, &:focus {
+        background-color: $darkGreen;
+        border-color: $darkGreen;
+    }
+}
+
+// Bullets:
+$pointing: '\261B';
+$diamond: '\25C6';
+$triangle: '\25B7';
+$square: '\25AA';
+$lightCheckMark: '\1F5F8';
+$checkMark: '\2713';
+$checkBox: '\2611';
+$thumbsUp: '\1F592';
+
+ul {
+    list-style: none;
+}
+
+main>article {
+    @extend .container;
+}
+
+main>footer {
+    @extend .container;
+    @extend .no-print;
+}
+
+section.personal {
+    @extend .no-print;
+}
+
+section {
+    article {
+        header {
+            h4 {
+                span {
+                    &:after {
+                        content: ' | ';
+                    }
+                }
+                time {
+                    &:first-of-type {
+                        &:after {
+                            content: ' - ';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

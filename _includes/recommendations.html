@@ -1,10 +1,10 @@
-{% if site.recommendations %}
-<section id="recommendations">
+{% assign recommendations = site.data.profile.recommendations %}{% if recommendations %}
+<section>
   <header>
-    <h2>Recommendations</h2>
+    <h2 id="recommendations">Recommendations</h2>
   </header>
   <article>
-    {% for recommendation in site.recommendations %}
+    {% for recommendation in recommendations %}
     <blockquote>
       <span>{{ recommendation.text }}</span>
       {% if recommendation.name %}<cite>{% if recommendation.link %}<a href="{{ recommendation.link }}">{{ recommendation.name}}</a>{% else %}{{ recommendation.name}}{% endif %}</cite>{% endif %}

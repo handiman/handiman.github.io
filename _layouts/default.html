@@ -1,12 +1,26 @@
-<!DOCTYPE html>
-<html{% if site.lang %} lang="{{ site.lang }}" {% endif %}>
-
+<!DOCTYPE html>{% assign timestamp = site.time | date: '%s' %}
+<html lang="en">
 <head>
     {% seo %}{% include person.html %}{% include organization.html %}
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css' | absolute_url }}?v={{ timestamp }}">
 </head>
-
 <body>
-    {{ content }}
+    <main>
+    {% unless page.redirect %}
+        <article>
+            {{ content }}
+        </article>
+        {% include footer.html %}
+    {% else %}
+        <div id="error">
+            <div>
+                <h1><i class="fas fa-directions"></i></h1>
+                This page has moved.<br />
+                <a href="{{ page.redirect }}">Click here if you are not automatically redirected</a>.
+            </div>
+        </div>
+    {% endunless %}
+    </main>
+    <script src="{{ '/assets/js/main.js' | absolute_url }}?v={{ timestamp }}"></script>
 </body>
-
 </html>
