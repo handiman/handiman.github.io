@@ -1,4 +1,7 @@
 User-agent: *
+
 Disallow: /assets/
+Disallow: feed*
+Disallow: 404.html
 
 Sitemap: https://www.henrikbecker.net/sitemap.xml
