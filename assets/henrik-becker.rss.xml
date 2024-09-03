@@ -6,7 +6,7 @@
         <description>Henrik Becker is an experienced .Net developer and solution architect dedicated to delivering quality software practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of dad-jokes.
 </description>
         <copyright>Copyright 2024 Henrik Becker</copyright>
-        <lastBuildDate>2024-05-26 08:00:10 +0000</lastBuildDate>
+        <lastBuildDate>2024-09-03 05:19:11 +0000</lastBuildDate>
         <category>CV</category>
         <ttl>1440</ttl>
         <item>
@@ -29,7 +29,7 @@
             <description>
                 
                 Continued development of the Video on Demand site Plejmo.
-                Designed version 2 of Plejmo's Rest API.
+                Designed version 2 of Plejmo&apos;s Rest API.
                 Continued improving the CI/CD processes I set up at Film2Home
                 
             </description>
@@ -40,7 +40,7 @@
             <description>
                 
                 Development of the Video on Demand sites Film2Home and Plejmo.
-                Designed version 1 of Plejmo's Rest API.
+                Designed version 1 of Plejmo&apos;s Rest API.
                 Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
                 Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.
                 
@@ -101,7 +101,7 @@
                 
                 Fullstack Developer at hitta.se
                 System Integration Consultant assignments at Sigtuna Council, ICA Banken, Taxi Stockholm.
-                Was the single developer on an identity management project at Sigtuna Council that would become Microsoft's reference project for Microsoft Identity Integration Server.
+                Was the single developer on an identity management project at Sigtuna Council that would become Microsoft&apos;s reference project for Microsoft Identity Integration Server.
                 
             </description>
             <guid>https://www.henrikbecker.net/employment/09-qbranch-stockholm-ab</guid>
@@ -119,7 +119,7 @@
             <title> at IconMedialab AB</title>
             <description>
                 
-                Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and IconMedialab's intranet.
+                Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and IconMedialab&apos;s intranet.
                 
             </description>
             <guid>https://www.henrikbecker.net/employment/07-iconmedialab-ab</guid>
