@@ -57,8 +57,20 @@ defaults:
     path: googlef0bc3dbe928e1f73.html
    values:
     sitemap: false
-    
+ - scope:
+    path: assets/**/*.*
+   values:
+    sitemap: false
+ - scope:
+    path: cv.html
+   values:
+    sitemap: false
+ - scope:
+    path: contact.html
+   values:
+    sitemap: false
+
 readme_index:
-  enabled:          true
+  enabled: true
   remove_originals: false
   with_frontmatter: false    
