@@ -14,6 +14,7 @@ sass:
 plugins:
   - jekyll-remote-theme
   - jekyll-readme-index
+  - jekyll-sitemap
 remote_theme: handiman/jekyll-theme-gnap  
 
 exclude: [ 
@@ -34,8 +35,6 @@ collections:
   output: false 
  fun_facts:
   output: false
-# recommendations:
-#  output: false
 
 excerpt_separator: <!--more-->
 
@@ -45,11 +44,23 @@ defaults:
    values: 
     layout: index
  - scope:
-    path: "googlef0bc3dbe928e1f73.html"
+    path: googlef0bc3dbe928e1f73.html
    values:
     sitemap: false
-    
+ - scope:
+    path: assets/**/*.*
+   values:
+    sitemap: false
+ - scope:
+    path: cv.html
+   values:
+    sitemap: false
+ - scope:
+    path: contact.html
+   values:
+    sitemap: false
+
 readme_index:
-  enabled:          true
+  enabled: true
   remove_originals: false
   with_frontmatter: false    
