@@ -10,8 +10,13 @@ permalink: pretty
 sass:
  sass_dir: _sass
  style: compressed
+sass:
+ sass_dir: _sass
+ style: compressed
 
 plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-remote-theme
