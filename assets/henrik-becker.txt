@@ -24,12 +24,25 @@ Henrik Becker is an experienced .Net developer and solution architect dedicated 
 ### 24 Betsson    
 * | Oct 2021 - present*
 
-* Developing Betsson's Casino Tournaments/Sportsbook Leaderboards product
-* Event sourced .Net 7 application with realtime transaction processing, Rest API and back office tool.
+* Event sourced .Net 7 application with realtime processing of Kafka messages, a REST API and back office tool.
 * Performance optimizations leading to near 1000% increase in the number of Kafka messages the application can process per second
+* Conducting and evaluating interviews for potential new recruits
+* Proofs of Concept for new systems and/or functionality
 
 *Skills used:*
-C#, .Net 7, Asp.Net, Blazor, Docker, GitHub Actions, Kafka
+C#, .Net 5-9, Asp.Net Core, Blazor, Docker, GitHub Actions, Kafka, SQL Server, PostgreSQL
+
+
+### 17 Plejmo    
+* | Nov 2014 - Jul 2017*
+
+* Development of the Video on Demand sites Film2Home and Plejmo.
+* Designed Plejmo's REST API.
+* Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
+* Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.
+
+*Skills used:*
+Asp.Net MVC, Asp.Net Web Api, C#, .Net Framework, TDD, CQRS, Continuous Integration, Octopus Deploy, JavaScript, jQuery, KnockoutJS, NHibernate, SQL Server
 
 
 ### 23 Adlibris    
@@ -52,18 +65,6 @@ C#, Asp.Net Core, Asp.Net MVC, JavaScript, jQuery, React, SQL Server, Octopus De
 
 *Skills used:*
 Asp.Net Core, C#, React, Redux, TypeScript, Azure, Azure DevOps
-
-
-### 17 Plejmo    
-* | Nov 2014 - Jul 2017*
-
-* Development of the Video on Demand sites Film2Home and Plejmo.
-* Designed Plejmo's Rest API.
-* Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
-* Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.
-
-*Skills used:*
-Asp.Net MVC, Asp.Net Web Api, C#, TDD, CQRS, Continuous Integration, Octopus Deploy, JavaScript, jQuery, KnockoutJS, NHibernate, SQL Server
 
 
 
