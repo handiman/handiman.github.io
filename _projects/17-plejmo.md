@@ -12,6 +12,7 @@ skills:
  - Asp.Net MVC
  - Asp.Net Web Api
  - C#
+ - .Net Framework
  - TDD 
  - CQRS
  - Continuous Integration
@@ -40,7 +41,7 @@ description: |
 # - Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.
 summary: 
  - Development of the Video on Demand sites Film2Home and Plejmo.
- - Designed Plejmo's Rest API.
+ - Designed Plejmo's REST API.
  - Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
  - Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.
 ---
