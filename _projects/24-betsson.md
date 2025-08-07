@@ -9,7 +9,9 @@ end_date: present
 skills:
  - C#
  - .Net 5-9
+ - .Net Aspire
  - Asp.Net Core
+ - Microsoft Orleans
  - Blazor
  - Docker
  - GitHub Actions
@@ -17,9 +19,9 @@ skills:
  - SQL Server
  - PostgreSQL
 summary:  
-#- Developing Betsson's Casino Tournaments/Sportsbook Leaderboards product 
-- Event sourced .Net 7 application with realtime processing of Kafka messages, a REST API and back office tool.
-- Performance optimizations leading to near 1000% increase in the number of Kafka messages the application can process per second
-- Conducting and evaluating interviews for potential new recruits
-- Proofs of Concept for new systems and/or functionality
+- Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools
+- Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for one of the core applications.
+- Developed Proofs of Concept for new systems and features to evaluate feasibility and drive innovation.
+- Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance.
+- Conducted and assessed technical interviews to support recruitment and team growth.
 ---
