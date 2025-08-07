@@ -15,14 +15,14 @@ plugins:
   - jekyll-remote-theme
   - jekyll-readme-index
   - jekyll-sitemap
-remote_theme: handiman/jekyll-theme-gnap  
+#remote_theme: handiman/jekyll-theme-gnap  
 
-exclude: [ 
- "node_modules",
- "Gemfile", 
- "Gemfile.lock", 
- "Rakefile", 
- "*.orig"]
+exclude: 
+ - node_modules
+ - Gemfile 
+ - Gemfile.lock 
+ - Rakefile 
+ - "*.orig"
 
 collections:
  usp:
@@ -40,9 +40,13 @@ excerpt_separator: <!--more-->
 
 defaults:
  - scope:
+    path: ""
+   values: 
+    layout: default
+ - scope:
     path: README.md
    values: 
-    layout: index
+    layout: default
  - scope:
     path: googlef0bc3dbe928e1f73.html
    values:
