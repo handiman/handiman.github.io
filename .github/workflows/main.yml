@@ -37,12 +37,23 @@ jobs:
           CONTENT=$(jq -Rs . < assets/henrik-becker.md)
           printf "markdown=%s\n" "$CONTENT" >> $GITHUB_OUTPUT
           
+      - name: Write escaped Markdown to file
+        run: |
+          echo '${{ steps.read_cv.outputs.markdown }}' > markdown.json
+
       - name: Post CV Markdown to ingestion API
         env:
           API_KEY: ${{ secrets.AZURE_OPENAI_APIKEY }}
         run: |
+          jq -n \
+            --arg source 'gh-pages' \
+            --arg commit '${{ github.sha }}' \
+            --argfile markdown markdown.json \
+            '{source: $source, commit: $commit, markdown: $markdown}' > payload.json
+
           curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer $API_KEY" \
-            -d "$(jq -n --arg markdown '${{ steps.read_cv.outputs.markdown }}' --arg commit '${{ github.sha }}' --arg source 'master' '{source: $source, commit: $commit, markdown: $markdown}')"
+            -d @payload.json
+
 
