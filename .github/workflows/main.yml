@@ -34,8 +34,8 @@ jobs:
       - name: Read CV Markdown and escape for JSON
         id: read_cv
         run: |
-          CONTENT=$(cat assets/henrik-becker.md | jq -Rs .)
-          echo "markdown=$CONTENT" >> $GITHUB_OUTPUT
+          CONTENT=$(jq -Rs . < assets/henrik-becker.md)
+          printf "markdown=%s\n" "$CONTENT" >> $GITHUB_OUTPUT
           
       - name: Post CV Markdown to ingestion API
         env:
