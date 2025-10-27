@@ -30,4 +30,22 @@ jobs:
           gist_id: 3881a8e890dd1032cce3f5e655859717
           gist_file_name: resume.json
           file_path: ./_site/assets/henrik-becker.json
-   
+
+      - name: Read CV Markdown and escape for JSON
+        id: read_cv
+        run: |
+          CONTENT=$(cat assets/henrik-becker.md | jq -Rs .)
+          echo "markdown=$CONTENT" >> $GITHUB_OUTPUT
+          
+      - name: Post CV Markdown to ingestion API
+        env:
+          API_KEY: ${{ secrets.AZURE_OPENAI_APIKEY }}
+        run: |
+          curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer $API_KEY" \
+            -d '{
+              "source": "gh-pages",
+              "commit": "${{ github.sha }}",
+              "markdown": ${{ steps.read_cv.outputs.markdown }}
+            }'
