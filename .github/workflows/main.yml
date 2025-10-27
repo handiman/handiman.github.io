@@ -44,6 +44,5 @@ jobs:
           curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer $API_KEY" \
-            -d "$(jq -n --arg markdown '${{ steps.read_cv.outputs.markdown }}' --arg commit '${{ github.sha }}' --arg source 'gh-pages' \
-              '{source: $source, commit: $commit, markdown: $markdown}')"
+            -d "$(jq -n --arg markdown '${{ steps.read_cv.outputs.markdown }}' --arg commit '${{ github.sha }}' --arg source 'master' '{source: $source, commit: $commit, markdown: $markdown}')"
 
