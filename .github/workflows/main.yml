@@ -31,26 +31,6 @@ jobs:
           gist_file_name: resume.json
           file_path: ./_site/assets/henrik-becker.json
 
-      - name: Read CV Markdown and escape for JSON
-        id: read_cv
-        run: jq -Rs . < assets/henrik-becker.md > markdown.json
-
-#        run: |
-#          CONTENT=$(jq -Rs . < assets/henrik-becker.md)
-#          printf "%s\n" "$CONTENT" > markdown.json
-         
-      - name: Debug escaped Markdown
-        run: cat markdown.json | head -n 20
-
-      - name: Prepare JSON payload
-        run: |
-          MARKDOWN=$(cat markdown.json)
-          jq -n \
-            --arg source 'gh-pages' \
-            --arg commit '${{ github.sha }}' \
-            --arg markdown "$MARKDOWN" \
-            '{source: $source, commit: $commit, markdown: $markdown}' > payload.json
-
       - name: Post CV Markdown to ingestion API
         env:
           API_KEY: ${{ secrets.AZURE_OPENAI_APIKEY }}
@@ -58,6 +38,9 @@ jobs:
           curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer $API_KEY" \
-            -d @payload.json
+            -H "X-Commit: ${{ github.sha }}" \
+            -H "X-Source: github" \
+            --data-binary @assets/henrik-becker.md
+
 
 
