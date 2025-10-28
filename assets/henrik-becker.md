@@ -521,3 +521,15 @@ Location: Stockholm, Sweden
 ## Social Links
 - [GitHub](https://github.com/handiman)
 - [LinkedIn](https://www.linkedin.com/in/prettygoodprogrammer)
+
+## Personal
+
+### Interests
+- Music
+- Motorcycling
+- Karate
+- Travelling
+- Good food
+
+### Fun Facts
+- I designed my own sailing dinghy when I was 13
