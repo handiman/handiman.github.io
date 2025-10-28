@@ -1,10 +1,10 @@
 - name: Music
-  url: https://www.henrikbecker.net/music
-- name: Playing Guitar
-  url: https://www.henrikbecker.net/music
+#  url: https://www.henrikbecker.net/music
+#- name: Playing Guitar
+#  url: https://www.henrikbecker.net/music
 - name: Motorcycling
 - name: Karate
-  url: https://inoue.se
+#  url: https://inoue.se
 - name: Travelling
 - name: Good food
-- name: Reading
+#- name: Reading

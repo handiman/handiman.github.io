@@ -15,6 +15,7 @@ module Jekyll
         education()
         recommendations()
         social()
+        personal()
       rescue IOError => e
         puts e
       ensure
@@ -31,6 +32,18 @@ module Jekyll
       social_summary()
       roles_summary()
       @file.puts "\n"
+    end
+
+    def personal()
+      @file.puts "\n## Interests"
+      @site.data['profile']['interests'].each do | interest |
+        @file.puts "- #{interest['name']}"
+      end
+
+      @file.puts "\n## Fun Facts"
+      @site.collections['fun_facts'].docs.each do | fact |
+        @file.puts "- #{fact['title']}"
+      end
     end
 
     def roles_summary
