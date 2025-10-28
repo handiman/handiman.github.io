@@ -33,13 +33,14 @@ jobs:
 
       - name: Read CV Markdown and escape for JSON
         id: read_cv
-        run: |
-          CONTENT=$(jq -Rs . < assets/henrik-becker.md)
-          printf "%s\n" "$CONTENT" > markdown.json
+        run: jq -Rs . < assets/henrik-becker.md > markdown.json
+
+#        run: |
+#          CONTENT=$(jq -Rs . < assets/henrik-becker.md)
+#          printf "%s\n" "$CONTENT" > markdown.json
          
       - name: Debug escaped Markdown
-        run: |
-          cat markdown.json | head -n 20
+        run: cat markdown.json | head -n 20
 
       - name: Prepare JSON payload
         run: |
