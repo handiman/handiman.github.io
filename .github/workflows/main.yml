@@ -36,27 +36,19 @@ jobs:
         run: |
           CONTENT=$(jq -Rs . < assets/henrik-becker.md)
           printf "%s\n" "$CONTENT" > markdown.json
-          
+         
       - name: Debug escaped Markdown
         run: |
           cat markdown.json | head -n 20
 
-      - name: Generate payload
+      - name: Prepare JSON payload
         run: |
-          echo '{
-            "markdown": "'"$(cat assets/henrik-becker.md | sed ':a;N;$!ba;s/\n/\\n/g')"'",
-            "commit": '${{ github.sha }}',
-            "source": "github"
-          }' > payload.json
-          
-#      - name: Prepare JSON payload
-#        run: |
-#          MARKDOWN=$(cat markdown.json)
-#          jq -n \
-#            --arg source 'gh-pages' \
-#            --arg commit '${{ github.sha }}' \
-#            --arg markdown "$MARKDOWN" \
-#            '{source: $source, commit: $commit, markdown: $markdown}' > payload.json
+          MARKDOWN=$(cat markdown.json)
+          jq -n \
+            --arg source 'gh-pages' \
+            --arg commit '${{ github.sha }}' \
+            --arg markdown "$MARKDOWN" \
+            '{source: $source, commit: $commit, markdown: $markdown}' > payload.json
 
       - name: Post CV Markdown to ingestion API
         env:
