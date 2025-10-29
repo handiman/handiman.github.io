@@ -59,8 +59,7 @@ module Jekyll
         all_roles.merge(roles) if roles.is_a?(Array)
       end
 
-      @file.write "\nRoles: "
-      @file.write all_roles.uniq.sort.join(", ")
+      labelled_list("\nRoles", all_roles.uniq.sort)
     end
 
     def skills_summary
@@ -168,8 +167,8 @@ module Jekyll
     def project(project)
       @file.puts "### #{project['name']} (#{project['start_date']} – #{project['end_date']})"
       thing  project
-      labelled_list "#### Roles", project["roles"]
-      labelled_list "#### Skills", project["skills"]
+      labelled_list "Roles", project["roles"]
+      labelled_list "Skills", project["skills"]
       @file.puts "\n"
     end
 
@@ -179,8 +178,8 @@ module Jekyll
         org = work['organization']
         @file.puts "### #{org['name']} (#{work['start_date']} – #{work['end_date']})"
         thing work
-        labelled_list '#### Roles', work['roles']
-        labelled_list '#### Skills', work['skills']
+        labelled_list 'Roles', work['roles']
+        labelled_list 'Skills', work['skills']
         @file.puts "\n"
       end
     end
@@ -222,14 +221,11 @@ module Jekyll
     def labelled_list(label, list)
       return unless list
         data = if list.is_a?(Array)
-            list
+            list.join(", ")
         else
-            list.split(",")
+            list
         end
-        @file.puts "#{label}   \n"
-        data.each do | item |
-          @file.puts "- #{item.strip.gsub(/\s+/, ' ')}"
-        end
+        @file.puts "#{label}: #{data}"
     end
   end
 end   
