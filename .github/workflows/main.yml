@@ -31,16 +31,16 @@ jobs:
           gist_file_name: resume.json
           file_path: ./_site/assets/henrik-becker.json
 
-      - name: Post CV Markdown to ingestion API
+      - name: Post Semantic CV to ingestion API
         env:
           API_KEY: ${{ secrets.AZURE_OPENAI_APIKEY }}
         run: |
           curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest \
-            -H "Content-Type: text/plain" \
+            -H "Content-Type: text/html" \
             -H "Authorization: Bearer $API_KEY" \
             -H "X-Commit: ${{ github.sha }}" \
             -H "X-Source: github" \
-            --data-binary @assets/henrik-becker.md
+            --data-binary @assets/henrik-becker.html
 
 
 

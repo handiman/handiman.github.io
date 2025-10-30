@@ -1,0 +1,82 @@
+---
+layout: null
+permalink: /assets/henrik-becker.html
+---
+<!DOCTYPE html>{% assign model = site.data['semantic-model'] %}{% assign profile = site.data['profile'] %}{% capture data_source %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Henrik Becker – Semantic CV</title>
+    <style>
+      body { font-family: system-ui, "Segoe UI", "Helvetica Neue", sans-serif; }
+      main { max-width: 1040px; margin: 0 auto; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article id="profile-summary" data-section="profile-summary" data-tags="software engineer, consultant, digital identity" data-source="{{ data_source }}">
+        <header>
+          <h1>Henrik Becker</h1>
+          <p data-section="titles" data-title-list><strong>Titles:</strong> Senior Software Engineer, Consultant, Digital Provocateur and Simplificator</p>
+          <p data-section="roles" data-role-list><strong>Roles:</strong> {{ site.data['semantic-model']['summary']['roles'] | join: ", " }}</p>
+        </header>
+        <section id="philosophy" data-section="philosophy">
+          <h2>Philosophy & Focus</h2>
+          <p>
+            Henrik architects his freelance brand through hands-on automation, elegant rebellion, and interactive self-representation.
+            He builds systems that talk, not just list — blending technical mastery with philosophical clarity.
+          </p>
+        </section>
+
+        <section id="current-work" data-section="current-work">
+          <h2>Current Work</h2>
+          <p>
+            Currently refining a pipeline that keeps his AI-powered CV and digital presence authentic, transparent, and philosophically resonant.
+            His work spans Semantic Kernel integration, modular ingestion pipelines, and expressive UI for mobile-first audiences.
+          </p>
+        </section>
+
+        <section id="languages" data-section="languages" data-tags="swedish, native, english, fluent">
+          <h2>Languages</h2>
+          <ul>{% for language in profile['languages'] %}
+            <li data-language="{{ language.name }}" data-proficiency="{{ language.proficiency }}"><strong>{{ language.name }}:</strong> {{ language.proficiency }}</li>{% endfor %}
+          </ul>
+        </section>
+
+        <footer>
+          <p><strong>Location:</strong> Lidingö, Sweden</p>
+        </footer>
+      </article>
+
+      <article id="featured-projects" data-section="featured-projects" data-source="{{ data_source }}">
+        <header>
+          <h2>Featured Projects</h2>
+        </header>
+        {% for featuredProject in site.data.profile.featuredProjects %}
+        {% assign projectId = '/projects/' | append: featuredProject %}
+        {% assign projectSlug = 'featured-project-' | append: featuredProject %}
+        {% assign project = site.projects | where: "id", projectId | first %}
+        {% if project %}
+        <section id="{{ projectSlug }}" data-section="{{ projectSlug }}" data-start="{{ project.start_date | date: '%Y-%m'}}" data-end="{{ project.end_date | date: '%Y-%m' }}">
+          <h3>{% if project.name %}{{ project.name }}{% else %}{{project.title}}{% endif %}</h3>
+          <p id="{{ projectSlug }}-description" data-section="{{ projectSlug }}-description" data-project-description><strong>Description: </strong>{% if project.summary %}{% for summary in project.summary %}{{ summary | strip }}
+          {% endfor %}{% else %}{{ project.excerpt | strip }}{% endif %}</p>
+          {% if project.roles %}
+            <h4>Roles</h4>
+            <ul id="{{ projectSlug }}-roles" data-section="{{ projectSlug }}-roles" data-role-list>{% for role in project.roles %}{% assign split_role = role | split: ',' %}{% for r in split_role %}
+              <li data-role="{{ r | strip }}">{{ r }}</li>{% endfor %}{% endfor %}
+            </ul>
+          {% endif %} 
+          {% if project.skills %}
+            <h4>Skills</h4>
+            <ul id="{{ projectSlug }}-skills" data-section="{{ projectSlug }}-skills" data-skill-list>{% for skill in project.skills %}
+              <li data-skill="{{ skill | strip }}">{{ skill }}</li>{% endfor %}
+            </ul> 
+          {% endif %}   
+        </section>
+        {% endif %}
+        {% endfor %}
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,26 +1,59 @@
 module Jekyll
 
+  class SemanticModelGenerator < Jekyll:: Generator
+    def generate(site)  
+      @site = site      
+      site.data["semantic-model"] = {
+        "summary" => {
+          "roles" => all_roles
+        }
+      }
+    end
+
+    def all_roles 
+      all_roles = Set.new
+
+      @site.collections["projects"].docs.each do |doc|
+        roles = doc["roles"]
+        if roles.is_a?(Array)
+          roles.each { |r| all_roles.merge(r.split(",").map(&:strip)) }
+        elsif roles.is_a?(String)
+          all_roles.merge(roles.split(",").map(&:strip))
+        end
+      end
+
+      @site.collections["employment"].docs.each do |doc|
+        roles = doc["roles"]
+        if roles.is_a?(Array)
+          roles.each { |r| all_roles.merge(r.split(",").map(&:strip)) }
+        elsif roles.is_a?(String)
+          all_roles.merge(roles.split(",").map(&:strip))
+        end
+      end
+
+      all_roles.uniq.sort.to_a
+    end
+  end
+
   class EmbeddingKnowledgeBaseExporter < Jekyll::Generator    
     def generate(site)        
-      @site = site
       #if not (Gem.win_platform?)
-      begin
-        @file = File.open("assets/henrik-becker.md", "w")
-        @file.puts "# Henrik Becker - Embedding Knowledge Base"
-        summary()
-        featured_projects()
-        all_projects()
-        work_experience()
-        languages()
-        education()
-        recommendations()
-        social()
-        personal()
-      rescue IOError => e
-        puts e
-      ensure
-        @file.close unless @file.nil?
-      end 
+      #begin
+        #@file.puts "# Henrik Becker - Embedding Knowledge Base"
+        #summary()
+        #featured_projects()
+        #all_projects()
+        #work_experience()
+        #languages()
+        #education()
+        #recommendations()
+        #social()
+        #personal()
+      #rescue IOError => e
+      #  puts e
+      #ensure
+      #  @file.close unless @file.nil?
+      #end 
     end
 
     def summary
