@@ -2,12 +2,13 @@ name: Ingest Semantic CV
 on:
   workflow_dispatch:
   push:
-    branches: [ gh-pages ]
 jobs:
   ingest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with: 
+          ref: gh-pages
       - name: Post Semantic CV to ingestion API
         env:
           API_KEY: ${{ secrets.AZURE_OPENAI_APIKEY }}
