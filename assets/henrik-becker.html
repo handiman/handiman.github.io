@@ -2,7 +2,7 @@
 layout: null
 permalink: /assets/henrik-becker.html
 ---
-<!DOCTYPE html>{% assign model = site.data['semantic-model'] %}{% assign profile = site.data['profile'] %}{% capture data_source %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
+<!DOCTYPE html>{% assign model = site.data['semantic-model'] %}{% assign profile = site.data['profile'] %}{% capture data_source %}{{ page.url | absolute_url }}{% endcapture %}
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="UTF-8" />
