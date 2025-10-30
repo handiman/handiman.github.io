@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Download rendered CV from site
         run: curl -sSL https://www.henrikbecker.net/assets/henrik-becker.html -o henrik-becker.html
+      - run: cat henrik-becker.html
 
       - name: Post Semantic CV to ingestion API
         env:
