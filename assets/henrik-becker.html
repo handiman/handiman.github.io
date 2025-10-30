@@ -17,8 +17,8 @@ permalink: /assets/henrik-becker.html
       <article id="profile-summary" data-section="profile-summary" data-tags="software engineer, consultant, digital identity" data-source="{{ data_source }}">
         <header>
           <h1>Henrik Becker</h1>
-          <p data-section="titles" data-title-list><strong>Titles:</strong> Senior Software Engineer, Consultant, Digital Provocateur and Simplificator</p>
-          <p data-section="roles" data-role-list><strong>Roles:</strong> {{ site.data['semantic-model']['summary']['roles'] | join: ", " }}</p>
+          <p data-section="titles" data-type="title-list"><strong>Titles:</strong> Senior Software Engineer, Consultant, Digital Provocateur and Simplificator</p>
+          <p data-section="roles" data-type="role-list"><strong>Roles:</strong> {{ site.data['semantic-model']['summary']['roles'] | join: ", " }}</p>
         </header>
         <section id="philosophy" data-section="philosophy">
           <h2>Philosophy & Focus</h2>
@@ -63,13 +63,13 @@ permalink: /assets/henrik-becker.html
           {% endfor %}{% else %}{{ project.excerpt | strip }}{% endif %}</p>
           {% if project.roles %}
             <h4>Roles</h4>
-            <ul id="{{ projectSlug }}-roles" data-section="{{ projectSlug }}-roles" data-role-list>{% for role in project.roles %}{% assign split_role = role | split: ',' %}{% for r in split_role %}
+            <ul id="{{ projectSlug }}-roles" data-section="{{ projectSlug }}-roles" data-type="role-list">{% for role in project.roles %}{% assign split_role = role | split: ',' %}{% for r in split_role %}
               <li data-role="{{ r | strip }}">{{ r }}</li>{% endfor %}{% endfor %}
             </ul>
           {% endif %} 
           {% if project.skills %}
             <h4>Skills</h4>
-            <ul id="{{ projectSlug }}-skills" data-section="{{ projectSlug }}-skills" data-skill-list>{% for skill in project.skills %}
+            <ul id="{{ projectSlug }}-skills" data-section="{{ projectSlug }}-skills" data-type="skill-list">{% for skill in project.skills %}
               <li data-skill="{{ skill | strip }}">{{ skill }}</li>{% endfor %}
             </ul> 
           {% endif %}   
