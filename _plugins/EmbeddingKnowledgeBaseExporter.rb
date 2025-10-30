@@ -5,7 +5,8 @@ module Jekyll
       @site = site      
       site.data["semantic-model"] = {
         "summary" => {
-          "roles" => all_roles
+          "roles" => all_roles,
+          "skills" => all_skills
         }
       }
     end
@@ -32,6 +33,30 @@ module Jekyll
       end
 
       all_roles.uniq.sort.to_a
+    end
+    
+    def all_skills 
+      all_skills = Set.new
+
+      @site.collections["projects"].docs.each do |doc|
+        skills = doc["skills"]
+        if skills.is_a?(Array)
+          skills.each { |r| all_skills.merge(r.split(",").map(&:strip)) }
+        elsif skills.is_a?(String)
+          all_skills.merge(skills.split(",").map(&:strip))
+        end
+      end
+
+      @site.collections["employment"].docs.each do |doc|
+        skills = doc["skills"]
+        if skills.is_a?(Array)
+          skills.each { |r| all_skills.merge(r.split(",").map(&:strip)) }
+        elsif skills.is_a?(String)
+          all_skills.merge(skills.split(",").map(&:strip))
+        end
+      end
+
+      all_skills.uniq.sort.to_a
     end
   end
 
