@@ -30,17 +30,3 @@ jobs:
           gist_id: 3881a8e890dd1032cce3f5e655859717
           gist_file_name: resume.json
           file_path: ./_site/assets/henrik-becker.json
-
-      - name: Post Semantic CV to ingestion API
-        env:
-          API_KEY: ${{ secrets.AZURE_OPENAI_APIKEY }}
-        run: |
-          curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest \
-            -H "Content-Type: text/html" \
-            -H "Authorization: Bearer $API_KEY" \
-            -H "X-Commit: ${{ github.sha }}" \
-            -H "X-Source: github" \
-            --data-binary @assets/henrik-becker.html
-
-
-
