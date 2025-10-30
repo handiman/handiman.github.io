@@ -1,7 +1,11 @@
 name: Ingest Semantic CV
 on:
   workflow_dispatch:
-  push:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types:
+      - completed
+
 jobs:
   ingest:
     runs-on: ubuntu-latest
