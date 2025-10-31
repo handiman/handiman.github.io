@@ -53,33 +53,6 @@ title: Henrik Becker - Semantic CV
                                 He builds systems that talk, not just list — blending technical mastery with philosophical clarity.
                             </p>            
                         </section>
-                        <section id="recommendations">
-                            <h2 class="hidden">Recommendations</h2>
-                            {% for recommendation in site.data['profile']['recommendations'] %}
-                            <blockquote class="">
-                                <p>{{ recommendation.text }}</p>
-                                <footer>- {{ recommendation.name }}</footer>
-                            </blockquote>
-                            {% endfor %}
-                        </section>
-                        <section id="languages" class="section">
-                            <h2>Languages</h2>
-                            <ul>{% for language in profile['languages'] %}
-                                <li><strong>{{ language.name }}:</strong> {{ language.proficiency }}</li>
-                            {% endfor %}</ul>
-                        </section>
-                        <section id="certifications" class="section">
-                            <h2>Certifications</h2>
-                            <ul>{% for cert in site.certs %}
-                                <li><strong>{{ cert.title }}:</strong> {% if cert.issuer %}{{ cert.issuer }} {% endif %}{% if cert.achievement_date %}(<date>{{ cert.achievement_date }}</date>){% endif %}</li>
-                            {% endfor %}</ul>
-                        </section>
-                        <section id="education" class="section">
-                            <h2>Education</h2>
-                            <ul>{% for education in site.data.profile.education %}
-                                <li><strong>{{ education.school }}:</strong> {{ education.description }} (<time>{% if education.start_year %}{{ education.start_year }}{% endif %} &dash; {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}</time>)</li>
-                            {% endfor %}</ul>
-                        </section>
                         <section id="featured-projects" class="section">
                             <h2>Featured Projects</h2>
                             {% for featuredProject in site.data.profile.featuredProjects %}
@@ -132,7 +105,49 @@ title: Henrik Becker - Semantic CV
                     </main>
                 </div>
                  <div class="col s12 m4">
-                    <aside role="complementary" class="hidden">
+                    <aside role="complementary">
+                        <section id="languages" class="section">
+                            <h2>Languages</h2>
+                            <ul>{% for language in profile['languages'] %}
+                                <li><strong>{{ language.name }}:</strong> {{ language.proficiency }}</li>
+                            {% endfor %}</ul>
+                        </section>
+                        <section id="certifications" class="section">
+                            <h2>Certifications</h2>
+                            <ul>{% for cert in site.certs %}
+                                <li><strong>{{ cert.title }}:</strong> {% if cert.issuer %}{{ cert.issuer }} {% endif %}{% if cert.achievement_date %}(<date>{{ cert.achievement_date }}</date>){% endif %}</li>
+                            {% endfor %}</ul>
+                        </section>
+                        <section id="education" class="section">
+                            <h2>Education</h2>
+                            <ul>{% for education in site.data.profile.education %}
+                                <li><strong>{{ education.school }}:</strong> {{ education.description }} (<time>{% if education.start_year %}{{ education.start_year }}{% endif %} &dash; {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}</time>)</li>
+                            {% endfor %}</ul>
+                        </section>
+                        <section id="recommendations">
+                            <h2>Recommendations</h2>
+                            {% for recommendation in site.data['profile']['recommendations'] %}
+                            <blockquote class="">
+                                <p>{{ recommendation.text }}</p>
+                                <footer>- {{ recommendation.name }}</footer>
+                            </blockquote>
+                            {% endfor %}
+                        </section>                        
+                        <section id="interests" class="section">
+                            <h2>Interests</h2>
+                            <ul>{% for interest in site.data['profile']['interests'] %}
+                                <li>{{ interest.name }}</li>
+                            {% endfor %}</ul>
+                        </section>
+                        <section id="fun-facts" class="section">
+                            <h2>Fun Facts</h2>
+                            {% for fact in site.fun_facts %}
+                            <article>
+                                <h6>{{ fact.title }}</h6>
+                                <p>{{ fact.content }}</p>
+                            </article>
+                            {% endfor %}
+                        </section>
                         <section id="all-roles" class="hidden section">
                             <h2>Roles</h2> 
                             <p>{{ site.data['semantic-model']['summary']['roles'] | join: ", " }}</p>
