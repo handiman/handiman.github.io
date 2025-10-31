@@ -71,16 +71,13 @@ Asp.Net Core, C#, React, Redux, TypeScript, Azure, Azure DevOps
 
 ## Work Experience
 
-### Betsson Group AB
-* | Dec 2023 - present*
-
-
 ### Henrik Becker Consulting AB
 * | Jul 2017 - present*
 
-Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm urban area.
 
-*Clients:*
+### Betsson Group AB
+* | Dec 2023 - present*
+
 
 ### Magine TV AB
 * | Sep 2015 - Jul 2017*
