@@ -1,0 +1,29 @@
+- type: Tech Zingers
+  zingers: 
+    - I deploy faster than you can say “merge conflict.”
+    - I refactor like it's an Olympic sport.
+    - My code doesn’t just run — it performs.
+    - I don’t push commits — I push boundaries.
+    - I’m not just a problem solver — I’m the problem for your competitors.
+
+- type:  Personality &amp; Attitude Zingers
+  zingers: 
+    - I’m like a Swiss Army Knife — but with a sense of humor.
+    - I’m the kind of person who turns “why?” into “why not?”
+    - I bring the spark, not just the skills.
+
+- type: Creative Zingers
+  zingers:
+    - I brainstorm like it’s an Olympic sport.
+    - I’m the idea machine you didn’t know you needed.
+
+- type: Strategy &amp; Impact Zingers
+  zingers:
+    - I turn complexity into clarity.
+    - I make impact look effortless.
+    
+- type: Experimental Zingers
+  zingers:
+    - I prototype like it’s a sport.
+    - I test assumptions the way others test coffee.
+    - I fail fast, learn faster, and never stop iterating.
