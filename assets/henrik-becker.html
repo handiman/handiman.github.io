@@ -14,15 +14,15 @@ permalink: /assets/henrik-becker.html
   </head>
   <body>
     <main>
-      <article id="profile-summary" data-section="profile-summary" data-tags="software engineer, consultant, digital identity" data-source="{{ data_source }}">
-        <header>
+      <article id="profile-summary" data-source="{{ data_source }}">
+        <header data-section="profile-summary">
           <h1>Henrik Becker</h1>
           <p data-section="titles" data-type="title-list"><strong>Titles:</strong> Senior Software Engineer, Consultant, Digital Provocateur and Simplificator</p>
           <p data-section="roles" data-type="role-list"><strong>Roles:</strong> {{ site.data['semantic-model']['summary']['roles'] | join: ", " }}</p>
           <p data-section="skills" data-type="skills-list"><strong>Skills:</strong> {{ site.data['semantic-model']['summary']['skills'] | join: ", " }}</p>
-          <p><strong>Location:</strong> Lidingö, Sweden</p>
+          <p data-section="location"><strong>Location:</strong> Lidingö, Sweden</p>
         </header>
-        <section id="intro" data-section="intro" data-role="consultant" data-seniority="senior" data-tech-focus="backend, integration, .NET">
+        <section id="intro" data-section="intro" data-tags="software engineer, consultant, digital identity">
           <h2>Introduction</h2>
           <p>
             Henrik started working with software development in 1999 during the &quot;IT-boom&quot; in Stockholm.
