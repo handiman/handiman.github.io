@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <title>Henrik Becker &ndash; Semantic CV</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" />
@@ -13,7 +12,8 @@
             defineCustomElements();
         </script>        
         <style>
-            main { max-width: 1040px; margin: 0 auto; } 
+            main, header, nav, aside, footer { max-width: 1040px; margin: 0 auto; } 
+            * { font-family: system-ui, sans-serif; }
             .hidden, .print { display: none; }
             blockquote{ border-left-color: #90a4ae; }
             cv-chat { 
@@ -27,113 +27,110 @@
         </style>
     </head>
     <body>
-        <nav class="no-print nav-wrapper blue-grey darken-3" aria-label="Main navigation">
-            <div class="container">
-                <cv-chat class="right" collection="henrik-becker" answer-position="below"></cv-chat>
+        <nav aria-label="Main navigation">
+            <div>
+                <cv-chat collection="henrik-becker" answer-position="below"></cv-chat>
             </div>
         </nav>
 
-         <header class="section blue-grey lighten-2">
-            <div class="container" style="padding-left: 1rem;">
-                <h1 class="header">Henrik Becker</h1>
+         <header>
+            <div>
+                <h1>Henrik Becker</h1>
                 <p>Senior Software Engineer</p>
             </div>
         </header>
         
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m8">
-                    <main>
-                        <section id="introduction" class="section">
-                            <h2>Introduction</h2>
-                            <p>
-                                Henrik started working with software development in 1999 during the &quot;IT-boom&quot; in Stockholm.
-                                Over the years, he has grown into a senior backend-focused consultant with deep expertise in system integration. 
-                                He has worked with every major incarnation of .NET and ASP.NET—from the early days of Web Forms to modern cloud-native APIs—always with an eye for clarity, maintainability, and expressive architecture.
-                            </p>
-                            <p>
-                                Henrik architects his freelance brand through hands-on automation, elegant rebellion, and interactive self-representation.
-                                He builds systems that talk, not just list — blending technical mastery with philosophical clarity.
-                            </p>            
-                        </section>
-                        <section id="featured-projects" class="section">
-                            <h2>Featured Projects</h2>
-                            
-                            
-                            
-                            
-                            
-                            
-                            <article id="featured-project-24-betsson" data-section="">
-                                <header>
-                                    <h3></h3>
-                                    <p><strong>Roles:</strong> Senior Software Engineer</p>
-                                    <p><time>2021-10&ndash;present</time></p>
-                                </header>
-                                <p>Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools. Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for one of the core applications.. Developed Proofs of Concept for new systems and features to evaluate feasibility and drive innovation.. Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance.. Conducted and assessed technical interviews to support recruitment and team growth.. </p>
-                                <p><strong>Skills:</strong> C#, .Net 5-9, .Net Aspire, Asp.Net Core, Microsoft Orleans, Blazor, Docker, GitHub Actions, Kafka, SQL Server, PostgreSQL</p>
-                            </article>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <article id="featured-project-17-plejmo" data-section="">
-                                <header>
-                                    <h3></h3>
-                                    <p><strong>Roles:</strong> Fullstack Developer, DevOps</p>
-                                    <p><time>2014-11&ndash;2017-07</time></p>
-                                </header>
-                                <p>Development of the Video on Demand sites Film2Home and Plejmo.. Designed Plejmo's REST API.. Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.. Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.. </p>
-                                <p><strong>Skills:</strong> Asp.Net MVC, Asp.Net Web Api, C#, .Net Framework, TDD, CQRS, Continuous Integration, Octopus Deploy, JavaScript, jQuery, KnockoutJS, NHibernate, SQL Server</p>
-                            </article>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <article id="featured-project-23-adlibris" data-section="">
-                                <header>
-                                    <h3></h3>
-                                    <p><strong>Roles:</strong> Fullstack Developer</p>
-                                    <p><time>2021-02&ndash;2021-10</time></p>
-                                </header>
-                                <p>OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app currently in development.. Account management API built with Asp.Net Core and .Net 5 hosted on Azure.. Contentful CMS content modeling and integration.. </p>
-                                <p><strong>Skills:</strong> C#, Asp.Net Core, Asp.Net MVC, JavaScript, jQuery, React, SQL Server, Octopus Deploy, Azure App Services, Identity Server</p>
-                            </article>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <article id="featured-project-21-open-payments" data-section="">
-                                <header>
-                                    <h3></h3>
-                                    <p><strong>Roles:</strong> Software Engineer</p>
-                                    <p><time>2019-12&ndash;2020-06</time></p>
-                                </header>
-                                <p>Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.. Improved test automation by making functional/integration tests require less manual intervention.. Reduced deployment time thanks to improved test automation.. </p>
-                                <p><strong>Skills:</strong> Asp.Net Core, C#, React, Redux, TypeScript, Azure, Azure DevOps</p>
-                            </article>
-                            
-                            
-                        </section>
-                        <section id="work-experience" class="section">
-                            <h2>Work Experience</h2>
-                            
-                            <article id="employment-99-self-employed" data-section="Henrik Becker Consulting AB">
-                                <header>
-                                    <h3>Henrik Becker Consulting AB</h3>
-                                    <p><strong>Roles:</strong> Self Employed</p>
-                                    <p><time>2017-07&ndash;present</time></p>
-                                </header>
-                                <p><h6 id="clients">Clients:</h6>
+        <main>
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p>
+                    Henrik started working with software development in 1999 during the &quot;IT-boom&quot; in Stockholm.
+                    Over the years, he has grown into a senior backend-focused consultant with deep expertise in system integration. 
+                    He has worked with every major incarnation of .NET and ASP.NET—from the early days of Web Forms to modern cloud-native APIs—always with an eye for clarity, maintainability, and expressive architecture.
+                </p>
+                <p>
+                    Henrik architects his freelance brand through hands-on automation, elegant rebellion, and interactive self-representation.
+                    He builds systems that talk, not just list — blending technical mastery with philosophical clarity.
+                </p>            
+            </section>
+            <section id="featured-projects">
+                <h2>Featured Projects</h2>
+                
+                
+                
+                
+                
+                
+                <article id="featured-project-24-betsson" data-section="Betsson Group">
+                    <header>
+                        <h3>Betsson Group</h3>
+                        <p><strong>Roles:</strong> Senior Software Engineer</p>
+                        <p><time>2021-10&ndash;present</time></p>
+                    </header>
+                    <p>Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools. Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for one of the core applications.. Developed Proofs of Concept for new systems and features to evaluate feasibility and drive innovation.. Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance.. Conducted and assessed technical interviews to support recruitment and team growth.. </p>
+                    <p><strong>Skills:</strong> C#, .Net 5-9, .Net Aspire, Asp.Net Core, Microsoft Orleans, Blazor, Docker, GitHub Actions, Kafka, SQL Server, PostgreSQL</p>
+                </article>
+                
+                
+                
+                
+                
+                
+                
+                <article id="featured-project-17-plejmo" data-section="Film2Home/Plejmo">
+                    <header>
+                        <h3>Film2Home/Plejmo</h3>
+                        <p><strong>Roles:</strong> Fullstack Developer, DevOps</p>
+                        <p><time>2014-11&ndash;2017-07</time></p>
+                    </header>
+                    <p>Development of the Video on Demand sites Film2Home and Plejmo.. Designed Plejmo's REST API.. Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.. Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.. </p>
+                    <p><strong>Skills:</strong> Asp.Net MVC, Asp.Net Web Api, C#, .Net Framework, TDD, CQRS, Continuous Integration, Octopus Deploy, JavaScript, jQuery, KnockoutJS, NHibernate, SQL Server</p>
+                </article>
+                
+                
+                
+                
+                
+                
+                
+                <article id="featured-project-23-adlibris" data-section="Adlibris">
+                    <header>
+                        <h3>Adlibris</h3>
+                        <p><strong>Roles:</strong> Fullstack Developer</p>
+                        <p><time>2021-02&ndash;2021-10</time></p>
+                    </header>
+                    <p>OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app currently in development.. Account management API built with Asp.Net Core and .Net 5 hosted on Azure.. Contentful CMS content modeling and integration.. </p>
+                    <p><strong>Skills:</strong> C#, Asp.Net Core, Asp.Net MVC, JavaScript, jQuery, React, SQL Server, Octopus Deploy, Azure App Services, Identity Server</p>
+                </article>
+                
+                
+                
+                
+                
+                
+                
+                <article id="featured-project-21-open-payments" data-section="Open Payments">
+                    <header>
+                        <h3>Open Payments</h3>
+                        <p><strong>Roles:</strong> Software Engineer</p>
+                        <p><time>2019-12&ndash;2020-06</time></p>
+                    </header>
+                    <p>Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.. Improved test automation by making functional/integration tests require less manual intervention.. Reduced deployment time thanks to improved test automation.. </p>
+                    <p><strong>Skills:</strong> Asp.Net Core, C#, React, Redux, TypeScript, Azure, Azure DevOps</p>
+                </article>
+                
+                
+            </section>
+            <section id="work-experience>
+                <h2>Work Experience</h2>
+                
+                <article id="employment-99-self-employed" data-section="Henrik Becker Consulting AB">
+                    <header>
+                        <h3>Henrik Becker Consulting AB</h3>
+                        <p><strong>Roles:</strong> Self Employed</p>
+                        <p><time>2017-07&ndash;present</time></p>
+                    </header>
+                    <p><h6 id="clients">Clients:</h6>
 
 <ul>
   <li><a href="/projects/24-betsson/">Betsson Group</a></li>
@@ -143,511 +140,509 @@
   <li><a href="/projects/20-insplanet/">Insplanet</a></li>
   <li><a href="/projects/18-svea-ekonomi/">Svea Ekonomi</a></li>
 </ul></p>
-                                
-                            </article>
-                            
-                            <article id="employment-18-betsson" data-section="Betsson Group AB">
-                                <header>
-                                    <h3>Betsson Group AB</h3>
-                                    <p><strong>Roles:</strong> Senior Software Engineer</p>
-                                    <p><time>2023-12&ndash;present</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-16-magine-tv" data-section="Magine TV AB">
-                                <header>
-                                    <h3>Magine TV AB</h3>
-                                    <p><strong>Roles:</strong> Fullstack Developer</p>
-                                    <p><time>2015-09&ndash;2017-07</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-15-film2home" data-section="Film2Home AB">
-                                <header>
-                                    <h3>Film2Home AB</h3>
-                                    <p><strong>Roles:</strong> Fullstack Developer</p>
-                                    <p><time>2014-11&ndash;2015-08</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-14-qbranch-stockholm-ab-2" data-section="Qbranch Stockholm AB">
-                                <header>
-                                    <h3>Qbranch Stockholm AB</h3>
-                                    <p><strong>Roles:</strong> IT Consultant</p>
-                                    <p><time>2014-04&ndash;2014-09</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-13-wasa-kredit-ab" data-section="Wasa Kredit AB">
-                                <header>
-                                    <h3>Wasa Kredit AB</h3>
-                                    <p><strong>Roles:</strong> Lead Developer</p>
-                                    <p><time>2012-03&ndash;2013-11</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-12-avega-group-ab" data-section="Avega Group AB">
-                                <header>
-                                    <h3>Avega Group AB</h3>
-                                    <p><strong>Roles:</strong> IT Consultant</p>
-                                    <p><time>2008-01&ndash;2012-03</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-11-aftonbladet-tillvaxtteknik-2-ab" data-section="Aftonbladet Tillväxtteknik 2 AB">
-                                <header>
-                                    <h3>Aftonbladet Tillväxtteknik 2 AB</h3>
-                                    <p><strong>Roles:</strong> Fullstack Developer</p>
-                                    <p><time>2007-12&ndash;2008-01</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-10-inverso-international-ab" data-section="Inverso International AB">
-                                <header>
-                                    <h3>Inverso International AB</h3>
-                                    <p><strong>Roles:</strong> IT Consultant</p>
-                                    <p><time>2007-04&ndash;2007-12</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-09-qbranch-stockholm-ab" data-section="Qbranch Stockholm AB">
-                                <header>
-                                    <h3>Qbranch Stockholm AB</h3>
-                                    <p><strong>Roles:</strong> IT Consultant</p>
-                                    <p><time>2005-04&ndash;2007-04</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-08-ework" data-section="eWork">
-                                <header>
-                                    <h3>eWork</h3>
-                                    <p><strong>Roles:</strong> IT Consultant</p>
-                                    <p><time>2002-01&ndash;2005-03</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-07-iconmedialab-ab" data-section="IconMedialab AB">
-                                <header>
-                                    <h3>IconMedialab AB</h3>
-                                    <p><strong>Roles:</strong> IT Consultant</p>
-                                    <p><time>1999-09&ndash;2002-01</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-06-innitek-ab" data-section="Innitek AB">
-                                <header>
-                                    <h3>Innitek AB</h3>
-                                    <p><strong>Roles:</strong> IT Consultant</p>
-                                    <p><time>1998-10&ndash;1999-07</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-05-lidingo-stad" data-section="Lidingö Stad">
-                                <header>
-                                    <h3>Lidingö Stad</h3>
-                                    <p><strong>Roles:</strong> PC Technician</p>
-                                    <p><time>1997-07&ndash;1998-10</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-04-konsum" data-section="Konsumentföreningen Stockholm">
-                                <header>
-                                    <h3>Konsumentföreningen Stockholm</h3>
-                                    <p><strong>Roles:</strong> Shop Assistant</p>
-                                    <p><time>1986-12&ndash;1995-06</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-03-sollentuna-jazz-workshop" data-section="Sollentuna Jazz Workshop">
-                                <header>
-                                    <h3>Sollentuna Jazz Workshop</h3>
-                                    <p><strong>Roles:</strong> Study Circle Leader</p>
-                                    <p><time>1994-01&ndash;1994-07</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-02-kantarellen-livs-ab" data-section="Kantarellen Livs AB">
-                                <header>
-                                    <h3>Kantarellen Livs AB</h3>
-                                    <p><strong>Roles:</strong> Shop Assistant</p>
-                                    <p><time>1992-06&ndash;1992-09</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                            <article id="employment-01-karena" data-section="Karena Zoo, Lek & Hobby">
-                                <header>
-                                    <h3>Karena Zoo, Lek & Hobby</h3>
-                                    <p><strong>Roles:</strong> Shop Assistant</p>
-                                    <p><time>1986-08&ndash;1986-12</time></p>
-                                </header>
-                                
-                                
-                            </article>
-                            
-                        </section>
-                        <section id="all-projects" class="section">
-                            <h2>All Projects</h2>
-                            
-                            
-                            <article id="projects-24-betsson" data-section="Betsson Group">
-                                <header>
-                                    <h3>Betsson Group</h3>
-                                    <p><strong>Roles:</strong> Senior Software Engineer</p>
-                                    <p><time>2021-10&ndash;present</time></p>
-                                </header>
-                                <p>Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools. Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for one of the core applications.. Developed Proofs of Concept for new systems and features to evaluate feasibility and drive innovation.. Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance.. Conducted and assessed technical interviews to support recruitment and team growth.. </p>
-                                <p><strong>Skills:</strong> C#, .Net 5-9, .Net Aspire, Asp.Net Core, Microsoft Orleans, Blazor, Docker, GitHub Actions, Kafka, SQL Server, PostgreSQL</p>
-                            </article>
-                            
-                            
-                            <article id="projects-23-adlibris" data-section="Adlibris">
-                                <header>
-                                    <h3>Adlibris</h3>
-                                    <p><strong>Roles:</strong> Fullstack Developer</p>
-                                    <p><time>2021-02&ndash;2021-10</time></p>
-                                </header>
-                                <p>OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app currently in development.. Account management API built with Asp.Net Core and .Net 5 hosted on Azure.. Contentful CMS content modeling and integration.. </p>
-                                <p><strong>Skills:</strong> C#, Asp.Net Core, Asp.Net MVC, JavaScript, jQuery, React, SQL Server, Octopus Deploy, Azure App Services, Identity Server</p>
-                            </article>
-                            
-                            
-                            <article id="projects-22-norconsult-astando-2020" data-section="Norconsult Astando">
-                                <header>
-                                    <h3>Norconsult Astando</h3>
-                                    <p><strong>Roles:</strong> Software Engineer</p>
-                                    <p><time>2020-10&ndash;2021-01</time></p>
-                                </header>
-                                <p>Automated deployment using Octopus Deploy. Improvements to code readability and testability. Implementing new functionality in legacy systems. </p>
-                                <p><strong>Skills:</strong> C#, TypeScript, JavaScript, KnockoutJS, Asp.Net Core, Asp.Net Web Forms, WCF, TeamCity, Octopus Deploy</p>
-                            </article>
-                            
-                            
-                            <article id="projects-21-open-payments" data-section="Open Payments">
-                                <header>
-                                    <h3>Open Payments</h3>
-                                    <p><strong>Roles:</strong> Software Engineer</p>
-                                    <p><time>2019-12&ndash;2020-06</time></p>
-                                </header>
-                                <p>Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.. Improved test automation by making functional/integration tests require less manual intervention.. Reduced deployment time thanks to improved test automation.. </p>
-                                <p><strong>Skills:</strong> Asp.Net Core, C#, React, Redux, TypeScript, Azure, Azure DevOps</p>
-                            </article>
-                            
-                            
-                            <article id="projects-20-insplanet" data-section="Insplanet">
-                                <header>
-                                    <h3>Insplanet</h3>
-                                    <p><strong>Roles:</strong> Software Engineer</p>
-                                    <p><time>2019-01&ndash;2019-06</time></p>
-                                </header>
-                                <p>Zero down time deployment. Simplified CI process with Azure DevOps build pipelines. </p>
-                                <p><strong>Skills:</strong> Asp.Net MVC, Asp.Net Web Api, .Net Core, C#, React, TypeScript, Azure DevOps, Octopus Deploy</p>
-                            </article>
-                            
-                            
-                            <article id="projects-19-norconsult-astando" data-section="Norconsult Astando">
-                                <header>
-                                    <h3>Norconsult Astando</h3>
-                                    <p><strong>Roles:</strong> Software Engineer</p>
-                                    <p><time>2018-04&ndash;2018-11</time></p>
-                                </header>
-                                <p>Automated deployment for the project IsyRoad resulting in:. Deployment time decreasing from ~ 45 minutes to ~ 5 minutes per application instance. Deployment releated errors reduced by nearly 100 %. </p>
-                                <p><strong>Skills:</strong> Octopus Deploy, TeamCity, Asp.Net Web Api, .Net Core, WCF, NHibernate, C#</p>
-                            </article>
-                            
-                            
-                            <article id="projects-18-svea-ekonomi" data-section="Svea Ekonomi">
-                                <header>
-                                    <h3>Svea Ekonomi</h3>
-                                    <p><strong>Roles:</strong> Software Engineer, TDD mentor</p>
-                                    <p><time>2017-10&ndash;2018-04</time></p>
-                                </header>
-                                <p>Development of the payment solution "Svea Checkout" being rolled out in Sweden, Norway and Finland.. Improved api documentation by generating most of it automatically. Improved test readability by rewriting them as executable specifications. </p>
-                                <p><strong>Skills:</strong> C#, Asp.Net Web Api, CQRS, TDD, Specification By Example, Continuous Integration, Octopus Deploy, Entity Framework</p>
-                            </article>
-                            
-                            
-                            <article id="projects-17-plejmo" data-section="Film2Home/Plejmo">
-                                <header>
-                                    <h3>Film2Home/Plejmo</h3>
-                                    <p><strong>Roles:</strong> Fullstack Developer, DevOps</p>
-                                    <p><time>2014-11&ndash;2017-07</time></p>
-                                </header>
-                                <p>Development of the Video on Demand sites Film2Home and Plejmo.. Designed Plejmo's REST API.. Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.. Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.. </p>
-                                <p><strong>Skills:</strong> Asp.Net MVC, Asp.Net Web Api, C#, .Net Framework, TDD, CQRS, Continuous Integration, Octopus Deploy, JavaScript, jQuery, KnockoutJS, NHibernate, SQL Server</p>
-                            </article>
-                            
-                            
-                            <article id="projects-16-arbetsformedlingen" data-section="Arbetsförmedlingen">
-                                <header>
-                                    <h3>Arbetsförmedlingen</h3>
-                                    <p><strong>Roles:</strong> Backend Developer</p>
-                                    <p><time>2014-06&ndash;2014-09</time></p>
-                                </header>
-                                <p>Maintenance of a legacy solution for managing requisitions at Sweden's public employment services.. </p>
-                                <p><strong>Skills:</strong> VB.Net, WinForms, WebForms, WCF, WebServices, Oracle</p>
-                            </article>
-                            
-                            
-                            <article id="projects-15-qbranch-competence-manager" data-section="Qbranch Competence Manager">
-                                <header>
-                                    <h3>Qbranch Competence Manager</h3>
-                                    <p><strong>Roles:</strong> Fullstack Developer</p>
-                                    <p><time>2014-04&ndash;2014-06</time></p>
-                                </header>
-                                <p>Development of an application for managing consultant CVs built on Asp.Net MVC and hosted on Windows Azure.. </p>
-                                <p><strong>Skills:</strong> Asp.Net MVC 5, HTML5, jQuery, CSS3, C#, EntityFramework 6, Test Driven Development, Continuous Integration</p>
-                            </article>
-                            
-                            
-                            <article id="projects-14-wasa-kredit-ab" data-section="Wasa Kredit">
-                                <header>
-                                    <h3>Wasa Kredit</h3>
-                                    <p><strong>Roles:</strong> Lead Developer</p>
-                                    <p><time>2012-03&ndash;2013-11</time></p>
-                                </header>
-                                <p>Reduced complexity and system decay through refactoring and the application of common software architecture patterns.. Guided the development teams towards an iterative approach to software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle.. Introduced the idea of living documentation in the form of executable specifications.. </p>
-                                <p><strong>Skills:</strong> C#, WinForms, Asp.Net MVC4, HTML, CSS3, WCF, TDD, BDD, SpecFlow, Continuous Integration, Team Foundation Server- XML, XSLT</p>
-                            </article>
-                            
-                            
-                            <article id="projects-13-cale-access-ab" data-section="Cale Access AB">
-                                <header>
-                                    <h3>Cale Access AB</h3>
-                                    <p><strong>Roles:</strong> System Developer</p>
-                                    <p><time>2011-09&ndash;2012-03</time></p>
-                                </header>
-                                <p></p>
-                                <p><strong>Skills:</strong> Test Driven Development, SpecFlow, NInject, C#, WCF, Asp.Net Web Forms, Continuous Integration, Team Foundation Server</p>
-                            </article>
-                            
-                            
-                            <article id="projects-12-cashguard" data-section="CashGuard">
-                                <header>
-                                    <h3>CashGuard</h3>
-                                    <p><strong>Roles:</strong> System Developer</p>
-                                    <p><time>2011-06&ndash;2011-09</time></p>
-                                </header>
-                                <p>Was the key person in introducing behavior driven development.. Lay the foundation for automated regression tests and living documentation by taking existing user stories and turning them into executable specifications using SpecFlow.. </p>
-                                <p><strong>Skills:</strong> Specification by Example, SpecFlow, C#, WCF, Asp.Net MVC, WiX, SQL Server</p>
-                            </article>
-                            
-                            
-                            <article id="projects-11-lansforsakringar" data-section="Länsförsäkringar">
-                                <header>
-                                    <h3>Länsförsäkringar</h3>
-                                    <p><strong>Roles:</strong> System Developer</p>
-                                    <p><time>2009-09&ndash;2011-05</time></p>
-                                </header>
-                                <p>Was instrumental in the migration of the payment platform's database from Oracle to SQL Server.. Worked with the development of a WCF based payment platform adding support for automatic payment services and prompts.. Quality assurance and performance optimization of connecting systems.. </p>
-                                <p><strong>Skills:</strong> VB.Net, WCF, WPF, Oracle, SQL Server, Team Foundation Server, Continuous Integration, Test Driven Development</p>
-                            </article>
-                            
-                            
-                            <article id="projects-10-tradera" data-section="Tradera">
-                                <header>
-                                    <h3>Tradera</h3>
-                                    <p><strong>Roles:</strong> System Developer</p>
-                                    <p><time>2009-08&ndash;2009-08</time></p>
-                                </header>
-                                <p>Development of a WPF-based sales support system for managing articles and campaigns published on tradera.se.. </p>
-                                <p><strong>Skills:</strong> C#, WCF, WPF, NHibernate</p>
-                            </article>
-                            
-                            
-                            <article id="projects-09-astando" data-section="Astando">
-                                <header>
-                                    <h3>Astando</h3>
-                                    <p><strong>Roles:</strong> System Developer</p>
-                                    <p><time>2008-02&ndash;2009-05</time></p>
-                                </header>
-                                <p>Client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg.. </p>
-                                <p><strong>Skills:</strong> C#, Winforms, Windows Services, Oracle, NHibernate, Spring.Net, Test Driven Development, Continuous Integration</p>
-                            </article>
-                            
-                            
-                            <article id="projects-08-hittapunktse" data-section="hitta.se">
-                                <header>
-                                    <h3>hitta.se</h3>
-                                    <p><strong>Roles:</strong> Fullstack Developer</p>
-                                    <p><time>2006-03&ndash;2008-02</time></p>
-                                </header>
-                                <p>Was a key person in the development of hitta.se - one of Swedens top 10 most popular sites.. Created the services hitta.se/trafiknytt (traffic information) and hitta.se/vader (weather information).. Maintenance of hitta.se's internal order system. </p>
-                                <p><strong>Skills:</strong> C#, Asp.Net, AJAX, T-SQL, MSMQ, XML, XSLT, XHTML, SQL Server, IIS</p>
-                            </article>
-                            
-                            
-                            <article id="projects-07-ica-banken-ab" data-section="ICA Banken AB">
-                                <header>
-                                    <h3>ICA Banken AB</h3>
-                                    <p><strong>Roles:</strong> IT Consultant</p>
-                                    <p><time>2006-03&ndash;2006-03</time></p>
-                                </header>
-                                <p>Quality analysis of database design.. Trouble shooting and optimization of SQL scripts for data import/export and database maintenance.. VBScript for SQL Server inventory using WMI.. </p>
-                                <p><strong>Skills:</strong> SQL Server, T-SQL, VBScript, XML, XSLT, WMI</p>
-                            </article>
-                            
-                            
-                            <article id="projects-06-sigtuna-council" data-section="Sigtuna Council">
-                                <header>
-                                    <h3>Sigtuna Council</h3>
-                                    <p><strong>Roles:</strong> IT Consultant</p>
-                                    <p><time>2005-10&ndash;2006-03</time></p>
-                                </header>
-                                <p>Was the single developer on this Identity Management project that would become Microsoft's reference case for Microsoft Identity Integration Server (MIIS).. Implemented management agents for the client's HR system, the directory services eDirectory and Active Directory.. Implemented automatic creation of GroupWise accounts and Novell Server home directories.. Wrote rules extensions for attribute flow and joins.. </p>
-                                <p><strong>Skills:</strong> Identity Management, Microsoft Identity Integration Server, C#, SQL Server, Novell eDirectory, Active Directory, MSMQ, Novell C API, GroupWise Administrative Objects API</p>
-                            </article>
-                            
-                            
-                            <article id="projects-05-sveriges-television" data-section="Sveriges Television">
-                                <header>
-                                    <h3>Sveriges Television</h3>
-                                    <p><strong>Roles:</strong> IT Consultant</p>
-                                    <p><time>2005-07&ndash;2005-07</time></p>
-                                </header>
-                                <p>Maintenance of the client's system inventory tool.. </p>
-                                <p><strong>Skills:</strong> VBScript, VBA, T-SQL, SQL Server, ASP</p>
-                            </article>
-                            
-                            
-                            <article id="projects-04-taxi-stockholm" data-section="Taxi Stockholm">
-                                <header>
-                                    <h3>Taxi Stockholm</h3>
-                                    <p><strong>Roles:</strong> Web Developer</p>
-                                    <p><time>2005-05&ndash;2005-07</time></p>
-                                </header>
-                                <p>Migration of Taxi Stockholm's intranet and external web site from Spirello to EpiServer.. Integration with the client's Unix based booking system.. </p>
-                                <p><strong>Skills:</strong> Asp.Net, C#, EPiServer 4, SQL Server</p>
-                            </article>
-                            
-                            
-                            <article id="projects-03-siemens-medical" data-section="Siemens Medical">
-                                <header>
-                                    <h3>Siemens Medical</h3>
-                                    <p><strong>Roles:</strong> Web Developer</p>
-                                    <p><time>2000-01&ndash;2001-01</time></p>
-                                </header>
-                                <p>QA and supporting colleges during development and maintenance of Siemens Medical's intranet "EMPower".. </p>
-                                <p><strong>Skills:</strong> Visual Basic 6, COM, ASP, JavaScript, XML, XSLT, CSS, HTML, SQL Server</p>
-                            </article>
-                            
-                            
-                            <article id="projects-02-hewlett-packard-sweden" data-section="Hewlett Packard Sweden">
-                                <header>
-                                    <h3>Hewlett Packard Sweden</h3>
-                                    <p><strong>Roles:</strong> Web Developer</p>
-                                    <p><time>1999-09&ndash;2005-03</time></p>
-                                </header>
-                                <p>Requirements analysis, use case design, system design and development of a web based admininstration interface for information about and registrations for customer events for HP EMEA.. Requirements analysis, design and development of a web based administration interface for HP's scandinavian products database.. Development of templates for the client's EpiServer based intranet.. Maintenance and further development of www.hp.se.. </p>
-                                <p><strong>Skills:</strong> C#, Asp.Net, T-SQL, SQL Server, IIS, EPiServer, XML, XSLT, ASP, JavaScript, VBScript, HTML, CSS</p>
-                            </article>
-                            
-                            
-                            <article id="projects-01-loostrom-och-gelin-ab" data-section="Looström & Gelin AB">
-                                <header>
-                                    <h3>Looström & Gelin AB</h3>
-                                    <p><strong>Roles:</strong> Programmer</p>
-                                    <p><time>1998-10&ndash;1999-07</time></p>
-                                </header>
-                                <p>Designed and developed a document management system based on Visual Basic 5.. Assisted in developing the company web site.. </p>
-                                <p><strong>Skills:</strong> Visual Basic 5, COM, ASP</p>
-                            </article>
-                            
-                        </section>
-                    </main>
-                </div>
-                 <div class="col s12 m4">
-                    <aside role="complementary">
-                        <section id="languages" class="section">
-                            <h2>Languages</h2>
-                            <ul>
-                                <li><strong>Swedish:</strong> Native</li>
-                            
-                                <li><strong>English:</strong> Fluent (IELTS overall score 8.5)</li>
-                            </ul>
-                        </section>
-                        <section id="certifications" class="section">
-                            <h2>Certifications</h2>
-                            <ul>
-                                <li><strong>Microsoft Certified: Azure Developer Associate:</strong> Microsoft (<date>2021-06-24</date>)</li>
-                            
-                                <li><strong>MCSA: Web Applications - Certified 2016:</strong> Microsoft (<date>2016-09-26</date>)</li>
-                            </ul>
-                        </section>
-                        <section id="education" class="section">
-                            <h2>Education</h2>
-                            <ul>
-                                <li><strong>KomVux Lidingö:</strong> Municipal adult education (<time>1995 &dash; 1997</time>)</li>
-                            
-                                <li><strong>Kulturama:</strong> Music (<time>1992 &dash; 1993</time>)</li>
-                            </ul>
-                        </section>
-                        <section id="recommendations">
-                            <h2>Recommendations</h2>
-                            
-                            <blockquote class="">
-                                <p>Henrik was very humble on the interview, but he turned out to be a fantastic developer, among the best performing consultants I have encountered.  Contributed a lot of great ideas and knowledge to the team.  
+                    
+                </article>
+                
+                <article id="employment-18-betsson" data-section="Betsson Group AB">
+                    <header>
+                        <h3>Betsson Group AB</h3>
+                        <p><strong>Roles:</strong> Senior Software Engineer</p>
+                        <p><time>2023-12&ndash;present</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-16-magine-tv" data-section="Magine TV AB">
+                    <header>
+                        <h3>Magine TV AB</h3>
+                        <p><strong>Roles:</strong> Fullstack Developer</p>
+                        <p><time>2015-09&ndash;2017-07</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-15-film2home" data-section="Film2Home AB">
+                    <header>
+                        <h3>Film2Home AB</h3>
+                        <p><strong>Roles:</strong> Fullstack Developer</p>
+                        <p><time>2014-11&ndash;2015-08</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-14-qbranch-stockholm-ab-2" data-section="Qbranch Stockholm AB">
+                    <header>
+                        <h3>Qbranch Stockholm AB</h3>
+                        <p><strong>Roles:</strong> IT Consultant</p>
+                        <p><time>2014-04&ndash;2014-09</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-13-wasa-kredit-ab" data-section="Wasa Kredit AB">
+                    <header>
+                        <h3>Wasa Kredit AB</h3>
+                        <p><strong>Roles:</strong> Lead Developer</p>
+                        <p><time>2012-03&ndash;2013-11</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-12-avega-group-ab" data-section="Avega Group AB">
+                    <header>
+                        <h3>Avega Group AB</h3>
+                        <p><strong>Roles:</strong> IT Consultant</p>
+                        <p><time>2008-01&ndash;2012-03</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-11-aftonbladet-tillvaxtteknik-2-ab" data-section="Aftonbladet Tillväxtteknik 2 AB">
+                    <header>
+                        <h3>Aftonbladet Tillväxtteknik 2 AB</h3>
+                        <p><strong>Roles:</strong> Fullstack Developer</p>
+                        <p><time>2007-12&ndash;2008-01</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-10-inverso-international-ab" data-section="Inverso International AB">
+                    <header>
+                        <h3>Inverso International AB</h3>
+                        <p><strong>Roles:</strong> IT Consultant</p>
+                        <p><time>2007-04&ndash;2007-12</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-09-qbranch-stockholm-ab" data-section="Qbranch Stockholm AB">
+                    <header>
+                        <h3>Qbranch Stockholm AB</h3>
+                        <p><strong>Roles:</strong> IT Consultant</p>
+                        <p><time>2005-04&ndash;2007-04</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-08-ework" data-section="eWork">
+                    <header>
+                        <h3>eWork</h3>
+                        <p><strong>Roles:</strong> IT Consultant</p>
+                        <p><time>2002-01&ndash;2005-03</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-07-iconmedialab-ab" data-section="IconMedialab AB">
+                    <header>
+                        <h3>IconMedialab AB</h3>
+                        <p><strong>Roles:</strong> IT Consultant</p>
+                        <p><time>1999-09&ndash;2002-01</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-06-innitek-ab" data-section="Innitek AB">
+                    <header>
+                        <h3>Innitek AB</h3>
+                        <p><strong>Roles:</strong> IT Consultant</p>
+                        <p><time>1998-10&ndash;1999-07</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-05-lidingo-stad" data-section="Lidingö Stad">
+                    <header>
+                        <h3>Lidingö Stad</h3>
+                        <p><strong>Roles:</strong> PC Technician</p>
+                        <p><time>1997-07&ndash;1998-10</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-04-konsum" data-section="Konsumentföreningen Stockholm">
+                    <header>
+                        <h3>Konsumentföreningen Stockholm</h3>
+                        <p><strong>Roles:</strong> Shop Assistant</p>
+                        <p><time>1986-12&ndash;1995-06</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-03-sollentuna-jazz-workshop" data-section="Sollentuna Jazz Workshop">
+                    <header>
+                        <h3>Sollentuna Jazz Workshop</h3>
+                        <p><strong>Roles:</strong> Study Circle Leader</p>
+                        <p><time>1994-01&ndash;1994-07</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-02-kantarellen-livs-ab" data-section="Kantarellen Livs AB">
+                    <header>
+                        <h3>Kantarellen Livs AB</h3>
+                        <p><strong>Roles:</strong> Shop Assistant</p>
+                        <p><time>1992-06&ndash;1992-09</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+                <article id="employment-01-karena" data-section="Karena Zoo, Lek & Hobby">
+                    <header>
+                        <h3>Karena Zoo, Lek & Hobby</h3>
+                        <p><strong>Roles:</strong> Shop Assistant</p>
+                        <p><time>1986-08&ndash;1986-12</time></p>
+                    </header>
+                    
+                    
+                </article>
+                
+            </section>
+            <section id="all-projects">
+                <h2>All Projects</h2>
+                
+                
+                <article id="projects-24-betsson" data-section="Betsson Group">
+                    <header>
+                        <h3>Betsson Group</h3>
+                        <p><strong>Roles:</strong> Senior Software Engineer</p>
+                        <p><time>2021-10&ndash;present</time></p>
+                    </header>
+                    <p>Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools. Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for one of the core applications.. Developed Proofs of Concept for new systems and features to evaluate feasibility and drive innovation.. Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance.. Conducted and assessed technical interviews to support recruitment and team growth.. </p>
+                    <p><strong>Skills:</strong> C#, .Net 5-9, .Net Aspire, Asp.Net Core, Microsoft Orleans, Blazor, Docker, GitHub Actions, Kafka, SQL Server, PostgreSQL</p>
+                </article>
+                
+                
+                <article id="projects-23-adlibris" data-section="Adlibris">
+                    <header>
+                        <h3>Adlibris</h3>
+                        <p><strong>Roles:</strong> Fullstack Developer</p>
+                        <p><time>2021-02&ndash;2021-10</time></p>
+                    </header>
+                    <p>OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app currently in development.. Account management API built with Asp.Net Core and .Net 5 hosted on Azure.. Contentful CMS content modeling and integration.. </p>
+                    <p><strong>Skills:</strong> C#, Asp.Net Core, Asp.Net MVC, JavaScript, jQuery, React, SQL Server, Octopus Deploy, Azure App Services, Identity Server</p>
+                </article>
+                
+                
+                <article id="projects-22-norconsult-astando-2020" data-section="Norconsult Astando">
+                    <header>
+                        <h3>Norconsult Astando</h3>
+                        <p><strong>Roles:</strong> Software Engineer</p>
+                        <p><time>2020-10&ndash;2021-01</time></p>
+                    </header>
+                    <p>Automated deployment using Octopus Deploy. Improvements to code readability and testability. Implementing new functionality in legacy systems. </p>
+                    <p><strong>Skills:</strong> C#, TypeScript, JavaScript, KnockoutJS, Asp.Net Core, Asp.Net Web Forms, WCF, TeamCity, Octopus Deploy</p>
+                </article>
+                
+                
+                <article id="projects-21-open-payments" data-section="Open Payments">
+                    <header>
+                        <h3>Open Payments</h3>
+                        <p><strong>Roles:</strong> Software Engineer</p>
+                        <p><time>2019-12&ndash;2020-06</time></p>
+                    </header>
+                    <p>Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.. Improved test automation by making functional/integration tests require less manual intervention.. Reduced deployment time thanks to improved test automation.. </p>
+                    <p><strong>Skills:</strong> Asp.Net Core, C#, React, Redux, TypeScript, Azure, Azure DevOps</p>
+                </article>
+                
+                
+                <article id="projects-20-insplanet" data-section="Insplanet">
+                    <header>
+                        <h3>Insplanet</h3>
+                        <p><strong>Roles:</strong> Software Engineer</p>
+                        <p><time>2019-01&ndash;2019-06</time></p>
+                    </header>
+                    <p>Zero down time deployment. Simplified CI process with Azure DevOps build pipelines. </p>
+                    <p><strong>Skills:</strong> Asp.Net MVC, Asp.Net Web Api, .Net Core, C#, React, TypeScript, Azure DevOps, Octopus Deploy</p>
+                </article>
+                
+                
+                <article id="projects-19-norconsult-astando" data-section="Norconsult Astando">
+                    <header>
+                        <h3>Norconsult Astando</h3>
+                        <p><strong>Roles:</strong> Software Engineer</p>
+                        <p><time>2018-04&ndash;2018-11</time></p>
+                    </header>
+                    <p>Automated deployment for the project IsyRoad resulting in:. Deployment time decreasing from ~ 45 minutes to ~ 5 minutes per application instance. Deployment releated errors reduced by nearly 100 %. </p>
+                    <p><strong>Skills:</strong> Octopus Deploy, TeamCity, Asp.Net Web Api, .Net Core, WCF, NHibernate, C#</p>
+                </article>
+                
+                
+                <article id="projects-18-svea-ekonomi" data-section="Svea Ekonomi">
+                    <header>
+                        <h3>Svea Ekonomi</h3>
+                        <p><strong>Roles:</strong> Software Engineer, TDD mentor</p>
+                        <p><time>2017-10&ndash;2018-04</time></p>
+                    </header>
+                    <p>Development of the payment solution "Svea Checkout" being rolled out in Sweden, Norway and Finland.. Improved api documentation by generating most of it automatically. Improved test readability by rewriting them as executable specifications. </p>
+                    <p><strong>Skills:</strong> C#, Asp.Net Web Api, CQRS, TDD, Specification By Example, Continuous Integration, Octopus Deploy, Entity Framework</p>
+                </article>
+                
+                
+                <article id="projects-17-plejmo" data-section="Film2Home/Plejmo">
+                    <header>
+                        <h3>Film2Home/Plejmo</h3>
+                        <p><strong>Roles:</strong> Fullstack Developer, DevOps</p>
+                        <p><time>2014-11&ndash;2017-07</time></p>
+                    </header>
+                    <p>Development of the Video on Demand sites Film2Home and Plejmo.. Designed Plejmo's REST API.. Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.. Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.. </p>
+                    <p><strong>Skills:</strong> Asp.Net MVC, Asp.Net Web Api, C#, .Net Framework, TDD, CQRS, Continuous Integration, Octopus Deploy, JavaScript, jQuery, KnockoutJS, NHibernate, SQL Server</p>
+                </article>
+                
+                
+                <article id="projects-16-arbetsformedlingen" data-section="Arbetsförmedlingen">
+                    <header>
+                        <h3>Arbetsförmedlingen</h3>
+                        <p><strong>Roles:</strong> Backend Developer</p>
+                        <p><time>2014-06&ndash;2014-09</time></p>
+                    </header>
+                    <p>Maintenance of a legacy solution for managing requisitions at Sweden's public employment services.. </p>
+                    <p><strong>Skills:</strong> VB.Net, WinForms, WebForms, WCF, WebServices, Oracle</p>
+                </article>
+                
+                
+                <article id="projects-15-qbranch-competence-manager" data-section="Qbranch Competence Manager">
+                    <header>
+                        <h3>Qbranch Competence Manager</h3>
+                        <p><strong>Roles:</strong> Fullstack Developer</p>
+                        <p><time>2014-04&ndash;2014-06</time></p>
+                    </header>
+                    <p>Development of an application for managing consultant CVs built on Asp.Net MVC and hosted on Windows Azure.. </p>
+                    <p><strong>Skills:</strong> Asp.Net MVC 5, HTML5, jQuery, CSS3, C#, EntityFramework 6, Test Driven Development, Continuous Integration</p>
+                </article>
+                
+                
+                <article id="projects-14-wasa-kredit-ab" data-section="Wasa Kredit">
+                    <header>
+                        <h3>Wasa Kredit</h3>
+                        <p><strong>Roles:</strong> Lead Developer</p>
+                        <p><time>2012-03&ndash;2013-11</time></p>
+                    </header>
+                    <p>Reduced complexity and system decay through refactoring and the application of common software architecture patterns.. Guided the development teams towards an iterative approach to software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle.. Introduced the idea of living documentation in the form of executable specifications.. </p>
+                    <p><strong>Skills:</strong> C#, WinForms, Asp.Net MVC4, HTML, CSS3, WCF, TDD, BDD, SpecFlow, Continuous Integration, Team Foundation Server- XML, XSLT</p>
+                </article>
+                
+                
+                <article id="projects-13-cale-access-ab" data-section="Cale Access AB">
+                    <header>
+                        <h3>Cale Access AB</h3>
+                        <p><strong>Roles:</strong> System Developer</p>
+                        <p><time>2011-09&ndash;2012-03</time></p>
+                    </header>
+                    <p></p>
+                    <p><strong>Skills:</strong> Test Driven Development, SpecFlow, NInject, C#, WCF, Asp.Net Web Forms, Continuous Integration, Team Foundation Server</p>
+                </article>
+                
+                
+                <article id="projects-12-cashguard" data-section="CashGuard">
+                    <header>
+                        <h3>CashGuard</h3>
+                        <p><strong>Roles:</strong> System Developer</p>
+                        <p><time>2011-06&ndash;2011-09</time></p>
+                    </header>
+                    <p>Was the key person in introducing behavior driven development.. Lay the foundation for automated regression tests and living documentation by taking existing user stories and turning them into executable specifications using SpecFlow.. </p>
+                    <p><strong>Skills:</strong> Specification by Example, SpecFlow, C#, WCF, Asp.Net MVC, WiX, SQL Server</p>
+                </article>
+                
+                
+                <article id="projects-11-lansforsakringar" data-section="Länsförsäkringar">
+                    <header>
+                        <h3>Länsförsäkringar</h3>
+                        <p><strong>Roles:</strong> System Developer</p>
+                        <p><time>2009-09&ndash;2011-05</time></p>
+                    </header>
+                    <p>Was instrumental in the migration of the payment platform's database from Oracle to SQL Server.. Worked with the development of a WCF based payment platform adding support for automatic payment services and prompts.. Quality assurance and performance optimization of connecting systems.. </p>
+                    <p><strong>Skills:</strong> VB.Net, WCF, WPF, Oracle, SQL Server, Team Foundation Server, Continuous Integration, Test Driven Development</p>
+                </article>
+                
+                
+                <article id="projects-10-tradera" data-section="Tradera">
+                    <header>
+                        <h3>Tradera</h3>
+                        <p><strong>Roles:</strong> System Developer</p>
+                        <p><time>2009-08&ndash;2009-08</time></p>
+                    </header>
+                    <p>Development of a WPF-based sales support system for managing articles and campaigns published on tradera.se.. </p>
+                    <p><strong>Skills:</strong> C#, WCF, WPF, NHibernate</p>
+                </article>
+                
+                
+                <article id="projects-09-astando" data-section="Astando">
+                    <header>
+                        <h3>Astando</h3>
+                        <p><strong>Roles:</strong> System Developer</p>
+                        <p><time>2008-02&ndash;2009-05</time></p>
+                    </header>
+                    <p>Client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg.. </p>
+                    <p><strong>Skills:</strong> C#, Winforms, Windows Services, Oracle, NHibernate, Spring.Net, Test Driven Development, Continuous Integration</p>
+                </article>
+                
+                
+                <article id="projects-08-hittapunktse" data-section="hitta.se">
+                    <header>
+                        <h3>hitta.se</h3>
+                        <p><strong>Roles:</strong> Fullstack Developer</p>
+                        <p><time>2006-03&ndash;2008-02</time></p>
+                    </header>
+                    <p>Was a key person in the development of hitta.se - one of Swedens top 10 most popular sites.. Created the services hitta.se/trafiknytt (traffic information) and hitta.se/vader (weather information).. Maintenance of hitta.se's internal order system. </p>
+                    <p><strong>Skills:</strong> C#, Asp.Net, AJAX, T-SQL, MSMQ, XML, XSLT, XHTML, SQL Server, IIS</p>
+                </article>
+                
+                
+                <article id="projects-07-ica-banken-ab" data-section="ICA Banken AB">
+                    <header>
+                        <h3>ICA Banken AB</h3>
+                        <p><strong>Roles:</strong> IT Consultant</p>
+                        <p><time>2006-03&ndash;2006-03</time></p>
+                    </header>
+                    <p>Quality analysis of database design.. Trouble shooting and optimization of SQL scripts for data import/export and database maintenance.. VBScript for SQL Server inventory using WMI.. </p>
+                    <p><strong>Skills:</strong> SQL Server, T-SQL, VBScript, XML, XSLT, WMI</p>
+                </article>
+                
+                
+                <article id="projects-06-sigtuna-council" data-section="Sigtuna Council">
+                    <header>
+                        <h3>Sigtuna Council</h3>
+                        <p><strong>Roles:</strong> IT Consultant</p>
+                        <p><time>2005-10&ndash;2006-03</time></p>
+                    </header>
+                    <p>Was the single developer on this Identity Management project that would become Microsoft's reference case for Microsoft Identity Integration Server (MIIS).. Implemented management agents for the client's HR system, the directory services eDirectory and Active Directory.. Implemented automatic creation of GroupWise accounts and Novell Server home directories.. Wrote rules extensions for attribute flow and joins.. </p>
+                    <p><strong>Skills:</strong> Identity Management, Microsoft Identity Integration Server, C#, SQL Server, Novell eDirectory, Active Directory, MSMQ, Novell C API, GroupWise Administrative Objects API</p>
+                </article>
+                
+                
+                <article id="projects-05-sveriges-television" data-section="Sveriges Television">
+                    <header>
+                        <h3>Sveriges Television</h3>
+                        <p><strong>Roles:</strong> IT Consultant</p>
+                        <p><time>2005-07&ndash;2005-07</time></p>
+                    </header>
+                    <p>Maintenance of the client's system inventory tool.. </p>
+                    <p><strong>Skills:</strong> VBScript, VBA, T-SQL, SQL Server, ASP</p>
+                </article>
+                
+                
+                <article id="projects-04-taxi-stockholm" data-section="Taxi Stockholm">
+                    <header>
+                        <h3>Taxi Stockholm</h3>
+                        <p><strong>Roles:</strong> Web Developer</p>
+                        <p><time>2005-05&ndash;2005-07</time></p>
+                    </header>
+                    <p>Migration of Taxi Stockholm's intranet and external web site from Spirello to EpiServer.. Integration with the client's Unix based booking system.. </p>
+                    <p><strong>Skills:</strong> Asp.Net, C#, EPiServer 4, SQL Server</p>
+                </article>
+                
+                
+                <article id="projects-03-siemens-medical" data-section="Siemens Medical">
+                    <header>
+                        <h3>Siemens Medical</h3>
+                        <p><strong>Roles:</strong> Web Developer</p>
+                        <p><time>2000-01&ndash;2001-01</time></p>
+                    </header>
+                    <p>QA and supporting colleges during development and maintenance of Siemens Medical's intranet "EMPower".. </p>
+                    <p><strong>Skills:</strong> Visual Basic 6, COM, ASP, JavaScript, XML, XSLT, CSS, HTML, SQL Server</p>
+                </article>
+                
+                
+                <article id="projects-02-hewlett-packard-sweden" data-section="Hewlett Packard Sweden">
+                    <header>
+                        <h3>Hewlett Packard Sweden</h3>
+                        <p><strong>Roles:</strong> Web Developer</p>
+                        <p><time>1999-09&ndash;2005-03</time></p>
+                    </header>
+                    <p>Requirements analysis, use case design, system design and development of a web based admininstration interface for information about and registrations for customer events for HP EMEA.. Requirements analysis, design and development of a web based administration interface for HP's scandinavian products database.. Development of templates for the client's EpiServer based intranet.. Maintenance and further development of www.hp.se.. </p>
+                    <p><strong>Skills:</strong> C#, Asp.Net, T-SQL, SQL Server, IIS, EPiServer, XML, XSLT, ASP, JavaScript, VBScript, HTML, CSS</p>
+                </article>
+                
+                
+                <article id="projects-01-loostrom-och-gelin-ab" data-section="Looström & Gelin AB">
+                    <header>
+                        <h3>Looström & Gelin AB</h3>
+                        <p><strong>Roles:</strong> Programmer</p>
+                        <p><time>1998-10&ndash;1999-07</time></p>
+                    </header>
+                    <p>Designed and developed a document management system based on Visual Basic 5.. Assisted in developing the company web site.. </p>
+                    <p><strong>Skills:</strong> Visual Basic 5, COM, ASP</p>
+                </article>
+                
+            </section>
+        </main>
+        <aside role="complementary">
+            <section id="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li><strong>Swedish:</strong> Native</li>
+                
+                    <li><strong>English:</strong> Fluent (IELTS overall score 8.5)</li>
+                </ul>
+            </section>
+            <section id="certifications">
+                <h2>Certifications</h2>
+                <ul>
+                    <li><strong>Microsoft Certified: Azure Developer Associate:</strong> Microsoft (<date>2021-06-24</date>)</li>
+                
+                    <li><strong>MCSA: Web Applications - Certified 2016:</strong> Microsoft (<date>2016-09-26</date>)</li>
+                </ul>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>KomVux Lidingö:</strong> Municipal adult education (<time>1995 &dash; 1997</time>)</li>
+                
+                    <li><strong>Kulturama:</strong> Music (<time>1992 &dash; 1993</time>)</li>
+                </ul>
+            </section>
+            <section id="recommendations">
+                <h2>Recommendations</h2>
+                
+                <blockquote class="">
+                    <p>Henrik was very humble on the interview, but he turned out to be a fantastic developer, among the best performing consultants I have encountered.  Contributed a lot of great ideas and knowledge to the team.  
 </p>
-                                <footer>- Niklas Hallenfur - Expicon AB</footer>
-                            </blockquote>
-                            
-                            <blockquote class="">
-                                <p>Henrik is, without a doubt, one of the best developers I have worked with during my years in the IT and Internet business.  He is fast, he understands customer needs and he contribute with great ideas when he think that systems or applications can be created in a better way than originally requested.  Henrik is a loyal and easy going person who I enjoyed working with a lot and who I recommend any company to hire!</p>
-                                <footer>- Jannice Dybedahl - Hewlett Packard Sweden AB</footer>
-                            </blockquote>
-                            
-                        </section>                        
-                        <section id="interests" class="section">
-                            <h2>Interests</h2>
-                            <ul>
-                                <li>Music</li>
-                            
-                                <li>Motorcycling</li>
-                            
-                                <li>Karate</li>
-                            
-                                <li>Travelling</li>
-                            
-                                <li>Good food</li>
-                            </ul>
-                        </section>
-                        <section id="fun-facts" class="no-print section">
-                            <h2>Fun Facts</h2>
-                            
-                            <article>
-                                <h6>I designed my own sailing dinghy when I was 13</h6>
-                                <p><style type="text/css">
+                    <footer>- Niklas Hallenfur - Expicon AB</footer>
+                </blockquote>
+                
+                <blockquote class="">
+                    <p>Henrik is, without a doubt, one of the best developers I have worked with during my years in the IT and Internet business.  He is fast, he understands customer needs and he contribute with great ideas when he think that systems or applications can be created in a better way than originally requested.  Henrik is a loyal and easy going person who I enjoyed working with a lot and who I recommend any company to hire!</p>
+                    <footer>- Jannice Dybedahl - Hewlett Packard Sweden AB</footer>
+                </blockquote>
+                
+            </section>                        
+            <section id="interests" class="hidden">
+                <h2>Interests</h2>
+                <ul>
+                    <li>Music</li>
+                
+                    <li>Motorcycling</li>
+                
+                    <li>Karate</li>
+                
+                    <li>Travelling</li>
+                
+                    <li>Good food</li>
+                </ul>
+            </section>
+            <section id="fun-facts" class="hidden">
+                <h2>Fun Facts</h2>
+                
+                <article>
+                    <h6>I designed my own sailing dinghy when I was 13</h6>
+                    <p><style type="text/css">
     #dinghy {
         display:none;
         width: 100%;
@@ -671,31 +666,27 @@
     <figcaption>That's me sailing the dinghy. Photo taken shortly after the dinosaurs went extinct.<br />(Click on the image to close it.)</figcaption>  
 </div>
 </p>
-                            </article>
-                            
-                        </section>
-                        <section id="all-roles" class="hidden section">
-                            <h2>Roles</h2> 
-                            <p>Backend Developer, DevOps, Fullstack Developer, IT Consultant, Lead Developer, PC Technician, Programmer, Self Employed, Senior Software Engineer, Shop Assistant, Software Engineer, Study Circle Leader, System Developer, TDD mentor, Web Developer</p>
-                        </section>
-                        <section id="all-skills" class="hidden section">
-                            <h2>Skills</h2> 
-                            <p>.Net 5-9, .Net Aspire, .Net Core, .Net Framework, AJAX, ASP, Active Directory, Asp.Net, Asp.Net Core, Asp.Net MVC, Asp.Net MVC 5, Asp.Net MVC4, Asp.Net Web Api, Asp.Net Web Forms, Azure, Azure App Services, Azure DevOps, BDD, Blazor, C#, COM, CQRS, CSS, CSS3, Continuous Integration, Docker, EPiServer, EPiServer 4, Entity Framework, EntityFramework 6, GitHub Actions, GroupWise Administrative Objects API, HTML, HTML5, IIS, Identity Management, Identity Server, JavaScript, Kafka, KnockoutJS, MSMQ, Microsoft Identity Integration Server, Microsoft Orleans, NHibernate, NInject, Novell C API, Novell eDirectory, Octopus Deploy, Oracle, PostgreSQL, React, Redux, SQL Server, SpecFlow, Specification By Example, Specification by Example, Spring.Net, T-SQL, TDD, Team Foundation Server, Team Foundation Server- XML, TeamCity, Test Driven Development, TypeScript, VB.Net, VBA, VBScript, Visual Basic 5, Visual Basic 6, WCF, WMI, WPF, WebForms, WebServices, WiX, WinForms, Windows Services, Winforms, XHTML, XML, XSLT, jQuery</p>
-                        </section>
-                        <section id="location" class="hidden section">
-                            <h2>Location</h2>
-                            <p>Lidingö, Stockholm, Sweden</p> 
-                            <h2>Birth date</h2>
-                            <p><date>1969-06-23</date></p>
-                        </section>
-                    </aside>
-                </div>
-            </div>
-        </div>
-        <footer role="contentinfo" class="section page-footer blue-grey darken-4">
-            <div class="container center-align">
-                <p class="white-text">&copy; 2025 Henrik Becker</p>
-            </div>
+                </article>
+                
+            </section>
+            <section id="all-roles" class="hidden">
+                <h2>Roles</h2> 
+                <p>Backend Developer, DevOps, Fullstack Developer, IT Consultant, Lead Developer, PC Technician, Programmer, Self Employed, Senior Software Engineer, Shop Assistant, Software Engineer, Study Circle Leader, System Developer, TDD mentor, Web Developer</p>
+            </section>
+            <section id="all-skills" class="hidden">
+                <h2>Skills</h2> 
+                <p>.Net 5-9, .Net Aspire, .Net Core, .Net Framework, AJAX, ASP, Active Directory, Asp.Net, Asp.Net Core, Asp.Net MVC, Asp.Net MVC 5, Asp.Net MVC4, Asp.Net Web Api, Asp.Net Web Forms, Azure, Azure App Services, Azure DevOps, BDD, Blazor, C#, COM, CQRS, CSS, CSS3, Continuous Integration, Docker, EPiServer, EPiServer 4, Entity Framework, EntityFramework 6, GitHub Actions, GroupWise Administrative Objects API, HTML, HTML5, IIS, Identity Management, Identity Server, JavaScript, Kafka, KnockoutJS, MSMQ, Microsoft Identity Integration Server, Microsoft Orleans, NHibernate, NInject, Novell C API, Novell eDirectory, Octopus Deploy, Oracle, PostgreSQL, React, Redux, SQL Server, SpecFlow, Specification By Example, Specification by Example, Spring.Net, T-SQL, TDD, Team Foundation Server, Team Foundation Server- XML, TeamCity, Test Driven Development, TypeScript, VB.Net, VBA, VBScript, Visual Basic 5, Visual Basic 6, WCF, WMI, WPF, WebForms, WebServices, WiX, WinForms, Windows Services, Winforms, XHTML, XML, XSLT, jQuery</p>
+            </section>
+            <section id="location" class="hidden">
+                <h2>Location</h2>
+                <p>Lidingö, Stockholm, Sweden</p> 
+                <h2>Birth date</h2>
+                <p><date>1969-06-23</date></p>
+            </section>
+        </aside>
+
+        <footer role="contentinfo">
+            <p>&copy; 2025 Henrik Becker</p>
         </footer>
     </body> 
 </html> 
