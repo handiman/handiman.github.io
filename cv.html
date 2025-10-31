@@ -103,7 +103,7 @@ title: Henrik Becker - Semantic CV
                         <section id="work-experience" class="section">
                             <h2>Work Experience</h2>
                             {% for xp in site.employment reversed %}{% assign org = xp['organization'] %}
-                            <article id="{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}">
+                            <article id="{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}" data-section="{{ org['name'] }}">
                                 <header>
                                     <h3>{{ org['name'] }}</h3>
                                     {% if xp.roles %}<p><strong>Roles:</strong> {% for role in xp.roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
@@ -118,7 +118,7 @@ title: Henrik Becker - Semantic CV
                             <h2>All Projects</h2>
                             {% for xp in site.projects reversed %}
                             {% capture projectName %}{% if xp.name %}{{ xp.name }}{% else %}{{xp.title}}{% endif %}{% endcapture %}
-                            <article id="{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}">
+                            <article id="{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}" data-section="{{ projectName }}">
                                 <header>
                                     <h3>{{ projectName }}</h3>
                                     {% if xp.roles %}<p><strong>Roles:</strong> {% for role in xp.roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
