@@ -11,10 +11,18 @@ title: Henrik Becker - Semantic CV
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.19/dist/collection/cv-chat.css" />
+        <script type="module">
+            import { defineCustomElements } from 'https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.19/dist/esm/loader.js';
+            defineCustomElements();
+        </script>        
         <style>
             main { max-width: 1040px; margin: 0 auto; } 
             .hidden, .print { display: none; }
             blockquote{ border-left-color: #90a4ae; }
+            cv-chat { 
+                margin-top: 0;
+            }
             @media print { 
                 .no-print { display: none; }
                 .print { display: '' }
@@ -24,9 +32,7 @@ title: Henrik Becker - Semantic CV
     <body>
         <nav class="no-print nav-wrapper blue-grey darken-3" aria-label="Main navigation">
             <div class="container">
-                <ul class="right">
-                    <li><a href="{{ '/assets/henrik-becker.docx' | relative_url }}" title="Word"><i class="fas fa-file-word"></i></a></li>
-                </ul>
+                <cv-chat class="right" collection="henrik-becker" answer-position="below"></cv-chat>
             </div>
         </nav>
 
