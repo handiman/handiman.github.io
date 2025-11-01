@@ -15,6 +15,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-readme-index
   - jekyll-sitemap
+  - jekyll-seo-tag
 remote_theme: handiman/jekyll-theme-gnap  
 
 exclude: [ 

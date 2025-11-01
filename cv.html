@@ -2,18 +2,22 @@
 layout: null
 title: Henrik Becker - Semantic CV
 ---
-<!DOCTYPE html>{% assign model = site.data['semantic-model'] %}{% assign profile = site.data['profile'] %}{% capture data_source %}{{ page.url | absolute_url }}{% endcapture %}
+<!DOCTYPE html>{% assign model = site.data['semantic-model'] %}{% assign profile = site.data['profile'] %}{% capture data_source %}{{ page.url | absolute_url }}{% endcapture %}{% assign company = site.data['organization'] %}
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <title>Henrik Becker &ndash; Semantic CV</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% seo %}
+        {% for format in site.data.formats %}<link rel="alternate" type="{{ format.mime_type }}" title="My resumé in {{ format.name }} format" href="{{ format.url | absolute_url }}" />
+        {% endfor %}
+        <link rel="apple-touch-icon" href="{{ '/favicon.png' | absolute_url }}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.22/dist/collection/cv-chat.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.23/dist/collection/cv-chat.css" />
         <link rel="stylesheet" href="{{ '/assets/cv.css' | relative_url }}" />
         <script type="module">
-            import { defineCustomElements } from 'https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.22/dist/esm/loader.js';
+            import { defineCustomElements } from 'https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.23/dist/esm/loader.js';
             defineCustomElements();
         </script>        
     </head>
@@ -30,7 +34,7 @@ title: Henrik Becker - Semantic CV
         </header>
         
         <main>
-            <section id="introduction">
+            <section id="introduction" data-source="{{ page.url | absolute_url }}#introduction">
                 <h2>Introduction</h2>
                 <p>
                     I started working with software development in 1999 during the &quot;IT-boom&quot; in Stockholm.
@@ -42,17 +46,17 @@ title: Henrik Becker - Semantic CV
                     He builds systems that talk, not just list — blending technical mastery with philosophical clarity.
                 </p>            
             </section>
-            <section id="featured-projects">
+            <section id="featured-projects" data-source="{{ page.url | absolute_url }}#featured-projects">
                 <h2>Featured Projects</h2>
                 {% for featuredProject in site.data.profile.featuredProjects %}
-                {% assign projectId = '/projects/' | append: featuredProject %}
-                {% assign projectSlug = 'featured-project-' | append: featuredProject %}
-                {% assign xp = site.projects | where: "id", projectId | first %}
-                {% capture projectName %}{% if xp.name %}{{ xp.name }}{% else %}{{xp.title}}{% endif %}{% endcapture %}
+                {% assign xpId = '/projects/' | append: featuredProject %}
+                {% assign xpSlug = 'featured-project-' | append: featuredProject %}
+                {% assign xp = site.projects | where: "id", xpId | first %}
+                {% capture xpName %}{% if xp.name %}{{ xp.name }}{% else %}{{xp.title}}{% endif %}{% endcapture %}
                 {% if xp %}
-                <article id="{{ projectSlug }}" data-section="{{ projectName }}">
+                <article id="{{ xpSlug }}" data-section="{{ xpName }}" data-source="{{ page.url | absolute_url }}#{{ xpSlug }}">
                     <header>
-                        <h3>{{ projectName }}</h3>
+                        <h3>{{ xpName }}</h3>
                         {% if xp.roles %}<p><strong>Roles:</strong> {% for role in xp.roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
                         <p><time>{{ xp.start_date | date: '%Y-%m'}}&ndash;{{ xp.end_date | date: '%Y-%m' }}</time></p>
                     </header>
@@ -62,10 +66,10 @@ title: Henrik Becker - Semantic CV
                 {% endif %}
                 {% endfor %}
             </section>
-            <section id="work-experience>
+            <section id="work-experience">
                 <h2>Work Experience</h2>
-                {% for xp in site.employment reversed %}{% assign org = xp['organization'] %}
-                <article id="{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}" data-section="{{ org['name'] }}">
+                {% for xp in site.employment reversed %}{% assign org = xp['organization'] %}{% capture xpSlug %}{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}{% endcapture %}
+                <article id="{{ xpSlug }}" data-section="{{ org['name'] }}" data-source="{{ page.url | absolute_url }}#{{ xpSlug }}">
                     <header>
                         <h3>{{ org['name'] }}</h3>
                         {% if xp.roles %}<p><strong>Roles:</strong> {% for role in xp.roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
@@ -79,10 +83,11 @@ title: Henrik Becker - Semantic CV
             <section id="all-projects">
                 <h2>All Projects</h2>
                 {% for xp in site.projects reversed %}
-                {% capture projectName %}{% if xp.name %}{{ xp.name }}{% else %}{{xp.title}}{% endif %}{% endcapture %}
-                <article id="{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}" data-section="{{ projectName }}">
+                {% capture xpName %}{% if xp.name %}{{ xp.name }}{% else %}{{xp.title}}{% endif %}{% endcapture %}
+                {% capture xpSlug %}{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}{% endcapture %}
+                <article id="{{ xpSlug }}" data-section="{{ xpName }}" data-source="{{ page.url | absolute_url }}#{{ xpSlug }}">
                     <header>
-                        <h3>{{ projectName }}</h3>
+                        <h3>{{ xpName }}</h3>
                         {% if xp.roles %}<p><strong>Roles:</strong> {% for role in xp.roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
                         <p><time>{{ xp.start_date | date: '%Y-%m'}}&ndash;{{ xp.end_date | date: '%Y-%m' }}</time></p>
                     </header>
@@ -105,25 +110,31 @@ title: Henrik Becker - Semantic CV
                     Let’s build something that matters — and build it well.
                 </p>
             </section>
-            <section id="languages">
+            <section id="languages" data-source="{{ page.url | absolute_url }}#languages">
                 <h2>Languages</h2>
                 <ul>{% for language in profile['languages'] %}
                     <li><strong>{{ language.name }}:</strong> {{ language.proficiency }}</li>
                 {% endfor %}</ul>
             </section>
-            <section id="certifications">
+            <section id="certifications" data-source="{{ page.url | absolute_url }}#certifications">
                 <h2>Certifications</h2>
                 <ul>{% for cert in site.certs %}
                     <li><strong>{{ cert.title }}:</strong> {% if cert.issuer %}{{ cert.issuer }} {% endif %}{% if cert.achievement_date %}(<date>{{ cert.achievement_date }}</date>){% endif %}</li>
                 {% endfor %}</ul>
             </section>
-            <section id="education">
+            <section id="education" data-source="{{ page.url | absolute_url }}#education">
                 <h2>Education</h2>
                 <ul>{% for education in site.data.profile.education %}
                     <li><strong>{{ education.school }}:</strong> {{ education.description }} (<time>{% if education.start_year %}{{ education.start_year }}{% endif %} &dash; {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}</time>)</li>
                 {% endfor %}</ul>
             </section>
-            <section id="recommendations">
+            <section id="social" data-source="{{ page.url | absolute_url }}#education">
+                <h2>Social</h2>
+                <ul>{% for social in site.data['profile']['same_as'] %}
+                    <li title="{{ social.network }}"><a href="{{ social.url }}"><i class="fab fa-{{ social.network | downcase }}"></i> {{ social.network }}</a></li>
+                {% endfor %}</ul>
+            </section>
+            <section id="recommendations" data-source="{{ page.url | absolute_url }}#recommendations">
                 <h2>Recommendations</h2>
                 {% for recommendation in site.data['profile']['recommendations'] %}
                 <blockquote class="">
@@ -141,9 +152,9 @@ title: Henrik Becker - Semantic CV
             <section id="fun-facts" class="hidden">
                 <h2>Fun Facts</h2>
                 {% for fact in site.fun_facts %}
-                <article>
+                <article{% if fact.lang %} data-language="{{fact.lang}}"{% endif %}>
                     <h6>{{ fact.title }}</h6>
-                    <p>{{ fact.content }}</p>
+                    {% if fact.description %}<p>{{ fact.description }}</p>{% else %}{{ fact.content }}{% endif %}
                 </article>
                 {% endfor %}
             </section>
@@ -184,7 +195,28 @@ title: Henrik Becker - Semantic CV
         </aside>
 
         <footer role="contentinfo">
-            <p>&copy; {{ site.time | date: '%Y' }} {{ site.data['person']['name'] }}</p>
+            <div id="download" data-section="CV downloads" data-source="{{ page.url | absolute_url }}#download">
+                <h5>My CV is also available as</h5> 
+                <ul>{% for format in site.data.formats %}
+                    <li><a href="{{ format.url | absolute_url }}" title="My CV in {{ format.name }} format">{{ format.name }}</a></li>{% endfor %}
+                </ul>
+            </div>
+            <div id="company-info" data-section="Company information" data-source="{{ page.url | absolute_url }}#company-info">
+                <h5>{{ company.name }}</h5>
+                <div>Org.nr: 559120-2147</div>
+                <div>VAT: {{ company.vatId }}</div>
+                <div>Address: 
+                    <address>
+                    {{ company.address.streetAddress }}<br />
+                    {{ company.address.postalCode }} {{ company.address.addressLocality }}<br />
+                    {{ company.address.addressCountry }}
+                    </address>
+                </div>
+            </div>
+            <div class="no-print">&copy; {{ site.time | date: '%Y' }} {{ site.data['person']['name'] }}, {{ company.name }}. Thanks for stopping by!
+                {% for social in site.data['profile']['same_as'] %}
+                <a href="{{ social.url }}" title="{{ social.network }}"><i class="fab fa-{{ social.network | downcase }}"></i></a>{% endfor %}
+            </div>
         </footer>
     </body> 
 </html> 
