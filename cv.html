@@ -118,10 +118,7 @@ title: Henrik Becker - CV
             </section>
             <section id="recommendations" data-source="{{ page.url | absolute_url }}#recommendations">
                 <h2>Recommendations</h2>{% for recommendation in site.data['profile']['recommendations'] %}
-                <blockquote class="">
-                    <p>{{ recommendation.text }}</p>
-                    <footer>- {{ recommendation.name }}</footer>
-                </blockquote>{% endfor %}
+                <blockquote><p>{{ recommendation.text }}</p><footer>- {{ recommendation.name }}</footer></blockquote>{% endfor %}
             </section>                        
             <section id="interests" class="hidden">
                 <h2>Interests</h2>
