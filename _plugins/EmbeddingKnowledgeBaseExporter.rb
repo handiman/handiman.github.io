@@ -56,6 +56,10 @@ module Jekyll
         end
       end
 
+      @site.data['profile']['categorizedSkills'].each do | skillCategory |
+        all_skills.merge(skillCategory.skills)
+      end
+
       all_skills.uniq.sort.to_a
     end
   end

@@ -1,6 +1,6 @@
 ---
 layout: null
-title: Henrik Becker - Semantic CV
+title: Henrik Becker - CV
 ---
 <!DOCTYPE html>{% assign model = site.data['semantic-model'] %}{% assign profile = site.data['profile'] %}{% capture data_source %}{{ page.url | absolute_url }}{% endcapture %}{% assign company = site.data['organization'] %}
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -47,14 +47,12 @@ title: Henrik Becker - Semantic CV
                 </p>            
             </section>
             <section id="featured-projects" data-source="{{ page.url | absolute_url }}#featured-projects">
-                <h2>Featured Projects</h2>
-                {% for featuredProject in site.data.profile.featuredProjects %}
+                <h2>Featured Projects</h2>{% for featuredProject in site.data.profile.featuredProjects %}
                 {% assign xpId = '/projects/' | append: featuredProject %}
                 {% assign xpSlug = 'featured-project-' | append: featuredProject %}
                 {% assign xp = site.projects | where: "id", xpId | first %}
                 {% capture xpName %}{% if xp.name %}{{ xp.name }}{% else %}{{xp.title}}{% endif %}{% endcapture %}
-                {% if xp %}
-                <article id="{{ xpSlug }}" data-section="{{ xpName }}" data-source="{{ page.url | absolute_url }}#{{ xpSlug }}">
+                {% if xp %}<article id="{{ xpSlug }}" data-section="{{ xpName }}" data-source="{{ page.url | absolute_url }}#{{ xpSlug }}">
                     <header>
                         <h3>{{ xpName }}</h3>
                         {% if xp.roles %}<p><strong>Roles:</strong> {% for role in xp.roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
@@ -62,13 +60,10 @@ title: Henrik Becker - Semantic CV
                     </header>
                     <p>{% if xp.summary %}{% for summary in xp.summary %}{{ summary | strip }}. {% endfor %}{% else %}{{ xp.excerpt | strip }}{% endif %}</p>
                     {% if xp.skills %}<p><strong>Skills:</strong> {% for skill in xp.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
-                </article>
-                {% endif %}
-                {% endfor %}
+                </article>{% endif %}{% endfor %}
             </section>
             <section id="work-experience">
-                <h2>Work Experience</h2>
-                {% for xp in site.employment reversed %}{% assign org = xp['organization'] %}{% capture xpSlug %}{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}{% endcapture %}
+                <h2>Work Experience</h2>{% for xp in site.employment reversed %}{% assign org = xp['organization'] %}{% capture xpSlug %}{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}{% endcapture %}
                 <article id="{{ xpSlug }}" data-section="{{ org['name'] }}" data-source="{{ page.url | absolute_url }}#{{ xpSlug }}">
                     <header>
                         <h3>{{ org['name'] }}</h3>
@@ -77,14 +72,10 @@ title: Henrik Becker - Semantic CV
                     </header>
                     {% if forloop.first %}<p>{{ xp.excerpt | strip }}</p>{% endif %}
                     {% if xp.skills %}<p><strong>Skills:</strong> {% for skill in xp.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
-                </article>
-                {% endfor %}
+                </article>{% endfor %}
             </section>
             <section id="all-projects">
-                <h2>All Projects</h2>
-                {% for xp in site.projects reversed %}
-                {% capture xpName %}{% if xp.name %}{{ xp.name }}{% else %}{{xp.title}}{% endif %}{% endcapture %}
-                {% capture xpSlug %}{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}{% endcapture %}
+                <h2>All Projects</h2>{% for xp in site.projects reversed %}{% capture xpName %}{% if xp.name %}{{ xp.name }}{% else %}{{xp.title}}{% endif %}{% endcapture %}{% capture xpSlug %}{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}{% endcapture %}
                 <article id="{{ xpSlug }}" data-section="{{ xpName }}" data-source="{{ page.url | absolute_url }}#{{ xpSlug }}">
                     <header>
                         <h3>{{ xpName }}</h3>
@@ -93,8 +84,7 @@ title: Henrik Becker - Semantic CV
                     </header>
                     <p>{% if xp.summary %}{% for summary in xp.summary %}{{ summary | strip }}. {% endfor %}{% else %}{{ xp.excerpt | strip }}{% endif %}</p>
                     {% if xp.skills %}<p><strong>Skills:</strong> {% for skill in xp.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
-                </article>
-                {% endfor %}
+                </article>{% endfor %}
             </section>
         </main>
         <aside role="complementary">
@@ -112,51 +102,37 @@ title: Henrik Becker - Semantic CV
             </section>
             <section id="languages" data-source="{{ page.url | absolute_url }}#languages">
                 <h2>Languages</h2>
-                <ul>{% for language in profile['languages'] %}
-                    <li><strong>{{ language.name }}:</strong> {{ language.proficiency }}</li>
-                {% endfor %}</ul>
+                <ul>{% for language in profile['languages'] %}<li><strong>{{ language.name }}:</strong> {{ language.proficiency }}</li>{% endfor %}</ul>
             </section>
             <section id="certifications" data-source="{{ page.url | absolute_url }}#certifications">
                 <h2>Certifications</h2>
-                <ul>{% for cert in site.certs %}
-                    <li><strong>{{ cert.title }}:</strong> {% if cert.issuer %}{{ cert.issuer }} {% endif %}{% if cert.achievement_date %}(<date>{{ cert.achievement_date }}</date>){% endif %}</li>
-                {% endfor %}</ul>
+                <ul>{% for cert in site.certs %}<li><strong>{{ cert.title }}:</strong> {% if cert.issuer %}{{ cert.issuer }} {% endif %}{% if cert.achievement_date %}(<date>{{ cert.achievement_date }}</date>){% endif %}</li>{% endfor %}</ul>
             </section>
             <section id="education" data-source="{{ page.url | absolute_url }}#education">
                 <h2>Education</h2>
-                <ul>{% for education in site.data.profile.education %}
-                    <li><strong>{{ education.school }}:</strong> {{ education.description }} (<time>{% if education.start_year %}{{ education.start_year }}{% endif %} &dash; {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}</time>)</li>
-                {% endfor %}</ul>
+                <ul>{% for education in site.data.profile.education %}<li><strong>{{ education.school }}:</strong> {{ education.description }} (<time>{% if education.start_year %}{{ education.start_year }}{% endif %} &dash; {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}</time>)</li>{% endfor %}</ul>
             </section>
             <section id="social" data-source="{{ page.url | absolute_url }}#education">
                 <h2>Social</h2>
-                <ul>{% for social in site.data['profile']['same_as'] %}
-                    <li title="{{ social.network }}"><a href="{{ social.url }}"><i class="fab fa-{{ social.network | downcase }}"></i> {{ social.network }}</a></li>
-                {% endfor %}</ul>
+                <ul>{% for social in site.data['profile']['same_as'] %}<li title="{{ social.network }}"><a href="{{ social.url }}"><i class="fab fa-{{ social.network | downcase }}"></i> {{ social.network }}</a></li>{% endfor %}</ul>
             </section>
             <section id="recommendations" data-source="{{ page.url | absolute_url }}#recommendations">
-                <h2>Recommendations</h2>
-                {% for recommendation in site.data['profile']['recommendations'] %}
+                <h2>Recommendations</h2>{% for recommendation in site.data['profile']['recommendations'] %}
                 <blockquote class="">
                     <p>{{ recommendation.text }}</p>
                     <footer>- {{ recommendation.name }}</footer>
-                </blockquote>
-                {% endfor %}
+                </blockquote>{% endfor %}
             </section>                        
             <section id="interests" class="hidden">
                 <h2>Interests</h2>
-                <ul>{% for interest in site.data['profile']['interests'] %}
-                    <li>{{ interest.name }}</li>
-                {% endfor %}</ul>
+                <ul>{% for interest in site.data['profile']['interests'] %}<li>{{ interest.name }}</li>{% endfor %}</ul>
             </section>
             <section id="fun-facts" class="hidden">
-                <h2>Fun Facts</h2>
-                {% for fact in site.fun_facts %}
+                <h2>Fun Facts</h2>{% for fact in site.fun_facts %}
                 <article{% if fact.lang %} data-language="{{fact.lang}}"{% endif %}>
                     <h6>{{ fact.title }}</h6>
                     {% if fact.description %}<p>{{ fact.description }}</p>{% else %}{{ fact.content }}{% endif %}
-                </article>
-                {% endfor %}
+                </article>{% endfor %}
             </section>
             <section id="all-roles" class="hidden">
                 <h2>Roles</h2> 
@@ -165,6 +141,13 @@ title: Henrik Becker - Semantic CV
             <section id="all-skills" class="hidden">
                 <h2>Skills</h2> 
                 <p>{{ site.data['semantic-model']['summary']['skills'] | join: ", " }}</p>
+            </section>
+            <section id="skills-by-category" class="hidden">
+                <h2>Skills by Category</h2>{% for skillCategory in site.data['profile']['categorizedSkills'] %}{% capture skillCategorySlug %}{{ skillCategory.name | replace: '/', '-' | replace: ' ', '-' | replace: '--', '' | downcase }}{% endcapture %}
+                <article data-section="Skills by Category - {{ skillCategory.name }}" data-level="{{ skillCategory.level }}" data-source="{{ page.url | absolute_url }}#{{ skillCategorySlug }}">
+                    <h3>{{ skillCategory.name }}</h3>
+                    <ul>{% for skill in skillCategory.skills %}<li>{{ skill }}</li>{% endfor %}</ul>
+                </article>{% endfor %}
             </section>
             <section id="location" class="hidden">
                 <h2>Location</h2>
@@ -175,31 +158,23 @@ title: Henrik Becker - Semantic CV
             {% for zingerCategory in site.data['zingers'] %}{% capture zingerCategoryId %}{{ zingerCategory.type | downcase | replace: '&amp;', ' ' | replace: '   ', '-' | replace: ' ', '-' }}{% endcapture %}
             <section id="{{ zingerCategoryId }}" class="hidden">
                 <h2>{{ zingerCategory.type }}</h2>
-                <ul>{% for zinger in zingerCategory.zingers %}
-                    <li>{{ zinger }}</li>{% endfor %}
-                </ul>
+                <ul>{% for zinger in zingerCategory.zingers %}<li>{{ zinger }}</li>{% endfor %}</ul>
             </section>
             {% endfor %}
             <section id="taglines" class="hidden">
                 <h2>Taglines</h2>
-                <ul>{% for tagline in site.data['taglines'] %}
-                    <li>{{ tagline.tagline }}</li>{% endfor %}
-                </ul>
+                <ul>{% for tagline in site.data['taglines'] %}<li>{{ tagline.tagline }}</li>{% endfor %}</ul>
             </section>
             <section id="unique-selling-points" class="hidden">
                 <h2>Unique Selling Points</h2>
-                <ul>{% for usp in site.usp %}
-                    <li>{{ usp.excerpt | replace: '<p>', '' | replace: '</p>', '' | strip }}</li>{% endfor %}
-                </ul>
+                <ul>{% for usp in site.usp %}<li>{{ usp.excerpt | replace: '<p>', '' | replace: '</p>', '' | strip }}</li>{% endfor %}</ul>
             </section>
         </aside>
 
         <footer role="contentinfo">
             <div id="download" data-section="CV downloads" data-source="{{ page.url | absolute_url }}#download">
                 <h5>My CV is also available as</h5> 
-                <ul>{% for format in site.data.formats %}
-                    <li><a href="{{ format.url | absolute_url }}" title="My CV in {{ format.name }} format">{{ format.name }}</a></li>{% endfor %}
-                </ul>
+                <ul>{% for format in site.data.formats %}<li><a href="{{ format.url | absolute_url }}" title="My CV in {{ format.name }} format">{{ format.name }}</a></li>{% endfor %}</ul>
             </div>
             <div id="company-info" data-section="Company information" data-source="{{ page.url | absolute_url }}#company-info">
                 <h5>{{ company.name }}</h5>
@@ -214,8 +189,7 @@ title: Henrik Becker - Semantic CV
                 </div>
             </div>
             <div class="no-print">&copy; {{ site.time | date: '%Y' }} {{ site.data['person']['name'] }}, {{ company.name }}. Thanks for stopping by!
-                {% for social in site.data['profile']['same_as'] %}
-                <a href="{{ social.url }}" title="{{ social.network }}"><i class="fab fa-{{ social.network | downcase }}"></i></a>{% endfor %}
+                {% for social in site.data['profile']['same_as'] %}<a href="{{ social.url }}" title="{{ social.network }}"><i class="fab fa-{{ social.network | downcase }}"></i></a>{% endfor %}
             </div>
         </footer>
     </body> 

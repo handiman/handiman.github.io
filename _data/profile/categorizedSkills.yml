@@ -2,8 +2,8 @@
   level: Advanced
   skills: 
    - SOLID
-   - Microservices
    - Domain Driven Design
+   - Microservices
    - Design Patterns
 - name: Backend Development
   level: Expert
@@ -13,6 +13,7 @@
    - Asp.Net MVC
    - .Net
    - .Net Core
+   - .Net Framework
    - C#
 - name: Frontend Development 
   level: Advanced
@@ -20,6 +21,7 @@
    - TypeScript
    - JavaScript
    - CSS3
+   - Stencil
    - React
    - KnockoutJS
    - jQuery
@@ -37,15 +39,16 @@
 - name: Agile Methodologies
   level: Advanced
   skills:
+   - Certified Scrum Master   
    - Continuous Integration
    - Continuous Deployment
    - Test Driven Development
    - Specification by Example
    - SpecFlow
-   - Certified Scrum Master   
 - name: CI/CD
   level: Advanced
   skills:
-   - Azure DevOps
+   - GitHub Actions
    - Octopus Deploy
+   - Azure DevOps
    - Team City

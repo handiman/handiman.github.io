@@ -1,16 +1,20 @@
+- type:  Personality &amp; Attitude Zingers
+  zingers: 
+    - Authentic Intelligence since 1969.
+    - Hire me once. Remember me forever.
+    - I bring the spark, not just the skills.
+    - I’m the kind of person who turns “why?” into “why not?”
+    - I’m like a Swiss Army Knife — but with a sense of humor.
+
 - type: Tech Zingers
   zingers: 
     - I deploy faster than you can say “merge conflict.”
+    - I do not write clever code. I write code that survives Monday.
     - I refactor like it's an Olympic sport.
+    - I fight entropy with elegance.
     - My code doesn’t just run — it performs.
     - I don’t push commits — I push boundaries.
     - I’m not just a problem solver — I’m the problem for your competitors.
-
-- type:  Personality &amp; Attitude Zingers
-  zingers: 
-    - I’m like a Swiss Army Knife — but with a sense of humor.
-    - I’m the kind of person who turns “why?” into “why not?”
-    - I bring the spark, not just the skills.
 
 - type: Creative Zingers
   zingers:
