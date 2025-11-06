@@ -1,0 +1,112 @@
+:root {
+  --eucalyptus-fog: #C5D1C6;
+  --misty-olive: #BFCAB3;
+  --dusty-fern:#A9B9A2;
+  --pale-moss:#E3EdE5;
+
+
+  /* 🌱 Primär bakgrund för sidebar */
+  --color-bg-sidebar: #C5D1C6; /* Eucalyptus Fog */
+
+  /* 🎨 Primära accentfärger – harmoniska gröna/grå toner */
+  --color-accent-green: #8DA290;     /* Dämpad grön för rubriker, ikoner */
+  --color-accent-soft: #DDE5DC;      /* Ljusare grön för sektioner eller hover */
+
+  /* 🌫 Neutrala färger för text och linjer */
+  --color-text-main: #2C3E50;        /* Mörk text – rubriker, innehåll */
+  --color-text-muted: #6C757D;       /* Sekundär text – datum, plats */
+  --color-border-soft: #BFC8C2;      /* Ljus linje mellan sektioner */
+
+  /* 📄 Bakgrundsfärger för huvudinnehåll */
+  --color-bg-main: #F9FAFB;          /* Allmän bakgrund – högerkolumn */
+  --color-bg-highlight: #EEF2EF;     /* Block eller kompetensfält */
+
+  /* 🟢 Kompetensindikatorer – subtil grönskala */
+  --color-skill-low: #D0DDD4;
+  --color-skill-medium: #A3B8A7;
+  --color-skill-high: #6B8F78;
+
+  /* 🔗 Interaktiva element (om digitalt) */
+  --color-link: #6B8F78;
+  --color-link-hover: #4E6F5A;
+}
+
+body {
+    color: var(--color-text-main);
+    background-color: var(--color-bg-main);
+}
+
+main {
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+
+h2 {
+    color: var(--color-accent-green);
+}
+
+h3 {
+    color: var(--color-text-main);
+}
+
+p, aside, aside li, aside li a {
+    color: var(--color-text-muted);
+}
+
+a {
+    color: var(--color-link);
+}
+a:hover {
+    color: var(--color-link-hover);
+}
+
+aside a, aside a:hover {
+    color: var(--color-text-main);
+}
+
+aside {
+    background-color: inherit;
+}
+
+.layout > header {
+    background-color: var(--color-bg-sidebar);
+}
+
+blockquote footer {
+    border:none;
+}
+
+
+footer {
+    border-top: 1px solid var(--color-accent-soft);
+}
+
+article {
+    margin-bottom: 2rem;
+    &:last-child {
+        margin-bottom: 0;
+
+    }
+
+}
+
+
+/* === Responsive Layout === */
+@media (min-width: 768px) {
+    footer {
+        background-color: white;
+    }
+}
+
+/* === Large Screen === */
+@media (min-width: 1200px) {
+}
+
+
+@media print {
+    body {
+        color: black;
+        background-color: white;
+    }    
+}
