@@ -1,0 +1,60 @@
+/* === Layout === */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+aside, .layout > header, main, footer {
+  padding: 3rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "aside"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+}
+
+
+/* === Aside === */
+aside {
+  grid-area: aside;
+}
+
+/* === Main Content === */
+main {
+  grid-area: main;
+}
+
+/* === Footer: Full width, grid content aligned under main === */
+footer {
+  display: grid;
+  grid-area: footer;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+/* === Responsive Layout === */
+@media (min-width: 768px) {
+  .layout {
+    grid-template-areas:
+      "header ."
+      "aside main"
+      "aside footer";
+    grid-template-columns: 1fr 2fr;
+  }
+
+}
+
+/* === Large Screen === */
+@media (min-width: 1200px) {
+  header {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .layout {
+    grid-template-columns: 1fr 2fr;
+  }
+}

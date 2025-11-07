@@ -1,0 +1,37 @@
+---
+---
+@import "colors";
+@import "common";
+@import "grid";
+
+aside {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+cv-chat {
+  margin-top: 3rem;
+}
+
+.initials, .photo {
+  background-color: var(--color-accent-green);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
