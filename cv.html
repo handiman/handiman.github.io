@@ -42,7 +42,7 @@ title: Henrik Becker - CV
                     <h2>Social</h2>
                     <ul>{% for social in site.data['profile']['same_as'] %}<li title="{{ social.network }}"><a href="{{ social.url }}"><i class="fab fa-{{ social.network | downcase }}"></i> {{ social.network }}</a></li>{% endfor %}</ul>
                 </section>
-                <cv-chat></cv-chat>
+                <cv-chat collection="henrik" answer-position="below"></cv-chat>
             </aside>
             <header>
                 <div>
