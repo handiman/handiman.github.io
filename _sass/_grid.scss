@@ -1,26 +1,53 @@
-/* === Layout === */
-body {
-  margin: 0;
-  padding: 0;
-}
+/* === Page layout === */
+.page {
+  .layout {
+     display: grid;
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+  }
 
-aside, .layout > header, main, footer {
-  padding: 3rem;
-}
+  aside, .layout > header, main, footer {
+    padding: 3rem;
+  }
 
-.layout {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "aside"
-    "main"
-    "footer";
-  grid-template-columns: 1fr;
-}
+  #skills-by-category > div {
+    display:grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
 
-#skills-by-category > div {
-  display:grid;
-  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  /* === Responsive Layout === */
+  @media (min-width: 768px) {
+    .layout {
+      grid-template-areas:
+        "header main"
+        "aside main"
+        "aside footer";
+      grid-template-columns: 1fr 2fr;
+    }
+    #skills-by-category > div {
+      display:grid;
+    }
+  }
+
+  /* === Large Screen === */
+  @media (min-width: 1200px) {
+    header {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .layout {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    #skills-by-category > div {
+      display:grid;
+      grid-template-columns: repeat(3, minmax(150px, 1fr));
+    }
+  }
 }
 
 /* === Aside === */
@@ -40,32 +67,3 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-/* === Responsive Layout === */
-@media (min-width: 768px) {
-  .layout {
-    grid-template-areas:
-      "header main"
-      "aside main"
-      "aside footer";
-    grid-template-columns: 1fr 2fr;
-  }
-  #skills-by-category > div {
-    display:grid;
-  }
-}
-
-/* === Large Screen === */
-@media (min-width: 1200px) {
-  header {
-    grid-template-columns: 1fr 2fr;
-  }
-
-  .layout {
-    grid-template-columns: 1fr 2fr;
-  }
-
-  #skills-by-category > div {
-    display:grid;
-    grid-template-columns: repeat(3, minmax(150px, 1fr));
-  }
-}
