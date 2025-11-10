@@ -38,32 +38,61 @@
     </head>
     <body>
         <div class="layout">
-            <aside role="complementary">
-                <!--<cv-chat collection="henrik" answer-position="below"></cv-chat>-->
-                <section id="languages" data-source="/cv/#languages">
-                    <h2>Languages</h2>
-                    <ul><li><strong>Swedish:</strong> Native</li><li><strong>English:</strong> Fluent (IELTS overall score 8.5)</li></ul>
-                </section>
-                <section id="certifications" data-source="/cv/#certifications">
-                    <h2>Certifications</h2>
-                    <ul><li><strong>Microsoft Certified: Azure Developer Associate:</strong> Microsoft (<date>2021-06-24</date>)</li><li><strong>MCSA: Web Applications - Certified 2016:</strong> Microsoft (<date>2016-09-26</date>)</li></ul>
-                </section>
-                <section id="education" data-source="/cv/#education">
-                    <h2>Education</h2>
-                    <ul><li><strong>KomVux Lidingö:</strong> Municipal adult education (<time>1995 &dash; 1997</time>)</li><li><strong>Kulturama:</strong> Music (<time>1992 &dash; 1993</time>)</li></ul>
-                </section>
-                <section class="no-print" id="social" data-source="/cv/#education">
-                    <h2>Social</h2>
-                    <ul><li title="GitHub"><a href="https://github.com/handiman"><i class="fab fa-github"></i> GitHub</a></li><li title="LinkedIn"><a href="https://www.linkedin.com/in/prettygoodprogrammer"><i class="fab fa-linkedin"></i> LinkedIn</a></li></ul>
-                </section>
-                <cv-chat collection="henrik" answer-position="below"></cv-chat>
-            </aside>
+
             <header>
                 <div>
                     <h1>Henrik Becker</h1>
                     <p>Senior Software Engineer</p>
                 </div>
+                <section class="no-print" id="social" data-source="/cv/#education">
+                    <h2 class="hidden">Social</h2>
+                    <ul><li title="GitHub"><a href="https://github.com/handiman"><i class="fab fa-github"></i> handiman</a></li><li title="LinkedIn"><a href="https://www.linkedin.com/in/prettygoodprogrammer"><i class="fab fa-linkedin"></i> in/prettygoodprogrammer</a></li></ul>
+                </section>
+                <cv-chat collection="henrik" answer-position="below"></cv-chat>
             </header>
+
+            <aside role="complementary">
+                <!--<cv-chat collection="henrik" answer-position="below"></cv-chat>-->
+                <section id="skills-by-category">
+                    <h2>Skills</h2><div>
+                    <article title="Solution Architecture - Advanced" data-section="Skills by Category - Solution Architecture" data-level="Advanced" data-source="/cv/#solution-architecture">
+                        <h3>Solution Architecture</h3>
+                        <ul><li title="SOLID - Advanced">SOLID</li><li title="Domain Driven Design - Advanced">Domain Driven Design</li><li title="Microservices - Advanced">Microservices</li><li title="Design Patterns - Advanced">Design Patterns</li></ul>
+                    </article>
+                    <article title="Backend Development - Expert" data-section="Skills by Category - Backend Development" data-level="Expert" data-source="/cv/#backend-development">
+                        <h3>Backend Development</h3>
+                        <ul><li title="Asp.Net Core - Expert">Asp.Net Core</li><li title="Asp.Net Web API - Expert">Asp.Net Web API</li><li title="Asp.Net MVC - Expert">Asp.Net MVC</li><li title=".Net - Expert">.Net</li><li title=".Net Core - Expert">.Net Core</li><li title=".Net Framework - Expert">.Net Framework</li><li title="C# - Expert">C#</li></ul>
+                    </article>
+                    <article title="Frontend Development - Advanced" data-section="Skills by Category - Frontend Development" data-level="Advanced" data-source="/cv/#frontend-development">
+                        <h3>Frontend Development</h3>
+                        <ul><li title="TypeScript - Advanced">TypeScript</li><li title="JavaScript - Advanced">JavaScript</li><li title="CSS3 - Advanced">CSS3</li><li title="Stencil - Advanced">Stencil</li><li title="React - Advanced">React</li><li title="KnockoutJS - Advanced">KnockoutJS</li><li title="jQuery - Advanced">jQuery</li><li title="Storybook - Advanced">Storybook</li></ul>
+                    </article>
+                    <article title="Azure - Advanced" data-section="Skills by Category - Azure" data-level="Advanced" data-source="/cv/#azure">
+                        <h3>Azure</h3>
+                        <ul><li title="App Services - Advanced">App Services</li><li title="Function Apps - Advanced">Function Apps</li><li title="Service Bus - Advanced">Service Bus</li><li title="Event Grid - Advanced">Event Grid</li><li title="Queue Storage - Advanced">Queue Storage</li><li title="Blob Storage - Advanced">Blob Storage</li><li title="Sql Database - Advanced">Sql Database</li></ul>
+                    </article>
+                    <article title="Agile Methodologies - Advanced" data-section="Skills by Category - Agile Methodologies" data-level="Advanced" data-source="/cv/#agile-methodologies">
+                        <h3>Agile Methodologies</h3>
+                        <ul><li title="Certified Scrum Master - Advanced">Certified Scrum Master</li><li title="Continuous Integration - Advanced">Continuous Integration</li><li title="Continuous Deployment - Advanced">Continuous Deployment</li><li title="Test Driven Development - Advanced">Test Driven Development</li><li title="Specification by Example - Advanced">Specification by Example</li><li title="SpecFlow - Advanced">SpecFlow</li></ul>
+                    </article>
+                    <article title="CI/CD - Advanced" data-section="Skills by Category - CI/CD" data-level="Advanced" data-source="/cv/#ci-cd">
+                        <h3>CI/CD</h3>
+                        <ul><li title="GitHub Actions - Advanced">GitHub Actions</li><li title="Octopus Deploy - Advanced">Octopus Deploy</li><li title="Azure DevOps - Advanced">Azure DevOps</li><li title="Team City - Advanced">Team City</li></ul>
+                    </article></div>
+                </section>
+                <section id="certifications" data-source="/cv/#certifications">
+                    <h2>Certifications</h2>
+                    <ul><li><strong>Microsoft Certified: Azure Developer Associate:</strong> Microsoft (<date>2021-06-24</date>)</li><li><strong>MCSA: Web Applications - Certified 2016:</strong> Microsoft (<date>2016-09-26</date>)</li></ul>
+                </section>
+                <section id="languages" data-source="/cv/#languages">
+                    <h2>Languages</h2>
+                    <ul><li><strong>Swedish:</strong> Native</li><li><strong>English:</strong> Fluent (IELTS overall score 8.5)</li></ul>
+                </section>
+                <section id="education" data-source="/cv/#education">
+                    <h2>Education</h2>
+                    <ul><li><strong>KomVux Lidingö:</strong> Municipal adult education (<time>1995 &dash; 1997</time>)</li><li><strong>Kulturama:</strong> Music (<time>1992 &dash; 1993</time>)</li></ul>
+                </section>
+            </aside>
 
             <main>
                 <section id="introduction" data-source="/cv/#introduction">
@@ -608,33 +637,6 @@ Music is still an important part of my life though. I enjoy listening to music, 
                 <section id="all-skills" class="hidden">
                     <h2>Skills</h2> 
                     <p>.Net, .Net 5-9, .Net Aspire, .Net Core, .Net Framework, AJAX, ASP, Active Directory, App Services, Asp.Net, Asp.Net Core, Asp.Net MVC, Asp.Net MVC 5, Asp.Net MVC4, Asp.Net Web API, Asp.Net Web Api, Asp.Net Web Forms, Azure, Azure App Services, Azure DevOps, BDD, Blazor, Blob Storage, C#, COM, CQRS, CSS, CSS3, Certified Scrum Master, Continuous Deployment, Continuous Integration, Design Patterns, Docker, Domain Driven Design, EPiServer, EPiServer 4, Entity Framework, EntityFramework 6, Event Grid, Function Apps, GitHub Actions, GroupWise Administrative Objects API, HTML, HTML5, IIS, Identity Management, Identity Server, JavaScript, Kafka, KnockoutJS, MSMQ, Microservices, Microsoft Identity Integration Server, Microsoft Orleans, NHibernate, NInject, Novell C API, Novell eDirectory, Octopus Deploy, Oracle, PostgreSQL, Queue Storage, React, Redux, SOLID, SQL Server, Service Bus, SpecFlow, Specification By Example, Specification by Example, Spring.Net, Sql Database, Stencil, Storybook, T-SQL, TDD, Team City, Team Foundation Server, Team Foundation Server- XML, TeamCity, Test Driven Development, TypeScript, VB.Net, VBA, VBScript, Visual Basic 5, Visual Basic 6, WCF, WMI, WPF, WebForms, WebServices, WiX, WinForms, Windows Services, Winforms, XHTML, XML, XSLT, jQuery</p>
-                </section>
-                <section id="skills-by-category" class="hidden">
-                    <h2>Skills by Category</h2>
-                    <article data-section="Skills by Category - Solution Architecture" data-level="Advanced" data-source="/cv/#solution-architecture">
-                        <h3>Solution Architecture</h3>
-                        <ul><li>SOLID</li><li>Domain Driven Design</li><li>Microservices</li><li>Design Patterns</li></ul>
-                    </article>
-                    <article data-section="Skills by Category - Backend Development" data-level="Expert" data-source="/cv/#backend-development">
-                        <h3>Backend Development</h3>
-                        <ul><li>Asp.Net Core</li><li>Asp.Net Web API</li><li>Asp.Net MVC</li><li>.Net</li><li>.Net Core</li><li>.Net Framework</li><li>C#</li></ul>
-                    </article>
-                    <article data-section="Skills by Category - Frontend Development" data-level="Advanced" data-source="/cv/#frontend-development">
-                        <h3>Frontend Development</h3>
-                        <ul><li>TypeScript</li><li>JavaScript</li><li>CSS3</li><li>Stencil</li><li>React</li><li>KnockoutJS</li><li>jQuery</li><li>Storybook</li></ul>
-                    </article>
-                    <article data-section="Skills by Category - Azure" data-level="Advanced" data-source="/cv/#azure">
-                        <h3>Azure</h3>
-                        <ul><li>App Services</li><li>Function Apps</li><li>Service Bus</li><li>Event Grid</li><li>Queue Storage</li><li>Blob Storage</li><li>Sql Database</li></ul>
-                    </article>
-                    <article data-section="Skills by Category - Agile Methodologies" data-level="Advanced" data-source="/cv/#agile-methodologies">
-                        <h3>Agile Methodologies</h3>
-                        <ul><li>Certified Scrum Master</li><li>Continuous Integration</li><li>Continuous Deployment</li><li>Test Driven Development</li><li>Specification by Example</li><li>SpecFlow</li></ul>
-                    </article>
-                    <article data-section="Skills by Category - CI/CD" data-level="Advanced" data-source="/cv/#ci-cd">
-                        <h3>CI/CD</h3>
-                        <ul><li>GitHub Actions</li><li>Octopus Deploy</li><li>Azure DevOps</li><li>Team City</li></ul>
-                    </article>
                 </section>
                 <section id="location" class="hidden">
                     <h2>Location</h2>
