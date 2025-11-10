@@ -33,14 +33,18 @@ h3 {
   font-size: 1rem;
 }
 
-p, aside, aside li, aside li a, article li a {
+p, aside, aside li, aside li a, article li a, header a {
     font-size: 0.9rem;
 }
 
-article ul {
+article ul, header ul {
   list-style-type: none;
   margin:0;
   padding: 0;
+}
+
+header ul a {
+  color: inherit;
 }
 
 footer {

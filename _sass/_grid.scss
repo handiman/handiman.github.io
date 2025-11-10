@@ -18,6 +18,10 @@ aside, .layout > header, main, footer {
   grid-template-columns: 1fr;
 }
 
+#skills-by-category > div {
+  display:grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+}
 
 /* === Aside === */
 aside {
@@ -40,12 +44,14 @@ footer {
 @media (min-width: 768px) {
   .layout {
     grid-template-areas:
-      "header ."
+      "header main"
       "aside main"
       "aside footer";
     grid-template-columns: 1fr 2fr;
   }
-
+  #skills-by-category > div {
+    display:grid;
+  }
 }
 
 /* === Large Screen === */
@@ -56,5 +62,10 @@ footer {
 
   .layout {
     grid-template-columns: 1fr 2fr;
+  }
+
+  #skills-by-category > div {
+    display:grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
   }
 }

@@ -24,32 +24,41 @@ title: Henrik Becker - CV
     </head>
     <body>
         <div class="layout">
-            <aside role="complementary">
-                <!--<cv-chat collection="henrik" answer-position="below"></cv-chat>-->
-                <section id="languages" data-source="{{ page.url | absolute_url }}#languages">
-                    <h2>Languages</h2>
-                    <ul>{% for language in profile['languages'] %}<li><strong>{{ language.name }}:</strong> {{ language.proficiency }}</li>{% endfor %}</ul>
-                </section>
-                <section id="certifications" data-source="{{ page.url | absolute_url }}#certifications">
-                    <h2>Certifications</h2>
-                    <ul>{% for cert in site.certs %}<li><strong>{{ cert.title }}:</strong> {% if cert.issuer %}{{ cert.issuer }} {% endif %}{% if cert.achievement_date %}(<date>{{ cert.achievement_date }}</date>){% endif %}</li>{% endfor %}</ul>
-                </section>
-                <section id="education" data-source="{{ page.url | absolute_url }}#education">
-                    <h2>Education</h2>
-                    <ul>{% for education in site.data.profile.education %}<li><strong>{{ education.school }}:</strong> {{ education.description }} (<time>{% if education.start_year %}{{ education.start_year }}{% endif %} &dash; {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}</time>)</li>{% endfor %}</ul>
-                </section>
-                <section class="no-print" id="social" data-source="{{ page.url | absolute_url }}#education">
-                    <h2>Social</h2>
-                    <ul>{% for social in site.data['profile']['same_as'] %}<li title="{{ social.network }}"><a href="{{ social.url }}"><i class="fab fa-{{ social.network | downcase }}"></i> {{ social.network }}</a></li>{% endfor %}</ul>
-                </section>
-                <cv-chat collection="henrik" answer-position="below"></cv-chat>
-            </aside>
+
             <header>
                 <div>
                     <h1>Henrik Becker</h1>
                     <p>Senior Software Engineer</p>
                 </div>
+                <section class="no-print" id="social" data-source="{{ page.url | absolute_url }}#education">
+                    <h2 class="hidden">Social</h2>
+                    <ul>{% for social in site.data['profile']['same_as'] %}{% assign url_parts = social.url | split: "/" %}{% assign path_parts = url_parts | slice: 3, url_parts.size %}<li title="{{ social.network }}"><a href="{{ social.url }}"><i class="fab fa-{{ social.network | downcase }}"></i> {{ path_parts | join: "/" }}</a></li>{% endfor %}</ul>
+                </section>
+                <cv-chat collection="henrik" answer-position="below"></cv-chat>
             </header>
+
+            <aside role="complementary">
+                <!--<cv-chat collection="henrik" answer-position="below"></cv-chat>-->
+                <section id="skills-by-category">
+                    <h2>Skills</h2><div>{% for skillCategory in site.data['profile']['categorizedSkills'] %}{% capture skillCategorySlug %}{{ skillCategory.name | replace: '/', '-' | replace: ' ', '-' | replace: '--', '' | downcase }}{% endcapture %}
+                    <article title="{{ skillCategory.name }} - {{ skillCategory.level }}" data-section="Skills by Category - {{ skillCategory.name }}" data-level="{{ skillCategory.level }}" data-source="{{ page.url | absolute_url }}#{{ skillCategorySlug }}">
+                        <h3>{{ skillCategory.name }}</h3>
+                        <ul>{% for skill in skillCategory.skills %}<li title="{{ skill }} - {{ skillCategory.level }}">{{ skill }}</li>{% endfor %}</ul>
+                    </article>{% endfor %}</div>
+                </section>
+                <section id="certifications" data-source="{{ page.url | absolute_url }}#certifications">
+                    <h2>Certifications</h2>
+                    <ul>{% for cert in site.certs %}<li><strong>{{ cert.title }}:</strong> {% if cert.issuer %}{{ cert.issuer }} {% endif %}{% if cert.achievement_date %}(<date>{{ cert.achievement_date }}</date>){% endif %}</li>{% endfor %}</ul>
+                </section>
+                <section id="languages" data-source="{{ page.url | absolute_url }}#languages">
+                    <h2>Languages</h2>
+                    <ul>{% for language in profile['languages'] %}<li><strong>{{ language.name }}:</strong> {{ language.proficiency }}</li>{% endfor %}</ul>
+                </section>
+                <section id="education" data-source="{{ page.url | absolute_url }}#education">
+                    <h2>Education</h2>
+                    <ul>{% for education in site.data.profile.education %}<li><strong>{{ education.school }}:</strong> {{ education.description }} (<time>{% if education.start_year %}{{ education.start_year }}{% endif %} &dash; {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}</time>)</li>{% endfor %}</ul>
+                </section>
+            </aside>
 
             <main>
                 <section id="introduction" data-source="{{ page.url | absolute_url }}#introduction">
@@ -144,13 +153,6 @@ title: Henrik Becker - CV
                 <section id="all-skills" class="hidden">
                     <h2>Skills</h2> 
                     <p>{{ site.data['semantic-model']['summary']['skills'] | join: ", " }}</p>
-                </section>
-                <section id="skills-by-category" class="hidden">
-                    <h2>Skills by Category</h2>{% for skillCategory in site.data['profile']['categorizedSkills'] %}{% capture skillCategorySlug %}{{ skillCategory.name | replace: '/', '-' | replace: ' ', '-' | replace: '--', '' | downcase }}{% endcapture %}
-                    <article data-section="Skills by Category - {{ skillCategory.name }}" data-level="{{ skillCategory.level }}" data-source="{{ page.url | absolute_url }}#{{ skillCategorySlug }}">
-                        <h3>{{ skillCategory.name }}</h3>
-                        <ul>{% for skill in skillCategory.skills %}<li>{{ skill }}</li>{% endfor %}</ul>
-                    </article>{% endfor %}
                 </section>
                 <section id="location" class="hidden">
                     <h2>Location</h2>
