@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-<!DOCTYPE html>
+<!DOCTYPE html>{% assign company = site.data['organization'] %}
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
     <meta charset="utf-8" />
@@ -25,10 +25,6 @@ layout: null
     <div class="layout">
         {{ content }}
         <footer role="contentinfo">
-            <section id="download" data-source="{{ page.url | absolute_url }}#download" class="no-print">
-                <h5>My CV is also available as</h5> 
-                <ul>{% for format in site.data.formats %}<li><a href="{{ format.url | absolute_url }}" title="My CV in {{ format.name }} format">{{ format.name }}</a></li>{% endfor %}</ul>
-            </section>
             <section id="company-info" data-section="Company information" data-source="{{ page.url | absolute_url }}#company-info">
                 <h5>{{ company.name }}</h5>
                 <div>Org.nr: 559120-2147</div>
@@ -40,6 +36,10 @@ layout: null
                     {{ company.address.addressCountry }}
                     </address>
                 </div>
+            </section>
+            <section id="download" data-source="{{ page.url | absolute_url }}#download" class="no-print">
+                <h5>CV for download</h5> 
+                <ul>{% for format in site.data.formats %}<li><a href="{{ format.url | absolute_url }}" title="Download my CV in {{ format.name }} format">{{ format.name }}</a></li>{% endfor %}</ul>
             </section>
             <section class="no-print">
                 &copy; {{ site.time | date: '%Y' }} {{ site.data['person']['name'] }}, {{ company.name }}. Thanks for stopping by!

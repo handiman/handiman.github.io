@@ -1,0 +1,8 @@
+- name: Backend development 
+  skills: [.NET, C#, ASP.NET Core]
+- name: System integration
+  skills: [REST, message queues, WCF]
+- name: Cloud-native architecture
+  skills: [Azure, serverless, containers]
+- name: Automation and CI/CD pipelines
+- name: Clean code, SOLID principles, and developer experience

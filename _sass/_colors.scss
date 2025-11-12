@@ -50,7 +50,7 @@ h3, .layout > header * {
     color: var(--color-text-main);
 }
 
-p, aside, aside li, aside li a {
+section {
     color:  var(--color-text-muted);
 }
 
@@ -76,14 +76,14 @@ aside {
 blockquote {
     margin: 1rem 0;
     padding: 0 1rem;
-    border-left: .5rem solid var(--color-accent-soft);
+    border-left: 2px solid var(--color-accent-soft);
+    footer {
+        border:none;
+        background-color: transparent;
+        padding:0 !important;  
+    }
 }
 
-blockquote footer {
-    border:none;
-    background-color: transparent;
-    padding:0;  
-}
 
 
 footer {
