@@ -51,6 +51,10 @@ title: Henrik Becker - CV
             He builds systems that talk, not just list — blending technical mastery with philosophical clarity.
         </p>            
     </section>
+    <section id="recommendations" data-source="{{ page.url | absolute_url }}#recommendations">
+        <h2>Recommendations</h2>{% for recommendation in site.data['profile']['recommendations'] %}
+        <blockquote><p>{{ recommendation.text }}</p><footer>- {{ recommendation.name }}</footer></blockquote>{% endfor %}
+    </section>                        
     <section id="featured-projects" data-source="{{ page.url | absolute_url }}#featured-projects">
         <h2>Featured Projects</h2>{% for featuredProject in site.data.profile.featuredProjects %}
         {% assign xpId = '/projects/' | append: featuredProject %}
@@ -91,57 +95,53 @@ title: Henrik Becker - CV
             {% if xp.skills %}<p><strong>Skills:</strong> {% for skill in xp.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
         </article>{% endfor %}
     </section>
-    <section id="recommendations" data-source="{{ page.url | absolute_url }}#recommendations">
-        <h2>Recommendations</h2>{% for recommendation in site.data['profile']['recommendations'] %}
-        <blockquote><p>{{ recommendation.text }}</p><footer>- {{ recommendation.name }}</footer></blockquote>{% endfor %}
-    </section>                        
-            <section id="interests" class="hidden">
-            <h2>Interests</h2>
-            <ul>{% for interest in site.data['profile']['interests'] %}<li>{{ interest.name }}</li>{% endfor %}</ul>
-        </section>
-        <section id="fun-facts" class="hidden">
-            <h2>Fun Facts</h2>{% for fact in site.fun_facts %}
-            <article{% if fact.lang %} data-language="{{fact.lang}}"{% endif %}>
-                <h6>{{ fact.title }}</h6>
-                {% if fact.description %}<p>{{ fact.description }}</p>{% else %}{{ fact.content }}{% endif %}
-            </article>{% endfor %}
-        </section>
-        <section id="all-roles" class="hidden">
-            <h2>Roles</h2> 
-            <p>{{ site.data['semantic-model']['summary']['roles'] | join: ", " }}</p>
-        </section>
-        <section id="all-skills" class="hidden">
-            <h2>Skills</h2> 
-            <p>{{ site.data['semantic-model']['summary']['skills'] | join: ", " }}</p>
-        </section>
-        <section id="location" class="hidden">
-            <h2>Location</h2>
-            <p>Lidingö, Stockholm, Sweden</p> 
-            <h2>Birth date</h2>
-            <p><date>1969-06-23</date></p>
-        </section>
-        {% for zingerCategory in site.data['zingers'] %}{% capture zingerCategoryId %}{{ zingerCategory.type | downcase | replace: '&amp;', ' ' | replace: '   ', '-' | replace: ' ', '-' }}{% endcapture %}
-        <section id="{{ zingerCategoryId }}" class="hidden">
-            <h2>{{ zingerCategory.type }}</h2>
-            <ul>{% for zinger in zingerCategory.zingers %}<li>{{ zinger }}</li>{% endfor %}</ul>
-        </section>
-        {% endfor %}
-        <section id="taglines" class="hidden">
-            <h2>Taglines</h2>
-            <ul>{% for tagline in site.data['taglines'] %}<li>{{ tagline.tagline }}</li>{% endfor %}<li>
-                <h3>Building the right software right</h3>
-                <p> 
-                I believe great software starts with the right conversations. While many developers focus on building software the right way — clean code, scalable architecture, elegant design — I go one step further: I make sure we're building the right software to begin with.
+    <section id="interests" class="hidden">
+        <h2>Interests</h2>
+        <ul>{% for interest in site.data['profile']['interests'] %}<li>{{ interest.name }}</li>{% endfor %}</ul>
+    </section>
+    <section id="fun-facts" class="hidden">
+        <h2>Fun Facts</h2>{% for fact in site.fun_facts %}
+        <article{% if fact.lang %} data-language="{{fact.lang}}"{% endif %}>
+            <h6>{{ fact.title }}</h6>
+            {% if fact.description %}<p>{{ fact.description }}</p>{% else %}{{ fact.content }}{% endif %}
+        </article>{% endfor %}
+    </section>
+    <section id="all-roles" class="hidden">
+        <h2>Roles</h2> 
+        <p>{{ site.data['semantic-model']['summary']['roles'] | join: ", " }}</p>
+    </section>
+    <section id="all-skills" class="hidden">
+        <h2>Skills</h2> 
+        <p>{{ site.data['semantic-model']['summary']['skills'] | join: ", " }}</p>
+    </section>
+    <section id="location" class="hidden">
+        <h2>Location</h2>
+        <p>Lidingö, Stockholm, Sweden</p> 
+        <h2>Birth date</h2>
+        <p><date>1969-06-23</date></p>
+    </section>
+    {% for zingerCategory in site.data['zingers'] %}{% capture zingerCategoryId %}{{ zingerCategory.type | downcase | replace: '&amp;', ' ' | replace: '   ', '-' | replace: ' ', '-' }}{% endcapture %}
+    <section id="{{ zingerCategoryId }}" class="hidden">
+        <h2>{{ zingerCategory.type }}</h2>
+        <ul>{% for zinger in zingerCategory.zingers %}<li>{{ zinger }}</li>{% endfor %}</ul>
+    </section>
+    {% endfor %}
+    <section id="taglines" class="hidden">
+        <h2>Taglines</h2>
+        <ul>{% for tagline in site.data['taglines'] %}<li>{{ tagline.tagline }}</li>{% endfor %}<li>
+            <h3>Building the right software right</h3>
+            <p> 
+            I believe great software starts with the right conversations. While many developers focus on building software the right way — clean code, scalable architecture, elegant design — I go one step further: I make sure we're building the right software to begin with.
 
-                That means diving deep into business needs, challenging assumptions, and translating complexity into clarity. I bridge the gap between stakeholders and systems, turning fuzzy ideas into functional products that deliver real value.
+            That means diving deep into business needs, challenging assumptions, and translating complexity into clarity. I bridge the gap between stakeholders and systems, turning fuzzy ideas into functional products that deliver real value.
 
-                Whether I’m prototyping a new feature, leading a team, or refining a user flow, I bring a mindset that’s equal parts strategic, technical, and creative.
+            Whether I’m prototyping a new feature, leading a team, or refining a user flow, I bring a mindset that’s equal parts strategic, technical, and creative.
 
-                Let’s build something that matters — and build it well.
-            </p></li></ul>
-        </section>
-        <section id="unique-selling-points" class="hidden">
-            <h2>Unique Selling Points</h2>
-            <ul>{% for usp in site.usp %}<li>{{ usp.excerpt | replace: '<p>', '' | replace: '</p>', '' | strip }}</li>{% endfor %}</ul>
-        </section>
+            Let’s build something that matters — and build it well.
+        </p></li></ul>
+    </section>
+    <section id="unique-selling-points" class="hidden">
+        <h2>Unique Selling Points</h2>
+        <ul>{% for usp in site.usp %}<li>{{ usp.excerpt | replace: '<p>', '' | replace: '</p>', '' | strip }}</li>{% endfor %}</ul>
+    </section>
 </main>
