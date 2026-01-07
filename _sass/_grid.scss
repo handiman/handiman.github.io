@@ -4,8 +4,8 @@
      display: grid;
     grid-template-areas:
       "header"
-      "aside"
       "main"
+      "aside"
       "footer";
     grid-template-columns: 1fr;
   }

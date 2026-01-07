@@ -5,10 +5,7 @@
   --pale-moss:#E3EdE5;
 
 
-  /* 🌱 Primär bakgrund för sidebar */
-  --color-bg-sidebar: #C5D1C6; /* Eucalyptus Fog */
-
-  /* 🎨 Primära accentfärger – harmoniska gröna/grå toner */
+    /* 🎨 Primära accentfärger – harmoniska gröna/grå toner */
   --color-accent-green: #8DA290;     /* Dämpad grön för rubriker, ikoner */
   --color-accent-soft: #DDE5DC;      /* Ljusare grön för sektioner eller hover */
 
@@ -29,6 +26,10 @@
   /* 🔗 Interaktiva element (om digitalt) */
   --color-link: #6B8F78;
   --color-link-hover: #4E6F5A;
+
+  /* 🌱 Primär bakgrund för sidebar */
+  --color-bg-header: var(--eucalyptus-fog); 
+  --color-bg-footer: inherit;
 }
 
 body {
@@ -70,7 +71,11 @@ aside {
 }
 
 .layout > header {
-    background-color: var(--color-bg-sidebar);
+    background-color: var(--color-bg-header);
+}
+
+.layout > footer {
+    background-color: var(--color-bg-footer);
 }
 
 blockquote {
@@ -102,7 +107,7 @@ article {
 
 /* === Responsive Layout === */
 @media (min-width: 768px) {
-    footer {
+    .layout > footer {
         background-color: white;
     }
 }
