@@ -4,7 +4,7 @@
   <title>Henrik Becker Consulting AB</title>
   <link href="https://www.henrikbecker.net" />
   <link href="https://www.henrikbecker.net/feed.atom.xml" rel="self" />
-  <updated>2026-01-07T13:47:41.000Z</updated>
+  <updated>2026-01-12T07:50:53.000Z</updated>
   <author>
     <name>Henrik Becker</name>
   </author>
@@ -16,7 +16,7 @@
     <updated>2021-10-11T00:00:00.001Z</updated>
     <content>
        at 24 Betsson
-      2021-10-11 - present
+      2021-10-11 - 2025-12-05
       
       Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools
       Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for one of the core applications.

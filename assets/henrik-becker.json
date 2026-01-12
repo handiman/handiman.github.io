@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
     "meta": {
       "theme": "flat",
-      "lastUpdated": "2026-01-07T13:47:41",
+      "lastUpdated": "2026-01-12T07:50:53",
       "canonical": "https://gist.githubusercontent.com/handiman/3881a8e890dd1032cce3f5e655859717/raw/01ba33f00c707670636d902546d7e50c4d4176e4/resume.json"
     },
     "basics": {
@@ -30,6 +30,7 @@
     "projects": [{
       "name": "Betsson Group",
       "startDate": "2021-10-11",
+      "endDate":  "2025-12-05",
       "highlights": ["Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools","Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for one of the core applications.","Developed Proofs of Concept for new systems and features to evaluate feasibility and drive innovation.","Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance.","Conducted and assessed technical interviews to support recruitment and team growth."]
     },{
       "name": "Film2Home/Plejmo",
@@ -57,6 +58,7 @@
       "name": "Betsson Group AB",
       "position": "Senior Software Engineer",
       "startDate": "2023-12-18",
+      "endDate":  "2025-12-05",
       "summary": "",
       "highlights": []
     },{

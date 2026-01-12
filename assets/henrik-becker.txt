@@ -22,7 +22,7 @@ Henrik Becker is an experienced .Net developer and solution architect dedicated 
 ## Featured Projects
 
 ### 24 Betsson    
-* | Oct 2021 - present*
+* | Oct 2021 - Dec 2025*
 
 * Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools
 * Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for one of the core applications.
@@ -76,7 +76,7 @@ Asp.Net Core, C#, React, Redux, TypeScript, Azure, Azure DevOps
 
 
 ### Betsson Group AB
-* | Dec 2023 - present*
+* | Dec 2023 - Dec 2025*
 
 
 ### Magine TV AB
