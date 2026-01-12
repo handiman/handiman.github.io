@@ -5,7 +5,7 @@ url: https://www.betssongroup.com
 roles:
  - Senior Software Engineer
 start_date: 2021-10-11
-end_date: present
+end_date: 2025-12-05
 skills:
  - C#
  - .Net 5-9

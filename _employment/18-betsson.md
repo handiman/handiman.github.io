@@ -8,5 +8,5 @@ organization:
  address:
   city: Stockholm;
 start_date: 2023-12-18
-end_date: present
+end_date: 2025-12-05
 ---
