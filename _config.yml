@@ -12,11 +12,9 @@ sass:
  style: compressed
 
 plugins:
-  - jekyll-remote-theme
   - jekyll-readme-index
   - jekyll-sitemap
   - jekyll-seo-tag
-remote_theme: handiman/jekyll-theme-gnap  
 
 exclude: [ 
  "node_modules",
@@ -40,10 +38,14 @@ collections:
 excerpt_separator: <!--more-->
 
 defaults:
+ - scope: 
+    path: "*.html"
+   values:
+    layout: page 
  - scope:
     path: README.md
    values: 
-    layout: index
+    layout: page
  - scope:
     path: googlef0bc3dbe928e1f73.html
    values:
@@ -62,6 +64,6 @@ defaults:
     sitemap: false
 
 readme_index:
-  enabled: true
+  enabled: false
   remove_originals: false
   with_frontmatter: false    

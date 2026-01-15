@@ -1,0 +1,57 @@
+---
+---
+{% assign company = site.data['organization'] %}
+<header>
+    <h1>{{ company.alternateName }}</h1>
+</header>
+
+<main>
+    <section id="introduction" data-source="{{ page.url | absolute_url }}#introduction">
+        <h2>Intro</h2>
+        <p>I’m Henrik, a senior backend consultant running a one-person tech company based in Stockholm. Since 1999, I’ve helped teams build robust backend solutions with a focus on automation, integration, and long-term maintainability.</p>
+    </section>
+    <section id="offer" data-source="{{ page.url | absolute_url }}#offer">
+        <h2>What I offer</h2>
+        <ul class="cards">
+            <li>
+                <strong>Backend development in .NET and C#</strong>
+                <div>Clean, testable code — from APIs to data layers.</div>
+            </li>
+            <li>
+                <strong>System integration</strong>
+                <div>REST, GraphQL, message queues, and cloud services — I make systems talk to each other.</div>
+            </li>
+            <li>
+                <strong>Automation and DevOps</strong>
+                <div>CI/CD pipelines, scripting, infrastructure as code — for faster delivery and fewer errors.</div>
+            </li>
+            <li>
+                <strong>Architecture and technical guidance</strong>
+                <div>Helping teams choose the right solution, structure codebases, and think long-term.</div>
+            </li>
+        </ul>
+    </section>
+    <section id="why-me" data-source="{{ page.url | absolute_url }}#why-me">
+        <h2>Why work with me?</h2>
+        <ul class="cards">
+            <li>{{ site.time | date: "%Y" | minus: 1999 }} years of hands-on development experience</li>
+            <li>Deep expertise in .NET and Azure</li>
+            <li>Fast onboarding, clear communication</li>
+            <li>Code that’s easy to read, test, and evolve</li>
+        </ul>
+    </section>
+    <section id="featured-projects">
+        <h2>Clients</h2>
+        <div class="cards">{% for client in site.data.clients reversed %}
+            <div>
+                <h3>{{ client.name }}</h3>
+            </div>{% endfor %}
+        </div>
+    </section>
+    {% comment %}
+    <section id="contact" data-source="{{ page.url | absolute_url }}#contact">
+        <h2>Let’s talk</h2>
+        <form></form>
+    </section>
+    {% endcomment %}
+</main>
