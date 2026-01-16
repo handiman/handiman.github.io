@@ -68,7 +68,18 @@ section, article, article>header {
     }
 }
 
+main>section, aside>section {
+    margin-top: 3rem;
+    &:first-child {
+        margin-top: 1rem;
+    }
+    &:last-child {
+        margin-bottom: 2rem;
+    }
+}
+
 
 @import "typography";
 @import "lists";
+@import "header";
 @import "footer";

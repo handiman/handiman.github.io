@@ -1,0 +1,18 @@
+body>header {
+    vertical-align: middle;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    a, a:hover {
+        color: inherit; 
+    }
+    h1 a, h1 a:hover {
+        text-decoration: none;
+    }
+    cv-chat {
+        margin-bottom: 1rem;
+    }
+}

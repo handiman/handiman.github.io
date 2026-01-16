@@ -1,0 +1,4 @@
+<header>{% assign company = site.data['organization'] %}
+    <h1><a href="{{ '/' | relative_url }}">{% if page.title %}{{ page.title }}{% else %}{{ company.alternateName }}{% endif %}</a></h1>
+    <cv-chat collection="henrik" answer-position="below"></cv-chat>
+</header>
