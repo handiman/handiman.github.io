@@ -146,4 +146,8 @@ title: Henrik Becker - CV
         <h2>Unique Selling Points</h2>
         <ul>{% for usp in site.usp %}<li>{{ usp.excerpt | replace: '<p>', '' | replace: '</p>', '' | strip }}</li>{% endfor %}</ul>
     </section>
+    <template id="clients" data-source="{{ page.url | absolute_url }}#clients">
+        <h2>Clients</h2>
+        <ul>{% for client in site.data.clients %}<li>{{ client.name }}</li>{% endfor %}</ul>
+    </template>
 </main>
