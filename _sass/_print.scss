@@ -1,22 +1,29 @@
+.print {
+  display: none;
+}
+
 @media print {
-    * {
-        color: var(--color-text) !important;
-        background-color: white !important;
-    }
-  .no-print, cv-chat, nav {
+  * {
+    color: var(--color-text) !important;
+    background-color: white !important;
+  }
+  .no-print,
+  cv-chat,
+  nav {
     display: none !important;
   }
 
   .print {
-    display: '' !important;
+    display: revert;
   }
 
-  body>footer {
-    address div, address h5 {
-        font-size: var(--font-size-body-s);
-        font-weight: normal;
-        display:inline;
-        margin-bottom: 0;
+  body > footer {
+    address div,
+    address h5 {
+      font-size: var(--font-size-body-s);
+      font-weight: normal;
+      display: inline;
+      margin-bottom: 0;
     }
   }
 }

@@ -9,12 +9,14 @@
         <div>
             <h1><a href="{{ '/' | relative_url }}">Henrik Becker</a></h1>
             <p>Senior Software Engineer</p>
-            <section class="hidden no-print" id="social" data-source="{{ page.url | absolute_url }}#education">
+            <section class="print" id="social" data-source="{{ page.url | absolute_url }}#education">
                 <h2 class="hidden">Social</h2>
-                <ul>{% for social in profile['same_as'] %}{% assign url_parts = social.url | split: "/" %}{% assign
-                    path_parts = url_parts | slice: 2, url_parts.size %}<li title="{{ social.network }}"><a
-                            href="{{ social.url }}"><i class="fab fa-{{ social.network | downcase }}"></i> {{ path_parts
-                            | join: "/" }}</a></li>{% endfor %}</ul>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <span class="flip-text">&#51;&#52;&#32;&#51;&#56;&#32;&#50;&#50;&#52;&#32;&#51;&#55;&#32;&#54;&#52;&#43;</span></li>
+                    <li><i class="fas fa-envelope"></i> <span class="flip-text">&#101;&#115;&#46;&#114;&#101;&#107;&#99;&#101;&#98;&#107;&#105;&#114;&#110;&#101;&#104;&#64;&#116;&#99;&#97;&#116;&#110;&#111;&#99;</span></li>
+                    <li><i class="fas fa-globe"></i> www.henrikbecker.net</li>{% for social in profile['same_as'] %}{% assign url_parts = social.url | split: "/" %}{% assign path_parts = url_parts | slice: 2, url_parts.size %}
+                    <li><i class="fab fa-{{ social.network | downcase }}"></i> {{ path_parts | join: "/" | replace: 'www.', '' }}</li>{% endfor %}
+                </ul>
             </section>
             <nav>
                 <ul>
