@@ -61,6 +61,9 @@
   /* Shadow */
   --shadow-sm: 0 2px 6px rgba(0,0,0,0.05);
 
+  --logo-filter-light: brightness(1);
+  --logo-filter-dark: brightness(6) contrast(1.1);
+  --logo-filter: var(--logo-filter-light);
 }
 
 html.dark {
@@ -74,6 +77,7 @@ html.dark {
     --color-footer-text: var(--color-footer-text-dark);
     --gradient: var(--gradient-dark);
     --gradient-alt: var(--gradient-alt-dark);
+    --logo-filter: var(--logo-filter-dark);
 }
 
 @media screen and  (prefers-color-scheme: dark) {
@@ -88,6 +92,7 @@ html.dark {
     --color-footer-text: var(--color-footer-text-dark);
     --gradient: var(--gradient-dark);
     --gradient-alt: var(--gradient-alt-dark);
+    --logo-filter: var(--logo-filter-dark);
   }
 }
 
@@ -103,5 +108,6 @@ html.dark {
         --color-footer-text: var(--color-footer-text-light) !important;
         --gradient: var(--gradient-light) !important;
         --gradient-alt: var(--gradient-alt-light) !important;
+        --logo-filter: var(--logo-filter-light) !important;
   }
 }

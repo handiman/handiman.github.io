@@ -166,6 +166,6 @@ body>header, body>footer, nav.sticky {
     max-height: 32px;
     max-width: 120px;
     object-fit: contain;
-    filter: grayscale(100%) brightness(0.6);
+    filter: grayscale(100%) var(--logo-filter);
     opacity: 0.6;
 }
