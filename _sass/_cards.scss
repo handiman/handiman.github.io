@@ -1,0 +1,75 @@
+ul.cards {
+    margin: 0;
+    list-style: none;
+    li {
+        margin: 0;     
+        list-style: none;
+    }
+    li:before {
+        content: '';
+        margin: 0;
+    }
+}
+
+.cards {
+  display: grid;
+  gap: var(--space-4);
+}
+
+@media (min-width: 700px) {
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
+.card {
+  list-style: none;
+  position: relative;
+  perspective: 1000px;
+  display: flex; /* equal height across row */
+}
+
+.card-inner {
+  flex: 1;
+  height: 100%; /* ensures both sides match */
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(.25,.8,.25,1);
+}
+
+/* FRONT overlays */
+.card-front {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-1);
+  padding: var(--space-4);
+  z-index: 2;
+  height: 100%;
+  left: 0;
+}
+
+/* BACK defines height but is forced to match */
+.card-back {
+  position: relative;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-1);
+  padding: var(--space-4);
+  z-index: 1;
+  height: 100%;
+  min-height: 50px;
+}
+
+/* Flip states */
+.card.flippable:hover .card-inner,
+.card.flippable.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+

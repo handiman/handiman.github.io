@@ -22,8 +22,10 @@ layout: null
     </script>        
 </head>
 <body class="{{ page_class }} {{ page.layout }}">
-    {% unless page_class == 'cv' %}{% include header.html %}{% endunless %}
+    {% include header.html %}
     {{ content }}
     {% include footer.html %}
+  <button class="theme-toggle" title="Toggle dark mode">.</button>
+  <script src="{{ '/assets/main.js' | relative_url }}"></script>
 </body>
 </html>         

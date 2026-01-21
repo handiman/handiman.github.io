@@ -3,45 +3,95 @@
 <main>
     <section id="introduction" data-source="{{ page.url | absolute_url }}#introduction">
         <h2>Intro</h2>
-        <p>I’m Henrik, a senior backend consultant running a one-person tech company based in Stockholm. Since 1999, I’ve helped teams build robust backend solutions with a focus on automation, integration, and long-term maintainability.</p>
+        <p>I’m Henrik, a senior backend consultant running a one-person tech company based in Stockholm. Since 1999,
+            I’ve helped teams build robust backend solutions with a focus on automation, integration, and long-term
+            maintainability.</p>
     </section>
     <section id="offer" data-source="{{ page.url | absolute_url }}#offer">
         <h2>What I offer</h2>
         <ul class="cards">
-            <li>
-                <strong>Backend development in .NET and C#</strong>
-                <div>Clean, testable code — from APIs to data layers.</div>
+            <li class="card flippable">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <strong>Backend development in .NET and C#</strong>
+                    </div>
+                    <div class="card-back">
+                        <div>Clean, testable code — from APIs to data layers.</div>
+                    </div>
+                </div>
             </li>
-            <li>
-                <strong>System integration</strong>
-                <div>REST, GraphQL, message queues, and cloud services — I make systems talk to each other.</div>
+            <li class="card flippable">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <strong>System integration</strong>
+                    </div>
+                    <div class="card-back">
+                        <div>REST, GraphQL, message queues, and cloud services — I make systems talk to each other.
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li>
-                <strong>Automation and DevOps</strong>
-                <div>CI/CD pipelines, scripting, infrastructure as code — for faster delivery and fewer errors.</div>
+            <li class="card flippable">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <strong>Automation and DevOps</strong>
+                    </div>
+                    <div class="card-back">
+                        <div>CI/CD pipelines, scripting, infrastructure as code — for faster delivery and fewer errors.
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li>
-                <strong>Architecture and technical guidance</strong>
-                <div>Helping teams choose the right solution, structure codebases, and think long-term.</div>
+            <li class="card flippable">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <strong>Architecture and technical guidance</strong>
+                    </div>
+                    <div class="card-back">
+                        <div>Helping teams choose the right solution, structure codebases, and think long-term.</div>
+                    </div>
+                </div>
             </li>
         </ul>
     </section>
     <section id="why-me" data-source="{{ page.url | absolute_url }}#why-me">
         <h2>Why work with me?</h2>
         <ul class="cards">
-            <li>{{ site.time | date: "%Y" | minus: 1999 }} years of hands-on development experience</li>
-            <li>Deep expertise in .NET and Azure</li>
-            <li>Fast onboarding, clear communication</li>
-            <li>Code that’s easy to read, test, and evolve</li>
+            <li class="card">
+                <div class="card-inner">{% capture card_text %}{{ site.time | date: "%Y" | minus: 1999 }} years of hands-on development experience{% endcapture %}
+                    <div class="card-front">{{ card_text }}</div>
+                    <div class="card-back">{{ card_text }}</div>
+                </div>
+            </li>
+            <li class="card">
+                <div class="card-inner">{% capture card_text %}Deep expertise in .NET and Azure{% endcapture %}
+                    <div class="card-front">{{ card_text }}</div>
+                    <div class="card-back">{{ card_text }}</div>
+                </div>
+            </li>
+            <li class="card">
+                <div class="card-inner">{% capture card_text %}Fast onboarding, clear communication{% endcapture %}
+                    <div class="card-front">{{ card_text }}</div>
+                    <div class="card-back">{{ card_text }}</div>
+                </div>
+            </li>
+            <li class="card">
+                <div class="card-inner">{% capture card_text %}Code that’s easy to read, test, and evolve{% endcapture %}
+                    <div class="card-front">{{ card_text }}</div>
+                    <div class="card-back">{{ card_text }}</div>
+                </div>
+            </li>
         </ul>
     </section>
-    <section id="featured-projects">
+    <section id="clients" data-source="{{ page.url | absolute_url }}#clients">
         <h2>Clients</h2>
-        <div class="cards">{% for client in site.data.clients reversed %}
-            <div>
-                <h3>{{ client.name }}</h3>
-            </div>{% endfor %}
-        </div>
+        <ul class="client-logos">{% for client in site.data.clients reversed %}{% if client.logo %}
+            <li title="{{ client.name }}">
+                {% if client.url %}<a href="{{ client.url }}">{% endif %}
+                <img class="client-logo" src="{{ client.logo | relative_url }}" alt="{{ client.name }}" />
+                {% if client.url %}</a>{% endif %}
+            </li>{% endif %}{% endfor %}
+        </ul>
     </section>
     {% comment %}
     <section id="contact" data-source="{{ page.url | absolute_url }}#contact">

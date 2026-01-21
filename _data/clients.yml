@@ -1,6 +1,17 @@
 - name: Svea Ekonomi
+  logo: /assets/img/logo-svea.png
+  url: https://www.svea.com
 - name: Norconsult Astando
+  logo: /assets/img/logo-norconsult.webp
+  url: https://norconsult.se
 - name: Insplanet
+  logo: /assets/img/logo-insplanet.png
 - name: Open Payments
+  logo: /assets/img/logo-openpayments.svg
+  url: https://www.openpayments.io
 - name: Adlibris
+  logo: /assets/img/logo-adlibris.svg
+  url: https://www.adlibris.com
 - name: Betsson Group
+  logo: /assets/img/logo-betsson-group.svg
+  url: https://www.betssongroup.com

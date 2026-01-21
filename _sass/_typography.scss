@@ -1,88 +1,68 @@
-/*@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-/* 
-Titillium Web
-Manrope 
-Public Sans
-*/
+/* ============================================
+   TYPOGRAPHY — final, stable, editorial
+   ============================================ */
 
-.titillium-web-extralight {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 200;
-  font-style: normal;
+body {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
 }
 
-.titillium-web-light {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+/* --------------------------------------------
+   HEADINGS
+   -------------------------------------------- */
+
+/* Shared heading styles */
+h1, h2, h3, h4 {
+  font-weight: 500;
+  line-height: var(--line-height-heading);
+  color: var(--color-text);
+  margin-top: var(--space-5);     /* generous but not excessive */
+  margin-bottom: var(--space-2);  /* tighter, more editorial */
 }
 
-.titillium-web-regular {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+h1, h2, h3 {
+    font-weight: 400;
+    letter-spacing: 1.5px;
 }
 
-.titillium-web-semibold {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+strong, b {
+    font-weight: 500;
 }
 
-.titillium-web-bold {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+/* Individual sizes */
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
+
+/* --------------------------------------------
+   PARAGRAPHS
+   -------------------------------------------- */
+
+p {
+  margin-bottom: var(--space-3);
+  color: var(--color-text);
 }
 
-.titillium-web-black {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+/* --------------------------------------------
+   SMALL / MUTED TEXT
+   -------------------------------------------- */
+
+small, .small {
+  font-size: var(--font-size-body-s);
+  color: var(--color-muted);
 }
 
-.titillium-web-extralight-italic {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.titillium-web-light-italic {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.titillium-web-regular-italic {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.titillium-web-semibold-italic {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.titillium-web-bold-italic {
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-
-html {
-  @extend .titillium-web-regular;
-  font-size: 16px;
-}
-
-address {
-  font-style: normal;
-}
+/* --------------------------------------------
+   LINKS
+   -------------------------------------------- */
 
 a {
+  color: var(--color-accent);
   text-decoration: none;
 }
 
@@ -90,36 +70,62 @@ a:hover {
   text-decoration: underline;
 }
 
-h1 {
-  font-size: 3rem;
+h1 a:hover {
+  text-decoration: none;
 }
 
-h2 {
-  font-size: 2rem;
+/* --------------------------------------------
+   LISTS
+   -------------------------------------------- */
+ul, ol {
+    line-height: var(--line-height-body);
+}   
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-h3 {
-  font-size: 1.5rem;
+ul li::before {
+  content: "–";
+  margin-right: .5rem;
+  color: var(--color-muted);
+}   
+
+body>header, body>footer {
+    ul {
+        li {
+            padding: 0;
+            margin:0;
+        }
+        li::before {
+            padding: 0;
+            margin:0;
+            content: ''
+        }
+    }
 }
 
-h4, h5, h6 {
-  font-size: 1rem;
+
+/* --------------------------------------------
+   BLOCKQUOTES
+   -------------------------------------------- */
+
+blockquote {
+  margin: var(--space-5) 0;
+  padding-left: var(--space-4);
+  border-left: 3px solid var(--color-accent);
+  color: var(--color-muted);
+  font-style: italic;
 }
 
-p, section, body>footer {
-  font-size: 1rem;
-  /*font-weight: lighter;*/
-}
+/* --------------------------------------------
+   INLINE CODE
+   -------------------------------------------- */
 
-h1, h2 {
-  @extend .titillium-web-light;
-  text-transform: uppercase;
-}
-
-h3 {
-  @extend .titillium-web-light;
-}
-
-h4, h5, h6, strong, b {
-  @extend .titillium-web-semibold;
+code {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .9em;
+  background: var(--color-surface);
+  padding: 0 .25em;
+  border-radius: 4px;
 }

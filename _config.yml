@@ -39,7 +39,7 @@ excerpt_separator: <!--more-->
 
 defaults:
  - scope: 
-    path: "*.html"
+    path: "*.*"
    values:
     layout: page 
  - scope:
@@ -55,11 +55,11 @@ defaults:
    values:
     sitemap: false
  - scope:
-    path: cv.html
+    path: contact.html
    values:
     sitemap: false
  - scope:
-    path: contact.html
+    path: swatch.html
    values:
     sitemap: false
 

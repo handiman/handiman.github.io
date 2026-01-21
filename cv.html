@@ -3,17 +3,6 @@ layout: page
 title: Henrik Becker - CV
 ---
 {% assign model = site.data['semantic-model'] %}{% assign person = site.data['person'] %}{% assign profile = site.data['profile'] %}{% capture data_source %}{{ page.url | absolute_url }}{% endcapture %}
-<header>
-    <div>
-        <h1><a href="{{ '/' | relative_url }}">Henrik Becker</a></h1>
-        <p>Senior Software Engineer</p>
-    </div>
-    <section class="no-print" id="social" data-source="{{ page.url | absolute_url }}#education">
-        <h2 class="hidden">Social</h2>
-        <ul>{% for social in profile['same_as'] %}{% assign url_parts = social.url | split: "/" %}{% assign path_parts = url_parts | slice: 2, url_parts.size %}<li title="{{ social.network }}"><a href="{{ social.url }}"><i class="fab fa-{{ social.network | downcase }}"></i> {{ path_parts | join: "/" }}</a></li>{% endfor %}</ul>
-    </section>
-    <cv-chat collection="henrik" answer-position="below"></cv-chat>
-</header>
 
 <main>
     <section id="introduction" data-source="{{ page.url | absolute_url }}#introduction">

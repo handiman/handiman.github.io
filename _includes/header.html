@@ -1,4 +1,29 @@
-<header>{% assign company = site.data['organization'] %}
-    <h1><a href="{{ '/' | relative_url }}">{% if page.title %}{{ page.title }}{% else %}{{ company.alternateName }}{% endif %}</a></h1>
-    <cv-chat collection="henrik" answer-position="below"></cv-chat>
+<header>
+    <div>
+        <div>
+            <picture>
+                <source srcset="{{ '/assets/img/landscape-800x534.jpg' | relative_url }}" media="(max-width: 700px)">
+                <img src="{{ '/assets/img/portrait-800x1199.jpg' | relative_url }}" alt="Photo of Henrik Becker" />
+            </picture>
+        </div>
+        <div>
+            <h1><a href="{{ '/' | relative_url }}">Henrik Becker</a></h1>
+            <p>Senior Software Engineer</p>
+            <section class="hidden no-print" id="social" data-source="{{ page.url | absolute_url }}#education">
+                <h2 class="hidden">Social</h2>
+                <ul>{% for social in profile['same_as'] %}{% assign url_parts = social.url | split: "/" %}{% assign
+                    path_parts = url_parts | slice: 2, url_parts.size %}<li title="{{ social.network }}"><a
+                            href="{{ social.url }}"><i class="fab fa-{{ social.network | downcase }}"></i> {{ path_parts
+                            | join: "/" }}</a></li>{% endfor %}</ul>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/cv" aria-current="page">CV</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><cv-chat collection="henrik" answer-position="below"></cv-chat></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </header>
