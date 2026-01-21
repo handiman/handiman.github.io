@@ -48,11 +48,15 @@
         <div>
             <h1><a href="/">Henrik Becker</a></h1>
             <p>Senior Software Engineer</p>
-            <section class="hidden no-print" id="social" data-source="/site.webmanifest#education">
+            <section class="print" id="social" data-source="/site.webmanifest#education">
                 <h2 class="hidden">Social</h2>
-                <ul><li title="GitHub"><a
-                            href="https://github.com/handiman"><i class="fab fa-github"></i> github.com/handiman</a></li><li title="LinkedIn"><a
-                            href="https://www.linkedin.com/in/prettygoodprogrammer"><i class="fab fa-linkedin"></i> www.linkedin.com/in/prettygoodprogrammer</a></li></ul>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <span class="flip-text">&#51;&#52;&#32;&#51;&#56;&#32;&#50;&#50;&#52;&#32;&#51;&#55;&#32;&#54;&#52;&#43;</span></li>
+                    <li><i class="fas fa-envelope"></i> <span class="flip-text">&#101;&#115;&#46;&#114;&#101;&#107;&#99;&#101;&#98;&#107;&#105;&#114;&#110;&#101;&#104;&#64;&#116;&#99;&#97;&#116;&#110;&#111;&#99;</span></li>
+                    <li><i class="fas fa-globe"></i> www.henrikbecker.net</li>
+                    <li><i class="fab fa-github"></i> github.com/handiman</li>
+                    <li><i class="fab fa-linkedin"></i> linkedin.com/in/prettygoodprogrammer</li>
+                </ul>
             </section>
             <nav>
                 <ul>
