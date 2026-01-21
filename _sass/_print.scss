@@ -1,0 +1,22 @@
+@media print {
+    * {
+        color: var(--color-text) !important;
+        background-color: white !important;
+    }
+  .no-print, cv-chat, nav {
+    display: none !important;
+  }
+
+  .print {
+    display: '' !important;
+  }
+
+  body>footer {
+    address div, address h5 {
+        font-size: var(--font-size-body-s);
+        font-weight: normal;
+        display:inline;
+        margin-bottom: 0;
+    }
+  }
+}

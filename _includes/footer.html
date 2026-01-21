@@ -1,0 +1,38 @@
+<footer role="contentinfo">{% assign company = site.data['organization'] %}{% assign person = site.data['person'] %}{% assign profile = site.data['profile'] %}{% assign page_class = page.name | lcase | split: "." | slice: 0, 1 %}
+    <div>
+        <section id="links" data-source="{{ page.url | absolute_url }}#links" class="no-print">
+            <h5>Links</h5>
+            <ul>
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/cv' | relative_url }}">Curriculim Vitae</a></li>
+                <li><a href="{{ '/about' | relative_url }}">About Me</a></li>
+                {% for social in site.data['profile']['same_as'] %}<li><a href="{{ social.url }}" title="{{ social.network }}">{{ social.network }}</a></li>{% endfor %}
+            </ul>
+        </section>
+        <section id="download" data-source="{{ page.url | absolute_url }}#download" class="no-print">
+            <h5>CV for download</h5> 
+            <ul>{% for format in site.data.formats %}<li><a href="{{ format.url | absolute_url }}" title="Download my CV in {{ format.name }} format">{{ format.name }}</a></li>{% endfor %}</ul>
+        </section>
+        <section id="company-info" data-section="Company information" data-source="{{ page.url | absolute_url }}#company-info">
+            <address>
+                <h5>{{ company.name }}</h5>
+                <div>{{ company.address.streetAddress }}</div>
+                <div>{{ company.address.postalCode }} {{ company.address.addressLocality }}</div>
+                <div>{{ company.address.addressCountry }}</div>
+                <div class="print">{{ company.vatId }}</div>
+            </address>
+            {% comment %}<div>Org.nr: 559120-2147</div>
+            <div>VAT: {{ company.vatId }}</div>{% endcomment %}
+            {% comment %}<div class="no-print">{% for social in profile['same_as'] %}<a href="{{ social.url }}" title="{{ social.network }}"><i class="fab fa-{{ social.network | downcase }}"></i></a>{% endfor %}</div>{% endcomment %}
+        </section>
+        <section id="about" data-source="{{ page.url | absolute_url }}#about" class="no-print">
+            <h5>About {{ person.givenName }}</h5>
+            <div>{{ person.description }}</div>
+        </section>
+    </div>
+    <div class="no-print">
+        <div>Copyright &copy; 2017 - {{ site.time | date: '%Y' }} {{ company.name }}</div>
+        <div>{% for social in profile['same_as'] %}<a href="{{ social.url }}" title="{{ social.network }}"><i class="fab fa-{{ social.network | downcase }}"></i></a>{% endfor %}</div>
+    </div>
+</footer>
+

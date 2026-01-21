@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-<!DOCTYPE html>{% assign company = site.data['organization'] %}
+<!DOCTYPE html>{% assign company = site.data['organization'] %}{% assign person = site.data['person'] %}{% assign profile = site.data['profile'] %}{% assign page_class = page.name | lcase | split: "." | slice: 0, 1 | first %}
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
     <meta charset="utf-8" />
@@ -13,39 +13,19 @@ layout: null
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    {% comment %}<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">{% endcomment %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.23/dist/collection/cv-chat.css" />
-    <link rel="stylesheet" href="{{ '/assets/style.css' | absolute_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/main.css' | absolute_url }}" />
     <script type="module">
         import { defineCustomElements } from 'https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.23/dist/esm/loader.js';
         defineCustomElements();
     </script>        
 </head>
-<body class="{{ page.layout }}">
-    <div class="layout">
-        {{ content }}
-        <footer role="contentinfo">
-            <section id="company-info" data-section="Company information" data-source="{{ page.url | absolute_url }}#company-info">
-                <h5>{{ company.name }}</h5>
-                <div>Org.nr: 559120-2147</div>
-                <div>VAT: {{ company.vatId }}</div>
-                <div>Address: 
-                    <address>
-                    {{ company.address.streetAddress }}<br />
-                    {{ company.address.postalCode }} {{ company.address.addressLocality }}<br />
-                    {{ company.address.addressCountry }}
-                    </address>
-                </div>
-            </section>
-            <section id="download" data-source="{{ page.url | absolute_url }}#download" class="no-print">
-                <h5>CV for download</h5> 
-                <ul>{% for format in site.data.formats %}<li><a href="{{ format.url | absolute_url }}" title="Download my CV in {{ format.name }} format">{{ format.name }}</a></li>{% endfor %}</ul>
-            </section>
-            <section class="no-print">
-                &copy; {{ site.time | date: '%Y' }} {{ site.data['person']['name'] }}, {{ company.name }}. Thanks for stopping by!
-                {% for social in site.data['profile']['same_as'] %}<a href="{{ social.url }}" title="{{ social.network }}"><i class="fab fa-{{ social.network | downcase }}"></i></a>{% endfor %}
-            </section>
-        </footer>
-    </div>
+<body class="{{ page_class }} {{ page.layout }}">
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+  <button class="theme-toggle" title="Toggle dark mode">.</button>
+  <script src="{{ '/assets/main.js' | relative_url }}"></script>
 </body>
 </html>         

@@ -1,0 +1,107 @@
+/* ============================================
+   DESIGN TOKENS — stable foundation
+   ============================================ */
+
+:root {
+  /* Spacing (4px baseline) */
+  --space-1: .5rem;
+  --space-2: .75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+
+  /* Typography scale */
+  --font-size-body: 1.0625rem;
+  --font-size-body-s: .875rem;
+  --font-size-h4: 1.25rem;
+  --font-size-h3: 1.5625rem;
+  --font-size-h2: 2rem;
+  --font-size-h1: 2.5rem;
+
+  --line-height-body: 1.5;
+  --line-height-heading: 1.2;
+
+  /* Colors (portrait-derived) - Light mode */
+  --color-bg-light: #F3F3F2; 
+  --color-surface-light: #FFFFFF;
+  --color-text-light: #1E2B26;
+  --color-muted-light: #5F6F67;
+  --color-accent-light: #2E463E;
+  --color-border-light: rgba(0,0,0,0.12);
+  --color-footer-bg-light: var(--color-accent-light);
+  --color-footer-text-light: var(--color-surface-light);
+  --gradient-light: var(--color-muted-light);
+  --gradient-alt-light: var(--color-accent-light);
+
+  /* Colors (portrait-derived) - Dark mode */
+    --color-bg-dark: #232725;
+    --color-surface-dark: #1A1D1C;
+    --color-text-dark: #ECEDEB;
+    --color-muted-dark: #A7B0AB;
+    --color-accent-dark: #8FB6A3;
+    --color-border-dark: rgba(255,255,255,0.12);
+    --color-footer-bg-dark: var(--color-surface-dark);
+    --color-footer-text-dark: var(--color-text-dark);
+    --gradient-dark: var(--color-accent-dark);
+    --gradient-alt-dark: var(--color-bg-dark);
+
+    /* Default colors */
+    --color-bg: var(--color-bg-light);
+    --color-surface: var(--color-surface-light);
+    --color-text: var(--color-text-light);
+    --color-muted: var(--color-muted-light);
+    --color-accent: var(--color-accent-light);
+    --color-border: var(--color-border-light);
+    --color-footer-bg: var(--color-footer-bg-light);
+    --color-footer-text: var(--color-footer-text-light);
+    --gradient: var(--gradient-light);
+    --gradient-alt: var(--gradient-alt-light);
+
+  /* Shadow */
+  --shadow-sm: 0 2px 6px rgba(0,0,0,0.05);
+
+}
+
+html.dark {
+    --color-bg: var(--color-bg-dark);
+    --color-surface: var(--color-surface-dark);
+    --color-text: var(--color-text-dark);
+    --color-muted: var(--color-muted-dark);
+    --color-accent: var(--color-accent-dark);
+    --color-border: var(--color-border-dark);
+    --color-footer-bg: var(--color-footer-bg-dark);
+    --color-footer-text: var(--color-footer-text-dark);
+    --gradient: var(--gradient-dark);
+    --gradient-alt: var(--gradient-alt-dark);
+}
+
+@media screen and  (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--color-bg-dark);
+    --color-surface: var(--color-surface-dark);
+    --color-text: var(--color-text-dark);
+    --color-muted: var(--color-muted-dark);
+    --color-accent: var(--color-accent-dark);
+    --color-border: var(--color-border-dark);
+    --color-footer-bg: var(--color-footer-bg-dark);
+    --color-footer-text: var(--color-footer-text-dark);
+    --gradient: var(--gradient-dark);
+    --gradient-alt: var(--gradient-alt-dark);
+  }
+}
+
+@media print {
+    :root {
+        --color-bg: var(--color-bg-light) !important;
+        --color-surface: var(--color-surface-light) !important;
+        --color-text: var(--color-text-light) !important;
+        --color-muted: var(--color-muted-light) !important;
+        --color-accent: var(--color-accent-light) !important;
+        --color-border: var(--color-border-light) !important;
+        --color-footer-bg: var(--color-footer-bg-light) !important;
+        --color-footer-text: var(--color-footer-text-light) !important;
+        --gradient: var(--gradient-light) !important;
+        --gradient-alt: var(--gradient-alt-light) !important;
+  }
+}
