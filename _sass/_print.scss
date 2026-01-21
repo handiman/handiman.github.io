@@ -3,20 +3,77 @@
 }
 
 @media print {
-  * {
+  /* Reset only what truly needs resetting */
+  html, body {
+    background: white !important;
     color: var(--color-text) !important;
-    background-color: white !important;
   }
+
+  body.about, body.index {
+    main > section:first-child {
+      page-break-after: always;
+    }
+  }
+
+  body.cv {
+    main > section:nth-child(2) {
+      page-break-after: always;
+    }
+  }
+
+  body > header, body > footer  {
+    * {
+      color: var(--color-text) !important;
+    }
+  }
+
+  main > section:first-child h2 {
+    margin-top: 0 !important;
+  }
+
+  body, body > header, body > header {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-block: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-block: 0 !important;
+  }
+
+  /* Remove interactive or irrelevant UI */
   .no-print,
   cv-chat,
   nav {
     display: none !important;
   }
 
+  /* Reveal print-only elements */
   .print {
     display: revert;
   }
 
+  /* Preserve layout integrity */
+  *, *::before, *::after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Optional: make links look like plain text */
+  a {
+    color: var(--color-text) !important;
+    text-decoration: none !important;
+  }
+
+  /* Prevent awkward page breaks */
+  h1, h2, h3, h4, h5, h6,
+  p,
+  .section,
+  .card,
+  .cv-block {
+    page-break-inside: avoid;
+  }
+
+  /* Footer contact formatting */
   body > footer {
     address div,
     address h5 {
