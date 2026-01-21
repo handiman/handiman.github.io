@@ -1,4 +1,71 @@
-{
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Henrik Becker Consulting AB</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Henrik Becker Consulting AB" />
+<meta name="author" content="Henrik Becker" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Henrik Becker Consulting AB" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Henrik Becker Consulting AB" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Henrik Becker"},"headline":"Henrik Becker Consulting AB","url":"/site.webmanifest"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="alternate" type="application/vnd.openxmlformats-officedocument.wordprocessing" title="My resumé in Word format" href="/assets/henrik-becker.docx" />
+    <link rel="alternate" type="text/markdown" title="My resumé in Markdown format" href="/assets/henrik-becker.txt" />
+    <link rel="alternate" type="application/json" title="My resumé in JSON format" href="/assets/henrik-becker.json" />
+    <link rel="alternate" type="application/rss+xml" title="My resumé in RSS feed format" href="/feed.rss.xml" />
+    <link rel="alternate" type="application/atom+xml" title="My resumé in Atom feed format" href="/feed.atom.xml" />
+    <link rel="alternate" type="application/json" title="My resumé in JSON feed format" href="/feed.json" />
+    
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.23/dist/collection/cv-chat.css" />
+    <link rel="stylesheet" href="/assets/main.css" />
+    <script type="module">
+        import { defineCustomElements } from 'https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.23/dist/esm/loader.js';
+        defineCustomElements();
+    </script>        
+</head>
+<body class="site page">
+    <header>
+    <div>
+        <div>
+            <picture>
+                <source srcset="/assets/img/landscape-800x534.jpg" media="(max-width: 700px)">
+                <img src="/assets/img/portrait-800x1199.jpg" alt="Photo of Henrik Becker" />
+            </picture>
+        </div>
+        <div>
+            <h1><a href="/">Henrik Becker</a></h1>
+            <p>Senior Software Engineer</p>
+            <section class="hidden no-print" id="social" data-source="/site.webmanifest#education">
+                <h2 class="hidden">Social</h2>
+                <ul><li title="GitHub"><a
+                            href="https://github.com/handiman"><i class="fab fa-github"></i> github.com/handiman</a></li><li title="LinkedIn"><a
+                            href="https://www.linkedin.com/in/prettygoodprogrammer"><i class="fab fa-linkedin"></i> www.linkedin.com/in/prettygoodprogrammer</a></li></ul>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/cv" aria-current="page">CV</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><cv-chat collection="henrik" answer-position="below"></cv-chat></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+    {
 	"lang": "en-AU",
 	"name": "Henrik Becker Consulting AB",
 	"short_name": "Henrik Becker",
@@ -46,3 +113,46 @@
     }
   ]
 }
+    <footer role="contentinfo">
+    <div>
+        <section id="links" data-source="/site.webmanifest#links" class="no-print">
+            <h5>Links</h5>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/cv">Curriculim Vitae</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="https://github.com/handiman" title="GitHub">GitHub</a></li><li><a href="https://www.linkedin.com/in/prettygoodprogrammer" title="LinkedIn">LinkedIn</a></li>
+            </ul>
+        </section>
+        <section id="download" data-source="/site.webmanifest#download" class="no-print">
+            <h5>CV for download</h5> 
+            <ul><li><a href="/assets/henrik-becker.docx" title="Download my CV in Word format">Word</a></li><li><a href="/assets/henrik-becker.txt" title="Download my CV in Markdown format">Markdown</a></li><li><a href="/assets/henrik-becker.json" title="Download my CV in JSON format">JSON</a></li><li><a href="/feed.rss.xml" title="Download my CV in RSS feed format">RSS feed</a></li><li><a href="/feed.atom.xml" title="Download my CV in Atom feed format">Atom feed</a></li><li><a href="/feed.json" title="Download my CV in JSON feed format">JSON feed</a></li></ul>
+        </section>
+        <section id="company-info" data-section="Company information" data-source="/site.webmanifest#company-info">
+            <address>
+                <h5>Henrik Becker Consulting AB</h5>
+                <div>Torsvikssvängen 37</div>
+                <div>18134 Lidingö</div>
+                <div>Sweden</div>
+                <div class="print">SE559120214701</div>
+            </address>
+            
+            
+        </section>
+        <section id="about" data-source="/site.webmanifest#about" class="no-print">
+            <h5>About Henrik</h5>
+            <div>Henrik Becker is an experienced .Net developer and solution architect dedicated to delivering quality software practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of dad-jokes.
+</div>
+        </section>
+    </div>
+    <div class="no-print">
+        <div>Copyright &copy; 2017 - 2026 Henrik Becker Consulting AB</div>
+        <div><a href="https://github.com/handiman" title="GitHub"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/prettygoodprogrammer" title="LinkedIn"><i class="fab fa-linkedin"></i></a></div>
+    </div>
+</footer>
+
+
+  <button class="theme-toggle" title="Toggle dark mode">.</button>
+  <script src="/assets/main.js"></script>
+</body>
+</html>         
