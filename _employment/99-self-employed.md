@@ -15,7 +15,7 @@ mission: Providing Fullstack .Net and DevOps expertise on a freelance basis in t
 
 ###### Clients:
 {% assign clients = site.projects | where: 'client', true %}
-{% for client in clients reversed %}* [{{client.name}}]({{ client.url }}) 
+{% for client in clients reversed %}* {{client.name}}
 {% endfor %}
 {% assign clients = nil %}
 <!--more-->
