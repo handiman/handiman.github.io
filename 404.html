@@ -18,7 +18,7 @@
 <!-- End Jekyll SEO tag -->
 
     <link rel="alternate" type="application/vnd.openxmlformats-officedocument.wordprocessing" title="My resumé in Word format" href="/assets/henrik-becker.docx" />
-    <link rel="alternate" type="text/markdown" title="My resumé in Markdown format" href="/assets/henrik-becker.txt" />
+    <link rel="alternate" type="text/markdown" title="My resumé in Markdown format" href="/assets/henrik-becker.md" />
     <link rel="alternate" type="application/json" title="My resumé in JSON format" href="/assets/henrik-becker.json" />
     <link rel="alternate" type="application/rss+xml" title="My resumé in RSS feed format" href="/feed.rss.xml" />
     <link rel="alternate" type="application/atom+xml" title="My resumé in Atom feed format" href="/feed.atom.xml" />
@@ -26,9 +26,9 @@
     
     <link rel="apple-touch-icon" href="/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.23/dist/collection/cv-chat.css" />
     <link rel="stylesheet" href="/assets/main.css" />
     <script type="module">
@@ -36,7 +36,7 @@
         defineCustomElements();
     </script>        
 </head>
-<body class="404 page">
+<body class="404 page error">
     <header>
     <div>
         <div>
@@ -46,8 +46,8 @@
             </picture>
         </div>
         <div>
-            <h1><a href="/">Henrik Becker</a></h1>
-            <p>Senior Software Engineer</p>
+            <h1><a href="/">Page Not Found</a></h1>
+            
             <section class="print" id="social" data-source="/404.html#education">
                 <h2 class="hidden">Social</h2>
                 <ul>
@@ -69,15 +69,11 @@
         </div>
     </div>
 </header>
-    <div id="error">
-  <div>
-    <h1>
-      <i class="far fa-frown"></i><br />
-      Page Not Found
-    </h1>
-    <a href="/">Click here to get to the home page</a>
-  </div>
-</div>
+    <main class="error">
+  <section>
+    <a href="/">Click here to get to the start page</a>
+  </section>
+</main>
     <footer role="contentinfo">
     <div>
         <section id="links" data-source="/404.html#links" class="no-print">
@@ -91,7 +87,7 @@
         </section>
         <section id="download" data-source="/404.html#download" class="no-print">
             <h5>CV for download</h5> 
-            <ul><li><a href="/assets/henrik-becker.docx" title="Download my CV in Word format">Word</a></li><li><a href="/assets/henrik-becker.txt" title="Download my CV in Markdown format">Markdown</a></li><li><a href="/assets/henrik-becker.json" title="Download my CV in JSON format">JSON</a></li><li><a href="/feed.rss.xml" title="Download my CV in RSS feed format">RSS feed</a></li><li><a href="/feed.atom.xml" title="Download my CV in Atom feed format">Atom feed</a></li><li><a href="/feed.json" title="Download my CV in JSON feed format">JSON feed</a></li></ul>
+            <ul><li><a href="/assets/henrik-becker.docx" title="Download my CV in Word format">Word</a></li><li><a href="/assets/henrik-becker.md" title="Download my CV in Markdown format">Markdown</a></li><li><a href="/assets/henrik-becker.json" title="Download my CV in JSON format">JSON</a></li><li><a href="/feed.rss.xml" title="Download my CV in RSS feed format">RSS feed</a></li><li><a href="/feed.atom.xml" title="Download my CV in Atom feed format">Atom feed</a></li><li><a href="/feed.json" title="Download my CV in JSON feed format">JSON feed</a></li></ul>
         </section>
         <section id="company-info" data-section="Company information" data-source="/404.html#company-info">
             <address>
@@ -101,7 +97,6 @@
                 <div>Sweden</div>
                 <div class="print">SE559120214701</div>
             </address>
-            
             
         </section>
         <section id="about" data-source="/404.html#about" class="no-print">
