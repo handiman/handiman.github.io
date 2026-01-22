@@ -169,3 +169,28 @@ body>header, body>footer, nav.sticky {
     filter: grayscale(100%) var(--logo-filter);
     opacity: 0.6;
 }
+
+
+#featured-projects, #work-experience {
+    h4 {
+        font-weight: 500;
+        margin-top: 0;
+    }
+    article header p  {
+        > span {
+            font-weight: 500;
+        }
+        > span::after {
+            content: '';
+            margin-inline: .25rem;
+            color: var(--color-muted, #ccc);
+        }
+        > time {
+            font-variant-numeric: tabular-nums;
+            span:first-child::after {
+                content: "–";
+                margin-inline: .2rem .1rem;
+            }
+        }
+    }
+}
