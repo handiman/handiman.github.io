@@ -54,14 +54,6 @@ defaults:
     path: assets/**/*.*
    values:
     sitemap: false
- - scope:
-    path: contact.html
-   values:
-    sitemap: false
- - scope:
-    path: swatch.html
-   values:
-    sitemap: false
 
 readme_index:
   enabled: false

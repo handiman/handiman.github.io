@@ -3,7 +3,7 @@
   url: /assets/henrik-becker.docx
 - name: Markdown
   mime_type: text/markdown
-  url: /assets/henrik-becker.txt
+  url: /assets/henrik-becker.md
 - name: JSON
   mime_type: application/json
   url: /assets/henrik-becker.json

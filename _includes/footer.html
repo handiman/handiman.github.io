@@ -23,7 +23,6 @@
             </address>
             {% comment %}<div>Org.nr: 559120-2147</div>
             <div>VAT: {{ company.vatId }}</div>{% endcomment %}
-            {% comment %}<div class="no-print">{% for social in profile['same_as'] %}<a href="{{ social.url }}" title="{{ social.network }}"><i class="fab fa-{{ social.network | downcase }}"></i></a>{% endfor %}</div>{% endcomment %}
         </section>
         <section id="about" data-source="{{ page.url | absolute_url }}#about" class="no-print">
             <h5>About {{ person.givenName }}</h5>

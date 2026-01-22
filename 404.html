@@ -2,13 +2,10 @@
 permalink: /404.html
 title: Page Not Found
 robots: noindex
+class: error
 ---
-<div id="error">
-  <div>
-    <h1>
-      <i class="far fa-frown"></i><br />
-      {{ page.title }}
-    </h1>
-    <a href="/">Click here to get to the home page</a>
-  </div>
-</div>
+<main class="error">
+  <section>
+    <a href="{{ '/' | relative_url }}">Click here to get to the start page</a>
+  </section>
+</main>

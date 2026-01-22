@@ -1,4 +1,5 @@
 ---
+permalink: /assets/henrik-becker.md
 ---
 {% assign person = site.data.person %}{% assign profile = site.data.profile %}
 # {{ person.name }}   

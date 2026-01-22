@@ -194,3 +194,22 @@ body>header, body>footer, nav.sticky {
         }
     }
 }
+
+/* Hacks */
+body.error {
+    a {
+        color: var(--color-footer-text);
+    }
+    background: radial-gradient(
+        circle at center,
+        var(--gradient) 40%,
+        var(--gradient-alt) 90%
+    );
+    > header,  > footer, nav.sticky {
+        background: transparent;
+    }
+    picture img {
+        filter: grayscale(1) brightness(1) invert(0.85);
+        opacity: 0.85;
+    }
+}
