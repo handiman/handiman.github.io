@@ -165,6 +165,7 @@ title: Henrik Becker - CV
             <ul>{% for skill in skillCategory.skills %}<li title="{{ skill }} - {{ skillCategory.level }}">{{ skill }}</li>{% endfor %}</ul>
         </article>{% endfor %}</div>
     </template>
+{% comment %}
     <section id="languages" data-source="{{ page.url | absolute_url }}#languages">
         <h2>Languages</h2>
         <ul>{% for language in profile['languages'] %}<li><strong>{{ language.name }}:</strong> {{ language.proficiency }}</li>{% endfor %}</ul>
@@ -181,4 +182,5 @@ title: Henrik Becker - CV
         <h2>Recommendations</h2>{% for recommendation in site.data['profile']['recommendations'] %}
         <blockquote><p>{{ recommendation.text }}</p><footer>- {{ recommendation.name }}</footer></blockquote>{% endfor %}
     </section>       
+{% endcomment %}    
 </aside>
