@@ -16,28 +16,48 @@ body {
    -------------------------------------------- */
 
 /* Shared heading styles */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 500;
   line-height: var(--line-height-heading);
   color: var(--color-text);
-  margin-top: var(--space-5);     /* generous but not excessive */
-  margin-bottom: var(--space-2);  /* tighter, more editorial */
+  margin-top: var(--space-5); /* generous but not excessive */
+  margin-bottom: var(--space-2); /* tighter, more editorial */
 }
 
-h1, h2, h3 {
-    font-weight: 400;
-    letter-spacing: 1.5px;
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  letter-spacing: 1.5px;
 }
 
-strong, b {
-    font-weight: 500;
+strong,
+b {
+  font-weight: 500;
 }
 
 /* Individual sizes */
-h1 { font-size: var(--font-size-h1); }
-h2 { font-size: var(--font-size-h2); }
-h3 { font-size: var(--font-size-h3); }
-h4 { font-size: var(--font-size-h4); }
+h1 {
+  font-size: var(--font-size-h1);
+}
+h2 {
+  font-size: var(--font-size-h2);
+  margin-top: 3rem;
+  margin-bottom: 0.75rem;
+}
+h3 {
+  font-size: var(--font-size-h3);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+h4 {
+  font-size: var(--font-size-h4);
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
+}
 
 /* --------------------------------------------
    PARAGRAPHS
@@ -52,7 +72,8 @@ p {
    SMALL / MUTED TEXT
    -------------------------------------------- */
 
-small, .small {
+small,
+.small {
   font-size: var(--font-size-body-s);
   color: var(--color-muted);
 }
@@ -77,9 +98,10 @@ h1 a:hover {
 /* --------------------------------------------
    LISTS
    -------------------------------------------- */
-ul, ol {
-    line-height: var(--line-height-body);
-}   
+ul,
+ol {
+  line-height: var(--line-height-body);
+}
 ul {
   list-style: none;
   padding: 0;
@@ -87,24 +109,24 @@ ul {
 
 ul li::before {
   content: "–";
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   color: var(--color-muted);
-}   
-
-body>header, body>footer {
-    ul {
-        li {
-            padding: 0;
-            margin:0;
-        }
-        li::before {
-            padding: 0;
-            margin:0;
-            content: ''
-        }
-    }
 }
 
+body > header,
+body > footer {
+  ul {
+    li {
+      padding: 0;
+      margin: 0;
+    }
+    li::before {
+      padding: 0;
+      margin: 0;
+      content: "";
+    }
+  }
+}
 
 /* --------------------------------------------
    BLOCKQUOTES
@@ -124,8 +146,8 @@ blockquote {
 
 code {
   font-family: "IBM Plex Mono", monospace;
-  font-size: .9em;
+  font-size: 0.9em;
   background: var(--color-surface);
-  padding: 0 .25em;
+  padding: 0 0.25em;
   border-radius: 4px;
 }
