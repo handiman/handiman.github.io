@@ -53,13 +53,33 @@ title: Henrik Becker - CV
             {% endfor %}</ul>
             {% endif %}
         </article>{% endif %}{% endfor %}
-    </section>  
+    </section> 
+    <section id="professional-context">
+        <h2>Professional Context</h2>
+        <article id="languages" data-source="{{ page.url | absolute_url }}#languages" data-section="Languages">
+            <h3>Languages</h3>
+            <ul>{% for language in profile['languages'] %}<li><strong>{{ language.name }}:</strong> {{ language.proficiency }}</li>{% endfor %}</ul>
+        </article>
+        <article id="certifications" data-source="{{ page.url | absolute_url }}#certifications" data-section="Certifications">
+            <h3>Certifications</h3>
+            <ul>{% for cert in site.certs %}<li><strong>{{ cert.title }}:</strong> {% if cert.issuer %}{{ cert.issuer }} {% endif %}{% if cert.achievement_date %}(<date>{{ cert.achievement_date }}</date>){% endif %}</li>{% endfor %}</ul>
+        </article>
+        <article id="education" data-source="{{ page.url | absolute_url }}#education" data-section="Education">
+            <h3>Education</h3>
+            <ul>{% for education in site.data.profile.education %}<li><strong>{{ education.school }}:</strong> {{ education.description }} (<time>{% if education.start_year %}{{ education.start_year }}{% endif %} &dash; {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}</time>)</li>{% endfor %}</ul>
+        </article>
+        <article id="recommendations" data-source="{{ page.url | absolute_url }}#recommendations" data-section="Recommendations">
+            <h3>Recommendations</h3>{% for recommendation in site.data['profile']['recommendations'] %}
+            <blockquote><p>{{ recommendation.text }}</p><footer>- {{ recommendation.name }}</footer></blockquote>{% endfor %}
+        </article>    
+    </section> 
     <section id="work-experience">
-        <h2>Work Experience</h2>{% for xp in site.employment reversed %}{% assign org = xp['organization'] %}{% capture xpSlug %}{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}{% endcapture %}
+        <h2>Professional Experience</h2>{% for xp in site.employment reversed %}{% assign org = xp['organization'] %}{% capture xpSlug %}{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}{% endcapture %}
         <article id="{{ xpSlug }}" data-section="{{ org['name'] }}" data-source="{{ page.url | absolute_url }}#{{ xpSlug }}">
             <header>
                 <h3>{{ org['name'] }}</h3>
                 <p>
+                    <em>{{ org['type'] }}</em>
                     {% if xp.roles %}<span>{% for role in xp.roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>{% endif %}
                     <time>
                         <span>{{ xp.start_date | date: '%Y-%m'}}</span>
@@ -137,7 +157,7 @@ title: Henrik Becker - CV
     </template>
 </main>
 
-<aside role="complementary">
+<aside role="complementary" class="hidden">
     <template id="skills-by-category" class="hidden">
         <h2>Skills</h2><div>{% for skillCategory in site.data['profile']['categorizedSkills'] %}{% capture skillCategorySlug %}{{ skillCategory.name | replace: '/', '-' | replace: ' ', '-' | replace: '--', '' | downcase }}{% endcapture %}
         <article title="{{ skillCategory.name }} - {{ skillCategory.level }}" data-section="Skills by Category - {{ skillCategory.name }}" data-level="{{ skillCategory.level }}" data-source="{{ page.url | absolute_url }}#{{ skillCategorySlug }}">

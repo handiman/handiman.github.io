@@ -5,6 +5,7 @@ roles:
 organization:
  id: magine
  name: Magine TV AB
+ type: Cloud‑based TV streaming platform, startup
  address:
   city: Stockholm
 start_date: 2015-09-14

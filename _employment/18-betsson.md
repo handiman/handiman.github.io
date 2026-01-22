@@ -5,6 +5,7 @@ roles:
 organization:
  id: betssongroup-ab
  name: Betsson Group AB
+ type: Global online gaming & sportsbook enterprise
  address:
   city: Stockholm;
 start_date: 2023-12-18

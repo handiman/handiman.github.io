@@ -147,6 +147,10 @@ body>header, body>footer, nav.sticky {
     );
 }
 
+main > section, aside > section {
+    margin-top: 3rem;
+}
+
 /* Client Logos */
 .client-logos {
   display: grid;
@@ -170,8 +174,10 @@ body>header, body>footer, nav.sticky {
     opacity: 0.6;
 }
 
-
-#featured-projects, #work-experience {
+#featured-projects, #work-experience, #professional-context {
+    h3 {
+        margin-bottom: .25rem;
+    }
     h4 {
         font-weight: 500;
         margin-top: 0;
@@ -191,6 +197,14 @@ body>header, body>footer, nav.sticky {
                 content: "–";
                 margin-inline: .2rem .1rem;
             }
+        }
+    }
+}
+
+#work-experience {
+    header {
+        em {
+            display: block;
         }
     }
 }

@@ -5,6 +5,7 @@ roles:
 organization:
  id: kantarellen-livs-ab
  name: Kantarellen Livs AB
+ type: Local grocery retailer
 start_date: 1992-06-01
 end_date: 1992-09-01
 ---

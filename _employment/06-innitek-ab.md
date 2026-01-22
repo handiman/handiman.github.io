@@ -5,6 +5,7 @@ roles:
 organization:
  id: innitek-ab
  name: Innitek AB
+ type: IT consultancy focused on custom software
 start_date: 1998-10-01
 end_date: 1999-07-31
 summary: 

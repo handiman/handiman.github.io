@@ -5,6 +5,7 @@ roles:
 organization:
  id: iconmedialab-ab
  name: IconMedialab AB
+ type: Digital agency & web solutions pioneer
 start_date: 1999-09-01
 end_date: 2002-01-01
 summary: 

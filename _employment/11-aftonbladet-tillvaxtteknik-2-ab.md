@@ -5,6 +5,7 @@ roles:
 organization:
  id: aftonbladet-tillvaxtteknik-2-ab
  name: Aftonbladet Tillväxtteknik 2 AB
+ type: Digital media & product development unit
 start_date: 2007-12-01
 end_date: 2008-01-01
 summary: 

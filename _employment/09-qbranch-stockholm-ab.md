@@ -5,6 +5,7 @@ roles:
 organization:
  id: qbranch-stockholm-ab
  name: Qbranch Stockholm AB
+ type: IT infrastructure & managed services consultancy
 start_date: 2005-04-01
 end_date: 2007-04-01
 summary: 

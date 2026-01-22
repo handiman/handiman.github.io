@@ -5,6 +5,7 @@ roles:
 organization:
  id: inverso-international-ab
  name: Inverso International AB
+ type: IT consultancy focused on business systems
 start_date: 2007-04-01
 end_date: 2007-12-01
 summary: 

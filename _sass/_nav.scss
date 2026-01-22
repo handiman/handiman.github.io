@@ -24,7 +24,7 @@ nav.sticky {
   z-index: 100;
   padding-block: var(--space-1) !important;
   img {
-    display: '';
+    display: revert;
   }
   cv-chat {
     margin-block: 0 !important;

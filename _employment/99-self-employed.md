@@ -1,7 +1,7 @@
 ---
 name: Self Employed
 roles: 
- - Self Employed
+ - IT Consultant
 organization:
  id: henrik-becker-consulting-ab
  name: Henrik Becker Consulting AB

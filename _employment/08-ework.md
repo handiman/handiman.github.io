@@ -5,6 +5,7 @@ roles:
 organization:
  id: ework
  name: eWork
+ type: IT consultant broker & sourcing partner
 start_date: 2002-01-01
 end_date: 2005-03-31
 summary: 

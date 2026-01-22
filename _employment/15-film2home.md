@@ -5,6 +5,7 @@ roles:
 organization:
  id: film2home
  name: Film2Home AB
+ type: Digital movie rental & streaming service
  address:
   city: Stockholm
 start_date: 2014-11-03

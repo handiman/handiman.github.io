@@ -5,6 +5,7 @@ roles:
 organization:
  id: avega-group-ab
  name: Avega Group AB
+ type: IT consultancy specializing in enterprise solutions
 start_date: 2008-01-28
 end_date: 2012-03-09
 summary:
