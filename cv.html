@@ -32,8 +32,22 @@ title: Henrik Becker - CV
                 {% if xp.roles %}<p><strong class="hidden">Roles:</strong> {% for role in xp.roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
                 <p><time>{{ xp.start_date | date: '%Y-%m'}}&ndash;{{ xp.end_date | date: '%Y-%m' }}</time></p>
             </header>
-            <p>{% if xp.summary %}{% for summary in xp.summary %}{{ summary | strip }}. {% endfor %}{% else %}{{ xp.excerpt | strip }}{% endif %}</p>
-            {% if xp.skills %}<p><strong>Skills:</strong> {% for skill in xp.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
+            <p>{% if xp.summary %}{% for summary in xp.summary %}{{ summary | strip | replace: '.', '' }}. {% endfor %}{% else %}{{ xp.excerpt | strip }}{% endif %}</p>
+            {% if xp.competencies %}
+            <h4>Core Compentencies</h4>
+            <ul class="competencies">{% for competency in xp.competencies %}
+                <li>
+                    <details>
+                        <summary class="label">{{ competency.name }}</summary>
+                        <ul>{% for tech in competency.tech %}
+                            <li>{{ tech }}</li>
+                        {% endfor %}</ul>
+                    </details>
+                    <span class="bar" data-weight="{{ competency.weight }}"></span>
+                </li>
+            {% endfor %}</ul>
+            {% endif %}
+            {% comment %}{% if xp.skills %}<p><strong>Skills:</strong> {% for skill in xp.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}{% endcomment %}
         </article>{% endif %}{% endfor %}
     </section>  
     <section id="work-experience">

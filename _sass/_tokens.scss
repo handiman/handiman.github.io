@@ -64,6 +64,9 @@
   --logo-filter-light: brightness(1);
   --logo-filter-dark: brightness(6) contrast(1.1);
   --logo-filter: var(--logo-filter-light);
+
+  --duration-fast: 0.18s;
+  --duration-normal: 0.25s;
 }
 
 html.dark {

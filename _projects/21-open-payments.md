@@ -23,6 +23,26 @@ summary:
  - Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.
  - Improved test automation by making functional/integration tests require less manual intervention.
  - Reduced deployment time thanks to improved test automation.
+competencies:
+  - name: Backend development 
+    weight: .9
+    tech:
+     - C#
+     - Asp.Net Core
+  - name: Frontend development     
+    weight: .9
+    tech:
+      - React
+      - Redux
+      - TypeScript    
+  - name: System integration
+    weight: .5
+    tech: 
+      - Azure functions      
+  - name: Automation
+    weight: .3
+    tech:
+      - Azure DevOps
 ---
 <!--more-->
 

@@ -44,4 +44,37 @@ summary:
  - Designed Plejmo's REST API.
  - Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
  - Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.
+competencies:
+  - name: Backend development
+    weight: .9
+    tech:
+      - C#
+      - .Net Framework
+      - Asp.Net MVC
+      - Asp.Net Web Api
+      - NHibernate
+      - SQL Server
+      - EPiServer
+  - name: Architecture
+    weight: .4
+    tech:
+      - CQRS
+      - Micro Services
+      - Rest APIs
+  - name: System integration
+    weight: .6
+    tech:
+      - Azure Service Bus
+      - Rest APIs
+      - WCF
+  - name: Frontend development
+    weight: .7
+    tech:
+      - JavaScript
+      - jQuery
+      - KnockoutJS
+  - name: Automation
+    weight: .7       
+    tech:
+      - Octopus Deploy
 ---

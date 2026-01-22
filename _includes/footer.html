@@ -4,8 +4,8 @@
             <h5>Links</h5>
             <ul>
                 <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/cv' | relative_url }}">Curriculim Vitae</a></li>
-                <li><a href="{{ '/about' | relative_url }}">About Me</a></li>
+                <li><a href="{{ '/cv' | relative_url }}">CV</a></li>
+                <li><a href="{{ '/about' | relative_url }}">About</a></li>
                 {% for social in site.data['profile']['same_as'] %}<li><a href="{{ social.url }}" title="{{ social.network }}">{{ social.network }}</a></li>{% endfor %}
             </ul>
         </section>
