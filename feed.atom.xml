@@ -61,7 +61,7 @@
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/cv" aria-current="page">CV</a></li>
+                    <li><a href="/cv">CV</a></li>
                     <li><a href="/about">About</a></li>
                     <li><cv-chat collection="henrik" answer-position="below"></cv-chat></li>
                 </ul>
@@ -75,7 +75,7 @@
   <title>Henrik Becker Consulting AB</title>
   <link href="https://www.henrikbecker.net" />
   <link href="https://www.henrikbecker.net/feed.atom.xml" rel="self" />
-  <updated>2026-01-21T16:59:44.000Z</updated>
+  <updated>2026-01-22T14:28:45.000Z</updated>
   <author>
     <name>Henrik Becker</name>
   </author>
@@ -433,8 +433,8 @@
             <h5>Links</h5>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/cv">Curriculim Vitae</a></li>
-                <li><a href="/about">About Me</a></li>
+                <li><a href="/cv">CV</a></li>
+                <li><a href="/about">About</a></li>
                 <li><a href="https://github.com/handiman" title="GitHub">GitHub</a></li><li><a href="https://www.linkedin.com/in/prettygoodprogrammer" title="LinkedIn">LinkedIn</a></li>
             </ul>
         </section>
