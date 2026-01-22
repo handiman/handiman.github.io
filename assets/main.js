@@ -22,10 +22,9 @@
     document.documentElement.classList.toggle("dark");
   });
 
-  document.querySelectorAll('.flip-card').forEach(card => {
+  document.querySelectorAll('.flippable').forEach(card => {
     card.addEventListener('click', () => {
       card.classList.toggle('flipped');
     });
   });
-
 })();
