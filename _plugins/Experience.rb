@@ -1,7 +1,7 @@
 class Experience
   def initialize (xp, site)
     @id       = xp.id
-    @role     = xp['role']
+    @role     = xp['roles'].is_a?(Array) ? xp['roles'].join(", ") : xp['roles']
     @from     = xp['start_date']
     @to       = xp['end_date']
     @skills   = xp['skills']
@@ -17,10 +17,9 @@ class Experience
         @summary = xp['summary']
       end
     else
-      @name = xp['title']
+      @name = xp['name']
       @summary = xp['summary']
-    end
-  end
+    end  end
 
   def id 
     @id

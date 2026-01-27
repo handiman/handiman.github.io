@@ -5,24 +5,8 @@ module Jekyll
     class PDFResume < Prawn::Document
       def initialize(site)
         super()
-        
-        @site = site
-        @dir = 'assets'
-        @filename = 'henrik-becker-prawn.pdf'
-        
-        # font size is in points (1/72 inch)
-        @heading  = 55
-        @subtitle = 22
-        @h1       = 33
-              @h2       = 22
-        @h5       = 10
-        @h6       = 10
-        @normal   = 11
-        @spacing  = @normal
-  
-        @text_color = '010101'
-        @link_color = '75A434'
-        
+        page_size = "A4"
+        margin = 30
         font_families.update("OpenSans" => {
           :normal => "#{site.source}/assets/fonts/OpenSans-Regular.ttf",
           :italic => "#{site.source}/assets/fonts/OpenSans-Italic.ttf",
@@ -30,7 +14,24 @@ module Jekyll
           :bold_italic => "#{site.source}/assets/fonts/OpenSans-BoldItalic.ttf"
         })
         font "OpenSans"
+
+        @site = site
+        @dir = 'assets'
+        @filename = 'henrik-becker.pdf'
+        
+        # font size is in points (1/72 inch)
+        @heading  = 55
+        @subtitle = 22
+        @h1       = 33
+        @h2       = 22
+        @h5       = 10
+        @h6       = 10
+        @normal   = 11
+        @spacing  = margin
   
+        @text_color = '010101'
+        @link_color = '75A434'
+
         puts "      Generating... #{@dir}/#{@filename}"
       end
   
@@ -51,7 +52,6 @@ module Jekyll
         phone = person['phone']
         url   = person['url']
         
-        #pdf.move_down 100
         text name, :size => @heading#, :align => :center
         text title, :size => @subtitle#, :align => :center
         move_down @spacing
@@ -72,7 +72,8 @@ module Jekyll
         @site.data["profile"]["featuredProjects"].each do |feature|
           @site.collections["projects"].docs.each do |project|
             if project.id == "/projects/" + feature
-              experience(Experience.new(project))
+              move_down @spacing
+              experience(Experience.new(project, @site))
             end
           end
         end
@@ -81,7 +82,8 @@ module Jekyll
       def employment
         h1 'Work Experience'
         @site.collections['employment'].docs.reverse.each do |work|
-          experience(Experience.new(work))
+          move_down @spacing
+          experience(Experience.new(work, @site))
         end
       end
   
@@ -134,6 +136,7 @@ module Jekyll
   
         h2 xp.name
         h5 "#{xp.role} | #{period}"
+        move_down @normal
   
         unless xp.summary.nil?
           if xp.id == '/employment/17-self-employed'
@@ -146,12 +149,14 @@ module Jekyll
         end
   
         unless xp.skills.nil?
+          move_down @normal
           h6 "Skills used"
           p xp.skills.join(', ')
         end
       end
   
       def li(content)
+        move_down @normal / 2
         text "\u2022 #{content}"
       end
   
@@ -160,18 +165,22 @@ module Jekyll
       end
   
       def h1(content)
+        move_down @spacing
         text content, :size => @h1
       end
   
       def h2(content)
+        move_down @normal
         text content, :size => @h2
       end
   
       def h5(content)
+        move_down @normal / 2
         text content, :size => @h5, :style => :bold
       end
   
       def h6(content)
+        move_down @normal / 2
         text content, :size => @h6, :style => :bold
       end
   
