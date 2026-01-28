@@ -4,7 +4,12 @@ repository: handiman/handiman.github.io
 production_url: https://www.henrikbecker.net
 author:
   name: Henrik Becker
+  type: Person
+  url: https://www.henrikbecker.net
   github: handiman
+  links: 
+    - https://github.com/handiman
+    - https://www.linkedin.com/in/prettygoodprogrammer
 tile_color: '#303030'
 permalink: pretty
 sass:
@@ -38,22 +43,30 @@ collections:
 excerpt_separator: <!--more-->
 
 defaults:
- - scope: 
-    path: "*.*"
-   values:
-    layout: page 
- - scope:
-    path: README.md
-   values: 
-    layout: page
- - scope:
-    path: googlef0bc3dbe928e1f73.html
-   values:
-    sitemap: false
- - scope:
-    path: assets/**/*.*
-   values:
-    sitemap: false
+  - scope:
+      path: ""
+    values:
+      layout: page
+      image:
+        path: /assets/img/portrait-800x1199.jpg
+        alt: Henrik Becker
+        height: 1199
+        width: 800
+  - scope:
+     path: googlef0bc3dbe928e1f73.html
+    values:
+     sitemap: false
+     layout: null
+  - scope:
+     path: assets/**/*.*
+    values:
+     sitemap: false
+     layout: null
+  - scope:
+     path: feed*.*
+    values:
+     sitemap: false
+     layout: null
 
 readme_index:
   enabled: false
