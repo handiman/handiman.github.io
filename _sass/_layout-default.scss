@@ -109,16 +109,16 @@ body>header>div {
         }
         @media (min-width: 700px) {
             display: grid;
-            grid-template-areas: "photo hero";
+            grid-template-areas: "left right";
             justify-content: start;
             &>* {
                 margin-block: var(--space-6);
                 margin-right: var(--space-6);
-                &::first-child {
-                    grid-area: photo;
+                &:first-child {
+                    grid-area: left;
                 }
-                &::last-child {
-                    grid-area: hero;
+                &:last-child {
+                    grid-area: right;
                 }
             }
             picture {

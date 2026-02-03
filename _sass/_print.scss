@@ -3,22 +3,16 @@
 }
 
 @media print {
+ @page {
+    size: A4;
+    margin: 12mm; /* or 10–15mm depending on your layout */
+  }
+
   /* Reset only what truly needs resetting */
   html, body {
     background: white !important;
     color: var(--color-text) !important;
-  }
-
-  body.about, body.index {
-    main > section:first-child {
-      page-break-after: always;
-    }
-  }
-
-  body.cv {
-    main > section:nth-child(2) {
-      page-break-after: always;
-    }
+    font-size: 15px !important;
   }
 
   body > header, body > footer  {
@@ -31,7 +25,7 @@
     margin-top: 0 !important;
   }
 
-  body, body > header, body > header {
+  body, body > header, body > header div {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     padding-block: 0 !important;
@@ -43,7 +37,7 @@
   /* Remove interactive or irrelevant UI */
   .no-print,
   cv-chat,
-  nav {
+  nav, #recommendations {
     display: none !important;
   }
 
@@ -64,17 +58,71 @@
     text-decoration: none !important;
   }
 
+  // <HEADER>
+  body>header>div {
+    grid-template-columns: 1fr 300px;
+    border: 1pt solid var(--color-border);
+    border-radius: var(--space-1);
+
+    picture {
+      width: calc(800px / 4.5) !important;
+      height: calc(1199px / 4.5) !important;
+      img {
+        print-color-adjust: exact;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+
+    i[class*="fa"] {
+      margin-right: .5rem !important;
+    }
+    
+    &>* {
+        margin-block: 0;
+        margin-right: 0;
+        &:first-child {
+          grid-area: right !important;
+          justify-self: end;
+        }
+        &:last-child {
+          margin-left: var(--space-6);
+          grid-area: left !important;
+        }
+    }
+  }
+
+  main {
+    // Fix optical illusion when header is business card with border
+    margin-left: 1mm;
+  }
+  // </HEADER>
+
+
+  // <PAGE BREAKS>
+  body.cv {
+    #featured-projects {
+      page-break-before: always;
+    }
+  }
+
+  body.about, body.index {
+    main > section:first-child {
+      page-break-after: always;
+    }
+  }
+
   /* Prevent awkward page breaks */
   h1, h2, h3, h4, h5, h6,
-  p,
-  .section,
-  .card,
-  .cv-block {
+  p, article, .card {
     page-break-inside: avoid;
   }
+  // </PAGE BREAKS>
 
   /* Footer contact formatting */
   body > footer {
+    display: none;
+    text-align: center;
     address div,
     address h5 {
       font-size: var(--font-size-body-s);
@@ -82,5 +130,22 @@
       display: inline;
       margin-bottom: 0;
     }
+  }
+
+  h2, h3 {
+    margin-top: var(--space-1) !important;
+  }
+
+  h2 {
+    page-break-after: avoid;
+    border-bottom: 1pt solid var(--color-border);
+    padding-bottom: 1.4mm; /* try 1.3mm or 1.5mm */
+    margin-bottom: 3.6mm;  /* try 3.5mm or 3.7mm */
+    line-height: 1.5;      /* or 1.25 */
+  }
+  
+  #featured-projects article {
+    padding-bottom: var(--space-3) !important;
+    margin-bottom: var(--space-3) !important;
   }
 }
