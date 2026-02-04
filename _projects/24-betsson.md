@@ -109,5 +109,7 @@ My work centered on improving architectural clarity, strengthening automation, a
 - Supported team growth by conducting technical interviews and contributing to recruitment decisions
 
 ## Reflection
-This project reinforced the value of combining strong architectural principles with pragmatic iteration. The most meaningful improvements came not from large rewrites, but from clarifying boundaries, tightening feedback loops, and removing friction in the development and deployment process.
-Working in a high‑scale, regulated environment sharpened my ability to balance innovation with compliance — and to design systems that remain understandable even as they grow.
+This project reinforced the value of making systems easier to understand and faster to work with — not through big rewrites, but by clarifying responsibilities, improving observability, and removing the small points of friction that slow teams down. Working in a high‑scale, regulated environment sharpened my ability to balance innovation with compliance and to design systems that remain understandable even as they grow.
+
+My four years at Betsson — first as a consultant for roughly two years, then as a full‑time employee for another two — were a deliberate exception to my usual freelancing path. I stayed because I genuinely enjoyed the company and the colleagues, and left only because I eventually missed the freedom and variety of consulting.
+
