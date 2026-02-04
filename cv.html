@@ -38,16 +38,17 @@ layout: page
             </header>
             <p>{% if xp.summary %}{% for summary in xp.summary %}{{ summary | strip | replace: '.', '' }}. {% endfor %}{% else %}{{ xp.excerpt | strip }}{% endif %}</p>
             {% if xp.competencies %}
-            <h4>Core Compentencies</h4>
+            <h4>Tech & Methods Used</h4>
             <ul class="competencies">{% for competency in xp.competencies %}
                 <li>
                     <details>
-                        <summary class="label">{{ competency.name }}</summary>
+                        <summary class="label"><h5>{{ competency.name }}</h5></summary>
                         <ul>{% for tech in competency.tech %}
                             <li>{{ tech }}</li>
                         {% endfor %}</ul>
                     </details>
                     <span class="bar" data-weight="{{ competency.weight }}"></span>
+                    <span class="print"><h5>{{ competency.name }}</h5> {{ competency.tech | join: ', ' }}</span>
                 </li>
             {% endfor %}</ul>
             {% endif %}

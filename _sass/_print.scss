@@ -148,4 +148,26 @@
     padding-bottom: var(--space-3) !important;
     margin-bottom: var(--space-3) !important;
   }
+
+  .competencies {
+    margin-top: .25rem;
+    details, summary .bar {
+      display: none;
+    }
+    li {
+      display: revert;
+      font-weight: normal;
+    }
+    li::before {
+      content: "";
+      margin: 0;
+      padding: 0;
+    }
+    h5 {
+      display: inline;
+      &::after {
+        content: ":";
+      }
+    }
+  }
 }
