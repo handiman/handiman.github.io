@@ -137,6 +137,7 @@
     line-height: 1.5;      /* or 1.25 */
   }
   
+  // <Experience>
   #featured-projects article {
     padding-bottom: var(--space-3) !important;
     margin-bottom: var(--space-3) !important;
@@ -163,4 +164,50 @@
       }
     }
   }
+  // </Experience>
+
+  // <Cards>
+  .card {
+    perspective: none; /* no 3D in print */
+    border: none !important;
+  }
+
+  .card-inner {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: auto !important;
+    transform: none !important; /* disable flipping */
+    border: none !important;
+    height: auto !important;
+  }
+
+  .card-front {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: revert !important;
+    display: block !important;
+    transform: none !important;
+    border: none! important;
+    height: auto !important;
+  }
+
+  .card-back {
+    position: revert !important;
+    display: block o !important;
+    margin-top: 2rem;
+    transform: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #why-me {
+    .card-back {
+      display: none !important;
+    }
+  }
+
+  // </Cards>
 }
