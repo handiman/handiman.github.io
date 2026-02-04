@@ -1,6 +1,7 @@
 ---
 name: Norconsult Astando
 slug: norconsult-astando/2018
+output: false
 roles: 
  - Fullstack Developer, DevOps
 employer: /employment/17-self-employed

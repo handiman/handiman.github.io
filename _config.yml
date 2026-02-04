@@ -58,6 +58,7 @@ defaults:
       type: projects
     values:
       layout: project
+      sitemap: false
 
   - scope:
      path: googlef0bc3dbe928e1f73.html

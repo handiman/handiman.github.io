@@ -1,6 +1,8 @@
 ---
 name: Betsson Group
 slug: betsson
+sitemap: true
+teaser: Strengthened architecture, performance, and team capability across Betsson’s gamification systems through hands‑on engineering and candidate assessments
 client: true
 organization:
   name: Betsson Group AB
