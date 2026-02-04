@@ -4,13 +4,13 @@
   <title>Henrik Becker Consulting AB</title>
   <link href="https://www.henrikbecker.net" />
   <link href="https://www.henrikbecker.net/feed.atom.xml" rel="self" />
-  <updated>2026-02-04T08:45:41.000Z</updated>
+  <updated>2026-02-04T14:06:05.000Z</updated>
   <author>
     <name>Henrik Becker</name>
   </author>
   <rights>Copyright 2026 Henrik Becker</rights>
   <entry>
-    <id>https://www.henrikbecker.net/projects/24-betsson</id>
+    <id>https://www.henrikbecker.net/projects/betsson</id>
     <title> at 24 Betsson</title>
     <published>2021-10-11T00:00:00.001Z</published>
     <updated>2021-10-11T00:00:00.001Z</updated>
@@ -27,7 +27,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/23-adlibris</id>
+    <id>https://www.henrikbecker.net/projects/adlibris</id>
     <title> at 23 Adlibris</title>
     <published>2021-02-22T00:00:00.002Z</published>
     <updated>2021-02-22T00:00:00.002Z</updated>
@@ -35,14 +35,14 @@
        at 23 Adlibris
       2021-02-22 - 2021-10-10
       
-      OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app currently in development.
+      OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app under development.
       Account management API built with Asp.Net Core and .Net 5 hosted on Azure.
       Contentful CMS content modeling and integration.
       Skills used: C#, Asp.Net Core, Asp.Net MVC, JavaScript, jQuery, React, SQL Server, Octopus Deploy, Azure App Services, Identity Server
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/22-norconsult-astando-2020</id>
+    <id>https://www.henrikbecker.net/projects/norconsult-astando</id>
     <title> at 22 Norconsult Astando 2020</title>
     <published>2020-10-19T00:00:00.003Z</published>
     <updated>2020-10-19T00:00:00.003Z</updated>
@@ -57,7 +57,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/21-open-payments</id>
+    <id>https://www.henrikbecker.net/projects/open-payments</id>
     <title> at 21 Open Payments</title>
     <published>2019-12-02T00:00:00.004Z</published>
     <updated>2019-12-02T00:00:00.004Z</updated>
@@ -72,7 +72,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/20-insplanet</id>
+    <id>https://www.henrikbecker.net/projects/insplanet</id>
     <title> at 20 Insplanet</title>
     <published>2019-01-07T00:00:00.005Z</published>
     <updated>2019-01-07T00:00:00.005Z</updated>
@@ -86,7 +86,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/19-norconsult-astando</id>
+    <id>https://www.henrikbecker.net/projects/norconsult-astando/2018</id>
     <title> at 19 Norconsult Astando</title>
     <published>2018-04-18T00:00:00.006Z</published>
     <updated>2018-04-18T00:00:00.006Z</updated>
@@ -101,7 +101,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/18-svea-ekonomi</id>
+    <id>https://www.henrikbecker.net/projects/svea</id>
     <title> at 18 Svea Ekonomi</title>
     <published>2017-10-11T00:00:00.007Z</published>
     <updated>2017-10-11T00:00:00.007Z</updated>
@@ -116,7 +116,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/17-plejmo</id>
+    <id>https://www.henrikbecker.net/projects/film2home</id>
     <title> at 17 Plejmo</title>
     <published>2014-11-03T00:00:00.008Z</published>
     <updated>2014-11-03T00:00:00.008Z</updated>
@@ -132,7 +132,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/16-arbetsformedlingen</id>
+    <id>https://www.henrikbecker.net/projects/arbetsformedlingen</id>
     <title> at 16 Arbetsformedlingen</title>
     <published>2014-06-24T00:00:00.009Z</published>
     <updated>2014-06-24T00:00:00.009Z</updated>
@@ -145,7 +145,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/15-qbranch-competence-manager</id>
+    <id>https://www.henrikbecker.net/projects/qbrbanch-competence-manager</id>
     <title> at 15 Qbranch Competence Manager</title>
     <published>2014-04-28T00:00:00.010Z</published>
     <updated>2014-04-28T00:00:00.010Z</updated>
@@ -158,7 +158,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/14-wasa-kredit-ab</id>
+    <id>https://www.henrikbecker.net/projects/wasa-kredit</id>
     <title> at 14 Wasa Kredit Ab</title>
     <published>2012-03-12T00:00:00.011Z</published>
     <updated>2012-03-12T00:00:00.011Z</updated>
@@ -173,7 +173,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/13-cale-access-ab</id>
+    <id>https://www.henrikbecker.net/projects/cale-access</id>
     <title> at 13 Cale Access Ab</title>
     <published>2011-09-01T00:00:00.012Z</published>
     <updated>2011-09-01T00:00:00.012Z</updated>
@@ -185,7 +185,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/12-cashguard</id>
+    <id>https://www.henrikbecker.net/projects/cashguard</id>
     <title> at 12 Cashguard</title>
     <published>2011-06-01T00:00:00.013Z</published>
     <updated>2011-06-01T00:00:00.013Z</updated>
@@ -199,7 +199,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/11-lansforsakringar</id>
+    <id>https://www.henrikbecker.net/projects/lansforsakringar</id>
     <title> at 11 Lansforsakringar</title>
     <published>2009-09-01T00:00:00.014Z</published>
     <updated>2009-09-01T00:00:00.014Z</updated>
@@ -214,7 +214,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/10-tradera</id>
+    <id>https://www.henrikbecker.net/projects/tradera</id>
     <title> at 10 Tradera</title>
     <published>2009-08-01T00:00:00.015Z</published>
     <updated>2009-08-01T00:00:00.015Z</updated>
@@ -227,7 +227,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/09-astando</id>
+    <id>https://www.henrikbecker.net/projects/astando</id>
     <title> at 09 Astando</title>
     <published>2008-02-28T00:00:00.016Z</published>
     <updated>2008-02-28T00:00:00.016Z</updated>
@@ -240,7 +240,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/08-hittapunktse</id>
+    <id>https://www.henrikbecker.net/projects/hitta-punkt-se</id>
     <title> at 08 Hittapunktse</title>
     <published>2006-03-01T00:00:00.017Z</published>
     <updated>2006-03-01T00:00:00.017Z</updated>
@@ -255,7 +255,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/07-ica-banken-ab</id>
+    <id>https://www.henrikbecker.net/projects/ica-banken</id>
     <title> at 07 Ica Banken Ab</title>
     <published>2006-03-01T00:00:00.018Z</published>
     <updated>2006-03-01T00:00:00.018Z</updated>
@@ -270,7 +270,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/06-sigtuna-council</id>
+    <id>https://www.henrikbecker.net/projects/sigtuna-council</id>
     <title> at 06 Sigtuna Council</title>
     <published>2005-10-01T00:00:00.019Z</published>
     <updated>2005-10-01T00:00:00.019Z</updated>
@@ -286,7 +286,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/05-sveriges-television</id>
+    <id>https://www.henrikbecker.net/projects/sveriges-television</id>
     <title> at 05 Sveriges Television</title>
     <published>2005-07-01T00:00:00.020Z</published>
     <updated>2005-07-01T00:00:00.020Z</updated>
@@ -299,7 +299,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/04-taxi-stockholm</id>
+    <id>https://www.henrikbecker.net/projects/taxi-stockholm</id>
     <title> at 04 Taxi Stockholm</title>
     <published>2005-05-01T00:00:00.021Z</published>
     <updated>2005-05-01T00:00:00.021Z</updated>
@@ -313,7 +313,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/03-siemens-medical</id>
+    <id>https://www.henrikbecker.net/projects/siemens-medical</id>
     <title> at 03 Siemens Medical</title>
     <published>2000-01-01T00:00:00.022Z</published>
     <updated>2000-01-01T00:00:00.022Z</updated>
@@ -326,7 +326,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/02-hewlett-packard-sweden</id>
+    <id>https://www.henrikbecker.net/projects/hewlett-packard</id>
     <title> at 02 Hewlett Packard Sweden</title>
     <published>1999-09-01T00:00:00.023Z</published>
     <updated>1999-09-01T00:00:00.023Z</updated>
@@ -342,7 +342,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/01-loostrom-och-gelin-ab</id>
+    <id>https://www.henrikbecker.net/projects/loostrom-gelin</id>
     <title> at 01 Loostrom Och Gelin Ab</title>
     <published>1998-10-01T00:00:00.024Z</published>
     <updated>1998-10-01T00:00:00.024Z</updated>

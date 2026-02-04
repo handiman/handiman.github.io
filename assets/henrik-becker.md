@@ -49,7 +49,7 @@ Asp.Net MVC, Asp.Net Web Api, C#, .Net Framework, TDD, CQRS, Continuous Integrat
 ### 23 Adlibris    
 * | Feb 2021 - Oct 2021*
 
-* OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app currently in development.
+* OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app under development.
 * Account management API built with Asp.Net Core and .Net 5 hosted on Azure.
 * Contentful CMS content modeling and integration.
 
