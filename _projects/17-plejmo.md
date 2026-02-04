@@ -1,5 +1,6 @@
 ---
 name: Film2Home/Plejmo
+slug: film2home
 group: projects
 roles: 
  - Fullstack Developer, DevOps

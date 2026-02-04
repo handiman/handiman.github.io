@@ -1,5 +1,6 @@
 ---
 name: Taxi Stockholm
+slug: taxi-stockholm
 roles: 
  - Web Developer
 employer: /employment/09-qbranch-stockholm-ab

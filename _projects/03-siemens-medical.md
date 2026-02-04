@@ -1,5 +1,6 @@
 ---
 name: Siemens Medical
+slug: siemens-medical
 roles: 
  - Web Developer
 employer: /employment/07-iconmedialab-ab

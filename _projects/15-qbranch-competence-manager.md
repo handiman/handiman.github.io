@@ -1,5 +1,6 @@
 ---
 name: Qbranch Competence Manager
+slug: qbrbanch-competence-manager
 roles: 
  - Fullstack Developer
 employer: /employment/14-qbranch-stockholm-ab-2

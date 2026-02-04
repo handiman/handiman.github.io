@@ -1,5 +1,6 @@
 ---
 name: Sveriges Television
+slug: sveriges-television
 roles: 
  - IT Consultant
 employer: /employment/09-qbranch-stockholm-ab

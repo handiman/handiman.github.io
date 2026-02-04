@@ -1,5 +1,6 @@
 ---
 name: Länsförsäkringar
+slug: lansforsakringar
 roles: 
  - System Developer
 employer: /employment/12-avega-group-ab

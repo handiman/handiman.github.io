@@ -1,7 +1,9 @@
 ---
 name: Norconsult Astando
+slug: norconsult-astando/2020
 client: true
-url: https://www.norconsultastando.se
+organization:
+  url: https://www.norconsultastando.se
 roles: 
  - Fullstack Developer
  - DevOps

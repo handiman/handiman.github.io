@@ -1,5 +1,6 @@
 ---
 name: hitta.se
+slug: hitta-punkt-se
 roles: 
  - Fullstack Developer
 employer: /employment/11-aftonbladet-tillvaxtteknik-2-ab

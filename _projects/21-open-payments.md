@@ -1,7 +1,9 @@
 ---
 name: Open Payments
+slug: open-payments
 client: true
-url: https://openpayments.io
+organization:
+  url: https://openpayments.io
 roles: 
  - Fullstack Developer
 employer: /employment/17-self-employed

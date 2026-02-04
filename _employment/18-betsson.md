@@ -7,7 +7,7 @@ organization:
  name: Betsson Group AB
  type: Global online gaming & sportsbook enterprise
  address:
-  city: Stockholm;
+  city: Stockholm
 start_date: 2023-12-18
 end_date: 2025-12-05
 ---

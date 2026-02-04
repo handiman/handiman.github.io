@@ -32,7 +32,8 @@ collections:
  usp:
   output: false
  projects:
-  output: false
+  output: true
+  permalink: /:collection/:title
  employment:
   output: false
  certs:
@@ -52,6 +53,12 @@ defaults:
         alt: Henrik Becker
         height: 1199
         width: 800
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
   - scope:
      path: googlef0bc3dbe928e1f73.html
     values:

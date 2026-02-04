@@ -1,7 +1,10 @@
 ---
 name: Betsson Group
+slug: betsson
 client: true
-url: https://www.betssongroup.com
+organization:
+  name: Betsson Group AB
+  url: https://www.betssongroup.com
 roles:
  - Senior Software Engineer
 start_date: 2021-10-11
@@ -59,3 +62,50 @@ summary:
 - Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance.
 - Conducted and assessed technical interviews to support recruitment and team growth.
 ---
+
+## Context
+From 2021 to 2025, I worked as a Senior Software Engineer within Betsson Group’s Player Rewards & Gamification value stream.
+The team was responsible for building and maintaining event‑sourced, gamification‑oriented systems that support large‑scale, real‑time customer engagement across multiple brands and markets.
+The environment combined high throughput requirements, strict regulatory constraints, and a complex distributed architecture — a combination that demanded clarity of design and disciplined engineering.
+
+Examples of projects include Tournaments, Loyalty Points, Levels & Achievements.
+
+## Problem
+The core systems needed to process large volumes of real‑time events, maintain consistent state across distributed services, and expose reliable APIs for both internal and external consumers. Performance bottlenecks and architectural drift were recurring challenges.
+The organization also needed a way to evaluate new ideas quickly without disrupting ongoing development.
+
+## Approach
+My work centered on improving architectural clarity, strengthening automation, and increasing system throughput. Key areas included:
+
+### Architecture
+- Applied CQRS, Domain‑Driven Design, Event Modeling, and Event Sourcing to clarify domain boundaries and improve system resilience
+- Introduced [.NET Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/) to simplify development and testing of distributed applications
+- Built Proofs of Concept for implementing the actor pattern using Microsoft Orleans
+- Collaborated closely with the Enterprise Architect and Engineering Manager to ensure alignment with regulatory and organizational requirements
+
+### Backend Development
+- Built and maintained services using C#, .NET 5–9 and ASP.NET Core
+- Developed Blazor‑based back‑office tools for internal operations
+- Designed and optimized SQL Server and PostgreSQL data models
+
+### Automation
+- Maintained and improved existing CI/CD pipelines built on GitHub Actions and Octopus Deploy
+- Containerized services with Docker to improve consistency and deployment speed
+
+### System Integration
+- Improved Kafka‑based event processing pipelines
+- Designed and maintained REST APIs and legacy WCF integrations
+
+### Team & Collaboration
+- Participated in technical interviews and candidate assessments to support team growth
+- Provided architectural and implementation guidance to team members
+
+## Outcome
+- Increased Kafka message throughput by nearly 1000% for one of the core applications, significantly improving system responsiveness and operational stability
+- Delivered multiple Proofs of Concept to explore new architectural approaches and validate ideas before full investment
+- Improved developer experience and operational reliability through automation and clearer architectural patterns
+- Supported team growth by conducting technical interviews and contributing to recruitment decisions
+
+## Reflection
+This project reinforced the value of combining strong architectural principles with pragmatic iteration. The most meaningful improvements came not from large rewrites, but from clarifying boundaries, tightening feedback loops, and removing friction in the development and deployment process.
+Working in a high‑scale, regulated environment sharpened my ability to balance innovation with compliance — and to design systems that remain understandable even as they grow.

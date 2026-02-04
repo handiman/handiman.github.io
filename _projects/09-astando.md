@@ -1,5 +1,6 @@
 ---
 name: Astando
+slug: astando
 roles: 
  - System Developer
 employer: /employment/12-avega-group-ab

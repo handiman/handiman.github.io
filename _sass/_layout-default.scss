@@ -182,20 +182,39 @@ main > section, aside > section {
         font-weight: 500;
         margin-top: 0;
     }
-    article header p  {
-        > span {
-            font-weight: 500;
+}
+
+article header p  {
+    > span {
+        font-weight: 500;
+    }
+    > span::after {
+        content: '';
+        margin-inline: .25rem;
+        color: var(--color-muted, #ccc);
+    }
+    > time {
+        font-variant-numeric: tabular-nums;
+        span:first-child::after {
+            content: "–";
+            margin-inline: .2rem .1rem;
         }
-        > span::after {
-            content: '';
-            margin-inline: .25rem;
-            color: var(--color-muted, #ccc);
+    }
+}
+
+#featured-projects {
+    article {
+        .more {
+            visibility: hidden;
+            color: var(--color-accent);
+            text-decoration: underline;
+            &::after {
+                content: "…";
+            }
         }
-        > time {
-            font-variant-numeric: tabular-nums;
-            span:first-child::after {
-                content: "–";
-                margin-inline: .2rem .1rem;
+        &:hover {
+            .more {
+                visibility: visible;
             }
         }
     }
@@ -225,5 +244,19 @@ body.error {
     picture img {
         filter: grayscale(1) brightness(1) invert(0.85);
         opacity: 0.85;
+    }
+}
+
+body.project article {
+    a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px dotted var(--color-muted);
+        padding-bottom: 1px;
+    }
+    header a {
+        text-decoration: none;
+        color: inherit;
+        border: none;
     }
 }

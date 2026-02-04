@@ -1,5 +1,6 @@
 ---
 name: Norconsult Astando
+slug: norconsult-astando/2018
 roles: 
  - Fullstack Developer, DevOps
 employer: /employment/17-self-employed

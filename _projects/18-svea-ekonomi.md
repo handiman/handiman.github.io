@@ -1,7 +1,9 @@
 --- 
 name: Svea Ekonomi
+slug: svea
 client: true
-url: https://www.svea.com 
+organization:
+  url: https://www.svea.com 
 roles: 
  - Backend Developer
 employer: /employment/17-self-employed

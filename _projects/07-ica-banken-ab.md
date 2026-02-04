@@ -1,5 +1,6 @@
 ---
 name: ICA Banken AB
+slug: ica-banken
 roles: 
  - IT Consultant
 employer: /employment/09-qbranch-stockholm-ab

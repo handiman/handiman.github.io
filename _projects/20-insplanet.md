@@ -1,7 +1,7 @@
 ---
 name: Insplanet
+slug: insplanet
 client: true
-url: https://www.inplanet.com
 roles: 
  - Lead Developer
 employer: /employment/17-self-employed

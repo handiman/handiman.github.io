@@ -1,5 +1,6 @@
 ---
 name: Adlibris
+slug: adlibris
 client: true
 url: https://www.adlibris.com
 roles: 
