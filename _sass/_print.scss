@@ -105,13 +105,6 @@
       page-break-before: always;
     }
   }
-
-  body.about, body.index {
-    main > section:first-child {
-      page-break-after: always;
-    }
-  }
-
   /* Prevent awkward page breaks */
   h1, h2, h3, h4, h5, h6,
   p, article, .card {
