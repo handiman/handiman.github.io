@@ -1,3 +1,18 @@
 ---
 layout: page
 ---
+<main id="content">{% assign org = page.organization %}{% assign xp = page %}<!-- Santa's little helper -->
+    <article>
+        <header>
+            <h1>{{ page.organization.name }}</a></h1>
+            <p>
+                {% if xp.roles %}<span>{% for role in xp.roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>{% endif %}
+                <time>
+                    <span>{{ xp.start_date | date: '%Y-%m'}}</span>
+                    <span>{{ xp.end_date | date: '%Y-%m' }}</span>
+                </time>
+            </p>
+        </header>
+        {{ content }}
+    </article>
+</main>

@@ -3,9 +3,10 @@ layout: page
 title: Employment History
 ---
 <main>
-    <article data-section="{{ page.title }}">
+    <section id="work-experience" data-section="{{ page.title }}" data-source="{{ page.url | absolute_url }}">
         <header>
             <h1>{{ page.title }}</h1>
         </header>
-    </article>
+        {% include employment.html %}         
+    </section>
 </main>

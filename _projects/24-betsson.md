@@ -81,7 +81,7 @@ My work centered on improving architectural clarity, strengthening automation, a
 
 ### Architecture
 - Applied CQRS, Domain‑Driven Design, Event Modeling, and Event Sourcing to clarify domain boundaries and improve system resilience
-- Introduced [.NET Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/) to simplify development and testing of distributed applications
+- Introduced [.NET Aspire][aspire] to simplify development and testing of distributed applications
 - Built Proofs of Concept for implementing the actor pattern using Microsoft Orleans
 - Collaborated closely with the Enterprise Architect and Engineering Manager to ensure alignment with regulatory and organizational requirements
 
@@ -113,3 +113,4 @@ This project reinforced the value of making systems easier to understand and fas
 
 My four years at Betsson — first as a consultant for roughly two years, then as a full‑time employee for another two — were a deliberate exception to my usual freelancing path. I stayed because I genuinely enjoyed the company and the colleagues, and left only because I eventually missed the freedom and variety of consulting.
 
+[aspire]: https://learn.microsoft.com/en-us/dotnet/aspire/
