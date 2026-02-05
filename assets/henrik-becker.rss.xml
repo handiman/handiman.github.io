@@ -6,7 +6,7 @@
         <description>Henrik Becker is an experienced .Net developer and solution architect dedicated to delivering quality software practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of dad-jokes.
 </description>
         <copyright>Copyright 2026 Henrik Becker</copyright>
-        <lastBuildDate>2026-02-05 10:44:49 +0000</lastBuildDate>
+        <lastBuildDate>2026-02-05 20:16:55 +0000</lastBuildDate>
         <category>CV</category>
         <ttl>1440</ttl>
         <item>
@@ -15,14 +15,14 @@
                 Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm urban area.
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/99-self-employed</guid>
+            <guid>https://www.henrikbecker.net/employment/becker-consulting</guid>
         </item>
         <item>
             <title> at Betsson Group AB</title>
             <description>
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/18-betsson</guid>
+            <guid>https://www.henrikbecker.net/employment/betsson</guid>
         </item>
         <item>
             <title> at Magine TV AB</title>
@@ -33,7 +33,7 @@
                 Continued improving the CI/CD processes I set up at Film2Home
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/16-magine-tv</guid>
+            <guid>https://www.henrikbecker.net/employment/magine-tv</guid>
         </item>
         <item>
             <title> at Film2Home AB</title>
@@ -45,7 +45,7 @@
                 Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/15-film2home</guid>
+            <guid>https://www.henrikbecker.net/employment/film2home</guid>
         </item>
         <item>
             <title> at Qbranch Stockholm AB</title>
@@ -55,7 +55,7 @@
                 Development of Qbranch Competence Manager used for finding the right consultant for an assignment.
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/14-qbranch-stockholm-ab-2</guid>
+            <guid>https://www.henrikbecker.net/employment/qbranch-2</guid>
         </item>
         <item>
             <title> at Wasa Kredit AB</title>
@@ -66,7 +66,7 @@
                 Guided development teams towards a more agile approached software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle.
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/13-wasa-kredit-ab</guid>
+            <guid>https://www.henrikbecker.net/employment/wasa-kredit</guid>
         </item>
         <item>
             <title> at Avega Group AB</title>
@@ -75,7 +75,7 @@
                 IT Consultant with assignments at Länsförsäkringar, Cale Access, Cash Guard, Tradera and Astando.
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/12-avega-group-ab</guid>
+            <guid>https://www.henrikbecker.net/employment/avega</guid>
         </item>
         <item>
             <title> at Aftonbladet Tillväxtteknik 2 AB</title>
@@ -84,7 +84,7 @@
                 Fullstack Developer at hitta.se
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/11-aftonbladet-tillvaxtteknik-2-ab</guid>
+            <guid>https://www.henrikbecker.net/employment/aftonbladed-tillvaxtteknik-2-ab</guid>
         </item>
         <item>
             <title> at Inverso International AB</title>
@@ -93,7 +93,7 @@
                 Fullstack Developer at hitta.se
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/10-inverso-international-ab</guid>
+            <guid>https://www.henrikbecker.net/employment/inverso</guid>
         </item>
         <item>
             <title> at Qbranch Stockholm AB</title>
@@ -104,7 +104,7 @@
                 Was the single developer on an identity management project at Sigtuna Council that would become Microsoft&apos;s reference project for Microsoft Identity Integration Server.
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/09-qbranch-stockholm-ab</guid>
+            <guid>https://www.henrikbecker.net/employment/qbranch-1</guid>
         </item>
         <item>
             <title> at eWork</title>
@@ -113,7 +113,7 @@
                 Web development for Hewlett Packard Sweden
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/08-ework</guid>
+            <guid>https://www.henrikbecker.net/employment/ework</guid>
         </item>
         <item>
             <title> at IconMedialab AB</title>
@@ -122,7 +122,7 @@
                 Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and IconMedialab&apos;s intranet.
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/07-iconmedialab-ab</guid>
+            <guid>https://www.henrikbecker.net/employment/icon-medialab</guid>
         </item>
         <item>
             <title> at Innitek AB</title>
@@ -132,42 +132,42 @@
                 Built the company web site based on ASP
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/06-innitek-ab</guid>
+            <guid>https://www.henrikbecker.net/employment/innitek</guid>
         </item>
         <item>
             <title> at Lidingö Stad</title>
             <description>
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/05-lidingo-stad</guid>
+            <guid>https://www.henrikbecker.net/employment/lidingo</guid>
         </item>
         <item>
             <title> at Konsumentföreningen Stockholm</title>
             <description>
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/04-konsum</guid>
+            <guid>https://www.henrikbecker.net/employment/konsum</guid>
         </item>
         <item>
             <title> at Sollentuna Jazz Workshop</title>
             <description>
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/03-sollentuna-jazz-workshop</guid>
+            <guid>https://www.henrikbecker.net/employment/sollentuna-jazz-workshop</guid>
         </item>
         <item>
             <title> at Kantarellen Livs AB</title>
             <description>
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/02-kantarellen-livs-ab</guid>
+            <guid>https://www.henrikbecker.net/employment/kantarellen</guid>
         </item>
         <item>
             <title> at Karena Zoo, Lek &amp; Hobby</title>
             <description>
                 
             </description>
-            <guid>https://www.henrikbecker.net/employment/01-karena</guid>
+            <guid>https://www.henrikbecker.net/employment/karena</guid>
         </item>
     </channel>
 </rss>
