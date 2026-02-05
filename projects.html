@@ -1,10 +1,11 @@
 ---
 layout: page
+title: All Projects
 ---
 <main>
-    <section id="all-projects" data-section="All Projects" data-source="{{ page.url | absolute_url }}">
+    <section id="all-projects" data-section="{{ page.title }}" data-source="{{ page.url | absolute_url }}">
         <header>
-            <h1>All Projects</a></h1>
+            <h1>{{ page.title }}</a></h1>
         </header>
         {% for xp in site.projects reversed %}{% capture xpName %}{% if xp.name %}{{ xp.name }}{% else %}{{xp.title}}{% endif %}{% endcapture %}{% capture xpSlug %}{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}{% endcapture %}
         <article id="{{ xpSlug }}" data-section="{{ xpName }}" data-source="{{ page.url | absolute_url }}#{{ xpSlug }}">

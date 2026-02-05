@@ -29,12 +29,13 @@ exclude: [
  "*.orig"]
 
 collections:
- usp:
-  output: false
  projects:
   output: true
   permalink: /:collection/:title
  employment:
+  output: true
+  permalink: /:collection/:title
+ usp:
   output: false
  certs:
   output: false 
@@ -58,6 +59,12 @@ defaults:
       type: projects
     values:
       layout: project
+      sitemap: false
+  - scope:
+      path: ""
+      type: employment
+    values:
+      layout: employer
       sitemap: false
 
   - scope:
