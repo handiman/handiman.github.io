@@ -32,6 +32,9 @@ collections:
  projects:
   output: true
   permalink: /:collection/:title
+ education:
+  output: true  
+  permalink: /:collection/:title
  employment:
   output: true
   permalink: /:collection/:title
@@ -59,6 +62,12 @@ defaults:
       type: projects
     values:
       layout: project
+      sitemap: false
+  - scope:
+      path: ""
+      type: education
+    values:
+      layout: education
       sitemap: false
   - scope:
       path: ""

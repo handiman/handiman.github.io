@@ -1,5 +1,7 @@
 ---
 name: Senior Software Engineer
+slug: betsson
+sitemap: true
 roles: 
  - Senior Software Engineer
 organization:
@@ -11,6 +13,7 @@ organization:
 start_date: 2023-12-18
 end_date: 2025-12-05
 ---
+<!--more-->
 ## About the Role
 I joined Betsson as a consultant and later transitioned directly into a full‑time role as a Senior Software Engineer. I worked in the Player Rewards & Gamification value stream, focusing on three services: **Tournaments**, **Loyalty**, and **Levels**. Tournaments was where I spent most of my time. Loyalty was a legacy system, and Levels was the newer service intended to replace it.
 

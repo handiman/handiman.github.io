@@ -69,7 +69,8 @@ title: Henrik Becker CV
         </article>
         <article id="education" data-source="{{ page.url | absolute_url }}#education" data-section="Education">
             <h3>Education</h3>
-            <ul>{% for education in site.data.profile.education %}<li><strong>{{ education.school }}:</strong> {{ education.description }} (<time>{% if education.start_year %}{{ education.start_year }}{% endif %} &dash; {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}</time>)</li>{% endfor %}</ul>
+            <ul>{% for education in site.data.profile.education %}
+                <li><strong><a href="{{ education.link | absolute_url }}">{{ education.school }}:</a></strong> {{ education.description }} (<time>{% if education.start_year %}{{ education.start_year }}{% endif %} &dash; {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}</time>)</li>{% endfor %}</ul>
         </article>
         <article id="recommendations" data-source="{{ page.url | absolute_url }}#recommendations" data-section="Recommendations">
             <h3>Recommendations</h3>{% for recommendation in site.data['profile']['recommendations'] %}
@@ -153,7 +154,8 @@ title: Henrik Becker CV
     </section>
     <section id="education" data-source="{{ page.url | absolute_url }}#education">
         <h2>Education</h2>
-        <ul>{% for education in site.data.profile.education %}<li><strong>{{ education.school }}:</strong> {{ education.description }} (<time>{% if education.start_year %}{{ education.start_year }}{% endif %} &dash; {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}</time>)</li>{% endfor %}</ul>
+        <ul>{% for education in site.data.profile.education %}
+            <li><strong><a href="{{ education.link | absolute_url }}">{{ education.school }}</a>:</strong> {{ education.description }} (<time>{% if education.start_year %}{{ education.start_year }}{% endif %} &dash; {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}</time>)</li>{% endfor %}</ul>
     </section>
     <section id="recommendations" data-source="{{ page.url | absolute_url }}#recommendations">
         <h2>Recommendations</h2>{% for recommendation in site.data['profile']['recommendations'] %}

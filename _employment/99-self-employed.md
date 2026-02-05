@@ -1,6 +1,7 @@
 ---
 name: Self Employed
 slug: becker-consulting
+sitemap: true
 roles: 
  - IT Consultant
 organization:
@@ -35,7 +36,7 @@ I help clients with:
   REST, GraphQL, message queues, and cloud‑native tooling to connect services reliably.
 - **Automation & DevOps**   
   CI/CD pipelines, scripting, and infrastructure as code for faster, safer delivery.
-- **Architecture & Technical Guidance***   
+- **Architecture & Technical Guidance**  
   Structuring new projects, refactoring old ones, and helping teams make sound technical decisions.
 
 My goal is always the same: build systems that are easier to understand, easier to maintain, and easier to evolve.

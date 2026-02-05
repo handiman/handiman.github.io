@@ -1,8 +1,9 @@
 <h2>Professional Experience</h2>
 {% for xp in site.employment reversed %}
+    {% assign xpStart = xp.start_date | date: '%Y' | plus: 0 %}
+    {% if xpStart >= 1997 %}
     {% assign org = xp['organization'] %}
     {% assign xpSlug = xp.id | replace: '/', '-' | slice: 1, 1000  | strip %}
-    {% assign xpIndex = xp.id  | split: '/' | last | split: '-' | first | plus: 0 %}
 <article id="{{ xpSlug }}" data-section="{{ org['name'] }}" data-source="{{ page.url | absolute_url }}#{{ xpSlug }}">
     <header>
         <h3><a href="{{ xp.url | relative_url }}">{{ org['name'] }}</a></h3>
@@ -18,18 +19,17 @@
     {% if forloop.first %}
         {% include self-employed.html %}
     {% endif %}
-    {% if xpIndex == 6 %}{% break %}{% endif %}
-</article>{% endfor %}
+</article>{% endif %}{% endfor %}
 
 <h2>Early Career</h2>
 {% for xp in site.employment reversed %}
+    {% assign xpStart = xp.start_date | date: '%Y' | plus: 0 %}
+    {% if xpStart < 1997 %}
     {% assign org = xp['organization'] %}
     {% assign xpSlug = xp.id | replace: '/', '-' | slice: 1, 1000  | strip %}
-    {% assign xpIndex = xp.id  | split: '/' | last | split: '-' | first | plus: 0 %}
-    {% if xpIndex < 6 %}
 <article id="{{ xpSlug }}" data-section="{{ org['name'] }}" data-source="{{ page.url | absolute_url }}#{{ xpSlug }}">
     <header>
-        <h3>{{ org['name'] }}</h3>
+        <h3><a href="{{ xp.url | relative_url }}">{{ org['name'] }}</a></h3>
         <p>
             <em>{{ org['type'] }}</em>
             {% if xp.roles %}<span>{% for role in xp.roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>{% endif %}
@@ -40,7 +40,6 @@
         </p>
     </header>
     {% if forloop.first %}<p>{{ xp.excerpt | strip }}</p>{% endif %}
-    {% if xpIndex == 6 %}{% break %}{% endif %}
 </article>
 {% endif %}
 {% endfor %}       
