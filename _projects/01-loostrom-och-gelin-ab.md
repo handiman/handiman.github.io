@@ -1,6 +1,7 @@
 ---
 name: Looström & Gelin AB
 slug: loostrom-gelin
+sitemap: true
 roles: 
  - Programmer
 employer: /employment/06-innitek-ab

@@ -1,6 +1,7 @@
 ---
 name: Insplanet
 slug: insplanet
+sitemap: true
 client: true
 roles: 
  - Lead Developer

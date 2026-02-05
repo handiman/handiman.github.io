@@ -1,6 +1,7 @@
 ---
 name: Sigtuna Council
 slug: sigtuna-council
+sitemap: true
 roles: 
  - IT Consultant
 employer: /employment/09-qbranch-stockholm-ab

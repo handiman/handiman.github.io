@@ -1,6 +1,7 @@
 ---
 name: Hewlett Packard Sweden
 slug: hewlett-packard
+sitemap: true
 roles: 
  - Web Developer
 employer: /employment/08-ework

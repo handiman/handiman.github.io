@@ -1,6 +1,7 @@
 ---
 name: CashGuard
 slug: cashguard
+sitemap: true
 roles: 
  - System Developer
 employer: /employment/12-avega-group-ab

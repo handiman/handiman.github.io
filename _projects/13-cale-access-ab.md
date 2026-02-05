@@ -1,6 +1,7 @@
 ---
 name: Cale Access AB
 slug: cale-access
+sitemap: true
 roles: 
  - System Developer
 employer: /employment/12-avega-group-ab

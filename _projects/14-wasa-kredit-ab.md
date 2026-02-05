@@ -1,6 +1,7 @@
 ---
 name: Wasa Kredit
 slug: wasa-kredit
+sitemap: true
 roles: 
  - Lead Developer
 employer: /employment/13-wasa-kredit-ab

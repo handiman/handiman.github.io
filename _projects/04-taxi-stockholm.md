@@ -1,6 +1,7 @@
 ---
 name: Taxi Stockholm
 slug: taxi-stockholm
+sitemap: true
 roles: 
  - Web Developer
 employer: /employment/09-qbranch-stockholm-ab

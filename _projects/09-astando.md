@@ -2,6 +2,7 @@
 name: Astando
 slug: astando
 sitemap: true
+sitemap: true
 organization:
   location: Stockholm, Sweden
   url: https://norconsultdigital.se/

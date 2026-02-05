@@ -1,6 +1,7 @@
 ---
 name: Qbranch Competence Manager
 slug: qbranch-competence-manager
+sitemap: true
 roles: 
  - Fullstack Developer
 employer: /employment/14-qbranch-stockholm-ab-2

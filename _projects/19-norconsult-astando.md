@@ -1,6 +1,7 @@
 ---
 name: Norconsult Astando
 slug: norconsult-astando/2018
+sitemap: false
 output: false
 roles: 
  - Fullstack Developer, DevOps

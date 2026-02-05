@@ -1,6 +1,7 @@
 --- 
 name: Svea Ekonomi
 slug: svea
+sitemap: true
 client: true
 organization:
   url: https://www.svea.com 

@@ -1,6 +1,7 @@
 ---
 name: Arbetsförmedlingen
 slug: arbetsformedlingen
+sitemap: true
 roles: 
  - Backend Developer
 employer: /employment/14-qbranch-stockholm-ab-2
