@@ -1,0 +1,62 @@
+.easter-egg {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-style: italic;
+  margin-top: 4rem;
+  color: var(--text-muted);
+  counter-reset: verse chorus;
+  max-height: var(--space-6);
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.4s ease;
+
+  .verse,
+  .chorus,
+  .bridge,
+  .intro,
+  .outro {
+    white-space: pre-line;
+    margin: 0 0 1rem 0;   // reset top margin, keep bottom spacing
+    padding: 0;
+  }
+
+  .verse::before,
+  .chorus::before,
+  .bridge::before,
+  .intro::before,
+  .outro::before {
+    display: block;
+    margin-bottom: 0.25rem;   // spacing between label and first line
+    padding: 0;
+  }
+
+  .verse {
+    counter-increment: verse;
+    &::before {
+      content: "[Verse " counter(verse) "]";
+    }
+  }
+
+  .chorus {
+    counter-increment: chorus;
+    &::before {
+      content: "[Chorus " counter(chorus) "]";
+    }
+  }
+
+  .bridge::before {
+    content: "[Bridge]";
+  }
+
+  .intro::before {
+    content: "[Intro]";
+  }
+
+  .outro::before {
+    content: "[Outro]";
+  }
+}
+
+.easter-egg:hover {
+  opacity: 1;
+  max-height: 1000px; // just needs to be larger than the stanza
+}

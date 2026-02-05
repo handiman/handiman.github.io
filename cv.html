@@ -36,7 +36,7 @@ layout: page
                     </time>
                 </p>
             </header>
-            <p>{% if xp.summary %}{% for summary in xp.summary %}{{ summary | strip | replace: '.', '' }}. {% endfor %}{% else %}{{ xp.excerpt | strip }}{% endif %}
+            <p>{% if xp.summary %}{% for summary in xp.summary %}{{ summary | append: '.' | replace: '..', '.' | strip }} {% endfor %}{% else %}{{ xp.excerpt | strip }}{% endif %}
                 <a class="more no-print" href="{{ xp.url | relative_url }}">Learn more</a>
             </p>
             {% if xp.competencies %}
@@ -121,18 +121,6 @@ layout: page
         {% endif %}
         {% endfor %}        
     </section>
-    <template id="all-projects">
-        <h2>All Projects</h2>{% for xp in site.projects reversed %}{% capture xpName %}{% if xp.name %}{{ xp.name }}{% else %}{{xp.title}}{% endif %}{% endcapture %}{% capture xpSlug %}{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}{% endcapture %}
-        <article id="{{ xpSlug }}" data-section="{{ xpName }}" data-source="{{ page.url | absolute_url }}#{{ xpSlug }}">
-            <header>
-                <h3>{{ xpName }}</h3>
-                {% if xp.roles %}<p><strong class="hidden">Roles:</strong> {% for role in xp.roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
-                <p><time>{{ xp.start_date | date: '%Y-%m'}}&ndash;{{ xp.end_date | date: '%Y-%m' }}</time></p>
-            </header>
-            <p>{% if xp.summary %}{% for summary in xp.summary %}{{ summary | strip }}. {% endfor %}{% else %}{{ xp.excerpt | strip }}{% endif %}</p>
-            {% if xp.skills %}<p><strong>Skills:</strong> {% for skill in xp.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
-        </article>{% endfor %}
-    </template>
     <template id="interests">
         <h2>Interests</h2>
         <ul>{% for interest in site.data['profile']['interests'] %}<li>{{ interest.name }}</li>{% endfor %}</ul>

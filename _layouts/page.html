@@ -4,9 +4,10 @@ layout: null
 <!DOCTYPE html>{% assign company = site.data['organization'] %}{% assign person = site.data['person'] %}{% assign profile = site.data['profile'] %}{% assign page_name = page.name | lcase | split: "." | slice: 0, 1 | first %}
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
+    <title>Henrik Becker Consulting AB{% if page.name %} | {{ page.name }}{% endif %}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% seo %}
+    {% seo title=false %}
     {% for format in site.data.formats %}<link rel="alternate" type="{{ format.mime_type }}" title="My resumé in {{ format.name }} format" href="{{ format.url | absolute_url }}" />
     {% endfor %}
     <link rel="apple-touch-icon" href="{{ '/favicon.png' | absolute_url }}">

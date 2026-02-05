@@ -175,7 +175,7 @@ main > section, aside > section {
     opacity: 0.6;
 }
 
-#featured-projects, #work-experience, #professional-context {
+#featured-projects, #all-projects, #work-experience, #professional-context {
     h3 {
         margin-bottom: .25rem;
     }
@@ -203,7 +203,7 @@ article header p  {
     }
 }
 
-#featured-projects {
+#featured-projects, #all-projects, #work-experience {
     article {
         .more {
             visibility: hidden;
@@ -221,6 +221,12 @@ article header p  {
     }
 }
 
+#all-projects, .projects {
+    a {
+        text-decoration: none !important;
+    }
+}
+
 #work-experience {
     header {
         em {
@@ -228,6 +234,7 @@ article header p  {
         }
     }
 }
+
 
 /* Hacks */
 body.error {
@@ -248,7 +255,8 @@ body.error {
     }
 }
 
-body.project article {
+body.project article, 
+body.projects article {
     a {
         color: inherit;
         text-decoration: none;

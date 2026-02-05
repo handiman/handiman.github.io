@@ -1,0 +1,90 @@
+---
+layout: page
+---
+<main>
+    <section id="all-projects" data-section="All Projects" data-source="{{ page.url | absolute_url }}">
+        <header>
+            <h1>All Projects</a></h1>
+        </header>
+        {% for xp in site.projects reversed %}{% capture xpName %}{% if xp.name %}{{ xp.name }}{% else %}{{xp.title}}{% endif %}{% endcapture %}{% capture xpSlug %}{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}{% endcapture %}
+        <article id="{{ xpSlug }}" data-section="{{ xpName }}" data-source="{{ page.url | absolute_url }}#{{ xpSlug }}">
+            <header>
+                <h3><a href="{{ xp.url | relative_url }}">{{ xpName }}</a></h3>
+                <p>
+                    {% if xp.roles %}<span>{% for role in xp.roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>{% endif %}
+                    <time>
+                        <span>{{ xp.start_date | date: '%Y-%m'}}</span>
+                        <span>{{ xp.end_date | date: '%Y-%m' }}</span>
+                    </time>
+                </p>
+            </header>
+            <p>{% if xp.summary %}{% for summary in xp.summary %}{{ summary | append: '.' | replace: '..', '.' | strip }} {% endfor %}{% else %}{{ xp.excerpt | strip }}{% endif %}
+                <a class="more no-print" href="{{ xp.url | relative_url }}">Learn more</a>
+            </p>
+            {% if xp.competencies %}
+            <h4>Tech & Methods Used</h4>
+            <ul class="competencies">{% for competency in xp.competencies %}
+                <li>
+                    <details>
+                        <summary class="label"><h5>{{ competency.name }}</h5></summary>
+                        <ul>{% for tech in competency.tech %}
+                            <li>{{ tech }}</li>
+                        {% endfor %}</ul>
+                    </details>
+                    <span class="bar" data-weight="{{ competency.weight }}"></span>
+                    <span class="print"><h5>{{ competency.name }}</h5> {{ competency.tech | join: ', ' }}</span>
+                </li>
+            {% endfor %}</ul>
+            {% endif %}            
+            {% comment %}{% if xp.skills %}<p><strong>Skills:</strong> {% for skill in xp.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}{% endcomment %}
+        </article>{% endfor %}
+    </section>
+
+    {% comment %}
+    <div class="easter-egg">
+        <p class="verse">And now, the end is near
+            And so I face the final commit
+            My friend, I'll say it clear
+            I'll state my case, of which I'm certain
+            I've lived a life that's full
+            I traveled each and every highway
+            And more, much more than this
+            I did it my way
+        </p>
+        <p class="verse">Commits, I've done a few
+            But then again, too few to mention
+            I did what I had to do
+            And saw it through without exemption
+            I planned each charted course
+            Each careful step along the byway
+            And more, much more than this
+            I did it my way
+        </p>
+        <p class="chorus">Yes, there were times, I'm sure you knew
+            When I bit off more than I could chew
+            But through it all, when there was doubt
+            I ate it up and spit it out
+            I faced it all, and I stood tall
+            And did it my way
+        </p>
+        <p class="verse">I've loved, I've laughed and cried
+            I've had my fill, my share of losing
+            And now, as tears subside
+            I find it all so amusing
+            To think I did all that
+            And may I say, not in a shy way
+            Oh, no, oh, no, not me
+            I did it my way
+        </p>
+        <p class="chorus">For what is a man, what has he got?
+            If not himself, then he has naught
+            To say the things he truly feels
+            And not the words of one who kneels
+            The record shows I took the blows
+            And did it my way
+        </p>
+        <p class="outro">Yes, it was my way
+        </p>
+    </div>
+    {% endcomment %}
+</main>
