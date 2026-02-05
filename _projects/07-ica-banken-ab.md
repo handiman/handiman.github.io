@@ -20,6 +20,7 @@ summary:
  - Trouble shooting and optimization of SQL scripts for data import/export and database maintenance. 
  - VBScript for SQL Server inventory using WMI. 
 ---
+<!--more-->
 ## Context
 After the Sigtuna Council project, I was brought in by ICA Banken to troubleshoot a long‑running performance issue in one of their SQL Server processes. A stored procedure that previously completed in minutes had suddenly begun running for nearly a full day before failing silently. Their senior developers had spent weeks investigating the database logic without finding the cause.
 

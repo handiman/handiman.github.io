@@ -24,6 +24,7 @@ skills:
 #The TrueUp system automates the compensation calculations and is a part of Cale Web Office 2. 
 #Challenges: Complex domain model. Complex business rules. Massive data sets
 ---
+<!--more-->
 ## Context
 Cale is one of the world’s leading manufacturers of parking meters. I joined the team working on **Cale Web Office 2**, specifically the **TrueUp** subsystem — a set of financial rules governing compensation between the City of Chicago and Chicago Parking Meters. The agreement between the two parties spans **80 years**, which meant the system needed to handle not only complex business rules but also future data volumes on a massive scale.
 

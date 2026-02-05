@@ -22,6 +22,7 @@ summary:
  - Worked with the development of a WCF based payment platform adding support for automatic payment services and prompts. 
  - Quality assurance and performance optimization of connecting systems.
 ---
+<!--more-->
 ## Context
 I joined [Länsförsäkringar][lf] as part of a long‑term [Avega Group][avega] assignment, working on the company’s payment platform and several surrounding systems. The work spanned backend development, database migration, performance investigations, and quality assurance across a complex financial environment.
 

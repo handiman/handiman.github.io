@@ -20,6 +20,7 @@ skills:
 summary:
  - Development of an application for managing consultant CVs built on Asp.Net MVC and hosted on Windows Azure.
 ---
+<!--more-->
 ## Context
 In 2014 I returned to Qbranch. While waiting for my next client assignment, I contributed to an ongoing internal system used to manage consultant CVs. The application had been in use for some time, and developers who were “between projects” would step in to extend and improve it. The team worked in a **Scrum** setup, and the system was hosted in **Microsoft Azure**, which gave me my first hands‑on experience with cloud‑based deployment and operations.
 

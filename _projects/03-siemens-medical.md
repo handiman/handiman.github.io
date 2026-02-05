@@ -21,7 +21,7 @@ skills:
 summary:
  - QA and supporting colleges during development and maintenance of Siemens Medical's intranet "EMPower".
 ---
-
+<!--more-->
 ## Context
 During my time at IconMedialab, I worked with Siemens Medical on their global intranet platform, EMPower. The system was built using classic ASP, COM components, and a mix of XML/XSLT for content rendering — typical of large enterprise intranets at the time.
 

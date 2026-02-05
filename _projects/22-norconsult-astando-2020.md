@@ -47,6 +47,7 @@ competencies:
       - TeamCity
       - Octopus Deploy
 ---
+<!--more-->
 ## Context
 My relationship with Norconsult Astando goes back to 2008–2009, when I worked with them as a consultant from Avea Group AB. Nearly a decade later, after seeing on [LinkedIn](https://www.linkedin.com/in/prettygoodprogrammer) that I had started freelancing, they reached out and asked if I was available for a new engagement. I returned in 2018 to modernize deployment workflows, and again in 2020 to support full‑stack development and legacy modernization.
 

@@ -64,7 +64,7 @@ summary:
 - Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance.
 - Conducted and assessed technical interviews to support recruitment and team growth.
 ---
-
+<!--more-->
 ## Context
 From 2021 to 2025, I worked as a Senior Software Engineer within Betsson Group’s Player Rewards & Gamification value stream.
 The team was responsible for building and maintaining event‑sourced, gamification‑oriented systems that support large‑scale, real‑time customer engagement across multiple brands and markets.

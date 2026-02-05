@@ -27,6 +27,7 @@ summary:
 #My role was to make sure that knowledge wasn't lost during the transition so much of the assignment had to do with keeping documentation up to date and accessible. 
 #I also contributed by simplifying their build and deployment processes.
 ---
+<!--more-->
 ## Context
 Insplanet brought me in as a senior developer during a period of transition. Their architect and lead developer had recently left, and they needed someone who could stabilize the situation, preserve critical knowledge, and keep development moving. My work focused on documentation, deployment reliability, and simplifying the team’s build and delivery processes.
 

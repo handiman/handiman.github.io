@@ -24,6 +24,7 @@ summary:
  - Implemented automatic creation of GroupWise accounts and Novell Server home directories.
  - Wrote rules extensions for attribute flow and joins.
 ---
+<!--more-->
 ## Context
 While at QBranch, I served as the sole developer on an identity management initiative for Sigtuna Council. The project was built on **Microsoft Identity Integration Server (MIIS)** — at the time a brand‑new product, largely unknown in Sweden. This implementation became one of the first MIIS deployments in the country and was later used by Microsoft as a **reference case**, which meant I was briefly part of a very small group of people in Sweden with real hands‑on MIIS experience.
 

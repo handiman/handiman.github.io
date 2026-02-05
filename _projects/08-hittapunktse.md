@@ -29,6 +29,7 @@ summary:
 #  It was one of Sweden's 10 most popular sites for quite some time. 
 # I worked with hitta.se's internal order system and improved the public map site with services such as weather and traffic information.
 ---
+<!--more-->
 ## Context
 I joined hitta.se during a period of rapid growth, working across backend services, data processing, and the public‑facing map and search experience. 
 At the time, hitta.se was consistently ranked among Sweden’s ten most‑visited websites, which meant performance, reliability, and fast iteration were essential.

@@ -25,6 +25,7 @@ summary:
 #Henrik was the key person in the introduction of behavior driven development (Specification by Example) 
 #by taking traditional user stories in Word format and turning them into executable specifications.
 ---
+<!--more-->
 ## Context
 CashGuard specialized in cash‑management solutions for the retail industry. During my assignment, I worked on StoreManager, a system used to monitor and manage CashGuard installations in stores. My primary focus was improving the development process itself by introducing behavior‑driven development practices.
 

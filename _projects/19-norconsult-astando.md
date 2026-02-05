@@ -23,3 +23,4 @@ skills:
  - NHibernate
  - C#
 ---
+<!--more-->

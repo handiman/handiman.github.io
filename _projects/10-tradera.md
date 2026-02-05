@@ -18,6 +18,7 @@ summary:
 # <!--more-->
 # This project was developed in-house at Avea Group AB. 
 ---
+<!--more-->
 ## Context
 While between client assignments at Avega Group, I joined an internal team working on a WPF‑based sales support system intended for managing articles and campaigns published on Tradera.se. Even though my time on the project was brief, it was a solid opportunity to contribute to a modern desktop application built with a contemporary tech stack.
 

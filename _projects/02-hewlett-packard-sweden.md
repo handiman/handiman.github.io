@@ -28,6 +28,7 @@ summary:
  - Development of templates for the client's EpiServer based intranet.
  - Maintenance and further development of www.hp.se.
 ---
+<!--more-->
 ## Context
 During my time at IconMedialab (and later through eWork), I worked with Compaq on several web‑based systems for the Scandinavian and EMEA regions. When Hewlett‑Packard acquired Compaq, the work continued under the HP brand — meaning I contributed to both Compaq and HP solutions during this period.
 The technology stack spanned classic ASP, VBScript, early .NET, SQL Server, XML/XSLT, and EPiServer, reflecting the transitional era of web development at the turn of the millennium.

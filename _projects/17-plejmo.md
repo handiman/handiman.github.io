@@ -81,6 +81,7 @@ competencies:
     tech:
       - Octopus Deploy
 ---
+<!--more-->
 ## Context
 Film2Home was originally a standalone Video‑on‑Demand company owned by Bonver. After the company went bankrupt, it was acquired by Magine TV, who continued operating and evolving the platform under both the Film2Home and Plejmo brands.
 

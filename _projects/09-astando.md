@@ -27,6 +27,7 @@ summary:
 #LV is the foundation on top of which applications concerning the road network, traffic and road-users are built. 
 #The assignment involved development of a client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg. 
 ---
+<!--more-->
 ## Context
 Astando (now Norconsult Astando, following acquisition by [Norconsult][norconsult]) is one of Sweden’s leading companies in the GIS domain and a key contributor to the Local Road Database (LV) concept — the national foundation for applications related to road networks, traffic, and road‑user information.
 

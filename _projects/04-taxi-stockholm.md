@@ -17,6 +17,7 @@ summary:
  - Migration of Taxi Stockholm's intranet and external web site from Spirello to EpiServer.
  - Integration with the client's Unix based booking system.
 ---
+<!--more-->
 ## Context
 During my time at QBranch, I worked with Taxi Stockholm on the migration of their intranet and public website from Spirello to EPiServer 4. Alongside the CMS work, the project required integrating with Taxi Stockholm’s Unix‑based booking system — a legacy platform using a proprietary, undocumented‑outside‑the‑company protocol.
 

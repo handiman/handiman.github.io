@@ -16,6 +16,7 @@ summary:
  - Designed and developed a document management system based on Visual Basic 5. 
  - Assisted in developing the company web site.
 ---
+<!--more-->
 ## Context
 Looström & Gelin was a small engineering consultancy where I took on my first professional software development assignment. I joined through InniTek AB in 1998, working with Visual Basic 5, classic ASP, and COM — my introduction to real‑world software development.
 

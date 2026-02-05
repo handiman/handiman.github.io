@@ -30,6 +30,7 @@ summary:
  - Improved api documentation by generating most of it automatically
  - Improved test readability by rewriting them as executable specifications  
 ---
+<!--more-->
 ## Context
 [Svea Ekonomi][svea] was my first assignment as a freelancer. I joined the team responsible for **Svea Checkout**, a payment solution being rolled out across Sweden, Norway, and Finland. The work combined backend development with a strong focus on engineering practices, particularly around testing and documentation. I also took on a mentoring role, helping the team strengthen its approach to TDD and executable specifications.
 

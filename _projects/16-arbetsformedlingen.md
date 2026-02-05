@@ -18,6 +18,7 @@ skills:
 summary:
  - Maintenance of a legacy solution for managing requisitions at Sweden's public employment services.
 ---
+<!--more-->
 ## Context
 During my second period at Qbranch in 2014, I joined a small team working on a legacy requisition management system for Arbetsförmedlingen, Sweden’s public employment service. This was a maintenance‑focused engagement involving older technologies and long‑standing code paths. The work was steady, structured, and primarily centered on keeping an existing system operational.
 

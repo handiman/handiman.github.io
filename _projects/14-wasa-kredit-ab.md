@@ -26,6 +26,7 @@ summary:
  - Guided the development teams towards an iterative approach to software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle.
  - Introduced the idea of living documentation in the form of executable specifications.
 ---
+<!--more-->
 ## Context
 I joined Wasa Kredit (now [LF Finans](https://www.lffinans.se/)) as **Lead Developer**, working with a team responsible for several internal financial systems. The environment had accumulated years of technical debt, duplicated logic, and inconsistent architectural patterns. My role combined hands‑on development with guiding the team toward more sustainable ways of working.
 

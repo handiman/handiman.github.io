@@ -17,6 +17,7 @@ skills:
 summary:
  - Maintenance of the client's system inventory tool.
 ---
+<!--more-->
 ## Context
 During my time at QBranch, I spent a short assignment at Sveriges Television (SVT), Sweden’s national public broadcaster. The work focused on maintaining an internal inventory tool used by the organization. Although the engagement was brief, it was memorable simply because it was SVT — a unique environment compared to the corporate clients I usually worked with.
 
