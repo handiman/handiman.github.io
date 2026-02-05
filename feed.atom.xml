@@ -4,7 +4,7 @@
   <title>Henrik Becker Consulting AB</title>
   <link href="https://www.henrikbecker.net" />
   <link href="https://www.henrikbecker.net/feed.atom.xml" rel="self" />
-  <updated>2026-02-04T14:12:47.000Z</updated>
+  <updated>2026-02-05T10:31:41.000Z</updated>
   <author>
     <name>Henrik Becker</name>
   </author>
@@ -145,7 +145,7 @@
     </content>
   </entry>
   <entry>
-    <id>https://www.henrikbecker.net/projects/qbrbanch-competence-manager</id>
+    <id>https://www.henrikbecker.net/projects/qbranch-competence-manager</id>
     <title> at 15 Qbranch Competence Manager</title>
     <published>2014-04-28T00:00:00.010Z</published>
     <updated>2014-04-28T00:00:00.010Z</updated>
@@ -248,7 +248,7 @@
        at 08 Hittapunktse
       2006-03-01 - 2008-02-28
       
-      Was a key person in the development of hitta.se - one of Swedens top 10 most popular sites.
+      Was a key person in the development of hitta.se - one of Swedens top 10 most popular sites at the time.
       Created the services hitta.se/trafiknytt (traffic information) and hitta.se/vader (weather information).
       Maintenance of hitta.se&apos;s internal order system
       Skills used: C#, Asp.Net, AJAX, T-SQL, MSMQ, XML, XSLT, XHTML, SQL Server, IIS

@@ -6,7 +6,7 @@
     <description>Henrik Becker is an experienced .Net developer and solution architect dedicated to delivering quality software practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of dad-jokes.
 </description>
     <language>en-AU</language>
-    <lastBuildDate>Wed, 04 Feb 2026 14:12:47 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Feb 2026 10:31:41 +0000</lastBuildDate>
     <copyright>Copyright 2026 Henrik Becker</copyright>
     <atom:link href="https://www.henrikbecker.net/feed.rss.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -137,7 +137,7 @@
     </item>
     <item>
       <title> at 15 Qbranch Competence Manager</title>
-      <guid>https://www.henrikbecker.net/projects/qbrbanch-competence-manager</guid>
+      <guid>https://www.henrikbecker.net/projects/qbranch-competence-manager</guid>
       <pubDate>Mon, 28 Apr 2014 00:00:00 +0000</pubDate>
       <description>
          at 15 Qbranch Competence Manager
@@ -231,7 +231,7 @@
          at 08 Hittapunktse
         2006-03-01 - 2008-02-28
         
-        Was a key person in the development of hitta.se - one of Swedens top 10 most popular sites.
+        Was a key person in the development of hitta.se - one of Swedens top 10 most popular sites at the time.
         Created the services hitta.se/trafiknytt (traffic information) and hitta.se/vader (weather information).
         Maintenance of hitta.se&apos;s internal order system
         Skills used: C#, Asp.Net, AJAX, T-SQL, MSMQ, XML, XSLT, XHTML, SQL Server, IIS
