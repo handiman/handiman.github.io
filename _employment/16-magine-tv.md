@@ -33,9 +33,9 @@ I kept **API v1** stable and backward‑compatible while designing and implement
 - new endpoints intended for the upcoming Plejmo app
 - support for third‑party integrations, including MovieZine and a Finnish VOD service in Vaasa (Whatson)
 
-
 ### Gamification Proof of Concept
 I built a proof‑of‑concept for a **levels and achievements** system. Because I had originally implemented Plejmo’s **service‑bus architecture** at Film2Home, it was straightforward to add a standalone service that subscribed to the relevant events. The PoC:
+
 - consumed user‑activity events from the service bus
 - awarded achievements and progression based on those events
 
@@ -51,5 +51,5 @@ At Magine it was more about stewardship than reinvention. My focus was on:
 - deepening my understanding of Octopus and applying improvements where useful
 
 ## Reflection
-Magine was a continuation of the work I had started at Film2Home, but within a larger streaming‑focused company. It was steady, hands‑on engineering on a product I knew well, with room to modernize the parts that needed it — and space to explore early ideas around gamification that later became a bigger part of my work
+Magine was a continuation of the work I had started at Film2Home, but within a larger streaming‑focused company. It was steady, hands‑on engineering on a product I knew well, with room to modernize the parts that needed it and space to explore early ideas around gamification that later became a bigger part of my work.
 
