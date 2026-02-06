@@ -6,15 +6,15 @@
     <description>Henrik Becker is an experienced .Net developer and solution architect dedicated to delivering quality software practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of dad-jokes.
 </description>
     <language>en-AU</language>
-    <lastBuildDate>Fri, 06 Feb 2026 13:19:09 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 14:05:10 +0000</lastBuildDate>
     <copyright>Copyright 2026 Henrik Becker</copyright>
     <atom:link href="https://www.henrikbecker.net/feed.rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title> at 24 Betsson</title>
+      <title> at Betsson</title>
       <guid>https://www.henrikbecker.net/projects/betsson</guid>
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
       <description>
-         at 24 Betsson
+         at Betsson
         2021-10-11 - 2025-12-05
         
         Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools
@@ -26,11 +26,11 @@
       </description>
     </item>
     <item>
-      <title> at 23 Adlibris</title>
+      <title> at Adlibris</title>
       <guid>https://www.henrikbecker.net/projects/adlibris</guid>
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       <description>
-         at 23 Adlibris
+         at Adlibris
         2021-02-22 - 2021-10-10
         
         OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app under development.
@@ -40,11 +40,11 @@
       </description>
     </item>
     <item>
-      <title> at 22 Norconsult Astando 2020</title>
+      <title> at Norconsult Astando</title>
       <guid>https://www.henrikbecker.net/projects/norconsult-astando</guid>
       <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
       <description>
-         at 22 Norconsult Astando 2020
+         at Norconsult Astando
         2020-10-19 - 2021-01-15
         
         Automated deployment using Octopus Deploy
@@ -54,11 +54,11 @@
       </description>
     </item>
     <item>
-      <title> at 21 Open Payments</title>
+      <title> at Open Payments</title>
       <guid>https://www.henrikbecker.net/projects/open-payments</guid>
       <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
       <description>
-         at 21 Open Payments
+         at Open Payments
         2019-12-02 - 2020-06-30
         
         Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.
@@ -68,11 +68,11 @@
       </description>
     </item>
     <item>
-      <title> at 20 Insplanet</title>
+      <title> at Insplanet</title>
       <guid>https://www.henrikbecker.net/projects/insplanet</guid>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
       <description>
-         at 20 Insplanet
+         at Insplanet
         2019-01-07 - 2019-06-13
         
         Zero down time deployment
@@ -81,11 +81,11 @@
       </description>
     </item>
     <item>
-      <title> at 19 Norconsult Astando</title>
+      <title> at Norconsult Astando</title>
       <guid>https://www.henrikbecker.net/projects/norconsult-astando/2018</guid>
       <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
       <description>
-         at 19 Norconsult Astando
+         at Norconsult Astando
         2018-04-18 - 2018-11-30
         
         Automated deployment for the project IsyRoad resulting in:
@@ -95,40 +95,40 @@
       </description>
     </item>
     <item>
-      <title> at 18 Svea Ekonomi</title>
+      <title> at Svea Ekonomi</title>
       <guid>https://www.henrikbecker.net/projects/svea</guid>
       <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
       <description>
-         at 18 Svea Ekonomi
+         at Svea Ekonomi
         2017-10-11 - 2018-04-11
         
         Development of the payment solution &quot;Svea Checkout&quot; being rolled out in Sweden, Norway and Finland.
         Improved api documentation by generating most of it automatically
         Improved test readability by rewriting them as executable specifications
-        Skills used: C#, Asp.Net Web Api, CQRS, TDD, Specification By Example, Continuous Integration, Octopus Deploy, Entity Framework
+        Skills used: C#, Asp.Net Web Api, CQRS, TDD, Specification By Example, Continuous Integration, Octopus Deploy, Entity Framework, NuGet, Micro Services, Team Foundation Server, DocNet
       </description>
     </item>
     <item>
-      <title> at 17 Plejmo</title>
+      <title> at Film2Home/Plejmo</title>
       <guid>https://www.henrikbecker.net/projects/film2home</guid>
       <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
       <description>
-         at 17 Plejmo
+         at Film2Home/Plejmo
         2014-11-03 - 2017-07-05
         
         Development of the Video on Demand sites Film2Home and Plejmo.
         Designed Plejmo&apos;s REST API.
         Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
         Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.
-        Skills used: Asp.Net MVC, Asp.Net Web Api, C#, .Net Framework, TDD, CQRS, Continuous Integration, Octopus Deploy, JavaScript, jQuery, KnockoutJS, NHibernate, SQL Server
+        Skills used: Asp.Net MVC, Asp.Net Web Api, C#, .Net Framework, TDD, CQRS, Continuous Integration, Octopus Deploy, JavaScript, jQuery, KnockoutJS, NHibernate, SQL Server, Micro Services, CSS, HTML, EPiServer, IIS
       </description>
     </item>
     <item>
-      <title> at 16 Arbetsformedlingen</title>
+      <title> at Arbetsförmedlingen</title>
       <guid>https://www.henrikbecker.net/projects/arbetsformedlingen</guid>
       <pubDate>Tue, 24 Jun 2014 00:00:00 +0000</pubDate>
       <description>
-         at 16 Arbetsformedlingen
+         at Arbetsförmedlingen
         2014-06-24 - 2014-09-26
         
         Maintenance of a legacy solution for managing requisitions at Sweden&apos;s public employment services.
@@ -136,11 +136,11 @@
       </description>
     </item>
     <item>
-      <title> at 15 Qbranch Competence Manager</title>
+      <title> at Qbranch Competence Manager</title>
       <guid>https://www.henrikbecker.net/projects/qbranch-competence-manager</guid>
       <pubDate>Mon, 28 Apr 2014 00:00:00 +0000</pubDate>
       <description>
-         at 15 Qbranch Competence Manager
+         at Qbranch Competence Manager
         2014-04-28 - 2014-06-23
         
         Development of an application for managing consultant CVs built on Asp.Net MVC and hosted on Windows Azure.
@@ -148,11 +148,11 @@
       </description>
     </item>
     <item>
-      <title> at 14 Wasa Kredit Ab</title>
+      <title> at Wasa Kredit</title>
       <guid>https://www.henrikbecker.net/projects/wasa-kredit</guid>
       <pubDate>Mon, 12 Mar 2012 00:00:00 +0000</pubDate>
       <description>
-         at 14 Wasa Kredit Ab
+         at Wasa Kredit
         2012-03-12 - 2013-11-14
         
         Reduced complexity and system decay through refactoring and the application of common software architecture patterns.
@@ -162,22 +162,22 @@
       </description>
     </item>
     <item>
-      <title> at 13 Cale Access Ab</title>
+      <title> at Cale Access AB</title>
       <guid>https://www.henrikbecker.net/projects/cale-access</guid>
       <pubDate>Thu, 01 Sep 2011 00:00:00 +0000</pubDate>
       <description>
-         at 13 Cale Access Ab
+         at Cale Access AB
         2011-09-01 - 2012-03-09
         
         Skills used: Test Driven Development, SpecFlow, NInject, C#, WCF, Asp.Net Web Forms, Continuous Integration, Team Foundation Server
       </description>
     </item>
     <item>
-      <title> at 12 Cashguard</title>
+      <title> at CashGuard</title>
       <guid>https://www.henrikbecker.net/projects/cashguard</guid>
       <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
       <description>
-         at 12 Cashguard
+         at CashGuard
         2011-06-01 - 2011-09-01
         
         Was the key person in introducing behavior driven development.
@@ -186,11 +186,11 @@
       </description>
     </item>
     <item>
-      <title> at 11 Lansforsakringar</title>
+      <title> at Länsförsäkringar</title>
       <guid>https://www.henrikbecker.net/projects/lansforsakringar</guid>
       <pubDate>Tue, 01 Sep 2009 00:00:00 +0000</pubDate>
       <description>
-         at 11 Lansforsakringar
+         at Länsförsäkringar
         2009-09-01 - 2011-05-01
         
         Was instrumental in the migration of the payment platform&apos;s database from Oracle to SQL Server.
@@ -200,11 +200,11 @@
       </description>
     </item>
     <item>
-      <title> at 10 Tradera</title>
+      <title> at Tradera</title>
       <guid>https://www.henrikbecker.net/projects/tradera</guid>
       <pubDate>Sat, 01 Aug 2009 00:00:00 +0000</pubDate>
       <description>
-         at 10 Tradera
+         at Tradera
         2009-08-01 - 2009-08-31
         
         Development of a WPF-based sales support system for managing articles and campaigns published on tradera.se.
@@ -212,11 +212,11 @@
       </description>
     </item>
     <item>
-      <title> at 09 Astando</title>
+      <title> at Astando</title>
       <guid>https://www.henrikbecker.net/projects/astando</guid>
       <pubDate>Thu, 28 Feb 2008 00:00:00 +0000</pubDate>
       <description>
-         at 09 Astando
+         at Astando
         2008-02-28 - 2009-05-01
         
         Client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg.
@@ -224,11 +224,11 @@
       </description>
     </item>
     <item>
-      <title> at 08 Hittapunktse</title>
+      <title> at Hitta.se</title>
       <guid>https://www.henrikbecker.net/projects/hitta-punkt-se</guid>
       <pubDate>Wed, 01 Mar 2006 00:00:00 +0000</pubDate>
       <description>
-         at 08 Hittapunktse
+         at Hitta.se
         2006-03-01 - 2008-02-28
         
         Was a key person in the development of hitta.se - one of Swedens top 10 most popular sites at the time.
@@ -238,11 +238,11 @@
       </description>
     </item>
     <item>
-      <title> at 07 Ica Banken Ab</title>
+      <title> at ICA Banken</title>
       <guid>https://www.henrikbecker.net/projects/ica-banken</guid>
       <pubDate>Wed, 01 Mar 2006 00:00:00 +0000</pubDate>
       <description>
-         at 07 Ica Banken Ab
+         at ICA Banken
         2006-03-01 - 2006-03-01
         
         Quality analysis of database design.
@@ -252,11 +252,11 @@
       </description>
     </item>
     <item>
-      <title> at 06 Sigtuna Council</title>
+      <title> at Sigtuna Council</title>
       <guid>https://www.henrikbecker.net/projects/sigtuna-council</guid>
       <pubDate>Sat, 01 Oct 2005 00:00:00 +0000</pubDate>
       <description>
-         at 06 Sigtuna Council
+         at Sigtuna Council
         2005-10-01 - 2006-03-01
         
         Was the single developer on this Identity Management project that would become Microsoft&apos;s reference case for Microsoft Identity Integration Server (MIIS).
@@ -267,11 +267,11 @@
       </description>
     </item>
     <item>
-      <title> at 05 Sveriges Television</title>
+      <title> at Sveriges Television</title>
       <guid>https://www.henrikbecker.net/projects/sveriges-television</guid>
       <pubDate>Fri, 01 Jul 2005 00:00:00 +0000</pubDate>
       <description>
-         at 05 Sveriges Television
+         at Sveriges Television
         2005-07-01 - 2005-07-31
         
         Maintenance of the client&apos;s system inventory tool.
@@ -279,11 +279,11 @@
       </description>
     </item>
     <item>
-      <title> at 04 Taxi Stockholm</title>
+      <title> at Taxi Stockholm</title>
       <guid>https://www.henrikbecker.net/projects/taxi-stockholm</guid>
       <pubDate>Sun, 01 May 2005 00:00:00 +0000</pubDate>
       <description>
-         at 04 Taxi Stockholm
+         at Taxi Stockholm
         2005-05-01 - 2005-07-01
         
         Migration of Taxi Stockholm&apos;s intranet and external web site from Spirello to EpiServer.
@@ -292,11 +292,11 @@
       </description>
     </item>
     <item>
-      <title> at 03 Siemens Medical</title>
+      <title> at Siemens Medical</title>
       <guid>https://www.henrikbecker.net/projects/siemens-medical</guid>
       <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
       <description>
-         at 03 Siemens Medical
+         at Siemens Medical
         2000-01-01 - 2001-01-01
         
         QA and supporting colleges during development and maintenance of Siemens Medical&apos;s intranet &quot;EMPower&quot;.
@@ -304,11 +304,11 @@
       </description>
     </item>
     <item>
-      <title> at 02 Hewlett Packard Sweden</title>
+      <title> at Hewlett Packard Sweden</title>
       <guid>https://www.henrikbecker.net/projects/hewlett-packard</guid>
       <pubDate>Wed, 01 Sep 1999 00:00:00 +0000</pubDate>
       <description>
-         at 02 Hewlett Packard Sweden
+         at Hewlett Packard Sweden
         1999-09-01 - 2005-03-31
         
         Requirements analysis, use case design, system design and development of a web based admininstration interface for information about and registrations for customer events for HP EMEA.
@@ -319,11 +319,11 @@
       </description>
     </item>
     <item>
-      <title> at 01 Loostrom Och Gelin Ab</title>
+      <title> at Looström &amp; Gelin AB</title>
       <guid>https://www.henrikbecker.net/projects/loostrom-gelin</guid>
       <pubDate>Thu, 01 Oct 1998 00:00:00 +0000</pubDate>
       <description>
-         at 01 Loostrom Och Gelin Ab
+         at Looström &amp; Gelin AB
         1998-10-01 - 1999-07-31
         
         Designed and developed a document management system based on Visual Basic 5.

@@ -21,7 +21,7 @@ Henrik Becker is an experienced .Net developer and solution architect dedicated 
 
 ## Featured Projects
 
-### 24 Betsson    
+### Betsson    
 * | Oct 2021 - Dec 2025*
 
 * Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools
@@ -34,7 +34,7 @@ Henrik Becker is an experienced .Net developer and solution architect dedicated 
 C#, .Net 5-9, .Net Aspire, Asp.Net Core, Microsoft Orleans, Blazor, Docker, GitHub Actions, Kafka, SQL Server, PostgreSQL
 
 
-### 17 Plejmo    
+### Film2Home/Plejmo    
 * | Nov 2014 - Jul 2017*
 
 * Development of the Video on Demand sites Film2Home and Plejmo.
@@ -43,10 +43,10 @@ C#, .Net 5-9, .Net Aspire, Asp.Net Core, Microsoft Orleans, Blazor, Docker, GitH
 * Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.
 
 *Skills used:*
-Asp.Net MVC, Asp.Net Web Api, C#, .Net Framework, TDD, CQRS, Continuous Integration, Octopus Deploy, JavaScript, jQuery, KnockoutJS, NHibernate, SQL Server
+Asp.Net MVC, Asp.Net Web Api, C#, .Net Framework, TDD, CQRS, Continuous Integration, Octopus Deploy, JavaScript, jQuery, KnockoutJS, NHibernate, SQL Server, Micro Services, CSS, HTML, EPiServer, IIS
 
 
-### 23 Adlibris    
+### Adlibris    
 * | Feb 2021 - Oct 2021*
 
 * OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app under development.
@@ -57,7 +57,7 @@ Asp.Net MVC, Asp.Net Web Api, C#, .Net Framework, TDD, CQRS, Continuous Integrat
 C#, Asp.Net Core, Asp.Net MVC, JavaScript, jQuery, React, SQL Server, Octopus Deploy, Azure App Services, Identity Server
 
 
-### 21 Open Payments    
+### Open Payments    
 * | Dec 2019 - Jun 2020*
 
 * Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.
