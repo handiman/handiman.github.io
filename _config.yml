@@ -44,6 +44,7 @@ collections:
   output: false 
  fun_facts:
   output: false
+  permalink: /fun-facts/:title
 
 excerpt_separator: <!--more-->
 
@@ -74,6 +75,11 @@ defaults:
       type: employment
     values:
       layout: employer
+      sitemap: false
+  - scope:
+      path: ""
+      type: fun_facts
+    values:
       sitemap: false
 
   - scope:

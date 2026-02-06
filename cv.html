@@ -84,13 +84,6 @@ title: Henrik Becker CV
         <h2>Interests</h2>
         <ul>{% for interest in site.data['profile']['interests'] %}<li>{{ interest.name }}</li>{% endfor %}</ul>
     </template>
-    <template id="fun-facts">
-        <h2>Fun Facts</h2>{% for fact in site.fun_facts %}
-        <article{% if fact.lang %} data-language="{{fact.lang}}"{% endif %}>
-            <h6>{{ fact.title }}</h6>
-            {% if fact.description %}<p>{{ fact.description }}</p>{% else %}{{ fact.content }}{% endif %}
-        </article>{% endfor %}
-    </template>
     <template id="all-roles">
         <h2>Roles</h2> 
         <p>{{ site.data['semantic-model']['summary']['roles'] | join: ", " }}</p>
