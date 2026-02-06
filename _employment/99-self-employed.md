@@ -12,13 +12,6 @@ organization:
 start_date: 2017-07-06
 end_date: present
 mission: Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm urban area.
-#{{ mission }}
-#
-####### Clients:
-#{% assign clients = site.projects | where: 'client', true %}
-#{% for client in clients reversed %}* {{client.name}}
-#{% endfor %}
-#{% assign clients = nil %}
 ---
 <!--more-->
 ## About the Company
@@ -44,7 +37,7 @@ My goal is always the same: build systems that are easier to understand, easier 
 ## Selected Clients
 Over the years I’ve worked with organizations across finance, e‑commerce, gaming, and public infrastructure. Some of the clients I’ve partnered with include:
 {% assign clients = site.projects | where: 'client', true %}
-{% for client in clients reversed %}* {{client.name}}
+{% for client in clients reversed %}* [{{client.name}}]({{ client.url | relative_url }})
 {% endfor %}
 {% assign clients = nil %}
 The work has ranged from backend development and integrations to automation pipelines and architectural support.

@@ -38,7 +38,7 @@ title: Henrik Becker CV
                 </p>
             </header>
             <p>{% if xp.summary %}{% for summary in xp.summary %}{{ summary | append: '.' | replace: '..', '.' | strip }} {% endfor %}{% else %}{{ xp.excerpt | strip }}{% endif %}
-                <a class="more no-print" href="{{ xp.url | relative_url }}">Learn more</a>
+                <a class="more no-print" href="{{ xp.url | relative_url }}">Read more</a>
             </p>
             {% if xp.competencies %}
             <h4>Tech & Methods Used</h4>
@@ -124,7 +124,7 @@ title: Henrik Becker CV
     </template>
     <template id="clients" data-source="{{ page.url | absolute_url }}#clients">
         <h2>Clients</h2>
-        <ul>{% for client in site.data.clients %}<li>{{ client.name }}</li>{% endfor %}</ul>
+        {% include clients.html %}
     </template>
 </main>
 
@@ -135,24 +135,5 @@ title: Henrik Becker CV
             <h3>{{ skillCategory.name }}</h3>
             <ul>{% for skill in skillCategory.skills %}<li title="{{ skill }} - {{ skillCategory.level }}">{{ skill }}</li>{% endfor %}</ul>
         </article>{% endfor %}</div>
-    </template>
-{% comment %}
-    <section id="languages" data-source="{{ page.url | absolute_url }}#languages">
-        <h2>Languages</h2>
-        <ul>{% for language in profile['languages'] %}<li><strong>{{ language.name }}:</strong> {{ language.proficiency }}</li>{% endfor %}</ul>
-    </section>
-    <section id="certifications" data-source="{{ page.url | absolute_url }}#certifications">
-        <h2>Certifications</h2>
-        <ul>{% for cert in site.certs %}<li><strong>{{ cert.title }}:</strong> {% if cert.issuer %}{{ cert.issuer }} {% endif %}{% if cert.achievement_date %}(<date>{{ cert.achievement_date }}</date>){% endif %}</li>{% endfor %}</ul>
-    </section>
-    <section id="education" data-source="{{ page.url | absolute_url }}#education">
-        <h2>Education</h2>
-        <ul>{% for education in site.data.profile.education %}
-            <li><strong><a href="{{ education.link | absolute_url }}">{{ education.school }}</a>:</strong> {{ education.description }} (<time>{% if education.start_year %}{{ education.start_year }}{% endif %} &dash; {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}</time>)</li>{% endfor %}</ul>
-    </section>
-    <section id="recommendations" data-source="{{ page.url | absolute_url }}#recommendations">
-        <h2>Recommendations</h2>{% for recommendation in site.data['profile']['recommendations'] %}
-        <blockquote><p>{{ recommendation.text }}</p><footer>- {{ recommendation.name }}</footer></blockquote>{% endfor %}
-    </section>       
-{% endcomment %}    
+    </template>   
 </aside>

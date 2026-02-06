@@ -1,6 +1,0 @@
-{% assign xp = site['employment'].docs['99-self-employed'] %}
-<p>{{ xp.mission }}</p>
-<h5>Clients:</h5>
-<ul>{% assign clients = site.projects | where: 'client', true %}{% for client in clients reversed %}
-    <li>{{client.name}}</li>{% endfor %}{% assign clients = nil %}
-</ul>

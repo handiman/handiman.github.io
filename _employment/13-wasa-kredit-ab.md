@@ -13,8 +13,6 @@ summary:
  - Reduced complexity through refactoring.
  - Introduced living documentation in the form of executable specifications.
  - Guided development teams towards a more agile approached software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle.
-#{% for summary in page.summary %}
-#* {{ summary}}{% endfor %}
 ---
 <!--more-->
 ## About the Role

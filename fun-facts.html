@@ -3,10 +3,9 @@ title: Fun Facts
 sitemap: false
 ---
 <main data-section="{{ page.title }}" data-source="{{ page.url | absolute_url }}">
-    <h2 id="content">Fun Facts</h2>{% for fact in site.fun_facts %}
+    <h2>Fun Facts</h2>{% for fact in site.fun_facts %}
     <article{% if fact.lang %} data-language="{{fact.lang}}"{% endif %} data-section="Fun Facts" data-source="{{ fact.url | absolute_url }}">
         <h3>{{ fact.title }}</h3>
         {{ fact.content }}
-        {% comment %}{% if fact.description %}<p>{{ fact.description }}</p>{% else %}{{ fact.content }}{% endif %}{% endcomment %}
     </article>{% endfor %}    
 </main>

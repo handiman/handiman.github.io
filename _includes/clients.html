@@ -1,0 +1,3 @@
+<ul>{% assign clients = site.projects | where: 'client', true %}{% for client in clients reversed %}
+    <li><a href="{{ client.url | relative_url }}">{{client.name}}</a></li>{% endfor %}{% assign clients = nil %}
+</ul>

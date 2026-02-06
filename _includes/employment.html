@@ -17,7 +17,9 @@
         </p>
     </header>
     {% if forloop.first %}
-        {% include self-employed.html %}
+        <p>{{ xp.mission }}</p>
+        <h5>Clients:</h5>
+        {% include clients.html %}
     {% endif %}
 </article>{% endif %}{% endfor %}
 
