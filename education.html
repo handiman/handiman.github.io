@@ -8,5 +8,12 @@ sitemap: false
         <header>
             <h1>{{ page.title }}</h1>
         </header>
+        <ul>
+            {% for education in site.education reversed %}
+            <li>
+                <strong><a href="{{ education.url | relative_url }}">{{ education.title }}:</a></strong> {{ education.description }} (<time>{% if education.start_year %}{{ education.start_year }}{% endif %} &dash; {% if education.end_year %}{{ education.end_year }}{% else %}present{% endif %}</time>)
+            </li>
+            {% endfor %}
+        </ul>
     </article>
 </main>
