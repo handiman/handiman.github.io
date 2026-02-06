@@ -1,4 +1,5 @@
 ---
+title: Kulturama
 slug: kulturama
 sitemap: true
 ---

@@ -1,4 +1,5 @@
 ---
+title: Komvux Lidingö
 slug: komvux
 sitemap: true
 ---
