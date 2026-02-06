@@ -2,6 +2,7 @@
 title: I designed my own sailing dinghy when I was 13
 slug: dinghy
 ---
+<!--more-->
 <style type="text/css">
     #dinghy {
         display:none;

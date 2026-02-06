@@ -10,6 +10,7 @@ organization:
 start_date: 1986-08-01
 end_date: 1986-12-31
 ---
+<!--more-->
 ## About the Role
 I first came to Karena as a work‑experience student in 8th grade, and they later hired me through a youth employment program after I finished 9th grade. It became my first real job — a place I enjoyed and where I built friendships that have lasted.
 

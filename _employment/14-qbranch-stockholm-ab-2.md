@@ -22,12 +22,11 @@ This was my second period at Qbranch. I split my time between **resource consult
 My main external assignment during this period was at **Arbetsförmedlingen**, where I handled day‑to‑day technical tasks and short‑term operational needs.
 
 ### Qbranch Competence Manager
-I contributed to the development of Qbranch Competence Manager, an internal tool for matching consultants with incoming assignments. It was the kind of in‑house project consultants worked on between client engagements. My work included:
+I contributed to the development of Qbranch Competence Manager, an internal tool for matching consultants with incoming assignments. It was the kind of in‑house project consultants worked on between client engagements. It was also my first hands‑on experience with **Microsoft Azure**, which we used to host and run the system. My work included:
+
 - implementing features for searching and filtering consultants by skills and availability
 - improving how assignment requirements were represented
 - helping make the tool more usable for sales and delivery teams
-
-It was also my first hands‑on experience with **Microsoft Azure**, which we used to host and run the system.
 
 ## Reflection
 This was a short but productive period — a mix of consulting at Arbetsförmedlingen and contributing to an internal tool that streamlined how Qbranch matched consultants to assignments. It also marked my first real exposure to Azure, which became useful in later roles.

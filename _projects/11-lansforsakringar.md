@@ -24,7 +24,7 @@ summary:
 ---
 <!--more-->
 ## Context
-I joined [Länsförsäkringar][lf] as part of a long‑term [Avega Group][avega] assignment, working on the company’s payment platform and several surrounding systems. The work spanned backend development, database migration, performance investigations, and quality assurance across a complex financial environment.
+I joined [Länsförsäkringar](https://www.lf.se) as part of a long‑term [Avega Group](https://avega.se/) assignment, working on the company’s payment platform and several surrounding systems. The work spanned backend development, database migration, performance investigations, and quality assurance across a complex financial environment.
 
 ## Work
 ### Database Migration
@@ -55,6 +55,3 @@ I joined [Länsförsäkringar][lf] as part of a long‑term [Avega Group][avega]
 
 ## Reflection
 This assignment combined deep technical work with long‑term platform stewardship. The database migration required careful analysis and a strong understanding of both Oracle and SQL Server, while the performance investigations provided insights that shaped how the platform evolved. Integrating with JD Edwards EnterpriseOne added another layer of complexity and gave me valuable experience with large‑scale financial systems and their data models.
-
-[lf]: https://www.lf.se
-[avega]: https://avega.se/

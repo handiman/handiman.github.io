@@ -13,3 +13,4 @@ start_date: <Date>
 # Not in schema
 end_date: <Date>    
 ---
+<!--more-->

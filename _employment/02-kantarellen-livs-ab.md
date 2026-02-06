@@ -10,6 +10,7 @@ organization:
 start_date: 1992-06-01
 end_date: 1992-09-01
 ---
+<!--more-->
 ## About the Role
 I worked at Kantarellen Livs on Lidingö during a period when I needed full‑time work. The store expected me to stay on longer, but I later shifted to part‑time music studies and returned to Konsum part‑time instead.
 

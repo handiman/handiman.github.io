@@ -36,8 +36,6 @@ I designed and implemented the first version of Plejmo’s REST API. The goals w
 - predictable behavior for clients
 - a foundation that could evolve without breaking compatibility
 
-This API later became the stable base I maintained at Magine while building API v2.
-
 ### CQRS and Service‑Bus Architecture
 A major part of my work was rethinking how the platform handled load and complexity. I introduced **CQRS** and moved the system from a traditional n‑tier architecture to a **service‑bus‑based** design. This shift:
 - separated reads and writes for better performance and clarity
@@ -45,15 +43,11 @@ A major part of my work was rethinking how the platform handled load and complex
 - enabled asynchronous processing of tasks
 - made the system more modular and easier to extend
 
-This architecture later made it trivial to plug in new services at Magine — including the gamification PoC.
-
 ### CI/CD Automation
 I automated the deployment process using **Octopus Deploy**, replacing a slow, manual, error‑prone workflow. The results were:
 - deployment time reduced from about an hour to a few minutes
 - fewer mistakes and rollbacks
 - a predictable, repeatable release process
-
-This pipeline became the foundation I later maintained and refined at Magine.
 
 ## Reflection
 Film2Home was where Plejmo’s technical foundations were laid — the API, the CQRS and service‑bus architecture, and the CI/CD pipeline. It set the stage for everything I later did at Magine, and eventually influenced my work with event‑driven systems and gamification at Betsson

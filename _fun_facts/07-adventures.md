@@ -2,6 +2,7 @@
 title: Early Creative Adventures
 slug: adventures
 ---
+<!--more-->
 Long before I became a developer, I developed all sorts of things that had nothing to do with computers:
 
 - **Svart Duell:** a home‑made Drakar och Demoner role‑playing adventure me and a friend wrote as teenagers. I still have an untouched original copy. No, it’s not for sale.

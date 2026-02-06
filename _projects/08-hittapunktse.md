@@ -23,11 +23,6 @@ summary:
  - Was a key person in the development of hitta.se - one of Swedens top 10 most popular sites at the time.
  - Created the services hitta.se/trafiknytt (traffic information) and hitta.se/vader (weather information).
  - Maintenance of hitta.se's internal order system
-#description: |
-#  <!--more-->
-#  Hitta.se is a Swedish search engine that offers telephone directory, addresses and maps.
-#  It was one of Sweden's 10 most popular sites for quite some time. 
-# I worked with hitta.se's internal order system and improved the public map site with services such as weather and traffic information.
 ---
 <!--more-->
 ## Context

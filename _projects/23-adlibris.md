@@ -52,7 +52,7 @@ competencies:
 ---
 <!--more-->
 ## Context
-[Adlibris][adlibris] is the largest online bookstore in the Nordics with a growing ecosystem of digital services and applications. In 2021, I joined the Storefront team as a Fullstack Developer to support the ongoing modernization of the customer‑facing platform.
+[Adlibris](https://www.adlibris.com/) is the largest online bookstore in the Nordics with a growing ecosystem of digital services and applications. In 2021, I joined the Storefront team as a Fullstack Developer to support the ongoing modernization of the customer‑facing platform.
 
 The team was in the middle of two major initiatives:
 
@@ -98,5 +98,3 @@ The challenge was to strengthen the foundation while the storefront was actively
 
 ## Reflection
 This project combined identity engineering, API design, frontend modernization, and architectural exploration. It reinforced the value of improving foundational systems while incrementally modernizing a large, customer‑facing platform and the importance of stepping in to solve the problems that need solving, even when they fall outside the original plan.
-
-[adlibris]: {{ page.organization.url }}

@@ -32,7 +32,7 @@ My work included:
 Levels was the planned successor to the legacy Loyalty system, designed to support achievements, progression, and more flexible gamification features. I contributed to its early structure through:
 - domain modeling and shaping the core concepts
 - building proof‑of‑concepts to validate architectural and functional ideas
-- introducing [.NET Aspire][aspire] to improve local development and integration testing
+- introducing [.NET Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/) to improve local development and integration testing
 - helping define how achievements, progression, and rewards should be represented and processed
 ### Loyalty
 Loyalty was a long‑standing legacy system with accumulated complexity. My involvement was limited to:
@@ -42,5 +42,3 @@ Loyalty was a long‑standing legacy system with accumulated complexity. My invo
 Working across Tournaments, Loyalty, and Levels gave me a clear view of both the legacy and future directions of the value stream. Tournaments was where I made the most impact, and Levels gave me the chance to work on modeling and early‑stage architecture. Loyalty was maintenance work handled as needed.
 
 I genuinely enjoyed my time at Betsson and the colleagues I worked with. I left only because I missed the autonomy of being my own boss.
-
-[aspire]: https://learn.microsoft.com/en-us/dotnet/aspire/

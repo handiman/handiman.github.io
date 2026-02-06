@@ -33,14 +33,11 @@ I kept **API v1** stable and backward‑compatible while designing and implement
 - new endpoints intended for the upcoming Plejmo app
 - support for third‑party integrations, including MovieZine and a Finnish VOD service in Vaasa (Whatson)
 
-The goal was to modernize the API without disrupting existing clients.
 
 ### Gamification Proof of Concept
 I built a proof‑of‑concept for a **levels and achievements** system. Because I had originally implemented Plejmo’s **service‑bus architecture** at Film2Home, it was straightforward to add a standalone service that subscribed to the relevant events. The PoC:
 - consumed user‑activity events from the service bus
 - awarded achievements and progression based on those events
-
-It was an early exploration of ideas I later developed more formally at Betsson.
 
 ### Analytics Integration (Segment.io)
 Segment.io was part of the production system. I implemented event publishing so user activity and platform events could be tracked consistently across clients and services.

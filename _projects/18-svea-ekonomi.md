@@ -33,7 +33,7 @@ summary:
 ---
 <!--more-->
 ## Context
-[Svea Ekonomi][svea] was my first assignment as a freelancer. I joined the team responsible for **Svea Checkout**, a payment solution being rolled out across Sweden, Norway, and Finland. The work combined backend development with a strong focus on engineering practices, particularly around testing and documentation. I also took on a mentoring role, helping the team strengthen its approach to TDD and executable specifications.
+[Svea Ekonomi](https://www.svea.com) was my first assignment as a freelancer. I joined the team responsible for **Svea Checkout**, a payment solution being rolled out across Sweden, Norway, and Finland. The work combined backend development with a strong focus on engineering practices, particularly around testing and documentation. I also took on a mentoring role, helping the team strengthen its approach to TDD and executable specifications.
 
 ## Work
 ### Backend Development
@@ -55,5 +55,3 @@ summary:
 
 ## Reflection
 This assignment marked the beginning of my freelance career and set the tone for how I like to work: combining hands‑on engineering with a focus on clarity, testing, and sustainable development practices. It was a chance to contribute to a real‑world payment product while helping a team level up its approach to quality.
-
-[svea]: https://www.svea.com

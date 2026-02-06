@@ -22,16 +22,12 @@ skills:
 - Continuous Integration
 summary:
  - Client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg.
-#<!--more-->
-#Astando is one of the leading companies in the GIS area and in the forefront of the Local Roaddatabase concept (LV). 
-#LV is the foundation on top of which applications concerning the road network, traffic and road-users are built. 
-#The assignment involved development of a client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg. 
 ---
 <!--more-->
 ## Context
-Astando (now Norconsult Astando, following acquisition by [Norconsult][norconsult]) is one of Sweden’s leading companies in the GIS domain and a key contributor to the Local Road Database (LV) concept — the national foundation for applications related to road networks, traffic, and road‑user information.
+Astando (now Norconsult Astando, following acquisition by [Norconsult](https://www.norconsultastando.se/)) is one of Sweden’s leading companies in the GIS domain and a key contributor to the Local Road Database (LV) concept — the national foundation for applications related to road networks, traffic, and road‑user information.
 
-In 2008–2009, I joined Astando as a consultant from [Avega Group AB][avega] to contribute to the continued development of a client/server application used by Stockholm and Gothenburg for importing, processing, and presenting traffic measurement data.
+In 2008–2009, I joined Astando as a consultant from [Avega Group AB](https://avega.se/) to contribute to the continued development of a client/server application used by Stockholm and Gothenburg for importing, processing, and presenting traffic measurement data.
 
 ## Problem
 Municipal traffic departments needed a reliable way to import large volumes of traffic measurement data from various sensors and systems, normalize it, and present it in a way that supported analysis and operational decision‑making. The existing application was already in use but required ongoing development, refinement, and new capabilities.
@@ -56,6 +52,3 @@ Municipal traffic departments needed a reliable way to import large volumes of t
 
 ## Reflection
 This engagement combined desktop application development, backend processing, and GIS‑related domain modeling. It was an early opportunity to work within an established codebase, contribute to a complex data‑driven system, and apply disciplined engineering practices — experience that later helped shape my long‑term relationship with Norconsult Astando.
-
-[avega]: https://avega.se/
-[norconsult]: {{ page.organization.url }}

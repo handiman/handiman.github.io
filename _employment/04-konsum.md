@@ -10,6 +10,7 @@ organization:
 start_date: 1986-12-01
 end_date: 1995-06-30
 ---
+<!--more-->
 ## About the Role
 I worked as a shop assistant for Konsumentföreningen Stockholm across several stores during my late teens and early twenties.
 

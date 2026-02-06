@@ -55,7 +55,7 @@ competencies:
 ---
 <!--more-->
 ## Context
-Open Payments provides a PSD2‑compliant platform that allows FinTech companies, e‑commerce businesses, and other financial actors to integrate with European banks through a single unified API.
+[Open Payments](https://openpayments.io) provides a PSD2‑compliant platform that allows FinTech companies, e‑commerce businesses, and other financial actors to integrate with European banks through a single unified API.
 
 Between late 2019 and mid‑2020, I worked as a Fullstack Developer on the Customer Portal — the interface through which clients onboard, configure access, and manage their integrations. The portal consisted of a React single‑page application backed by an ASP.NET Core API, with deep integration into Dynamics CRM and multiple Azure services.
 

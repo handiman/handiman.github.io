@@ -41,5 +41,3 @@ In 2014 I returned to Qbranch. While waiting for my next client assignment, I co
 ## Reflection
 This was a short, practical internal engagement; the kind of work that fills the gaps between client projects while still offering meaningful contributions. 
 It provided a balanced mix of frontend and backend development and introduced me to Azure in a hands‑on way.
-
-[azure]: https://azure.microsoft.com/

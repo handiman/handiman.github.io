@@ -17,12 +17,6 @@ skills:
  - Asp.Net Web Forms
  - Continuous Integration
  - Team Foundation Server
-# <!--more--> 
-#Cale is one of the world's leading manufacturers of parking meters. 
-#Henrik was involved in the project "Historical Changes" aiming to facilitate historical changes in "TrueUp". 
-#TrueUp is a set of financial rules for economical compensation between the city of Chigago and the company Chicago Parking Meters. 
-#The TrueUp system automates the compensation calculations and is a part of Cale Web Office 2. 
-#Challenges: Complex domain model. Complex business rules. Massive data sets
 ---
 <!--more-->
 ## Context

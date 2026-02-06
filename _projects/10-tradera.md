@@ -15,8 +15,6 @@ skills:
  - NHibernate
 summary:
  - Development of a WPF-based sales support system for managing articles and campaigns published on tradera.se.
-# <!--more-->
-# This project was developed in-house at Avea Group AB. 
 ---
 <!--more-->
 ## Context
@@ -37,6 +35,4 @@ While between client assignments at Avega Group, I joined an internal team worki
 - Gained hands‑on experience with WPF, WCF, and NHibernate in a real production codebase
 
 ## Reflection
-This was a short but valuable engagement. The kind of assignment that keeps skills sharp and exposes you to new technologies while waiting for the next long‑term client project. It also served as a smooth transition into what would become my assignment at [Länsförsäkringar][lf].
-
-[lf]: {{ '/projects/lansforsakringar' | relative_url }}
+This was a short but valuable engagement. The kind of assignment that keeps skills sharp and exposes you to new technologies while waiting for the next long‑term client project. It also served as a smooth transition into what would become my assignment at **Länsförsäkringar**.
