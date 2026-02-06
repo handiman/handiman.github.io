@@ -3,6 +3,7 @@ name: Open Payments
 slug: open-payments
 sitemap: true
 client: true
+logo: /assets/img/logo-openpayments.svg
 organization:
   url: https://openpayments.io
 roles: 

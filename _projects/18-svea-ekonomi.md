@@ -3,6 +3,7 @@ name: Svea Ekonomi
 slug: svea
 sitemap: true
 client: true
+logo: /assets/img/logo-svea.png
 organization:
   url: https://www.svea.com 
 roles: 

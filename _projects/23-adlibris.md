@@ -3,6 +3,7 @@ name: Adlibris
 slug: adlibris
 sitemap: true
 client: true
+logo: /assets/img/logo-adlibris.svg
 organization:
   url: https://www.adlibris.com
   location: Stockholm, Sweden

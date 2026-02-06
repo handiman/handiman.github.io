@@ -85,11 +85,11 @@
     </section>
     <section id="clients" data-source="{{ page.url | absolute_url }}#clients">
         <h2>Clients</h2>
-        <ul class="client-logos">{% for client in site.data.clients reversed %}{% if client.logo %}
+        <ul class="client-logos">{% assign clients = site.projects | where: 'client', true %}{% for client in clients reversed %}{% if client.logo %}
             <li title="{{ client.name }}{% if client.teaser %}: {{ client.teaser }}{% endif %}">
-                {% if client.url %}<a href="{{ client.url }}">{% endif %}
-                <img class="client-logo" src="{{ client.logo | relative_url }}" alt="{{ client.name }} logo" />
-                {% if client.url %}</a>{% endif %}
+                <a href="{{ client.url }}">
+                    <img class="client-logo" src="{{ client.logo | relative_url }}" alt="{{ client.name }} logo" />
+                </a>
             </li>{% endif %}{% endfor %}
         </ul>
     </section>

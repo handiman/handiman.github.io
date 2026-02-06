@@ -3,6 +3,7 @@ name: Insplanet
 slug: insplanet
 sitemap: true
 client: true
+logo: /assets/img/logo-insplanet.png
 roles: 
  - Lead Developer
 employer: /employment/17-self-employed

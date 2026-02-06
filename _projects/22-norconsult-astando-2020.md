@@ -1,6 +1,7 @@
 ---
 name: Norconsult Astando
 slug: norconsult-astando
+logo: /assets/img/logo-norconsult.webp
 sitemap: true
 client: true
 organization:
