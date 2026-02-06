@@ -2,6 +2,10 @@
 title: Komvux Lidingö
 slug: komvux
 sitemap: true
+description: Municipal adult education
+start_year: 1995
+end_year: 1997
+location: Lidingö, Sweden
 ---
 ## About the Studies
 I attended KomVux Lidingö to continue my upper‑secondary studies through Sweden’s municipal adult education system. During this period, the school was experimenting with new computer‑related programs, and I enrolled in one of these early tracks.

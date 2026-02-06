@@ -2,6 +2,10 @@
 title: Kulturama
 slug: kulturama
 sitemap: true
+description: Music
+start_year: 1992
+end_year: 1993
+location: Stockholm, Sweden
 ---
 ## About the Studies
 I attended Kulturama back when it operated as an independent arts education institute, taking part in two of their music programs.
