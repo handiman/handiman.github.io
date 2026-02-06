@@ -1,5 +1,6 @@
 ---
 title: Early Odd Jobs
+slug: odd-jobs
 ---
 # Early Odd Jobs
 During the early–mid 1990s — a rough economic period in Sweden — I picked up a couple of part‑time jobs to make ends meet. These weren’t glamorous, but they helped pay the rent. Not quite the Monty Python [Four Yorkshiremen][monty] sketch, but close enough.

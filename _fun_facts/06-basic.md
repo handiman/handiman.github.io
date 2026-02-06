@@ -1,5 +1,6 @@
 ---
 title: My First Brush With Programming
+slug: basic
 ---
 # My First Brush With Programming
 
