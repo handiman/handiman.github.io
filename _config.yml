@@ -10,7 +10,7 @@ author:
   links: 
     - https://github.com/handiman
     - https://www.linkedin.com/in/prettygoodprogrammer
-tile_color: '#303030'
+tile_color: '#F5F5F5'
 permalink: pretty
 sass:
  sass_dir: _sass

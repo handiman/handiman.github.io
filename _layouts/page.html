@@ -4,7 +4,7 @@ layout: null
 <!DOCTYPE html>{% assign company = site.data['organization'] %}{% assign person = site.data['person'] %}{% assign profile = site.data['profile'] %}{% assign page_name = page.name | lcase | split: "." | slice: 0, 1 | first %}
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-    <title>Henrik Becker Consulting AB</title>
+    <title>Henrik Becker Consulting AB{% if page.title %} | {{ page.title }}{% endif %}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo title=false %}
