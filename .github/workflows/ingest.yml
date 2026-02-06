@@ -10,11 +10,15 @@ jobs:
   ingest:
     runs-on: ubuntu-latest
     steps:
-      - name: Download rendered CV from site
-        run: curl -sSL https://www.henrikbecker.net/cv -o henrik.html
-      - run: cat henrik.html
+      - name: Download
+        run: |
+          curl -sSL https://www.henrikbecker.net/cv -o cv.html
+          curl -sSL https://www.henrikbecker.net/education -o education.html
+          curl -sSL https://www.henrikbecker.net/employment -o employment.html
+          curl -sSL https://www.henrikbecker.net/all-projects -o all-projects.html
+          curl -sSL https://www.henrikbecker.net/fun-facts -o fun-facts.html
 
-      - name: Post Semantic CV to ingestion API
+      - name: Ingest
         env:
             API_KEY: ${{ secrets.AZURE_OPENAI_APIKEY }}
         run: |
@@ -23,5 +27,32 @@ jobs:
             -H "Authorization: Bearer $API_KEY" \
             -H "X-Commit: ${{ github.sha }}" \
             -H "X-Source: github" \
-            --data-binary @henrik.html
+            --data-binary @cv.html
 
+            curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest/henrik \
+            -H "Content-Type: text/plain" \
+            -H "Authorization: Bearer $API_KEY" \
+            -H "X-Commit: ${{ github.sha }}" \
+            -H "X-Source: github" \
+            --data-binary @education.html
+
+            curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest/henrik \
+            -H "Content-Type: text/plain" \
+            -H "Authorization: Bearer $API_KEY" \
+            -H "X-Commit: ${{ github.sha }}" \
+            -H "X-Source: github" \
+            --data-binary @employment.html
+
+            curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest/henrik \
+            -H "Content-Type: text/plain" \
+            -H "Authorization: Bearer $API_KEY" \
+            -H "X-Commit: ${{ github.sha }}" \
+            -H "X-Source: github" \
+            --data-binary @all-projects.html
+
+            curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest/henrik \
+            -H "Content-Type: text/plain" \
+            -H "Authorization: Bearer $API_KEY" \
+            -H "X-Commit: ${{ github.sha }}" \
+            -H "X-Source: github" \
+            --data-binary @fun-facts.html
