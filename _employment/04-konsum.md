@@ -1,4 +1,5 @@
 ---
+title: Konsum
 name: Shop Assistant
 slug: konsum
 roles: 

@@ -1,4 +1,5 @@
 ---
+title: Betsson
 name: Betsson Group
 slug: betsson
 sitemap: true

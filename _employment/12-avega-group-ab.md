@@ -1,4 +1,5 @@
 ---
+title: Avega
 name: IT Consultant/System Developer
 slug: avega
 roles: 

@@ -1,4 +1,5 @@
 ---
+title: Arbetsförmedlingen
 name: Arbetsförmedlingen
 slug: arbetsformedlingen
 sitemap: true

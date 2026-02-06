@@ -1,4 +1,5 @@
 ---
+title: Lidingö Stad
 name: PC Technician
 slug: lidingo
 roles: 

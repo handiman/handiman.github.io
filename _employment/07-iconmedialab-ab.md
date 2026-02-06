@@ -1,4 +1,5 @@
 ---
+title: Icon Medialab
 name: IT Consultant/System Developer
 slug: icon-medialab
 roles: 

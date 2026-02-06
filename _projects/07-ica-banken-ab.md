@@ -1,4 +1,5 @@
 ---
+title: ICA Banken
 name: ICA Banken AB
 slug: ica-banken
 sitemap: true

@@ -1,4 +1,5 @@
 ---
+title: Länsförsäkringar
 name: Länsförsäkringar
 slug: lansforsakringar
 sitemap: true

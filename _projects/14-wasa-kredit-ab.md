@@ -1,4 +1,5 @@
 ---
+title: Wasa Kredit
 name: Wasa Kredit
 slug: wasa-kredit
 sitemap: true

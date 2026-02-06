@@ -1,4 +1,5 @@
 ---
+title: Cale Access AB
 name: Cale Access AB
 slug: cale-access
 sitemap: true

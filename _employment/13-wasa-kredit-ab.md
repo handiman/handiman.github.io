@@ -1,4 +1,5 @@
 ---
+title: Wasa Kredit
 name: Lead Developer
 slug: wasa-kredit
 roles: 

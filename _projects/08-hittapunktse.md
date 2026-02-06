@@ -1,4 +1,5 @@
 ---
+title: Hitta.se
 name: hitta.se
 slug: hitta-punkt-se
 sitemap: true

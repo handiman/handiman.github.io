@@ -1,4 +1,5 @@
 ---
+title: Film2Home
 name: Plejmo Backend Developer
 slug: film2home
 roles: 

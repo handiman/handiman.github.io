@@ -1,4 +1,5 @@
 ---
+title: Open Payments
 name: Open Payments
 slug: open-payments
 sitemap: true
@@ -47,11 +48,6 @@ competencies:
     weight: .3
     tech:
       - Azure DevOps
-# Open Payments provides a PSD2-compliant platform letting FinTech, 
-# E-commerce businesses etc integrate with European banks through 
-# a single unified API - the Open Payments Platform.
-#
-# Much of my focus lay on implementing automated onboarding in the client's Customer Portal - a single page React application with a .Net Core backend integrating with a Dynamics CRM and a variety of Azure resources.      
 ---
 <!--more-->
 ## Context

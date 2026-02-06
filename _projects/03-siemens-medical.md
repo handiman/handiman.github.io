@@ -1,4 +1,5 @@
 ---
+title: Siemens Medical
 name: Siemens Medical
 slug: siemens-medical
 sitemap: true

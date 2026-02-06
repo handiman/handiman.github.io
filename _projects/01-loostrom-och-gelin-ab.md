@@ -1,4 +1,5 @@
 ---
+title: Looström & Gelin AB
 name: Looström & Gelin AB
 slug: loostrom-gelin
 sitemap: true

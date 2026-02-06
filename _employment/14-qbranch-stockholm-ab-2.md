@@ -1,4 +1,5 @@
 ---
+title: Qbranch
 name: IT Consultant/Technical Manager
 slug: qbranch-2
 roles: 

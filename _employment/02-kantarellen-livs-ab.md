@@ -1,4 +1,5 @@
 ---
+title: Kantarellen Livs
 name: Shop Assistant
 slug: kantarellen
 roles: 

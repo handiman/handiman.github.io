@@ -1,4 +1,5 @@
 ---
+title: Innitek
 name: IT Consultant
 slug: innitek
 roles: 

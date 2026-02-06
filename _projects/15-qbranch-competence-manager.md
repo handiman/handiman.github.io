@@ -1,4 +1,5 @@
 ---
+title: Qbranch Competence Manager
 name: Qbranch Competence Manager
 slug: qbranch-competence-manager
 sitemap: true

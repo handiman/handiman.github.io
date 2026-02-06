@@ -1,4 +1,5 @@
 ---
+title: Norconsult Astando
 name: Norconsult Astando
 slug: norconsult-astando/2018
 logo: /assets/img/logo-norconsult.webp

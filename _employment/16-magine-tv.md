@@ -1,4 +1,5 @@
 ---
+title: MagineTV
 name: Plejmo Backend Developer
 slug: magine-tv
 sitemap: true

@@ -1,4 +1,5 @@
 --- 
+title: Svea Ekonomi
 name: Svea Ekonomi
 slug: svea
 sitemap: true
@@ -22,10 +23,10 @@ skills:
 - Continuous Integration
 - Octopus Deploy
 - Entity Framework
-#- NuGet
-#- Micro Services
-#- Team Foundation Server
-#- DocNet
+- NuGet
+- Micro Services
+- Team Foundation Server
+- DocNet
 summary: 
  - Development of the payment solution "Svea Checkout" being rolled out in Sweden, Norway and Finland.
  - Improved api documentation by generating most of it automatically

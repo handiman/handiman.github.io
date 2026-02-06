@@ -1,4 +1,5 @@
 ---
+title: Henrik Becker Consulting AB
 name: Self Employed
 slug: becker-consulting
 sitemap: true

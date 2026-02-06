@@ -1,4 +1,5 @@
 ---
+title: Sollentuna Jazz Workshop
 name: Study Circle Leader
 slug: sollentuna-jazz-workshop
 roles: 

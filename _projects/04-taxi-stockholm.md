@@ -1,4 +1,5 @@
 ---
+title: Taxi Stockholm
 name: Taxi Stockholm
 slug: taxi-stockholm
 sitemap: true

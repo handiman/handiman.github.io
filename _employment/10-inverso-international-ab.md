@@ -1,4 +1,5 @@
 ---
+title: Inverso
 name: IT Consultant/System Developer
 slug: inverso
 roles: 

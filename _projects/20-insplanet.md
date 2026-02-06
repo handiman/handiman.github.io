@@ -1,4 +1,5 @@
 ---
+title: Insplanet
 name: Insplanet
 slug: insplanet
 sitemap: true

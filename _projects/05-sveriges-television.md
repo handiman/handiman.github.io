@@ -1,4 +1,5 @@
 ---
+title: Sveriges Television
 name: Sveriges Television
 slug: sveriges-television
 sitemap: true

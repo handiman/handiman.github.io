@@ -1,4 +1,5 @@
 ---
+title: Adlibris
 name: Adlibris
 slug: adlibris
 sitemap: true

@@ -1,4 +1,5 @@
 ---
+title: Astando
 name: Astando
 slug: astando
 sitemap: true

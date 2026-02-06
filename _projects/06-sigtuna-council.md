@@ -1,4 +1,5 @@
 ---
+title: Sigtuna Council
 name: Sigtuna Council
 slug: sigtuna-council
 sitemap: true

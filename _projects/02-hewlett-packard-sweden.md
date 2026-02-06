@@ -1,4 +1,5 @@
 ---
+title: Hewlett Packard Sweden
 name: Hewlett Packard Sweden
 slug: hewlett-packard
 sitemap: true

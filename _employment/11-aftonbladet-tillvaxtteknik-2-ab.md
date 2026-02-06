@@ -1,4 +1,5 @@
 ---
+title: Aftonbladet Tillväxtteknik 2 AB
 name: System Developer
 slug: aftonbladed-tillvaxtteknik-2-ab
 roles: 

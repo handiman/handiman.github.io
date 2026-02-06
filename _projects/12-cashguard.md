@@ -1,4 +1,5 @@
 ---
+title: CashGuard
 name: CashGuard
 slug: cashguard
 sitemap: true

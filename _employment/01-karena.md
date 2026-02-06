@@ -1,4 +1,5 @@
 ---
+title: Karena Zoo, Lek & Hobby
 name: Shop Assistant
 slug: karena
 roles: 

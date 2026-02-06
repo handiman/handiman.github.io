@@ -1,4 +1,6 @@
 ---
+# För Jekyll - inte i schema
+title: <Page Title>
 # Namnen ska vara kompatibla med https://schema.org/Project 
 name: <Job Title>
 # Inte i schema
