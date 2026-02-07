@@ -90,14 +90,38 @@ small,
 a {
   color: var(--color-accent);
   text-decoration: none;
+  border-bottom: 1px dotted var(--color-muted);
 }
 
-a:hover {
-  text-decoration: underline;
+a.more {
+    visibility: hidden;
+    color: var(--color-accent);
+    &::after {
+        content: "…";
+    }
 }
 
-h1 a:hover, h3 a:hover {
-  text-decoration: none;
+header, h1, h2, h3, h4, h5, h6, .client-logos {
+    a {
+        color: inherit;
+        text-decoration: none;
+        border: none;
+    }
+    a:hover {
+        text-decoration: none;
+        border: none;
+    }
+}
+
+main > article {
+  a {
+    color: inherit;
+  }
+  header {
+    a {
+    color: inherit;
+    }
+  }
 }
 
 /* --------------------------------------------
@@ -132,6 +156,12 @@ body > footer {
     }
   }
 }
+main > article {
+    ul {
+        margin-bottom: var(--space-2);
+    }
+}
+
 
 /* --------------------------------------------
    BLOCKQUOTES
