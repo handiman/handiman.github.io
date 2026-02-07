@@ -72,4 +72,15 @@ ul.cards {
   transform: rotateY(180deg);
 }
 
-
+.card {
+  .more {
+    position: absolute;
+    right: var(--space-4);
+    bottom: var(--space-4);
+  }
+  &:hover {
+    .more {
+      visibility: visible;      
+    }
+  }
+}

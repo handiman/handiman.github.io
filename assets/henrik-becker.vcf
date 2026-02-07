@@ -1,4 +1,5 @@
 ---
+layout: null
 ---
 {% assign person = site.data.person %}{% assign company = site.data.organization %}BEGIN:VCARD
 VERSION:3.0

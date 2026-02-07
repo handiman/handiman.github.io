@@ -1,4 +1,5 @@
 ---
+layout: null
 ---
 ["vcard", [{% assign person = site.data.person %}{% assign company = site.data.organization %}
  ["version", {}, "text", "4.0"],

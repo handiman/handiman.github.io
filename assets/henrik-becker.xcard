@@ -1,4 +1,5 @@
 ---
+layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>{% assign person = site.data.person %}{% assign company = site.data.organization %}
 <vcards xmlns="urn:ietf:params:xml:ns:vcard-4.0">

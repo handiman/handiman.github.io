@@ -25,7 +25,6 @@ exclude: [
  "node_modules",
  "Gemfile", 
  "Gemfile.lock", 
- "Rakefile", 
  "*.orig"]
 
 collections:
@@ -39,7 +38,8 @@ collections:
   output: true
   permalink: /:collection/:title
  usp:
-  output: false
+  output: true
+  permalink: /unique-selling-points/:title
  certs:
   output: false 
  fun_facts:
@@ -58,6 +58,7 @@ defaults:
         alt: Henrik Becker
         height: 1199
         width: 800
+# <Collections>        
   - scope:
       path: ""
       type: projects
@@ -81,7 +82,18 @@ defaults:
       type: fun_facts
     values:
       sitemap: false
-
+  - scope:
+      path: ""
+      type: usp
+    values:
+      layout: usp
+      sitemap: false
+  - scope:
+      path: ""
+      type: certs
+    values:
+      sitemap: false      
+# </Collections>
   - scope:
      path: googlef0bc3dbe928e1f73.html
     values:

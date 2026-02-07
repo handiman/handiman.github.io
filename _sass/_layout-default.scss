@@ -69,6 +69,7 @@ body>footer {
 body>footer a {
   color: var(--color-footer-text);
   text-decoration: none;
+  border: none;
 }
 
 body>footer a:hover {
@@ -204,15 +205,12 @@ article header p  {
 }
 
 #featured-projects, #all-projects, #work-experience {
-    article {
-        .more {
-            visibility: hidden;
-            color: var(--color-accent);
-            text-decoration: underline;
-            &::after {
-                content: "…";
-            }
+    header {
+        em {
+            display: block;
         }
+    }
+    article {
         &:hover {
             .more {
                 visibility: visible;
@@ -220,21 +218,6 @@ article header p  {
         }
     }
 }
-
-#all-projects, .projects {
-    a {
-        text-decoration: none !important;
-    }
-}
-
-#work-experience {
-    header {
-        em {
-            display: block;
-        }
-    }
-}
-
 
 /* Hacks */
 body.error {
@@ -252,25 +235,5 @@ body.error {
     picture img {
         filter: grayscale(1) brightness(1) invert(0.85);
         opacity: 0.85;
-    }
-}
-
-body.project article, 
-body.projects article {
-    a {
-        color: inherit;
-        text-decoration: none;
-        border-bottom: 1px dotted var(--color-muted);
-        padding-bottom: 1px;
-    }
-    header {
-       a {
-        text-decoration: none;
-        color: inherit;
-        border: none;
-       }
-    }
-    ul {
-        margin-block: var(--space-2);
     }
 }
