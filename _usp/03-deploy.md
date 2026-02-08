@@ -1,22 +1,17 @@
 ---
-title: Automated Deployment
-slug: automated-deployment
-sitemap: false
+title: Delivery Automation
+slug: automated-delivery
+sitemap: true
 ---
-I can help you save time and money, avoid headache and possibly even make you sleep better by automating your deployment process. 
+I’ve spent years helping teams automate their delivery processes using **GitHub Actions**, **Azure Pipelines**, **Octopus Deploy**, and **TeamCity**.
 
-I have several years of experience doing just that using **GitHub Actions**, **Azure Pipelines**, **Octopus Deploy** and **TeamCity**
-<!--more-->
-An automated deployment process has a number of benefits:
+A reliable delivery pipeline saves time, reduces stress, and frees teams to focus on building the product instead of babysitting deployments.
+<!--more-->It also brings a few practical advantages:
+- **It saves time** — deployments become a non‑event instead of a time sink
+- **It’s reliable** — the same steps run the same way every time
+- **It’s person‑independent** — anyone can trigger a release, or it can run fully automatically
 
-- **It saves time**   
-  First and foremost it saves time and time equals money.
-- **It is reliable**   
-  You can count on deployment being done exactly the same way every time. Human mistakes are eliminated.
-- **It is person independent**   
-  Manual deployment gets as easy as clicking a button. As releases can be scheduled or even fully automated no one even has to be present.
-  
-## Case Studies
+Below are two examples of how I’ve helped teams move from manual deployments to predictable, automated delivery.
 
 ### [Norconsult Astando AB][astando]
 
@@ -35,7 +30,7 @@ The success of the pilot project lead to setting up automated deploy for their p
 
 **Plejmo** had an all manual deployment process that was not very difficult but 
 stole a lot of time from the small development team ‐ time that should be used to develop the product. 
-Using Octopus Deploy we were able to: 
+Using **Octopus Deploy** we were able to: 
 
 * Reduce deployment time from ~1 hour to ~10 minutes.
 * Automate database deployment.

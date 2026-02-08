@@ -94,11 +94,15 @@ a {
 }
 
 a.more {
-    visibility: hidden;
-    color: var(--color-accent);
+  font-size: var(--font-size-body-s);
+}
+
+#featured-projects {
+  a.more {
     &::after {
-        content: "…";
+      content: "…";
     }
+  }
 }
 
 header, h1, h2, h3, h4, h5, h6, .client-logos {

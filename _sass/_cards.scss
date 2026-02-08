@@ -39,13 +39,15 @@ ul.cards {
 
 .card-front, .card-back {
   backface-visibility: hidden;
-  //background-color: color-mix(in srgb, var(--color-accent) 6%, transparent);
-  background-color: var(--color-surface);
+  background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
   border-radius: var(--space-1);
   border: 1px solid var(--color-border);
-  border-top: 1px solid var(--color-accent);
+  border-top: 1px solid var(--color-muted);
   padding: var(--space-4);
   height: 100%;
+  h3 {
+    margin-top: var(--space-1);
+  }
 }
 
 /* FRONT overlays */
@@ -73,13 +75,14 @@ ul.cards {
 
 .card {
   .more {
-    position: absolute;
-    right: var(--space-4);
-    bottom: var(--space-4);
+    visibility: visible;
+    //position: absolute;
+    //right: var(--space-4);
+    //bottom: var(--space-4);
   }
   &:hover {
     .more {
-      visibility: visible;      
+      //visibility: visible;      
     }
   }
 }
