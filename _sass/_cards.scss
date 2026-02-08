@@ -37,32 +37,31 @@ ul.cards {
   transition: transform 0.6s cubic-bezier(.25,.8,.25,1);
 }
 
+.card-front, .card-back {
+  backface-visibility: hidden;
+  //background-color: color-mix(in srgb, var(--color-accent) 6%, transparent);
+  background-color: var(--color-surface);
+  border-radius: var(--space-1);
+  border: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-accent);
+  padding: var(--space-4);
+  height: 100%;
+}
+
 /* FRONT overlays */
 .card-front {
   position: absolute;
   inset: 0;
-  backface-visibility: hidden;
   transform: rotateY(0deg);
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--space-1);
-  padding: var(--space-4);
   z-index: 2;
-  height: 100%;
   left: 0;
 }
 
 /* BACK defines height but is forced to match */
 .card-back {
   position: relative;
-  backface-visibility: hidden;
   transform: rotateY(180deg);
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--space-1);
-  padding: var(--space-4);
   z-index: 1;
-  height: 100%;
   min-height: 50px;
 }
 

@@ -1,4 +1,13 @@
 ---
+cards:
+  - front: Backend development
+    back: I build clean, maintainable backend systems with clear boundaries, solid testability, and long‑term stability. Whether it’s APIs, data layers, or modernization work, I help teams move faster without sacrificing quality
+  - front: System integration
+    back: REST APIs, queues, and cloud services designed to communicate clearly and predictably. I help teams remove hidden complexity and make systems talk to each other without surprises.
+  - front: Automation & DevOps
+    back: CI/CD pipelines, scripting, and infrastructure that remove manual steps and make deployments boring — in the best way. I help teams ship faster and with more confidence     
+  - front: Architecture guidance
+    back: Pragmatic, long‑term decisions that keep systems understandable and scalable. I help teams choose the right patterns, avoid unnecessary complexity, and build software that ages well.
 ---
 <main>
     <section id="introduction" data-source="{{ page.url | absolute_url }}#introduction">
@@ -10,78 +19,32 @@
     <section id="offer" data-source="{{ page.url | absolute_url }}#offer">
         <h2>What I offer</h2>
         <ul class="cards">
-            <li class="card flippable">
+            {% for card in page.cards %}
+            <li class="card flippable{% if forloop.index > 3 %} print {% endif %}">
                 <div class="card-inner">
                     <div class="card-front">
-                        <strong>Backend development in .NET and C#</strong>
+                        {% if card.icon %}
+                         <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" 
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" 
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            {{ card.icon }}
+                        </svg>
+                        {% endif %}
+                        <h3>{{ card.front }}</h3>
                     </div>
                     <div class="card-back">
-                        <div>Clean, testable code — from APIs to data layers.</div>
+                        <h3 class="no-print">{{ card.front }}</h3>
+                        <div>{{ card.back }}</div>
                     </div>
                 </div>
             </li>
-            <li class="card flippable">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <strong>System integration</strong>
-                    </div>
-                    <div class="card-back">
-                        <div>REST, GraphQL, message queues, and cloud services — I make systems talk to each other.
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="card flippable">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <strong>Automation and DevOps</strong>
-                    </div>
-                    <div class="card-back">
-                        <div>CI/CD pipelines, scripting, infrastructure as code — for faster delivery and fewer errors.
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="card flippable">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <strong>Architecture and technical guidance</strong>
-                    </div>
-                    <div class="card-back">
-                        <div>Helping teams choose the right solution, structure codebases, and think long-term.</div>
-                    </div>
-                </div>
-            </li>
+            {% endfor %}
         </ul>
     </section>
-    <section id="why-me" data-source="{{ page.url | absolute_url }}#why-me">
-        <h2>Why work with me?</h2>
-        <ul class="cards">
-            <li class="card">
-                <div class="card-inner">{% capture card_text %}{{ site.time | date: "%Y" | minus: 1999 }} years of hands-on development experience{% endcapture %}
-                    <div class="card-front">{{ card_text }}</div>
-                    <div class="card-back">{{ card_text }}</div>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-inner">{% capture card_text %}Deep expertise in .NET and Azure{% endcapture %}
-                    <div class="card-front">{{ card_text }}</div>
-                    <div class="card-back">{{ card_text }}</div>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-inner">{% capture card_text %}Fast onboarding, clear communication{% endcapture %}
-                    <div class="card-front">{{ card_text }}</div>
-                    <div class="card-back">{{ card_text }}</div>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-inner">{% capture card_text %}Code that’s easy to read, test, and evolve{% endcapture %}
-                    <div class="card-front">{{ card_text }}</div>
-                    <div class="card-back">{{ card_text }}</div>
-                </div>
-            </li>
-        </ul>
+    <section id="unique-selling-points" data-source="{{ page.url | absolute_url }}#unique-selling-points">
+        <h2><a href="{{ '/unique-selling-points' | relative_url }}">How I work</a></h2>
+        {% include usps.html %}
     </section>
     <section id="clients" data-source="{{ page.url | absolute_url }}#clients">
         <h2>Clients</h2>

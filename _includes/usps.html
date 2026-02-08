@@ -1,0 +1,15 @@
+ <ul class="cards">
+    {% for usp in site.usp %}
+    <li class="card">
+        <div class="card-inner">
+            {% capture text %}
+                <h3>{{ usp.title }}</h3>
+                {{ usp.excerpt }}
+                {% unless usp.no_link==true %}<a class="more" href="{{ usp.url | relative_url }}">Read more</a>{% endunless %}
+            {% endcapture %}
+            <div class="card-front">{{ text }}</div>
+            <div class="card-back">{{ text }}</div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>

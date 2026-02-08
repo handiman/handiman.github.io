@@ -1,7 +1,8 @@
 --- 
 layout: page
-title: Why work with me?
 sitemap: false
+title: How I work
+intro: This page goes deeper into how I work — the principles I rely on, the patterns I return to, and the real‑world projects where these ideas have proven themselves.
 ---
 
 <main>
@@ -9,20 +10,7 @@ sitemap: false
         <header>
             <h2>{{ page.title }}</h2>
         </header>
-        <ul class="cards">
-            {% for usp in site.usp %}
-            <li class="card">
-                <div class="card-inner">
-                    {% capture text %}
-                        <h3>{{ usp.title }}</h3>
-                        {{ usp.excerpt }}
-                        {% unless usp.no_link==true %}<a class="more" href="{{ usp.url | relative_url }}">Read more</a>{% endunless %}
-                    {% endcapture %}
-                    <div class="card-front">{{ text }}</div>
-                    <div class="card-back">{{ text }}</div>
-                </div>
-            </li>
-            {% endfor %}
-        </ul>
+        <p>{{ page.intro }}</p>
+        {% include usps.html %}
     </article>
 </main>
