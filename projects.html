@@ -2,71 +2,70 @@
 layout: page
 title: Project History
 ---
-<main>
-    <section id="all-projects" data-section="{{ page.title }}" data-source="{{ page.url | absolute_url }}">
-        <header>
-            <h1>{{ page.title }}</a></h1>
-        </header>
-        {% for xp in site.projects reversed %}{% capture xpName %}{% if xp.name %}{{ xp.name }}{% else %}{{xp.title}}{% endif %}{% endcapture %}{% capture xpSlug %}{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}{% endcapture %}
-        <article id="{{ xpSlug }}" data-section="{{ xpName }}" data-source="{{ page.url | absolute_url }}#{{ xpSlug }}">
-            <header>
-                <h3><a href="{{ xp.url | relative_url }}">{{ xpName }}</a></h3>
-                <p>
-                    {% if xp.roles %}<span>{% for role in xp.roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>{% endif %}
-                    <time>
-                        <span>{{ xp.start_date | date: '%Y-%m'}}</span>
-                        <span>{{ xp.end_date | date: '%Y-%m' }}</span>
-                    </time>
-                </p>
-            </header>
-            <p>{% if xp.summary %}{% for summary in xp.summary %}{{ summary | append: '.' | replace: '..', '.' | strip }} {% endfor %}{% else %}{{ xp.excerpt | strip }}{% endif %}
-                <a class="more no-print" href="{{ xp.url | relative_url }}">Read more</a>
-            </p>
-            {% if xp.competencies %}
-            <h4>Tech & Methods Used</h4>
-            <ul class="competencies">{% for competency in xp.competencies %}
-                <li>
-                    <details>
-                        <summary class="label"><h5>{{ competency.name }}</h5></summary>
-                        <ul>{% for tech in competency.tech %}
-                            <li>{{ tech }}</li>
-                        {% endfor %}</ul>
-                    </details>
-                    <span class="bar" data-weight="{{ competency.weight }}"></span>
-                    <span class="print"><h5>{{ competency.name }}</h5> {{ competency.tech | join: ', ' }}</span>
-                </li>
-            {% endfor %}</ul>
-            {% endif %}            
-        </article>{% endfor %}
-    </section>
 
-    <div class="easter-egg">
-        <p class="verse">And now, the end is near
-            I’m pushing up my final commit
-            My friend, I'll make it clear:
-            <a href="{{ '/cv' | relative_url }}">Here's my CV and I stand by it</a>
-            A long winding career
-            From early days in .NET Framework
-            And later .NET Core
-            All done the SOLID way
+<section id="all-projects" data-section="{{ page.title }}" data-source="{{ page.url | absolute_url }}">
+    <header>
+        <h1>{{ page.title }}</a></h1>
+    </header>
+    {% for xp in site.projects reversed %}{% capture xpName %}{% if xp.name %}{{ xp.name }}{% else %}{{xp.title}}{% endif %}{% endcapture %}{% capture xpSlug %}{{ xp.id | replace: '/', '-' | slice: 1, 1000 }}{% endcapture %}
+    <article id="{{ xpSlug }}" data-section="{{ xpName }}" data-source="{{ page.url | absolute_url }}#{{ xpSlug }}">
+        <header>
+            <h3><a href="{{ xp.url | relative_url }}">{{ xpName }}</a></h3>
+            <p>
+                {% if xp.roles %}<span>{% for role in xp.roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>{% endif %}
+                <time>
+                    <span>{{ xp.start_date | date: '%Y-%m'}}</span>
+                    <span>{{ xp.end_date | date: '%Y-%m' }}</span>
+                </time>
+            </p>
+        </header>
+        <p>{% if xp.summary %}{% for summary in xp.summary %}{{ summary | append: '.' | replace: '..', '.' | strip }} {% endfor %}{% else %}{{ xp.excerpt | strip }}{% endif %}
+            <a class="more no-print" href="{{ xp.url | relative_url }}">Read more</a>
         </p>
-        <p class="verse">Commits — I’ve made a few,
-            And far more bugs than I remember.
-            I’ve fixed my crappy code
-            And written tests to prove it stayed fixed.
-            I’ve learned along the way:
-            Mistakes are sound parts of the process.
-            I’ve learned, and learned again —
-            The TDD way.
-        </p>
-        <p class="chorus">There were those times — you know the ones —
-            When I took on almost way too much.
-            But even then, when doubt crept in,
-            I pushed ahead and didn’t fold.
-            I faced the whole absurd parade,
-            And learned some new things.
-        </p>
-        <p class="outro"><a href="{{ '/cv' | relative_url }}">Go read my CV!</a>
-        </p>
-    </div>
-</main>
+        {% if xp.competencies %}
+        <h4>Tech & Methods Used</h4>
+        <ul class="competencies">{% for competency in xp.competencies %}
+            <li>
+                <details>
+                    <summary class="label"><h5>{{ competency.name }}</h5></summary>
+                    <ul>{% for tech in competency.tech %}
+                        <li>{{ tech }}</li>
+                    {% endfor %}</ul>
+                </details>
+                <span class="bar" data-weight="{{ competency.weight }}"></span>
+                <span class="print"><h5>{{ competency.name }}</h5> {{ competency.tech | join: ', ' }}</span>
+            </li>
+        {% endfor %}</ul>
+        {% endif %}            
+    </article>{% endfor %}
+</section>
+
+<div class="easter-egg">
+    <p class="verse">And now, the end is near
+        I’m pushing up my final commit
+        My friend, I'll make it clear:
+        <a href="{{ '/cv' | relative_url }}">Here's my CV and I stand by it</a>
+        A long winding career
+        From early days in .NET Framework
+        And later .NET Core
+        All done the SOLID way
+    </p>
+    <p class="verse">Commits — I’ve made a few,
+        And far more bugs than I remember.
+        I’ve fixed my crappy code
+        And written tests to prove it stayed fixed.
+        I’ve learned along the way:
+        Mistakes are sound parts of the process.
+        I’ve learned, and learned again —
+        The TDD way.
+    </p>
+    <p class="chorus">There were those times — you know the ones —
+        When I took on almost way too much.
+        But even then, when doubt crept in,
+        I pushed ahead and didn’t fold.
+        I faced the whole absurd parade,
+        And learned some new things.
+    </p>
+    <p class="outro"><a href="{{ '/cv' | relative_url }}">Go read my CV!</a>
+    </p>
+</div>

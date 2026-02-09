@@ -2,12 +2,10 @@
 layout: page
 title: Employment History
 ---
-<main>
-    <section id="work-experience" data-section="{{ page.title }}" data-source="{{ page.url | absolute_url }}">
-        <header>
-            <h1>{{ page.title }}</h1>
-        </header>
-        {% include professional-experience.html %} 
-        {% include early-career.html %}     
-    </section>
-</main>
+<section id="work-experience" data-section="{{ page.title }}" data-source="{{ page.url | absolute_url }}">
+    <header>
+        <h1>{{ page.title }}</h1>
+    </header>
+    {% include professional-experience.html %} 
+    {% include early-career.html %}     
+</section>

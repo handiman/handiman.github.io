@@ -112,7 +112,7 @@
   h3 {
     page-break-after: avoid;
   }
-  main > article {
+  main > div > article {
     page-break-inside: auto !important;
   }
 

@@ -11,7 +11,7 @@ layout: null
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {% seo title=false %}
-    {% for format in site.data.formats %}<link rel="alternate" type="{{ format.mime_type }}" title="My resumé in {{ format.name }} format" href="{{ format.url | absolute_url }}" />
+    {% for format in site.data.formats %}<link rel="alternate" type="{{ format.mime_type }}" title="My CV in {{ format.name }} format" href="{{ format.url | absolute_url }}" />
     {% endfor %}
     <link rel="apple-touch-icon" href="{{ '/favicon.png' | absolute_url }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,7 +28,9 @@ layout: null
 {% capture page_class %}{{ page.class }} {{ page.layout }} {{ page.slug }}{% endcapture %}
 <body class="{{ page_class | strip }}">
     {% include header.html %}
-    {{ content }}
+    <main id="content">
+        {{ content }}
+    </main>
     {% include footer.html %}
   <button class="theme-toggle" title="Toggle dark mode">.</button>
   <script src="{{ '/assets/main.js' | absolute_url }}"></script>

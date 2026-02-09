@@ -2,10 +2,10 @@
 title: Fun Facts
 sitemap: false
 ---
-<main data-section="{{ page.title }}" data-source="{{ page.url | absolute_url }}">
+<div data-section="{{ page.title }}" data-source="{{ page.url | absolute_url }}">
     <h2>Fun Facts</h2>{% for fact in site.fun_facts %}
     <article{% if fact.lang %} data-language="{{fact.lang}}"{% endif %} data-section="Fun Facts" data-source="{{ fact.url | absolute_url }}">
         <h3>{{ fact.title }}</h3>
         {{ fact.content }}
     </article>{% endfor %}    
-</main>
+</div>
