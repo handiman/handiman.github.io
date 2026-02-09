@@ -20,24 +20,9 @@ cards:
     <h2>What I offer</h2>
     <ul class="cards">
         {% for card in page.cards %}
-        <li class="card flippable{% if forloop.index > 3 %} print {% endif %}">
-            <div class="card-inner">
-                <div class="card-front">
-                    {% if card.icon %}
-                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" 
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" 
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        {{ card.icon }}
-                    </svg>
-                    {% endif %}
-                    <h3>{{ card.front }}</h3>
-                </div>
-                <div class="card-back">
-                    <h3 class="no-print">{{ card.front }}</h3>
-                    <div>{{ card.back }}</div>
-                </div>
-            </div>
+        <li class="card{% if forloop.index > 3 %} print {% endif %}">
+            <h3>{{ card.front }}</h3>
+            <div class="card-body">{{ card.back }}</div>
         </li>
         {% endfor %}
     </ul>

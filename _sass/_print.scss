@@ -177,45 +177,14 @@
 
   // <Cards>
   .card {
-    perspective: none; /* no 3D in print */
-    border: none !important;
-  }
-
-  .card-inner {
-    border: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    height: auto !important;
-    transform: none !important; /* disable flipping */
-    border: none !important;
-    height: auto !important;
-  }
-
-  .card-front {
     border: none !important;
     padding: 0 !important;
     margin: 0 !important;
     position: revert !important;
     display: block !important;
     transform: none !important;
-    border: none! important;
-    height: auto !important;
-  }
-
-  .card-back {
-    position: revert !important;
-    display: block o !important;
-    margin-top: 2rem;
-    transform: none !important;
     border: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  #unique-selling-points {
-    .card-back {
-      display: none !important;
-    }
+    height: auto !important;
   }
 
   // </Cards>
