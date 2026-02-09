@@ -37,8 +37,10 @@
   /* Remove interactive or irrelevant UI */
   .no-print,
   .easter-egg,
+  .more,
   cv-chat,
-  nav, #recommendations {
+  nav, 
+  #recommendations {
     display: none !important;
   }
 
@@ -102,16 +104,21 @@
 
 
   // <PAGE BREAKS>
-  body.cv {
-    #featured-projects {
-      page-break-before: always;
-    }
-  }
-  /* Prevent awkward page breaks */
+    /* Prevent awkward page breaks */
   h1, h2, h3, h4, h5, h6,
   p, article, .card {
     page-break-inside: avoid;
   }
+  h3 {
+    page-break-after: avoid;
+  }
+  main > article {
+    page-break-inside: auto !important;
+  }
+
+  #featured-projects {
+      page-break-before: always;
+    }
   // </PAGE BREAKS>
 
   /* Footer contact formatting */

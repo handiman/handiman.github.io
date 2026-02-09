@@ -21,11 +21,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-exclude: [ 
- "node_modules",
- "Gemfile", 
- "Gemfile.lock", 
- "*.orig"]
+exclude: 
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - "*.orig"
 
 collections:
  projects:
