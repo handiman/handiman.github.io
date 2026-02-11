@@ -3,15 +3,15 @@ module Dump
         person = site.data['person']
         profile = site.data['profile']
         cv = {
-            "masthead" => {
-                "name"      => person['name'],
-                "jobTitle"  => person['jobTitle'],
-                "image"     => person['image'],
-                "telephone" => person['telephone'],
-                "email"     => 'contact@henrikbecker.se',
-                "sameAs"    => [person['url']].concat(person['sameAs'])
+            "introduction" => {
+                "name"          => person['name'],
+                "jobTitle"      => person['jobTitle'],
+                "image"         => person['image'],
+                "telephone"     => person['telephone'],
+                "email"         => person['email'],
+                "sameAs"        => [person['url']].concat(person['sameAs']),
+                "description"   => person['description'],
             },
-            "description"           => person['description'],
             "coreSkills"            => site.data['profile']['coreSkills'],
             "languages"             => site.data['profile']['languages'],
             "certifications"        => certifications(site),
