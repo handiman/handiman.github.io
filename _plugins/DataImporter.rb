@@ -13,7 +13,7 @@ module Jekyll
                 person_path = "#{site.source}/_data/person.json"
                 person = JSON.parse(File.read(person_path))
                 person["description"] = readme
-                person["image"] = handiman["avatar_url"]
+                person["image"] = "#{site.production_url}/assets/img/portrait800x1199.jpg"
                 File.write(person_path, person.to_json({
                   array_nl: "\n",
                   object_nl: "\n",

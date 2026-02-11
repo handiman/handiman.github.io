@@ -2,7 +2,7 @@ require 'prawn'
 
 module Jekyll
     Hooks.register :site, :post_write do |site|
-        Prawn::Document.generate("#{site.dest}/assets/henrik-becker.pdf", margin: 40) do |pdf|
+        Prawn::Document.generate("#{site.dest}/assets/henrik-becker-prawn.pdf", margin: 40) do |pdf|
             puts "      Generating CV as PDF..."
             pdf.extend(Prawn::DesignSystem)
             pdf.register_fonts(site)
@@ -381,7 +381,7 @@ module Prawn
             if summary
                 move_down space(2)
                 formatted_text(summary.map { |s| { 
-                    text: "#{s}.".gsub('..', '.'), 
+                    text: "#{s}.".gsub('.. ', '.'), 
                     font: "IBM Plex Sans", 
                     size: config[:font_size], 
                     color: config[:text_color], 

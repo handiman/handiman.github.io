@@ -7,13 +7,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.3.4
-      - run: gem install bundler -v 2.5
-      - run: bundler install
-      - run: bundle exec jekyll build
+
+      - name: Build gh-pages
+        run: |
+          gem install bundler -v 2.5
+          bundler install
+          bundle exec jekyll build
       
       - name: Publish gh-pages
         uses: s0/git-publish-subdir-action@develop
