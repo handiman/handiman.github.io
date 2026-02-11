@@ -1,21 +1,3 @@
-require 'prawn'
-
-module Jekyll
-    Hooks.register :site, :post_write do |site|
-        Prawn::Document.generate("#{site.dest}/assets/henrik-becker.pdf", margin: 40) do |pdf|
-            puts "      Generating CV as PDF..."
-            pdf.extend(Prawn::DesignSystem)
-            pdf.register_fonts(site)
-            pdf.masthead(site)
-            pdf.introduction(site)
-            pdf.core_competencies(site)
-            pdf.featured_projects(site)
-            pdf.professional_context(site)
-            pdf.professional_experience(site)
-    end
-  end
-end
-
 module Prawn
     module DesignSystem
         # --------------------------------------------

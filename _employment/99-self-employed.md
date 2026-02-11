@@ -13,6 +13,13 @@ organization:
 start_date: 2017-07-06
 end_date: present
 mission: Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm urban area.
+#competencies: 
+#  - name: Ruby
+#    weight: 0.2
+#    tech:
+#      - Jekyll plugin development
+#      - data serialization
+#      - build pipeline automation
 ---
 <!--more-->
 ## About the Company
