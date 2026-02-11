@@ -14,6 +14,11 @@ introduction:
     Development, applying SOLID principles and a healthy dose of dad-jokes.
 
     '
+languages:
+- name: Swedish
+  proficiency: Native
+- name: English
+  proficiency: Fluent (IELTS overall score 8.5)
 coreSkills:
 - name: Backend development
   skills:
@@ -32,25 +37,110 @@ coreSkills:
   - containers
 - name: Automation and CI/CD pipelines
 - name: Clean code, SOLID principles, and developer experience
-languages:
-- name: Swedish
-  proficiency: Native
-- name: English
-  proficiency: Fluent (IELTS overall score 8.5)
-certifications:
-- title: 'Microsoft Certified: Azure Developer Associate'
-  issuer: Microsoft
-  achievementDate: 2021-06-24
-- title: 'MCSA: Web Applications - Certified 2016'
-  issuer: Microsoft
-  achievementDate: 2016-09-26
-education:
-- title: Kulturama
-  period: 1992 - 1993
-  description: Music
-- title: Komvux Lidingö
-  period: 1995 - 1997
-  description: Municipal adult education
+allSkills:
+- ".Net"
+- ".Net 5-9"
+- ".Net Aspire"
+- ".Net Core"
+- ".Net Framework"
+- AJAX
+- ASP
+- Active Directory
+- App Services
+- Asp.Net
+- Asp.Net Core
+- Asp.Net MVC
+- Asp.Net MVC 5
+- Asp.Net MVC4
+- Asp.Net Web API
+- Asp.Net Web Api
+- Asp.Net Web Forms
+- Azure
+- Azure App Services
+- Azure DevOps
+- BDD
+- Blazor
+- Blob Storage
+- C#
+- COM
+- CQRS
+- CSS
+- CSS3
+- Certified Scrum Master
+- Continuous Deployment
+- Continuous Integration
+- Design Patterns
+- DocNet
+- Docker
+- Domain Driven Design
+- EPiServer
+- EPiServer 4
+- Entity Framework
+- EntityFramework 6
+- Event Grid
+- Function Apps
+- GitHub Actions
+- GroupWise Administrative Objects API
+- HTML
+- HTML5
+- IIS
+- Identity Management
+- Identity Server
+- JavaScript
+- Kafka
+- KnockoutJS
+- MSMQ
+- Micro Services
+- Microservices
+- Microsoft Identity Integration Server
+- Microsoft Orleans
+- NHibernate
+- NInject
+- Novell C API
+- Novell eDirectory
+- NuGet
+- Octopus Deploy
+- Oracle
+- PostgreSQL
+- Queue Storage
+- React
+- Redux
+- SOLID
+- SQL Server
+- Service Bus
+- SpecFlow
+- Specification By Example
+- Specification by Example
+- Spring.Net
+- Sql Database
+- Stencil
+- Storybook
+- T-SQL
+- TDD
+- Team City
+- Team Foundation Server
+- Team Foundation Server- XML
+- TeamCity
+- Test Driven Development
+- TypeScript
+- VB.Net
+- VBA
+- VBScript
+- Visual Basic 5
+- Visual Basic 6
+- WCF
+- WMI
+- WPF
+- WebForms
+- WebServices
+- WiX
+- WinForms
+- Windows Services
+- Winforms
+- XHTML
+- XML
+- XSLT
+- jQuery
 featuredProjects:
 - title: Betsson
   type:
@@ -65,7 +155,7 @@ featuredProjects:
     and drive innovation. Collaborated with Enterprise Architect and Engineering Manager
     to ensure architectural and regulatory compliance. Conducted and assessed technical
     interviews to support recruitment and team growth.
-  competencies:
+  competencies: &1
   - name: Architecture
     weight: 0.75
     tech:
@@ -108,7 +198,7 @@ featuredProjects:
     reducing deployment time from 1 hour to a couple of minutes. Increased performance
     by refactoring from a traditional n-tier architecture to a service bus architcure
     thus offloading the front end sites.
-  competencies:
+  competencies: &4
   - name: Backend development
     weight: 0.9
     tech:
@@ -149,7 +239,7 @@ featuredProjects:
   summary: OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris
     app under development. Account management API built with Asp.Net Core and .Net
     5 hosted on Azure. Contentful CMS content modeling and integration.
-  competencies:
+  competencies: &2
   - name: Backend development
     weight: 0.9
     tech:
@@ -181,7 +271,7 @@ featuredProjects:
     backend that integrated with Dynamics CRM and a variety of Azure resources. Improved
     test automation by making functional/integration tests require less manual intervention.
     Reduced deployment time thanks to improved test automation.
-  competencies:
+  competencies: &3
   - name: Backend development
     weight: 0.9
     tech:
@@ -201,6 +291,246 @@ featuredProjects:
     weight: 0.3
     tech:
     - Azure DevOps
+allProjects:
+- title: Betsson
+  type:
+  roles: Senior Software Engineer
+  startDate: 2021-10
+  endDate: 2025-12
+  summary: Contributed to the design, development, and maintenance of event-sourced,
+    gamification-oriented applications featuring real-time Kafka message processing,
+    RESTful APIs, and Blazor-based back-office tools. Optimized Kafka message processing,
+    resulting in a nearly 1000% increase in throughput for one of the core applications.
+    Developed Proofs of Concept for new systems and features to evaluate feasibility
+    and drive innovation. Collaborated with Enterprise Architect and Engineering Manager
+    to ensure architectural and regulatory compliance. Conducted and assessed technical
+    interviews to support recruitment and team growth.
+  competencies: *1
+- title: Adlibris
+  type:
+  roles: Fullstack Developer
+  startDate: 2021-02
+  endDate: 2021-10
+  summary: OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris
+    app under development. Account management API built with Asp.Net Core and .Net
+    5 hosted on Azure. Contentful CMS content modeling and integration.
+  competencies: *2
+- title: Norconsult Astando
+  type:
+  roles: Software Engineer
+  startDate: 2020-10
+  endDate: 2021-01
+  summary: Automated deployment using Octopus Deploy. Improvements to code readability
+    and testability. Implementing new functionality in legacy systems
+  competencies:
+  - name: Backend development
+    weight: 0.75
+    tech:
+    - C#
+    - Asp.Net Core
+    - Asp.Net Web Forms
+    - WCF
+  - name: Frontend development
+    weight: 0.75
+    tech:
+    - TypeScript
+    - JavaScript
+    - KnockoutJS
+  - name: Automation
+    weight: 0.5
+    tech:
+    - TeamCity
+    - Octopus Deploy
+- title: Open Payments
+  type:
+  roles: Software Engineer
+  startDate: 2019-12
+  endDate: 2020-06
+  summary: Automated customer onboarding process using a React SPA with a .Net Core
+    backend that integrated with Dynamics CRM and a variety of Azure resources. Improved
+    test automation by making functional/integration tests require less manual intervention.
+    Reduced deployment time thanks to improved test automation.
+  competencies: *3
+- title: Insplanet
+  type:
+  roles: Software Engineer
+  startDate: 2019-01
+  endDate: 2019-06
+  summary: Zero down time deployment. Simplified CI process with Azure DevOps build
+    pipelines
+  competencies:
+- title: Norconsult Astando
+  type:
+  roles: Software Engineer
+  startDate: 2018-04
+  endDate: 2018-11
+  summary: Automated deployment for the project IsyRoad resulting in:. Deployment
+    time decreasing from ~ 45 minutes to ~ 5 minutes per application instance. Deployment
+    releated errors reduced by nearly 100 %
+  competencies:
+- title: Svea Ekonomi
+  type:
+  roles: Software Engineer, TDD mentor
+  startDate: 2017-10
+  endDate: 2018-04
+  summary: Development of the payment solution "Svea Checkout" being rolled out in
+    Sweden, Norway and Finland. Improved api documentation by generating most of it
+    automatically. Improved test readability by rewriting them as executable specifications
+  competencies:
+- title: Film2Home/Plejmo
+  type:
+  roles: Fullstack Developer, DevOps
+  startDate: 2014-11
+  endDate: 2017-07
+  summary: Development of the Video on Demand sites Film2Home and Plejmo. Designed
+    Plejmo's REST API. Automated deployment thus eliminating the human factor and
+    reducing deployment time from 1 hour to a couple of minutes. Increased performance
+    by refactoring from a traditional n-tier architecture to a service bus architcure
+    thus offloading the front end sites.
+  competencies: *4
+- title: Arbetsförmedlingen
+  type:
+  roles: Backend Developer
+  startDate: 2014-06
+  endDate: 2014-09
+  summary: Maintenance of a legacy solution for managing requisitions at Sweden's
+    public employment services.
+  competencies:
+- title: Qbranch Competence Manager
+  type:
+  roles: Fullstack Developer
+  startDate: 2014-04
+  endDate: 2014-06
+  summary: Development of an application for managing consultant CVs built on Asp.Net
+    MVC and hosted on Windows Azure.
+  competencies:
+- title: Wasa Kredit
+  type:
+  roles: Lead Developer
+  startDate: 2012-03
+  endDate: 2013-11
+  summary: Reduced complexity and system decay through refactoring and the application
+    of common software architecture patterns. Guided the development teams towards
+    an iterative approach to software development with the product owner, functional
+    analysts, testers and developers working closely together during the entire development
+    cycle. Introduced the idea of living documentation in the form of executable specifications.
+  competencies:
+- title: Cale Access AB
+  type:
+  roles: System Developer
+  startDate: 2011-09
+  endDate: 2012-03
+  summary:
+  competencies:
+- title: CashGuard
+  type:
+  roles: System Developer
+  startDate: 2011-06
+  endDate: 2011-09
+  summary: Was the key person in introducing behavior driven development. Lay the
+    foundation for automated regression tests and living documentation by taking existing
+    user stories and turning them into executable specifications using SpecFlow.
+  competencies:
+- title: Länsförsäkringar
+  type:
+  roles: System Developer
+  startDate: 2009-09
+  endDate: 2011-05
+  summary: Was instrumental in the migration of the payment platform's database from
+    Oracle to SQL Server. Worked with the development of a WCF based payment platform
+    adding support for automatic payment services and prompts. Quality assurance and
+    performance optimization of connecting systems.
+  competencies:
+- title: Tradera
+  type:
+  roles: System Developer
+  startDate: 2009-08
+  endDate: 2009-08
+  summary: Development of a WPF-based sales support system for managing articles and
+    campaigns published on tradera.se.
+  competencies:
+- title: Astando
+  type:
+  roles: System Developer
+  startDate: 2008-02
+  endDate: 2009-05
+  summary: Client/server application for importing and presenting traffic measurement
+    data for Stockholm and Gothenburg.
+  competencies:
+- title: Hitta.se
+  type:
+  roles: Fullstack Developer
+  startDate: 2006-03
+  endDate: 2008-02
+  summary: Was a key person in the development of hitta.se - one of Swedens top 10
+    most popular sites at the time. Created the services hitta.se/trafiknytt (traffic
+    information) and hitta.se/vader (weather information). Maintenance of hitta.se's
+    internal order system
+  competencies:
+- title: ICA Banken
+  type:
+  roles: IT Consultant
+  startDate: 2006-03
+  endDate: 2006-03
+  summary: Quality analysis of database design. Trouble shooting and optimization
+    of SQL scripts for data import/export and database maintenance. VBScript for SQL
+    Server inventory using WMI.
+  competencies:
+- title: Sigtuna Council
+  type:
+  roles: IT Consultant
+  startDate: 2005-10
+  endDate: 2006-03
+  summary: Was the single developer on this Identity Management project that would
+    become Microsoft's reference case for Microsoft Identity Integration Server (MIIS).
+    Implemented management agents for the client's HR system, the directory services
+    eDirectory and Active Directory. Implemented automatic creation of GroupWise accounts
+    and Novell Server home directories. Wrote rules extensions for attribute flow
+    and joins.
+  competencies:
+- title: Sveriges Television
+  type:
+  roles: IT Consultant
+  startDate: 2005-07
+  endDate: 2005-07
+  summary: Maintenance of the client's system inventory tool.
+  competencies:
+- title: Taxi Stockholm
+  type:
+  roles: Web Developer
+  startDate: 2005-05
+  endDate: 2005-07
+  summary: Migration of Taxi Stockholm's intranet and external web site from Spirello
+    to EpiServer. Integration with the client's Unix based booking system.
+  competencies:
+- title: Siemens Medical
+  type:
+  roles: Web Developer
+  startDate: 2000-01
+  endDate: 2001-01
+  summary: QA and supporting colleges during development and maintenance of Siemens
+    Medical's intranet "EMPower".
+  competencies:
+- title: Hewlett Packard Sweden
+  type:
+  roles: Web Developer
+  startDate: 1999-09
+  endDate: 2005-03
+  summary: Requirements analysis, use case design, system design and development of
+    a web based admininstration interface for information about and registrations
+    for customer events for HP EMEA. Requirements analysis, design and development
+    of a web based administration interface for HP's scandinavian products database.
+    Development of templates for the client's EpiServer based intranet. Maintenance
+    and further development of www.hp.se.
+  competencies:
+- title: Looström & Gelin AB
+  type:
+  roles: Programmer
+  startDate: 1998-10
+  endDate: 1999-07
+  summary: Designed and developed a document management system based on Visual Basic
+    5. Assisted in developing the company web site.
+  competencies:
 professionalExperience:
 - title: Innitek
   type:
@@ -345,3 +675,32 @@ earlyCareer:
   endDate: 1998-10
   summary:
   competencies:
+certifications:
+- title: 'Microsoft Certified: Azure Developer Associate'
+  issuer: Microsoft
+  achievementDate: 2021-06-24
+- title: 'MCSA: Web Applications - Certified 2016'
+  issuer: Microsoft
+  achievementDate: 2016-09-26
+education:
+- title: Kulturama
+  period: 1992 - 1993
+  description: Music
+- title: Komvux Lidingö
+  period: 1995 - 1997
+  description: Municipal adult education
+allRoles:
+- Backend Developer
+- DevOps
+- Fullstack Developer
+- IT Consultant
+- Lead Developer
+- PC Technician
+- Programmer
+- Senior Software Engineer
+- Shop Assistant
+- Software Engineer
+- Study Circle Leader
+- System Developer
+- TDD mentor
+- Web Developer
