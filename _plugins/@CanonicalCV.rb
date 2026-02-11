@@ -2,6 +2,7 @@ module CanonicalCV
     def canonical_cv(site)
         person = site.data['person']
         profile = site.data['profile']
+        self.extend(SemanticCV)
         site.data['cv'] = {
             "introduction" => {
                 "name"          => person['name'],
@@ -12,13 +13,16 @@ module CanonicalCV
                 "sameAs"        => [person['url']].concat(person['sameAs']),
                 "description"   => person['description'],
             },
-            "coreSkills"            => site.data['profile']['coreSkills'],
             "languages"             => site.data['profile']['languages'],
+            "coreSkills"            => site.data['profile']['coreSkills'],
+            "allSkills"             => all_skills(site),
+            "featuredProjects"      => featured_projects(site),
+            "allProjects"           => all_projects(site),
+            "professionalExperience"=> professional_experience(site),
+            "earlyCareer"           => early_career(site),
             "certifications"        => certifications(site),
             "education"             => education(site),
-            "featuredProjects"      => featured_projects(site),
-            "professionalExperience"=> professional_experience(site),
-            "earlyCareer"           => early_career(site)
+            "allRoles"              => all_roles(site)
         } 
     end
     
@@ -42,6 +46,11 @@ module CanonicalCV
             "description"   => description
         }
     }
+
+    def all_projects(site) = site.collections['projects'].docs
+        .map { |project| experience(project) }
+        .reverse()
+        
 
     def featured_projects(site) 
         profile = site.data['profile']

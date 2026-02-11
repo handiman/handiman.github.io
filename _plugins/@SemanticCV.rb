@@ -6,8 +6,6 @@ module SemanticCV
     }
   }
 
-  private
-
   def all_roles(site) 
     all_roles = Set.new
 
