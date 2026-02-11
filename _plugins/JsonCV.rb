@@ -1,11 +1,8 @@
-# --------------------------------------------------------------------
-# Creates a JSON version of the CV for use by Typst first and foremost
-# --------------------------------------------------------------------
-module Typst
+module JSON
     Jekyll::Hooks.register :site, :post_write do |site|
         person = site.data['person']
         profile = site.data['profile']
-        File.write("#{site.dest}/assets/cv.typ.json", JSON.dump({
+        File.write("#{site.dest}/assets/cv.json", dump({
             "masthead" => {
                 "name"      => person['name'],
                 "jobTitle"  => person['jobTitle'],
@@ -13,17 +10,15 @@ module Typst
                 "telephone" => person['telephone'],
                 "email"     => 'contact@henrikbecker.se',
                 "sameAs"    => [person['url']].concat(person['sameAs'])
-            }
-            #,
-            #"description"           => person['description']
-            #,
-            #"coreSkills"            => site.data['profile']['coreSkills'],
-            #"languages"             => site.data['profile']['languages'],
-            #"certifications"        => certifications(site),
-            #"education"             => education(site),
-            #"featuredProjects"      => featured_projects(site),
-            #"professionalExperience"=> professional_experience(site),
-            #"earlyCareer"           => early_career(site)
+            },
+            "description"           => person['description'],
+            "coreSkills"            => site.data['profile']['coreSkills'],
+            "languages"             => site.data['profile']['languages'],
+            "certifications"        => certifications(site),
+            "education"             => education(site),
+            "featuredProjects"      => featured_projects(site),
+            "professionalExperience"=> professional_experience(site),
+            "earlyCareer"           => early_career(site)
         }))
     end
 
