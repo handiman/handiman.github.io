@@ -1,0 +1,10 @@
+@prefix cv: <https://henrikbecker.se/cv#> .
+@prefix schema: <http://schema.org/> .
+
+cv:HenrikBecker a schema:Person;
+  schema:email "contact@henrikbecker.se";
+  schema:jobTitle "Senior Software Engineer";
+  schema:name "Henrik Becker";
+  schema:sameAs <https://www.henrikbecker.net>,
+    <https://github.com/handiman>,
+    <https://www.linkedin.com/prettygoodprogrammer> .

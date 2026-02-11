@@ -1,0 +1,347 @@
+---
+introduction:
+  name: Henrik Becker
+  jobTitle: Senior Software Engineer
+  image: https://www.henrikbecker.net/assets/img/portrait800x1199.jpg
+  telephone: "+46 (0)73 422 83 43"
+  email: contact@henrikbecker.se
+  sameAs:
+  - https://www.henrikbecker.net
+  - https://github.com/handiman
+  - https://www.linkedin.com/prettygoodprogrammer
+  description: 'Henrik Becker is an experienced .Net developer and solution architect
+    dedicated to delivering quality software practicing Agile Processes, Test Driven
+    Development, applying SOLID principles and a healthy dose of dad-jokes.
+
+    '
+coreSkills:
+- name: Backend development
+  skills:
+  - ".NET"
+  - C#
+  - ASP.NET Core
+- name: System integration
+  skills:
+  - REST
+  - message queues
+  - WCF
+- name: Cloud-native architecture
+  skills:
+  - Azure
+  - serverless
+  - containers
+- name: Automation and CI/CD pipelines
+- name: Clean code, SOLID principles, and developer experience
+languages:
+- name: Swedish
+  proficiency: Native
+- name: English
+  proficiency: Fluent (IELTS overall score 8.5)
+certifications:
+- title: 'Microsoft Certified: Azure Developer Associate'
+  issuer: Microsoft
+  achievementDate: 2021-06-24
+- title: 'MCSA: Web Applications - Certified 2016'
+  issuer: Microsoft
+  achievementDate: 2016-09-26
+education:
+- title: Kulturama
+  period: 1992 - 1993
+  description: Music
+- title: Komvux Lidingö
+  period: 1995 - 1997
+  description: Municipal adult education
+featuredProjects:
+- title: Betsson
+  type:
+  roles: Senior Software Engineer
+  startDate: 2021-10
+  endDate: 2025-12
+  summary: Contributed to the design, development, and maintenance of event-sourced,
+    gamification-oriented applications featuring real-time Kafka message processing,
+    RESTful APIs, and Blazor-based back-office tools. Optimized Kafka message processing,
+    resulting in a nearly 1000% increase in throughput for one of the core applications.
+    Developed Proofs of Concept for new systems and features to evaluate feasibility
+    and drive innovation. Collaborated with Enterprise Architect and Engineering Manager
+    to ensure architectural and regulatory compliance. Conducted and assessed technical
+    interviews to support recruitment and team growth.
+  competencies:
+  - name: Architecture
+    weight: 0.75
+    tech:
+    - CQRS
+    - Domain Driven Desing
+    - Event Modeling
+    - Event Sourcing
+    - ".Net Aspire"
+    - Microsoft Orleans
+  - name: Automation
+    weight: 0.75
+    tech:
+    - Docker
+    - GitHub Actions
+    - Octopus Deploy
+  - name: Backend development
+    weight: 1
+    tech:
+    - C#
+    - ".Net 5-9"
+    - ".Net Aspire"
+    - Asp.Net Core
+    - Microsoft Orleans
+    - Blazor
+    - SQL Server
+    - PostgreSQL
+  - name: System integration
+    weight: 0.9
+    tech:
+    - Kafka
+    - Rest APIs
+    - WCF
+- title: Film2Home/Plejmo
+  type:
+  roles: Fullstack Developer, DevOps
+  startDate: 2014-11
+  endDate: 2017-07
+  summary: Development of the Video on Demand sites Film2Home and Plejmo. Designed
+    Plejmo's REST API. Automated deployment thus eliminating the human factor and
+    reducing deployment time from 1 hour to a couple of minutes. Increased performance
+    by refactoring from a traditional n-tier architecture to a service bus architcure
+    thus offloading the front end sites.
+  competencies:
+  - name: Backend development
+    weight: 0.9
+    tech:
+    - C#
+    - ".Net Framework"
+    - Asp.Net MVC
+    - Asp.Net Web Api
+    - NHibernate
+    - SQL Server
+    - EPiServer
+  - name: Architecture
+    weight: 0.4
+    tech:
+    - CQRS
+    - Micro Services
+    - Rest APIs
+  - name: System integration
+    weight: 0.6
+    tech:
+    - Azure Service Bus
+    - Rest APIs
+    - WCF
+  - name: Frontend development
+    weight: 0.7
+    tech:
+    - JavaScript
+    - jQuery
+    - KnockoutJS
+  - name: Automation
+    weight: 0.7
+    tech:
+    - Octopus Deploy
+- title: Adlibris
+  type:
+  roles: Fullstack Developer
+  startDate: 2021-02
+  endDate: 2021-10
+  summary: OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris
+    app under development. Account management API built with Asp.Net Core and .Net
+    5 hosted on Azure. Contentful CMS content modeling and integration.
+  competencies:
+  - name: Backend development
+    weight: 0.9
+    tech:
+    - C#
+    - Asp.Net Core
+    - Asp.Net MVC
+    - SQL Server
+  - name: Front end development
+    weight: 0.5
+    tech:
+    - JavaScript
+    - React
+    - jQuery
+  - name: System integration
+    weight: 0.75
+    tech:
+    - Identity Server
+    - Azure App Services
+  - name: Automation
+    weight: 0.5
+    tech:
+    - Octopus Deploy
+- title: Open Payments
+  type:
+  roles: Software Engineer
+  startDate: 2019-12
+  endDate: 2020-06
+  summary: Automated customer onboarding process using a React SPA with a .Net Core
+    backend that integrated with Dynamics CRM and a variety of Azure resources. Improved
+    test automation by making functional/integration tests require less manual intervention.
+    Reduced deployment time thanks to improved test automation.
+  competencies:
+  - name: Backend development
+    weight: 0.9
+    tech:
+    - C#
+    - Asp.Net Core
+  - name: Frontend development
+    weight: 0.9
+    tech:
+    - React
+    - Redux
+    - TypeScript
+  - name: System integration
+    weight: 0.5
+    tech:
+    - Azure functions
+  - name: Automation
+    weight: 0.3
+    tech:
+    - Azure DevOps
+professionalExperience:
+- title: Innitek
+  type:
+  roles: IT Consultant
+  startDate: 1998-10
+  endDate: 1999-07
+  summary: Developed a document management system based on Visual Basic 5 for Looström
+    & Gelin AB. Built the company web site based on ASP
+  competencies:
+- title: Icon Medialab
+  type:
+  roles: IT Consultant
+  startDate: 1999-09
+  endDate: 2002-01
+  summary: Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and
+    IconMedialab's intranet.
+  competencies:
+- title: eWork
+  type:
+  roles: IT Consultant
+  startDate: 2002-01
+  endDate: 2005-03
+  summary: Web development for Hewlett Packard Sweden
+  competencies:
+- title: Qbranch
+  type:
+  roles: IT Consultant
+  startDate: 2005-04
+  endDate: 2007-04
+  summary: Fullstack Developer at hitta.se. System Integration Consultant assignments
+    at Sigtuna Council, ICA Banken, Taxi Stockholm. Was the single developer on an
+    identity management project at Sigtuna Council that would become Microsoft's reference
+    project for Microsoft Identity Integration Server.
+  competencies:
+- title: Inverso
+  type:
+  roles: IT Consultant
+  startDate: 2007-04
+  endDate: 2007-12
+  summary: Fullstack Developer at hitta.se
+  competencies:
+- title: Aftonbladet Tillväxtteknik 2 AB
+  type:
+  roles: Fullstack Developer
+  startDate: 2007-12
+  endDate: 2008-01
+  summary: Fullstack Developer at hitta.se
+  competencies:
+- title: Avega
+  type:
+  roles: IT Consultant
+  startDate: 2008-01
+  endDate: 2012-03
+  summary: IT Consultant with assignments at Länsförsäkringar, Cale Access, Cash Guard,
+    Tradera and Astando.
+  competencies:
+- title: Wasa Kredit
+  type:
+  roles: Lead Developer
+  startDate: 2012-03
+  endDate: 2013-11
+  summary: Reduced complexity through refactoring. Introduced living documentation
+    in the form of executable specifications. Guided development teams towards a more
+    agile approached software development with the product owner, functional analysts,
+    testers and developers working closely together during the entire development
+    cycle.
+  competencies:
+- title: Qbranch
+  type:
+  roles: IT Consultant
+  startDate: 2014-04
+  endDate: 2014-09
+  summary: Resource consulting at Organizations in Stockholm CBD. Development of Qbranch
+    Competence Manager used for finding the right consultant for an assignment.
+  competencies:
+- title: Film2Home
+  type:
+  roles: Fullstack Developer
+  startDate: 2014-11
+  endDate: 2015-08
+  summary: Development of the Video on Demand sites Film2Home and Plejmo. Designed
+    version 1 of Plejmo's Rest API. Automated deployment thus eliminating the human
+    factor and reducing deployment time from 1 hour to a couple of minutes. Increased
+    performance by refactoring from a traditional n-tier architecture to a service
+    bus architcure thus offloading the front end sites.
+  competencies:
+- title: MagineTV
+  type:
+  roles: Fullstack Developer
+  startDate: 2015-09
+  endDate: 2017-07
+  summary: Continued development of the Video on Demand site Plejmo. Designed version
+    2 of Plejmo's Rest API. Continued improving the CI/CD processes I set up at Film2Home
+  competencies:
+- title: Betsson
+  type:
+  roles: Senior Software Engineer
+  startDate: 2023-12
+  endDate: 2025-12
+  summary:
+  competencies:
+- title: Henrik Becker Consulting AB
+  type:
+  roles: IT Consultant
+  startDate: 2017-07
+  endDate: present
+  summary:
+  competencies:
+earlyCareer:
+- title: Karena Zoo, Lek & Hobby
+  type:
+  roles: Shop Assistant
+  startDate: 1986-08
+  endDate: 1986-12
+  summary:
+  competencies:
+- title: Kantarellen Livs
+  type:
+  roles: Shop Assistant
+  startDate: 1992-06
+  endDate: 1992-09
+  summary:
+  competencies:
+- title: Sollentuna Jazz Workshop
+  type:
+  roles: Study Circle Leader
+  startDate: 1994-01
+  endDate: 1994-07
+  summary:
+  competencies:
+- title: Konsum
+  type:
+  roles: Shop Assistant
+  startDate: 1986-12
+  endDate: 1995-06
+  summary:
+  competencies:
+- title: Lidingö Stad
+  type:
+  roles: PC Technician
+  startDate: 1997-07
+  endDate: 1998-10
+  summary:
+  competencies:

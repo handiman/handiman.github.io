@@ -1,0 +1,283 @@
+[introduction]
+description = "Henrik Becker is an experienced .Net developer and solution architect dedicated to delivering quality software practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of dad-jokes.\n"
+email = "contact@henrikbecker.se"
+image = "https://www.henrikbecker.net/assets/img/portrait800x1199.jpg"
+jobTitle = "Senior Software Engineer"
+name = "Henrik Becker"
+sameAs = ["https://www.henrikbecker.net", "https://github.com/handiman", "https://www.linkedin.com/prettygoodprogrammer"]
+telephone = "+46 (0)73 422 83 43"
+[[certifications]]
+achievementDate = 2021-06-24
+issuer = "Microsoft"
+title = "Microsoft Certified: Azure Developer Associate"
+[[certifications]]
+achievementDate = 2016-09-26
+issuer = "Microsoft"
+title = "MCSA: Web Applications - Certified 2016"
+[[coreSkills]]
+name = "Backend development"
+skills = [".NET", "C#", "ASP.NET Core"]
+[[coreSkills]]
+name = "System integration"
+skills = ["REST", "message queues", "WCF"]
+[[coreSkills]]
+name = "Cloud-native architecture"
+skills = ["Azure", "serverless", "containers"]
+[[coreSkills]]
+name = "Automation and CI/CD pipelines"
+[[coreSkills]]
+name = "Clean code, SOLID principles, and developer experience"
+[[earlyCareer]]
+competencies = nil
+endDate = "1986-12"
+roles = "Shop Assistant"
+startDate = "1986-08"
+summary = nil
+title = "Karena Zoo, Lek & Hobby"
+type = nil
+[[earlyCareer]]
+competencies = nil
+endDate = "1992-09"
+roles = "Shop Assistant"
+startDate = "1992-06"
+summary = nil
+title = "Kantarellen Livs"
+type = nil
+[[earlyCareer]]
+competencies = nil
+endDate = "1994-07"
+roles = "Study Circle Leader"
+startDate = "1994-01"
+summary = nil
+title = "Sollentuna Jazz Workshop"
+type = nil
+[[earlyCareer]]
+competencies = nil
+endDate = "1995-06"
+roles = "Shop Assistant"
+startDate = "1986-12"
+summary = nil
+title = "Konsum"
+type = nil
+[[earlyCareer]]
+competencies = nil
+endDate = "1998-10"
+roles = "PC Technician"
+startDate = "1997-07"
+summary = nil
+title = "Lidingö Stad"
+type = nil
+[[education]]
+description = "Music"
+period = "1992 - 1993"
+title = "Kulturama"
+[[education]]
+description = "Municipal adult education"
+period = "1995 - 1997"
+title = "Komvux Lidingö"
+[[featuredProjects]]
+endDate = "2025-12"
+roles = "Senior Software Engineer"
+startDate = "2021-10"
+summary = "Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools. Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for one of the core applications. Developed Proofs of Concept for new systems and features to evaluate feasibility and drive innovation. Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance. Conducted and assessed technical interviews to support recruitment and team growth."
+title = "Betsson"
+type = nil
+[[featuredProjects.competencies]]
+name = "Architecture"
+tech = ["CQRS", "Domain Driven Desing", "Event Modeling", "Event Sourcing", ".Net Aspire", "Microsoft Orleans"]
+weight = 0.75
+[[featuredProjects.competencies]]
+name = "Automation"
+tech = ["Docker", "GitHub Actions", "Octopus Deploy"]
+weight = 0.75
+[[featuredProjects.competencies]]
+name = "Backend development"
+tech = ["C#", ".Net 5-9", ".Net Aspire", "Asp.Net Core", "Microsoft Orleans", "Blazor", "SQL Server", "PostgreSQL"]
+weight = 1
+[[featuredProjects.competencies]]
+name = "System integration"
+tech = ["Kafka", "Rest APIs", "WCF"]
+weight = 0.9
+[[featuredProjects]]
+endDate = "2017-07"
+roles = "Fullstack Developer, DevOps"
+startDate = "2014-11"
+summary = "Development of the Video on Demand sites Film2Home and Plejmo. Designed Plejmo's REST API. Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes. Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites."
+title = "Film2Home/Plejmo"
+type = nil
+[[featuredProjects.competencies]]
+name = "Backend development"
+tech = ["C#", ".Net Framework", "Asp.Net MVC", "Asp.Net Web Api", "NHibernate", "SQL Server", "EPiServer"]
+weight = 0.9
+[[featuredProjects.competencies]]
+name = "Architecture"
+tech = ["CQRS", "Micro Services", "Rest APIs"]
+weight = 0.4
+[[featuredProjects.competencies]]
+name = "System integration"
+tech = ["Azure Service Bus", "Rest APIs", "WCF"]
+weight = 0.6
+[[featuredProjects.competencies]]
+name = "Frontend development"
+tech = ["JavaScript", "jQuery", "KnockoutJS"]
+weight = 0.7
+[[featuredProjects.competencies]]
+name = "Automation"
+tech = ["Octopus Deploy"]
+weight = 0.7
+[[featuredProjects]]
+endDate = "2021-10"
+roles = "Fullstack Developer"
+startDate = "2021-02"
+summary = "OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app under development. Account management API built with Asp.Net Core and .Net 5 hosted on Azure. Contentful CMS content modeling and integration."
+title = "Adlibris"
+type = nil
+[[featuredProjects.competencies]]
+name = "Backend development"
+tech = ["C#", "Asp.Net Core", "Asp.Net MVC", "SQL Server"]
+weight = 0.9
+[[featuredProjects.competencies]]
+name = "Front end development"
+tech = ["JavaScript", "React", "jQuery"]
+weight = 0.5
+[[featuredProjects.competencies]]
+name = "System integration"
+tech = ["Identity Server", "Azure App Services"]
+weight = 0.75
+[[featuredProjects.competencies]]
+name = "Automation"
+tech = ["Octopus Deploy"]
+weight = 0.5
+[[featuredProjects]]
+endDate = "2020-06"
+roles = "Software Engineer"
+startDate = "2019-12"
+summary = "Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources. Improved test automation by making functional/integration tests require less manual intervention. Reduced deployment time thanks to improved test automation."
+title = "Open Payments"
+type = nil
+[[featuredProjects.competencies]]
+name = "Backend development"
+tech = ["C#", "Asp.Net Core"]
+weight = 0.9
+[[featuredProjects.competencies]]
+name = "Frontend development"
+tech = ["React", "Redux", "TypeScript"]
+weight = 0.9
+[[featuredProjects.competencies]]
+name = "System integration"
+tech = ["Azure functions"]
+weight = 0.5
+[[featuredProjects.competencies]]
+name = "Automation"
+tech = ["Azure DevOps"]
+weight = 0.3
+[[languages]]
+name = "Swedish"
+proficiency = "Native"
+[[languages]]
+name = "English"
+proficiency = "Fluent (IELTS overall score 8.5)"
+[[professionalExperience]]
+competencies = nil
+endDate = "1999-07"
+roles = "IT Consultant"
+startDate = "1998-10"
+summary = "Developed a document management system based on Visual Basic 5 for Looström & Gelin AB. Built the company web site based on ASP"
+title = "Innitek"
+type = nil
+[[professionalExperience]]
+competencies = nil
+endDate = "2002-01"
+roles = "IT Consultant"
+startDate = "1999-09"
+summary = "Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and IconMedialab's intranet."
+title = "Icon Medialab"
+type = nil
+[[professionalExperience]]
+competencies = nil
+endDate = "2005-03"
+roles = "IT Consultant"
+startDate = "2002-01"
+summary = "Web development for Hewlett Packard Sweden"
+title = "eWork"
+type = nil
+[[professionalExperience]]
+competencies = nil
+endDate = "2007-04"
+roles = "IT Consultant"
+startDate = "2005-04"
+summary = "Fullstack Developer at hitta.se. System Integration Consultant assignments at Sigtuna Council, ICA Banken, Taxi Stockholm. Was the single developer on an identity management project at Sigtuna Council that would become Microsoft's reference project for Microsoft Identity Integration Server."
+title = "Qbranch"
+type = nil
+[[professionalExperience]]
+competencies = nil
+endDate = "2007-12"
+roles = "IT Consultant"
+startDate = "2007-04"
+summary = "Fullstack Developer at hitta.se"
+title = "Inverso"
+type = nil
+[[professionalExperience]]
+competencies = nil
+endDate = "2008-01"
+roles = "Fullstack Developer"
+startDate = "2007-12"
+summary = "Fullstack Developer at hitta.se"
+title = "Aftonbladet Tillväxtteknik 2 AB"
+type = nil
+[[professionalExperience]]
+competencies = nil
+endDate = "2012-03"
+roles = "IT Consultant"
+startDate = "2008-01"
+summary = "IT Consultant with assignments at Länsförsäkringar, Cale Access, Cash Guard, Tradera and Astando."
+title = "Avega"
+type = nil
+[[professionalExperience]]
+competencies = nil
+endDate = "2013-11"
+roles = "Lead Developer"
+startDate = "2012-03"
+summary = "Reduced complexity through refactoring. Introduced living documentation in the form of executable specifications. Guided development teams towards a more agile approached software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle."
+title = "Wasa Kredit"
+type = nil
+[[professionalExperience]]
+competencies = nil
+endDate = "2014-09"
+roles = "IT Consultant"
+startDate = "2014-04"
+summary = "Resource consulting at Organizations in Stockholm CBD. Development of Qbranch Competence Manager used for finding the right consultant for an assignment."
+title = "Qbranch"
+type = nil
+[[professionalExperience]]
+competencies = nil
+endDate = "2015-08"
+roles = "Fullstack Developer"
+startDate = "2014-11"
+summary = "Development of the Video on Demand sites Film2Home and Plejmo. Designed version 1 of Plejmo's Rest API. Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes. Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites."
+title = "Film2Home"
+type = nil
+[[professionalExperience]]
+competencies = nil
+endDate = "2017-07"
+roles = "Fullstack Developer"
+startDate = "2015-09"
+summary = "Continued development of the Video on Demand site Plejmo. Designed version 2 of Plejmo's Rest API. Continued improving the CI/CD processes I set up at Film2Home"
+title = "MagineTV"
+type = nil
+[[professionalExperience]]
+competencies = nil
+endDate = "2025-12"
+roles = "Senior Software Engineer"
+startDate = "2023-12"
+summary = nil
+title = "Betsson"
+type = nil
+[[professionalExperience]]
+competencies = nil
+endDate = "present"
+roles = "IT Consultant"
+startDate = "2017-07"
+summary = nil
+title = "Henrik Becker Consulting AB"
+type = nil
