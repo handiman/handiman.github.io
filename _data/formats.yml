@@ -9,7 +9,7 @@
   url: /assets/henrik-becker.md
 - name: JSON
   mime_type: application/json
-  url: /assets/henrik-becker.json
+  url: /assets/henrik-becker.resume.json
 - name: RSS feed
   mime_type: application/rss+xml
   url: /feed.rss.xml

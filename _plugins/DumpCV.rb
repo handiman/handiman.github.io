@@ -1,8 +1,8 @@
-module JSON
+module Dump
     Jekyll::Hooks.register :site, :post_write do |site|
         person = site.data['person']
         profile = site.data['profile']
-        File.write("#{site.dest}/assets/cv.json", dump({
+        cv = {
             "masthead" => {
                 "name"      => person['name'],
                 "jobTitle"  => person['jobTitle'],
@@ -19,7 +19,11 @@ module JSON
             "featuredProjects"      => featured_projects(site),
             "professionalExperience"=> professional_experience(site),
             "earlyCareer"           => early_career(site)
-        }))
+        }
+        puts "      Generating CV as JSON..."
+        File.write("#{site.dest}/assets/henrik-becker.json", JSON.dump(cv))
+        puts "      Generating CV as YAML..."
+        File.write("#{site.dest}/assets/henrik-becker.yml", YAML.dump(cv))
     end
 
     module_function
