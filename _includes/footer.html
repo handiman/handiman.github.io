@@ -11,7 +11,7 @@
         </section>
         <section id="download" data-source="{{ page.url | absolute_url }}#download" class="no-print">
             <h5>CV for download</h5> 
-            <ul>{% for format in site.data.formats %}<li><a href="{{ format.url | absolute_url }}" title="Download my CV in {{ format.name }} format">{{ format.name }}</a></li>{% endfor %}</ul>
+            <ul>{% for format in site.data.formats | limit: 6 %}<li><a href="{{ format.url | absolute_url }}" title="Download my CV in {{ format.name }} format">{{ format.name }}</a></li>{% endfor %}</ul>
         </section>
         <section id="company-info" data-section="Company information" data-source="{{ page.url | absolute_url }}#company-info">
             <address>

@@ -1,15 +1,9 @@
-#- name: Word
-#  mime_type: application/vnd.openxmlformats-officedocument.wordprocessing
-#  url: /assets/henrik-becker.docx
 - name: PDF
   mime_type: application/pdf
   url: /assets/henrik-becker.pdf
 - name: Markdown
   mime_type: text/markdown
   url: /assets/henrik-becker.md
-- name: JSON
-  mime_type: application/json
-  url: /assets/henrik-becker.resume.json
 - name: RSS feed
   mime_type: application/rss+xml
   url: /feed.rss.xml
@@ -19,3 +13,31 @@
 - name: JSON feed
   mime_type: application/json
   url: /feed.json
+- name: JSON Resumé
+  mime_type: application/json
+  url: /assets/henrik-becker.resume.json
+- name: JSON
+  mime_type: application/json
+  url: /assets/henrik-becker.json
+- name: BSON
+  mime_type: application/bson
+  url: /assets/henrik-becker.bson
+- name: YAML
+  mime_type: application/x-yaml
+  url: /assets/henrik-becker.yaml
+- name: TOML
+  mime_type: application/toml
+  url: /assets/henrik-becker.toml
+- name: AsciiDoc
+  mime_type: text/asciidoc
+  url: /assets/henrik-becker.adoc
+- name: CBOR
+  mime_type: application/cbor
+  url: /assets/henrik-becker.cbor
+- name: MessagePack
+  mime_type: application/msgpack
+  url: /assets/henrik-becker.msgpack
+- name: RDF/Turtle
+  mime_type: text/turtle
+  url: /assets/henrik-becker.ttl
+

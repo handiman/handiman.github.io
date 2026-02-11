@@ -1,3 +1,16 @@
+require "date"
+require "json"
+require "bson"
+require "gyoku"
+require "toml-rb"
+require "inifile"
+require "msgpack"
+require "cbor"
+require "rdf"
+require "rdf/turtle"
+require "rdf/vocab"
+require "asciidoctor"
+
 module Dump
     Jekyll::Hooks.register :site, :post_write do |site|
         person = site.data['person']
@@ -20,12 +33,48 @@ module Dump
             "professionalExperience"=> professional_experience(site),
             "earlyCareer"           => early_career(site)
         }
+
+        path = "#{site.dest}/assets/henrik-becker"
+
         puts "      Generating CV as JSON..."
-        File.write("#{site.dest}/assets/henrik-becker.json", JSON.dump(cv))
+        File.write("#{path}.json", JSON.dump(cv))
+
+        puts "      Generating CV as BSON..."
+        File.binwrite("#{path}.bson", BSON::Document.new(cv).to_bson())
+
         puts "      Generating CV as YAML..."
-        File.write("#{site.dest}/assets/henrik-becker.yml", YAML.dump(cv))
+        File.write("#{path}yaml", YAML.dump(cv))
+
+        puts "      Generating CV as TOML..."
+        File.write("#{path}.toml", TomlRB.dump(cv))
+
+        puts "      Generating CV as AsciiDoc..."
+        File.write("#{path}.adoc", AsciiDoc.dump(cv))
+
+        puts "      Generating CV as CBOR..."
+        File.binwrite("#{path}.cbor", CBOR.encode(Dump.normalize(cv)))
+
+        puts "      Generating CV as MessagePack..."
+        File.binwrite("#{path}.msgpack", Dump.normalize(cv).to_msgpack())
+
+        puts "      Generating CV as RDF/Turtle..."
+        File.write("#{path}.ttl", Yertle.dump(cv))
+    end
+    
+    def self.normalize(obj)
+        case obj
+        when Date
+            obj.iso8601
+        when Hash
+            obj.transform_values { |v| normalize(v) }
+        when Array
+            obj.map { |v| normalize(v) }
+        else
+            obj
+        end
     end
 
+    private
     module_function
 
     def certifications(site) = site.collections['certs'].docs.map { | cert | {
@@ -81,5 +130,44 @@ module Dump
         date = xp['start_date']
         next false unless date
         date.year <= year
+    end
+end
+
+class Yertle
+    # Namespaces
+    CV     = RDF::Vocabulary.new("https://henrikbecker.se/cv#")
+    SCHEMA = RDF::Vocab::SCHEMA
+
+    def self.dump(cv)
+
+        graph = RDF::Graph.new
+
+        # Subject node for you
+        henrik = CV.HenrikBecker
+        
+        # Add triples
+        graph << [henrik, RDF.type, SCHEMA.Person]
+        graph << [henrik, SCHEMA.name, cv["introduction"]["name"]]
+        graph << [henrik, SCHEMA.jobTitle, cv["introduction"]["jobTitle"]]
+        graph << [henrik, SCHEMA.email, cv["introduction"]["email"]]
+        cv["introduction"]["sameAs"].each do |url|
+            graph << [henrik, SCHEMA.sameAs, RDF::URI(url)]
+        end
+
+        graph.dump(:ttl, prefixes: {
+            cv: CV.to_uri.to_s,
+            schema: SCHEMA.to_uri.to_s
+        })
+    end    
+end
+
+class AsciiDoc
+    def self.dump(cv) <<~ADOC
+= #{cv["introduction"]["name"]}
+#{cv["introduction"]["jobTitle"]}
+
+== About Me
+#{cv["introduction"]["summary"]}
+ADOC
     end
 end
