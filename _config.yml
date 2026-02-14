@@ -54,9 +54,9 @@ defaults:
     values:
       layout: page
       image:
-        path: /assets/img/portrait-800x1199.jpg
+        path: /assets/img/landscape-800x534.jpg
         alt: Henrik Becker
-        height: 1199
+        height: 534
         width: 800
 # <Collections>        
   - scope:
