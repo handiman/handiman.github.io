@@ -3,7 +3,7 @@ allSkills = [".Net", ".Net 5-9", ".Net Aspire", ".Net Core", ".Net Framework", "
 [introduction]
 description = "Henrik Becker is an experienced .Net developer and solution architect dedicated to delivering quality software practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of dad-jokes.\n"
 email = "contact@henrikbecker.se"
-image = "https://www.henrikbecker.net/assets/img/portrait800x1199.jpg"
+image = "https://www.henrikbecker.net/assets/img/landscape-800x534.jpg"
 jobTitle = "Senior Software Engineer"
 name = "Henrik Becker"
 sameAs = ["https://www.henrikbecker.net", "https://github.com/handiman", "https://www.linkedin.com/prettygoodprogrammer"]

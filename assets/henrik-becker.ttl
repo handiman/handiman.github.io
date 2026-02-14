@@ -8,7 +8,7 @@ cv:HenrikBecker a schema:Person;
 """;
   schema:email "contact@henrikbecker.se";
   schema:gender "Male";
-  schema:image "https://www.henrikbecker.net/assets/img/portrait800x1199.jpg";
+  schema:image "https://www.henrikbecker.net/assets/img/landscape-800x534.jpg";
   schema:jobTitle "Senior Software Engineer";
   schema:knowsAbout "Backend development",
     "System integration",
