@@ -1,0 +1,139 @@
+---
+title: Design Tokens — Style Guide
+sitemap: false
+layout: page
+---
+<style type="text/css">
+  /* Colors */
+  .color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+  }
+
+  .color-swatch {
+    background: var(--swatch);
+    border: 1px solid var(--color-border);
+    padding: var(--space-3);
+    border-radius: 6px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    align-items: flex-end;
+    height: 120px;
+    font-size: var(--font-size-body-s);
+  }
+
+  /* Spacing */
+  .space-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+  }
+
+  .space-item {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: var(--space-2);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .space-item::after {
+    content: "";
+    display: inline-block;
+    width: var(--s);
+    height: var(--space-3);
+    background: var(--color-accent);
+    border-radius: 4px;
+  }
+
+  /* Surfaces */
+  .surface-demo {
+    display: flex;
+    gap: var(--space-4);
+    margin-top: var(--space-3);
+  }
+
+  .surface-box {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: var(--space-4);
+    border-radius: 8px;
+  }
+
+  .surface-box.shadow {
+    box-shadow: var(--shadow-sm);
+  }
+</style>
+<header>
+  <h1>Design Tokens — Style Guide</h1>
+  <p>A visual overview of colors, typography, spacing, and surfaces.</p>
+</header>
+<!-- COLORS -->
+<section>
+  <h2>Colors</h2>
+  <div class="color-grid">
+    <div class="color-swatch" style="--swatch: var(--color-bg);">
+      <span>--color-bg</span>
+    </div>
+    <div class="color-swatch" style="--swatch: var(--color-surface);">
+      <span>--color-surface</span>
+    </div>
+    <div class="color-swatch" style="--swatch: var(--color-text); color: var(--color-bg);">
+      <span>--color-text</span>
+    </div>
+    <div class="color-swatch" style="--swatch: var(--color-muted);">
+      <span>--color-muted</span>
+    </div>
+    <div class="color-swatch" style="--swatch: var(--color-accent); color: var(--color-surface);">
+      <span>--color-accent</span>
+    </div>
+    <div class="color-swatch" style="--swatch: var(--color-border);">
+      <span>--color-border</span>
+    </div>
+  </div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section>
+  <h2>Typography</h2>
+
+  <h1>H1 — Heading</h1>
+  <h2>H2 — Section Title</h2>
+  <h3>H3 — Subheading</h3>
+  <h4>H4 — Small Heading</h4>
+
+  <p>
+    Body text uses <code>--font-size-body</code> and <code>--line-height-body</code>.
+    This paragraph demonstrates the default typography settings.
+  </p>
+
+  <p class="small">
+    This is <strong>body-s</strong> using <code>--font-size-body-s</code>.
+  </p>
+</section>
+
+<!-- SPACING -->
+<section>
+  <h2>Spacing Scale</h2>
+  <div class="space-grid">
+    <div class="space-item" style="--s: var(--space-1)">--space-1</div>
+    <div class="space-item" style="--s: var(--space-2)">--space-2</div>
+    <div class="space-item" style="--s: var(--space-3)">--space-3</div>
+    <div class="space-item" style="--s: var(--space-4)">--space-4</div>
+    <div class="space-item" style="--s: var(--space-5)">--space-5</div>
+    <div class="space-item" style="--s: var(--space-6)">--space-6</div>
+  </div>
+</section>
+
+<!-- SURFACES -->
+<section>
+  <h2>Surfaces & Shadows</h2>
+  <div class="surface-demo">
+    <div class="surface-box">Surface</div>
+    <div class="surface-box shadow">Surface + shadow</div>
+  </div>
+</section>
