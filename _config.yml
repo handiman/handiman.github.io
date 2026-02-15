@@ -28,23 +28,26 @@ exclude:
   - "*.orig"
 
 collections:
- projects:
-  output: true
-  permalink: /:collection/:title
- education:
-  output: true  
-  permalink: /:collection/:title
- employment:
-  output: true
-  permalink: /:collection/:title
- usp:
-  output: true
-  permalink: /unique-selling-points/:title
- certs:
-  output: false 
- fun_facts:
-  output: false
-  permalink: /fun-facts/:title
+  agreements:
+    output: true
+    permalink: /:collection/:name/
+  projects:
+    output: true
+    permalink: /:collection/:title/
+  education:
+    output: true  
+    permalink: /:collection/:title/
+  employment:
+    output: true
+    permalink: /:collection/:title/
+  usp:
+    output: true
+    permalink: /unique-selling-points/:title/
+  certs:
+    output: false 
+  fun_facts:
+    output: false
+    permalink: /fun-facts/:title/
 
 excerpt_separator: <!--more-->
 
@@ -59,6 +62,12 @@ defaults:
         height: 534
         width: 800
 # <Collections>        
+  - scope:
+      path: ""
+      type: agreements
+    values:
+      layout: agreement-sv
+      sitemap: false
   - scope:
       path: ""
       type: projects

@@ -1,0 +1,169 @@
+body.agreement {
+    article {
+        border: 1px solid var(--color-border);
+        border-radius: 3px;
+        width: 210mm;
+        padding: var(--space-6);
+        background-color: var(--color-surface);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    counter-reset: h2;
+    section {
+        counter-reset: h3;
+    }
+    a {
+        border: none;
+    }
+    a::before {
+        content: "";
+        margin: 0;
+    }
+    address {
+        padding: 0;
+        white-space-collapse: preserve-breaks;
+    }
+    article > header {
+        text-align: center;        
+        margin-bottom: var(--space-2);
+        em, strong {
+            font-style: normal;
+            font-weight: 500;
+            text-transform: none;
+            font-size: 1.5rem;
+        }
+    }
+    h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin-bottom: var(--space-2);
+    }
+    h2 {
+        counter-increment: h2;
+        &::before {
+            content: counter(h2) ".";
+            margin-right: 1rem;
+        }
+    }
+    h3, section.termination p {
+        counter-increment: h3;
+        &::before {
+            content: counter(h2) "."counter(h3) ".";
+            margin-right: 1rem;
+        }
+    }
+    h4 {
+        margin-bottom: 0;
+    }
+    ol {
+        margin-bottom: var(--space-2);
+    }
+    section table {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        th, td {
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            vertical-align: top;
+            * {
+                margin-bottom: var(--space-2);
+            }
+            *:last-child {
+                margin-bottom: 0;
+            }
+        }
+        th {
+            white-space: nowrap;
+            font-weight: 500;
+            text-transform: capitalize;
+            padding-right: var(--space-2);
+            &::after {
+                white-space: nowrap;
+                content: ":";
+            }
+        }
+    }
+    .parties {
+        > div {
+            margin-bottom: var(--space-2);
+            display: flex;
+            gap: var(--space-6);
+            justify-content: space-between;
+            > div {
+                flex: 0 0 calc(50% - var(--space-3));
+            }
+        }
+        h5 {
+            margin-top: var(--space-2);
+        }
+    }
+    .signatures {
+        text-align: left;
+        > div {
+            display: flex;
+            gap: var(--space-6);
+            div { 
+                display: flex;
+                flex: 0 0 calc(50% - var(--space-3));
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+        table {
+            height: fit-content;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            tr, th, td {
+                text-align: left;
+                vertical-align: bottom;
+                padding: 0;
+                margin: 0;
+            }
+            th {
+                width: 6rem;
+                font-weight: 400;
+                white-space: nowrap;
+                &::after {
+                    white-space: nowrap;
+                    content: ":";
+                }
+            }
+            tr:last-child th::after {
+                content: "";
+            }
+            tr:first-child, tr:nth-child(2) {
+                td {
+                    padding-top: var(--space-6);
+                    border-bottom: 1px solid var(--color-border);
+                }
+            }
+        }
+    }
+    @media print {
+        article {
+            width: auto;
+            border: none;
+            padding: 0;
+            box-shadow: none;
+        }
+        article > header {
+            page-break-after: always !important;
+            margin-top: var(--space-6);
+            padding-top: var(--space-6);
+        }
+        section, .signatures {
+            page-break-inside: avoid;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            border: none;
+        }
+        td, article {
+            border-color: #ccc !important;
+        }
+        footer {
+            page-break-before: always;
+        }
+    }
+}

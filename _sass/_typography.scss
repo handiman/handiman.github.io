@@ -64,6 +64,7 @@ h5 {
   font-weight: 500;
 }
 
+
 /* --------------------------------------------
    PARAGRAPHS
    -------------------------------------------- */
@@ -138,6 +139,10 @@ ol {
 ul {
   list-style: none;
   padding: 0;
+}
+
+ol {
+  padding-left: var(--space-4);
 }
 
 ul li::before {

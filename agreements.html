@@ -1,0 +1,17 @@
+---
+layout: page
+permalink: /agreements/
+title: Consulting Agreements
+---
+<section>
+    <header>
+        <h1>{{ page.title }}</h1>
+    </header>
+{% for agreement in site.agreements %}
+    <article>
+        <header>
+            <h2><a href="{{ agreement.url | relative_url }}">{{ agreement.parties.client.name }}</a></h1>
+        </header>
+    </article>
+{% endfor %}
+</section>
