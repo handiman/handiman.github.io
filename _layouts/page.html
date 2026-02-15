@@ -11,12 +11,12 @@ layout: null
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {% seo title=false %}
-    {% for format in site.data.formats %}<link rel="alternate" type="{{ format.mime_type }}" title="My CV in {{ format.name }} format" href="{{ format.url | absolute_url }}" />
+    {% for format in site.data.formats %}<link rel="alternate" type="{{ format.mime_type }}" title="My CV in {{ format.name }} format" href="{{ format.url | relative_url }}" />
     {% endfor %}
-    <link rel="apple-touch-icon" href="{{ '/favicon.png' | absolute_url }}" />
-    <link rel="stylesheet" href="{{ '/assets/fontawesome/css/all.min.css' | absolute_url }}" />
+    <link rel="apple-touch-icon" href="{{ '/favicon.png' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/fontawesome/css/all.min.css' | relative_url }}" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.23/dist/collection/cv-chat.css" />
-    <link rel="stylesheet" href="{{ '/assets/main.css' | absolute_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
     <script type="module">
         import { defineCustomElements } from 'https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.23/dist/esm/loader.js';
         defineCustomElements();
@@ -30,6 +30,6 @@ layout: null
     </main>
     {% include footer.html %}
   <button class="theme-toggle" title="Toggle dark mode">.</button>
-  <script src="{{ '/assets/main.js' | absolute_url }}"></script>
+  <script src="{{ '/assets/main.js' | relative_url }}"></script>
 </body>
 </html>         
