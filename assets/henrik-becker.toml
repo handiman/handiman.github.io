@@ -298,28 +298,12 @@ name = "Automation and CI/CD pipelines"
 name = "Clean code, SOLID principles, and developer experience"
 [[earlyCareer]]
 competencies = nil
-endDate = "1986-12"
-roles = "Shop Assistant"
-startDate = "1986-08"
+endDate = "1998-10"
+roles = "PC Technician"
+startDate = "1997-07"
 summary = nil
-title = "Karena Zoo, Lek & Hobby"
-type = nil
-[[earlyCareer]]
-competencies = nil
-endDate = "1992-09"
-roles = "Shop Assistant"
-startDate = "1992-06"
-summary = nil
-title = "Kantarellen Livs"
-type = nil
-[[earlyCareer]]
-competencies = nil
-endDate = "1994-07"
-roles = "Study Circle Leader"
-startDate = "1994-01"
-summary = nil
-title = "Sollentuna Jazz Workshop"
-type = nil
+title = "Lidingö Stad"
+type = "Municipal IT & public services"
 [[earlyCareer]]
 competencies = nil
 endDate = "1995-06"
@@ -327,15 +311,31 @@ roles = "Shop Assistant"
 startDate = "1986-12"
 summary = nil
 title = "Konsum"
-type = nil
+type = "Retail cooperative & grocery operations"
 [[earlyCareer]]
 competencies = nil
-endDate = "1998-10"
-roles = "PC Technician"
-startDate = "1997-07"
+endDate = "1994-07"
+roles = "Study Circle Leader"
+startDate = "1994-01"
 summary = nil
-title = "Lidingö Stad"
-type = nil
+title = "Sollentuna Jazz Workshop"
+type = "Community music education & workshops"
+[[earlyCareer]]
+competencies = nil
+endDate = "1992-09"
+roles = "Shop Assistant"
+startDate = "1992-06"
+summary = nil
+title = "Kantarellen Livs"
+type = "Local grocery retailer"
+[[earlyCareer]]
+competencies = nil
+endDate = "1986-12"
+roles = "Shop Assistant"
+startDate = "1986-08"
+summary = nil
+title = "Karena Zoo, Lek & Hobby"
+type = "Toy, hobby & pet supply retailer"
 [[education]]
 description = "Music"
 period = "1992 - 1993"
@@ -448,91 +448,11 @@ name = "English"
 proficiency = "Fluent (IELTS overall score 8.5)"
 [[professionalExperience]]
 competencies = nil
-endDate = "1999-07"
+endDate = "present"
 roles = "IT Consultant"
-startDate = "1998-10"
-summary = "Developed a document management system based on Visual Basic 5 for Looström & Gelin AB. Built the company web site based on ASP"
-title = "Innitek"
-type = nil
-[[professionalExperience]]
-competencies = nil
-endDate = "2002-01"
-roles = "IT Consultant"
-startDate = "1999-09"
-summary = "Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and IconMedialab's intranet."
-title = "Icon Medialab"
-type = nil
-[[professionalExperience]]
-competencies = nil
-endDate = "2005-03"
-roles = "IT Consultant"
-startDate = "2002-01"
-summary = "Web development for Hewlett Packard Sweden"
-title = "eWork"
-type = nil
-[[professionalExperience]]
-competencies = nil
-endDate = "2007-04"
-roles = "IT Consultant"
-startDate = "2005-04"
-summary = "Fullstack Developer at hitta.se. System Integration Consultant assignments at Sigtuna Council, ICA Banken, Taxi Stockholm. Was the single developer on an identity management project at Sigtuna Council that would become Microsoft's reference project for Microsoft Identity Integration Server."
-title = "Qbranch"
-type = nil
-[[professionalExperience]]
-competencies = nil
-endDate = "2007-12"
-roles = "IT Consultant"
-startDate = "2007-04"
-summary = "Fullstack Developer at hitta.se"
-title = "Inverso"
-type = nil
-[[professionalExperience]]
-competencies = nil
-endDate = "2008-01"
-roles = "Fullstack Developer"
-startDate = "2007-12"
-summary = "Fullstack Developer at hitta.se"
-title = "Aftonbladet Tillväxtteknik 2 AB"
-type = nil
-[[professionalExperience]]
-competencies = nil
-endDate = "2012-03"
-roles = "IT Consultant"
-startDate = "2008-01"
-summary = "IT Consultant with assignments at Länsförsäkringar, Cale Access, Cash Guard, Tradera and Astando."
-title = "Avega"
-type = nil
-[[professionalExperience]]
-competencies = nil
-endDate = "2013-11"
-roles = "Lead Developer"
-startDate = "2012-03"
-summary = "Reduced complexity through refactoring. Introduced living documentation in the form of executable specifications. Guided development teams towards a more agile approached software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle."
-title = "Wasa Kredit"
-type = nil
-[[professionalExperience]]
-competencies = nil
-endDate = "2014-09"
-roles = "IT Consultant"
-startDate = "2014-04"
-summary = "Resource consulting at Organizations in Stockholm CBD. Development of Qbranch Competence Manager used for finding the right consultant for an assignment."
-title = "Qbranch"
-type = nil
-[[professionalExperience]]
-competencies = nil
-endDate = "2015-08"
-roles = "Fullstack Developer"
-startDate = "2014-11"
-summary = "Development of the Video on Demand sites Film2Home and Plejmo. Designed version 1 of Plejmo's Rest API. Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes. Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites."
-title = "Film2Home"
-type = nil
-[[professionalExperience]]
-competencies = nil
-endDate = "2017-07"
-roles = "Fullstack Developer"
-startDate = "2015-09"
-summary = "Continued development of the Video on Demand site Plejmo. Designed version 2 of Plejmo's Rest API. Continued improving the CI/CD processes I set up at Film2Home"
-title = "MagineTV"
+startDate = "2017-07"
+summary = "Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm urban area."
+title = "Henrik Becker Consulting AB"
 type = nil
 [[professionalExperience]]
 competencies = nil
@@ -541,12 +461,92 @@ roles = "Senior Software Engineer"
 startDate = "2023-12"
 summary = nil
 title = "Betsson"
-type = nil
+type = "Global online gaming & sportsbook enterprise"
 [[professionalExperience]]
 competencies = nil
-endDate = "present"
+endDate = "2017-07"
+roles = "Fullstack Developer"
+startDate = "2015-09"
+summary = "Continued development of the Video on Demand site Plejmo. Designed version 2 of Plejmo's Rest API. Continued improving the CI/CD processes I set up at Film2Home"
+title = "MagineTV"
+type = "Cloud‑based TV streaming platform, startup"
+[[professionalExperience]]
+competencies = nil
+endDate = "2015-08"
+roles = "Fullstack Developer"
+startDate = "2014-11"
+summary = "Development of the Video on Demand sites Film2Home and Plejmo. Designed version 1 of Plejmo's Rest API. Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes. Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites."
+title = "Film2Home"
+type = "Digital movie rental & streaming service"
+[[professionalExperience]]
+competencies = nil
+endDate = "2014-09"
 roles = "IT Consultant"
-startDate = "2017-07"
-summary = nil
-title = "Henrik Becker Consulting AB"
-type = nil
+startDate = "2014-04"
+summary = "Resource consulting at Organizations in Stockholm CBD. Development of Qbranch Competence Manager used for finding the right consultant for an assignment."
+title = "Qbranch"
+type = "IT infrastructure & managed services consultancy"
+[[professionalExperience]]
+competencies = nil
+endDate = "2013-11"
+roles = "Lead Developer"
+startDate = "2012-03"
+summary = "Reduced complexity through refactoring. Introduced living documentation in the form of executable specifications. Guided development teams towards a more agile approached software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle."
+title = "Wasa Kredit"
+type = "Financial services & leasing provider, enterprise"
+[[professionalExperience]]
+competencies = nil
+endDate = "2012-03"
+roles = "IT Consultant"
+startDate = "2008-01"
+summary = "IT Consultant with assignments at Länsförsäkringar, Cale Access, Cash Guard, Tradera and Astando."
+title = "Avega"
+type = "IT consultancy specializing in enterprise solutions"
+[[professionalExperience]]
+competencies = nil
+endDate = "2008-01"
+roles = "Fullstack Developer"
+startDate = "2007-12"
+summary = "Fullstack Developer at hitta.se"
+title = "Aftonbladet Tillväxtteknik 2 AB"
+type = "Digital media & product development unit"
+[[professionalExperience]]
+competencies = nil
+endDate = "2007-12"
+roles = "IT Consultant"
+startDate = "2007-04"
+summary = "Fullstack Developer at hitta.se"
+title = "Inverso"
+type = "IT consultancy focused on business systems"
+[[professionalExperience]]
+competencies = nil
+endDate = "2007-04"
+roles = "IT Consultant"
+startDate = "2005-04"
+summary = "Fullstack Developer at hitta.se. System Integration Consultant assignments at Sigtuna Council, ICA Banken, Taxi Stockholm. Was the single developer on an identity management project at Sigtuna Council that would become Microsoft's reference project for Microsoft Identity Integration Server."
+title = "Qbranch"
+type = "IT infrastructure & managed services consultancy"
+[[professionalExperience]]
+competencies = nil
+endDate = "2005-03"
+roles = "IT Consultant"
+startDate = "2002-01"
+summary = "Web development for Hewlett Packard Sweden"
+title = "eWork"
+type = "IT consultant broker & sourcing partner"
+[[professionalExperience]]
+competencies = nil
+endDate = "2002-01"
+roles = "IT Consultant"
+startDate = "1999-09"
+summary = "Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and IconMedialab's intranet."
+title = "Icon Medialab"
+type = "Digital agency & web solutions pioneer"
+[[professionalExperience]]
+competencies = nil
+endDate = "1999-07"
+roles = "IT Consultant"
+startDate = "1998-10"
+summary = "Developed a document management system based on Visual Basic 5 for Looström & Gelin AB. Built the company web site based on ASP"
+title = "Innitek"
+type = "IT consultancy focused on custom software"

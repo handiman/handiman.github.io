@@ -532,82 +532,31 @@ allProjects:
     5. Assisted in developing the company web site.
   competencies:
 professionalExperience:
-- title: Innitek
+- title: Henrik Becker Consulting AB
   type:
   roles: IT Consultant
-  startDate: 1998-10
-  endDate: 1999-07
-  summary: Developed a document management system based on Visual Basic 5 for Looström
-    & Gelin AB. Built the company web site based on ASP
+  startDate: 2017-07
+  endDate: present
+  summary: Providing Fullstack .Net and DevOps expertise on a freelance basis in the
+    Stockholm urban area.
   competencies:
-- title: Icon Medialab
-  type:
-  roles: IT Consultant
-  startDate: 1999-09
-  endDate: 2002-01
-  summary: Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and
-    IconMedialab's intranet.
+- title: Betsson
+  type: Global online gaming & sportsbook enterprise
+  roles: Senior Software Engineer
+  startDate: 2023-12
+  endDate: 2025-12
+  summary:
   competencies:
-- title: eWork
-  type:
-  roles: IT Consultant
-  startDate: 2002-01
-  endDate: 2005-03
-  summary: Web development for Hewlett Packard Sweden
-  competencies:
-- title: Qbranch
-  type:
-  roles: IT Consultant
-  startDate: 2005-04
-  endDate: 2007-04
-  summary: Fullstack Developer at hitta.se. System Integration Consultant assignments
-    at Sigtuna Council, ICA Banken, Taxi Stockholm. Was the single developer on an
-    identity management project at Sigtuna Council that would become Microsoft's reference
-    project for Microsoft Identity Integration Server.
-  competencies:
-- title: Inverso
-  type:
-  roles: IT Consultant
-  startDate: 2007-04
-  endDate: 2007-12
-  summary: Fullstack Developer at hitta.se
-  competencies:
-- title: Aftonbladet Tillväxtteknik 2 AB
-  type:
+- title: MagineTV
+  type: Cloud‑based TV streaming platform, startup
   roles: Fullstack Developer
-  startDate: 2007-12
-  endDate: 2008-01
-  summary: Fullstack Developer at hitta.se
-  competencies:
-- title: Avega
-  type:
-  roles: IT Consultant
-  startDate: 2008-01
-  endDate: 2012-03
-  summary: IT Consultant with assignments at Länsförsäkringar, Cale Access, Cash Guard,
-    Tradera and Astando.
-  competencies:
-- title: Wasa Kredit
-  type:
-  roles: Lead Developer
-  startDate: 2012-03
-  endDate: 2013-11
-  summary: Reduced complexity through refactoring. Introduced living documentation
-    in the form of executable specifications. Guided development teams towards a more
-    agile approached software development with the product owner, functional analysts,
-    testers and developers working closely together during the entire development
-    cycle.
-  competencies:
-- title: Qbranch
-  type:
-  roles: IT Consultant
-  startDate: 2014-04
-  endDate: 2014-09
-  summary: Resource consulting at Organizations in Stockholm CBD. Development of Qbranch
-    Competence Manager used for finding the right consultant for an assignment.
+  startDate: 2015-09
+  endDate: 2017-07
+  summary: Continued development of the Video on Demand site Plejmo. Designed version
+    2 of Plejmo's Rest API. Continued improving the CI/CD processes I set up at Film2Home
   competencies:
 - title: Film2Home
-  type:
+  type: Digital movie rental & streaming service
   roles: Fullstack Developer
   startDate: 2014-11
   endDate: 2015-08
@@ -617,62 +566,114 @@ professionalExperience:
     performance by refactoring from a traditional n-tier architecture to a service
     bus architcure thus offloading the front end sites.
   competencies:
-- title: MagineTV
-  type:
-  roles: Fullstack Developer
-  startDate: 2015-09
-  endDate: 2017-07
-  summary: Continued development of the Video on Demand site Plejmo. Designed version
-    2 of Plejmo's Rest API. Continued improving the CI/CD processes I set up at Film2Home
-  competencies:
-- title: Betsson
-  type:
-  roles: Senior Software Engineer
-  startDate: 2023-12
-  endDate: 2025-12
-  summary:
-  competencies:
-- title: Henrik Becker Consulting AB
-  type:
+- title: Qbranch
+  type: IT infrastructure & managed services consultancy
   roles: IT Consultant
-  startDate: 2017-07
-  endDate: present
-  summary:
+  startDate: 2014-04
+  endDate: 2014-09
+  summary: Resource consulting at Organizations in Stockholm CBD. Development of Qbranch
+    Competence Manager used for finding the right consultant for an assignment.
+  competencies:
+- title: Wasa Kredit
+  type: Financial services & leasing provider, enterprise
+  roles: Lead Developer
+  startDate: 2012-03
+  endDate: 2013-11
+  summary: Reduced complexity through refactoring. Introduced living documentation
+    in the form of executable specifications. Guided development teams towards a more
+    agile approached software development with the product owner, functional analysts,
+    testers and developers working closely together during the entire development
+    cycle.
+  competencies:
+- title: Avega
+  type: IT consultancy specializing in enterprise solutions
+  roles: IT Consultant
+  startDate: 2008-01
+  endDate: 2012-03
+  summary: IT Consultant with assignments at Länsförsäkringar, Cale Access, Cash Guard,
+    Tradera and Astando.
+  competencies:
+- title: Aftonbladet Tillväxtteknik 2 AB
+  type: Digital media & product development unit
+  roles: Fullstack Developer
+  startDate: 2007-12
+  endDate: 2008-01
+  summary: Fullstack Developer at hitta.se
+  competencies:
+- title: Inverso
+  type: IT consultancy focused on business systems
+  roles: IT Consultant
+  startDate: 2007-04
+  endDate: 2007-12
+  summary: Fullstack Developer at hitta.se
+  competencies:
+- title: Qbranch
+  type: IT infrastructure & managed services consultancy
+  roles: IT Consultant
+  startDate: 2005-04
+  endDate: 2007-04
+  summary: Fullstack Developer at hitta.se. System Integration Consultant assignments
+    at Sigtuna Council, ICA Banken, Taxi Stockholm. Was the single developer on an
+    identity management project at Sigtuna Council that would become Microsoft's reference
+    project for Microsoft Identity Integration Server.
+  competencies:
+- title: eWork
+  type: IT consultant broker & sourcing partner
+  roles: IT Consultant
+  startDate: 2002-01
+  endDate: 2005-03
+  summary: Web development for Hewlett Packard Sweden
+  competencies:
+- title: Icon Medialab
+  type: Digital agency & web solutions pioneer
+  roles: IT Consultant
+  startDate: 1999-09
+  endDate: 2002-01
+  summary: Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and
+    IconMedialab's intranet.
+  competencies:
+- title: Innitek
+  type: IT consultancy focused on custom software
+  roles: IT Consultant
+  startDate: 1998-10
+  endDate: 1999-07
+  summary: Developed a document management system based on Visual Basic 5 for Looström
+    & Gelin AB. Built the company web site based on ASP
   competencies:
 earlyCareer:
-- title: Karena Zoo, Lek & Hobby
-  type:
-  roles: Shop Assistant
-  startDate: 1986-08
-  endDate: 1986-12
-  summary:
-  competencies:
-- title: Kantarellen Livs
-  type:
-  roles: Shop Assistant
-  startDate: 1992-06
-  endDate: 1992-09
-  summary:
-  competencies:
-- title: Sollentuna Jazz Workshop
-  type:
-  roles: Study Circle Leader
-  startDate: 1994-01
-  endDate: 1994-07
+- title: Lidingö Stad
+  type: Municipal IT & public services
+  roles: PC Technician
+  startDate: 1997-07
+  endDate: 1998-10
   summary:
   competencies:
 - title: Konsum
-  type:
+  type: Retail cooperative & grocery operations
   roles: Shop Assistant
   startDate: 1986-12
   endDate: 1995-06
   summary:
   competencies:
-- title: Lidingö Stad
-  type:
-  roles: PC Technician
-  startDate: 1997-07
-  endDate: 1998-10
+- title: Sollentuna Jazz Workshop
+  type: Community music education & workshops
+  roles: Study Circle Leader
+  startDate: 1994-01
+  endDate: 1994-07
+  summary:
+  competencies:
+- title: Kantarellen Livs
+  type: Local grocery retailer
+  roles: Shop Assistant
+  startDate: 1992-06
+  endDate: 1992-09
+  summary:
+  competencies:
+- title: Karena Zoo, Lek & Hobby
+  type: Toy, hobby & pet supply retailer
+  roles: Shop Assistant
+  startDate: 1986-08
+  endDate: 1986-12
   summary:
   competencies:
 certifications:
