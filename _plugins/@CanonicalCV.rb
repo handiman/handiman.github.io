@@ -64,16 +64,16 @@ module CanonicalCV
             } 
     end
 
-    def professional_experience(site) = after_start_year(1997, site.collections['employment'].docs).map { | xp | experience(xp) }
-    def early_career(site) = before_start_year(1997, site.collections['employment'].docs).map { | xp | experience(xp) }
+    def professional_experience(site) = after_start_year(1997, site.collections['employment'].docs.reverse).map { | xp | experience(xp) }
+    def early_career(site) = before_start_year(1997, site.collections['employment'].docs.reverse).map { | xp | experience(xp) }
 
     def experience(xp) = {
         "title"         => xp['title'],
-        "type"          => xp['type'],
+        "type"          => xp['organization'] == nil ? nil : xp['organization']['type'],
         "roles"         => xp['roles'].is_a?(Array) ? xp['roles'].join(', ') : xp['roles'],
         "startDate"     => xp['start_date'].strftime('%Y-%m'),
         "endDate"       => xp['end_date'].is_a?(Date) ? xp['end_date'].strftime('%Y-%m') : xp['end_date'],
-        "summary"       => xp['summary'] == nil ? nil : (xp['summary'].is_a?(Array) ? xp['summary'].join('. ') : xp['summary']).gsub('..', '.'),
+        "summary"       => xp['mission'] != nil ? xp['mission'] : xp['summary'] == nil ? nil : (xp['summary'].is_a?(Array) ? xp['summary'].join('. ') : xp['summary']).gsub('..', '.'),
         "competencies"  => xp['competencies']
     }
 
