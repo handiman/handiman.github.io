@@ -19,10 +19,8 @@ module Jekyll
         puts "      Generating CV as JSON..."
         File.write("#{path}.json", JSON.dump(cv))
 
-        if Gem.win_platform?
         puts "      Generating CV as PDF..."
         system("typst compile --font-path assets/fonts #{site.dest}/assets/henrik-becker.typ #{site.dest}/assets/henrik-becker.pdf --font-path fonts")
-        end
 
         puts "      Generating CV as BSON..."
         File.binwrite("#{path}.bson", BSON::Document.new(cv).to_bson())
