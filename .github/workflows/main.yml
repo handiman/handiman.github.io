@@ -17,8 +17,7 @@ jobs:
 
       - name: Install Typst
         run: |
-          apt-get update
-          apt-get install -y curl
+          sudo apt-get update && apt-get install -y curl
           curl -L https://github.com/typst/typst/releases/latest/download/typst-linux-x86_64 -o /usr/local/bin/typst
           chmod +x /usr/local/bin/typst
 
