@@ -15,6 +15,15 @@ jobs:
         with:
           ruby-version: 3.3.4
 
+      - name: Install Typst
+        run: |
+          sudo apt-get update 
+          sudo apt-get install -y curl xz-utils
+          curl -L https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz -o typst.tar.xz
+          tar -xf typst.tar.xz
+          sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
+          sudo chmod +x /usr/local/bin/typst
+
       - name: Build gh-pages
         run: |
           gem install bundler -v 2.5
