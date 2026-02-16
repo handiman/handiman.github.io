@@ -59,7 +59,14 @@
   below: space_2
 )
 
-#let experience(xp) = [
+#let section(body) = block(
+  inset: ( top: space_3 ),
+  body
+)
+
+#let experience(xp) = block(
+  breakable: false, 
+  inset: ( y: space_1 ), [
   === #xp.title
   #if xp.type != none [
     _ #xp.type _ \
@@ -80,20 +87,7 @@
       - *#category.name:* #category.tech.join(", ")
     ]
   ]
-]
-
-#let rounded-rect-right(width, height, radius) = {
-  path({
-    move((0, 0))
-    line((width - radius, 0))
-    arc((width, radius), radius, start-angle: -90deg, end-angle: 0deg)
-    line((width, height - radius))
-    arc((width - radius, height), radius, start-angle: 0deg, end-angle: 90deg)
-    line((0, height))
-    close()
-  })
-}
-
+])
 
 #let masthead(
   name: cv.introduction.name,
@@ -138,12 +132,12 @@
   )
 }
 
-#let introduction() = [
+#let introduction() = section([
   == Introduction
   #cv.introduction.description
-]
+])
 
-#let core_competencies(coreSkills: cv.coreSkills) = [
+#let core_competencies(coreSkills: cv.coreSkills) = section([
   == Core Competencies
   #set list(
     marker: [--],
@@ -156,48 +150,54 @@
         (#skills.join(", "))       
       ]
   ]
-]
+])
 
-#let featured_projects(projects: cv.featuredProjects) = [
+#let featured_projects(projects: cv.featuredProjects) = section([
   == Featured Projects
   #for xp in projects [
     #experience(xp)
   ]
-]
+])
 
-#let professional_experience(employment: cv.professionalExperience) = [
+#let professional_experience(employment: cv.professionalExperience) = section([
   == Professional Experience
   #for xp in employment [
     #experience(xp)
   ]
-]
+])
 
-#let early_career(employment: cv.earlyCareer) = [
+#let early_career(employment: cv.earlyCareer) = section([
   == Early Career
   #for xp in employment [
     #experience(xp)
   ]
-]
+])
 
 #let professional_context(
   languages: cv.languages,
   certifications: cv.certifications,
   education: cv.education
-) = [
-  == Professional Context
-  === Lanuages
-  #for language in languages [
-    - *#language.name:* #language.proficiency
-  ]
-  === Certifications
-  #for cert in certifications [
-    - *#cert.title:* #cert.issuer (#cert.achievementDate)
-  ]
-  === Education
-  #for edu in education [
-    - *#edu.title:* #edu.description (#edu.period)
-  ]
-]
+) = section([
+  #block(breakable: false, inset: (top: space_1), [
+    == Professional Context
+    === Lanuages
+    #for language in languages [
+      - *#language.name:* #language.proficiency
+    ]
+  ])
+  #block(breakable: false, inset: (top: space_1), [
+    === Certifications
+    #for cert in certifications [
+      - *#cert.title:* #cert.issuer (#cert.achievementDate)
+    ]
+  ])
+  #block(breakable: false, inset: (top: space_1), [
+    === Education
+    #for edu in education [
+      - *#edu.title:* #edu.description (#edu.period)
+    ]
+  ])
+])
 
 #masthead()
 #introduction()
