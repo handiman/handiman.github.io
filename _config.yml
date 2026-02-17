@@ -30,7 +30,7 @@ exclude:
 
 collections:
   agreements:
-    output: true
+    output: false
     permalink: /:collection/:name/
   projects:
     output: true
@@ -67,7 +67,6 @@ defaults:
       path: ""
       type: agreements
     values:
-      layout: agreement-sv
       sitemap: false
   - scope:
       path: ""

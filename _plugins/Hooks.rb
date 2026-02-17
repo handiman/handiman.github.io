@@ -19,9 +19,6 @@ module Jekyll
         puts "      Generating CV as JSON..."
         File.write("#{path}.json", JSON.dump(cv))
 
-        puts "      Generating CV as PDF..."
-        system("typst compile --font-path assets/fonts #{site.dest}/assets/henrik-becker.typ #{site.dest}/assets/henrik-becker.pdf --font-path fonts")
-
         puts "      Generating CV as BSON..."
         File.binwrite("#{path}.bson", BSON::Document.new(cv).to_bson())
 
@@ -42,6 +39,19 @@ module Jekyll
 
         puts "      Generating CV as RDF/Turtle..."
         File.write("#{path}.ttl", Yertle.dump(cv))
+
+        puts "      Generating CV as PDF..."
+        system("typst compile --font-path assets/fonts #{site.dest}/assets/henrik-becker.typ #{site.dest}/assets/henrik-becker.pdf --font-path fonts")
+
+        puts "      Generating Agreemets as PDF..."
+        Dir.foreach("#{site.source}/_agreements") do |filename|
+            next if not filename.end_with?('.yml')
+            template = "#{site.source}/_agreements/_agreement-sv.typ"
+            target = "#{site.dest}/agreements/#{filename.gsub('.yml', '.pdf')}"
+            font_path = "#{site.dest}/assets/fonts"
+            args = "--font-path assets/fonts --input yaml=#{filename}"
+            system("typst compile #{template} #{target} #{args}")
+        end
     end
     
     private

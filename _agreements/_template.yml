@@ -1,6 +1,5 @@
----
-layout: agreement-sv
 version: 1.0
+lang: sv
 valid_from: 2026-02-15
 
 parties:
@@ -36,9 +35,9 @@ scope:
   end_date: 2026-03-31
   site: Hybrid
   standard_hours: 40 timmar per vecka
-  summary: |
-    Beställaren uppdrar åt Konsulten och Konsulten åtar sig Uppdraget på de villkor som anges i detta Avtal.
-    Syftet med uppdraget är att vidareutveckla kundens IT-system.
+  summary: 
+    - Beställaren uppdrar åt Konsulten och Konsulten åtar sig Uppdraget på de villkor som anges i detta Avtal.
+    - Syftet med uppdraget är att vidareutveckla kundens IT-system.
   details: 
     "Utförande": 
       - Konsulten ska utföra Uppdraget enligt detta Avtal och med den omsorg och skicklighet som Beställaren har rätt att förvänta av en konsult i branschen.
@@ -50,7 +49,7 @@ scope:
     "Dokumentation och rapportering":
       - Konsulten ska löpande inom tidsramen för Uppdraget avge delrapporter om sitt arbete till Beställaren. 
       - Vid Uppdragets slut ska Konsulten lämna en skriftlig slutrapport innehållande Uppdragets resultat samt överlämna all dokumentation, utrustning och material som tillhör Beställaren.
-    "Ändring": |
+    "Ändring": >
       Ändringar av Uppdraget ska skriftligen godkännas av båda parterna. 
 
 fees:
@@ -59,9 +58,9 @@ fees:
   rate: 900
   currency: SEK
   details:
-    "Övriga kostnader": |
+    "Övriga kostnader": >
       Ersättningen kan inkludera andra skäliga kostnader som uppkommer vid genomförandet av Uppdraget och som parterna har skriftligt kommit överens om. 
-    "Resor och traktamente": |
+    "Resor och traktamente": >
       Konsulten har rätt till ersättning för alla skäliga och i förväg godkända utlägg (såsom resekostnader, hotell och andra relevanta kostnader), 
       under förutsättning att de följer Beställarens instruktioner och har uppkommit i samband med utförandet av Uppdraget.
 
@@ -79,10 +78,10 @@ insurance_and_tax:
   "F-skatt": Konsulten ska vara momsregistrerad och inneha F-skattsedel.
 
 force_majeure:
- - |
+ - >
   Om en parts möjlighet att fullfölja sina åtagande enligt detta Avtal försämras på 
   grund av omständigheter utom denna parts kontroll ska parten befrias från att fullgöra sina förpliktelser. 
- - |
+ - >
   Exempel på sådana Befriande omständigheter kan vara krig, naturkatastrof, översvämning, brand, 
   ändrad lagstiftning, allvarlig sjukdom eller dödsfall, konflikt på arbetsmarknaden, förlust eller 
   förstörelse av data i större omfattning och därmed andra jämställda omständigheter.
@@ -92,7 +91,7 @@ amendmets:
   - Ändringar av och tillägg till Avtalet ska för att vara bindande vara skriftliga samt undertecknade av båda parterna.
 
 confidentiality:
-  clause: |
+  clause: >
     Under Uppdraget och under en tid av 24 månader efter Uppdragets avslut förbinder sig parterna att inte avslöja konfidentiell information som framkommer vid genomförandet av Uppdraget. Part åtar sig att följa av den andra parten meddelade regler för informationshantering. 
   details:
     - Förvara all konfidentiell information i form av anteckningar, handlingar och/eller elektroniska dokument på ett säkert sätt som förhindrar obehörig åtkomst,
@@ -122,7 +121,7 @@ liability:
 termination:
   notice_period: 30 dagar
   details:
-    - |
+    - >
       Part har rätt att häva Avtalet med omedelbar verkan om den andra parten försätts i konkurs, 
       träder i likvidation eller på annat sätt kan antas ha kommit på obestånd. Oavsett om Avtalet 
       har sagts upp eller inte äger part rätt till ersättning för skada som uppkommit till följd av detta obestånd.
@@ -132,4 +131,3 @@ termination:
 governing_law:
   law: På detta avtal ska svensk rätt tillämpas.
   dispute: Tvist i anledning av detta avtal ska avgöras av allmän domstol med Stockholms tingsrätt som första instans.
---- 
