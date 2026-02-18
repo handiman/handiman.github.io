@@ -1,8 +1,5 @@
 source "https://rubygems.org"
 gem "github-pages"
-gem "prawn"
-gem "prawn-table"
-gem "jekyll-readme-index"
 gem "rest-client"
 
 # Formats
@@ -19,7 +16,13 @@ gem "rdf"
 gem "rdf-turtle"
 gem "rdf-vocab"
 
+group :jekyll_plugins do
+  gem "jekyll-readme-index"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
+  gem "jekyll-minifier"
+end
+
 if Gem.win_platform?
   gem "wdm", ">= 0.1.0"
-  gem "jekyll-theme-gnap", path: "../jekyll-theme-gnap"
 end

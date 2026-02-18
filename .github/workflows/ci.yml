@@ -3,6 +3,8 @@ on:
   workflow_dispatch:
   push:
     branches: [ master ]
+env:
+  JEKYLL_ENV: production    
 jobs:
   build:
     runs-on: ubuntu-latest
