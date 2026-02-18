@@ -3,6 +3,9 @@
 *.sln
 *.suo
 *.lock
+*.tar
+*.tar.*
+typst-x86_64-unknown-linux-musl
 
 .DS_Store
 .sass-cache
