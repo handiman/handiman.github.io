@@ -1,1 +1,358 @@
-<?xml version="1.0" encoding="utf-8"?> <feed xmlns="http://www.w3.org/2005/Atom"> <id>/</id> <title>Henrik Becker Consulting AB</title> <link href=""/> <link href="/feed.atom.xml" rel="self"/> <updated>2026-02-18T13:25:03.000Z</updated> <author> <name>Henrik Becker</name> </author> <rights>Copyright 2026 Henrik Becker</rights> <entry> <id>/projects/betsson</id> <title> at Betsson</title> <published>2021-10-11T00:00:00.001Z</published> <updated>2021-10-11T00:00:00.001Z</updated> <content> at Betsson 2021-10-11 - 2025-12-05 Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for one of the core applications. Developed Proofs of Concept for new systems and features to evaluate feasibility and drive innovation. Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance. Conducted and assessed technical interviews to support recruitment and team growth. Skills used: C#, .Net 5-9, .Net Aspire, Asp.Net Core, Microsoft Orleans, Blazor, Docker, GitHub Actions, Kafka, SQL Server, PostgreSQL </content> </entry> <entry> <id>/projects/adlibris</id> <title> at Adlibris</title> <published>2021-02-22T00:00:00.002Z</published> <updated>2021-02-22T00:00:00.002Z</updated> <content> at Adlibris 2021-02-22 - 2021-10-10 OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app under development. Account management API built with Asp.Net Core and .Net 5 hosted on Azure. Contentful CMS content modeling and integration. Skills used: C#, Asp.Net Core, Asp.Net MVC, JavaScript, jQuery, React, SQL Server, Octopus Deploy, Azure App Services, Identity Server </content> </entry> <entry> <id>/projects/norconsult-astando</id> <title> at Norconsult Astando</title> <published>2020-10-19T00:00:00.003Z</published> <updated>2020-10-19T00:00:00.003Z</updated> <content> at Norconsult Astando 2020-10-19 - 2021-01-15 Automated deployment using Octopus Deploy Improvements to code readability and testability Implementing new functionality in legacy systems Skills used: C#, TypeScript, JavaScript, KnockoutJS, Asp.Net Core, Asp.Net Web Forms, WCF, TeamCity, Octopus Deploy </content> </entry> <entry> <id>/projects/open-payments</id> <title> at Open Payments</title> <published>2019-12-02T00:00:00.004Z</published> <updated>2019-12-02T00:00:00.004Z</updated> <content> at Open Payments 2019-12-02 - 2020-06-30 Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources. Improved test automation by making functional/integration tests require less manual intervention. Reduced deployment time thanks to improved test automation. Skills used: Asp.Net Core, C#, React, Redux, TypeScript, Azure, Azure DevOps </content> </entry> <entry> <id>/projects/insplanet</id> <title> at Insplanet</title> <published>2019-01-07T00:00:00.005Z</published> <updated>2019-01-07T00:00:00.005Z</updated> <content> at Insplanet 2019-01-07 - 2019-06-13 Zero down time deployment Simplified CI process with Azure DevOps build pipelines Skills used: Asp.Net MVC, Asp.Net Web Api, .Net Core, C#, React, TypeScript, Azure DevOps, Octopus Deploy </content> </entry> <entry> <id>/projects/norconsult-astando/2018</id> <title> at Norconsult Astando</title> <published>2018-04-18T00:00:00.006Z</published> <updated>2018-04-18T00:00:00.006Z</updated> <content> at Norconsult Astando 2018-04-18 - 2018-11-30 Automated deployment for the project IsyRoad resulting in: Deployment time decreasing from ~ 45 minutes to ~ 5 minutes per application instance Deployment releated errors reduced by nearly 100 % Skills used: Octopus Deploy, TeamCity, Asp.Net Web Api, .Net Core, WCF, NHibernate, C# </content> </entry> <entry> <id>/projects/svea</id> <title> at Svea Ekonomi</title> <published>2017-10-11T00:00:00.007Z</published> <updated>2017-10-11T00:00:00.007Z</updated> <content> at Svea Ekonomi 2017-10-11 - 2018-04-11 Development of the payment solution &quot;Svea Checkout&quot; being rolled out in Sweden, Norway and Finland. Improved api documentation by generating most of it automatically Improved test readability by rewriting them as executable specifications Skills used: C#, Asp.Net Web Api, CQRS, TDD, Specification By Example, Continuous Integration, Octopus Deploy, Entity Framework, NuGet, Micro Services, Team Foundation Server, DocNet </content> </entry> <entry> <id>/projects/film2home</id> <title> at Film2Home/Plejmo</title> <published>2014-11-03T00:00:00.008Z</published> <updated>2014-11-03T00:00:00.008Z</updated> <content> at Film2Home/Plejmo 2014-11-03 - 2017-07-05 Development of the Video on Demand sites Film2Home and Plejmo. Designed Plejmo&apos;s REST API. Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes. Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites. Skills used: Asp.Net MVC, Asp.Net Web Api, C#, .Net Framework, TDD, CQRS, Continuous Integration, Octopus Deploy, JavaScript, jQuery, KnockoutJS, NHibernate, SQL Server, Micro Services, CSS, HTML, EPiServer, IIS </content> </entry> <entry> <id>/projects/arbetsformedlingen</id> <title> at Arbetsförmedlingen</title> <published>2014-06-24T00:00:00.009Z</published> <updated>2014-06-24T00:00:00.009Z</updated> <content> at Arbetsförmedlingen 2014-06-24 - 2014-09-26 Maintenance of a legacy solution for managing requisitions at Sweden&apos;s public employment services. Skills used: VB.Net, WinForms, WebForms, WCF, WebServices, Oracle </content> </entry> <entry> <id>/projects/qbranch-competence-manager</id> <title> at Qbranch Competence Manager</title> <published>2014-04-28T00:00:00.010Z</published> <updated>2014-04-28T00:00:00.010Z</updated> <content> at Qbranch Competence Manager 2014-04-28 - 2014-06-23 Development of an application for managing consultant CVs built on Asp.Net MVC and hosted on Windows Azure. Skills used: Asp.Net MVC 5, HTML5, jQuery, CSS3, C#, EntityFramework 6, Test Driven Development, Continuous Integration </content> </entry> <entry> <id>/projects/wasa-kredit</id> <title> at Wasa Kredit</title> <published>2012-03-12T00:00:00.011Z</published> <updated>2012-03-12T00:00:00.011Z</updated> <content> at Wasa Kredit 2012-03-12 - 2013-11-14 Reduced complexity and system decay through refactoring and the application of common software architecture patterns. Guided the development teams towards an iterative approach to software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle. Introduced the idea of living documentation in the form of executable specifications. Skills used: C#, WinForms, Asp.Net MVC4, HTML, CSS3, WCF, TDD, BDD, SpecFlow, Continuous Integration, Team Foundation Server- XML, XSLT </content> </entry> <entry> <id>/projects/cale-access</id> <title> at Cale Access AB</title> <published>2011-09-01T00:00:00.012Z</published> <updated>2011-09-01T00:00:00.012Z</updated> <content> at Cale Access AB 2011-09-01 - 2012-03-09 Skills used: Test Driven Development, SpecFlow, NInject, C#, WCF, Asp.Net Web Forms, Continuous Integration, Team Foundation Server </content> </entry> <entry> <id>/projects/cashguard</id> <title> at CashGuard</title> <published>2011-06-01T00:00:00.013Z</published> <updated>2011-06-01T00:00:00.013Z</updated> <content> at CashGuard 2011-06-01 - 2011-09-01 Was the key person in introducing behavior driven development. Lay the foundation for automated regression tests and living documentation by taking existing user stories and turning them into executable specifications using SpecFlow. Skills used: Specification by Example, SpecFlow, C#, WCF, Asp.Net MVC, WiX, SQL Server </content> </entry> <entry> <id>/projects/lansforsakringar</id> <title> at Länsförsäkringar</title> <published>2009-09-01T00:00:00.014Z</published> <updated>2009-09-01T00:00:00.014Z</updated> <content> at Länsförsäkringar 2009-09-01 - 2011-05-01 Was instrumental in the migration of the payment platform&apos;s database from Oracle to SQL Server. Worked with the development of a WCF based payment platform adding support for automatic payment services and prompts. Quality assurance and performance optimization of connecting systems. Skills used: VB.Net, WCF, WPF, Oracle, SQL Server, Team Foundation Server, Continuous Integration, Test Driven Development </content> </entry> <entry> <id>/projects/tradera</id> <title> at Tradera</title> <published>2009-08-01T00:00:00.015Z</published> <updated>2009-08-01T00:00:00.015Z</updated> <content> at Tradera 2009-08-01 - 2009-08-31 Development of a WPF-based sales support system for managing articles and campaigns published on tradera.se. Skills used: C#, WCF, WPF, NHibernate </content> </entry> <entry> <id>/projects/astando</id> <title> at Astando</title> <published>2008-02-28T00:00:00.016Z</published> <updated>2008-02-28T00:00:00.016Z</updated> <content> at Astando 2008-02-28 - 2009-05-01 Client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg. Skills used: C#, Winforms, Windows Services, Oracle, NHibernate, Spring.Net, Test Driven Development, Continuous Integration </content> </entry> <entry> <id>/projects/hitta-punkt-se</id> <title> at Hitta.se</title> <published>2006-03-01T00:00:00.017Z</published> <updated>2006-03-01T00:00:00.017Z</updated> <content> at Hitta.se 2006-03-01 - 2008-02-28 Was a key person in the development of hitta.se - one of Swedens top 10 most popular sites at the time. Created the services hitta.se/trafiknytt (traffic information) and hitta.se/vader (weather information). Maintenance of hitta.se&apos;s internal order system Skills used: C#, Asp.Net, AJAX, T-SQL, MSMQ, XML, XSLT, XHTML, SQL Server, IIS </content> </entry> <entry> <id>/projects/ica-banken</id> <title> at ICA Banken</title> <published>2006-03-01T00:00:00.018Z</published> <updated>2006-03-01T00:00:00.018Z</updated> <content> at ICA Banken 2006-03-01 - 2006-03-01 Quality analysis of database design. Trouble shooting and optimization of SQL scripts for data import/export and database maintenance. VBScript for SQL Server inventory using WMI. Skills used: SQL Server, T-SQL, VBScript, XML, XSLT, WMI </content> </entry> <entry> <id>/projects/sigtuna-council</id> <title> at Sigtuna Council</title> <published>2005-10-01T00:00:00.019Z</published> <updated>2005-10-01T00:00:00.019Z</updated> <content> at Sigtuna Council 2005-10-01 - 2006-03-01 Was the single developer on this Identity Management project that would become Microsoft&apos;s reference case for Microsoft Identity Integration Server (MIIS). Implemented management agents for the client&apos;s HR system, the directory services eDirectory and Active Directory. Implemented automatic creation of GroupWise accounts and Novell Server home directories. Wrote rules extensions for attribute flow and joins. Skills used: Identity Management, Microsoft Identity Integration Server, C#, SQL Server, Novell eDirectory, Active Directory, MSMQ, Novell C API, GroupWise Administrative Objects API </content> </entry> <entry> <id>/projects/sveriges-television</id> <title> at Sveriges Television</title> <published>2005-07-01T00:00:00.020Z</published> <updated>2005-07-01T00:00:00.020Z</updated> <content> at Sveriges Television 2005-07-01 - 2005-07-31 Maintenance of the client&apos;s system inventory tool. Skills used: VBScript, VBA, T-SQL, SQL Server, ASP </content> </entry> <entry> <id>/projects/taxi-stockholm</id> <title> at Taxi Stockholm</title> <published>2005-05-01T00:00:00.021Z</published> <updated>2005-05-01T00:00:00.021Z</updated> <content> at Taxi Stockholm 2005-05-01 - 2005-07-01 Migration of Taxi Stockholm&apos;s intranet and external web site from Spirello to EpiServer. Integration with the client&apos;s Unix based booking system. Skills used: Asp.Net, C#, EPiServer 4, SQL Server </content> </entry> <entry> <id>/projects/siemens-medical</id> <title> at Siemens Medical</title> <published>2000-01-01T00:00:00.022Z</published> <updated>2000-01-01T00:00:00.022Z</updated> <content> at Siemens Medical 2000-01-01 - 2001-01-01 QA and supporting colleges during development and maintenance of Siemens Medical&apos;s intranet &quot;EMPower&quot;. Skills used: Visual Basic 6, COM, ASP, JavaScript, XML, XSLT, CSS, HTML, SQL Server </content> </entry> <entry> <id>/projects/hewlett-packard</id> <title> at Hewlett Packard Sweden</title> <published>1999-09-01T00:00:00.023Z</published> <updated>1999-09-01T00:00:00.023Z</updated> <content> at Hewlett Packard Sweden 1999-09-01 - 2005-03-31 Requirements analysis, use case design, system design and development of a web based admininstration interface for information about and registrations for customer events for HP EMEA. Requirements analysis, design and development of a web based administration interface for HP&apos;s scandinavian products database. Development of templates for the client&apos;s EpiServer based intranet. Maintenance and further development of www.hp.se. Skills used: C#, Asp.Net, T-SQL, SQL Server, IIS, EPiServer, XML, XSLT, ASP, JavaScript, VBScript, HTML, CSS </content> </entry> <entry> <id>/projects/loostrom-gelin</id> <title> at Looström &amp; Gelin AB</title> <published>1998-10-01T00:00:00.024Z</published> <updated>1998-10-01T00:00:00.024Z</updated> <content> at Looström &amp; Gelin AB 1998-10-01 - 1999-07-31 Designed and developed a document management system based on Visual Basic 5. Assisted in developing the company web site. Skills used: Visual Basic 5, COM, ASP </content> </entry> </feed>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>/</id>
+  <title>Henrik Becker Consulting AB</title>
+  <link href="" />
+  <link href="/feed.atom.xml" rel="self" />
+  <updated>2026-02-18T13:54:23.000Z</updated>
+  <author>
+    <name>Henrik Becker</name>
+  </author>
+  <rights>Copyright 2026 Henrik Becker</rights>
+  <entry>
+    <id>/projects/betsson</id>
+    <title> at Betsson</title>
+    <published>2021-10-11T00:00:00.001Z</published>
+    <updated>2021-10-11T00:00:00.001Z</updated>
+    <content>
+       at Betsson
+      2021-10-11 - 2025-12-05
+      
+      Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools
+      Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for one of the core applications.
+      Developed Proofs of Concept for new systems and features to evaluate feasibility and drive innovation.
+      Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance.
+      Conducted and assessed technical interviews to support recruitment and team growth.
+      Skills used: C#, .Net 5-9, .Net Aspire, Asp.Net Core, Microsoft Orleans, Blazor, Docker, GitHub Actions, Kafka, SQL Server, PostgreSQL
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/adlibris</id>
+    <title> at Adlibris</title>
+    <published>2021-02-22T00:00:00.002Z</published>
+    <updated>2021-02-22T00:00:00.002Z</updated>
+    <content>
+       at Adlibris
+      2021-02-22 - 2021-10-10
+      
+      OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app under development.
+      Account management API built with Asp.Net Core and .Net 5 hosted on Azure.
+      Contentful CMS content modeling and integration.
+      Skills used: C#, Asp.Net Core, Asp.Net MVC, JavaScript, jQuery, React, SQL Server, Octopus Deploy, Azure App Services, Identity Server
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/norconsult-astando</id>
+    <title> at Norconsult Astando</title>
+    <published>2020-10-19T00:00:00.003Z</published>
+    <updated>2020-10-19T00:00:00.003Z</updated>
+    <content>
+       at Norconsult Astando
+      2020-10-19 - 2021-01-15
+      
+      Automated deployment using Octopus Deploy
+      Improvements to code readability and testability
+      Implementing new functionality in legacy systems
+      Skills used: C#, TypeScript, JavaScript, KnockoutJS, Asp.Net Core, Asp.Net Web Forms, WCF, TeamCity, Octopus Deploy
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/open-payments</id>
+    <title> at Open Payments</title>
+    <published>2019-12-02T00:00:00.004Z</published>
+    <updated>2019-12-02T00:00:00.004Z</updated>
+    <content>
+       at Open Payments
+      2019-12-02 - 2020-06-30
+      
+      Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.
+      Improved test automation by making functional/integration tests require less manual intervention.
+      Reduced deployment time thanks to improved test automation.
+      Skills used: Asp.Net Core, C#, React, Redux, TypeScript, Azure, Azure DevOps
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/insplanet</id>
+    <title> at Insplanet</title>
+    <published>2019-01-07T00:00:00.005Z</published>
+    <updated>2019-01-07T00:00:00.005Z</updated>
+    <content>
+       at Insplanet
+      2019-01-07 - 2019-06-13
+      
+      Zero down time deployment
+      Simplified CI process with Azure DevOps build pipelines
+      Skills used: Asp.Net MVC, Asp.Net Web Api, .Net Core, C#, React, TypeScript, Azure DevOps, Octopus Deploy
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/norconsult-astando/2018</id>
+    <title> at Norconsult Astando</title>
+    <published>2018-04-18T00:00:00.006Z</published>
+    <updated>2018-04-18T00:00:00.006Z</updated>
+    <content>
+       at Norconsult Astando
+      2018-04-18 - 2018-11-30
+      
+      Automated deployment for the project IsyRoad resulting in:
+      Deployment time decreasing from ~ 45 minutes to ~ 5 minutes per application instance
+      Deployment releated errors reduced by nearly 100 %
+      Skills used: Octopus Deploy, TeamCity, Asp.Net Web Api, .Net Core, WCF, NHibernate, C#
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/svea</id>
+    <title> at Svea Ekonomi</title>
+    <published>2017-10-11T00:00:00.007Z</published>
+    <updated>2017-10-11T00:00:00.007Z</updated>
+    <content>
+       at Svea Ekonomi
+      2017-10-11 - 2018-04-11
+      
+      Development of the payment solution &quot;Svea Checkout&quot; being rolled out in Sweden, Norway and Finland.
+      Improved api documentation by generating most of it automatically
+      Improved test readability by rewriting them as executable specifications
+      Skills used: C#, Asp.Net Web Api, CQRS, TDD, Specification By Example, Continuous Integration, Octopus Deploy, Entity Framework, NuGet, Micro Services, Team Foundation Server, DocNet
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/film2home</id>
+    <title> at Film2Home/Plejmo</title>
+    <published>2014-11-03T00:00:00.008Z</published>
+    <updated>2014-11-03T00:00:00.008Z</updated>
+    <content>
+       at Film2Home/Plejmo
+      2014-11-03 - 2017-07-05
+      
+      Development of the Video on Demand sites Film2Home and Plejmo.
+      Designed Plejmo&apos;s REST API.
+      Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
+      Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites.
+      Skills used: Asp.Net MVC, Asp.Net Web Api, C#, .Net Framework, TDD, CQRS, Continuous Integration, Octopus Deploy, JavaScript, jQuery, KnockoutJS, NHibernate, SQL Server, Micro Services, CSS, HTML, EPiServer, IIS
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/arbetsformedlingen</id>
+    <title> at Arbetsförmedlingen</title>
+    <published>2014-06-24T00:00:00.009Z</published>
+    <updated>2014-06-24T00:00:00.009Z</updated>
+    <content>
+       at Arbetsförmedlingen
+      2014-06-24 - 2014-09-26
+      
+      Maintenance of a legacy solution for managing requisitions at Sweden&apos;s public employment services.
+      Skills used: VB.Net, WinForms, WebForms, WCF, WebServices, Oracle
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/qbranch-competence-manager</id>
+    <title> at Qbranch Competence Manager</title>
+    <published>2014-04-28T00:00:00.010Z</published>
+    <updated>2014-04-28T00:00:00.010Z</updated>
+    <content>
+       at Qbranch Competence Manager
+      2014-04-28 - 2014-06-23
+      
+      Development of an application for managing consultant CVs built on Asp.Net MVC and hosted on Windows Azure.
+      Skills used: Asp.Net MVC 5, HTML5, jQuery, CSS3, C#, EntityFramework 6, Test Driven Development, Continuous Integration
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/wasa-kredit</id>
+    <title> at Wasa Kredit</title>
+    <published>2012-03-12T00:00:00.011Z</published>
+    <updated>2012-03-12T00:00:00.011Z</updated>
+    <content>
+       at Wasa Kredit
+      2012-03-12 - 2013-11-14
+      
+      Reduced complexity and system decay through refactoring and the application of common software architecture patterns.
+      Guided the development teams towards an iterative approach to software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle.
+      Introduced the idea of living documentation in the form of executable specifications.
+      Skills used: C#, WinForms, Asp.Net MVC4, HTML, CSS3, WCF, TDD, BDD, SpecFlow, Continuous Integration, Team Foundation Server- XML, XSLT
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/cale-access</id>
+    <title> at Cale Access AB</title>
+    <published>2011-09-01T00:00:00.012Z</published>
+    <updated>2011-09-01T00:00:00.012Z</updated>
+    <content>
+       at Cale Access AB
+      2011-09-01 - 2012-03-09
+      
+      Skills used: Test Driven Development, SpecFlow, NInject, C#, WCF, Asp.Net Web Forms, Continuous Integration, Team Foundation Server
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/cashguard</id>
+    <title> at CashGuard</title>
+    <published>2011-06-01T00:00:00.013Z</published>
+    <updated>2011-06-01T00:00:00.013Z</updated>
+    <content>
+       at CashGuard
+      2011-06-01 - 2011-09-01
+      
+      Was the key person in introducing behavior driven development.
+      Lay the foundation for automated regression tests and living documentation by taking existing user stories and turning them into executable specifications using SpecFlow.
+      Skills used: Specification by Example, SpecFlow, C#, WCF, Asp.Net MVC, WiX, SQL Server
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/lansforsakringar</id>
+    <title> at Länsförsäkringar</title>
+    <published>2009-09-01T00:00:00.014Z</published>
+    <updated>2009-09-01T00:00:00.014Z</updated>
+    <content>
+       at Länsförsäkringar
+      2009-09-01 - 2011-05-01
+      
+      Was instrumental in the migration of the payment platform&apos;s database from Oracle to SQL Server.
+      Worked with the development of a WCF based payment platform adding support for automatic payment services and prompts.
+      Quality assurance and performance optimization of connecting systems.
+      Skills used: VB.Net, WCF, WPF, Oracle, SQL Server, Team Foundation Server, Continuous Integration, Test Driven Development
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/tradera</id>
+    <title> at Tradera</title>
+    <published>2009-08-01T00:00:00.015Z</published>
+    <updated>2009-08-01T00:00:00.015Z</updated>
+    <content>
+       at Tradera
+      2009-08-01 - 2009-08-31
+      
+      Development of a WPF-based sales support system for managing articles and campaigns published on tradera.se.
+      Skills used: C#, WCF, WPF, NHibernate
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/astando</id>
+    <title> at Astando</title>
+    <published>2008-02-28T00:00:00.016Z</published>
+    <updated>2008-02-28T00:00:00.016Z</updated>
+    <content>
+       at Astando
+      2008-02-28 - 2009-05-01
+      
+      Client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg.
+      Skills used: C#, Winforms, Windows Services, Oracle, NHibernate, Spring.Net, Test Driven Development, Continuous Integration
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/hitta-punkt-se</id>
+    <title> at Hitta.se</title>
+    <published>2006-03-01T00:00:00.017Z</published>
+    <updated>2006-03-01T00:00:00.017Z</updated>
+    <content>
+       at Hitta.se
+      2006-03-01 - 2008-02-28
+      
+      Was a key person in the development of hitta.se - one of Swedens top 10 most popular sites at the time.
+      Created the services hitta.se/trafiknytt (traffic information) and hitta.se/vader (weather information).
+      Maintenance of hitta.se&apos;s internal order system
+      Skills used: C#, Asp.Net, AJAX, T-SQL, MSMQ, XML, XSLT, XHTML, SQL Server, IIS
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/ica-banken</id>
+    <title> at ICA Banken</title>
+    <published>2006-03-01T00:00:00.018Z</published>
+    <updated>2006-03-01T00:00:00.018Z</updated>
+    <content>
+       at ICA Banken
+      2006-03-01 - 2006-03-01
+      
+      Quality analysis of database design.
+      Trouble shooting and optimization of SQL scripts for data import/export and database maintenance.
+      VBScript for SQL Server inventory using WMI.
+      Skills used: SQL Server, T-SQL, VBScript, XML, XSLT, WMI
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/sigtuna-council</id>
+    <title> at Sigtuna Council</title>
+    <published>2005-10-01T00:00:00.019Z</published>
+    <updated>2005-10-01T00:00:00.019Z</updated>
+    <content>
+       at Sigtuna Council
+      2005-10-01 - 2006-03-01
+      
+      Was the single developer on this Identity Management project that would become Microsoft&apos;s reference case for Microsoft Identity Integration Server (MIIS).
+      Implemented management agents for the client&apos;s HR system, the directory services eDirectory and Active Directory.
+      Implemented automatic creation of GroupWise accounts and Novell Server home directories.
+      Wrote rules extensions for attribute flow and joins.
+      Skills used: Identity Management, Microsoft Identity Integration Server, C#, SQL Server, Novell eDirectory, Active Directory, MSMQ, Novell C API, GroupWise Administrative Objects API
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/sveriges-television</id>
+    <title> at Sveriges Television</title>
+    <published>2005-07-01T00:00:00.020Z</published>
+    <updated>2005-07-01T00:00:00.020Z</updated>
+    <content>
+       at Sveriges Television
+      2005-07-01 - 2005-07-31
+      
+      Maintenance of the client&apos;s system inventory tool.
+      Skills used: VBScript, VBA, T-SQL, SQL Server, ASP
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/taxi-stockholm</id>
+    <title> at Taxi Stockholm</title>
+    <published>2005-05-01T00:00:00.021Z</published>
+    <updated>2005-05-01T00:00:00.021Z</updated>
+    <content>
+       at Taxi Stockholm
+      2005-05-01 - 2005-07-01
+      
+      Migration of Taxi Stockholm&apos;s intranet and external web site from Spirello to EpiServer.
+      Integration with the client&apos;s Unix based booking system.
+      Skills used: Asp.Net, C#, EPiServer 4, SQL Server
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/siemens-medical</id>
+    <title> at Siemens Medical</title>
+    <published>2000-01-01T00:00:00.022Z</published>
+    <updated>2000-01-01T00:00:00.022Z</updated>
+    <content>
+       at Siemens Medical
+      2000-01-01 - 2001-01-01
+      
+      QA and supporting colleges during development and maintenance of Siemens Medical&apos;s intranet &quot;EMPower&quot;.
+      Skills used: Visual Basic 6, COM, ASP, JavaScript, XML, XSLT, CSS, HTML, SQL Server
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/hewlett-packard</id>
+    <title> at Hewlett Packard Sweden</title>
+    <published>1999-09-01T00:00:00.023Z</published>
+    <updated>1999-09-01T00:00:00.023Z</updated>
+    <content>
+       at Hewlett Packard Sweden
+      1999-09-01 - 2005-03-31
+      
+      Requirements analysis, use case design, system design and development of a web based admininstration interface for information about and registrations for customer events for HP EMEA.
+      Requirements analysis, design and development of a web based administration interface for HP&apos;s scandinavian products database.
+      Development of templates for the client&apos;s EpiServer based intranet.
+      Maintenance and further development of www.hp.se.
+      Skills used: C#, Asp.Net, T-SQL, SQL Server, IIS, EPiServer, XML, XSLT, ASP, JavaScript, VBScript, HTML, CSS
+    </content>
+  </entry>
+  <entry>
+    <id>/projects/loostrom-gelin</id>
+    <title> at Looström &amp; Gelin AB</title>
+    <published>1998-10-01T00:00:00.024Z</published>
+    <updated>1998-10-01T00:00:00.024Z</updated>
+    <content>
+       at Looström &amp; Gelin AB
+      1998-10-01 - 1999-07-31
+      
+      Designed and developed a document management system based on Visual Basic 5.
+      Assisted in developing the company web site.
+      Skills used: Visual Basic 5, COM, ASP
+    </content>
+  </entry>
+</feed>

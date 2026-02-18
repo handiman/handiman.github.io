@@ -1,1 +1,10 @@
-BEGIN:VCARD VERSION:3.0 N:Becker;Henrik;;; FN:Henrik Becker ORG:Henrik Becker Consulting AB TITLE:Senior Software Engineer URL;TYPE=work: SOURCE:/assets/henrik-becker.vcf REV:2026-02-18T13:25:03Z END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+N:Becker;Henrik;;;
+FN:Henrik Becker
+ORG:Henrik Becker Consulting AB
+TITLE:Senior Software Engineer
+URL;TYPE=work:
+SOURCE:/assets/henrik-becker.vcf
+REV:2026-02-18T13:54:23Z
+END:VCARD

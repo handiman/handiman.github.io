@@ -1,1 +1,9 @@
-["vcard", [ ["version", {}, "text", "4.0"], ["n", {}, "text", ["Becker", "Henrik", "", "", ""]], ["fn", {}, "text", "Henrik Becker"], ["org", {}, "text", "Henrik Becker Consulting AB"], ["title", {} ,"text", "Senior Software Engineer"], ["url", { "type": "work" }, "uri", null], ["rev", {}, "timestamp", "2026-02-18T13:25:03Z"] ]]
+["vcard", [
+ ["version", {}, "text", "4.0"],
+ ["n", {}, "text", ["Becker", "Henrik", "", "", ""]],
+ ["fn", {}, "text", "Henrik Becker"],
+ ["org", {}, "text", "Henrik Becker Consulting AB"],
+ ["title", {} ,"text", "Senior Software Engineer"],
+ ["url", { "type": "work" }, "uri", null],
+ ["rev", {}, "timestamp", "2026-02-18T13:54:23Z"]
+]]

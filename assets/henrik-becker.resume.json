@@ -1,1 +1,213 @@
-{"$schema":"https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json","meta":{"theme":"flat","lastUpdated":"2026-02-18T13:25:03","canonical":"https://gist.githubusercontent.com/handiman/3881a8e890dd1032cce3f5e655859717/raw/01ba33f00c707670636d902546d7e50c4d4176e4/resume.json"},"basics":{"name":"Henrik Becker","label":"Senior Software Engineer","image":"https://www.henrikbecker.net/assets/img/landscape-800x534.jpg","url":null,"summary":"Henrik Becker is an experienced .Net developer and solution architect dedicated to delivering quality software practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of dad-jokes.\n","profiles":[{"network":"GitHub","url":"https://github.com/handiman","username":"handiman"},{"network":"LinkedIn","url":"https://www.linkedin.com/in/prettygoodprogrammer/"}]},"certificates":[{"name":"Microsoft Certified: Azure Developer Associate","issuer":"Microsoft","date":"2021-06-24","url":"https://www.credly.com/badges/f273ba6a-0f57-49f1-8e5e-8f2e5cccf170"},{"name":"MCSA: Web Applications - Certified 2016","issuer":"Microsoft","date":"2016-09-26","url":"https://www.credly.com/badges/54c4ab3b-4254-47e3-aabc-fea97f277130"}],"projects":[{"name":"Betsson Group","startDate":"2021-10-11","endDate":"2025-12-05","highlights":["Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools","Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for one of the core applications.","Developed Proofs of Concept for new systems and features to evaluate feasibility and drive innovation.","Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance.","Conducted and assessed technical interviews to support recruitment and team growth."]},{"name":"Film2Home/Plejmo","startDate":"2014-11-03","endDate":"2017-07-05","highlights":["Development of the Video on Demand sites Film2Home and Plejmo.","Designed Plejmo's REST API.","Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.","Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites."]},{"name":"Adlibris","startDate":"2021-02-22","endDate":"2021-10-10","highlights":["OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app under development.","Account management API built with Asp.Net Core and .Net 5 hosted on Azure.","Contentful CMS content modeling and integration."]},{"name":"Open Payments","startDate":"2019-12-02","endDate":"2020-06-30","highlights":["Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.","Improved test automation by making functional/integration tests require less manual intervention.","Reduced deployment time thanks to improved test automation."]}],"work":[{"name":"Henrik Becker Consulting AB","position":"IT Consultant","startDate":"2017-07-06","summary":"Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm urban area.","highlights":["Betsson Group","Adlibris","Norconsult Astando","Open Payments","Insplanet","Svea Ekonomi"]},{"name":"Betsson Group AB","position":"Senior Software Engineer","startDate":"2023-12-18","endDate":"2025-12-05","summary":"","highlights":[]},{"name":"Magine TV AB","position":"Fullstack Developer","startDate":"2015-09-14","endDate":"2017-07-05","summary":"","highlights":["Continued development of the Video on Demand site Plejmo.","Designed version 2 of Plejmo's Rest API.","Continued improving the CI/CD processes I set up at Film2Home"]},{"name":"Film2Home AB","position":"Fullstack Developer","startDate":"2014-11-03","endDate":"2015-08-27","summary":"","highlights":["Development of the Video on Demand sites Film2Home and Plejmo.","Designed version 1 of Plejmo's Rest API.","Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.","Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites."]},{"name":"Qbranch Stockholm AB","position":"IT Consultant","startDate":"2014-04-28","endDate":"2014-09-30","summary":"","highlights":["Resource consulting at Organizations in Stockholm CBD.","Development of Qbranch Competence Manager used for finding the right consultant for an assignment."]},{"name":"Wasa Kredit AB","position":"Lead Developer","startDate":"2012-03-12","endDate":"2013-11-14","summary":"","highlights":["Reduced complexity through refactoring.","Introduced living documentation in the form of executable specifications.","Guided development teams towards a more agile approached software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle."]},{"name":"Avega Group AB","position":"IT Consultant","startDate":"2008-01-28","endDate":"2012-03-09","summary":"","highlights":["IT Consultant with assignments at Länsförsäkringar, Cale Access, Cash Guard, Tradera and Astando."]},{"name":"Aftonbladet Tillväxtteknik 2 AB","position":"Fullstack Developer","startDate":"2007-12-01","endDate":"2008-01-01","summary":"","highlights":["Fullstack Developer at hitta.se"]},{"name":"Inverso International AB","position":"IT Consultant","startDate":"2007-04-01","endDate":"2007-12-01","summary":"","highlights":["Fullstack Developer at hitta.se"]},{"name":"Qbranch Stockholm AB","position":"IT Consultant","startDate":"2005-04-01","endDate":"2007-04-01","summary":"","highlights":["Fullstack Developer at hitta.se","System Integration Consultant assignments at Sigtuna Council, ICA Banken, Taxi Stockholm.","Was the single developer on an identity management project at Sigtuna Council that would become Microsoft's reference project for Microsoft Identity Integration Server."]},{"name":"eWork","position":"IT Consultant","startDate":"2002-01-01","endDate":"2005-03-31","summary":"","highlights":["Web development for Hewlett Packard Sweden"]},{"name":"IconMedialab AB","position":"IT Consultant","startDate":"1999-09-01","endDate":"2002-01-01","summary":"","highlights":["Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and IconMedialab's intranet."]},{"name":"Innitek AB","position":"IT Consultant","startDate":"1998-10-01","endDate":"1999-07-31","summary":"","highlights":["Developed a document management system based on Visual Basic 5 for Looström & Gelin AB.","Built the company web site based on ASP"]},{"name":"Lidingö Stad","position":"PC Technician","startDate":"1997-07-01","endDate":"1998-10-01","summary":"","highlights":[]},{"name":"Konsumentföreningen Stockholm","position":"Shop Assistant","startDate":"1986-12-01","endDate":"1995-06-30","summary":"","highlights":[]},{"name":"Sollentuna Jazz Workshop","position":"Study Circle Leader","startDate":"1994-01-01","endDate":"1994-07-01","summary":"","highlights":[]},{"name":"Kantarellen Livs AB","position":"Shop Assistant","startDate":"1992-06-01","endDate":"1992-09-01","summary":"","highlights":[]},{"name":"Karena Zoo, Lek & Hobby","position":"Shop Assistant","startDate":"1986-08-01","endDate":"1986-12-31","summary":"","highlights":[]}],"education":[],"skills":[{"name":"Solution Architecture","level":"Advanced","keywords":["SOLID","Domain Driven Design","Microservices","Design Patterns"]},{"name":"Backend Development","level":"Expert","keywords":["Asp.Net Core","Asp.Net Web API","Asp.Net MVC",".Net",".Net Core",".Net Framework","C#"]},{"name":"Frontend Development","level":"Advanced","keywords":["TypeScript","JavaScript","CSS3","Stencil","React","KnockoutJS","jQuery","Storybook"]},{"name":"Azure","level":"Advanced","keywords":["App Services","Function Apps","Service Bus","Event Grid","Queue Storage","Blob Storage","Sql Database"]},{"name":"Agile Methodologies","level":"Advanced","keywords":["Certified Scrum Master","Continuous Integration","Continuous Deployment","Test Driven Development","Specification by Example","SpecFlow"]},{"name":"CI/CD","level":"Advanced","keywords":["GitHub Actions","Octopus Deploy","Azure DevOps","Team City"]}],"languages":[{"language":"Swedish","fluency":"Native"},{"language":"English","fluency":"Fluent (IELTS overall score 8.5)"}],"interests":[{"name":"Music"},{"name":"Motorcycling"},{"name":"Karate"},{"name":"Travelling"},{"name":"Good food"}],"references":[{"name":"Niklas Hallenfur - Expicon AB","reference":"Henrik was very humble on the interview, but he turned out to be a fantastic developer, among the best performing consultants I have encountered.  Contributed a lot of great ideas and knowledge to the team.  \n"},{"name":"Jannice Dybedahl - Hewlett Packard Sweden AB","reference":"Henrik is, without a doubt, one of the best developers I have worked with during my years in the IT and Internet business.  He is fast, he understands customer needs and he contribute with great ideas when he think that systems or applications can be created in a better way than originally requested.  Henrik is a loyal and easy going person who I enjoyed working with a lot and who I recommend any company to hire!"}]}
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "meta": {
+      "theme": "flat",
+      "lastUpdated": "2026-02-18T13:54:23",
+      "canonical": "https://gist.githubusercontent.com/handiman/3881a8e890dd1032cce3f5e655859717/raw/01ba33f00c707670636d902546d7e50c4d4176e4/resume.json"
+    },
+    "basics": {
+      "name": "Henrik Becker",
+      "label": "Senior Software Engineer",
+      "image": "https://www.henrikbecker.net/assets/img/landscape-800x534.jpg",
+      "url": null,
+      "summary": "Henrik Becker is an experienced .Net developer and solution architect dedicated to delivering quality software practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of dad-jokes.\n",
+      "profiles": [
+        { "network": "GitHub", "url": "https://github.com/handiman", "username": "handiman" },
+        { "network": "LinkedIn", "url": "https://www.linkedin.com/in/prettygoodprogrammer/" }
+      ]
+    },
+    "certificates": [{
+      "name": "Microsoft Certified: Azure Developer Associate",
+      "issuer": "Microsoft",
+      "date": "2021-06-24",
+      "url": "https://www.credly.com/badges/f273ba6a-0f57-49f1-8e5e-8f2e5cccf170"
+    },{
+      "name": "MCSA: Web Applications - Certified 2016",
+      "issuer": "Microsoft",
+      "date": "2016-09-26",
+      "url": "https://www.credly.com/badges/54c4ab3b-4254-47e3-aabc-fea97f277130"
+    }],
+    "projects": [{
+      "name": "Betsson Group",
+      "startDate": "2021-10-11",
+      "endDate":  "2025-12-05",
+      "highlights": ["Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools","Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for one of the core applications.","Developed Proofs of Concept for new systems and features to evaluate feasibility and drive innovation.","Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance.","Conducted and assessed technical interviews to support recruitment and team growth."]
+    },{
+      "name": "Film2Home/Plejmo",
+      "startDate": "2014-11-03",
+      "endDate":  "2017-07-05",
+      "highlights": ["Development of the Video on Demand sites Film2Home and Plejmo.","Designed Plejmo's REST API.","Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.","Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites."]
+    },{
+      "name": "Adlibris",
+      "startDate": "2021-02-22",
+      "endDate":  "2021-10-10",
+      "highlights": ["OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app under development.","Account management API built with Asp.Net Core and .Net 5 hosted on Azure.","Contentful CMS content modeling and integration."]
+    },{
+      "name": "Open Payments",
+      "startDate": "2019-12-02",
+      "endDate":  "2020-06-30",
+      "highlights": ["Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.","Improved test automation by making functional/integration tests require less manual intervention.","Reduced deployment time thanks to improved test automation."]
+    }],
+    "work": [{
+      "name": "Henrik Becker Consulting AB",
+      "position": "IT Consultant",
+      "startDate": "2017-07-06",
+      "summary": "Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm urban area.",
+      "highlights": ["Betsson Group","Adlibris","Norconsult Astando","Open Payments","Insplanet","Svea Ekonomi"]
+    },{
+      "name": "Betsson Group AB",
+      "position": "Senior Software Engineer",
+      "startDate": "2023-12-18",
+      "endDate":  "2025-12-05",
+      "summary": "",
+      "highlights": []
+    },{
+      "name": "Magine TV AB",
+      "position": "Fullstack Developer",
+      "startDate": "2015-09-14",
+      "endDate":  "2017-07-05",
+      "summary": "",
+      "highlights": ["Continued development of the Video on Demand site Plejmo.","Designed version 2 of Plejmo's Rest API.","Continued improving the CI/CD processes I set up at Film2Home"]
+    },{
+      "name": "Film2Home AB",
+      "position": "Fullstack Developer",
+      "startDate": "2014-11-03",
+      "endDate":  "2015-08-27",
+      "summary": "",
+      "highlights": ["Development of the Video on Demand sites Film2Home and Plejmo.","Designed version 1 of Plejmo's Rest API.","Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.","Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites."]
+    },{
+      "name": "Qbranch Stockholm AB",
+      "position": "IT Consultant",
+      "startDate": "2014-04-28",
+      "endDate":  "2014-09-30",
+      "summary": "",
+      "highlights": ["Resource consulting at Organizations in Stockholm CBD.","Development of Qbranch Competence Manager used for finding the right consultant for an assignment."]
+    },{
+      "name": "Wasa Kredit AB",
+      "position": "Lead Developer",
+      "startDate": "2012-03-12",
+      "endDate":  "2013-11-14",
+      "summary": "",
+      "highlights": ["Reduced complexity through refactoring.","Introduced living documentation in the form of executable specifications.","Guided development teams towards a more agile approached software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle."]
+    },{
+      "name": "Avega Group AB",
+      "position": "IT Consultant",
+      "startDate": "2008-01-28",
+      "endDate":  "2012-03-09",
+      "summary": "",
+      "highlights": ["IT Consultant with assignments at Länsförsäkringar, Cale Access, Cash Guard, Tradera and Astando."]
+    },{
+      "name": "Aftonbladet Tillväxtteknik 2 AB",
+      "position": "Fullstack Developer",
+      "startDate": "2007-12-01",
+      "endDate":  "2008-01-01",
+      "summary": "",
+      "highlights": ["Fullstack Developer at hitta.se"]
+    },{
+      "name": "Inverso International AB",
+      "position": "IT Consultant",
+      "startDate": "2007-04-01",
+      "endDate":  "2007-12-01",
+      "summary": "",
+      "highlights": ["Fullstack Developer at hitta.se"]
+    },{
+      "name": "Qbranch Stockholm AB",
+      "position": "IT Consultant",
+      "startDate": "2005-04-01",
+      "endDate":  "2007-04-01",
+      "summary": "",
+      "highlights": ["Fullstack Developer at hitta.se","System Integration Consultant assignments at Sigtuna Council, ICA Banken, Taxi Stockholm.","Was the single developer on an identity management project at Sigtuna Council that would become Microsoft's reference project for Microsoft Identity Integration Server."]
+    },{
+      "name": "eWork",
+      "position": "IT Consultant",
+      "startDate": "2002-01-01",
+      "endDate":  "2005-03-31",
+      "summary": "",
+      "highlights": ["Web development for Hewlett Packard Sweden"]
+    },{
+      "name": "IconMedialab AB",
+      "position": "IT Consultant",
+      "startDate": "1999-09-01",
+      "endDate":  "2002-01-01",
+      "summary": "",
+      "highlights": ["Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and IconMedialab's intranet."]
+    },{
+      "name": "Innitek AB",
+      "position": "IT Consultant",
+      "startDate": "1998-10-01",
+      "endDate":  "1999-07-31",
+      "summary": "",
+      "highlights": ["Developed a document management system based on Visual Basic 5 for Looström & Gelin AB.","Built the company web site based on ASP"]
+    },{
+      "name": "Lidingö Stad",
+      "position": "PC Technician",
+      "startDate": "1997-07-01",
+      "endDate":  "1998-10-01",
+      "summary": "",
+      "highlights": []
+    },{
+      "name": "Konsumentföreningen Stockholm",
+      "position": "Shop Assistant",
+      "startDate": "1986-12-01",
+      "endDate":  "1995-06-30",
+      "summary": "",
+      "highlights": []
+    },{
+      "name": "Sollentuna Jazz Workshop",
+      "position": "Study Circle Leader",
+      "startDate": "1994-01-01",
+      "endDate":  "1994-07-01",
+      "summary": "",
+      "highlights": []
+    },{
+      "name": "Kantarellen Livs AB",
+      "position": "Shop Assistant",
+      "startDate": "1992-06-01",
+      "endDate":  "1992-09-01",
+      "summary": "",
+      "highlights": []
+    },{
+      "name": "Karena Zoo, Lek & Hobby",
+      "position": "Shop Assistant",
+      "startDate": "1986-08-01",
+      "endDate":  "1986-12-31",
+      "summary": "",
+      "highlights": []
+    }],
+    "education": [],
+    "skills": [ {
+      "name": "Solution Architecture",
+      "level": "Advanced",
+      "keywords": ["SOLID","Domain Driven Design","Microservices","Design Patterns"]
+    }, {
+      "name": "Backend Development",
+      "level": "Expert",
+      "keywords": ["Asp.Net Core","Asp.Net Web API","Asp.Net MVC",".Net",".Net Core",".Net Framework","C#"]
+    }, {
+      "name": "Frontend Development",
+      "level": "Advanced",
+      "keywords": ["TypeScript","JavaScript","CSS3","Stencil","React","KnockoutJS","jQuery","Storybook"]
+    }, {
+      "name": "Azure",
+      "level": "Advanced",
+      "keywords": ["App Services","Function Apps","Service Bus","Event Grid","Queue Storage","Blob Storage","Sql Database"]
+    }, {
+      "name": "Agile Methodologies",
+      "level": "Advanced",
+      "keywords": ["Certified Scrum Master","Continuous Integration","Continuous Deployment","Test Driven Development","Specification by Example","SpecFlow"]
+    }, {
+      "name": "CI/CD",
+      "level": "Advanced",
+      "keywords": ["GitHub Actions","Octopus Deploy","Azure DevOps","Team City"]
+    }],
+    "languages": [{ "language": "Swedish", "fluency": "Native" },{ "language": "English", "fluency": "Fluent (IELTS overall score 8.5)" }],
+    "interests": [{ "name": "Music" },{ "name": "Motorcycling" },{ "name": "Karate" },{ "name": "Travelling" },{ "name": "Good food" }],
+    "references": [{
+      "name": "Niklas Hallenfur - Expicon AB",
+      "reference": "Henrik was very humble on the interview, but he turned out to be a fantastic developer, among the best performing consultants I have encountered.  Contributed a lot of great ideas and knowledge to the team.  \n"
+    },{
+      "name": "Jannice Dybedahl - Hewlett Packard Sweden AB",
+      "reference": "Henrik is, without a doubt, one of the best developers I have worked with during my years in the IT and Internet business.  He is fast, he understands customer needs and he contribute with great ideas when he think that systems or applications can be created in a better way than originally requested.  Henrik is a loyal and easy going person who I enjoyed working with a lot and who I recommend any company to hire!"
+    }]
+  }
+
