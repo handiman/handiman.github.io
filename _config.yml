@@ -23,10 +23,13 @@ plugins:
   - jekyll-seo-tag
 
 exclude: 
+  - typst-x86_64-unknown-linux-musl
   - node_modules
   - Gemfile
   - Gemfile.lock
   - "*.orig"
+  - "*.tar"
+  - "*.tar.*"
 
 collections:
   agreements:
