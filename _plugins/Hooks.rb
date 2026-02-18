@@ -12,11 +12,6 @@ require "rdf/vocab"
 require "asciidoctor"
 
 module Jekyll
-    Hooks.register :site, :pre_render do |site|
-        if Gem.win_platform? 
-            ENV["JEKYLL_ENV"] = 'production'
-        end            
-    end
     Hooks.register :site, :post_write do |site|
         cv = site.data['cv']
         path = "#{site.dest}/assets/henrik-becker"

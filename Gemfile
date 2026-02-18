@@ -17,10 +17,8 @@ gem "rdf-turtle"
 gem "rdf-vocab"
 
 group :jekyll_plugins do
-  gem "jekyll-readme-index"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
-  gem "jekyll-minifier"
 end
 
 if Gem.win_platform?

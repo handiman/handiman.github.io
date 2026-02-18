@@ -16,10 +16,8 @@ sass:
  style: compressed
 
 plugins:
-  - jekyll-readme-index
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-minifier
 
 exclude: 
   - typst-x86_64-unknown-linux-musl
@@ -121,11 +119,3 @@ defaults:
     values:
      sitemap: false
      layout: null
-
-readme_index:
-  enabled: false
-  remove_originals: false
-  with_frontmatter: false    
-
-jekyll-minifier:
-  compress_javascript: false  
