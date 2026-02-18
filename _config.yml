@@ -126,3 +126,6 @@ readme_index:
   enabled: false
   remove_originals: false
   with_frontmatter: false    
+
+jekyll-minifier:
+  compress_javascript: false  

@@ -2,10 +2,10 @@
   "use strict";
 
   // Sticky nav that detaches from header after scrolling
-  const header = document.querySelector("body>header");
-  const nav = document.querySelector("header nav");
+  var header = document.querySelector("body>header");
+  var nav = document.querySelector("header nav");
 
-  const observer = new IntersectionObserver(
+  var observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
         nav.classList.remove("sticky");
