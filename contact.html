@@ -1,7 +1,7 @@
 ---
 sitemap: false
 ---
-<form action="/api/contact" method="post">
+<form action="//api.{{ site.url | split: '://' | last }}/v1/contact" method="post">
     <input type="hidden" name="sender" />
     <input type="hidden" name="ts_eliot" />
     <fieldset>
