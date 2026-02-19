@@ -87,7 +87,21 @@
     </div>
 </header>
     <main id="content">
-        <meta http-equiv="refresh" content="0;/" />
+        <form action="/api/contact">
+    <input type="hidden" name="sender" />
+    <input type="hidden" name="ts_eliot" />
+    <fieldset>
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Your name" />
+
+        <label for="email">Email</label>
+        <input type="text" name="email" placeholder="Your email"/>
+
+        <label for="message">Message</label>
+        <textarea name="body" placeholder="Message"></textarea>
+    </fieldset>
+    <button type="submit">Send</button>
+</form>
     </main>
     <footer role="contentinfo">
     <div>
