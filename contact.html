@@ -1,7 +1,7 @@
 ---
 sitemap: false
 ---
-<form action="{{ site.url | replace: '://', '://api.' }}/v1/contact" method="post">
+<form class="contact-form" action="{{ site.url | replace: '://', '://api.' }}/v1/contact" method="POST">
     <input type="hidden" name="sender" />
     <input type="hidden" name="ts_eliot" />
     <fieldset>
@@ -11,8 +11,9 @@ sitemap: false
         <label for="email">Email</label>
         <input type="text" name="email" placeholder="Your email"/>
 
-        <label for="message">Message</label>
+        <label for="body">Message</label>
         <textarea name="body" placeholder="Message"></textarea>
     </fieldset>
+    <div class="status"></div>
     <button type="submit">Send</button>
 </form>
