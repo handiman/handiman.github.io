@@ -46,7 +46,9 @@
           })
         });
 
-        if (!res.ok) throw new Error("Something went wrong :/");
+        if (!res.ok) {
+          throw new Error(await res.text());
+        }
 
         status.textContent = "Message sent!";
         form.reset();
