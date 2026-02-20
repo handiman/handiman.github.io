@@ -5,8 +5,9 @@
 *.lock
 *.tar
 *.tar.*
+*.pdf
+*.docx
 typst-x86_64-unknown-linux-musl
-assets/henrik-becker*.*
 
 .DS_Store
 .sass-cache
