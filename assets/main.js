@@ -37,7 +37,7 @@
         status.textContent = "Sending...";
         
         const res = await fetch(form.action, {
-          method: form.action,
+          method: form.method,
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             name: form.name.value,
