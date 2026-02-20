@@ -15,7 +15,7 @@ module Jekyll
     Hooks.register :site, :post_write do |site|
         next unless Jekyll.env == "production"
         cv = site.data['cv']
-        path = "#{site.source}/assets/henrik-becker"
+        path = "#{site.dest}/assets/henrik-becker"
 
         puts "      Generating CV as JSON..."
         File.write("#{path}.json", JSON.dump(cv))
