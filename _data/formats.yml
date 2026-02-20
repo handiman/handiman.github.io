@@ -3,7 +3,7 @@
   url: /assets/henrik-becker.pdf
 - name: Markdown
   mime_type: text/markdown
-  url: /assets/henrik-becker.md
+  url: /assets/henrik-becker.markdown
 - name: RSS feed
   mime_type: application/rss+xml
   url: /feed.rss.xml

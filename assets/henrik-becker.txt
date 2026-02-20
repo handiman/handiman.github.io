@@ -1,6 +1,6 @@
 ---
 layout: null
-permalink: /assets/henrik-becker.md
+permalink: /assets/henrik-becker.markdown
 ---
 {% assign person = site.data.person %}{% assign profile = site.data.profile %}
 # {{ person.name }}   
