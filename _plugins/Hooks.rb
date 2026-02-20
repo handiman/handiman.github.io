@@ -13,7 +13,6 @@ require "asciidoctor"
 
 module Jekyll
     Hooks.register :site, :post_write do |site|
-        next unless Jekyll.env == "production"
         cv = site.data['cv']
         path = "#{site.dest}/assets/henrik-becker"
 
