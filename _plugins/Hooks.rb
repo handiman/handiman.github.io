@@ -13,7 +13,6 @@ require "asciidoctor"
 
 module Jekyll
     Hooks.register :site, :post_write do |site|
-        next unless Jekyll.env == "production"
         cv = site.data['cv']
         path = "#{site.source}/assets/henrik-becker"
 
@@ -24,7 +23,7 @@ module Jekyll
         File.binwrite("#{path}.bson", BSON::Document.new(cv).to_bson())
 
         puts "      Generating CV as YAML..."
-        File.write("#{path}yaml", YAML.dump(cv))
+        File.write("#{path}.yml", YAML.dump(cv))
 
         puts "      Generating CV as TOML..."
         File.write("#{path}.toml", TomlRB.dump(cv))
@@ -42,7 +41,7 @@ module Jekyll
         File.write("#{path}.ttl", Yertle.dump(cv))
 
         puts "      Generating CV as PDF..."
-        system("typst compile --font-path assets/fonts #{site.dest}/assets/henrik-becker.typ #{site.dest}/assets/henrik-becker.pdf --font-path fonts")
+        system("typst compile --font-path assets/fonts #{path}.typ #{path}.pdf --font-path fonts")
 
         puts "      Generating Agreemets as PDF..."
         Dir.foreach("#{site.source}/_agreements") do |filename|
