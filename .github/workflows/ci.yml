@@ -31,6 +31,14 @@ jobs:
           gem install bundler -v 2.5
           bundler install
           bundle exec jekyll build
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId:  ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          projectName: henrikbecker
+          directory: _site
       
       - name: Publish gh-pages
         uses: s0/git-publish-subdir-action@develop
