@@ -8,6 +8,9 @@
 *.pdf
 *.docx
 typst-x86_64-unknown-linux-musl
+.wrangler/
+.terraform/
+terraform.*
 
 .DS_Store
 .sass-cache
