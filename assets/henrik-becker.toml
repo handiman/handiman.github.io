@@ -1,0 +1,552 @@
+allRoles = ["Backend Developer", "DevOps", "Fullstack Developer", "IT Consultant", "Lead Developer", "PC Technician", "Programmer", "Senior Software Engineer", "Shop Assistant", "Software Engineer", "Study Circle Leader", "System Developer", "TDD mentor", "Web Developer"]
+allSkills = [".Net", ".Net 5-9", ".Net Aspire", ".Net Core", ".Net Framework", "AJAX", "ASP", "Active Directory", "App Services", "Asp.Net", "Asp.Net Core", "Asp.Net MVC", "Asp.Net MVC 5", "Asp.Net MVC4", "Asp.Net Web API", "Asp.Net Web Api", "Asp.Net Web Forms", "Azure", "Azure App Services", "Azure DevOps", "BDD", "Blazor", "Blob Storage", "C#", "COM", "CQRS", "CSS", "CSS3", "Certified Scrum Master", "Continuous Deployment", "Continuous Integration", "Design Patterns", "DocNet", "Docker", "Domain Driven Design", "EPiServer", "EPiServer 4", "Entity Framework", "EntityFramework 6", "Event Grid", "Function Apps", "GitHub Actions", "GroupWise Administrative Objects API", "HTML", "HTML5", "IIS", "Identity Management", "Identity Server", "JavaScript", "Kafka", "KnockoutJS", "MSMQ", "Micro Services", "Microservices", "Microsoft Identity Integration Server", "Microsoft Orleans", "NHibernate", "NInject", "Novell C API", "Novell eDirectory", "NuGet", "Octopus Deploy", "Oracle", "PostgreSQL", "Queue Storage", "React", "Redux", "SOLID", "SQL Server", "Service Bus", "SpecFlow", "Specification By Example", "Specification by Example", "Spring.Net", "Sql Database", "Stencil", "Storybook", "T-SQL", "TDD", "Team City", "Team Foundation Server", "Team Foundation Server- XML", "TeamCity", "Test Driven Development", "TypeScript", "VB.Net", "VBA", "VBScript", "Visual Basic 5", "Visual Basic 6", "WCF", "WMI", "WPF", "WebForms", "WebServices", "WiX", "WinForms", "Windows Services", "Winforms", "XHTML", "XML", "XSLT", "jQuery"]
+[introduction]
+description = "Henrik Becker is an experienced .Net developer and solution architect dedicated to delivering quality software practicing Agile Processes, Test Driven Development, applying SOLID principles and a healthy dose of dad-jokes.\n"
+email = "contact@henrikbecker.se"
+image = "https://www.henrikbecker.net/assets/img/landscape-800x534.jpg"
+jobTitle = "Senior Software Engineer"
+name = "Henrik Becker"
+sameAs = ["https://www.henrikbecker.net", "https://github.com/handiman", "https://www.linkedin.com/prettygoodprogrammer"]
+telephone = "+46 (0)73 422 83 43"
+[[allProjects]]
+endDate = "2025-12"
+roles = "Senior Software Engineer"
+startDate = "2021-10"
+summary = "Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools. Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for one of the core applications. Developed Proofs of Concept for new systems and features to evaluate feasibility and drive innovation. Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance. Conducted and assessed technical interviews to support recruitment and team growth."
+title = "Betsson"
+type = nil
+[[allProjects.competencies]]
+name = "Architecture"
+tech = ["CQRS", "Domain Driven Desing", "Event Modeling", "Event Sourcing", ".Net Aspire", "Microsoft Orleans"]
+weight = 0.75
+[[allProjects.competencies]]
+name = "Automation"
+tech = ["Docker", "GitHub Actions", "Octopus Deploy"]
+weight = 0.75
+[[allProjects.competencies]]
+name = "Backend development"
+tech = ["C#", ".Net 5-9", ".Net Aspire", "Asp.Net Core", "Microsoft Orleans", "Blazor", "SQL Server", "PostgreSQL"]
+weight = 1
+[[allProjects.competencies]]
+name = "System integration"
+tech = ["Kafka", "Rest APIs", "WCF"]
+weight = 0.9
+[[allProjects]]
+endDate = "2021-10"
+roles = "Fullstack Developer"
+startDate = "2021-02"
+summary = "OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app under development. Account management API built with Asp.Net Core and .Net 5 hosted on Azure. Contentful CMS content modeling and integration."
+title = "Adlibris"
+type = nil
+[[allProjects.competencies]]
+name = "Backend development"
+tech = ["C#", "Asp.Net Core", "Asp.Net MVC", "SQL Server"]
+weight = 0.9
+[[allProjects.competencies]]
+name = "Front end development"
+tech = ["JavaScript", "React", "jQuery"]
+weight = 0.5
+[[allProjects.competencies]]
+name = "System integration"
+tech = ["Identity Server", "Azure App Services"]
+weight = 0.75
+[[allProjects.competencies]]
+name = "Automation"
+tech = ["Octopus Deploy"]
+weight = 0.5
+[[allProjects]]
+endDate = "2021-01"
+roles = "Software Engineer"
+startDate = "2020-10"
+summary = "Automated deployment using Octopus Deploy. Improvements to code readability and testability. Implementing new functionality in legacy systems"
+title = "Norconsult Astando"
+type = nil
+[[allProjects.competencies]]
+name = "Backend development"
+tech = ["C#", "Asp.Net Core", "Asp.Net Web Forms", "WCF"]
+weight = 0.75
+[[allProjects.competencies]]
+name = "Frontend development"
+tech = ["TypeScript", "JavaScript", "KnockoutJS"]
+weight = 0.75
+[[allProjects.competencies]]
+name = "Automation"
+tech = ["TeamCity", "Octopus Deploy"]
+weight = 0.5
+[[allProjects]]
+endDate = "2020-06"
+roles = "Software Engineer"
+startDate = "2019-12"
+summary = "Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources. Improved test automation by making functional/integration tests require less manual intervention. Reduced deployment time thanks to improved test automation."
+title = "Open Payments"
+type = nil
+[[allProjects.competencies]]
+name = "Backend development"
+tech = ["C#", "Asp.Net Core"]
+weight = 0.9
+[[allProjects.competencies]]
+name = "Frontend development"
+tech = ["React", "Redux", "TypeScript"]
+weight = 0.9
+[[allProjects.competencies]]
+name = "System integration"
+tech = ["Azure functions"]
+weight = 0.5
+[[allProjects.competencies]]
+name = "Automation"
+tech = ["Azure DevOps"]
+weight = 0.3
+[[allProjects]]
+competencies = nil
+endDate = "2019-06"
+roles = "Software Engineer"
+startDate = "2019-01"
+summary = "Zero down time deployment. Simplified CI process with Azure DevOps build pipelines"
+title = "Insplanet"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2018-11"
+roles = "Software Engineer"
+startDate = "2018-04"
+summary = "Automated deployment for the project IsyRoad resulting in:. Deployment time decreasing from ~ 45 minutes to ~ 5 minutes per application instance. Deployment releated errors reduced by nearly 100 %"
+title = "Norconsult Astando"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2018-04"
+roles = "Software Engineer, TDD mentor"
+startDate = "2017-10"
+summary = "Development of the payment solution \"Svea Checkout\" being rolled out in Sweden, Norway and Finland. Improved api documentation by generating most of it automatically. Improved test readability by rewriting them as executable specifications"
+title = "Svea Ekonomi"
+type = nil
+[[allProjects]]
+endDate = "2017-07"
+roles = "Fullstack Developer, DevOps"
+startDate = "2014-11"
+summary = "Development of the Video on Demand sites Film2Home and Plejmo. Designed Plejmo's REST API. Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes. Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites."
+title = "Film2Home/Plejmo"
+type = nil
+[[allProjects.competencies]]
+name = "Backend development"
+tech = ["C#", ".Net Framework", "Asp.Net MVC", "Asp.Net Web Api", "NHibernate", "SQL Server", "EPiServer"]
+weight = 0.9
+[[allProjects.competencies]]
+name = "Architecture"
+tech = ["CQRS", "Micro Services", "Rest APIs"]
+weight = 0.4
+[[allProjects.competencies]]
+name = "System integration"
+tech = ["Azure Service Bus", "Rest APIs", "WCF"]
+weight = 0.6
+[[allProjects.competencies]]
+name = "Frontend development"
+tech = ["JavaScript", "jQuery", "KnockoutJS"]
+weight = 0.7
+[[allProjects.competencies]]
+name = "Automation"
+tech = ["Octopus Deploy"]
+weight = 0.7
+[[allProjects]]
+competencies = nil
+endDate = "2014-09"
+roles = "Backend Developer"
+startDate = "2014-06"
+summary = "Maintenance of a legacy solution for managing requisitions at Sweden's public employment services."
+title = "Arbetsförmedlingen"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2014-06"
+roles = "Fullstack Developer"
+startDate = "2014-04"
+summary = "Development of an application for managing consultant CVs built on Asp.Net MVC and hosted on Windows Azure."
+title = "Qbranch Competence Manager"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2013-11"
+roles = "Lead Developer"
+startDate = "2012-03"
+summary = "Reduced complexity and system decay through refactoring and the application of common software architecture patterns. Guided the development teams towards an iterative approach to software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle. Introduced the idea of living documentation in the form of executable specifications."
+title = "Wasa Kredit"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2012-03"
+roles = "System Developer"
+startDate = "2011-09"
+summary = nil
+title = "Cale Access AB"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2011-09"
+roles = "System Developer"
+startDate = "2011-06"
+summary = "Was the key person in introducing behavior driven development. Lay the foundation for automated regression tests and living documentation by taking existing user stories and turning them into executable specifications using SpecFlow."
+title = "CashGuard"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2011-05"
+roles = "System Developer"
+startDate = "2009-09"
+summary = "Was instrumental in the migration of the payment platform's database from Oracle to SQL Server. Worked with the development of a WCF based payment platform adding support for automatic payment services and prompts. Quality assurance and performance optimization of connecting systems."
+title = "Länsförsäkringar"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2009-08"
+roles = "System Developer"
+startDate = "2009-08"
+summary = "Development of a WPF-based sales support system for managing articles and campaigns published on tradera.se."
+title = "Tradera"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2009-05"
+roles = "System Developer"
+startDate = "2008-02"
+summary = "Client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg."
+title = "Astando"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2008-02"
+roles = "Fullstack Developer"
+startDate = "2006-03"
+summary = "Was a key person in the development of hitta.se - one of Swedens top 10 most popular sites at the time. Created the services hitta.se/trafiknytt (traffic information) and hitta.se/vader (weather information). Maintenance of hitta.se's internal order system"
+title = "Hitta.se"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2006-03"
+roles = "IT Consultant"
+startDate = "2006-03"
+summary = "Quality analysis of database design. Trouble shooting and optimization of SQL scripts for data import/export and database maintenance. VBScript for SQL Server inventory using WMI."
+title = "ICA Banken"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2006-03"
+roles = "IT Consultant"
+startDate = "2005-10"
+summary = "Was the single developer on this Identity Management project that would become Microsoft's reference case for Microsoft Identity Integration Server (MIIS). Implemented management agents for the client's HR system, the directory services eDirectory and Active Directory. Implemented automatic creation of GroupWise accounts and Novell Server home directories. Wrote rules extensions for attribute flow and joins."
+title = "Sigtuna Council"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2005-07"
+roles = "IT Consultant"
+startDate = "2005-07"
+summary = "Maintenance of the client's system inventory tool."
+title = "Sveriges Television"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2005-07"
+roles = "Web Developer"
+startDate = "2005-05"
+summary = "Migration of Taxi Stockholm's intranet and external web site from Spirello to EpiServer. Integration with the client's Unix based booking system."
+title = "Taxi Stockholm"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2001-01"
+roles = "Web Developer"
+startDate = "2000-01"
+summary = "QA and supporting colleges during development and maintenance of Siemens Medical's intranet \"EMPower\"."
+title = "Siemens Medical"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "2005-03"
+roles = "Web Developer"
+startDate = "1999-09"
+summary = "Requirements analysis, use case design, system design and development of a web based admininstration interface for information about and registrations for customer events for HP EMEA. Requirements analysis, design and development of a web based administration interface for HP's scandinavian products database. Development of templates for the client's EpiServer based intranet. Maintenance and further development of www.hp.se."
+title = "Hewlett Packard Sweden"
+type = nil
+[[allProjects]]
+competencies = nil
+endDate = "1999-07"
+roles = "Programmer"
+startDate = "1998-10"
+summary = "Designed and developed a document management system based on Visual Basic 5. Assisted in developing the company web site."
+title = "Looström & Gelin AB"
+type = nil
+[[certifications]]
+achievementDate = 2021-06-24
+issuer = "Microsoft"
+title = "Microsoft Certified: Azure Developer Associate"
+[[certifications]]
+achievementDate = 2016-09-26
+issuer = "Microsoft"
+title = "MCSA: Web Applications - Certified 2016"
+[[coreSkills]]
+name = "Backend development"
+skills = [".NET", "C#", "ASP.NET Core"]
+[[coreSkills]]
+name = "System integration"
+skills = ["REST", "message queues", "WCF"]
+[[coreSkills]]
+name = "Cloud-native architecture"
+skills = ["Azure", "serverless", "containers"]
+[[coreSkills]]
+name = "Automation and CI/CD pipelines"
+[[coreSkills]]
+name = "Clean code, SOLID principles, and developer experience"
+[[earlyCareer]]
+competencies = nil
+endDate = "1998-10"
+roles = "PC Technician"
+startDate = "1997-07"
+summary = nil
+title = "Lidingö Stad"
+type = "Municipal IT & public services"
+[[earlyCareer]]
+competencies = nil
+endDate = "1995-06"
+roles = "Shop Assistant"
+startDate = "1986-12"
+summary = nil
+title = "Konsum"
+type = "Retail cooperative & grocery operations"
+[[earlyCareer]]
+competencies = nil
+endDate = "1994-07"
+roles = "Study Circle Leader"
+startDate = "1994-01"
+summary = nil
+title = "Sollentuna Jazz Workshop"
+type = "Community music education & workshops"
+[[earlyCareer]]
+competencies = nil
+endDate = "1992-09"
+roles = "Shop Assistant"
+startDate = "1992-06"
+summary = nil
+title = "Kantarellen Livs"
+type = "Local grocery retailer"
+[[earlyCareer]]
+competencies = nil
+endDate = "1986-12"
+roles = "Shop Assistant"
+startDate = "1986-08"
+summary = nil
+title = "Karena Zoo, Lek & Hobby"
+type = "Toy, hobby & pet supply retailer"
+[[education]]
+description = "Music"
+period = "1992 - 1993"
+title = "Kulturama"
+[[education]]
+description = "Municipal adult education"
+period = "1995 - 1997"
+title = "Komvux Lidingö"
+[[featuredProjects]]
+endDate = "2025-12"
+roles = "Senior Software Engineer"
+startDate = "2021-10"
+summary = "Contributed to the design, development, and maintenance of event-sourced, gamification-oriented applications featuring real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools. Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for one of the core applications. Developed Proofs of Concept for new systems and features to evaluate feasibility and drive innovation. Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance. Conducted and assessed technical interviews to support recruitment and team growth."
+title = "Betsson"
+type = nil
+[[featuredProjects.competencies]]
+name = "Architecture"
+tech = ["CQRS", "Domain Driven Desing", "Event Modeling", "Event Sourcing", ".Net Aspire", "Microsoft Orleans"]
+weight = 0.75
+[[featuredProjects.competencies]]
+name = "Automation"
+tech = ["Docker", "GitHub Actions", "Octopus Deploy"]
+weight = 0.75
+[[featuredProjects.competencies]]
+name = "Backend development"
+tech = ["C#", ".Net 5-9", ".Net Aspire", "Asp.Net Core", "Microsoft Orleans", "Blazor", "SQL Server", "PostgreSQL"]
+weight = 1
+[[featuredProjects.competencies]]
+name = "System integration"
+tech = ["Kafka", "Rest APIs", "WCF"]
+weight = 0.9
+[[featuredProjects]]
+endDate = "2017-07"
+roles = "Fullstack Developer, DevOps"
+startDate = "2014-11"
+summary = "Development of the Video on Demand sites Film2Home and Plejmo. Designed Plejmo's REST API. Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes. Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites."
+title = "Film2Home/Plejmo"
+type = nil
+[[featuredProjects.competencies]]
+name = "Backend development"
+tech = ["C#", ".Net Framework", "Asp.Net MVC", "Asp.Net Web Api", "NHibernate", "SQL Server", "EPiServer"]
+weight = 0.9
+[[featuredProjects.competencies]]
+name = "Architecture"
+tech = ["CQRS", "Micro Services", "Rest APIs"]
+weight = 0.4
+[[featuredProjects.competencies]]
+name = "System integration"
+tech = ["Azure Service Bus", "Rest APIs", "WCF"]
+weight = 0.6
+[[featuredProjects.competencies]]
+name = "Frontend development"
+tech = ["JavaScript", "jQuery", "KnockoutJS"]
+weight = 0.7
+[[featuredProjects.competencies]]
+name = "Automation"
+tech = ["Octopus Deploy"]
+weight = 0.7
+[[featuredProjects]]
+endDate = "2021-10"
+roles = "Fullstack Developer"
+startDate = "2021-02"
+summary = "OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app under development. Account management API built with Asp.Net Core and .Net 5 hosted on Azure. Contentful CMS content modeling and integration."
+title = "Adlibris"
+type = nil
+[[featuredProjects.competencies]]
+name = "Backend development"
+tech = ["C#", "Asp.Net Core", "Asp.Net MVC", "SQL Server"]
+weight = 0.9
+[[featuredProjects.competencies]]
+name = "Front end development"
+tech = ["JavaScript", "React", "jQuery"]
+weight = 0.5
+[[featuredProjects.competencies]]
+name = "System integration"
+tech = ["Identity Server", "Azure App Services"]
+weight = 0.75
+[[featuredProjects.competencies]]
+name = "Automation"
+tech = ["Octopus Deploy"]
+weight = 0.5
+[[featuredProjects]]
+endDate = "2020-06"
+roles = "Software Engineer"
+startDate = "2019-12"
+summary = "Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources. Improved test automation by making functional/integration tests require less manual intervention. Reduced deployment time thanks to improved test automation."
+title = "Open Payments"
+type = nil
+[[featuredProjects.competencies]]
+name = "Backend development"
+tech = ["C#", "Asp.Net Core"]
+weight = 0.9
+[[featuredProjects.competencies]]
+name = "Frontend development"
+tech = ["React", "Redux", "TypeScript"]
+weight = 0.9
+[[featuredProjects.competencies]]
+name = "System integration"
+tech = ["Azure functions"]
+weight = 0.5
+[[featuredProjects.competencies]]
+name = "Automation"
+tech = ["Azure DevOps"]
+weight = 0.3
+[[languages]]
+name = "Swedish"
+proficiency = "Native"
+[[languages]]
+name = "English"
+proficiency = "Fluent (IELTS overall score 8.5)"
+[[professionalExperience]]
+competencies = nil
+endDate = "present"
+roles = "IT Consultant"
+startDate = "2017-07"
+summary = "Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm urban area."
+title = "Henrik Becker Consulting AB"
+type = nil
+[[professionalExperience]]
+competencies = nil
+endDate = "2025-12"
+roles = "Senior Software Engineer"
+startDate = "2023-12"
+summary = nil
+title = "Betsson"
+type = "Global online gaming & sportsbook enterprise"
+[[professionalExperience]]
+competencies = nil
+endDate = "2017-07"
+roles = "Fullstack Developer"
+startDate = "2015-09"
+summary = "Continued development of the Video on Demand site Plejmo. Designed version 2 of Plejmo's Rest API. Continued improving the CI/CD processes I set up at Film2Home"
+title = "MagineTV"
+type = "Cloud‑based TV streaming platform, startup"
+[[professionalExperience]]
+competencies = nil
+endDate = "2015-08"
+roles = "Fullstack Developer"
+startDate = "2014-11"
+summary = "Development of the Video on Demand sites Film2Home and Plejmo. Designed version 1 of Plejmo's Rest API. Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes. Increased performance by refactoring from a traditional n-tier architecture to a service bus architcure thus offloading the front end sites."
+title = "Film2Home"
+type = "Digital movie rental & streaming service"
+[[professionalExperience]]
+competencies = nil
+endDate = "2014-09"
+roles = "IT Consultant"
+startDate = "2014-04"
+summary = "Resource consulting at Organizations in Stockholm CBD. Development of Qbranch Competence Manager used for finding the right consultant for an assignment."
+title = "Qbranch"
+type = "IT infrastructure & managed services consultancy"
+[[professionalExperience]]
+competencies = nil
+endDate = "2013-11"
+roles = "Lead Developer"
+startDate = "2012-03"
+summary = "Reduced complexity through refactoring. Introduced living documentation in the form of executable specifications. Guided development teams towards a more agile approached software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle."
+title = "Wasa Kredit"
+type = "Financial services & leasing provider, enterprise"
+[[professionalExperience]]
+competencies = nil
+endDate = "2012-03"
+roles = "IT Consultant"
+startDate = "2008-01"
+summary = "IT Consultant with assignments at Länsförsäkringar, Cale Access, Cash Guard, Tradera and Astando."
+title = "Avega"
+type = "IT consultancy specializing in enterprise solutions"
+[[professionalExperience]]
+competencies = nil
+endDate = "2008-01"
+roles = "Fullstack Developer"
+startDate = "2007-12"
+summary = "Fullstack Developer at hitta.se"
+title = "Aftonbladet Tillväxtteknik 2 AB"
+type = "Digital media & product development unit"
+[[professionalExperience]]
+competencies = nil
+endDate = "2007-12"
+roles = "IT Consultant"
+startDate = "2007-04"
+summary = "Fullstack Developer at hitta.se"
+title = "Inverso"
+type = "IT consultancy focused on business systems"
+[[professionalExperience]]
+competencies = nil
+endDate = "2007-04"
+roles = "IT Consultant"
+startDate = "2005-04"
+summary = "Fullstack Developer at hitta.se. System Integration Consultant assignments at Sigtuna Council, ICA Banken, Taxi Stockholm. Was the single developer on an identity management project at Sigtuna Council that would become Microsoft's reference project for Microsoft Identity Integration Server."
+title = "Qbranch"
+type = "IT infrastructure & managed services consultancy"
+[[professionalExperience]]
+competencies = nil
+endDate = "2005-03"
+roles = "IT Consultant"
+startDate = "2002-01"
+summary = "Web development for Hewlett Packard Sweden"
+title = "eWork"
+type = "IT consultant broker & sourcing partner"
+[[professionalExperience]]
+competencies = nil
+endDate = "2002-01"
+roles = "IT Consultant"
+startDate = "1999-09"
+summary = "Web development for Hewlett Packard Sweden, Compaq, Siemens Medical and IconMedialab's intranet."
+title = "Icon Medialab"
+type = "Digital agency & web solutions pioneer"
+[[professionalExperience]]
+competencies = nil
+endDate = "1999-07"
+roles = "IT Consultant"
+startDate = "1998-10"
+summary = "Developed a document management system based on Visual Basic 5 for Looström & Gelin AB. Built the company web site based on ASP"
+title = "Innitek"
+type = "IT consultancy focused on custom software"
