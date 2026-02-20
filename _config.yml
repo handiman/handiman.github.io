@@ -27,6 +27,7 @@ exclude:
   - Gemfile.lock
   - "*.orig"
   - "*.bicep"
+  - "*.toml"
   - "*.tar"
   - "*.tar.*"
 
