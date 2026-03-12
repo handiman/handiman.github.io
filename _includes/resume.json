@@ -9,7 +9,7 @@
       "name": {{ person.name | jsonify }},
       "label": {{ person.jobTitle | jsonify }},
       "image": {{ person.image | jsonify }},
-      "url": {{ site.production_url | jsonify }},
+      "url": {{ site.url | jsonify }},
       "summary": {{ person.description | jsonify }},
       "profiles": [
         { "network": "GitHub", "url": "https://github.com/handiman", "username": "handiman" },
