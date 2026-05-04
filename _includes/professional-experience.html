@@ -15,11 +15,11 @@
             </time>
         </p>
     </header>
-    {% if forloop.first %}
+    {% if xp.mission %}
         <p>{{ xp.mission }}</p>
         <h5>Clients:</h5>
         {% include clients.html %}
     {% elsif xp.summary %}        
-        <p>{{ xp.summary | join: " \n" }}</p>
+        <p>{{ xp.summary | join: " " }}</p>
     {% endif %}
 </article>{% endif %}{% endfor %}
