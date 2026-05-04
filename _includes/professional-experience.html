@@ -19,5 +19,7 @@
         <p>{{ xp.mission }}</p>
         <h5>Clients:</h5>
         {% include clients.html %}
+    {% elsif xp.summary %}        
+        <p>{{ xp.summary | join: " \n" }}</p>
     {% endif %}
 </article>{% endif %}{% endfor %}
