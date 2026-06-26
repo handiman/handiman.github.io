@@ -1,6 +1,0 @@
-- name: Azure DevOps
-  level: Advanced
-- name: Octopus Deploy
-  level: Advanced
-- name: TeamCity
-  level: Intermediate
