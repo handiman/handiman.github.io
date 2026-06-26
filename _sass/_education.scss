@@ -1,0 +1,24 @@
+.education {
+  margin-bottom: var(--space-2);
+}
+.education > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  /*border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-1);
+  margin-bottom: var(--space-2);*/
+}
+
+.education > header h3 {
+  margin: 0;
+}
+
+.education > header h3 a {
+  text-decoration: none;
+}
+
+.education > header time {
+  white-space: nowrap;
+  margin-left: var(--space-2);
+}

@@ -1,0 +1,47 @@
+- name: ATS-friendly text
+  mime_type: text/plain
+  url: /assets/henrik-becker.txt  
+#- name: PDF
+#  mime_type: application/pdf
+#  url: /assets/henrik-becker.pdf
+- name: JSON-LD 
+  mime_type: application/json
+  url: /assets/henrik-becker.jsonld
+- name: JSON Resumé
+  mime_type: application/json
+  url: /assets/henrik-becker.resume.json
+- name: Markdown
+  mime_type: text/markdown
+  url: /assets/henrik-becker.markdown
+#- name: BSON
+#  mime_type: application/bson
+#  url: /assets/henrik-becker.bson
+#- name: YAML
+#  mime_type: application/x-yaml
+#  url: /assets/henrik-becker.yaml
+#- name: TOML
+#  mime_type: application/toml
+#  url: /assets/henrik-becker.toml
+#- name: AsciiDoc
+#  mime_type: text/asciidoc
+#  url: /assets/henrik-becker.adoc
+#- name: CBOR
+#  mime_type: application/cbor
+#  url: /assets/henrik-becker.cbor
+#- name: MessagePack
+#  mime_type: application/msgpack
+#  url: /assets/henrik-becker.msgpack
+#- name: RDF/Turtle
+#  mime_type: text/turtle
+#  url: /assets/henrik-becker.ttl
+- name: RSS feed
+  mime_type: application/rss+xml
+  url: /feed.rss.xml
+- name: Atom feed
+  mime_type: application/atom+xml
+  url: /feed.atom.xml
+#- name: JSON feed
+#  mime_type: application/json
+#  url: /feed.json
+
+

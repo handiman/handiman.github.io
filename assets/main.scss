@@ -1,0 +1,59 @@
+@use "tokens";
+@use "typography";
+@use "layout-default";
+@use "nav";
+@use "forms";
+@use "cards";
+@use "competency-summary";
+@use "agreement";
+@use "employer";
+@use "education";
+@use "swatch";
+@use "easter-egg";
+@use "print";
+
+
+/* Baseline grid overlay (optional but amazing) */
+body.debug::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255,0,0,0.15) 1px,
+    transparent 1px
+  );
+  background-size: 100% 4px;
+  z-index: 9999;
+}
+
+.hidden {
+    display: none;
+}
+
+address {
+    font-style: normal;
+    &>*:last-child{
+        margin-top: var(--space-2);
+    }
+}
+
+.theme-toggle {
+    position: fixed;
+    cursor: pointer;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    color: transparent;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border: none;
+}
+
+.flip-text {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}

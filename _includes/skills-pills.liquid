@@ -1,0 +1,14 @@
+<ul class="skills">
+    
+    {% if skills %}
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    {% elsif competencies %}
+        {% for competency in competencies %}
+            {% for skill in competency.tech %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        {% endfor %}
+    {% endif %}
+</ul>

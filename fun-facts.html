@@ -1,0 +1,12 @@
+---
+layout: page
+title: Fun Facts
+sitemap: false
+---
+<div data-section="{{ page.title }}" data-source="{{ page.url | absolute_url }}">
+    <h2>Fun Facts</h2>{% for fact in collections.fun_facts %}
+    <article{% if fact.lang %} data-language="{{fact.data.lang}}"{% endif %} data-section="Fun Facts" data-source="{{ fact.data.url | absolute_url }}">
+        <h3>{{ fact.data.title }}</h3>
+        {{ fact.content }}
+    </article>{% endfor %}    
+</div>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>{{ '/' | absolute_url }}</id>
+  <title>{{ company.name | xml_escape }}</title>
+  <link href="{{ '/' | absolute_url }}" />
+  <link href="{{ page.url | absolute_url }}" rel="self" />
+  <updated>{{ site.time | date_to_rfc822 }}</updated>
+  <author>
+    <name>{{ person.name | xml_escape }}</name>
+  </author>
+  <rights>Copyright {{ site.time | date: '%Y' }} {{ company.name | xml_escape }}</rights>{% for assignment in collections.assignments reversed %}
+  <entry>
+    <id>{{ assignment.url | absolute_url }}</id>
+    <title>{{ assignment.data.roles | join: ", " | xml_escape }} at {{ assignment.data.title | xml_escape }}</title>
+    <published>{{ assignment.data.start_date | date_to_rfc822 }}</published>
+    <updated>{{ assignment.data.start_date | date_to_rfc822 }}</updated>
+    <content>
+      {{ assignment.data.roles | join: ", "| escape }} at {{ assignment.data.title | xml_escape }}
+      {{ assignment.data.start_date }} - {{ assignment.data.end_date }}
+      {{ assignment.data.description }}{% for highlight in assignment.data.highlights %}
+      {{ highlight | xml_escape }}{% endfor %}
+      Skills: {{ assignment.data.skills | normalizeSkills | join: ', ' | xml_escape }}{{ assignment.data.competencies | normalizeSkills | join: ', ' | xml_escape }}
+    </content>
+  </entry>{% endfor %}
+</feed>

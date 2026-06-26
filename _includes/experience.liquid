@@ -1,0 +1,54 @@
+<article class="employer" id="{{ xp.fileSlug }}" data-section="{{ xp.data.organization.name }}" data-source="{{ xp.url }}#{{ xp.fileSlug }}">
+    <header>
+        <h3>
+            <a href="{{ xp.url }}">{{ xp.data.title }}
+            {% if xp.data.assignments.size == 0 %} - {{ xp.data.roles | join: ", " }}{% endif %}
+            </a></h3>
+        <time>
+            <span>{{ xp.data.start_date | date: '%Y-%m'}}</span>
+            <span>{{ xp.data.end_date | date: '%Y-%m' }}</span>
+        </time>
+        <!--
+        <p>
+            <em>
+                {% if xp.data.mission %}{{ xp.data.mission }}
+                {% elsif xp.data.organization.type %}{{ xp.data.organization.type }}
+                {% else %}{{ xp.data.roles | join: ", " }}
+                {% endif %}
+            </em>
+            <span>{{ xp.data.roles | join: ", " }}</span>
+            <time>
+                <span>{{ xp.data.start_date | date: '%Y-%m'}}</span>
+                <span>{{ xp.data.end_date | date: '%Y-%m' }}</span>
+            </time>
+        </p>
+        {% if xp.data.description %}<p>{{ xp.data.description }}</p>{% endif %}-->
+    </header>
+    <em>{% if xp.data.mission %}{{ xp.data.mission }}{% else %}{{ xp.data.organization.type }}{% endif %}</em>
+    {% if xp.data.description %}<p>{{ xp.data.description }}</p>{% endif %}
+    {% if xp.data.highlights %}
+    <ul>{% for item in xp.data.highlights %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    <ul>{% endif %}
+    {% include 'skills-pills', skills: xp.data.skills, competencies: xp.data.competencies %}
+    {% for assignment in xp.data.assignments %}
+        <article class="assignment">
+            <header>
+                <h4><a href="{{ assignment.url }}">{{ assignment.data.title }} - {{ assignment.data.roles | join: ", " }}</a></h4>
+                <time>
+                    <span>{{ assignment.data.start_date | date: '%Y-%m'}}</span>
+                    <span>{{ assignment.data.end_date | date: '%Y-%m' }}</span>
+                </time>
+            </header>
+            {% if assignment.page.excerpt %}<p>{{ assignment.page.excerpt | markdownify }}</p>{% endif %}
+            {% if assignment.data.highlights %}
+            <ul>{% for item in assignment.data.highlights %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            <ul>
+            {% endif %}
+            {% include 'skills-pills', skills: assignment.data.skills, competencies: assignment.data.competencies %}
+        </article>
+    {% endfor %}
+</article>

@@ -1,2 +1,6 @@
-jekyll/
+_*
+_*/
 README.md
+package.json
+package-lock.json
+google*.html

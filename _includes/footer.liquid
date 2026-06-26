@@ -1,0 +1,34 @@
+<footer role="contentinfo">
+    <div>
+        <section id="links" data-source="{{ page.url }}#links" class="no-print">
+            <h5>Links</h5>
+            <ul>
+                <li><a href="{{ '/' }}">Home</a></li>
+                <li><a href="{{ '/cv' }}">CV</a></li>
+                <li><a href="{{ '/about' }}">About</a></li>
+            </ul>
+        </section>
+        <section id="download" data-source="{{ page.url }}#download" class="no-print">
+            <h5>CV for download</h5> 
+            <ul>{% for format in formats | limit: 6 %}<li><a href="{{ format.url }}" title="Download my CV in {{ format.name }} format">{{ format.name }}</a></li>{% endfor %}</ul>
+        </section>
+        <section id="company-info" data-section="Company information" data-source="{{ page.url }}#company-info">
+            <address>
+                <h5>{{ company.name }}</h5>
+                <div>{{ company.address.streetAddress }}</div>
+                <div>{{ company.address.postalCode }} {{ company.address.addressLocality }}</div>
+                <div>{{ company.address.addressCountry }}</div>
+                <div class="print">{{ company.vatId }}</div>
+            </address>
+        </section>
+        <section id="about" data-source="{{ page.url }}#about" class="no-print">
+            <h5>About {{ person.givenName }}</h5>
+            <div>{{ person.description }}</div>
+        </section>
+    </div>
+    <div class="no-print">
+        <div>Copyright &copy; 2017 - {{ site.time | date: '%Y' }} {{ company.name }}</div>
+        <div>{% for social in same_as %}<a href="{{ social.url }}" title="{{ social.network }}"><i class="fab fa-{{ social.network | downcase }}"></i></a>{% endfor %}</div>
+    </div>
+</footer>
+

@@ -1,0 +1,103 @@
+<section id="introduction" data-source="{{ page.url }}#introduction">
+    <h2>Introduction</h2>
+    <p>{{ summary }}</p>
+</section>
+<section id="core-competencies" data-source="{{ page.url }}#core-competencies">
+    <h2>Core Compentencies</h2>
+    <ul>{% for skillCategory in coreSkills %}
+        <li>{{ skillCategory.name }}{% if skillCategory.skills %} ({{ skillCategory.skills | join: ', ' }}){% endif %}
+        </li>{% endfor %}
+    </ul>
+</section>
+<section id="languages" data-source="{{ page.url }}#languages" data-section="Languages">
+    <h2>Languages</h2>
+    <ul>{% for language in languages %}<li><strong>{{ language.name }}:</strong> {{ language.proficiency }}</li>{%
+        endfor %}</ul>
+</section>
+<section id="certifications" data-source="{{ page.url }}#certifications" data-section="Certifications">
+    <h2>Certifications</h2>
+    <ul>{% for cert in certs %}<li><strong>{{ cert.title }}:</strong> {% if cert.issuer %}{{ cert.issuer }} {% endif
+            %}{% if cert.achievement_date %}(<date>{{ cert.achievement_date }}</date>){% endif %}</li>{% endfor %}</ul>
+</section>
+<section id="work-experience">
+    {% include 'professional-experience' %}
+    {% include 'early-career' %}
+</section>
+<section id="education" data-source="{{ page.url }}#education" data-section="Education">
+    <h2>Education</h2>
+    {% for education in collections.education %}
+    <article class="education">
+        <header>
+            <h3><a href="{{ education.url }}">{{ education.data.title }}</a></h3>
+            <time>{% if education.data.start_year %}{{ education.data.start_year }}{% endif %} &dash; {% if
+                education.data.end_year %}{{ education.data.end_year }}{% else %}present{% endif %}</time>
+        </header>
+        <em>{{ education.data.description }}</em>
+    </article>{% endfor %}
+</section>
+<section id="recommendations" data-source="{{ page.url }}#recommendations" data-section="Recommendations">
+    <h2>Recommendations</h2>{% for recommendation in recommendations %}
+    <blockquote>
+        <p>{{ recommendation.text }}</p>
+        <footer>- {{ recommendation.name }}</footer>
+    </blockquote>{% endfor %}
+</section>
+<template id="all-roles">
+    <h2>Roles</h2> 
+    <p>{{ collections.all_roles | join: ", " }}</p>
+</template>
+<template id="all-skills">
+    <h2>Skills</h2> 
+    <p>{{ collections.all_skills | join: ", " }}</p>
+</template>
+<template id="skills-by-category">
+    <h2>Skills</h2><div>{% for skillCategory in categorizedSkills %}{% capture skillCategorySlug %}{{ skillCategory.name | replace: '/', '-' | replace: ' ', '-' | replace: '--', '' | downcase }}{% endcapture %}
+    <article title="{{ skillCategory.name }} - {{ skillCategory.level }}" data-section="Skills by Category - {{ skillCategory.name }}" data-level="{{ skillCategory.level }}" data-source="{{ page.url | absolute_url }}#{{ skillCategorySlug }}">
+        <h3>{{ skillCategory.name }}</h3>
+        <ul>{% for skill in skillCategory.skills %}<li title="{{ skill }} - {{ skillCategory.level }}">{{ skill }}</li>{% endfor %}</ul>
+    </article>{% endfor %}</div>
+</template>   
+<template id="interests">
+    <h2>Interests</h2>
+    <ul>{% for interest in interests %}
+        <li>{{ interest.name }}</li>{% endfor %}
+    </ul>
+</template>
+<template id="location">
+    <h2>Location</h2>
+    <p>Lidingö, Stockholm, Sweden</p>
+    <h2>Birth date</h2>
+    <p>
+        <date>{{ person.birthDate }}</date>
+    </p>
+</template>
+<template id="taglines">
+    <h2>Taglines</h2>
+    <ul>{% for tagline in taglines %}
+        <li>{{ tagline.tagline }}</li>{% endfor %}
+        <li>
+            <h3>Building the right software right</h3>
+            <p>
+                I believe great software starts with the right conversations. While many developers focus on building
+                software the right way — clean code, scalable architecture, elegant design — I go one step further: I
+                make sure we're building the right software to begin with.
+                That means diving deep into business needs, challenging assumptions, and translating complexity into
+                clarity. I bridge the gap between stakeholders and systems, turning fuzzy ideas into functional products
+                that deliver real value.
+                Whether I’m prototyping a new feature, leading a team, or refining a user flow, I bring a mindset that’s
+                equal parts strategic, technical, and creative.
+                Let’s build something that matters — and build it well.
+            </p>
+        </li>
+    </ul>
+</template>
+<template id="unique-selling-points">
+    <h2>Unique Selling Points</h2>
+    <ul>{% for usp in collections.usps %}<li>{{ usp.data.page.excerpt | strip | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</li>{% endfor %}</ul>
+</template>
+<template id="clients" data-source="{{ page.url | absolute_url }}#clients">
+    <h2>Clients</h2>
+    <ul>{% for client in collections.clients reversed %}
+        <li><a href="{{ client.url | absolute_url }}">{{client.data.name}}</a></li>{% endfor %}
+    </ul>
+</template>
