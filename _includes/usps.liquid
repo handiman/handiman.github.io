@@ -1,0 +1,11 @@
+ <ul class="cards">
+    {% for usp in collections.usps %}
+    <li class="card">
+        <h3>{{ usp.data.title }}</h3>
+        <div class="card-body">
+            {{ usp.data.page.excerpt | markdownify }}
+            {% unless usp.no_link==true %}<a class="more" href="{{ usp.url }}">Read more</a>{% endunless %}
+        </div>
+    </li>
+    {% endfor %}
+</ul>

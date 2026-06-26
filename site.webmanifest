@@ -1,15 +1,12 @@
----
-layout: null
----
 {
-	"lang": "en-AU",
-	"name": "{{ site.title }}",
-	"short_name": "{{ site.author.name }}",
-	"description": "{{ site.description }}",
+	"lang": "{{ site.lang }}",
+	"name": "{{ company.name }}",
+	"short_name": "{{ person.name }}",
+	"description": "{{ company.description }}",
 	"display": "standalone",
 	"start_url":"/",
-	"background-color": "{{ site.tile_color }}",
-	"theme_color": "{{ site.tile_color }}",
+	"background-color": "#F5F5F5",
+	"theme_color": "#F5F5F5",
   "icons": [
     {
       "src": "/assets/img/favicon36x36.png",

@@ -13,9 +13,6 @@ jobs:
       - name: Download
         run: |
           curl -sSL https://www.henrikbecker.net/cv -o cv.html
-          curl -sSL https://www.henrikbecker.net/education -o education.html
-          curl -sSL https://www.henrikbecker.net/employment -o employment.html
-          curl -sSL https://www.henrikbecker.net/all-projects -o all-projects.html
           curl -sSL https://www.henrikbecker.net/fun-facts -o fun-facts.html
 
       - name: Ingest
@@ -28,27 +25,6 @@ jobs:
             -H "X-Commit: ${{ github.sha }}" \
             -H "X-Source: github" \
             --data-binary @cv.html
-
-            curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest/henrik \
-            -H "Content-Type: text/plain" \
-            -H "Authorization: Bearer $API_KEY" \
-            -H "X-Commit: ${{ github.sha }}" \
-            -H "X-Source: github" \
-            --data-binary @education.html
-
-            curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest/henrik \
-            -H "Content-Type: text/plain" \
-            -H "Authorization: Bearer $API_KEY" \
-            -H "X-Commit: ${{ github.sha }}" \
-            -H "X-Source: github" \
-            --data-binary @employment.html
-
-            curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest/henrik \
-            -H "Content-Type: text/plain" \
-            -H "Authorization: Bearer $API_KEY" \
-            -H "X-Commit: ${{ github.sha }}" \
-            -H "X-Source: github" \
-            --data-binary @all-projects.html
 
             curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest/henrik \
             -H "Content-Type: text/plain" \

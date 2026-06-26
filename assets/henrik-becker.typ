@@ -58,33 +58,87 @@
   above: space_2,
   below: space_2
 )
-
+#show heading.where(level: 5): set text(size: 14pt, weight: "regular")
+#show heading.where(level: 5): set block(
+  above: space_2,
+  below: space_2
+)
 #let section(body) = block(
   inset: ( top: space_3 ),
   body
 )
 
+#let format-date(s) = {
+  let parts = s.split("-")
+  if parts.len() >= 2 {
+    datetime(year: int(parts.at(0)), month: int(parts.at(1)), day: 1).display("[year]-[month]")
+  } 
+  else  {
+    s
+  }
+}
+
 #let experience(xp) = block(
-  breakable: false, 
+  breakable: true, 
   inset: ( y: space_1 ), [
+  #set list(
+    marker: [•],
+    body-indent: 0.5em
+  )
   === #xp.title
   #if xp.type != none [
     _ #xp.type _ \
   ]
-  #if type(xp.roles) == str [
-    * #xp.roles *
-  ] else [
-    * #xp.roles.join(", ") *
-  ]
-  | #xp.startDate - #xp.endDate
+  * #xp.roles.join(", ") * | #format-date(xp.startDate) - #format-date(xp.endDate)
   
-  #xp.summary
-
+  #xp.description
+  
+  #let highlights = xp.at("highlights", default: none)
+  #if highlights != none [
+    * Highlights *
+    #for highlight in highlights [
+      - #highlight      
+    ]
+  ]
+  
   #let competencies = xp.at("competencies", default: none)
   #if competencies != none [
-    ==== Tech & Methods Used
-    #for category in xp.competencies [
+    * Tech & Methods Used *
+    #for category in competencies [
       - *#category.name:* #category.tech.join(", ")
+    ]
+  ]
+
+  #let assignments = xp.at("assignments", default: none)
+  #if assignments != none [
+    #for ass in assignments [
+      #block(
+        breakable: false, 
+        stroke: (left: 1pt + luma(240)),
+        fill: luma(250),
+        inset: space_2, [
+          ===== #ass.title
+            * #ass.roles.join(", ") * | #format-date(ass.startDate) - #format-date(ass.endDate)
+            
+            #ass.description
+
+            #let highlights = ass.at("highlights", default: none)
+            #if highlights != none [
+              * Highlights *
+              #for highlight in highlights [
+                - #highlight      
+              ]
+            ]
+
+            #let competencies = ass.at("competencies", default: none)
+            #if competencies != none [
+              * Tech & Methods Used *
+              #for category in competencies [
+                - *#category.name:* #category.tech.join(", ")
+              ]
+            ]
+        ]
+      )
     ]
   ]
 ])
@@ -140,7 +194,7 @@
 #let core_competencies(coreSkills: cv.coreSkills) = section([
   == Core Competencies
   #set list(
-    marker: [--],
+    marker: [•],
     body-indent: 0.5em
   )
   #for category in coreSkills [
@@ -149,13 +203,6 @@
       #if skills != none [
         (#skills.join(", "))       
       ]
-  ]
-])
-
-#let featured_projects(projects: cv.featuredProjects) = section([
-  == Featured Projects
-  #for xp in projects [
-    #experience(xp)
   ]
 ])
 
@@ -202,7 +249,6 @@
 #masthead()
 #introduction()
 #core_competencies()
-#featured_projects()
 #professional_context()
 #professional_experience()
 #early_career()

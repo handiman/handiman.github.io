@@ -1,26 +1,23 @@
----
-layout: null
----
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <link>{{ site.production_url }}</link>
-    <description>{{ site.data.person.description | xml_escape }}</description>
-    <language>en-AU</language>
+    <title>{{ company.name | xml_escape }}</title>
+    <link>{{ page.url | absolute_url }}</link>
+    <description>{{ person.description | xml_escape }}</description>
+    <language>{{ site.lang }}</language>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <copyright>Copyright {{ site.time | date: '%Y' }} {{ site.data.person.name | xml_escape }}</copyright>
-    <atom:link href="{{ site.production_url }}{{ page.url }}" rel="self" type="application/rss+xml" />{% for project in site.projects reversed %}
+    <copyright>Copyright {{ site.time | date: '%Y' }} {{ company.name | xml_escape }}</copyright>
+    <atom:link href="{{ page.url | absolute_url }}" rel="self" type="application/rss+xml" />{% for assignment in collections.assignments reversed %}
     <item>
-      <title>{{ project.role | xml_escape }} at {{ project.title | xml_escape }}</title>
-      <guid>{{ site.production_url }}{{ project.id }}</guid>
-      <pubDate>{{ project.start_date | date_to_rfc822 }}</pubDate>
+      <title>{{ assignment.data.roles | xml_escape }} at {{ assignment.data.title | xml_escape }}</title>
+      <guid>{{ assignment.url | absolute_url }}</guid>
+      <pubDate>{{ assignment.data.start_date | date_to_rfc822 }}</pubDate>
       <description>
-        {{ project.role | escape }} at {{ project.title | xml_escape }}
-        {{ project.start_date }} - {{ project.end_date }}
-        {% for summary in project.summary %}
-        {{ summary | xml_escape }}{% endfor %}
-        Skills used: {{ project.skills | join: ', ' | xml_escape }}
+        {{ assignment.data.roles | join: ", "| escape }} at {{ assignment.data.title | xml_escape }}
+        {{ assignment.data.start_date }} - {{ assignment.data.end_date }}
+        {{ assignment.data.description }}{% for highlight in assignment.data.highlights %}
+        {{ highlight | xml_escape }}{% endfor %}
+        Skills: {{ assignment.data.skills | normalizeSkills | join: ', ' | xml_escape }}{{ assignment.data.competencies | normalizeSkills | join: ', ' | xml_escape }}
       </description>
     </item>{% endfor %}
   </channel>
