@@ -1,9 +1,9 @@
 - name: ATS-friendly text
   mime_type: text/plain
   url: /assets/henrik-becker.txt  
-#- name: PDF
-#  mime_type: application/pdf
-#  url: /assets/henrik-becker.pdf
+- name: PDF
+  mime_type: application/pdf
+  url: /assets/henrik-becker.pdf
 - name: JSON-LD 
   mime_type: application/json
   url: /assets/henrik-becker.jsonld
