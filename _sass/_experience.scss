@@ -1,0 +1,75 @@
+#work-experience {
+  h2 {
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+  h4 {
+    font-size: var(--font-size-body);
+  }
+}
+
+.experience {
+  padding: 0;
+  margin-bottom: var(--space-4);
+  > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    //border-bottom: 1px solid var(--color-border);
+    //padding-bottom: var(--space-2);
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  > header time span + span::before {
+    content: " – ";
+  }
+  > header time span:empty {
+    display: none;
+  }
+}
+
+.experience > header {
+  h3 {
+    margin: 0;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.tech-stack {
+  padding-block: var(--space-2);
+  margin: 0;
+  h4 {
+    display: inline;
+  }
+  ul {
+    display: inline;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    li {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+    li::before {
+      content: "";
+    }
+    li::after {
+      content: ", ";
+    }
+    li:last-child::after {
+      content: "";
+    }
+  }
+}
+
+.earlier-career {
+  .highlights {
+    display: none;
+  }
+}

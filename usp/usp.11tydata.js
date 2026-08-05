@@ -1,7 +1,9 @@
+import { getLocale, localizedPermalink } from "../.eleventy.utils.js";
+
 export default function () {
   return {
     layout: "usp",
     tags: ["usps"],
-    permalink: (data) => `/usps/${data.page.fileSlug.replace(/^\d+-/, "")}/`,
+    permalink: (data) => localizedPermalink(data, "unique-selling-points"),
   };
 }

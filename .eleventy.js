@@ -1,32 +1,12 @@
 import YAML from "yaml";
+import fs from "node:fs";
 import path from "node:path";
 import markdownIt from "markdown-it";
 import * as sass from "sass";
+import configureCollections from "./.eleventy.collections.js";
+import { getSlug, localizedPermalink, normalizeSkills } from "./.eleventy.utils.js";
 
 const md = markdownIt();
-const now = new Date();
-
-export const toArray = (something) =>
-  something ? (Array.isArray(something) ? something : [something]) : [];
-
-const sortByFilePrefixReversed = (itemA, itemB) => {
-  const a = parseInt(itemA.fileSlug.split("-")[0]);
-  const b = parseInt(itemB.fileSlug.split("-")[0]);
-  return b - a;
-};
-
-const sortByFilePrefix = (itemA, itemB) => {
-  const a = parseInt(itemA.fileSlug.split("-")[0]);
-  const b = parseInt(itemB.fileSlug.split("-")[0]);
-  return a - b;
-};
-
-export const normalizeSkills = (skills) => {
-  if (!skills) return [];
-  if (Array.isArray(skills) && typeof skills[0] === "string") return skills;
-  if (Array.isArray(skills)) return skills.flatMap((area) => area.tech ?? []);
-  return [];
-};
 
 const useLiquidFor = (eleventyConfig, extensions) => {
   for (const extension of extensions.split(",")) {
@@ -52,6 +32,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.watchIgnores.add("README.md");
 
   eleventyConfig.addGlobalData("baseUrl", "https://www.henrikbecker.net");
+  eleventyConfig.addGlobalData("lang", "en");
 
   eleventyConfig.addFilter(
     "absolute_url",
@@ -110,68 +91,5 @@ export default async function (eleventyConfig) {
     },
   });
 
-  eleventyConfig.addCollection("employment", function (collectionApi) {
-    const employment = collectionApi
-      .getFilteredByTag("employment")
-      .sort(sortByFilePrefixReversed)
-      .filter((item) => {
-        const year = new Date(item.data.start_date).getFullYear();
-        return year >= 1998;
-      });
-    const assignments = collectionApi
-      .getFilteredByTag("assignments")
-      .sort(sortByFilePrefixReversed);
-
-    return employment.map((employer) => {
-      return {
-        data: {
-          ...employer.data,
-          assignments: assignments.filter((a) =>
-            toArray(a.data.employer).some(
-              (slug) => employer.fileSlug.indexOf(slug) > -1,
-            ),
-          ),
-        },
-      };
-    });
-  });
-
-  eleventyConfig.addCollection("early_career", function (collectionApi) {
-    return collectionApi
-      .getFilteredByTag("employment")
-      .sort(sortByFilePrefixReversed)
-      .filter((item) => {
-        const year = new Date(item.data.start_date).getFullYear();
-        return year < 1998;
-      });
-  });
-  eleventyConfig.addCollection("usps", function (collectionApi) {
-    return collectionApi.getFilteredByTag("usps").sort(sortByFilePrefix);
-  });
-  eleventyConfig.addCollection("education", function (collectionApi) {
-    return collectionApi
-      .getFilteredByTag("education")
-      .sort(sortByFilePrefixReversed);
-  });
-  eleventyConfig.addCollection("clients", function (collectionApi) {
-    return collectionApi
-      .getFilteredByTag("assignments")
-      .sort(sortByFilePrefixReversed)
-      .filter((item) => true === item.data.client);
-  });
-  eleventyConfig.addCollection("fun_facts", function (collectionApi) {
-    return collectionApi.getFilteredByTag("fun-facts").sort(sortByFilePrefix);
-  });
-  eleventyConfig.addCollection("all_skills", function (collectionApi) {
-    const skills = collectionApi
-      .getAll()
-      .flatMap((item) => normalizeSkills(item.data.skills));
-    return [...new Set(skills)].sort();
-  });
-  eleventyConfig.addCollection("all_roles", function (collectionApi) {
-    const roles = collectionApi
-      .getAll()
-      .flatMap((item) => toArray(item.data.roles));
-    return [...new Set(roles)].sort();
-  });
+  configureCollections(eleventyConfig);
 }

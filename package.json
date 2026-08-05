@@ -8,7 +8,7 @@
   "scripts": {
     "clean": "rimraf _site",
     "typst": "typst compile --font-path _site/assets/fonts _site/assets/henrik-becker.typ _site/assets/henrik-becker.pdf --font-path fonts",
-    "build": "npm run clean && npx @11ty/eleventy && npm run typst",
+    "build": "npm run clean && npx @11ty/eleventy",
     "serve": "npm run clean && npx @11ty/eleventy --serve"
   },
   "devDependencies": {

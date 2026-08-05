@@ -1,4 +1,4 @@
-import { toArray } from "./.eleventy.js";
+import { toArray } from "./.eleventy.utils.js";
 
 const mapExperience = (item) => ({
   title: item.data.title,

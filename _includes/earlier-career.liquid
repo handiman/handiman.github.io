@@ -1,0 +1,11 @@
+{% if lang == "sv" %}
+    {% assign items = collections.earlier_career_sv %}
+{% else %}
+    {% assign items = collections.earlier_career %}
+{% endif %}
+<div class="earlier-career">
+    <h2>{{ headings.earlier_career }}</h2>
+    {% for xp in items %}
+    {% include 'experience' with xp %}
+    {% endfor %}
+</div>

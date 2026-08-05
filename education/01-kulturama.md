@@ -4,6 +4,7 @@ description: Music
 start_year: 1992
 end_year: 1993
 location: Stockholm, Sweden
+lang: en
 ---
 <!--more-->
 ## About the Studies
