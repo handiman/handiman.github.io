@@ -1,18 +1,24 @@
 - name: ATS-friendly text
   mime_type: text/plain
   url: /assets/henrik-becker.txt  
-- name: PDF
-  mime_type: application/pdf
-  url: /assets/henrik-becker.pdf
-- name: JSON-LD 
-  mime_type: application/json
-  url: /assets/henrik-becker.jsonld
-- name: JSON Resumé
-  mime_type: application/json
-  url: /assets/henrik-becker.resume.json
+#- name: ATS-friendly text (sv)
+#  mime_type: text/plain
+#  url: /sv/assets/henrik-becker.txt  
+#- name: PDF
+#  mime_type: application/pdf
+#  url: /assets/henrik-becker.pdf
+#- name: JSON-LD 
+#  mime_type: application/json
+#  url: /assets/henrik-becker.jsonld
+#- name: JSON Resumé
+#  mime_type: application/json
+#  url: /assets/henrik-becker.resume.json
 - name: Markdown
   mime_type: text/markdown
   url: /assets/henrik-becker.markdown
+#- name: Markdown (sv)
+#  mime_type: text/markdown
+#  url: /sv/assets/henrik-becker.markdown
 #- name: BSON
 #  mime_type: application/bson
 #  url: /assets/henrik-becker.bson

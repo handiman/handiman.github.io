@@ -23,7 +23,7 @@ skills:
  - Azure App Services
  - Identity Server
  - Micro Services
-description: "[Adlibris](https://www.adlibris.com/) is the largest online bookstore in the Nordics with a growing ecosystem of digital services and applications. In 2021, I joined the Storefront team as a Fullstack Developer to support the ongoing modernization of the customer‑facing platform."
+description: Adlibris is the largest online bookstore in the Nordics with a growing ecosystem of digital services and applications. In 2021, I joined the Storefront team as a Fullstack Developer to support the ongoing modernization of the customer‑facing platform.
 highlights: 
  - OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app under development.
  - Account management API built with Asp.Net Core and .Net 5 hosted on Azure. 

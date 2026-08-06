@@ -1,5 +1,6 @@
 ---
 title: Semantic-CV
+description: Developer oriented tool for expressing your CV as JSON-LD in format and rendering as HTML, PDF and ATS-friendly text. It's made up two main parts - a CLI for editing structured data, and a hosting platform.   
 comment: Side project via Henrik Becker Consulting AB
 #name: Semantic-CV
 slug: semantic-cv
@@ -31,9 +32,7 @@ competencies:
     tech:
     - Rest APIs
     - Message queues
-description: |
-  Semantic-CV is a developer oriented tool for expressing your CV as JSON-LD in format.     
-  It's made up two main parts - a CLI for editing structured data, and a hosting platform.   
+
 #highlights:
 # - Semantic-CV is a developer oriented tool for expressing your CV as JSON-LD in format. 
 # - It's made up two main parts - a CLI for simplifying editing the structured data and a where users can optionally host their CVs.    

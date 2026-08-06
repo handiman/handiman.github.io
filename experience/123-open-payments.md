@@ -23,7 +23,7 @@ skills:
  #- OData
  #- Git
 description: |
-  [Open Payments](https://openpayments.io) provides a PSD2‑compliant platform that allows FinTech companies, e‑commerce businesses, and other financial actors to integrate with European banks through a single unified API. 
+  Open Payments provides a PSD2‑compliant platform that allows FinTech companies, e‑commerce businesses, and other financial actors to integrate with European banks through a single unified API. 
 highlights: 
  - Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.
  - Improved test automation by making functional/integration tests require less manual intervention.

@@ -4,14 +4,14 @@ title: Henrik Becker Consulting AB
 slug: becker-consulting
 #sitemap: true
 description: Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm urban area.
-comment: Assignments listed below from 2017 onward were delivered as a contractor through Henrik Becker Consulting AB, unless noted otherwise.
+comment: Assignments listed below from October 2017 onward were delivered as a contractor through Henrik Becker Consulting AB, unless noted otherwise.
 roles: 
  - Ägare
 organization:
  id: henrik-becker-consulting-ab
  name: Henrik Becker Consulting AB
  address:
-  city: Liding&ouml;
+  city: Lidingö
 start_date: 2017-07-06
 end_date: present
 #competencies: 

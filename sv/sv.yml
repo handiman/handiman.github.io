@@ -1,1 +1,19 @@
 lang: sv
+headings:
+  summary: Introduktion
+  core_competencies: Kärnkompetenser
+
+  languages: Språk
+  language: Språk
+  proficiency: Nivå
+  
+  experience: Yrkeserfarenhet
+  earlier_career: Tidigare karriär
+  tech_stack: Tech-stack
+
+  certs: Certifieringar
+  title: Titel
+  issuer: Utfärdare
+  date: Datum
+
+  education: Utbildning

@@ -21,32 +21,33 @@ skills:
  - Continuous Integration
  - Team Foundation Server
 description: |
-    Cale is one of the world’s leading manufacturers of parking meters. I joined the team working on Cale Web Office 2, specifically the TrueUp subsystem — a set of financial rules governing compensation between the City of Chicago and Chicago Parking Meters. The agreement between the two parties spans 80 years, which meant the system needed to handle not only complex business rules but also future data volumes on a massive scale.
+    Cale är en av världens ledande tillverkare av parkeringsautomater. Jag gick med i teamet som arbetade med Cale Web Office 2, närmare bestämt subsystemet TrueUp — en uppsättning finansiella regler som styr ersättningar mellan City of Chicago och Chicago Parking Meters. Avtalet mellan parterna sträcker sig över 80 år, vilket gjorde att systemet behövde hantera både komplexa affärsregler och mycket stora datavolymer över tid.
 ---
+
 <!--more-->
-## Context
-Cale is one of the world’s leading manufacturers of parking meters. I joined the team working on **Cale Web Office 2**, specifically the **TrueUp** subsystem — a set of financial rules governing compensation between the City of Chicago and Chicago Parking Meters. The agreement between the two parties spans **80 years**, which meant the system needed to handle not only complex business rules but also future data volumes on a massive scale.
+## Kontext
+Cale är en av världens ledande tillverkare av parkeringsautomater. Jag gick med i teamet som arbetade med **Cale Web Office 2**, närmare bestämt subsystemet **TrueUp** — en uppsättning finansiella regler som styr ersättningar mellan City of Chicago och Chicago Parking Meters. Avtalet mellan parterna sträcker sig över **80 år**, vilket gjorde att systemet behövde hantera både komplexa affärsregler och mycket stora datavolymer över tid.
 
-This was my final assignment with Avega Group, and the team dynamic was exceptional. One of those rare groups that clicked both personally and professionally. We worked in a Scrum setup, and the collaboration made the complexity of the domain much easier to navigate.
+Detta var mitt sista uppdrag med Avega Group, och teamdynamiken var utmärkt — ett av de där sällsynta gängen som fungerade både personligt och professionellt. Vi arbetade enligt Scrum, och samarbetet gjorde det betydligt enklare att navigera den komplexa domänen.
 
-## Work
-### Historical Changes in TrueUp
-- Worked on the **Historical Changes** project, enabling the system to correctly process and account for retroactive adjustments
-- Helped refine and implement business rules governing long‑term financial compensation
-- Navigated a domain model with many interdependent rules, edge cases, and time‑dependent calculations
-### Engineering Practices
-- Contributed to the team’s **test‑driven development** workflow
-- Used **SpecFlow** to express business rules as executable specifications
-- Applied **NInject** for dependency injection and improved testability
-- Worked with **Team Foundation Server** and **continuous integration** to maintain build quality
-### Application Development
-- Developed features in C# across a mix of WCF services and ASP.NET Web Forms
-- Worked with SQL Server to store and query large and evolving datasets
+## Arbete
+### Historiska ändringar i TrueUp
+- Arbetade i projektet **Historical Changes** för att göra det möjligt för systemet att korrekt hantera och bokföra retroaktiva justeringar
+- Bidrog till att förfina och implementera affärsregler som styr långsiktig finansiell ersättning
+- Navigerade i en domänmodell med många beroenden, kantfall och tidsberoende beräkningar
+### Utvecklingspraxis
+- Bidrog till teamets arbetsflöde för **testdriven utveckling**
+- Använde **SpecFlow** för att uttrycka affärsregler som exekverbara specifikationer
+- Använde **NInject** för beroendeinjektion och förbättrad testbarhet
+- Arbetade med **Team Foundation Server** och kontinuerlig integration för att upprätthålla byggkvalitet
+### Applikationsutveckling
+- Utvecklade funktioner i C# i en blandning av WCF‑tjänster och ASP.NET Web Forms
+- Arbetade med SQL Server för att lagra och fråga stora och föränderliga dataset
 
-## Outcome
-- Implemented and verified complex financial rules within the TrueUp subsystem
-- Contributed to a team that delivered reliably within a demanding and highly regulated domain
-- Supported development practices that improved code quality and maintainability
+## Resultat
+- Implementerade och verifierade komplexa finansiella regler inom TrueUp‑subsystemet
+- Bidrog till ett team som levererade pålitligt inom en krävande och starkt reglerad domän
+- Stödde utvecklingspraxis som förbättrade kodkvalitet och underhållbarhet
 
-## Reflection
-This project stands out for its mix of technical challenge, domain complexity, and strong team collaboration. Working on a system tied to an 80‑year financial agreement was unlike anything I’d encountered before, and it pushed me to think about long‑term data and rule evolution in new ways. It was also a genuinely enjoyable assignment thanks to a team that worked exceptionally well together.
+## Reflektion
+Detta projekt utmärker sig genom sin kombination av teknisk utmaning, domänkomplexitet och god teamkultur. Att arbeta med ett system kopplat till ett 80‑årigt finansiellt avtal var något jag inte stött på tidigare, och det tvingade mig att tänka på långsiktig datahantering och regelutveckling på nya sätt. Samtidigt var det ett mycket stimulerande uppdrag tack vare ett engagerat team.

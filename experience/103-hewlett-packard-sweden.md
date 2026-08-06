@@ -5,6 +5,7 @@ slug: hewlett-packard
 #sitemap: true
 via: 
   - Icon Medialab
+  - eWork
 roles: 
  - Web Developer
 #employer: 

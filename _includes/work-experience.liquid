@@ -3,7 +3,7 @@
 {% else %}
     {% assign experience = collections.experience %}
 {% endif %}
-<h2>{{ headings.employment }}</h2>
+<h2>{{ headings.experience }}</h2>
 {% for xp in experience %}
 {% include 'experience' with xp %}
 {% endfor %}

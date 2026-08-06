@@ -1,5 +1,5 @@
 ---
-title: Film2Home/Plejmo
+title: Film2Home
 #name: Film2Home/Plejmo
 slug: film2home
 #sitemap: true
@@ -11,7 +11,7 @@ roles:
 #employer: /employment/16-magine-tv
 #location: Stockholm, Sweden
 start_date: 2014-11-03
-end_date: 2017-07-05
+end_date: 2015-09-01
 skills:
  - Asp.Net MVC
  - Asp.Net Web Api
@@ -32,12 +32,11 @@ skills:
  - EPiServer
  - IIS
 description: |
- Fullstack development of a Video On Demand (VOD) service based on Asp.Net MVC and EpiServer. DevOps tasks including configuring web sites, configuring automated builds and setting up automated deployment. 
+ Fullstack development of the Video On Demand (VOD) services Film2home and Plejmo based on Asp.Net MVC and EpiServer. DevOps tasks including configuring web sites, configuring automated builds and setting up automated deployment. 
 highlights: 
- - Development of the Video on Demand sites Film2Home and Plejmo.
- - Designed Plejmo's REST API.
  - Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
  - Increased performance by refactoring from a traditional n-tier architecture to a service bus architecture thus offloading the front end sites.
+ - Designed Plejmo's REST API.
 competencies:
   - name: Backend development
     weight: .9

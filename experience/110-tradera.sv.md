@@ -7,7 +7,7 @@ via:
 - Avega Group
 roles: 
  - Systemutvecklare
-description: WPF-based sales support system for managing articles and campaigns published on tradera.se. This project was developed in-house at Avea Group AB.
+description: WPF-based sales support system for managing articles and campaigns published on tradera.se. This project was developed in-house at Avega Group AB.
 #employer: avega-group
 #location: Stockholm, Sweden
 start_date: 2009-08-01
