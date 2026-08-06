@@ -2,7 +2,6 @@
 title: Film2Home/Plejmo
 name: Film2Home/Plejmo
 slug: film2home
-permalink: /projects/film2home/index.html
 sitemap: true
 teaser: Levererade förbättringar inom backend, frontend och DevOps på Film2Home- och Plejmo-plattformarna, inklusive API-design och automatiserad driftsättning.
 group: projects
