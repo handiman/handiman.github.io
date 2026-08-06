@@ -8,18 +8,18 @@
   <author>
     <name>{{ person.name | xml_escape }}</name>
   </author>
-  <rights>Copyright {{ site.time | date: '%Y' }} {{ company.name | xml_escape }}</rights>{% for assignment in collections.assignments reversed %}
+  <rights>Copyright {{ site.time | date: '%Y' }} {{ company.name | xml_escape }}</rights>{% for xp in collections.experience %}
   <entry>
-    <id>{{ assignment.url | absolute_url }}</id>
-    <title>{{ assignment.data.roles | join: ", " | xml_escape }} at {{ assignment.data.title | xml_escape }}</title>
-    <published>{{ assignment.data.start_date | date_to_rfc822 }}</published>
-    <updated>{{ assignment.data.start_date | date_to_rfc822 }}</updated>
+    <id>{{ xp.url | absolute_url }}</id>
+    <title>{{ xp.data.roles | join: ", " | xml_escape }} - {{ xp.data.title | xml_escape }}</title>
+    <published>{{ xp.data.start_date | date_to_rfc822 }}</published>
+    <updated>{{ xp.data.start_date | date_to_rfc822 }}</updated>
     <content>
-      {{ assignment.data.roles | join: ", "| escape }} at {{ assignment.data.title | xml_escape }}
-      {{ assignment.data.start_date }} - {{ assignment.data.end_date }}
-      {{ assignment.data.description }}{% for highlight in assignment.data.highlights %}
+      {{ xp.data.roles | join: ", "| escape }} - {{ xp.data.title | xml_escape }}
+      {{ xp.data.start_date }} - {{ xp.data.end_date }}
+      {{ xp.data.description }} {{ xp.data.comment | xml_escape }}{% for highlight in xp.data.highlights %}
       {{ highlight | xml_escape }}{% endfor %}
-      Skills: {{ assignment.data.skills | normalizeSkills | join: ', ' | xml_escape }}{{ assignment.data.competencies | normalizeSkills | join: ', ' | xml_escape }}
+      Skills: {{ xp.data.skills | normalizeSkills | join: ', ' | xml_escape }}{{ xp.data.competencies | normalizeSkills | join: ', ' | xml_escape }}
     </content>
   </entry>{% endfor %}
 </feed>

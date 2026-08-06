@@ -43,12 +43,12 @@
 #- name: RDF/Turtle
 #  mime_type: text/turtle
 #  url: /assets/henrik-becker.ttl
-#- name: RSS feed
-#  mime_type: application/rss+xml
-#  url: /feed.rss.xml
-#- name: Atom feed
-#  mime_type: application/atom+xml
-#  url: /feed.atom.xml
+- name: RSS feed
+  mime_type: application/rss+xml
+  url: /feed.rss.xml
+- name: Atom feed
+  mime_type: application/atom+xml
+  url: /feed.atom.xml
 #- name: JSON feed
 #  mime_type: application/json
 #  url: /feed.json
