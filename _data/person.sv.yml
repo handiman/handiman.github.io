@@ -1,0 +1,25 @@
+"@context":
+  - https://schema.org
+  - https://semantic.cv/context/latest.jsonld
+"@type": Person
+name: Henrik Becker
+givenName: Henrik
+familyName: Becker
+image: https://www.henrikbecker.net/assets/img/landscape-800x534.jpg
+description: >-
+  Henrik började arbeta med mjukvaruutveckling 1999 under "IT-boomen" i
+  Stockholm. Genom åren har han vuxit till en senior backend-fokuserad
+  konsult med djup expertis inom systemintegration. Han har arbetat med
+  varje större inkarnation av .NET och ASP.NET, från Web Forms tidiga dagar
+  till moderna molnnativa API:er. Han fokuserar på backend-utveckling med
+  automation, integration och ren kod byggd på SOLID-principer.
+nationality: Svensk
+jobTitle: Senior .NET-konsult
+telephone: "+46 (0)73 422 83 43"
+email: contact@henrikbecker.se
+birthDate: "1969-06-23"
+url: https://www.henrikbecker.net
+sameAs:
+  - https://github.com/handiman
+  - https://www.linkedin.com/prettygoodprogrammer
+  - https://semantic.cv/handiman

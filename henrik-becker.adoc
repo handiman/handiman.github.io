@@ -1,4 +1,0 @@
----
-permalink: /assets/henrik-becker.adoc
----
-{% include 'cv-adoc' %}

@@ -1,4 +1,0 @@
----
-permalink: /assets/henrik-becker.txt
----
-{% include 'cv-txt' %}

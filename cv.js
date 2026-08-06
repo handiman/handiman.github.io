@@ -1,28 +1,34 @@
 import { toArray } from "./.eleventy.utils.js";
 
-const mapExperience = (item) => ({
-  title: item.data.title,
-  startDate: item.data.start_date,
-  endDate: item.data.end_date,
-  type: item.data.organization?.type ?? null,
-  roles: toArray(item.data.roles),
-  description: item.data.description ?? null,
-  highlights: item.data.highlights ? [...item.data.highlights] : undefined,
-  competencies: item.data.competencies
-    ? [...item.data.competencies]
-    : item.data.skills
-      ? [
-          {
-            name: "Development",
-            weight: 1,
-            tech: [...item.data.skills],
-          },
-        ]
+const mapExperience = (item) => {
+  const description = (
+    (item.data.description || "") +
+    (item.data.comment ? ` ${item.data.comment}` : "")
+  ).trim();
+  return {
+    title: item.data.title,
+    startDate: item.data.start_date,
+    endDate: item.data.end_date,
+    type: item.data.organization?.type ?? null,
+    roles: toArray(item.data.roles),
+    description: description.length > 0 ? description : null,
+    highlights: item.data.highlights ? [...item.data.highlights] : undefined,
+    competencies: item.data.competencies
+      ? [...item.data.competencies]
+      : item.data.skills
+        ? [
+            {
+              name: "Development",
+              weight: 1,
+              tech: [...item.data.skills],
+            },
+          ]
+        : undefined,
+    assignments: item.data.assignments
+      ? item.data.assignments.map(mapExperience)
       : undefined,
-  assignments: item.data.assignments
-    ? item.data.assignments.map(mapExperience)
-    : undefined,
-});
+  };
+};
 
 const mapEducation = (item) => ({
   title: item.data.title,
@@ -41,17 +47,25 @@ const mapCertification = (item) => ({
   achievementDate: item.achievement_date,
 });
 
+const getCollection = (key, data) =>
+  "sv" === data.lang
+    ? data.collections[`${key}_${data.lang}`]
+    : data.collections[key];
+
 export default function buildCV(data) {
+  const experience = getCollection("experience", data);
+  const earlier_career = getCollection("earlier_career", data);
+  const education = getCollection("education", data);
   const cv = {
     introduction: {
-      ...data.person,
+      ...("sv" === data.lang ? data["person.sv"] : data.person),
     },
     languages: [...data.languages],
     certifications: data.certs.map(mapCertification),
     coreSkills: [...data.coreSkills],
-    professionalExperience: data.collections.employment.map(mapExperience),
-    earlyCareer: data.collections.early_career.map(mapExperience),
-    education: data.collections.education.map(mapEducation),
+    workExperience: experience.map(mapExperience),
+    earlierCareer: earlier_career.map(mapExperience),
+    education: education.map(mapEducation),
     recommendations: [...data.recommendations],
     interests: [...data.interests],
     allSkills: [...data.collections.all_skills],
