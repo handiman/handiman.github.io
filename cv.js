@@ -6,7 +6,7 @@ const mapExperience = (item) => {
     (item.data.comment ? ` ${item.data.comment}` : "")
   ).trim();
   return {
-    title: item.data.title,
+    title: item.data.title + (item.data.via ? ` (via ${item.data.via})` : ""),
     startDate: item.data.start_date,
     endDate: item.data.end_date,
     type: item.data.organization?.type ?? null,
@@ -63,6 +63,7 @@ export default function buildCV(data) {
     languages: [...data.languages],
     certifications: data.certs.map(mapCertification),
     coreSkills: [...data.coreSkills],
+    headings: { ...data.headings },
     workExperience: experience.map(mapExperience),
     earlierCareer: earlier_career.map(mapExperience),
     education: education.map(mapEducation),

@@ -13,4 +13,5 @@ export default {
   categorizedSkills: (data) => getLocalizedData("categorizedSkills", data),
   featuredSkills: (data) => getLocalizedData("featuredSkills", data),
   interests: (data) => getLocalizedData("interests", data),
+  headings: (data) => getLocalizedData("headings", data),
 };
