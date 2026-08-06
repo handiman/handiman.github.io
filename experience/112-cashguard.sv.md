@@ -25,28 +25,28 @@ highlights:
  - Lade grunden för automatiserad regressionstestning och levande dokumentation.
 ---
 <!--more-->
-## Context
-CashGuard specialized in cash‑management solutions for the retail industry. During my assignment, I worked on StoreManager, a system used to monitor and manage CashGuard installations in stores. My primary focus was improving the development process itself by introducing behavior‑driven development practices.
+## Kontext
+CashGuard specialiserade sig på kontanthanteringslösningar för detaljhandeln. Under mitt uppdrag arbetade jag med StoreManager, ett system som används för att övervaka och hantera CashGuard-installationer i butiker. Mitt primära fokus var att förbättra själva utvecklingsprocessen genom att introducera beteendedriven utveckling.
 
-## Work
-### Introducing Specification by Example
-- Served as the key driver in adopting behavior‑driven development (Specification by Example)
-- Transformed existing Word‑based user stories into executable specifications using SpecFlow
-- Established a shared language between developers, testers, and product owners by grounding requirements in concrete examples
-### Automated Regression Testing & Living Documentation
-- Created the initial foundation for automated regression tests
-- Ensured that specifications doubled as living documentation, always in sync with the system’s actual behavior
-- Demonstrated how executable specifications could reduce ambiguity and improve communication
-### Application Development
-- Contributed to the StoreManager codebase using C#, WCF, and ASP.NET MVC
-- Worked with SQL Server for data storage and integration
-- Used WiX for packaging and deployment scenarios
+## Arbete
+### Introduktion av Specification by Example
+- Var den drivande kraften i att införa beteendedriven utveckling (Specification by Example)
+- Omvandlade befintliga Word-baserade user stories till exekverbara specifikationer med SpecFlow
+- Etablerade ett gemensamt språk mellan utvecklare, testare och produktägare genom att grunda krav i konkreta exempel
+### Automatiserad regressionstestning & levande dokumentation
+- Skapade den initiala grunden för automatiserade regressionstester
+- Säkerställde att specifikationerna dubblerade som levande dokumentation, alltid synkroniserad med systemets faktiska beteende
+- Visade hur exekverbara specifikationer kunde minska tvetydighet och förbättra kommunikation
+### Applikationsutveckling
+- Bidrog till StoreManagers kodbas med C#, WCF och ASP.NET MVC
+- Arbetade med SQL Server för datalagring och integration
+- Använde WiX för paketering och driftsättningsscenarier
 
-## Outcome
-- Introduced a working BDD approach that clarified requirements and made system behavior verifiable
-- Delivered executable specifications that improved test coverage and documentation quality during the assignment
-- Strengthened the StoreManager platform through clearer requirements and automated verification
+## Resultat
+- Introducerade ett fungerande BDD-arbetssätt som förtydligade krav och gjorde systembeteendet verifierbart
+- Levererade exekverbara specifikationer som förbättrade testtäckning och dokumentationskvalitet under uppdraget
+- Stärkte StoreManager-plattformen genom tydligare krav och automatiserad verifiering
 
-## Reflection
-This was a short but influential engagement. Introducing Specification by Example gave me the opportunity to see how executable specifications work in practice and how they can reshape the way requirements and testing are approached. It was a rewarding chance to apply the technique in a real project and build a working foundation for automated verification.
+## Reflektion
+Det här var ett kort men inflytelserikt uppdrag. Att introducera Specification by Example gav mig möjligheten att se hur exekverbara specifikationer fungerar i praktiken och hur de kan omforma sättet krav och testning hanteras på. Det var en givande chans att tillämpa tekniken i ett verkligt projekt och bygga en fungerande grund för automatiserad verifiering.
 

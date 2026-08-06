@@ -53,50 +53,50 @@ competencies:
       - Octopus Deploy
 ---
 <!--more-->
-## Context
-[Adlibris](https://www.adlibris.com/) is the largest online bookstore in the Nordics with a growing ecosystem of digital services and applications. In 2021, I joined the Storefront team as a Fullstack Developer to support the ongoing modernization of the customer‑facing platform.
+## Kontext
+[Adlibris](https://www.adlibris.com/) är Nordens största nätbokhandel med ett växande ekosystem av digitala tjänster och applikationer. År 2021 gick jag med i Storefront-teamet som fullstackutvecklare för att stötta den pågående moderniseringen av den kundvända plattformen.
 
-The team was in the middle of two major initiatives:
+Teamet var mitt uppe i två stora initiativ:
 
-- gradually migrating the storefront from jQuery to React
-- refactoring parts of a long‑lived backend monolith into clearer, more maintainable services
+- successiv migrering av storefronten från jQuery till React
+- refaktorisering av delar av en långlivad backend-monolit till tydligare, mer underhållbara tjänster
 
-At the same time, Adlibris was evaluating options for a future content management system, and several foundational pieces — identity, authentication flows, and content modeling — needed attention to support both the evolving storefront and a new mobile app under development.
+Samtidigt utvärderade Adlibris alternativ för ett framtida innehållshanteringssystem, och flera grundläggande delar — identitet, autentiseringsflöden och innehållsmodellering — behövde uppmärksamhet för att stötta både den föränderliga storefronten och en ny mobilapp under utveckling.
 
 ## Problem
-The Storefront team needed to modernize both the frontend and backend while continuing to deliver features. Key gaps included:
+Storefront-teamet behövde modernisera både frontend och backend samtidigt som de fortsatte leverera funktioner. Viktiga luckor inkluderade:
 
-- no modern OpenID Connect/OAuth2 identity service for the storefront or the new app
-- missing integration points needed by the Account Management team
-- the need to explore structured content modeling as part of evaluating new CMS options
-- deployment automation that needed to support new services
-- a frontend split between legacy jQuery and new React components
+- ingen modern OpenID Connect/OAuth2-identitetstjänst för storefronten eller den nya appen
+- saknade integrationspunkter som behövdes av Account Management-teamet
+- behovet av att utforska strukturerad innehållsmodellering som en del av utvärderingen av nya CMS-alternativ
+- driftsättningsautomation som behövde stötta nya tjänster
+- en frontend delad mellan äldre jQuery och nya React-komponenter
 
-The challenge was to strengthen the foundation while the storefront was actively being rebuilt.
+Utmaningen var att stärka grunden medan storefronten aktivt byggdes om.
 
-## Approach
-### Backend Development
-- Implemented an OpenID Connect/OAuth2 identity service using IdentityServer4 intended for both the new app and the storefront
-- Built supporting APIs in ASP.NET Core and .NET 5 used by the Storefront and Account Management teams
-- Contributed to refactoring efforts in the backend monolith
-### Frontend Development
-- Contributed to the gradual migration from jQuery to React
-- Implemented React components used in the evolving storefront
-- Delivered smaller UI improvements in JavaScript and jQuery where needed
-### System Integration
-- Delivered an IdentityServer4 solution prepared for integration with both the new app and future storefront authentication flows
-- Built a proof‑of‑concept for structured content modeling in Contentful as part of evaluating future CMS options
-- Ensured smooth communication between backend services and Azure‑hosted infrastructure
+## Tillvägagångssätt
+### Backend-utveckling
+- Implementerade en OpenID Connect/OAuth2-identitetstjänst med IdentityServer4, avsedd för både den nya appen och storefronten
+- Byggde stödjande API:er i ASP.NET Core och .NET 5 som användes av Storefront- och Account Management-teamen
+- Bidrog till refaktoriseringsarbetet i backend-monoliten
+### Frontend-utveckling
+- Bidrog till den successiva migreringen från jQuery till React
+- Implementerade React-komponenter som användes i den föränderliga storefronten
+- Levererade mindre UI-förbättringar i JavaScript och jQuery där det behövdes
+### Systemintegration
+- Levererade en IdentityServer4-lösning förberedd för integration med både den nya appen och framtida autentiseringsflöden för storefronten
+- Byggde en proof-of-concept för strukturerad innehållsmodellering i Contentful som en del av utvärderingen av framtida CMS-alternativ
+- Säkerställde smidig kommunikation mellan backend-tjänster och Azure-hostad infrastruktur
 ### Automation
-- Used Octopus Deploy to automate deployments for new and existing services
-- Improved deployment consistency across environments
+- Använde Octopus Deploy för att automatisera driftsättningar för nya och befintliga tjänster
+- Förbättrade driftsättningskonsekvensen över miljöer
 
-## Outcome
-- Delivered a production‑ready IdentityServer4‑based authentication service intended for both the new app and the storefront
-- Built supporting APIs used by the Storefront and Account Management teams
-- Produced a Contentful proof‑of‑concept that informed Adlibris’s evaluation of future CMS platforms
-- Contributed to the React migration and backend refactoring efforts
-- Strengthened deployment automation for Storefront services
+## Resultat
+- Levererade en produktionsklar IdentityServer4-baserad autentiseringstjänst avsedd för både den nya appen och storefronten
+- Byggde stödjande API:er som användes av Storefront- och Account Management-teamen
+- Tog fram en Contentful-proof-of-concept som informerade Adlibris utvärdering av framtida CMS-plattformar
+- Bidrog till React-migreringen och backend-refaktoriseringsarbetet
+- Stärkte driftsättningsautomationen för Storefront-tjänster
 
-## Reflection
-This project combined identity engineering, API design, frontend modernization, and architectural exploration. It reinforced the value of improving foundational systems while incrementally modernizing a large, customer‑facing platform and the importance of stepping in to solve the problems that need solving, even when they fall outside the original plan.
+## Reflektion
+Det här projektet kombinerade identitetsteknik, API-design, frontend-modernisering och arkitekturell utforskning. Det förstärkte värdet av att förbättra grundläggande system samtidigt som en stor, kundvänd plattform moderniserades stegvis, och vikten av att kliva in och lösa de problem som behöver lösas, även när de faller utanför den ursprungliga planen.

@@ -31,26 +31,26 @@ highlights:
  - Förbättrade testernas läsbarhet genom att skriva om dem som exekverbara specifikationer.
 ---
 <!--more-->
-## Context
-[Svea Ekonomi](https://www.svea.com) was my first assignment as a freelancer. I joined the team responsible for **Svea Checkout**, a payment solution being rolled out across Sweden, Norway, and Finland. The work combined backend development with a strong focus on engineering practices, particularly around testing and documentation. I also took on a mentoring role, helping the team strengthen its approach to TDD and executable specifications.
+## Kontext
+[Svea Ekonomi](https://www.svea.com) var mitt första uppdrag som frilansare. Jag anslöt till teamet ansvarigt för **Svea Checkout**, en betallösning som rullades ut i Sverige, Norge och Finland. Arbetet kombinerade backend-utveckling med ett starkt fokus på utvecklingspraxis, särskilt kring testning och dokumentation. Jag tog också på mig en mentorsroll och hjälpte teamet stärka sitt förhållningssätt till TDD och exekverbara specifikationer.
 
-## Work
-### Backend Development
-- Built and extended APIs using **C#** and **ASP.NET Web API**
-- Applied **CQRS** patterns to separate read and write concerns
-- Worked with **Entity Framework** for data access
-- Contributed to deployment workflows using **Octopus Deploy**
-### Engineering Practices
-- Introduced and coached **test‑driven development** to improve code quality and confidence
-- Rewrote existing tests as **executable specifications** to make intent clearer and behavior easier to understand
-- Improved API documentation by generating most of it automatically, reducing manual effort and inconsistencies
-- Helped strengthen the team’s **continuous integration** routines
+## Arbete
+### Backend-utveckling
+- Byggde och utökade API:er med **C#** och **ASP.NET Web API**
+- Tillämpade **CQRS**-mönster för att separera läs- och skrivfrågor
+- Arbetade med **Entity Framework** för dataåtkomst
+- Bidrog till driftsättningsflöden med **Octopus Deploy**
+### Utvecklingspraxis
+- Introducerade och coachade **testdriven utveckling** för att förbättra kodkvalitet och trygghet
+- Skrev om befintliga tester som **exekverbara specifikationer** för att göra avsikten tydligare och beteendet lättare att förstå
+- Förbättrade API-dokumentationen genom att generera det mesta av den automatiskt, vilket minskade manuellt arbete och inkonsekvenser
+- Hjälpte till att stärka teamets rutiner för **kontinuerlig integration**
 
-## Outcome
-- Contributed to the rollout of Svea Checkout across multiple Nordic markets
-- Improved the clarity and maintainability of the test suite through executable specifications
-- Reduced documentation drift by automating large parts of the API documentation
-- Supported the team in adopting more consistent and sustainable engineering practices
+## Resultat
+- Bidrog till utrullningen av Svea Checkout på flera nordiska marknader
+- Förbättrade testsvitens tydlighet och underhållbarhet genom exekverbara specifikationer
+- Minskade dokumentationsglidning genom att automatisera stora delar av API-dokumentationen
+- Stöttade teamet i att anta mer konsekvent och hållbar utvecklingspraxis
 
-## Reflection
-This assignment marked the beginning of my freelance career and set the tone for how I like to work: combining hands‑on engineering with a focus on clarity, testing, and sustainable development practices. It was a chance to contribute to a real‑world payment product while helping a team level up its approach to quality.
+## Reflektion
+Det här uppdraget markerade början på min frilanskarriär och satte tonen för hur jag gillar att arbeta: att kombinera praktisk utveckling med fokus på tydlighet, testning och hållbar utvecklingspraxis. Det var en chans att bidra till en verklig betalprodukt samtidigt som jag hjälpte ett team höja sin kvalitetsnivå.

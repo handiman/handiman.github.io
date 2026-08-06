@@ -20,38 +20,38 @@ highlights:
  - Fortsatte förbättra de CI/CD-processer som etablerats hos Film2Home.
 ---
 <!--more-->
-## About the Role
-I joined Magine TV to continue the development of **Plejmo**, a Video‑on‑Demand service that Magine had acquired from Film2Home. Since I had already worked on Plejmo at Film2Home, this role was a natural continuation — improving the platform, extending the API, and maintaining the CI/CD pipeline I had originally built.
+## Om rollen
+Jag anslöt till Magine TV för att fortsätta utvecklingen av **Plejmo**, en Video-on-Demand-tjänst som Magine hade förvärvat från Film2Home. Eftersom jag redan hade arbetat med Plejmo hos Film2Home var den här rollen en naturlig fortsättning — att förbättra plattformen, utöka API:et och underhålla den CI/CD-pipeline jag ursprungligen byggt.
 
-## What I Worked On
-### Plejmo Platform Development
-I worked across the full stack to evolve the Plejmo service, focusing on stability, maintainability, and incremental improvements to both backend and frontend components.
+## Vad jag arbetade med
+### Utveckling av Plejmo-plattformen
+Jag arbetade över hela stacken för att vidareutveckla Plejmo-tjänsten, med fokus på stabilitet, underhållbarhet och stegvisa förbättringar av både backend- och frontend-komponenter.
 
 ### Plejmo REST API
-I kept **API v1** stable and backward‑compatible while designing and implementing **API v2**, which introduced:
+Jag höll **API v1** stabilt och bakåtkompatibelt samtidigt som jag designade och implementerade **API v2**, som introducerade:
 
-- OAuth‑based token authentication
-- a new, cleaner model for delivering metadata content
-- new endpoints intended for the upcoming Plejmo app
-- support for third‑party integrations, including MovieZine and a Finnish VOD service in Vaasa (Whatson)
+- OAuth-baserad tokenautentisering
+- en ny, renare modell för att leverera metadatainnehåll
+- nya endpoints avsedda för den kommande Plejmo-appen
+- stöd för tredjepartsintegrationer, inklusive MovieZine och en finsk VOD-tjänst i Vasa (Whatson)
 
 ### Gamification Proof of Concept
-I built a proof‑of‑concept for a **levels and achievements** system. Because I had originally implemented Plejmo’s **service‑bus architecture** at Film2Home, it was straightforward to add a standalone service that subscribed to the relevant events. The PoC:
+Jag byggde en proof-of-concept för ett **nivå- och prestationssystem**. Eftersom jag ursprungligen hade implementerat Plejmos **service bus-arkitektur** hos Film2Home var det enkelt att lägga till en fristående tjänst som prenumererade på relevanta händelser. PoC:n:
 
-- consumed user‑activity events from the service bus
-- awarded achievements and progression based on those events
+- konsumerade användaraktivitetshändelser från service busen
+- delade ut prestationer och progression baserat på dessa händelser
 
-### Analytics Integration (Segment.io)
-Segment.io was part of the production system. I implemented event publishing so user activity and platform events could be tracked consistently across clients and services.
+### Analysintegration (Segment.io)
+Segment.io var en del av produktionssystemet. Jag implementerade händelsepublicering så att användaraktivitet och plattformshändelser kunde spåras konsekvent över klienter och tjänster.
 
-### CI/CD Pipeline
-The CI/CD pipeline built around **Octopus Deploy** was already in good shape thanks to the work I had done at Film2Home. 
-At Magine it was more about stewardship than reinvention. My focus was on:
+### CI/CD-pipeline
+CI/CD-pipelinen byggd kring **Octopus Deploy** var redan i gott skick tack vare arbetet jag gjort hos Film2Home.
+Hos Magine handlade det mer om förvaltning än nyskapande. Mitt fokus låg på:
 
-- keeping the pipeline stable and reliable
-- upgrading Octopus Deploy and related tooling
-- deepening my understanding of Octopus and applying improvements where useful
+- att hålla pipelinen stabil och tillförlitlig
+- att uppgradera Octopus Deploy och relaterade verktyg
+- att fördjupa min förståelse för Octopus och tillämpa förbättringar där det var användbart
 
-## Reflection
-Magine was a continuation of the work I had started at Film2Home, but within a larger streaming‑focused company. It was steady, hands‑on engineering on a product I knew well, with room to modernize the parts that needed it and space to explore early ideas around gamification that later became a bigger part of my work.
+## Reflektion
+Magine var en fortsättning på arbetet jag påbörjat hos Film2Home, men inom ett större streamingfokuserat bolag. Det var stadig, praktisk utveckling på en produkt jag kände väl, med utrymme att modernisera de delar som behövde det och utrymme att utforska tidiga idéer kring gamification som senare blev en större del av mitt arbete.
 

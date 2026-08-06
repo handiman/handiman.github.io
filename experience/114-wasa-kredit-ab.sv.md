@@ -29,31 +29,31 @@ highlights:
  - Introducerade levande dokumentation genom exekverbara specifikationer.
 ---
 <!--more-->
-## Context
-I joined Wasa Kredit (now [LF Finans](https://www.lffinans.se/)) as **Lead Developer**, working with a team responsible for several internal financial systems. The environment had accumulated years of technical debt, duplicated logic, and inconsistent architectural patterns. My role combined hands‑on development with guiding the team toward more sustainable ways of working.
+## Kontext
+Jag anslöt till Wasa Kredit (numera [LF Finans](https://www.lffinans.se/)) som **Lead Developer**, och arbetade med ett team ansvarigt för flera interna finansiella system. Miljön hade samlat på sig år av teknisk skuld, duplicerad logik och inkonsekventa arkitekturmönster. Min roll kombinerade praktisk utveckling med att leda teamet mot mer hållbara arbetssätt.
 
-## Work
-### Reducing Complexity & System Decay
-- Refactored legacy components to reduce unnecessary complexity and slow ongoing system decay
-- Applied architectural patterns — primarily the **Strategy pattern** — to bring structure and consistency to previously divergent code paths
-- Analyzed older, tightly coupled components that were impractical to refactor and produced clear proposals for how they could be rewritten in a more maintainable form
-### Guiding Iterative Development
-- Helped shift the team toward a more iterative and collaborative way of working
-- Facilitated sessions where developers, testers, and business stakeholders sat together to discuss requirements and write **Gherkin** examples before implementation
-- Strengthened shared understanding by grounding discussions in concrete examples rather than abstract requirements
-### Living Documentation & Executable Specifications
-- Introduced the concept of **living documentation** using **SpecFlow**
-- Translated business rules into executable specifications that served as both tests and documentation
-- Helped the team understand how BDD/TDD practices could reduce ambiguity and improve long‑term maintainability
-### Application Development
-- Worked across a broad technical stack including **C#**, **WinForms**, **ASP.NET MVC4**, **WCF**, **XML**, and **XSLT**
-- Contributed to both backend services and user‑facing applications
-- Used **Team Foundation Server** and **continuous integration** to maintain build quality and support iterative delivery
-## Outcome
-- Reduced technical debt and improved the structure of key systems through targeted refactoring
-- Helped the team adopt a more collaborative, example‑driven approach to requirements and development
-- Established executable specifications as a practical tool for clarifying business rules and improving test coverage
-- Provided architectural guidance for rewriting legacy components that could not be safely refactored
+## Arbete
+### Minskad komplexitet och systemförfall
+- Refaktoriserade äldre komponenter för att minska onödig komplexitet och bromsa pågående systemförfall
+- Tillämpade arkitekturmönster — främst **Strategy-mönstret** — för att skapa struktur och konsekvens i tidigare divergerande kodvägar
+- Analyserade äldre, hårt sammankopplade komponenter som var opraktiska att refaktorisera och tog fram tydliga förslag på hur de kunde skrivas om i en mer underhållbar form
+### Ledde iterativ utveckling
+- Hjälpte till att flytta teamet mot ett mer iterativt och samarbetsinriktat arbetssätt
+- Faciliterade sessioner där utvecklare, testare och verksamhetsintressenter satt tillsammans för att diskutera krav och skriva **Gherkin**-exempel innan implementation
+- Stärkte den gemensamma förståelsen genom att grunda diskussioner i konkreta exempel istället för abstrakta krav
+### Levande dokumentation & exekverbara specifikationer
+- Introducerade konceptet **levande dokumentation** med hjälp av **SpecFlow**
+- Översatte affärsregler till exekverbara specifikationer som fungerade som både tester och dokumentation
+- Hjälpte teamet förstå hur BDD/TDD-praxis kunde minska tvetydighet och förbättra långsiktig underhållbarhet
+### Applikationsutveckling
+- Arbetade med en bred teknisk stack inklusive **C#**, **WinForms**, **ASP.NET MVC4**, **WCF**, **XML** och **XSLT**
+- Bidrog till både backend-tjänster och användarvända applikationer
+- Använde **Team Foundation Server** och **kontinuerlig integration** för att upprätthålla byggkvalitet och stötta iterativ leverans
+## Resultat
+- Minskade teknisk skuld och förbättrade strukturen i nyckelsystem genom riktad refaktorisering
+- Hjälpte teamet anta ett mer samarbetsinriktat, exempeldrivet arbetssätt kring krav och utveckling
+- Etablerade exekverbara specifikationer som ett praktiskt verktyg för att förtydliga affärsregler och förbättra testtäckning
+- Gav arkitekturell vägledning för omskrivning av äldre komponenter som inte kunde refaktoriseras säkert
 
-## Reflection
-This role blended technical leadership with hands‑on engineering. It was a chance to bring order to a complex environment, support healthier development practices, and introduce tools that made requirements and system behavior easier to understand. It also marked a shift in my career toward roles where architecture, process, and code quality intersect.
+## Reflektion
+Den här rollen blandade tekniskt ledarskap med praktisk utveckling. Det var en chans att skapa ordning i en komplex miljö, stötta friskare utvecklingspraxis och introducera verktyg som gjorde krav och systembeteende lättare att förstå. Det markerade också en förskjutning i min karriär mot roller där arkitektur, process och kodkvalitet möts.

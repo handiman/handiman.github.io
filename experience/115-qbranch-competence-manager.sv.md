@@ -25,23 +25,23 @@ highlights:
  - Vidareutvecklade en intern applikation för att hantera konsult-CV:n, byggd på ASP.NET MVC och driftsatt på Windows Azure.
 ---
 <!--more-->
-## Context
-In 2014 I returned to Qbranch. While waiting for my next client assignment, I contributed to an ongoing internal system used to manage consultant CVs. The application had been in use for some time, and developers who were “between projects” would step in to extend and improve it. The team worked in a **Scrum** setup, and the system was hosted in **Microsoft Azure**, which gave me my first hands‑on experience with cloud‑based deployment and operations.
+## Kontext
+2014 återvände jag till Qbranch. Medan jag väntade på mitt nästa kunduppdrag bidrog jag till ett pågående internt system för att hantera konsult-CV:n. Applikationen hade varit i bruk ett tag, och utvecklare som var "mellan projekt" hoppade in för att vidareutveckla och förbättra den. Teamet arbetade enligt **Scrum**, och systemet driftsattes i **Microsoft Azure**, vilket gav mig min första praktiska erfarenhet av molnbaserad driftsättning och drift.
 
-## Work
-### Application Development
-- Added and improved features for creating, editing, and organizing consultant CVs
-- Implemented UI updates and interactions using **HTML5**, **CSS3**, and **jQuery**
-- Developed backend functionality in **C#** with **Entity Framework 6**
-### Engineering Practices
-- Applied **test‑driven development** to keep changes safe and maintainable
-- Used **continuous integration** to maintain build quality and shorten feedback loops
-- Participated in the team’s **Scrum** process, contributing to planning, refinement, and iterative delivery
+## Arbete
+### Applikationsutveckling
+- Lade till och förbättrade funktioner för att skapa, redigera och organisera konsult-CV:n
+- Implementerade UI-uppdateringar och interaktioner med **HTML5**, **CSS3** och **jQuery**
+- Utvecklade backend-funktionalitet i **C#** med **Entity Framework 6**
+### Utvecklingspraxis
+- Tillämpade **testdriven utveckling** för att hålla ändringar säkra och underhållbara
+- Använde **kontinuerlig integration** för att upprätthålla byggkvalitet och korta ner feedbackloopar
+- Deltog i teamets **Scrum**-process, bidrog till planering, förfining och iterativ leverans
 
-## Outcome
-- Contributed incremental improvements to an internal tool used daily across the organization
-- Gained practical experience working with Azure‑hosted applications
+## Resultat
+- Bidrog med stegvisa förbättringar till ett internt verktyg som användes dagligen inom organisationen
+- Fick praktisk erfarenhet av att arbeta med Azure-driftsatta applikationer
 
-## Reflection
-This was a short, practical internal engagement; the kind of work that fills the gaps between client projects while still offering meaningful contributions. 
-It provided a balanced mix of frontend and backend development and introduced me to Azure in a hands‑on way.
+## Reflektion
+Det här var ett kort, praktiskt internt uppdrag; den typen av arbete som fyller luckorna mellan kunduppdrag samtidigt som det erbjuder meningsfulla bidrag.
+Det gav en balanserad blandning av frontend- och backend-utveckling och introducerade mig till Azure på ett praktiskt sätt.

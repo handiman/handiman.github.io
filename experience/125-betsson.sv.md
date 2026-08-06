@@ -75,50 +75,50 @@ competencies:
 #- Conducted and assessed technical interviews to support recruitment and team growth.
 ---
 <!--more-->
-## Context
-From 2021 to 2025, I worked as a Senior Software Engineer within Betsson Group’s Player Rewards & Gamification value stream.
-The team was responsible for building and maintaining event‑sourced, gamification‑oriented systems that support large‑scale, real‑time customer engagement across multiple brands and markets.
-The environment combined high throughput requirements, strict regulatory constraints, and a complex distributed architecture — a combination that demanded clarity of design and disciplined engineering.
+## Kontext
+Från 2021 till 2025 arbetade jag som Senior Software Engineer inom Betsson Groups värdeflöde Player Rewards & Gamification.
+Teamet ansvarade för att bygga och underhålla händelsedrivna (event-sourced), gamification-inriktade system som stöttar storskaligt, realtidsbaserat kundengagemang över flera varumärken och marknader.
+Miljön kombinerade höga krav på genomströmning, strikta regulatoriska begränsningar och en komplex distribuerad arkitektur — en kombination som krävde tydlighet i design och disciplinerad utveckling.
 
-Examples of projects include Tournaments, Loyalty Points, Levels & Achievements.
+Exempel på projekt inkluderar Tournaments, Loyalty Points, Levels & Achievements.
 
 ## Problem
-The core systems needed to process large volumes of real‑time events, maintain consistent state across distributed services, and expose reliable APIs for both internal and external consumers. Performance bottlenecks and architectural drift were recurring challenges.
-The organization also needed a way to evaluate new ideas quickly without disrupting ongoing development.
+Kärnsystemen behövde bearbeta stora volymer realtidshändelser, upprätthålla konsekvent tillstånd över distribuerade tjänster och exponera pålitliga API:er för både interna och externa konsumenter. Prestandaflaskhalsar och arkitekturell glidning var återkommande utmaningar.
+Organisationen behövde också ett sätt att snabbt utvärdera nya idéer utan att störa pågående utveckling.
 
-## Approach
-My work centered on improving architectural clarity, strengthening automation, and increasing system throughput. Key areas included:
+## Tillvägagångssätt
+Mitt arbete kretsade kring att förbättra arkitekturell tydlighet, stärka automation och öka systemets genomströmning. Viktiga områden inkluderade:
 
-### Architecture
-- Applied CQRS, Domain‑Driven Design, Event Modeling, and Event Sourcing to clarify domain boundaries and improve system resilience
-- Introduced [.NET Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/) to simplify development and testing of distributed applications
-- Built Proofs of Concept for implementing the actor pattern using Microsoft Orleans
-- Collaborated closely with the Enterprise Architect and Engineering Manager to ensure alignment with regulatory and organizational requirements
+### Arkitektur
+- Tillämpade CQRS, domändriven design, Event Modeling och Event Sourcing för att förtydliga domängränser och förbättra systemets motståndskraft
+- Introducerade [.NET Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/) för att förenkla utveckling och testning av distribuerade applikationer
+- Byggde proof of concepts för att implementera actor-mönstret med Microsoft Orleans
+- Samarbetade nära med Enterprise Architect och Engineering Manager för att säkerställa samstämmighet med regulatoriska och organisatoriska krav
 
-### Backend Development
-- Built and maintained services using C#, .NET 5–9 and ASP.NET Core
-- Developed Blazor‑based back‑office tools for internal operations
-- Designed and optimized SQL Server and PostgreSQL data models
+### Backend-utveckling
+- Byggde och underhöll tjänster med C#, .NET 5–9 och ASP.NET Core
+- Utvecklade Blazor-baserade back office-verktyg för intern verksamhet
+- Designade och optimerade datamodeller för SQL Server och PostgreSQL
 
 ### Automation
-- Maintained and improved existing CI/CD pipelines built on GitHub Actions and Octopus Deploy
-- Containerized services with Docker to improve consistency and deployment speed
+- Underhöll och förbättrade befintliga CI/CD-pipelines byggda på GitHub Actions och Octopus Deploy
+- Containeriserade tjänster med Docker för att förbättra konsekvens och driftsättningshastighet
 
-### System Integration
-- Improved Kafka‑based event processing pipelines
-- Designed and maintained REST APIs and legacy WCF integrations
+### Systemintegration
+- Förbättrade Kafka-baserade händelsebearbetningspipelines
+- Designade och underhöll REST-API:er och äldre WCF-integrationer
 
-### Team & Collaboration
-- Participated in technical interviews and candidate assessments to support team growth
-- Provided architectural and implementation guidance to team members
+### Team & samarbete
+- Deltog i tekniska intervjuer och kandidatbedömningar för att stötta teamets tillväxt
+- Gav arkitekturell och implementationsmässig vägledning till teammedlemmar
 
-## Outcome
-- Increased Kafka message throughput by nearly 1000% for one of the core applications, significantly improving system responsiveness and operational stability
-- Delivered multiple Proofs of Concept to explore new architectural approaches and validate ideas before full investment
-- Improved developer experience and operational reliability through automation and clearer architectural patterns
-- Supported team growth by conducting technical interviews and contributing to recruitment decisions
+## Resultat
+- Ökade Kafka-meddelandegenomströmningen med nästan 1000 % för en av kärnapplikationerna, vilket avsevärt förbättrade systemets responsivitet och driftstabilitet
+- Levererade flera proof of concepts för att utforska nya arkitekturella tillvägagångssätt och validera idéer innan full investering
+- Förbättrade utvecklarupplevelsen och driftstillförlitligheten genom automation och tydligare arkitekturmönster
+- Stöttade teamets tillväxt genom att genomföra tekniska intervjuer och bidra till rekryteringsbeslut
 
-## Reflection
-This project reinforced the value of making systems easier to understand and faster to work with — not through big rewrites, but by clarifying responsibilities, improving observability, and removing the small points of friction that slow teams down. Working in a high‑scale, regulated environment sharpened my ability to balance innovation with compliance and to design systems that remain understandable even as they grow.
+## Reflektion
+Det här projektet förstärkte värdet av att göra system lättare att förstå och snabbare att arbeta med — inte genom stora omskrivningar, utan genom att förtydliga ansvar, förbättra observerbarhet och ta bort de små friktionspunkter som saktar ner team. Att arbeta i en storskalig, reglerad miljö skärpte min förmåga att balansera innovation med regelefterlevnad och att designa system som förblir begripliga även när de växer.
 
-My four years at Betsson — first as a consultant for roughly two years, then as a full‑time employee for another two — were a deliberate exception to my usual freelancing path. I stayed because I genuinely enjoyed the company and the colleagues, and left only because I eventually missed the freedom and variety of consulting.
+Mina fyra år på Betsson — först som konsult i ungefär två år, sedan som heltidsanställd i ytterligare två — var ett medvetet undantag från min vanliga frilansbana. Jag stannade för att jag verkligen trivdes med bolaget och kollegorna, och slutade bara för att jag så småningom saknade friheten och variationen i konsultarbete.

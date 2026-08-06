@@ -34,30 +34,30 @@ highlights:
  - Underhöll och vidareutvecklade hitta.se:s interna ordersystem.
 ---
 <!--more-->
-## Context
-I joined hitta.se during a period of rapid growth, working across backend services, data processing, and the public‑facing map and search experience. 
-At the time, hitta.se was consistently ranked among Sweden’s ten most‑visited websites, which meant performance, reliability, and fast iteration were essential.
+## Kontext
+Jag började på hitta.se under en period av snabb tillväxt, och arbetade med backend-tjänster, databehandling och den publika karttjänsten och sökupplevelsen.
+Vid den tiden rankades hitta.se konsekvent bland Sveriges tio mest besökta webbplatser, vilket gjorde prestanda, tillförlitlighet och snabb iteration avgörande.
 
-## Work
-### Public Services
-- Designed and built **hitta.se/trafiknytt**, consuming traffic data from Sweden’s national road authority (**Vägverket** at the time)
-- Created **hitta.se/vader**, integrating weather data from **Storm.no** into the map experience
-- Improved the public map site with new features, UI refinements, and performance optimizations
-### Internal Systems
-- Maintained and extended hitta.se’s internal order system
-- Worked across ASP.NET, C#, T‑SQL, MSMQ, XML/XSLT, and IIS
-- Contributed to backend services that supported high‑traffic, data‑driven features
-### Fullstack Development
-- Implemented both server‑side logic and client‑side functionality using AJAX, JavaScript, XHTML, and CSS
-- Collaborated closely with designers, product owners, and other developers in a fast‑moving environment
+## Arbete
+### Publika tjänster
+- Designade och byggde **hitta.se/trafiknytt**, som konsumerade trafikdata från Vägverket (som det hette då)
+- Skapade **hitta.se/vader**, som integrerade väderdata från **Storm.no** i kartupplevelsen
+- Förbättrade den publika kartsajten med nya funktioner, UI-förfiningar och prestandaoptimeringar
+### Interna system
+- Underhöll och vidareutvecklade hitta.se:s interna ordersystem
+- Arbetade med ASP.NET, C#, T-SQL, MSMQ, XML/XSLT och IIS
+- Bidrog till backend-tjänster som stöttade trafiktunga, datadrivna funktioner
+### Fullstackutveckling
+- Implementerade både serversidans logik och klientsidans funktionalitet med AJAX, JavaScript, XHTML och CSS
+- Samarbetade nära med designers, produktägare och andra utvecklare i en snabbrörlig miljö
 
-## Outcome
-- Played a key role in the development of one of Sweden’s most popular websites
-- Delivered new public services that expanded the functionality of the map platform
-- Strengthened internal systems that supported advertising, orders, and content workflows
-- Helped the team ship features quickly while maintaining stability under heavy load
+## Resultat
+- Spelade en nyckelroll i utvecklingen av en av Sveriges mest populära webbplatser
+- Levererade nya publika tjänster som utökade kartplattformens funktionalitet
+- Stärkte interna system som stöttade annonsering, order och innehållsflöden
+- Hjälpte teamet leverera funktioner snabbt samtidigt som stabiliteten bibehölls under hög belastning
 
-## Reflection
-This was one of the most formative projects of my early career. 
-The combination of scale, speed, and visibility made it both challenging and deeply rewarding. 
-I had the opportunity to work across the entire stack and build features used by a large portion of Sweden’s internet users.
+## Reflektion
+Det här var ett av de mest formativa projekten i min tidiga karriär.
+Kombinationen av skala, hastighet och synlighet gjorde det både utmanande och djupt givande.
+Jag fick möjligheten att arbeta över hela stacken och bygga funktioner som användes av en stor del av Sveriges internetanvändare.

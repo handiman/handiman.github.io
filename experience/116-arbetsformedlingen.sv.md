@@ -23,18 +23,18 @@ highlights:
  - Underhöll ett äldre system för rekvisitionshantering hos Sveriges offentliga arbetsförmedling.
 ---
 <!--more-->
-## Context
-During my second period at Qbranch in 2014, I joined a small team working on a legacy requisition management system for Arbetsförmedlingen, Sweden’s public employment service. This was a maintenance‑focused engagement involving older technologies and long‑standing code paths. The work was steady, structured, and primarily centered on keeping an existing system operational.
+## Kontext
+Under min andra period hos Qbranch 2014 gick jag med i ett litet team som arbetade på ett äldre rekvisitionshanteringssystem för Arbetsförmedlingen. Det här var ett underhållsfokuserat uppdrag som involverade äldre teknik och långlivade kodvägar. Arbetet var stadigt, strukturerat och centrerade huvudsakligen kring att hålla ett befintligt system i drift.
 
-## Work
-### Maintenance & Support
-- Performed corrective maintenance on a large, aging codebase built with **VB.NET**, **WinForms**, **WebForms**, and **WCF**
-- Updated and stabilized integrations with internal **Web Services**
-- Worked with an **Oracle** backend
-### Collaboration & Process
-- Participated in the team’s established workflows and routines
-## Outcome
-- Helped maintain a critical internal system used across the organization
-- Improved stability through targeted fixes and careful handling of legacy components
-## Reflection
-This was a straightforward maintenance assignment on a legacy stack. Not the most exciting work, but an important part of supporting large public systems that rely on long‑lived software.
+## Arbete
+### Underhåll & support
+- Utförde korrigerande underhåll på en stor, åldrande kodbas byggd med **VB.NET**, **WinForms**, **WebForms** och **WCF**
+- Uppdaterade och stabiliserade integrationer med interna **webbtjänster**
+- Arbetade med en **Oracle**-backend
+### Samarbete & process
+- Deltog i teamets etablerade arbetsflöden och rutiner
+## Resultat
+- Hjälpte till att underhålla ett kritiskt internt system som användes inom hela organisationen
+- Förbättrade stabiliteten genom riktade rättningar och noggrann hantering av äldre komponenter
+## Reflektion
+Det här var ett rakt på sak-underhållsuppdrag på en äldre teknikstack. Inte det mest spännande arbetet, men en viktig del av att stötta stora offentliga system som förlitar sig på långlivad mjukvara.

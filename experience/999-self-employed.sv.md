@@ -23,33 +23,33 @@ end_date: present
 #      - build pipeline automation
 ---
 <!--more-->
-## About the Company
-I founded Henrik Becker Consulting AB in 2017 as a way to work independently and stay close to the craft. Based in Lidingö and working across the Stockholm region or fully remote, I provide full‑stack .NET and DevOps expertise on a freelance basis. Keeping the company small lets me focus on what matters: understanding systems, working directly with teams, and delivering solutions that reduce complexity rather than add to it.
+## Om företaget
+Jag grundade Henrik Becker Consulting AB 2017 som ett sätt att arbeta självständigt och hålla mig nära hantverket. Baserad i Lidingö och verksam i Stockholmsregionen eller helt på distans erbjuder jag fullstack .NET- och DevOps-expertis på frilansbasis. Genom att hålla bolaget litet kan jag fokusera på det som betyder något: att förstå system, arbeta direkt med team och leverera lösningar som minskar komplexitet istället för att öka den.
 
-I’ve been coding professionally since 1999, and the company is where that experience comes together — architecture, integration, automation, and the long‑term thinking that makes software age gracefully.
+Jag har kodat professionellt sedan 1999, och bolaget är där den erfarenheten kommer samman — arkitektur, integration, automation och det långsiktiga tänkande som gör att mjukvara åldras med värdighet.
 
-## What I Do
-My work centers on backend engineering and the infrastructure around it: the APIs, integrations, pipelines, and architectural decisions that shape how a system behaves over time.
+## Vad jag gör
+Mitt arbete kretsar kring backend-utveckling och infrastrukturen runt omkring: API:erna, integrationerna, pipelines och de arkitektoniska beslut som formar hur ett system beter sig över tid.
 
-I help clients with:
-- **Backend Development**   
-  Modern .NET and C# solutions built for clarity, maintainability, and scale.
-- **System Integration**   
-  REST, GraphQL, message queues, and cloud‑native tooling to connect services reliably.
+Jag hjälper kunder med:
+- **Backend-utveckling**   
+  Moderna .NET- och C#-lösningar byggda för tydlighet, underhållbarhet och skalbarhet.
+- **Systemintegration**   
+  REST, GraphQL, meddelandeköer och molnnativa verktyg för att koppla samman tjänster på ett pålitligt sätt.
 - **Automation & DevOps**   
-  CI/CD pipelines, scripting, and infrastructure as code for faster, safer delivery.
-- **Architecture & Technical Guidance**  
-  Structuring new projects, refactoring old ones, and helping teams make sound technical decisions.
+  CI/CD-pipelines, skriptning och infrastructure as code för snabbare, säkrare leveranser.
+- **Arkitektur & teknisk vägledning**  
+  Strukturerar nya projekt, refaktoriserar gamla, och hjälper team fatta sunda tekniska beslut.
 
-My goal is always the same: build systems that are easier to understand, easier to maintain, and easier to evolve.
+Mitt mål är alltid detsamma: att bygga system som är lättare att förstå, lättare att underhålla och lättare att vidareutveckla.
 
-## Selected Clients
-Over the years I’ve worked with organizations across finance, e‑commerce, gaming, and public infrastructure. Some of the clients I’ve partnered with include:
+## Utvalda kunder
+Genom åren har jag arbetat med organisationer inom finans, e-handel, spel och offentlig infrastruktur. Några av de kunder jag samarbetat med:
 {% for client in clients reversed %}* [{{client.name}}]({{ client.url }})
 {% endfor %}
 {% assign clients = nil %}
-The work has ranged from backend development and integrations to automation pipelines and architectural support.
+Arbetet har spänt från backend-utveckling och integrationer till automationspipelines och arkitekturstöd.
 
-## Approach
-I describe myself as a “simplificator” because that’s the core of what I do: take something complex and make it clearer without losing its depth. Sometimes that means rewriting a subsystem. Sometimes it means reorganizing a model. Sometimes it’s a single sentence of documentation that finally makes everything click.
-Freelancing gives me the freedom to choose projects where I can make a meaningful difference and to stay close to the work itself, where the details matter.
+## Tillvägagångssätt
+Jag beskriver mig själv som en "simplifikator" eftersom det är kärnan i det jag gör: ta något komplext och göra det tydligare utan att förlora dess djup. Ibland innebär det att skriva om ett subsystem. Ibland innebär det att omorganisera en modell. Ibland är det en enda mening dokumentation som till slut får allt att falla på plats.
+Att frilansa ger mig friheten att välja projekt där jag kan göra verklig skillnad, och att hålla mig nära själva arbetet, där detaljerna spelar roll.

@@ -29,31 +29,31 @@ highlights:
  - Tillämpade testdriven utveckling och tidig kontinuerlig integration.
 ---
 <!--more-->
-## Context
-Astando (now Norconsult Astando, following acquisition by [Norconsult](https://www.norconsultastando.se/)) is one of Sweden’s leading companies in the GIS domain and a key contributor to the Local Road Database (LV) concept — the national foundation for applications related to road networks, traffic, and road‑user information.
+## Kontext
+Astando (numera Norconsult Astando, efter förvärvet av [Norconsult](https://www.norconsultastando.se/)) är ett av Sveriges ledande företag inom GIS-domänen och en nyckelbidragsgivare till konceptet Lokal Vägdatabas (LV) — den nationella grunden för applikationer relaterade till vägnät, trafik och trafikantinformation.
 
-In 2008–2009, I joined Astando as a consultant from [Avega Group AB](https://avega.se/) to contribute to the continued development of a client/server application used by Stockholm and Gothenburg for importing, processing, and presenting traffic measurement data.
+Under 2008–2009 anslöt jag till Astando som konsult från [Avega Group AB](https://avega.se/) för att bidra till den fortsatta utvecklingen av en klient/server-applikation som användes av Stockholm och Göteborg för att importera, bearbeta och presentera trafikmätdata.
 
 ## Problem
-Municipal traffic departments needed a reliable way to import large volumes of traffic measurement data from various sensors and systems, normalize it, and present it in a way that supported analysis and operational decision‑making. The existing application was already in use but required ongoing development, refinement, and new capabilities.
+Kommunala trafikavdelningar behövde ett tillförlitligt sätt att importera stora volymer trafikmätdata från olika sensorer och system, normalisera den och presentera den på ett sätt som stöttade analys och operativt beslutsfattande. Den befintliga applikationen var redan i bruk men krävde fortsatt utveckling, förfining och nya funktioner.
 
-## Approach
-### Application Development
-- Contributed to the continued development of a WinForms‑based client application for visualizing and working with traffic measurement data
-- Extended backend components and Windows Services responsible for data import, transformation, and processing
-- Implemented data access using Oracle and NHibernate
-### Architecture & Engineering Practices
-- Used Spring.NET for dependency injection and modularization
-- Applied Test‑Driven Development to improve reliability and maintainability
-- Participated in early Continuous Integration workflows to ensure stable builds and predictable delivery
-### Domain Integration
-- Worked with the Local Road Database (LV) model to align traffic measurement data with the national road network
-- Ensured compatibility with municipal data formats and operational workflows
+## Tillvägagångssätt
+### Applikationsutveckling
+- Bidrog till den fortsatta utvecklingen av en WinForms-baserad klientapplikation för att visualisera och arbeta med trafikmätdata
+- Vidareutvecklade backend-komponenter och Windows-tjänster ansvariga för dataimport, transformation och bearbetning
+- Implementerade dataåtkomst med Oracle och NHibernate
+### Arkitektur & utvecklingspraxis
+- Använde Spring.NET för beroendeinjektion och modularisering
+- Tillämpade testdriven utveckling för att förbättra tillförlitlighet och underhållbarhet
+- Deltog i tidiga kontinuerlig integration-flöden för att säkerställa stabila byggen och förutsägbar leverans
+### Domänintegration
+- Arbetade med LV-modellen (Lokal Vägdatabas) för att koppla trafikmätdata till det nationella vägnätet
+- Säkerställde kompatibilitet med kommunala dataformat och operativa arbetsflöden
 
-## Outcome
-- Strengthened and extended a production system used by Stockholm and Gothenburg for traffic data import and presentation
-- Improved data processing reliability through automated services and structured data handling
-- Enhanced code quality and delivery consistency through TDD and CI practices
+## Resultat
+- Stärkte och vidareutvecklade ett produktionssystem som användes av Stockholm och Göteborg för import och presentation av trafikdata
+- Förbättrade tillförlitligheten i databehandlingen genom automatiserade tjänster och strukturerad datahantering
+- Höjde kodkvalitet och leveranskonsekvens genom TDD- och CI-praxis
 
-## Reflection
-This engagement combined desktop application development, backend processing, and GIS‑related domain modeling. It was an early opportunity to work within an established codebase, contribute to a complex data‑driven system, and apply disciplined engineering practices — experience that later helped shape my long‑term relationship with Norconsult Astando.
+## Reflektion
+Det här uppdraget kombinerade skrivbordsapplikationsutveckling, backend-bearbetning och GIS-relaterad domänmodellering. Det var ett tidigt tillfälle att arbeta inom en etablerad kodbas, bidra till ett komplext datadrivet system och tillämpa disciplinerad utvecklingspraxis — erfarenhet som senare hjälpte till att forma min långsiktiga relation med Norconsult Astando.

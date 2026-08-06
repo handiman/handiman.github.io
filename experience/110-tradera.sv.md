@@ -22,24 +22,24 @@ highlights:
  - Levererade projektet som en del av ett internt team hos Avega Group.
 ---
 <!--more-->
-## Context
-While between client assignments at Avega Group, I joined an internal team working on a WPF‑based sales support system intended for managing articles and campaigns published on Tradera.se. Even though my time on the project was brief, it was a solid opportunity to contribute to a modern desktop application built with a contemporary tech stack.
+## Kontext
+Medan jag väntade på nästa kunduppdrag hos Avega Group gick jag med i ett internt team som arbetade på ett WPF-baserat säljstödsystem avsett för att hantera artiklar och kampanjer publicerade på Tradera.se. Även om min tid på projektet var kort var det ett bra tillfälle att bidra till en modern skrivbordsapplikation byggd med en tidsenlig teknikstack.
 
-## Work
-### Application Development
-- Contributed to the development of a **WPF** desktop application used for managing product listings and campaign data
-- Implemented features and UI components using **C#**, **WPF**, and **WCF**
-- Worked with **NHibernate** for data access
-### Collaboration
-- Joined an existing team and quickly became productive within a short engagement window
-- Helped maintain development momentum while waiting for the next long‑term assignment
+## Arbete
+### Applikationsutveckling
+- Bidrog till utvecklingen av en **WPF**-skrivbordsapplikation för att hantera produktlistningar och kampanjdata
+- Implementerade funktioner och UI-komponenter med **C#**, **WPF** och **WCF**
+- Arbetade med **NHibernate** för dataåtkomst
+### Samarbete
+- Gick med i ett befintligt team och blev snabbt produktiv inom ett kort tidsfönster
+- Hjälpte till att hålla utvecklingstakten uppe medan jag väntade på nästa långsiktiga uppdrag
 
-## Outcome
-- Strengthened the internal product with additional functionality and refinements
-- Provided Avega Group with continuity on the project during a transitional period
-- Gained hands‑on experience with WPF, WCF, and NHibernate in a real production codebase
+## Resultat
+- Stärkte den interna produkten med ytterligare funktionalitet och förfiningar
+- Gav Avega Group kontinuitet i projektet under en övergångsperiod
+- Fick praktisk erfarenhet av WPF, WCF och NHibernate i en verklig produktionskodbas
 
-## Reflection
-This was a short but valuable engagement. The kind of assignment that keeps skills sharp and exposes you to new technologies while waiting for the next long‑term client project. It also served as a smooth transition into what would become my assignment at [Länsförsäkringar][lf].
+## Reflektion
+Det här var ett kort men värdefullt uppdrag. Den typen av uppdrag som håller kompetensen skarp och exponerar en för ny teknik medan man väntar på nästa långsiktiga kunduppdrag. Det fungerade också som en smidig övergång till vad som skulle bli mitt uppdrag hos [Länsförsäkringar][lf].
 
 [lf]: {{ '/assignments/lansforsakringar' }}

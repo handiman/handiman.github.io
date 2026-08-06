@@ -22,23 +22,23 @@ highlights:
  - Integrerade den nya webbplatsen med kundens Unix-baserade bokningssystem via ett proprietärt binärprotokoll.
 ---
 <!--more-->
-## Context
-During my time at QBranch, I worked with Taxi Stockholm on the migration of their intranet and public website from Spirello to EPiServer 4. Alongside the CMS work, the project required integrating with Taxi Stockholm’s Unix‑based booking system — a legacy platform using a proprietary, undocumented‑outside‑the‑company protocol.
+## Kontext
+Under min tid på QBranch arbetade jag med Taxi Stockholm på migreringen av deras intranät och publika webbplats från Spirello till EPiServer 4. Vid sidan av CMS-arbetet krävde projektet integration med Taxi Stockholms Unix-baserade bokningssystem — en äldre plattform som använde ett proprietärt protokoll, odokumenterat utanför företaget.
 
-## Work
-### EPiServer Migration
-- Migrated the intranet and external website from Spirello to EPiServer 4
-- Rebuilt templates, content structures, and administrative workflows
-- Implemented features in ASP.NET and C#, backed by SQL Server
-### Booking System Integration
-- Integrated the EPiServer‑based site with Taxi Stockholm’s Unix booking system
-- Worked directly with a proprietary binary protocol requiring low‑level socket programming in .NET
-- Interpreted and implemented protocol specifications involving byte arrays, offsets, and custom message formats
-- Built communication components that translated between the web application and the legacy backend
-## Outcome
-- Delivered a functioning EPiServer‑based intranet and public website
-- Established a reliable integration path between the .NET application and the Unix booking system
-- Gained hands‑on experience with low‑level networking, binary protocols, and legacy system interoperability
+## Arbete
+### EPiServer-migrering
+- Migrerade intranätet och den externa webbplatsen från Spirello till EPiServer 4
+- Byggde om mallar, innehållsstrukturer och administrativa arbetsflöden
+- Implementerade funktioner i ASP.NET och C#, med SQL Server i botten
+### Integration med bokningssystem
+- Integrerade den EPiServer-baserade webbplatsen med Taxi Stockholms Unix-bokningssystem
+- Arbetade direkt med ett proprietärt binärprotokoll som krävde lågnivå-socketprogrammering i .NET
+- Tolkade och implementerade protokollspecifikationer som involverade bytearrayer, offsets och anpassade meddelandeformat
+- Byggde kommunikationskomponenter som översatte mellan webbapplikationen och den äldre backenden
+## Resultat
+- Levererade ett fungerande EPiServer-baserat intranät och publik webbplats
+- Etablerade en pålitlig integrationsväg mellan .NET-applikationen och Unix-bokningssystemet
+- Fick praktisk erfarenhet av lågnivånätverk, binärprotokoll och interoperabilitet med äldre system
 
-## Reflection
-This project was a mix of modern CMS work and deep technical spelunking. The proprietary protocol integration pushed me into low‑level networking, binary parsing, and careful reading of sparse documentation — a reminder that sometimes the most interesting challenges sit far below the UI layer.
+## Reflektion
+Det här projektet var en blandning av modernt CMS-arbete och djup teknisk grävning. Integrationen mot det proprietära protokollet drev mig in i lågnivånätverk, binärparsning och noggrann läsning av sparsam dokumentation — en påminnelse om att de mest intressanta utmaningarna ibland ligger långt under UI-lagret.

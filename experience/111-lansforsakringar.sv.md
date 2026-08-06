@@ -27,35 +27,35 @@ highlights:
  - Undersökte och förbättrade prestanda i plattformen och dess anslutande system.
 ---
 <!--more-->
-## Context
-I joined [Länsförsäkringar](https://www.lf.se) as part of a long‑term [Avega Group](https://avega.se/) assignment, working on the company’s payment platform and several surrounding systems. The work spanned backend development, database migration, performance investigations, and quality assurance across a complex financial environment.
+## Kontext
+Jag anslöt till [Länsförsäkringar](https://www.lf.se) som en del av ett långsiktigt uppdrag via [Avega Group](https://avega.se/), och arbetade med bolagets betalplattform och flera kringliggande system. Arbetet spände över backend-utveckling, databasmigrering, prestandautredningar och kvalitetssäkring i en komplex finansiell miljö.
 
-## Work
-### Database Migration
-- Played a key role in migrating the payment platform’s database from **Oracle** to **SQL Server**
-- Adapted stored procedures, data models, and integration points to ensure functional parity and acceptable performance
-- Took on responsibilities that would normally fall to DBAs or architects, including analysis, planning, and validation of the new SQL Server environment
-### Payment Platform Development
-- Worked on a **WCF‑based** service layer used by internal systems responsible for automated payments and payment prompts
-- Extended and maintained business logic implemented in **VB.NET**
-- Ensured the service behaved predictably under load and integrated cleanly with surrounding systems
-### Integration with JD Edwards EnterpriseOne
-- Read operational and financial data directly from the **JD Edwards EnterpriseOne** database
-- Implemented logic to translate and adapt JDE data structures into formats suitable for the payment platform
-- Helped ensure consistency between JDE’s data model and the evolving SQL Server‑based platform
-### Quality Assurance & Performance
-- Investigated how different approaches performed after the migration from Oracle to SQL Server
-- Benchmarked and compared performance characteristics between database‑side loops, stored procedures, and application‑side logic
-- Identified counterintuitive but effective optimizations — for example, repeated SQL Server function calls from a VB.NET loop proved faster than looping inside a stored procedure, despite the increased number of network round‑trips
-- Applied these findings to improve throughput and stability in the payment platform and its integrations
-### Engineering Practices
-- Worked with **Team Foundation Server** for version control and build automation
-- Participated in **continuous integration** workflows
-- Applied **test‑driven development** where appropriate to improve code quality and reduce regressions
-- Worked within a **Scrum** team, contributing as a developer while supporting the team’s sprint‑based delivery rhythm
-### Outcome
-- Successfully supported the transition from Oracle to SQL Server, reducing licensing costs and simplifying the platform
-- Strengthened the payment platform with improved reliability and clearer performance characteristics
+## Arbete
+### Databasmigrering
+- Spelade en nyckelroll i migreringen av betalplattformens databas från **Oracle** till **SQL Server**
+- Anpassade lagrade procedurer, datamodeller och integrationspunkter för att säkerställa funktionsparitet och acceptabel prestanda
+- Tog på mig ansvar som normalt skulle falla på DBA:er eller arkitekter, inklusive analys, planering och validering av den nya SQL Server-miljön
+### Utveckling av betalplattformen
+- Arbetade med ett **WCF-baserat** tjänstelager som användes av interna system ansvariga för automatiserade betalningar och betalningsuppmaningar
+- Vidareutvecklade och underhöll affärslogik implementerad i **VB.NET**
+- Säkerställde att tjänsten betedde sig förutsägbart under belastning och integrerade rent med kringliggande system
+### Integration med JD Edwards EnterpriseOne
+- Läste operativ och finansiell data direkt från **JD Edwards EnterpriseOne**-databasen
+- Implementerade logik för att översätta och anpassa JDE:s datastrukturer till format lämpliga för betalplattformen
+- Bidrog till att säkerställa konsekvens mellan JDE:s datamodell och den framväxande SQL Server-baserade plattformen
+### Kvalitetssäkring & prestanda
+- Undersökte hur olika tillvägagångssätt presterade efter migreringen från Oracle till SQL Server
+- Utförde prestandajämförelser mellan databassidans loopar, lagrade procedurer och applikationssidans logik
+- Identifierade kontraintuitiva men effektiva optimeringar — till exempel visade sig upprepade SQL Server-funktionsanrop från en VB.NET-loop vara snabbare än att loopa inuti en lagrad procedur, trots det ökade antalet nätverksanrop
+- Tillämpade dessa insikter för att förbättra genomströmning och stabilitet i betalplattformen och dess integrationer
+### Utvecklingspraxis
+- Arbetade med **Team Foundation Server** för versionshantering och byggautomation
+- Deltog i **kontinuerlig integration**-flöden
+- Tillämpade **testdriven utveckling** där det var lämpligt för att förbättra kodkvalitet och minska regressioner
+- Arbetade inom ett **Scrum**-team, bidrog som utvecklare samtidigt som jag stöttade teamets sprintbaserade leveranstakt
+### Resultat
+- Stöttade framgångsrikt övergången från Oracle till SQL Server, vilket minskade licenskostnader och förenklade plattformen
+- Stärkte betalplattformen med förbättrad tillförlitlighet och tydligare prestandaegenskaper
 
-## Reflection
-This assignment combined deep technical work with long‑term platform stewardship. The database migration required careful analysis and a strong understanding of both Oracle and SQL Server, while the performance investigations provided insights that shaped how the platform evolved. Integrating with JD Edwards EnterpriseOne added another layer of complexity and gave me valuable experience with large‑scale financial systems and their data models.
+## Reflektion
+Det här uppdraget kombinerade djupt tekniskt arbete med långsiktigt plattformsförvaltarskap. Databasmigreringen krävde noggrann analys och en stark förståelse för både Oracle och SQL Server, medan prestandautredningarna gav insikter som formade hur plattformen utvecklades. Integrationen med JD Edwards EnterpriseOne lade till ytterligare ett lager av komplexitet och gav mig värdefull erfarenhet av storskaliga finansiella system och deras datamodeller.

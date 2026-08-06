@@ -25,28 +25,28 @@ highlights:
  - Byggde ett VBScript-baserat inventeringsverktyg för SQL Server med hjälp av WMI.
 ---
 <!--more-->
-## Context
-After the Sigtuna Council project, I was brought in by ICA Banken to troubleshoot a long‑running performance issue in one of their SQL Server processes. A stored procedure that previously completed in minutes had suddenly begun running for nearly a full day before failing silently. Their senior developers had spent weeks investigating the database logic without finding the cause.
+## Kontext
+Efter Sigtuna kommun-projektet anlitades jag av ICA Banken för att felsöka ett långvarigt prestandaproblem i en av deras SQL Server-processer. En lagrad procedur som tidigare tog minuter att slutföra hade plötsligt börjat köra i nästan ett helt dygn innan den misslyckades tyst. Deras seniora utvecklare hade lagt veckor på att undersöka databaslogiken utan att hitta orsaken.
 
-## Work
-### Debugging & Optimization
-- Analyzed a complex stored procedure used for data import and maintenance
-- Investigated not only the SQL logic but also the external tools and processes the procedure depended on
-- Identified that the root cause was not in the database at all, but in a change to an external component that caused the process to pause indefinitely
-- Resolved the issue within hours and helped stabilize the surrounding workflow
-### Database Quality Analysis
-- Performed a review of database design and operational practices
-- Identified areas where security and maintainability could be improved
-- Provided recommendations that strengthened the overall environment
-### Inventory & Automation
-- Developed a VBScript‑based SQL Server inventory tool using WMI
-- Helped ICA Banken gain better visibility into their server landscape and configuration
+## Arbete
+### Felsökning & optimering
+- Analyserade en komplex lagrad procedur som användes för dataimport och underhåll
+- Undersökte inte bara SQL-logiken utan även de externa verktyg och processer som proceduren var beroende av
+- Identifierade att grundorsaken inte fanns i databasen alls, utan i en förändring i en extern komponent som fick processen att pausa på obestämd tid
+- Löste problemet inom loppet av några timmar och hjälpte till att stabilisera det omgivande arbetsflödet
+### Databaskvalitetsanalys
+- Genomförde en granskning av databasdesign och driftrutiner
+- Identifierade områden där säkerhet och underhållbarhet kunde förbättras
+- Gav rekommendationer som stärkte helhetsmiljön
+### Inventering & automation
+- Utvecklade ett VBScript-baserat inventeringsverktyg för SQL Server med hjälp av WMI
+- Hjälpte ICA Banken få bättre överblick över sitt serverlandskap och sin konfiguration
 
-## Outcome
-- Resolved a high‑visibility production issue that had blocked the team for weeks
-- Improved database security and operational hygiene
-- Delivered tooling that simplified server inventory and administration
-- Left a strong impression on both ICA Banken and QBranch leadership
+## Resultat
+- Löste ett högprofilerat produktionsproblem som blockerat teamet i veckor
+- Förbättrade databassäkerhet och driftshygien
+- Levererade verktyg som förenklade serverinventering och administration
+- Lämnade ett starkt intryck hos både ICA Bankens och QBranchs ledning
 
-## Reflection
-This assignment became one of those classic consulting moments where the real issue turned out to be outside the code everyone had been scrutinizing. By stepping back and looking at the entire workflow — not just the SQL — the root cause became clear. It reinforced an important lesson early in my career: sometimes the fastest path to a solution is to question the assumptions everyone else has already accepted.
+## Reflektion
+Det här uppdraget blev ett av de klassiska konsultögonblicken där det verkliga problemet visade sig ligga utanför koden som alla hade granskat. Genom att ta ett steg tillbaka och se på hela arbetsflödet — inte bara SQL:en — blev grundorsaken tydlig. Det förstärkte en viktig lärdom tidigt i min karriär: ibland är den snabbaste vägen till en lösning att ifrågasätta de antaganden som alla andra redan accepterat.

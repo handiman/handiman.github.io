@@ -37,8 +37,8 @@ competencies:
 # - Semantic-CV is a developer oriented tool for expressing your CV as JSON-LD in format. 
 # - It's made up two main parts - a CLI for simplifying editing the structured data and a where users can optionally host their CVs.    
 ---
-Semantic-CV is a developer oriented tool for expressing your CV as JSON-LD in [schema.org/Person](https://schema.org/Person) format. 
-It's made up two main parts - a CLI for simplifying editing the structured data and a [website](https://semantic.cv) where users can optionally host their CVs.
+Semantic-CV är ett utvecklarorienterat verktyg för att uttrycka ditt CV som JSON-LD i [schema.org/Person](https://schema.org/Person)-format.
+Det består av två huvuddelar — ett CLI för att förenkla redigeringen av den strukturerade datan och en [webbplats](https://semantic.cv) där användare valfritt kan hosta sina CV:n.
 <!--more-->
 
 

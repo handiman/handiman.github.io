@@ -28,20 +28,20 @@ highlights:
  - Hjälpte kollegor med felsökning och integrationsfrågor.
 ---
 <!--more-->
-## Context
-During my time at IconMedialab, I worked with Siemens Medical on their global intranet platform, EMPower. The system was built using classic ASP, COM components, and a mix of XML/XSLT for content rendering — typical of large enterprise intranets at the time.
+## Kontext
+Under min tid på IconMedialab arbetade jag med Siemens Medical på deras globala intranätplattform, EMPower. Systemet byggdes med klassisk ASP, COM-komponenter och en blandning av XML/XSLT för innehållsrendering — typiskt för stora företagsintranät vid den tiden.
 
-## Work
-- Supported the development and maintenance of the EMPower intranet
-- Performed QA, testing, and verification of new features and updates
-- Assisted colleagues with debugging, integration issues, and content‑related workflows
-- Worked across classic ASP, VB6/COM components, JavaScript, and SQL Server
-- Contributed to smaller enhancements and fixes within the intranet’s codebase
+## Arbete
+- Stöttade utveckling och underhåll av EMPower-intranätet
+- Utförde kvalitetssäkring, testning och verifiering av nya funktioner och uppdateringar
+- Hjälpte kollegor med felsökning, integrationsfrågor och innehållsrelaterade arbetsflöden
+- Arbetade med klassisk ASP, VB6/COM-komponenter, JavaScript och SQL Server
+- Bidrog till mindre förbättringar och rättningar i intranätets kodbas
 
-## Outcome
-- Helped maintain a large, business‑critical intranet used across Siemens Medical
-- Improved stability and quality through structured QA and support
-- Gained experience working in a large, distributed enterprise environment with multiple teams and technologies
+## Resultat
+- Hjälpte till att underhålla ett stort, verksamhetskritiskt intranät som användes inom hela Siemens Medical
+- Förbättrade stabilitet och kvalitet genom strukturerad kvalitetssäkring och support
+- Fick erfarenhet av att arbeta i en stor, distribuerad företagsmiljö med flera team och teknologier
 
-## Reflection
-This project was part of my early professional development — a chance to work inside a sizeable corporate intranet with real users, real deadlines, and a mix of legacy and modernizing technologies. It strengthened my understanding of team workflows, QA practices, and the realities of maintaining long‑lived enterprise systems.
+## Reflektion
+Det här projektet var en del av min tidiga professionella utveckling — en chans att arbeta inuti ett stort företagsintranät med verkliga användare, verkliga deadlines och en blandning av äldre och moderniserande teknik. Det stärkte min förståelse för teamarbetsflöden, kvalitetssäkringspraxis och verkligheten i att underhålla långlivade företagssystem.

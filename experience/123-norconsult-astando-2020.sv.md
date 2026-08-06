@@ -48,57 +48,57 @@ competencies:
       - Octopus Deploy
 ---
 <!--more-->
-## Context
-My relationship with Norconsult Astando goes back to 2008–2009, when I worked with them as a consultant from Avea Group AB. Nearly a decade later, after seeing on [LinkedIn](https://www.linkedin.com/in/prettygoodprogrammer) that I had started freelancing, they reached out and asked if I was available for a new engagement. I returned in 2018 to modernize deployment workflows, and again in 2020 to support full‑stack development and legacy modernization.
+## Kontext
+Min relation till Norconsult Astando går tillbaka till 2008–2009, när jag arbetade med dem som konsult från Avega Group AB. Nästan ett decennium senare, efter att ha sett på [LinkedIn](https://www.linkedin.com/in/prettygoodprogrammer) att jag hade börjat frilansa, hörde de av sig och frågade om jag var tillgänglig för ett nytt uppdrag. Jag återvände 2018 för att modernisera driftsättningsflöden, och igen 2020 för att stötta fullstackutveckling och modernisering av äldre system.
 
-Norconsult Astando develops GIS‑driven solutions for municipalities and infrastructure organizations. The systems I worked on were primarily built on ASP.NET Core, ASP.NET Web API, and WCF services, with frontend components in JavaScript/TypeScript and KnockoutJS. Deployments were handled through TeamCity and Octopus Deploy.
+Norconsult Astando utvecklar GIS-drivna lösningar för kommuner och infrastrukturorganisationer. Systemen jag arbetade med byggdes främst på ASP.NET Core, ASP.NET Web API och WCF-tjänster, med frontend-komponenter i JavaScript/TypeScript och KnockoutJS. Driftsättningar hanterades via TeamCity och Octopus Deploy.
 
-## 2018 Engagement — DevOps & Backend Engineering
+## 2018 års uppdrag — DevOps & backend-utveckling
 ### Problem
-The IsyRoad project suffered from slow, manual, and error‑prone deployments. Each deployment took around 45 minutes per application instance, and the process introduced frequent human‑related errors.
+IsyRoad-projektet led av långsamma, manuella och felbenägna driftsättningar. Varje driftsättning tog cirka 45 minuter per applikationsinstans, och processen orsakade ofta mänskliga fel.
 
-### Approach
+### Tillvägagångssätt
 
 #### Automation & DevOps
-- Introduced automated deployment pipelines using Octopus Deploy
-- Integrated TeamCity build steps with deployment workflows
-- Standardized configuration and environment handling
+- Introducerade automatiserade driftsättningspipelines med Octopus Deploy
+- Integrerade TeamCity-byggsteg med driftsättningsflöden
+- Standardiserade konfigurations- och miljöhantering
 
-#### Backend Development
-- Contributed to ASP.NET Web API and .NET Core services
-- Improved maintainability and reliability of backend components
-- Worked with NHibernate and WCF‑based integrations
+#### Backend-utveckling
+- Bidrog till ASP.NET Web API- och .NET Core-tjänster
+- Förbättrade underhållbarhet och tillförlitlighet i backend-komponenter
+- Arbetade med NHibernate och WCF-baserade integrationer
 
-### Outcome
-- Deployment time reduced from ~45 minutes to ~5 minutes per instance
-- Deployment‑related errors reduced by nearly 100%
-- A more predictable and maintainable delivery pipeline for the team
+### Resultat
+- Driftsättningstiden minskade från ~45 minuter till ~5 minuter per instans
+- Driftsättningsrelaterade fel minskade med nästan 100 %
+- En mer förutsägbar och underhållbar leveranspipeline för teamet
 
 
 
-## 2020 Engagement — Fullstack Development & Legacy Modernization
+## 2020 års uppdrag — Fullstackutveckling & modernisering av äldre system
 
 ### Problem
-Several legacy systems required new functionality, improved readability, and better testability. Deployment automation also needed refinement to support ongoing development.
+Flera äldre system behövde ny funktionalitet, förbättrad läsbarhet och bättre testbarhet. Driftsättningsautomationen behövde också förfinas för att stötta pågående utveckling.
 
-### Approach
+### Tillvägagångssätt
 
-#### Backend Development
-- Implemented new features in ASP.NET Core and ASP.NET Web Forms applications
-- Improved structure and clarity in existing codebases
-- Enhanced testability through clearer separation of concerns
-#### Frontend Development
-- Delivered new UI functionality using TypeScript, JavaScript, and KnockoutJS
-- Improved maintainability of legacy frontend components
+#### Backend-utveckling
+- Implementerade nya funktioner i ASP.NET Core- och ASP.NET Web Forms-applikationer
+- Förbättrade struktur och tydlighet i befintliga kodbaser
+- Förbättrade testbarheten genom tydligare separation av ansvar
+#### Frontend-utveckling
+- Levererade ny UI-funktionalitet med TypeScript, JavaScript och KnockoutJS
+- Förbättrade underhållbarheten hos äldre frontend-komponenter
 #### Automation
-- Extended and refined deployment automation using Octopus Deploy
-- Contributed to TeamCity build pipelines
-#### Outcome
-- Delivered new functionality across several legacy systems
-- Improved code readability and testability, reducing friction for future development
-- Strengthened deployment automation for ongoing work
+- Vidareutvecklade och förfinade driftsättningsautomationen med Octopus Deploy
+- Bidrog till TeamCity-byggpipelines
+#### Resultat
+- Levererade ny funktionalitet i flera äldre system
+- Förbättrade kodens läsbarhet och testbarhet, vilket minskade friktionen för framtida utveckling
+- Stärkte driftsättningsautomationen för pågående arbete
 
 
-## Reflection
-Across all three periods — 2008, 2018, and 2020 — the work combined pragmatic engineering with meaningful improvements to delivery workflows. 
-The long‑standing relationship with Norconsult Astando reflects a pattern of trust built over time: solve real problems, improve the systems that matter, and make life easier for the teams who maintain them.
+## Reflektion
+Över alla tre perioderna — 2008, 2018 och 2020 — kombinerade arbetet pragmatisk utveckling med meningsfulla förbättringar av leveransflödena.
+Den långvariga relationen med Norconsult Astando speglar ett mönster av förtroende byggt över tid: lösa verkliga problem, förbättra de system som betyder något, och göra livet lättare för de team som underhåller dem.

@@ -21,19 +21,19 @@ highlights:
  - Assisterade i utvecklingen av företagets webbplats med klassisk ASP.
 ---
 <!--more-->
-## Context
-Looström & Gelin was a small engineering consultancy where I took on my first professional software development assignment. I joined through InniTek AB in 1998, working with Visual Basic 5, classic ASP, and COM — my introduction to real‑world software development.
+## Kontext
+Looström & Gelin var en liten teknikkonsultfirma där jag tog mig an mitt första professionella uppdrag inom mjukvaruutveckling. Jag kom in via InniTek AB 1998 och arbetade med Visual Basic 5, klassisk ASP och COM — min introduktion till verklig mjukvaruutveckling.
 
-## Work
-- Contributed to the development of a document management system built in Visual Basic 5
-- Implemented smaller features and fixes across the application
-- Assisted in building and maintaining the company’s website using classic ASP
-- Gained early experience with COM‑based component development and Windows‑centric tooling
+## Arbete
+- Bidrog till utvecklingen av ett dokumenthanteringssystem byggt i Visual Basic 5
+- Implementerade mindre funktioner och rättningar i applikationen
+- Assisterade i att bygga och underhålla företagets webbplats med klassisk ASP
+- Fick tidig erfarenhet av COM-baserad komponentutveckling och Windows-centrerade verktyg
 
-## Outcome
-- Delivered incremental improvements to the internal document management system
-- Helped establish and maintain the company’s early web presence
-- Built foundational experience in professional software development, team workflows, and shipping working code
+## Resultat
+- Levererade stegvisa förbättringar av det interna dokumenthanteringssystemet
+- Hjälpte till att etablera och underhålla företagets tidiga webbnärvaro
+- Byggde grundläggande erfarenhet av professionell mjukvaruutveckling, teamarbetsflöden och att leverera fungerande kod
 
-## Reflection
-This was my first step into the industry — long before I understood object‑oriented design or modern engineering practices. The code wasn’t elegant, but the experience was invaluable. It taught me how to work in a real development environment, collaborate with colleagues, and deliver software that people actually used. Everything that came later was built on this foundation.
+## Reflektion
+Det här var mitt första steg in i branschen — långt innan jag förstod objektorienterad design eller moderna utvecklingsmetoder. Koden var inte elegant, men erfarenheten var ovärderlig. Den lärde mig hur man arbetar i en verklig utvecklingsmiljö, samarbetar med kollegor och levererar mjukvara som människor faktiskt använde. Allt som kom senare byggdes på den här grunden.

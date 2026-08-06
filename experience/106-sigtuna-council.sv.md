@@ -29,26 +29,26 @@ highlights:
  - Skrev regeltillägg för attributflöden och kopplingar mellan katalogtjänster.
 ---
 <!--more-->
-## Context
-While at QBranch, I served as the sole developer on an identity management initiative for Sigtuna Council. The project was built on **Microsoft Identity Integration Server (MIIS)** — at the time a brand‑new product, largely unknown in Sweden. This implementation became one of the first MIIS deployments in the country and was later used by Microsoft as a **reference case**, which meant I was briefly part of a very small group of people in Sweden with real hands‑on MIIS experience.
+## Kontext
+Under min tid på QBranch var jag ensam utvecklare på ett identitetshanteringsinitiativ för Sigtuna kommun. Projektet byggdes på **Microsoft Identity Integration Server (MIIS)** — vid den tiden en helt ny produkt, i stort sett okänd i Sverige. Den här implementationen blev en av de första MIIS-driftsättningarna i landet och användes senare av Microsoft som ett **referensfall**, vilket innebar att jag kortvarigt tillhörde en mycket liten grupp människor i Sverige med verklig praktisk MIIS-erfarenhet.
 
-## Work
-### Management Agents
-- Implemented MIIS management agents for the council’s HR system, Novell eDirectory, and Active Directory
-- Designed and built attribute flows, join rules, and provisioning logic across multiple directory services
-### Provisioning & Automation
-- Automated creation of GroupWise accounts using the GroupWise Administrative Objects API
-- Automated creation of Novell server home directories via the Novell C API
-- Ensured consistent identity lifecycle management across heterogeneous systems
-### Integration & Messaging
-- Used C#, SQL Server, and MSMQ to support synchronization workflows and operational reliability
-- Built custom extensions to handle edge cases and domain‑specific rules
-## Outcome
-- Delivered one of Sweden’s first MIIS‑based identity management solutions
-- Provided Microsoft with a real‑world reference case for MIIS
-- Unified identity provisioning across HR, eDirectory, Active Directory, and GroupWise
-- Reduced manual account creation and improved consistency across systems
-## Reflection
-This project was also my first real exposure to Scrum. The project manager and I held our “daily stand‑ups” in the car while driving to the client — daily sit‑downs, technically — but the cadence and transparency made a difference. Scrum helped us stay aligned and deliver on time despite the complexity of integrating multiple directory services and legacy systems.
+## Arbete
+### Management agents
+- Implementerade MIIS management agents för kommunens HR-system, Novell eDirectory och Active Directory
+- Designade och byggde attributflöden, join-regler och provisioneringslogik över flera katalogtjänster
+### Provisionering & automation
+- Automatiserade skapandet av GroupWise-konton med GroupWise Administrative Objects API
+- Automatiserade skapandet av hemkataloger på Novell-servrar via Novell C API
+- Säkerställde konsekvent hantering av identitetslivscykeln över heterogena system
+### Integration & meddelandehantering
+- Använde C#, SQL Server och MSMQ för att stötta synkroniseringsflöden och driftsäkerhet
+- Byggde anpassade tillägg för att hantera specialfall och domänspecifika regler
+## Resultat
+- Levererade en av Sveriges första MIIS-baserade identitetshanteringslösningar
+- Gav Microsoft ett verkligt referensfall för MIIS
+- Enade identitetsprovisionering över HR, eDirectory, Active Directory och GroupWise
+- Minskade manuellt kontoskapande och förbättrade konsekvensen över systemen
+## Reflektion
+Det här projektet var också min första riktiga kontakt med Scrum. Projektledaren och jag höll våra "daily stand-ups" i bilen på väg till kunden — dagliga avstämningar, tekniskt sett — men taktfastheten och öppenheten gjorde skillnad. Scrum hjälpte oss hålla oss samordnade och leverera i tid trots komplexiteten i att integrera flera katalogtjänster och äldre system.
 
-Working as the sole developer on one of Sweden’s first MIIS implementations taught me how to navigate heterogeneous environments, design robust synchronization logic, and automate identity provisioning across systems that were never designed to talk to each other. It remains one of the more technically unique projects from my early consulting years.
+Att arbeta som ensam utvecklare på en av Sveriges första MIIS-implementationer lärde mig hur man navigerar heterogena miljöer, designar robust synkroniseringslogik och automatiserar identitetsprovisionering över system som aldrig var designade för att prata med varandra. Det förblir ett av de mer tekniskt unika projekten från mina tidiga konsultår.

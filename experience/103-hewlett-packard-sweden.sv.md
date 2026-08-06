@@ -36,22 +36,22 @@ highlights:
  - Underhöll och vidareutvecklade www.hp.se.
 ---
 <!--more-->
-## Context
-During my time at IconMedialab (and later through eWork), I worked with Compaq on several web‑based systems for the Scandinavian and EMEA regions. When Hewlett‑Packard acquired Compaq, the work continued under the HP brand — meaning I contributed to both Compaq and HP solutions during this period.
-The technology stack spanned classic ASP, VBScript, early .NET, SQL Server, XML/XSLT, and EPiServer, reflecting the transitional era of web development at the turn of the millennium.
-## Work
-### Event Administration (EMEA)
-- Requirements analysis, use‑case design, and development of a web‑based administration interface for managing information and registrations for customer events across EMEA
-- Implemented functionality in classic ASP, VBScript, and SQL Server
-### Scandinavian Product Database
-- Requirements analysis, design, and development of a web‑based administration interface for the Scandinavian product catalog
-- Built data‑driven features using ASP, T‑SQL, and XML/XSLT
-### Intranet & Web Presence
-- Developed templates and components for the EPiServer‑based intranet
-- Contributed to maintenance and further development of [www.hp.se](https:://www.hp.se), including content updates, layout adjustments, and smaller functional improvements
-## Outcome
-- Delivered multiple internal and external web solutions used across Compaq and later HP’s Scandinavian and EMEA operations
-- Helped modernize parts of HP Sweden’s web presence during a period of rapid technological change
-- Built early experience with requirements work, system design, and full‑stack web development across classic ASP and early .NET
-## Reflection
-This project represents a formative period in my career — working across two major global brands during a time of shifting technologies and evolving web standards. It taught me how to collaborate with large organizations, translate requirements into working systems, and deliver practical solutions in an era before modern frameworks and tooling.
+## Kontext
+Under min tid på IconMedialab (och senare via eWork) arbetade jag med Compaq på flera webbaserade system för Skandinavien och EMEA-regionen. När Hewlett-Packard förvärvade Compaq fortsatte arbetet under HP-varumärket — vilket innebar att jag bidrog till både Compaq- och HP-lösningar under den här perioden.
+Teknikstacken spände över klassisk ASP, VBScript, tidig .NET, SQL Server, XML/XSLT och EPiServer, vilket speglade webbutvecklingens övergångsera vid millennieskiftet.
+## Arbete
+### Eventadministration (EMEA)
+- Kravanalys, use case-design och utveckling av ett webbaserat administrationsgränssnitt för att hantera information och anmälningar till kundevenemang inom EMEA
+- Implementerade funktionalitet i klassisk ASP, VBScript och SQL Server
+### Skandinavisk produktdatabas
+- Kravanalys, design och utveckling av ett webbaserat administrationsgränssnitt för den skandinaviska produktkatalogen
+- Byggde datadrivna funktioner med ASP, T-SQL och XML/XSLT
+### Intranät & webbnärvaro
+- Utvecklade mallar och komponenter för det EPiServer-baserade intranätet
+- Bidrog till underhåll och vidareutveckling av [www.hp.se](https:://www.hp.se), inklusive innehållsuppdateringar, layoutjusteringar och mindre funktionella förbättringar
+## Resultat
+- Levererade flera interna och externa webblösningar som användes inom Compaqs och senare HP:s skandinaviska och EMEA-verksamhet
+- Hjälpte till att modernisera delar av HP Sveriges webbnärvaro under en period av snabb teknisk förändring
+- Byggde tidig erfarenhet av kravarbete, systemdesign och fullstack-webbutveckling inom klassisk ASP och tidig .NET
+## Reflektion
+Det här projektet representerar en formativ period i min karriär — att arbeta över två stora globala varumärken under en tid av föränderlig teknik och utvecklande webbstandarder. Det lärde mig hur man samarbetar med stora organisationer, omsätter krav till fungerande system och levererar praktiska lösningar i en era innan moderna ramverk och verktyg.

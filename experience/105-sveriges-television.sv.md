@@ -22,18 +22,18 @@ highlights:
  - Underhöll och felsökte SVT:s interna systeminventeringsverktyg.
 ---
 <!--more-->
-## Context
-During my time at QBranch, I spent a short assignment at Sveriges Television (SVT), Sweden’s national public broadcaster. The work focused on maintaining an internal inventory tool used by the organization. Although the engagement was brief, it was memorable simply because it was SVT — a unique environment compared to the corporate clients I usually worked with.
+## Kontext
+Under min tid på QBranch hade jag ett kort uppdrag hos Sveriges Television (SVT), Sveriges public service-bolag. Arbetet fokuserade på att underhålla ett internt inventeringsverktyg som användes av organisationen. Även om uppdraget var kort var det minnesvärt helt enkelt för att det var SVT — en unik miljö jämfört med de företagskunder jag vanligtvis arbetade med.
 
-## Work
-- Performed maintenance and smaller updates on SVT’s internal system inventory tool
-- Worked with classic ASP, VBScript, VBA, and SQL Server
-- Assisted with troubleshooting and minor improvements to support day‑to‑day operations
+## Arbete
+- Utförde underhåll och mindre uppdateringar av SVT:s interna systeminventeringsverktyg
+- Arbetade med klassisk ASP, VBScript, VBA och SQL Server
+- Hjälpte till med felsökning och mindre förbättringar för att stötta den dagliga driften
 
-## Outcome
-- Delivered the required maintenance within the two‑week engagement
-- Ensured the inventory tool continued to function reliably for internal users
-- Gained a glimpse into the operational side of a major broadcasting organization
+## Resultat
+- Levererade det nödvändiga underhållet inom det tvåveckorslånga uppdraget
+- Säkerställde att inventeringsverktyget fortsatte fungera tillförlitligt för interna användare
+- Fick en inblick i den operativa sidan av en stor mediaorganisation
 
-## Reflection
-This was a small assignment, but a fun one — my first and only time working inside a television company. The work itself was straightforward maintenance, but the environment made it stand out among my early consulting projects.
+## Reflektion
+Det här var ett litet uppdrag, men ett roligt sådant — min första och enda gång jag arbetade inuti ett tv-bolag. Själva arbetet var okomplicerat underhåll, men miljön gjorde att det stack ut bland mina tidiga konsultprojekt.

@@ -25,25 +25,25 @@ highlights:
  - Förenklade CI-processen med Azure DevOps byggpipelines.
 ---
 <!--more-->
-## Context
-Insplanet brought me in as a senior developer during a period of transition. Their architect and lead developer had recently left, and they needed someone who could stabilize the situation, preserve critical knowledge, and keep development moving. My work focused on documentation, deployment reliability, and simplifying the team’s build and delivery processes.
+## Kontext
+Insplanet tog in mig som senior utvecklare under en övergångsperiod. Deras arkitekt och lead developer hade nyligen slutat, och de behövde någon som kunde stabilisera situationen, bevara kritisk kunskap och hålla utvecklingen igång. Mitt arbete fokuserade på dokumentation, driftsäkerhet och att förenkla teamets bygg- och leveransprocesser.
 
-## Work
-### Architecture & Knowledge Preservation
-- Captured and organized architectural knowledge to prevent loss during the transition
-- Updated and clarified existing documentation to make the system easier to understand and maintain
-### Build & Deployment Improvements
-- Implemented **zero‑downtime deployment** to reduce operational friction
-- Simplified the CI pipeline using **Azure DevOps** build pipelines
-- Streamlined deployment workflows with **Octopus Deploy**
-### Development
-- Contributed to ongoing development across a mixed stack: **ASP.NET MVC**, **ASP.NET Web API**, **.NET Core**, **C#**, **jQuery**, **React**, and **TypeScript**
+## Arbete
+### Arkitektur & kunskapsbevarande
+- Fångade och organiserade arkitekturell kunskap för att förhindra förlust under övergången
+- Uppdaterade och förtydligade befintlig dokumentation för att göra systemet lättare att förstå och underhålla
+### Bygg- & driftsättningsförbättringar
+- Implementerade **driftsättning utan driftstopp** för att minska operativ friktion
+- Förenklade CI-pipelinen med **Azure DevOps** byggpipelines
+- Effektiviserade driftsättningsflödena med **Octopus Deploy**
+### Utveckling
+- Bidrog till pågående utveckling över en blandad teknikstack: **ASP.NET MVC**, **ASP.NET Web API**, **.NET Core**, **C#**, **jQuery**, **React** och **TypeScript**
 
-## Outcome
-- Ensured continuity after the departure of key technical staff
-- Reduced deployment risk through zero‑downtime releases
-- Made the build and deployment process faster, clearer, and easier to maintain
-- Left the team with better documentation and a more predictable delivery pipeline
+## Resultat
+- Säkerställde kontinuitet efter att nyckelpersoner slutat
+- Minskade driftsättningsrisk genom driftsättningar utan driftstopp
+- Gjorde bygg- och driftsättningsprocessen snabbare, tydligare och lättare att underhålla
+- Lämnade teamet med bättre dokumentation och en mer förutsägbar leveranspipeline
 
-## Reflection
-This assignment was less about building new features and more about stabilizing a team in transition. It was a chance to apply senior engineering judgment, reduce operational complexity, and leave the client with a clearer, more maintainable setup than the one I walked into.
+## Reflektion
+Det här uppdraget handlade mindre om att bygga nya funktioner och mer om att stabilisera ett team i övergång. Det var en chans att tillämpa senior teknisk bedömning, minska operativ komplexitet och lämna kunden med en tydligare, mer underhållbar uppsättning än den jag klev in i.

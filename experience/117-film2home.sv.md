@@ -72,58 +72,58 @@ competencies:
       - Octopus Deploy
 ---
 <!--more-->
-## Context
-Film2Home was originally a standalone Video‑on‑Demand company owned by Bonver. After the company went bankrupt, it was acquired by Magine TV, who continued operating and evolving the platform under both the Film2Home and Plejmo brands.
+## Kontext
+Film2Home var ursprungligen ett fristående Video-on-Demand-bolag ägt av Bonver. Efter att bolaget gått i konkurs förvärvades det av Magine TV, som fortsatte driva och vidareutveckla plattformen under både varumärkena Film2Home och Plejmo.
 
-From 2014 to 2017, I worked as a Fullstack Developer and DevOps engineer on these services. The platform combined ASP.NET MVC applications, EPiServer‑based content management, and a growing set of backend services supporting catalog, payments, user accounts, and content metadata.
+Från 2014 till 2017 arbetade jag som fullstackutvecklare och DevOps-ingenjör på dessa tjänster. Plattformen kombinerade ASP.NET MVC-applikationer, EPiServer-baserad innehållshantering och en växande uppsättning backend-tjänster som stöttade katalog, betalningar, användarkonton och innehållsmetadata.
 
-The work spanned full‑stack development, system integration, and DevOps in an environment where rapid iteration, stability, and deployment reliability were equally important.
+Arbetet spände över fullstackutveckling, systemintegration och DevOps i en miljö där snabb iteration, stabilitet och driftsäkerhet var lika viktiga.
 
 ## Problem
-The existing system faced several challenges typical of maturing VOD platforms:
+Det befintliga systemet stod inför flera utmaningar typiska för mognande VOD-plattformar:
 
-- A traditional n‑tier architecture that struggled with performance under load
-- Manual deployments that were slow, error‑prone, and difficult to coordinate
-- Increasing complexity around third‑party integrations (payments, metadata providers, etc.)
-- A need for a more modern API surface as new clients and web applications were introduced
+- En traditionell n-skiktsarkitektur som kämpade med prestanda under belastning
+- Manuella driftsättningar som var långsamma, felbenägna och svåra att koordinera
+- Ökande komplexitet kring tredjepartsintegrationer (betalningar, metadataleverantörer, etc.)
+- Ett behov av en modernare API-yta i takt med att nya klienter och webbapplikationer introducerades
 
-The goal was to improve performance, reduce operational friction, and support the evolution of the platform without destabilizing ongoing operations.
+Målet var att förbättra prestanda, minska operativ friktion och stötta plattformens utveckling utan att destabilisera pågående drift.
 
-## Approach
-My work combined architectural refactoring, backend development, frontend improvements and DevOps automation. Key areas included:
-### Architecture
-- Introduced CQRS patterns to separate reads from writes and improve scalability
-- Refactored parts of the system toward a service‑bus‑driven architecture using Azure Service Bus
-- Created microservices for third‑party integrations to reduce coupling and improve reliability
-- Enabled rapid experimentation by decoupling components, making it straightforward to plug in new features and services
-### Backend Development
-- Built and maintained ASP.NET MVC and ASP.NET Web API applications
-- Designed and implemented version 1 of Plejmo’s REST API
-- Developed domain logic using C#, .NET Framework, NHibernate, and SQL Server
-- Built a proof‑of‑concept gamification service (levels, achievements, etc.) that integrated cleanly thanks to the new service‑bus architecture
-### Frontend Development
-- Implemented UI features using JavaScript, jQuery, and KnockoutJS
-- Improved client‑side performance and responsiveness
-- Collaborated with designers and content teams working in EPiServer
-### System Integration
-- Built and maintained integrations with external metadata and payment providers
-- Developed and maintained REST and WCF services for internal and external consumers
+## Tillvägagångssätt
+Mitt arbete kombinerade arkitekturell refaktorisering, backend-utveckling, frontend-förbättringar och DevOps-automation. Viktiga områden inkluderade:
+### Arkitektur
+- Introducerade CQRS-mönster för att separera läsningar från skrivningar och förbättra skalbarheten
+- Refaktoriserade delar av systemet mot en service bus-driven arkitektur med Azure Service Bus
+- Skapade mikrotjänster för tredjepartsintegrationer för att minska koppling och förbättra tillförlitlighet
+- Möjliggjorde snabb experimentering genom att frikoppla komponenter, vilket gjorde det enkelt att koppla in nya funktioner och tjänster
+### Backend-utveckling
+- Byggde och underhöll ASP.NET MVC- och ASP.NET Web API-applikationer
+- Designade och implementerade version 1 av Plejmos REST-API
+- Utvecklade domänlogik med C#, .NET Framework, NHibernate och SQL Server
+- Byggde en proof-of-concept-gamificationtjänst (nivåer, prestationer, etc.) som integrerades smidigt tack vare den nya service bus-arkitekturen
+### Frontend-utveckling
+- Implementerade UI-funktioner med JavaScript, jQuery och KnockoutJS
+- Förbättrade klientsidans prestanda och responsivitet
+- Samarbetade med designers och innehållsteam som arbetade i EPiServer
+### Systemintegration
+- Byggde och underhöll integrationer med externa metadata- och betalningsleverantörer
+- Utvecklade och underhöll REST- och WCF-tjänster för interna och externa konsumenter
 ### Automation & DevOps
-- Configured automated builds and deployment pipelines using Octopus Deploy
-- Reduced deployment time from roughly one hour to a few minutes
-- Eliminated manual deployment errors through automation and environment consistency
-- Managed IIS configurations and site setup across multiple environments
+- Konfigurerade automatiserade byggen och driftsättningspipelines med Octopus Deploy
+- Minskade driftsättningstiden från cirka en timme till några minuter
+- Eliminerade manuella driftsättningsfel genom automation och miljökonsekvens
+- Hanterade IIS-konfigurationer och sajtuppsättning över flera miljöer
 
-## Outcome
-- Delivered the Film2Home and Plejmo web platforms across multiple markets
-- Designed and shipped Plejmo’s first REST API, enabling new clients and integrations
-- Reduced deployment time dramatically and improved operational stability through automation
-- Increased system performance by refactoring from a traditional n‑tier architecture to a service‑bus‑oriented approach
-- Improved scalability and reliability by isolating third‑party integrations into dedicated services
-- Demonstrated the architectural flexibility of the new system through a gamification proof of concept that could be added with minimal friction
+## Resultat
+- Levererade Film2Home- och Plejmo-webbplattformarna på flera marknader
+- Designade och lanserade Plejmos första REST-API, vilket möjliggjorde nya klienter och integrationer
+- Minskade driftsättningstiden dramatiskt och förbättrade den operativa stabiliteten genom automation
+- Ökade systemprestanda genom att refaktorisera från en traditionell n-skiktsarkitektur till en service bus-orienterad approach
+- Förbättrade skalbarhet och tillförlitlighet genom att isolera tredjepartsintegrationer i dedikerade tjänster
+- Visade den nya arkitekturens flexibilitet genom en gamification-proof-of-concept som kunde läggas till med minimal friktion
 
-## Reflection
-This project highlighted the value of combining full‑stack development with DevOps discipline. Many of the most impactful improvements came from simplifying architecture, reducing deployment friction, and clarifying system boundaries.
-Working on a consumer‑facing VOD platform also reinforced the importance of performance, stability, and predictable delivery — especially when customers expect instant access to content.
+## Reflektion
+Det här projektet belyste värdet av att kombinera fullstackutveckling med DevOps-disciplin. Många av de mest betydelsefulla förbättringarna kom från att förenkla arkitekturen, minska driftsättningsfriktionen och förtydliga systemgränserna.
+Att arbeta på en konsumentvänd VOD-plattform förstärkte också vikten av prestanda, stabilitet och förutsägbar leverans — särskilt när kunder förväntar sig omedelbar tillgång till innehåll.
 
 
