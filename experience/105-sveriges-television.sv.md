@@ -17,9 +17,9 @@ skills:
  - T-SQL
  - SQL Server
  - ASP
-#description: Maintenance of the client's system inventory tool. 
-#highlights:
-# - Maintenance of the client's system inventory tool.
+description: Kort underhållsuppdrag på SVT:s interna systeminventeringsverktyg.
+highlights:
+ - Underhöll och felsökte SVT:s interna systeminventeringsverktyg.
 ---
 <!--more-->
 ## Context

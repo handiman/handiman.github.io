@@ -10,6 +10,7 @@ organization:
   type: Lokal dagligvarubutik
 start_date: 1992-06-01
 end_date: 1992-09-01
+description: Butiksbiträde med ansvar för grönsaksavdelningen och den dagliga butiksdriften på en lokal dagligvarubutik.
 ---
 <!--more-->
 ## Om rollen

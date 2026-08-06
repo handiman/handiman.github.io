@@ -23,11 +23,11 @@ skills:
  - Azure App Services
  - Identity Server
  - Micro Services
-description: Adlibris is the largest online bookstore in the Nordics with a growing ecosystem of digital services and applications. In 2021, I joined the Storefront team as a Fullstack Developer to support the ongoing modernization of the customer‑facing platform.
+description: Adlibris är Nordens största nätbokhandel med ett växande ekosystem av digitala tjänster och applikationer. År 2021 gick jag med i Storefront-teamet som fullstackutvecklare för att stötta den pågående moderniseringen av den kundvända plattformen.
 highlights: 
- - OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app under development.
- - Account management API built with Asp.NET Core and .NET 5 hosted on Azure. 
- - Contentful CMS content modeling and integration.
+ - OpenID/OAuth-tjänst implementerad med Identity Server 4 för den nya Adlibris-appen under utveckling.
+ - API för kontohantering byggt med Asp.NET Core och .NET 5, driftsatt på Azure.
+ - Innehållsmodellering och integration mot Contentful CMS.
 competencies:
   - name: Backend development 
     weight: .9

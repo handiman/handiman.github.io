@@ -19,9 +19,10 @@ skills:
  - Asp.NET MVC
  - WiX
  - SQL Server
+description: Introducerade beteendedriven utveckling (BDD) i CashGuards system StoreManager, och omvandlade befintliga user stories till exekverbara specifikationer.
 highlights:
- - Was the key person in introducing behavior driven development. 
- - Laid the foundation for automated regression tests and living documentation by taking existing user stories and turning them into executable specifications using SpecFlow. 
+ - Introducerade beteendedriven utveckling och omvandlade befintliga user stories till exekverbara specifikationer med SpecFlow.
+ - Lade grunden för automatiserad regressionstestning och levande dokumentation.
 ---
 <!--more-->
 ## Context

@@ -18,10 +18,11 @@ skills:
  - XML
  - XSLT
  - WMI
-#highlights:
-# - Quality analysis of database design. 
-# - Troubleshooting and optimization of SQL scripts for data import/export and database maintenance. 
-# - VBScript for SQL Server inventory using WMI. 
+description: Anlitad för att felsöka ett akut prestandaproblem i SQL Server, följt av en bredare granskning av databaskvaliteten.
+highlights:
+ - Diagnostiserade och löste en lagrad procedur vars körtid gått från minuter till nästan ett helt dygn.
+ - Granskade databasdesign och driftrutiner och rekommenderade förbättringar.
+ - Byggde ett VBScript-baserat inventeringsverktyg för SQL Server med hjälp av WMI.
 ---
 <!--more-->
 ## Context

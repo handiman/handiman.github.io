@@ -5,7 +5,7 @@ slug: qbranch-competence-manager
 #sitemap: true
 via: 
 - Qbranch
-description: In-house application for managing consultant CVs.
+description: Intern applikation för att hantera konsult-CV:n.
 roles: 
  - Fullstack-utvecklare
 #employer: qbranch-stockholm-ab-2
@@ -21,8 +21,8 @@ skills:
  - EntityFramework 6
  - Test Driven Development
  - Continuous Integration
-#highlights:
-# - Development of an application for managing consultant CVs built on Asp.NET MVC and hosted on Windows Azure.
+highlights:
+ - Vidareutvecklade en intern applikation för att hantera konsult-CV:n, byggd på ASP.NET MVC och driftsatt på Windows Azure.
 ---
 <!--more-->
 ## Context

@@ -28,11 +28,12 @@ skills:
 - VBScript
 - HTML
 - CSS
-#highlights:
-# - Requirements analysis, use case design, system design and development of a web based admininstration interface for information about and registrations for customer events for HP EMEA.
-# - Requirements analysis, design and development of a web based administration interface for HP's scandinavian products database. 
-# - Development of templates for the client's EpiServer based intranet.
-# - Maintenance and further development of www.hp.se.
+description: Webbutveckling inom Compaq och HP:s skandinaviska och EMEA-system under övergången från Compaq till HP, med klassisk ASP, EPiServer och tidiga .NET.
+highlights:
+ - Byggde ett webbaserat administrationsgränssnitt för att hantera HP EMEA:s kundevenemang och anmälningar.
+ - Byggde ett webbaserat administrationsgränssnitt för HP:s skandinaviska produktdatabas.
+ - Utvecklade mallar för kundens EPiServer-baserade intranät.
+ - Underhöll och vidareutvecklade www.hp.se.
 ---
 <!--more-->
 ## Context

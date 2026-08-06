@@ -1,13 +1,13 @@
 ---
 title: Betsson
-comment: Joined as a consultant via Henrik Becker Consulting AB; converted to permanent employment 2023-12
-description: Global online gaming & sportsbook enterprise. Worked in the Player Rewards & Gamification value stream across the services Tournaments, Loyalty, and Levels.
+comment: Började som konsult via Henrik Becker Consulting AB; övergick till fast anställning 2023-12
+description: Global aktör inom onlinespel och sportsbook. Arbetade i värdeflödet Player Rewards & Gamification, inom tjänsterna Tournaments, Loyalty och Levels.
 highlights: 
-- Design, development, and maintenance of event-sourced, gamification-oriented applications with real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools
-- Kafka message processing optimization, resulting in a nearly 1000% increase in throughput for the Tournaments application
-- Proofs of concept for new systems and features to evaluate feasibility and drive innovation
-- Close collaboration with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance
-- Conducting and assessing technical interviews to support recruitment and team growth
+- Design, utveckling och underhåll av händelsedrivna (event-sourced), gamification-inriktade applikationer med Kafka-meddelandehantering i realtid, RESTful API:er och Blazor-baserade back office-verktyg
+- Optimering av Kafka-meddelandehantering, vilket resulterade i en nästan 1000-procentig ökning av genomströmningen för Tournaments-applikationen
+- Proof of concepts för nya system och funktioner för att utvärdera genomförbarhet och driva innovation
+- Nära samarbete med Enterprise Architect och Engineering Manager för att säkerställa arkitektonisk och regulatorisk efterlevnad
+- Genomförande och bedömning av tekniska intervjuer för att stödja rekrytering och teamets tillväxt
 #name: Betsson Group
 #employer: self-employed
 logo: /assets/img/logo-betsson-group.svg

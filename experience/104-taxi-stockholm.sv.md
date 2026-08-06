@@ -16,9 +16,10 @@ skills:
  - C#
  - EPiServer 4
  - SQL Server
+description: CMS-migrering och integration mot ett äldre system för Taxi Stockholm, inklusive lågnivåarbete mot ett Unix-baserat bokningssystem via ett proprietärt protokoll.
 highlights:
- - Migration of Taxi Stockholm's intranet and external web site from Spirello to EpiServer.
- - Integration with the client's Unix based booking system.
+ - Migrerade Taxi Stockholms intranät och externa webbplats från Spirello till EPiServer.
+ - Integrerade den nya webbplatsen med kundens Unix-baserade bokningssystem via ett proprietärt binärprotokoll.
 ---
 <!--more-->
 ## Context

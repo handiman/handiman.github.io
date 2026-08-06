@@ -20,10 +20,11 @@ skills:
  - Team Foundation Server
  - Continuous Integration
  - Test Driven Development
+description: Backend-utveckling, databasmigrering och prestandaarbete på Länsförsäkringars betalplattform, inklusive en övergång från Oracle till SQL Server.
 highlights:
- - Was instrumental in the migration of the payment platform's database from Oracle to SQL Server.
- - Worked with the development of a WCF based payment platform adding support for automatic payment services and prompts. 
- - Quality assurance and performance optimization of connecting systems.
+ - Ledde migreringen av betalplattformens databas från Oracle till SQL Server.
+ - Byggde ut en WCF-baserad betalplattform med stöd för automatiserade betalningar och betalningsuppmaningar.
+ - Undersökte och förbättrade prestanda i plattformen och dess anslutande system.
 ---
 <!--more-->
 ## Context

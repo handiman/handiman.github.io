@@ -13,11 +13,11 @@ organization:
   city: Stockholm
 start_date: 2015-09-14
 end_date: 2017-07-05
-description: Continued work on the services Film2home and Plejmo after Magine had aquired them.
+description: Fortsatt utveckling av tjänsterna Film2Home och Plejmo efter Magine TV:s förvärv.
 highlights:
- - Continued development of the Video on Demand site Plejmo.
- - Designed version 2 of Plejmo's Rest API.
- - Continued improving the CI/CD processes I set up at Film2Home
+ - Fortsatte utvecklingen av VOD-sajten Plejmo.
+ - Designade version 2 av Plejmos REST-API.
+ - Fortsatte förbättra de CI/CD-processer som etablerats hos Film2Home.
 ---
 <!--more-->
 ## About the Role

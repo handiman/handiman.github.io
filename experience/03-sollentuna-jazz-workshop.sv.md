@@ -10,6 +10,7 @@ organization:
   type: Musikutbildning i studiecirkelformat
 start_date: 1994-01-01
 end_date: 1994-07-01
+description: Vikarierande studiecirkelledare för ett gemenskapsdrivet jazzensembleprogram.
 ---
 <!--more-->
 ## Om rollen

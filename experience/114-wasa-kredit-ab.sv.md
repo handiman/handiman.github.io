@@ -22,10 +22,11 @@ skills:
  - Team Foundation Server
  - XML
  - XSLT
+description: Ledde utveckling och processförbättring hos Wasa Kredit, minskade teknisk skuld och införde ett mer iterativt, exempeldrivet arbetssätt.
 highlights: 
- - Reduced complexity and system decay through refactoring and the application of common software architecture patterns.
- - Guided the development teams towards an iterative approach to software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle.
- - Introduced the idea of living documentation in the form of executable specifications.
+ - Minskade komplexiteten och bromsade systemförfallet genom refaktorisering och etablerade arkitekturmönster.
+ - Ledde teamet mot ett mer iterativt arbetssätt, där produktägare, analytiker, testare och utvecklare samarbetade genom hela utvecklingscykeln.
+ - Introducerade levande dokumentation genom exekverbara specifikationer.
 ---
 <!--more-->
 ## Context

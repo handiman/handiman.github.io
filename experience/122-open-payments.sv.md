@@ -23,11 +23,11 @@ skills:
  #- OData
  #- Git
 description: |
-  Open Payments provides a PSD2‑compliant platform that allows FinTech companies, e‑commerce businesses, and other financial actors to integrate with European banks through a single unified API. 
+  Open Payments erbjuder en PSD2-kompatibel plattform som gör det möjligt för fintech-bolag, e-handelsföretag och andra finansiella aktörer att integrera med europeiska banker via ett enda enhetligt API.
 highlights: 
- - Automated customer onboarding process using a React SPA with a .NET Core backend that integrated with Dynamics CRM and a variety of Azure resources.
- - Improved test automation by making functional/integration tests require less manual intervention.
- - Reduced deployment time thanks to improved test automation.
+ - Automatiserade kundonboardingprocessen med en React-SPA och en .NET Core-backend som integrerades med Dynamics CRM och en rad Azure-resurser.
+ - Förbättrade testautomationen genom att minska behovet av manuell hantering i funktions-/integrationstester.
+ - Minskade driftsättningstiden tack vare förbättrad testautomation.
 competencies:
   - name: Backend development 
     weight: .9

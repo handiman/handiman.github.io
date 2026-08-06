@@ -24,10 +24,11 @@ skills:
 - Micro Services
 - Team Foundation Server
 - DocNet
+description: Första frilansuppdraget, med fokus på backend-utveckling för betallösningen "Svea Checkout" i flera marknader, med tonvikt på test- och dokumentationsrutiner.
 highlights: 
- - Development of the payment solution "Svea Checkout" being rolled out in Sweden, Norway and Finland.
- - Improved api documentation by generating most of it automatically
- - Improved test readability by rewriting them as executable specifications  
+ - Byggde betallösningen "Svea Checkout", som rullades ut i Sverige, Norge och Finland.
+ - Förbättrade API-dokumentationen genom att automatisera större delen av dess generering.
+ - Förbättrade testernas läsbarhet genom att skriva om dem som exekverbara specifikationer.
 ---
 <!--more-->
 ## Context

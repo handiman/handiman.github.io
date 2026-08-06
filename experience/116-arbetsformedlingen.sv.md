@@ -18,9 +18,9 @@ skills:
  - WCF
  - WebServices
  - Oracle
-description: Maintenance of a legacy solution for managing requisitions at Sweden's public employment services. 
-#highlights:
-# - Maintenance of a legacy solution for managing requisitions at Sweden's public employment services.
+description: Underhåll av en äldre lösning för att hantera rekvisitioner hos Sveriges offentliga arbetsförmedling.
+highlights:
+ - Underhöll ett äldre system för rekvisitionshantering hos Sveriges offentliga arbetsförmedling.
 ---
 <!--more-->
 ## Context

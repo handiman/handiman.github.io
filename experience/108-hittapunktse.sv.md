@@ -27,10 +27,11 @@ skills:
  - XHTML
  - SQL Server
  - IIS
-#highlights:
-# - Was a key person in the development of hitta.se - one of Swedens top 10 most popular sites at the time.
-# - Created the services "Trafiknytt" (traffic information) and "Vader" (weather information).
-# - Maintenance of hitta.se's internal order system
+description: Fullstackutveckling på hitta.se under en period av snabb tillväxt, med både publika tjänster och interna ordersystem.
+highlights:
+ - Spelade en nyckelroll i utvecklingen av hitta.se, en av Sveriges tio mest besökta webbplatser vid den tiden.
+ - Byggde "Trafiknytt" och "Väder," publika trafik- och vädertjänster på kartplattformen.
+ - Underhöll och vidareutvecklade hitta.se:s interna ordersystem.
 ---
 <!--more-->
 ## Context

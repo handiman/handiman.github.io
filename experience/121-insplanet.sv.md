@@ -19,9 +19,10 @@ skills:
  - Azure DevOps
  - Octopus Deploy
  - jQuery
+description: Senior utvecklaruppdrag för att stabilisera Insplanet efter att deras arkitekt och lead developer slutat, med fokus på dokumentation, driftsäkerhet och förenklad CI.
 highlights: 
- - Zero down time deployment
- - Simplified CI process with Azure DevOps build pipelines
+ - Implementerade driftsättning utan driftstopp (zero-downtime).
+ - Förenklade CI-processen med Azure DevOps byggpipelines.
 ---
 <!--more-->
 ## Context

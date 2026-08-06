@@ -22,10 +22,11 @@ skills:
  - WCF
  - TeamCity
  - Octopus Deploy
+description: Fullstackutveckling och modernisering av äldre system hos Norconsult Astando, med ny funktionalitet, driftsättningsautomation och förbättrad kodkvalitet.
 highlights: 
- - Automated deployment using Octopus Deploy
- - Improvements to code readability and testability 
- - Implementing new functionality in legacy systems
+ - Automatiserade driftsättningen med Octopus Deploy.
+ - Förbättrade kodens läsbarhet och testbarhet.
+ - Implementerade ny funktionalitet i äldre system.
 competencies:
   - name: Backend development
     weight: .75

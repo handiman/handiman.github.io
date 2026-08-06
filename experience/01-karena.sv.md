@@ -10,6 +10,7 @@ organization:
   type: Djur- och leksaksaffär
 start_date: 1986-08-01
 end_date: 1986-12-31
+description: Första jobbet — biträde i butik med ansvar för djurskötsel på en leksaks-, hobby- och djuraffär.
 ---
 <!--more-->
 ## Om rollen

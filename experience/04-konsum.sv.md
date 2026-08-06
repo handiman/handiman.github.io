@@ -10,6 +10,7 @@ organization:
   type: Dagligvaruhandel och detaljhandelskooperativ
 start_date: 1986-12-01
 end_date: 1995-06-30
+description: Butiksbiträde i flera Konsum-butiker, med avdelningsansvar för grönsaker och dryck.
 ---
 <!--more-->
 ## Om rollen

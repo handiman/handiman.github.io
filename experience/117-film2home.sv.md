@@ -32,11 +32,11 @@ skills:
  - EPiServer
  - IIS
 description: |
- Fullstack development of the Video On Demand (VOD) services Film2home and Plejmo based on Asp.NET MVC and EpiServer. DevOps tasks including configuring web sites, configuring automated builds and setting up automated deployment. 
+ Fullstackutveckling av VOD-tjänsterna (Video On Demand) Film2home och Plejmo, baserade på Asp.NET MVC och EpiServer. DevOps-uppgifter inklusive konfigurering av webbplatser, automatiserade byggen och automatiserad driftsättning.
 highlights: 
- - Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
- - Increased performance by refactoring from a traditional n-tier architecture to a service bus architecture thus offloading the front end sites.
- - Designed Plejmo's REST API.
+ - Automatiserade driftsättningen och eliminerade därmed den mänskliga faktorn, vilket minskade driftsättningstiden från en timme till några minuter.
+ - Ökade prestandan genom att refaktorisera från en traditionell n-skiktsarkitektur till en service bus-arkitektur, vilket avlastade frontend-sajterna.
+ - Designade Plejmos REST-API.
 competencies:
   - name: Backend development
     weight: .9

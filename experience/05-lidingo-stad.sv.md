@@ -10,6 +10,7 @@ organization:
   type: Kommunal IT och offentliga tjänster
 start_date: 1997-07-01
 end_date: 1998-10-01
+description: PC-tekniker med ansvar för Lidingö Stads kommunala IT-miljö, inklusive installation och support via helpdesk.
 ---
 <!--more-->
 ## Om rollen

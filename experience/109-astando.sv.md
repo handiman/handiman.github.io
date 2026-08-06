@@ -22,9 +22,11 @@ skills:
 - Spring.NET
 - Test Driven Development
 - Continuous Integration
-#description: Client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg.
-#highlights:
-# - Client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg.
+description: Klient/server-applikation för att importera och presentera trafikmätdata för Stockholm och Göteborg.
+highlights:
+ - Vidareutvecklade en WinForms-baserad klient/server-applikation för att importera och presentera trafikmätdata för Stockholm och Göteborg.
+ - Implementerade dataåtkomst med Oracle och NHibernate, med Spring.NET för beroendeinjektion.
+ - Tillämpade testdriven utveckling och tidig kontinuerlig integration.
 ---
 <!--more-->
 ## Context
