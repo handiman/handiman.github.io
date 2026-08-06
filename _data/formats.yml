@@ -1,9 +1,9 @@
-- name: ATS-friendly text
+- name: ATS-friendly text (en)
   mime_type: text/plain
   url: /assets/henrik-becker.txt  
-#- name: ATS-friendly text (sv)
-#  mime_type: text/plain
-#  url: /sv/assets/henrik-becker.txt  
+- name: ATS-friendly text (sv)
+  mime_type: text/plain
+  url: /sv/assets/henrik-becker.txt  
 #- name: PDF
 #  mime_type: application/pdf
 #  url: /assets/henrik-becker.pdf
@@ -13,12 +13,12 @@
 #- name: JSON Resumé
 #  mime_type: application/json
 #  url: /assets/henrik-becker.resume.json
-- name: Markdown
+- name: Markdown (en)
   mime_type: text/markdown
   url: /assets/henrik-becker.markdown
-#- name: Markdown (sv)
-#  mime_type: text/markdown
-#  url: /sv/assets/henrik-becker.markdown
+- name: Markdown (sv)
+  mime_type: text/markdown
+  url: /sv/assets/henrik-becker.markdown
 #- name: BSON
 #  mime_type: application/bson
 #  url: /assets/henrik-becker.bson
@@ -28,9 +28,12 @@
 #- name: TOML
 #  mime_type: application/toml
 #  url: /assets/henrik-becker.toml
-#- name: AsciiDoc
+#- name: AsciiDoc (en)
 #  mime_type: text/asciidoc
 #  url: /assets/henrik-becker.adoc
+#- name: AsciiDoc (sv)
+#  mime_type: text/asciidoc
+#  url: /sv/assets/henrik-becker.adoc
 #- name: CBOR
 #  mime_type: application/cbor
 #  url: /assets/henrik-becker.cbor
@@ -40,12 +43,12 @@
 #- name: RDF/Turtle
 #  mime_type: text/turtle
 #  url: /assets/henrik-becker.ttl
-- name: RSS feed
-  mime_type: application/rss+xml
-  url: /feed.rss.xml
-- name: Atom feed
-  mime_type: application/atom+xml
-  url: /feed.atom.xml
+#- name: RSS feed
+#  mime_type: application/rss+xml
+#  url: /feed.rss.xml
+#- name: Atom feed
+#  mime_type: application/atom+xml
+#  url: /feed.atom.xml
 #- name: JSON feed
 #  mime_type: application/json
 #  url: /feed.json
