@@ -6,7 +6,7 @@ client: true
 organization:
   url: https://www.norconsultastando.se
 roles: 
- - Fullstack-utvecklare
+ - Fullstack Developer
  - DevOps
 #employer: self-employed
 #location: Stockholm, Sweden
@@ -17,22 +17,23 @@ skills:
  - TypeScript
  - JavaScript
  - KnockoutJS
- - Asp.Net Core
- - Asp.Net Web Forms
+ - Asp.NET Core
+ - Asp.NET Web Forms
  - WCF
  - TeamCity
  - Octopus Deploy
+description: Fullstack development and legacy modernization for Norconsult Astando, spanning new functionality, deployment automation, and code quality improvements.
 highlights: 
- - Automated deployment using Octopus Deploy
- - Improvements to code readability and testability 
- - Implementing new functionality in legacy systems
+ - Automated deployment using Octopus Deploy.
+ - Improved code readability and testability.
+ - Implemented new functionality across legacy systems.
 competencies:
   - name: Backend development
     weight: .75
     tech:
       - C#
-      - Asp.Net Core
-      - Asp.Net Web Forms
+      - Asp.NET Core
+      - Asp.NET Web Forms
       - WCF
   - name: Frontend development
     weight: .75

@@ -12,7 +12,7 @@ roles:
 start_date: 2019-12-02
 end_date: 2020-06-30
 skills: 
- - Asp.Net Core
+ - Asp.NET Core
  - C#
  - React
  - Redux
@@ -25,7 +25,7 @@ skills:
 description: |
   Open Payments provides a PSD2‑compliant platform that allows FinTech companies, e‑commerce businesses, and other financial actors to integrate with European banks through a single unified API. 
 highlights: 
- - Automated customer onboarding process using a React SPA with a .Net Core backend that integrated with Dynamics CRM and a variety of Azure resources.
+ - Automated customer onboarding process using a React SPA with a .NET Core backend that integrated with Dynamics CRM and a variety of Azure resources.
  - Improved test automation by making functional/integration tests require less manual intervention.
  - Reduced deployment time thanks to improved test automation.
 competencies:
@@ -33,7 +33,7 @@ competencies:
     weight: .9
     tech:
      - C#
-     - Asp.Net Core
+     - Asp.NET Core
   - name: Frontend development     
     weight: .9
     tech:

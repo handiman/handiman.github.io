@@ -6,7 +6,7 @@ sitemap: true
 via: 
   - Qbranch
 roles: 
- - Systemutvecklare
+ - IT-konsult
 #employer: 09-qbranch-stockholm-ab
 #location: Stockholm, Sweden
 start_date: 2005-07-01

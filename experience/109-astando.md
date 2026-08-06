@@ -15,16 +15,18 @@ start_date: 2008-02-28
 end_date: 2009-05-01
 skills: 
 - C#
-- Winforms
+- WinForms
 - Windows Services
 - Oracle
 - NHibernate
-- Spring.Net
+- Spring.NET
 - Test Driven Development
 - Continuous Integration
-#description: Client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg.
-#highlights:
-# - Client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg.
+description: Client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg.
+highlights:
+ - Extended a WinForms-based client/server application for importing and presenting traffic measurement data for Stockholm and Gothenburg.
+ - Implemented data access with Oracle and NHibernate, using Spring.NET for dependency injection.
+ - Applied test-driven development and early continuous integration practices.
 ---
 <!--more-->
 ## Context

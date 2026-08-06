@@ -16,7 +16,7 @@ start_date: 1999-09-01
 end_date: 2005-03-31
 skills:
 - C#
-- Asp.Net
+- Asp.NET
 - T-SQL
 - SQL Server
 - IIS

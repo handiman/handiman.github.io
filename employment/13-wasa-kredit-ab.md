@@ -13,7 +13,7 @@ end_date: 2013-11-14
 skills:
  - C#
  - WinForms
- - Asp.Net MVC4 
+ - Asp.NET MVC4 
  - HTML
  - CSS3
  - WCF

@@ -11,7 +11,7 @@ end_date: 2013-11-14
 skills:
  - C#
  - WinForms
- - Asp.Net MVC4 
+ - Asp.NET MVC4 
  - HTML
  - CSS3
  - WCF
@@ -19,12 +19,14 @@ skills:
  - BDD
  - SpecFlow
  - Continuous Integration
- - Team Foundation Server- XML
+ - Team Foundation Server
+ - XML
  - XSLT
+description: Led development and process improvement at Wasa Kredit, reducing technical debt and introducing a more iterative, example-driven way of working.
 highlights: 
- - Reduced complexity and system decay through refactoring and the application of common software architecture patterns.
- - Guided the development teams towards an iterative approach to software development with the product owner, functional analysts, testers and developers working closely together during the entire development cycle.
- - Introduced the idea of living documentation in the form of executable specifications.
+ - Reduced complexity and slowed system decay through refactoring and established architecture patterns.
+ - Guided the team toward an iterative way of working, bringing product owners, analysts, testers, and developers together throughout the development cycle.
+ - Introduced living documentation through executable specifications.
 ---
 <!--more-->
 ## Context

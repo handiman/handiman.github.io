@@ -16,12 +16,13 @@ skills:
  - SpecFlow
  - C#
  - WCF
- - Asp.Net MVC
+ - Asp.NET MVC
  - WiX
  - SQL Server
+description: Introduced behavior-driven development practices on CashGuard's StoreManager system, turning existing user stories into executable specifications.
 highlights:
- - Was the key person in introducing behavior driven development. 
- - Laid the foundation for automated regression tests and living documentation by taking existing user stories and turning them into executable specifications using SpecFlow. 
+ - Introduced behavior-driven development, turning existing user stories into executable specifications with SpecFlow.
+ - Laid the foundation for automated regression testing and living documentation.
 ---
 <!--more-->
 ## Context

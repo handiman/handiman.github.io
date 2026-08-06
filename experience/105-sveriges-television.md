@@ -6,7 +6,7 @@ sitemap: true
 via: 
   - Qbranch
 roles: 
- - IT-konsult
+ - IT Consultant
 #employer: 09-qbranch-stockholm-ab
 #location: Stockholm, Sweden
 start_date: 2005-07-01
@@ -17,9 +17,9 @@ skills:
  - T-SQL
  - SQL Server
  - ASP
-#description: Maintenance of the client's system inventory tool. 
-#highlights:
-# - Maintenance of the client's system inventory tool.
+description: Short maintenance engagement on SVT's internal system inventory tool.
+highlights:
+ - Maintained and troubleshot SVT's internal system inventory tool.
 ---
 <!--more-->
 ## Context

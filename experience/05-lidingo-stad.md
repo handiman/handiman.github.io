@@ -10,6 +10,7 @@ organization:
  type: Municipal IT & public services
 start_date: 1997-07-01
 end_date: 1998-10-01
+description: PC technician supporting Lidingö Stad's municipal IT environment, including deployment and help desk support.
 ---
 <!--more-->
 ## About the Role

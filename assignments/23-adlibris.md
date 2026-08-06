@@ -13,8 +13,8 @@ start_date: 2021-02-22
 end_date: 2021-10-10
 skills: 
  - C#
- - Asp.Net Core
- - Asp.Net MVC
+ - Asp.NET Core
+ - Asp.NET MVC
  - JavaScript
  - jQuery
  - React
@@ -25,15 +25,15 @@ skills:
  - Micro Services
 highlights: 
  - OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app under development.
- - Account management API built with Asp.Net Core and .Net 5 hosted on Azure. 
+ - Account management API built with Asp.NET Core and .NET 5 hosted on Azure. 
  - Contentful CMS content modeling and integration.
 competencies:
   - name: Backend development 
     weight: .9
     tech: 
       - C#
-      - Asp.Net Core
-      - Asp.Net MVC
+      - Asp.NET Core
+      - Asp.NET MVC
       - SQL Server
   - name: Front end development
     weight: .5

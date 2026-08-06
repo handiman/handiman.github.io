@@ -16,7 +16,7 @@ skills:
  - SpecFlow
  - C#
  - WCF
- - Asp.Net MVC
+ - Asp.NET MVC
  - WiX
  - SQL Server
 highlights:

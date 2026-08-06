@@ -17,7 +17,7 @@ skills:
  - NInject
  - C#
  - WCF
- - Asp.Net Web Forms
+ - Asp.NET Web Forms
  - Continuous Integration
  - Team Foundation Server
 description: |

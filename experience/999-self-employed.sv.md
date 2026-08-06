@@ -3,7 +3,7 @@ title: Henrik Becker Consulting AB
 #name: Self Employed
 slug: becker-consulting
 #sitemap: true
-description: Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm urban area.
+description: Providing Fullstack .NET and DevOps expertise on a freelance basis in the Stockholm urban area.
 comment: Assignments listed below from October 2017 onward were delivered as a contractor through Henrik Becker Consulting AB, unless noted otherwise.
 roles: 
  - Ägare

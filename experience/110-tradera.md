@@ -17,10 +17,9 @@ skills:
  - WCF
  - WPF
  - NHibernate
-#highlights:
-# - Development of a WPF-based sales support system for managing articles and campaigns published on tradera.se.
-# <!--more-->
-# This project was developed in-house at Avea Group AB. 
+highlights:
+ - Contributed to a WPF-based sales support system for managing articles and campaigns on tradera.se.
+ - Delivered the project as part of an internal team at Avega Group.
 ---
 <!--more-->
 ## Context

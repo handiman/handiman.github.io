@@ -12,7 +12,7 @@ roles:
 start_date: 2014-06-24
 end_date: 2014-09-26
 skills:
- - VB.Net
+ - VB.NET
  - WinForms
  - WebForms
  - WCF

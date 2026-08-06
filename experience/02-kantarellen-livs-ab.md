@@ -10,6 +10,7 @@ organization:
  type: Local grocery retailer
 start_date: 1992-06-01
 end_date: 1992-09-01
+description: Shop assistant responsible for the greens section and daily store operations at a local grocery retailer.
 ---
 <!--more-->
 ## About the Role

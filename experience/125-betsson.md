@@ -22,9 +22,9 @@ start_date: 2021-10-11
 end_date: 2025-12-05
 skills:
  - C#
- - .Net 5-9
- - .Net Aspire
- - Asp.Net Core
+ - .NET 5-9
+ - .NET Aspire
+ - Asp.NET Core
  - Microsoft Orleans
  - Blazor
  - Docker
@@ -40,7 +40,7 @@ competencies:
       - Domain Driven Desing
       - Event Modeling
       - Event Sourcing
-      - .Net Aspire
+      - .NET Aspire
       - Microsoft Orleans
       - Micro Services
   - name: Automation
@@ -53,9 +53,9 @@ competencies:
     weight: 1 
     tech:
       - C#
-      - .Net 5-9
-      - .Net Aspire
-      - Asp.Net Core
+      - .NET 5-9
+      - .NET Aspire
+      - Asp.NET Core
       - Microsoft Orleans
       - Blazor
       - SQL Server

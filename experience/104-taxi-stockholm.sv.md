@@ -12,7 +12,7 @@ roles:
 start_date: 2005-05-01
 end_date: 2005-07-01
 skills:
- - Asp.Net
+ - Asp.NET
  - C#
  - EPiServer 4
  - SQL Server

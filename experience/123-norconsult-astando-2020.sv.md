@@ -6,7 +6,7 @@ client: true
 organization:
   url: https://www.norconsultastando.se
 roles: 
- - Fullstack Developer
+ - Fullstack-utvecklare
  - DevOps
 #employer: self-employed
 #location: Stockholm, Sweden
@@ -17,8 +17,8 @@ skills:
  - TypeScript
  - JavaScript
  - KnockoutJS
- - Asp.Net Core
- - Asp.Net Web Forms
+ - Asp.NET Core
+ - Asp.NET Web Forms
  - WCF
  - TeamCity
  - Octopus Deploy
@@ -31,8 +31,8 @@ competencies:
     weight: .75
     tech:
       - C#
-      - Asp.Net Core
-      - Asp.Net Web Forms
+      - Asp.NET Core
+      - Asp.NET Web Forms
       - WCF
   - name: Frontend development
     weight: .75

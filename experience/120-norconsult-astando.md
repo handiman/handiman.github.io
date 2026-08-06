@@ -9,15 +9,16 @@ roles:
 #location: Stockholm, Sweden
 start_date: 2018-04-18
 end_date: 2018-11-30
+description: Automated deployment for Norconsult Astando's IsyRoad project, cutting deployment time and errors dramatically.
 highlights:
- - "Automated deployment for the project IsyRoad resulting in:"
- - Deployment time decreasing from ~ 45 minutes to ~ 5 minutes per application instance
- - Deployment releated errors reduced by nearly 100 %
+ - Automated deployment for the IsyRoad project using Octopus Deploy.
+ - Reduced deployment time from around 45 minutes to about 5 minutes per application instance.
+ - Cut deployment-related errors by nearly 100%.
 skills: 
  - Octopus Deploy
  - TeamCity
- - Asp.Net Web Api
- - .Net Core
+ - Asp.NET Web Api
+ - .NET Core
  - WCF
  - NHibernate
  - C#

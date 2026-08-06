@@ -12,7 +12,7 @@ roles:
 start_date: 2009-09-01
 end_date: 2011-05-01
 skills:
- - VB.Net
+ - VB.NET
  - WCF
  - WPF
  - Oracle
@@ -20,10 +20,11 @@ skills:
  - Team Foundation Server
  - Continuous Integration
  - Test Driven Development
+description: Backend development, database migration, and performance work on Länsförsäkringar's payment platform, including a move from Oracle to SQL Server.
 highlights:
- - Was instrumental in the migration of the payment platform's database from Oracle to SQL Server.
- - Worked with the development of a WCF based payment platform adding support for automatic payment services and prompts. 
- - Quality assurance and performance optimization of connecting systems.
+ - Led the migration of the payment platform's database from Oracle to SQL Server.
+ - Built out a WCF-based payment platform, adding support for automated payments and payment prompts.
+ - Investigated and improved performance across the platform and its connecting systems.
 ---
 <!--more-->
 ## Context

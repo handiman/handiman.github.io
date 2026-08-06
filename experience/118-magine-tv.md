@@ -13,11 +13,30 @@ organization:
   city: Stockholm
 start_date: 2015-09-14
 end_date: 2017-07-05
-description: Continued work on the services Film2home and Plejmo after Magine had aquired them.
+description: Continued development of the Film2Home and Plejmo services after Magine TV's acquisition.
 highlights:
  - Continued development of the Video on Demand site Plejmo.
  - Designed version 2 of Plejmo's Rest API.
- - Continued improving the CI/CD processes I set up at Film2Home
+ - Continued improving the CI/CD processes set up at Film2Home
+skills:
+ - Asp.NET MVC
+ - Asp.NET Web Api
+ - C#
+ - .NET Framework
+ - TDD 
+ - CQRS
+ - Continuous Integration
+ - Octopus Deploy
+ - JavaScript
+ - jQuery
+ - KnockoutJS
+ - NHibernate
+ - SQL Server
+ - Micro Services
+ - CSS
+ - HTML
+ - EPiServer
+ - IIS
 ---
 <!--more-->
 ## About the Role

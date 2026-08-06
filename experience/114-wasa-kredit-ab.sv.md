@@ -11,7 +11,7 @@ end_date: 2013-11-14
 skills:
  - C#
  - WinForms
- - Asp.Net MVC4 
+ - Asp.NET MVC4 
  - HTML
  - CSS3
  - WCF
@@ -19,7 +19,8 @@ skills:
  - BDD
  - SpecFlow
  - Continuous Integration
- - Team Foundation Server- XML
+ - Team Foundation Server
+ - XML
  - XSLT
 highlights: 
  - Reduced complexity and system decay through refactoring and the application of common software architecture patterns.

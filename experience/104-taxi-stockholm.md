@@ -12,13 +12,14 @@ roles:
 start_date: 2005-05-01
 end_date: 2005-07-01
 skills:
- - Asp.Net
+ - Asp.NET
  - C#
  - EPiServer 4
  - SQL Server
+description: CMS migration and legacy system integration for Taxi Stockholm, including low-level protocol work against a Unix-based booking system.
 highlights:
- - Migration of Taxi Stockholm's intranet and external web site from Spirello to EpiServer.
- - Integration with the client's Unix based booking system.
+ - Migrated Taxi Stockholm's intranet and external website from Spirello to EPiServer.
+ - Integrated the new site with the client's Unix-based booking system over a proprietary binary protocol.
 ---
 <!--more-->
 ## Context

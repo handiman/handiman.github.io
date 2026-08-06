@@ -8,12 +8,12 @@
 - name: Backend Development
   level: Expert
   skills: 
-   - Asp.Net Core
-   - Asp.Net Web API
-   - Asp.Net MVC
-   - .Net
-   - .Net Core
-   - .Net Framework
+   - Asp.NET Core
+   - Asp.NET Web API
+   - Asp.NET MVC
+   - .NET
+   - .NET Core
+   - .NET Framework
    - C#
 - name: Frontend Development 
   level: Advanced

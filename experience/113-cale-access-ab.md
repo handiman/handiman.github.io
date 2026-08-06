@@ -17,11 +17,15 @@ skills:
  - NInject
  - C#
  - WCF
- - Asp.Net Web Forms
+ - Asp.NET Web Forms
  - Continuous Integration
  - Team Foundation Server
 description: |
     Cale is one of the world’s leading manufacturers of parking meters. I joined the team working on Cale Web Office 2, specifically the TrueUp subsystem — a set of financial rules governing compensation between the City of Chicago and Chicago Parking Meters. The agreement between the two parties spans 80 years, which meant the system needed to handle not only complex business rules but also future data volumes on a massive scale.
+highlights:
+ - Implemented and verified complex financial rules within the TrueUp subsystem, governing an 80-year compensation agreement.
+ - Applied test-driven development and SpecFlow to express business rules as executable specifications.
+ - Used NInject for dependency injection to improve testability.
 ---
 <!--more-->
 ## Context

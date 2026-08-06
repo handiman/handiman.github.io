@@ -18,7 +18,7 @@ start_date: 2006-03-01
 end_date: 2008-02-28
 skills:
  - C#
- - Asp.Net
+ - Asp.NET
  - AJAX
  - T-SQL
  - MSMQ
@@ -27,10 +27,11 @@ skills:
  - XHTML
  - SQL Server
  - IIS
-#highlights:
-# - Was a key person in the development of hitta.se - one of Swedens top 10 most popular sites at the time.
-# - Created the services "Trafiknytt" (traffic information) and "Vader" (weather information).
-# - Maintenance of hitta.se's internal order system
+description: Fullstack development on hitta.se during a period of rapid growth, spanning public-facing services and internal order systems.
+highlights:
+ - Played a key role in developing hitta.se, one of Sweden's ten most visited websites at the time.
+ - Built "Trafiknytt" and "Väder," public traffic and weather services on the map platform.
+ - Maintained and extended hitta.se's internal order system.
 ---
 <!--more-->
 ## Context

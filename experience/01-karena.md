@@ -10,6 +10,7 @@ organization:
  type: Toy, hobby & pet supply retailer
 start_date: 1986-08-01
 end_date: 1986-12-31
+description: First job — shop assistant and pet care duties at a toy, hobby, and pet supply retailer.
 ---
 <!--more-->
 ## About the Role

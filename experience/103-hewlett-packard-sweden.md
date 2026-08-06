@@ -16,7 +16,7 @@ start_date: 1999-09-01
 end_date: 2005-03-31
 skills:
 - C#
-- Asp.Net
+- Asp.NET
 - T-SQL
 - SQL Server
 - IIS
@@ -28,11 +28,12 @@ skills:
 - VBScript
 - HTML
 - CSS
-#highlights:
-# - Requirements analysis, use case design, system design and development of a web based admininstration interface for information about and registrations for customer events for HP EMEA.
-# - Requirements analysis, design and development of a web based administration interface for HP's scandinavian products database. 
-# - Development of templates for the client's EpiServer based intranet.
-# - Maintenance and further development of www.hp.se.
+description: Web development across Compaq and HP's Scandinavian and EMEA systems during the Compaq-to-HP transition, spanning classic ASP, EPiServer, and early .NET.
+highlights:
+ - Built a web-based administration interface for managing HP EMEA customer events and registrations.
+ - Built a web-based administration interface for HP's Scandinavian product database.
+ - Developed templates for the client's EPiServer-based intranet.
+ - Maintained and further developed www.hp.se.
 ---
 <!--more-->
 ## Context

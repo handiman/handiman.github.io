@@ -13,7 +13,7 @@ roles:
 start_date: 2014-04-28
 end_date: 2014-06-23
 skills:
- - Asp.Net MVC 5
+ - Asp.NET MVC
  - HTML5
  - jQuery
  - CSS3
@@ -21,8 +21,8 @@ skills:
  - EntityFramework 6
  - Test Driven Development
  - Continuous Integration
-#highlights:
-# - Development of an application for managing consultant CVs built on Asp.Net MVC and hosted on Windows Azure.
+highlights:
+ - Extended an in-house application for managing consultant CVs, built on ASP.NET MVC and hosted on Windows Azure.
 ---
 <!--more-->
 ## Context

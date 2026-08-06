@@ -14,10 +14,10 @@ location: Stockholm, Sweden
 start_date: 2014-11-03
 end_date: 2017-07-05
 skills:
- - Asp.Net MVC
- - Asp.Net Web Api
+ - Asp.NET MVC
+ - Asp.NET Web Api
  - C#
- - .Net Framework
+ - .NET Framework
  - TDD 
  - CQRS
  - Continuous Integration
@@ -33,7 +33,7 @@ skills:
  - EPiServer
  - IIS
 description: |
- Back- and front end development of a Video On Demand (VOD) service based on Asp.Net MVC and EpiServer. DevOps tasks including configuring web sites, configuring automated builds and setting up automated deployment. 
+ Back- and front end development of a Video On Demand (VOD) service based on Asp.NET MVC and EpiServer. DevOps tasks including configuring web sites, configuring automated builds and setting up automated deployment. 
 highlights: 
  - Development of the Video on Demand sites Film2Home and Plejmo.
  - Designed Plejmo's REST API.
@@ -44,9 +44,9 @@ competencies:
     weight: .9
     tech:
       - C#
-      - .Net Framework
-      - Asp.Net MVC
-      - Asp.Net Web Api
+      - .NET Framework
+      - Asp.NET MVC
+      - Asp.NET Web Api
       - NHibernate
       - SQL Server
       - EPiServer

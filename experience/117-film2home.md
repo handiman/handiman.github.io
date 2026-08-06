@@ -13,10 +13,10 @@ roles:
 start_date: 2014-11-03
 end_date: 2015-09-01
 skills:
- - Asp.Net MVC
- - Asp.Net Web Api
+ - Asp.NET MVC
+ - Asp.NET Web Api
  - C#
- - .Net Framework
+ - .NET Framework
  - TDD 
  - CQRS
  - Continuous Integration
@@ -26,13 +26,12 @@ skills:
  - KnockoutJS
  - NHibernate
  - SQL Server
- - Micro Services
  - CSS
  - HTML
  - EPiServer
  - IIS
 description: |
- Fullstack development of the Video On Demand (VOD) services Film2home and Plejmo based on Asp.Net MVC and EpiServer. DevOps tasks including configuring web sites, configuring automated builds and setting up automated deployment. 
+ Fullstack development of the Video On Demand (VOD) services Film2home and Plejmo based on Asp.NET MVC and EpiServer. DevOps tasks including configuring web sites, configuring automated builds and setting up automated deployment. 
 highlights: 
  - Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
  - Increased performance by refactoring from a traditional n-tier architecture to a service bus architecture thus offloading the front end sites.
@@ -42,9 +41,9 @@ competencies:
     weight: .9
     tech:
       - C#
-      - .Net Framework
-      - Asp.Net MVC
-      - Asp.Net Web Api
+      - .NET Framework
+      - Asp.NET MVC
+      - Asp.NET Web Api
       - NHibernate
       - SQL Server
       - EPiServer

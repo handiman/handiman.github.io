@@ -10,9 +10,9 @@ roles:
 start_date: 2019-01-07
 end_date: 2019-06-13
 skills: 
- - Asp.Net MVC
- - Asp.Net Web Api
- - .Net Core
+ - Asp.NET MVC
+ - Asp.NET Web Api
+ - .NET Core
  - C#
  - React
  - TypeScript

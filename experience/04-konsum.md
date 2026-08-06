@@ -10,6 +10,7 @@ organization:
  type: Retail cooperative & grocery operations
 start_date: 1986-12-01
 end_date: 1995-06-30
+description: Shop assistant across several Konsum stores, with section responsibility for greens and beverages.
 ---
 <!--more-->
 ## About the Role

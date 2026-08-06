@@ -12,7 +12,7 @@ roles:
 start_date: 2009-09-01
 end_date: 2011-05-01
 skills:
- - VB.Net
+ - VB.NET
  - WCF
  - WPF
  - Oracle

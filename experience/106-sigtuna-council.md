@@ -21,12 +21,12 @@ skills:
  - MSMQ
  - Novell C API
  - GroupWise Administrative Objects API
-#description: Identity Management using Microsoft Identity Integration Server (MIIS).
-#highlights:
-# - Was the single developer on this project that would become Microsoft's reference case for MIIS.
-# - Implemented management agents for the client's HR system, the directory services eDirectory and Active Directory.
-# - Implemented automatic creation of GroupWise accounts and Novell Server home directories.
-# - Wrote rules extensions for attribute flow and joins.
+description: Sole developer on one of Sweden's first Microsoft Identity Integration Server (MIIS) deployments, later used by Microsoft as a reference case.
+highlights:
+ - Served as the sole developer on a project that became Microsoft's reference case for MIIS.
+ - Implemented management agents connecting the client's HR system with eDirectory and Active Directory.
+ - Automated creation of GroupWise accounts and Novell server home directories.
+ - Wrote rules extensions for attribute flow and joins across directory services.
 ---
 <!--more-->
 ## Context

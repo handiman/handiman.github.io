@@ -13,7 +13,7 @@ start_date: 2017-10-11
 end_date: 2018-04-11
 skills: 
 - C#
-- Asp.Net Web Api
+- Asp.NET Web Api
 - CQRS
 - TDD
 - Specification By Example
@@ -24,10 +24,11 @@ skills:
 - Micro Services
 - Team Foundation Server
 - DocNet
+description: First freelance engagement, focused on backend development for the multi-market payment solution "Svea Checkout," with an emphasis on testing and documentation practices.
 highlights: 
- - Development of the payment solution "Svea Checkout" being rolled out in Sweden, Norway and Finland.
- - Improved api documentation by generating most of it automatically
- - Improved test readability by rewriting them as executable specifications  
+ - Built the "Svea Checkout" payment solution, rolled out across Sweden, Norway, and Finland.
+ - Improved API documentation by automating most of its generation.
+ - Improved test readability by rewriting tests as executable specifications.
 ---
 <!--more-->
 ## Context

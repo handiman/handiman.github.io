@@ -15,9 +15,10 @@ skills:
  - Visual Basic 5
  - COM
  - ASP
-#highlights:
-# - Designed and developed a document management system based on Visual Basic 5. 
-# - Assisted in developing the company web site.
+description: First professional software development assignment, building a document management system in Visual Basic 5.
+highlights:
+ - Designed and developed a document management system based on Visual Basic 5.
+ - Assisted in developing the company website using classic ASP.
 ---
 <!--more-->
 ## Context

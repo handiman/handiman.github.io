@@ -21,9 +21,11 @@ skills:
  - CSS
  - HTML
  - SQL Server
-#description: QA and supporting colleagues during development and maintenance of Siemens Medical's intranet "EMPower". 
-#highlights:
-# - QA and supporting colleagues during development and maintenance of Siemens Medical's intranet "EMPower".
+description: QA and supporting colleagues during development and maintenance of Siemens Medical's intranet "EMPower".
+highlights:
+ - Supported development and maintenance of Siemens Medical's global intranet, "EMPower."
+ - Performed QA, testing, and verification of new features and updates.
+ - Assisted colleagues with debugging and integration issues.
 ---
 <!--more-->
 ## Context

@@ -15,8 +15,8 @@ highlights:
 skills: 
  - Octopus Deploy
  - TeamCity
- - Asp.Net Web Api
- - .Net Core
+ - Asp.NET Web Api
+ - .NET Core
  - WCF
  - NHibernate
  - C#

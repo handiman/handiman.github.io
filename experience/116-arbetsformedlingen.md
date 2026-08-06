@@ -12,15 +12,15 @@ roles:
 start_date: 2014-06-24
 end_date: 2014-09-26
 skills:
- - VB.Net
+ - VB.NET
  - WinForms
  - WebForms
  - WCF
  - WebServices
  - Oracle
 description: Maintenance of a legacy solution for managing requisitions at Sweden's public employment services. 
-#highlights:
-# - Maintenance of a legacy solution for managing requisitions at Sweden's public employment services.
+highlights:
+ - Maintained a legacy requisition management system for Sweden's public employment service.
 ---
 <!--more-->
 ## Context
