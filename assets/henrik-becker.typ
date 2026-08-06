@@ -1,4 +1,7 @@
-#let cv = json("henrik-becker.json")
+#let data-file = sys.inputs.at("data", default: "henrik-becker.json")
+#let lang = sys.inputs.at("lang", default: "en")
+#let cv = json(data-file)
+#let h = cv.headings
 #let border_radius = 8pt
 #let border_color = rgb("#5F6F67");
 #let border = 0.5pt + border_color
@@ -19,9 +22,9 @@
 )
 
 #set text(
-  font: "IBM Plex Sans", 
+  font: "IBM Plex Sans",
   size: 12pt,
-  lang: "en",
+  lang: lang,
   weight: "light"
 )
 #show strong: set text(weight: "thin")
@@ -95,15 +98,15 @@
   
   #let highlights = xp.at("highlights", default: none)
   #if highlights != none [
-    * Highlights *
+    * #h.highlights *
     #for highlight in highlights [
-      - #highlight      
+      - #highlight
     ]
   ]
-  
+
   #let competencies = xp.at("competencies", default: none)
   #if competencies != none [
-    * Tech & Methods Used *
+    * #h.tech_stack *
     #for category in competencies [
       - *#category.name:* #category.tech.join(", ")
     ]
@@ -124,15 +127,15 @@
 
             #let highlights = ass.at("highlights", default: none)
             #if highlights != none [
-              * Highlights *
+              * #h.highlights *
               #for highlight in highlights [
-                - #highlight      
+                - #highlight
               ]
             ]
 
             #let competencies = ass.at("competencies", default: none)
             #if competencies != none [
-              * Tech & Methods Used *
+              * #h.tech_stack *
               #for category in competencies [
                 - *#category.name:* #category.tech.join(", ")
               ]
@@ -187,12 +190,12 @@
 }
 
 #let introduction() = section([
-  == Introduction
+  == #h.summary
   #cv.introduction.description
 ])
 
 #let core_competencies(coreSkills: cv.coreSkills) = section([
-  == Core Competencies
+  == #h.core_competencies
   #set list(
     marker: [•],
     body-indent: 0.5em
@@ -201,54 +204,51 @@
     #let skills = category.at("skills", default: none)
     - #category.name
       #if skills != none [
-        (#skills.join(", "))       
+        (#skills.join(", "))
       ]
   ]
 ])
 
-#let professional_experience(employment: cv.professionalExperience) = section([
-  == Professional Experience
+#let work_experience(employment: cv.workExperience) = section([
+  == #h.experience
   #for xp in employment [
     #experience(xp)
   ]
 ])
 
-#let early_career(employment: cv.earlyCareer) = section([
-  == Early Career
+#let early_career(employment: cv.earlierCareer) = section([
+  == #h.earlier_career
   #for xp in employment [
     #experience(xp)
   ]
 ])
 
-#let professional_context(
-  languages: cv.languages,
-  certifications: cv.certifications,
-  education: cv.education
-) = section([
-  #block(breakable: false, inset: (top: space_1), [
-    == Professional Context
-    === Lanuages
-    #for language in languages [
-      - *#language.name:* #language.proficiency
-    ]
-  ])
-  #block(breakable: false, inset: (top: space_1), [
-    === Certifications
-    #for cert in certifications [
-      - *#cert.title:* #cert.issuer (#cert.achievementDate)
-    ]
-  ])
-  #block(breakable: false, inset: (top: space_1), [
-    === Education
-    #for edu in education [
-      - *#edu.title:* #edu.description (#edu.period)
-    ]
-  ])
+#let languages(languages: cv.languages) = section([
+  == #h.languages
+  #for language in languages [
+    - *#language.name:* #language.proficiency
+  ]
+])
+
+#let certifications(certifications: cv.certifications) = section([
+  == #h.certs
+  #for cert in certifications [
+    - *#cert.title:* #cert.issuer (#cert.achievementDate)
+  ]
+])
+
+#let education(education: cv.education) = section([
+  == #h.education
+  #for edu in education [
+    - *#edu.title:* #edu.description (#edu.period)
+  ]
 ])
 
 #masthead()
 #introduction()
 #core_competencies()
-#professional_context()
-#professional_experience()
+#languages()
+#certifications()
+#work_experience()
 #early_career()
+#education()

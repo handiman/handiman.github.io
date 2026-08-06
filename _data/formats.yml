@@ -1,18 +1,27 @@
-- name: ATS-friendly text
+- name: ATS-friendly text (en)
   mime_type: text/plain
   url: /assets/henrik-becker.txt  
-- name: PDF
+- name: ATS-friendly text (sv)
+  mime_type: text/plain
+  url: /sv/assets/henrik-becker.txt  
+- name: PDF (en)
   mime_type: application/pdf
   url: /assets/henrik-becker.pdf
-- name: JSON-LD 
-  mime_type: application/json
-  url: /assets/henrik-becker.jsonld
-- name: JSON Resumé
-  mime_type: application/json
-  url: /assets/henrik-becker.resume.json
-- name: Markdown
+- name: PDF (sv)
+  mime_type: application/pdf
+  url: /sv/assets/henrik-becker.pdf
+#- name: JSON-LD 
+#  mime_type: application/json
+#  url: /assets/henrik-becker.jsonld
+#- name: JSON Resumé
+#  mime_type: application/json
+#  url: /assets/henrik-becker.resume.json
+- name: Markdown (en)
   mime_type: text/markdown
   url: /assets/henrik-becker.markdown
+- name: Markdown (sv)
+  mime_type: text/markdown
+  url: /sv/assets/henrik-becker.markdown
 #- name: BSON
 #  mime_type: application/bson
 #  url: /assets/henrik-becker.bson
@@ -22,9 +31,12 @@
 #- name: TOML
 #  mime_type: application/toml
 #  url: /assets/henrik-becker.toml
-#- name: AsciiDoc
+#- name: AsciiDoc (en)
 #  mime_type: text/asciidoc
 #  url: /assets/henrik-becker.adoc
+#- name: AsciiDoc (sv)
+#  mime_type: text/asciidoc
+#  url: /sv/assets/henrik-becker.adoc
 #- name: CBOR
 #  mime_type: application/cbor
 #  url: /assets/henrik-becker.cbor

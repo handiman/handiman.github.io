@@ -1,0 +1,54 @@
+- name: Lösningsarkitektur
+  level: Advanced
+  skills:
+   - SOLID
+   - Domain Driven Design
+   - Microservices
+   - Design Patterns
+- name: Backendutveckling
+  level: Expert
+  skills:
+   - Asp.NET Core
+   - Asp.NET Web API
+   - Asp.NET MVC
+   - .NET
+   - .NET Core
+   - .NET Framework
+   - C#
+- name: Frontendutveckling
+  level: Advanced
+  skills:
+   - TypeScript
+   - JavaScript
+   - CSS3
+   - Stencil
+   - React
+   - KnockoutJS
+   - jQuery
+   - Storybook
+- name: Azure
+  level: Advanced
+  skills:
+   - App Services
+   - Function Apps
+   - Service Bus
+   - Event Grid
+   - Queue Storage
+   - Blob Storage
+   - Sql Database
+- name: Agila metoder
+  level: Advanced
+  skills:
+   - Certified Scrum Master
+   - Continuous Integration
+   - Continuous Deployment
+   - Test Driven Development
+   - Specification by Example
+   - SpecFlow
+- name: CI/CD
+  level: Advanced
+  skills:
+   - GitHub Actions
+   - Octopus Deploy
+   - Azure DevOps
+   - Team City

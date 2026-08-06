@@ -7,9 +7,11 @@
   },
   "scripts": {
     "clean": "rimraf _site",
-    "typst": "typst compile --font-path _site/assets/fonts _site/assets/henrik-becker.typ _site/assets/henrik-becker.pdf --font-path fonts",
+    "typst:en": "typst compile --root _site --font-path _site/assets/fonts _site/assets/henrik-becker.typ _site/assets/henrik-becker.pdf --font-path fonts",
+    "typst:sv": "typst compile --root _site --input data=../sv/assets/henrik-becker.json --input lang=sv --font-path _site/assets/fonts _site/assets/henrik-becker.typ _site/sv/assets/henrik-becker.pdf --font-path fonts",
+    "typst": "npm run typst:en && npm run typst:sv",
     "build": "npm run clean && npx @11ty/eleventy && npm run typst",
-    "serve": "npm run clean && npx @11ty/eleventy --serve"
+    "serve": "npm run build && npx @11ty/eleventy --incremental --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",

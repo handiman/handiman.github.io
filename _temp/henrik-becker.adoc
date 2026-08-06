@@ -1,0 +1,23 @@
+= {{ person.name }}
+{{ person.jobTitle }}
+
+== Profile
+{{ person.description }}
+
+== Languages{% for language in languages %}
+{{ language.name }} ({{ language.proficiency }}){% endfor %}
+
+== Certifications {% for cert in certs %}
+{{ cert.title }}{% endfor %}
+
+== Professional Experience{% for emp in collections.employment %}
+=== {{ emp.data.title }}
+{% if emp.data.mission %} {{ emp.data.mission }}
+{% else %}{{ emp.data.description }}
+{% endif %}{% endfor %}
+
+== Education{% for edu in collections.education %}
+=== {{ edu.data.title }} 
+{{ edu.data.start_year }} - {{ edu.data.end_year }}
+{{ edu.data.description }}
+{% endfor %}

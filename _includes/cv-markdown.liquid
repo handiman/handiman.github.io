@@ -1,0 +1,38 @@
+# {{ person.name }} - {{ person.jobTitle }}   
+## {{ headings.summary }}
+{{ summary }}
+{% if lang == "sv" %}{% assign experience = collections.experience_sv %}{% assign earlier_career = collections.earlier_career_sv %}{% assign education = collections.education_sv %}
+{% else %}{% assign experience = collections.experience %}{% assign earlier_career = collections.earlier_career %}{% assign education = collections.education %}{% endif %}
+## {{ headings.core_competencies }}
+{% for skillCategory in coreSkills %}- **{{ skillCategory.name }}**{% if skillCategory.skills %} ({{ skillCategory.skills | join: ', ' }}){% endif %}
+{% endfor %}
+{% comment %}
+{% for category in featuredSkills %}| {{ category[0] }} {% endfor %}|
+{% for category in featuredSkills %}| --- {% endfor %}|
+{% assign maxRows = 0 %}{% for category in featuredSkills %}{% if category[1].size > maxRows %}{% assign maxRows = category[1].size %}{% endif %}{% endfor %}{% assign lastRow = maxRows | minus: 1 %}{% for i in (0..lastRow) %}{% for category in featuredSkills %}| {{ category[1][i].name }} {% endfor %}|
+{% endfor %}
+{% endfor %}
+{% endcomment %}
+
+## {{ headings.languages }}
+{% for language in languages %}- **{{ language.name }}** — {{ language.proficiency }}
+{% endfor %}
+
+## {{ headings.certs }} 
+{% for cert in certs %}- **{{ cert.title }}**
+{% endfor %}
+
+## {{ headings.experience }}
+{% for xp in experience %}
+{% include 'experience-markdown' with xp %}
+{% endfor %}
+
+## {{ headings.earlier_career }}
+{% for xp in earlier_career %}
+{% include 'experience-markdown' with xp %}
+{% endfor %}
+
+## {{ headings.education }}
+{% for edu in education %}
+**{{ edu.data.title }}** _({{ edu.data.description }})_ {{ edu.data.start_year }} - {{ edu.data.end_year }}
+{% endfor %}

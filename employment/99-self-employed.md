@@ -12,7 +12,7 @@ organization:
   city: Liding&ouml;
 start_date: 2017-07-06
 end_date: present
-mission: Providing Fullstack .Net and DevOps expertise on a freelance basis in the Stockholm urban area.
+mission: Providing Fullstack .NET and DevOps expertise on a freelance basis in the Stockholm urban area.
 #competencies: 
 #  - name: Ruby
 #    weight: 0.2

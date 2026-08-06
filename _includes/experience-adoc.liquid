@@ -1,0 +1,4 @@
+=== {{ xp.data.roles | join: " & " }} - {{ xp.data.title }}{% if xp.data.via %} (via {{ xp.data.via | join: ', ' }}){% endif %}
+{% if xp.data.description %}{{ xp.data.description }}{% endif %}
+{% if xp.data.comment %}{{ xp.data.comment }}{% endif %}{% capture start_year %}{{ xp.data.start_date | date: '%Y' }}{% endcapture %}{% if start_year > 2009 %}{% if xp.data.skills %}
+{{ headings.tech_stack }}: {{ xp.data.skills | join: ', ' }}{% endif %}{% endif %}

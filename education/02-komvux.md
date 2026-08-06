@@ -4,6 +4,7 @@ description: Municipal adult education
 start_year: 1995
 end_year: 1997
 location: Lidingö, Sweden
+lang: en
 ---
 <!--more-->
 ## About the Studies

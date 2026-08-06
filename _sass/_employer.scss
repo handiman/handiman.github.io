@@ -1,18 +1,23 @@
-.employer {
+.employer,
+.experience {
   margin-bottom: var(--space-6);
 }
 
-.employer > header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  border-bottom: 1px solid var(--color-border);
-  padding-bottom: var(--space-2);
-  margin-bottom: var(--space-4);
+.employer,
+.experience {
+  > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--space-2);
+    margin-bottom: var(--space-4);
+  }
 }
 
-.early-career {
-  .employer {
+.earlier-career {
+  .employer,
+  .experience {
     margin: 0;
     padding: 0;
     header {
@@ -23,20 +28,32 @@
   }
 }
 
-.employer > header h3 {
-  margin: 0;
+.employer,
+.experience {
+  > header h3 {
+    margin: 0;
+  }
 }
 
-.employer > header h3 a {
-  text-decoration: none;
+.employer,
+.experience {
+  > header h3 a {
+    text-decoration: none;
+  }
 }
 
-.employer > header time span + span::before {
-  content: " – ";
+.employer,
+.experience {
+  > header time span + span::before {
+    content: " – ";
+  }
 }
 
-.employer > header time span:empty {
-  display: none;
+.employer,
+.experience {
+  > header time span:empty {
+    display: none;
+  }
 }
 
 .assignment {

@@ -7,17 +7,17 @@
     <language>{{ site.lang }}</language>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <copyright>Copyright {{ site.time | date: '%Y' }} {{ company.name | xml_escape }}</copyright>
-    <atom:link href="{{ page.url | absolute_url }}" rel="self" type="application/rss+xml" />{% for assignment in collections.assignments reversed %}
+    <atom:link href="{{ page.url | absolute_url }}" rel="self" type="application/rss+xml" />{% for xp in collections.experience %}
     <item>
-      <title>{{ assignment.data.roles | xml_escape }} at {{ assignment.data.title | xml_escape }}</title>
-      <guid>{{ assignment.url | absolute_url }}</guid>
-      <pubDate>{{ assignment.data.start_date | date_to_rfc822 }}</pubDate>
+      <title>{{ xp.data.roles | join: ', ' | xml_escape }} - {{ xp.data.title | xml_escape }}</title>
+      <guid>{{ xp.url | absolute_url }}</guid>
+      <pubDate>{{ xp.data.start_date | date_to_rfc822 }}</pubDate>
       <description>
-        {{ assignment.data.roles | join: ", "| escape }} at {{ assignment.data.title | xml_escape }}
-        {{ assignment.data.start_date }} - {{ assignment.data.end_date }}
-        {{ assignment.data.description }}{% for highlight in assignment.data.highlights %}
+        {{ xp.data.roles | join: ', ' | xml_escape }} - {{ xp.data.title | xml_escape }}
+        {{ xp.data.start_date }} - {{ xp.data.end_date }}
+        {{ xp.data.description | xml_escape }} {{ xp.data.comment | xml_escape }}{% for highlight in xp.data.highlights %}
         {{ highlight | xml_escape }}{% endfor %}
-        Skills: {{ assignment.data.skills | normalizeSkills | join: ', ' | xml_escape }}{{ assignment.data.competencies | normalizeSkills | join: ', ' | xml_escape }}
+        Skills: {{ xp.data.skills | normalizeSkills | join: ', ' | xml_escape }}{{ xp.data.competencies | normalizeSkills | join: ', ' | xml_escape }}
       </description>
     </item>{% endfor %}
   </channel>

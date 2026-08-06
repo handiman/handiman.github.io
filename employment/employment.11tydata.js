@@ -1,8 +1,9 @@
+import { getLocale, localizedPermalink } from "../.eleventy.utils.js";
+
 export default function () {
   return {
     layout: "page",
     tags: ["employment"],
-    permalink: (data) =>
-      `/employment/${data.page.fileSlug.replace(/^\d+-/, "")}/`,
+    permalink: (data) => localizedPermalink(data, "employment"),
   };
 }

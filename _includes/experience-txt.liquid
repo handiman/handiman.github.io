@@ -1,0 +1,8 @@
+{% capture start_date %}{{ xp.data.start_date | date: '%Y' }}{% endcapture %}
+{{ xp.data.roles | join: ' & ' | upcase }} — {{ xp.data.title | upcase  }}{% if xp.data.via %} (via {{ xp.data.via | join: ', ' }}){% endif %} {{ xp.data.start_date | date: '%Y-%m' }} – {{ xp.data.end_date | date: '%Y-%m' }}
+{% if start_date > 2009 %}
+{% if xp.data.description %}{{ xp.data.description }}{% endif %} {% if xp.data.comment %}{{ xp.data.comment }}
+{% endif %}
+{% if xp.data.highlights %}{% for highlight in xp.data.highlights %}- {{ highlight }}
+{% endfor %}{% endif %}{% endif %}
+{% if xp.data.skills %}{{ headings.tech_stack }}: {{ xp.data.skills | join: ', ' }}{% endif %}

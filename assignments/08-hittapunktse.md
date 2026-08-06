@@ -14,7 +14,7 @@ start_date: 2006-03-01
 end_date: 2008-02-28
 skills:
  - C#
- - Asp.Net
+ - Asp.NET
  - AJAX
  - T-SQL
  - MSMQ

@@ -1,0 +1,27 @@
+{{ person.name }} - {{ person.jobTitle }}   
+
+{{ person.description }}
+
+Skills & Expertise:{% for category in featuredSkills %}
+{{ category[0] }}: {% for skill in category[1] %}{{ skill.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endfor %}
+
+Languages: {% for language in languages %}{{ language.name }} - {{ language.proficiency }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+
+Certifications: {% for cert in certs %}{{ cert.title }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+
+Work Experience:{% for xp in collections.employment %}
+{{ xp.data.organization.name }}
+{{ xp.data.roles | join: ", " }}  {{ xp.data.start_date | date: "%Y-%m" }}{% if xp.data.end_date %}-{{ xp.data.end_date | date: "%Y-%m" }}{% endif %}
+{% if xp.data.mission %}{{ xp.data.mission }}
+Clients:{% for client in collections.clients %} {{ client.data.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% else %}{{ xp.data.description }}{{ xp.data.highlights | join: "\n" }}
+{% if xp.data.competencies.size > 0 %}{{ xp.data.competencies | normalizeSkills | join: ", " }}{% else %}{{ xp.data.skills | normalizeSkills | join: ", " }}{% endif %}{% if xp.data.assignments.size > 0 %}Assignments: {% for ass in xp.data.assignments %}
+{{ ass.data.name }}
+{{ ass.data.roles | join: ", " }} {{ ass.data.start_date | date: "%Y-%m" }}{% if ass.data.end_date %}-{{ ass.data.end_date | date: "%Y-%m" }}{% endif %}
+{{ ass.data.description }}{{ ass.data.highlights | join: "\n" }}
+{% if ass.data.competencies.size > 0 %}{{ ass.data.competencies | normalizeSkills | join: ", " }}{% else %}{{ ass.data.skills | normalizeSkills | join: ", " }}{% endif %}{% if ass.data.employer.size > 1 and ass.data.employer.size < 4 %}{{ "\nNote: Engagement continued uninterrupted across " | append: ass.data.employer.size | append: " consulting firms" }}{% endif %}{% endfor %}
+{% endif %}{% endif %}
+{% endfor %}
+
+Education: {% for edu in collections.education %}
+{{ edu.data.title }} | {{ edu.data.start_year }}-{{ edu.data.end_year }}
+{{ edu.data.description }}{% endfor %}

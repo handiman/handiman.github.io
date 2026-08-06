@@ -24,6 +24,9 @@ jobs:
            npm install
            npm run build
 
+      - name: Compile CV PDFs
+        run: npm run typst
+
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:

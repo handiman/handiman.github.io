@@ -1,5 +1,5 @@
-<!DOCTYPE html>{% capture language %}{% if lang %}{{ lang }}{% else %}{{ site.lang }}{% endif %}{% endcapture %}
-<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ language }}">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ lang }}">
 <head>
     <title>{{ company.name }}{% if title %} | {{ title }}{% endif %}</title>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":{{ person.name | jsonify }},"url":{{ baseUrl | jsonify }}},"headline":{{ company.name | jsonify }},"image":{"alt":{{ person.name | jsonify }},"height":534,"width":800,"url":{{ person.image | jsonify }},"@type":"imageObject"},"name":{{ company.name | jsonify }},"url":{{ baseUrl | jsonify }}}</script>
@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="{{ person.name }}" />
-    <meta property="og:locale" content="{{ language }}" />
+    <meta property="og:locale" content="{{ lang }}" />
     <meta property="og:url" content="{{ page.url | absolute_url }}" />
     <meta property="og:site_name" content="{{ company.name }}" />
     <meta property="og:image" content="{{ '/assets/img/landscape-800x534.jpg' | absolute_url }}" />

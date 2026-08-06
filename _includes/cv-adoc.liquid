@@ -1,0 +1,25 @@
+= {{ person.name }}
+{{ person.jobTitle }}
+
+== {{ headings.summary }}
+{{ person.description }}
+
+== {{ headings.languages }}{% for language in languages %}
+{{ language.name }} ({{ language.proficiency }}){% endfor %}
+
+== {{ headings.certs }} {% for cert in certs %}
+{{ cert.title }}{% endfor %}
+
+== {{ headings.experience }}{% if lang == "sv" %}{% assign experience = collections.experience_sv %}{% else %}{% assign experience = collections.experience %}{% endif %}{% for xp in experience %}
+{% include 'experience-adoc' with xp %}
+{% endfor %}
+
+== {{ headings.earlier_career }}{% if lang == "sv" %}{% assign experience = collections.earlier_career_sv %}{% else %}{% assign experience = collections.earlier_career %}{% endif %}{% for xp in experience %}
+{% include 'experience-adoc' with xp %}
+{% endfor %}
+
+== {{ headings.education }}{% if lang == "sv" %}{% assign education = collections.education_sv %}{% else %}{% assign education = collections.education %}{% endif %}{% for edu in education %}
+=== {{ edu.data.title }} 
+{{ edu.data.start_year }} - {{ edu.data.end_year }}
+{{ edu.data.description }}
+{% endfor %}
