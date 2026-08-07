@@ -1,6 +1,7 @@
 import YAML from "yaml";
 import { toArray } from "./.eleventy.utils.js";
 export * from "./cv.jsonresume.js";
+export * from "./cv.jsonld.js";
 
 const mapExperience = (item) => {
   const description = (
@@ -26,9 +27,6 @@ const mapExperience = (item) => {
             },
           ]
         : undefined,
-    assignments: item.data.assignments
-      ? item.data.assignments.map(mapExperience)
-      : undefined,
   };
 };
 
