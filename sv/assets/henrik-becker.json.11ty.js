@@ -1,16 +1,6 @@
-import buildCV from "../../cv.js";
-
-export default class {
-  data() {
-    return {
-      permalink: "/sv/assets/henrik-becker.json",
-      eleventyExcludeFromCollections: true,
-      layout: null,
-    };
-  }
-
-  render(data) {
-    const cv = buildCV(data);
-    return JSON.stringify(cv, null, 2);
+import { CvJson } from "../../cv.js";
+export default class extends CvJson {
+  constructor() {
+    super("sv");
   }
 }

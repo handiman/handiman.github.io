@@ -1,4 +1,5 @@
 import { toArray } from "./.eleventy.utils.js";
+export * from "./cv.jsonresume.js";
 
 const mapExperience = (item) => {
   const description = (
@@ -75,4 +76,22 @@ export default function buildCV(data) {
   delete cv.introduction["@context"];
   delete cv.introduction["@type"];
   return cv;
+}
+
+export class CvJson {
+  constructor(lang) {
+    this.lang = lang;
+  }
+  data() {
+    return {
+      permalink: `${this.lang ? `/${this.lang}` : ""}/assets/henrik-becker.json`,
+      eleventyExcludeFromCollections: true,
+      layout: null,
+    };
+  }
+
+  render(data) {
+    const cv = buildCV(data);
+    return JSON.stringify(cv, null, 2);
+  }
 }
