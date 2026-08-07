@@ -20,12 +20,13 @@
     <meta property="twitter:image" content="{{ '/assets/img/landscape-800x534.jpg' | absolute_url }}" />
     <meta name="twitter:image:alt" content="{{ person.name }}" />
     <meta property="twitter:title" content="{% if title %}{{ title }}{% else %}{{ company.name }}{% endif %}" />
-    <link rel="canonical" href="{{ page.url | absolute_url }}" />
     <link rel="apple-touch-icon" href="/favicon.png" />
     <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.23/dist/collection/cv-chat.css" />
     <link rel="stylesheet" href="/assets/main.css" />
-    {% for format in formats %}<link rel="alternate" type="{{ format.mime_type }}" title="{{ headings.meta.cv_format }} {{ format.name }} ({{ format.lang | default: 'en' }})" href="{{ format.url }}" />
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
+    {% assign self = collections.all | findByInputPath: page.inputPath %}{% assign alternates = self | hreflangAlternates: collections.all %}{% for alt in alternates %}<link rel="alternate" hreflang="{{ alt.lang }}" href="{{ alt.href }}" />
+    {% endfor %}{% for format in formats %}<link rel="alternate" type="{{ format.mime_type }}" title="{{ headings.meta.cv_format }} {{ format.name }} ({{ format.lang | default: 'en' }})" href="{{ format.url }}" />
     {% endfor %}
     <script type="module">
         import { defineCustomElements } from 'https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.23/dist/esm/loader.js';
