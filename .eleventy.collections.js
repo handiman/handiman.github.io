@@ -32,7 +32,7 @@ const addClients = (eleventyConfig) =>
   eleventyConfig.addCollection("clients", (collectionApi) =>
     getLocalizedCollection(
       collectionApi
-        .getFilteredByTag("assignments")
+        .getFilteredByTag("experience")
         .sort(sortByFilePrefixReversed)
         .filter((item) => true === item.data.client),
       "en",

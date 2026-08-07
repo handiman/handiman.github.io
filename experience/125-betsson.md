@@ -11,7 +11,7 @@ highlights:
 #name: Betsson Group
 #employer: self-employed
 logo: /assets/img/logo-betsson-group.svg
-#teaser: Strengthened architecture, performance, and team capability across Betsson’s gamification systems through hands‑on engineering and candidate assessments
+teaser: Strengthened architecture, performance, and team capability across Betsson’s gamification systems through hands‑on engineering and candidate assessments
 client: true
 organization:
   name: Betsson Group AB
