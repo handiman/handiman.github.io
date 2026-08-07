@@ -5,7 +5,7 @@ import {
   late_job,
 } from "../.eleventy.utils.js";
 
-export default (eleventyConfig) => {
+export const addExperience = (eleventyConfig) => {
   eleventyConfig.addCollection("experience", (collectionApi) => {
     return getLocalizedCollection(
       collectionApi
