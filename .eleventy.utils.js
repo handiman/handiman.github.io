@@ -1,6 +1,5 @@
 import path from "node:path";
 
-
 export const sortByFilePrefixReversed = (itemA, itemB) => {
   const a = parseInt(itemA.fileSlug.split("-")[0]);
   const b = parseInt(itemB.fileSlug.split("-")[0]);
@@ -72,3 +71,25 @@ export const localizedPermalink = (data, section) => {
   return `${prefix}/${section}/${slug}/`;
 };
 
+/**
+ * Hittar alla output-sidor som delar samma slug som `item` (dvs.
+ * dess språkvarianter) genom att söka i collections.all — samma
+ * parningsprincip som getLocalizedCollection() använder.
+ */
+export const getHreflangAlternates = (item, allItems, siteUrl) => {
+  const slug = getSlug(item.data);
+  if (!slug) return [];
+
+  const locales = new Map(); // lang -> url
+  for (const other of allItems) {
+    if (getSlug(other.data) !== slug) continue;
+    const lang = getLocale(other.data);
+    if (!locales.has(lang)) locales.set(lang, siteUrl + other.url);
+  }
+
+  const alternates = Array.from(locales, ([lang, href]) => ({ lang, href }));
+  const defaultHref = locales.get("en");
+  if (defaultHref) alternates.push({ lang: "x-default", href: defaultHref });
+
+  return alternates;
+};
