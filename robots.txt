@@ -1,6 +1,7 @@
 User-agent: *
 
 Disallow: /assets/
+Disallow: /sv/assets/
 Disallow: feed*
 Disallow: 404.html
 
