@@ -16,3 +16,6 @@ issuer: Issuer
 date: Date
 
 education: Education
+
+meta:
+  cv_format: My CV as 
