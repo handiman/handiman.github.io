@@ -25,27 +25,27 @@ The Typst steps require the `typst` CLI binary to be on PATH (installed separate
 
 ### Content model: one Markdown file per item, localized via `.md` / `.sv.md` siblings
 
-Most content types (`experience/`, `assignments/`, `employment/`, `education/`) are directories of Markdown files named `NN-slug.md` (English) and `NN-slug.sv.md` (Swedish). The two are paired at build time, not by filename alone:
+Most content types (`experience/`, `employment/`, `education/`) are directories of Markdown files named `NN-slug.md` (English) and `NN-slug.sv.md` (Swedish). The two are paired at build time, not by filename alone:
 
 - `getLocale()` ([.eleventy.utils.js](.eleventy.utils.js)) detects language from a `.sv.` infix in the filename (falls back to `data.lang`, default `en`).
 - `getSlug()` reads front matter `slug` (or derives it from the filename, stripping the numeric prefix and `.sv`).
-- `getLocalizedCollection(items, targetLocale)` dedupes by slug, preferring the target-locale item and falling back to English when no Swedish version exists yet. This is why a new `assignments/15-foo.sv.md` isn't required immediately — the English version renders on `/sv` until it is.
+- `getLocalizedCollection(items, targetLocale)` dedupes by slug, preferring the target-locale item and falling back to English when no Swedish version exists yet. This is why a new `experience/15-foo.sv.md` isn't required immediately — the English version renders on `/sv` until it is.
 - The leading `NN-` numeric prefix drives ordering (`sortByFilePrefix` / `sortByFilePrefixReversed` in [.eleventy.utils.js](.eleventy.utils.js)), not the date — keep prefixes consistent when inserting new entries.
 
-Collections are registered in [.eleventy.collections.js](.eleventy.collections.js) and [experience/experience.js](experience/experience.js), each with an English and a `_sv` variant (e.g. `employment` / `employment_sv`, `experience` / `experience_sv`). Templates pick the right one based on `lang`. `employment` also has assignments joined onto it in-memory (`mapEmployer`), matched by `employer` slug against `assignments` front matter — assignments aren't a child collection on disk.
+Collection registration follows a per-content-type module pattern: each type owns an `add<Type>(eleventyConfig)` function in a file next to its content (`experience/experience.js`, `employment/employment.js`, `education/education.js`, `usp/usp.js`), each with an English and a `_sv` variant (e.g. `employment` / `employment_sv`, `experience` / `experience_sv`). [.eleventy.collections.js](.eleventy.collections.js) just imports and calls these `add*` functions, plus defines the remaining cross-cutting collections inline (`clients`, `fun_facts`, `all_skills`, `all_roles`). Templates pick the localized variant based on `lang`. When adding a new content type that needs its own collection, follow this pattern (a colocated `<dir>/<dir>.js` exporting `add<Type>`) rather than growing `.eleventy.collections.js` directly.
 
 Work history is split into two eras: `early_job`/`late_job` (in `.eleventy.utils.js`) partition `experience`/`employment` at year 2008 into `experience` vs `earlier_career` (and localized variants) — this is a hardcoded cutoff, not configurable data.
 
-### CV generation is one dataset rendered to five output formats
+### CV generation is one dataset rendered to multiple output formats
 
-`cv.js` (root) assembles a single CV object (`buildCV`) from collections + `_data` (person, skills, languages, certs, education, recommendations, interests). That object backs:
+`cv.js` (root) assembles a single CV object (`buildCV`) from collections + `_data` (person, skills, languages, certs, education, recommendations, interests). That object backs, currently:
 
 - HTML CV at `/cv` (via [_layouts/cv.liquid](_layouts/cv.liquid), itself built from `_includes/cv-*.liquid` partials like `work-experience`, `earlier-career`, `usps`, `skills-pills`)
 - `assets/henrik-becker.json.11ty.js` — machine-readable JSON resume (also gisted by CI, see below)
 - `assets/henrik-becker.adoc`, `.markdown`, `.txt` — plain-text/structured CV exports, each with matching `_includes/*-adoc.liquid` / `*-markdown.liquid` / `*-txt.liquid` templates
 - `assets/henrik-becker.typ` — Typst source compiled to PDF post-build (`npm run typst`), separately for `en` (`assets/henrik-becker.pdf`) and `sv` (`sv/assets/henrik-becker.pdf`, passed `--input lang=sv --input data=...sv/assets/henrik-becker.json`)
 
-When changing CV data shape, update `buildCV` in `cv.js` and check all five consumers stay in sync — none of them are generated from each other.
+None of these consumers are generated from each other — each is templated independently off the same `buildCV` object. When changing CV data shape, update `buildCV` in `cv.js` and check every consumer stays in sync. When adding a new output format, follow the existing pattern: template it directly off the `buildCV` object (or a collection feeding it), rather than deriving it from one of the other formats.
 
 ### Localization pattern beyond content pairs
 
