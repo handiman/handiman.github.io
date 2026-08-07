@@ -60,29 +60,10 @@ export default (eleventyConfig) => {
     return employment.map((employer) => mapEmployer(employer, assignments));
   });
 
-  /*eleventyConfig.addCollection("early_career", function (collectionApi) {
-    return getLocalizedCollection(
-      collectionApi
-        .getFilteredByTag("employment")
-        .sort(sortByFilePrefixReversed)
-        .filter(early_job),
-      "en",
-    );
-  });
-
-  eleventyConfig.addCollection("early_career_sv", function (collectionApi) {
-    return getLocalizedCollection(
-      collectionApi
-        .getFilteredByTag("employment")
-        .sort(sortByFilePrefixReversed)
-        .filter(early_job),
-      "sv",
-    );
-  });*/
   eleventyConfig.addCollection("usps", (collectionApi) =>
     getLocalizedCollection(
       collectionApi
-        .getFilteredByTag("education")
+        .getFilteredByTag("usps")
         .filter(english)
         .sort(sortByFilePrefixReversed),
       "en",
@@ -91,7 +72,7 @@ export default (eleventyConfig) => {
   eleventyConfig.addCollection("usps_sv", (collectionApi) =>
     getLocalizedCollection(
       collectionApi
-        .getFilteredByTag("education")
+        .getFilteredByTag("usps")
         .filter(swedish)
         .sort(sortByFilePrefixReversed),
       "sv",
