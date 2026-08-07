@@ -45,10 +45,8 @@ cards:
 <section id="clients" data-source="{{ page.url  }}#clients">
     <h2>Clients</h2>
     <ul class="client-logos">{% for client in collections.clients %}{% if client.data.logo %}
-        <li title="{{ client.data.name }}{% if client.data.teaser %}: {{ client.data.teaser }}{% endif %}">
-            <a href="{{ client.data.url }}">
-                <img class="client-logo" src="{{ client.data.logo }}" alt="{{ client.data.name }} logo" />
-            </a>
+        <li title="{{ client.data.title }}">
+            <img class="client-logo" src="{{ client.data.logo }}" alt="{{ client.data.title }} logo" />
         </li>{% endif %}{% endfor %}
     </ul>
 </section>

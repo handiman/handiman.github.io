@@ -3,7 +3,7 @@ title: Film2Home
 #name: Film2Home/Plejmo
 slug: film2home
 #sitemap: true
-#teaser: Delivered backend, frontend, and DevOps improvements across the Film2Home and Plejmo platforms, including API design and automated deployment.
+teaser: Delivered backend, frontend, and DevOps improvements across the Film2Home and Plejmo platforms, including API design and automated deployment.
 #group: projects
 roles: 
  - Fullstack Developer
