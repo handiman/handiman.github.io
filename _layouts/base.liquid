@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="/assets/main.css" />
     <link rel="canonical" href="{{ page.url | absolute_url }}" />
     {% assign self = collections.all | findByInputPath: page.inputPath %}{% assign alternates = self | hreflangAlternates: collections.all %}{% for alt in alternates %}<link rel="alternate" hreflang="{{ alt.lang }}" href="{{ alt.href }}" />
-    {% endfor %}{% for format in formats %}<link rel="alternate" type="{{ format.mime_type }}" title="My CV in {{ format.name }} format" href="{{ format.url }}" />
+    {% endfor %}{% for format in formats %}<link rel="alternate" type="{{ format.mime_type }}" title="{{ headings.meta.cv_format }} {{ format.name }} ({{ format.lang | default: 'en' }})" href="{{ format.url }}" />
     {% endfor %}
     <script type="module">
         import { defineCustomElements } from 'https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.23/dist/esm/loader.js';

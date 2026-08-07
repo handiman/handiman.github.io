@@ -10,7 +10,7 @@
         </section>
         <section id="download" data-source="{{ page.url }}#download" class="no-print">
             <h5>CV for download</h5> 
-            <ul>{% for format in formats | limit: 6 %}<li><a href="{{ format.url }}" title="Download my CV in {{ format.name }} format">{{ format.name }}</a></li>{% endfor %}</ul>
+            <ul>{% for format in formats | limit: 6 %}<li><a href="{{ format.url }}" title="{{ headings.meta.cv_format }} {{ format.name }} ({{ format.lang | default: 'en' }})">{{ format.name }} ({{ format.lang | default: 'en' }})</a></li>{% endfor %}</ul>
         </section>
         <section id="company-info" data-section="Company information" data-source="{{ page.url }}#company-info">
             <address>
