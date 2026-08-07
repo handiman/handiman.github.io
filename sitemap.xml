@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{% assign pages = collections.all | sitemapPages %}{% for entry in pages %}  <url>
+    <loc>{{ entry.url | absolute_url }}</loc>
+{% assign alternates = entry | hreflangAlternates: collections.all %}{% for alt in alternates %}    <xhtml:link rel="alternate" hreflang="{{ alt.lang }}" href="{{ alt.href }}" />
+{% endfor %}  </url>
+{% endfor %}</urlset>
