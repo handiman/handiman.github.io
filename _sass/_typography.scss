@@ -167,20 +167,6 @@ ul li::before {
   color: var(--color-muted);
 }
 
-body > header,
-body > footer {
-  ul {
-    li {
-      padding: 0;
-      margin: 0;
-    }
-    li::before {
-      padding: 0;
-      margin: 0;
-      content: "";
-    }
-  }
-}
 main > div > article {
     ul {
         margin-bottom: var(--space-2);

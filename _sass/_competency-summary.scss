@@ -124,7 +124,7 @@
 // ---------------------------------------------
 @media print {
   .competencies {
-    color: var(--color-text-muted, #444);
+    color: var(--color-muted);
 
     summary {
       color: inherit; // stronger label for print
