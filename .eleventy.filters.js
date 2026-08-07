@@ -26,4 +26,12 @@ export default (eleventyConfig) => {
       return getHreflangAlternates(item, allItems, siteUrl);
     },
   );
+  // Real HTML pages, opted out of via `sitemap: false` front matter — feeds,
+  // resume exports (.json/.adoc/.markdown/.txt/.webmanifest), robots.txt, etc.
+  // are excluded automatically since their output isn't `.html`.
+  eleventyConfig.addFilter("sitemapPages", (allItems) =>
+    allItems.filter(
+      (item) => item.data.sitemap !== false && item.outputPath?.endsWith(".html"),
+    ),
+  );
 };

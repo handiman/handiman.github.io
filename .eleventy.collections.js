@@ -26,7 +26,6 @@ export default (eleventyConfig) => {
   addFunFacts(eleventyConfig);
   addSkills(eleventyConfig);
   addRoles(eleventyConfig);
-  addSitemapPages(eleventyConfig);
 };
 
 const addClients = (eleventyConfig) =>
@@ -60,16 +59,3 @@ const addRoles = (eleventyConfig) =>
       .flatMap((item) => toArray(item.data.roles));
     return [...new Set(roles)].sort();
   });
-
-// Real HTML pages, opted out of via `sitemap: false` front matter — feeds,
-// resume exports (.json/.adoc/.markdown/.txt/.webmanifest), robots.txt, etc.
-// are excluded automatically since their output isn't `.html`.
-const addSitemapPages = (eleventyConfig) =>
-  eleventyConfig.addCollection("sitemap", (collectionApi) =>
-    collectionApi
-      .getAll()
-      .filter(
-        (item) =>
-          item.data.sitemap !== false && item.outputPath?.endsWith(".html"),
-      ),
-  );
