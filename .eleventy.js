@@ -1,12 +1,9 @@
 import YAML from "yaml";
 import fs from "node:fs";
 import path from "node:path";
-import markdownIt from "markdown-it";
 import * as sass from "sass";
 import configureCollections from "./.eleventy.collections.js";
-import { getSlug, localizedPermalink, normalizeSkills } from "./.eleventy.utils.js";
-
-const md = markdownIt();
+import configureFilters from "./.eleventy.filters.js";
 
 const useLiquidFor = (eleventyConfig, extensions) => {
   for (const extension of extensions.split(",")) {
@@ -34,36 +31,15 @@ export default async function (eleventyConfig) {
   eleventyConfig.addGlobalData("baseUrl", "https://www.henrikbecker.net");
   eleventyConfig.addGlobalData("lang", "en");
 
-  eleventyConfig.addFilter(
-    "absolute_url",
-    function (url, base = eleventyConfig.globalData.baseUrl) {
-      try {
-        return new URL(url, base).href;
-      } catch (err) {
-        console.error(err);
-        return url;
-      }
-    },
-  );
-
-  eleventyConfig.addFilter("jsonify", (variable) => JSON.stringify(variable));
-  eleventyConfig.addFilter("markdownify", (variable) =>
-    md.render(variable ?? ""),
-  );
-
   eleventyConfig.addTemplateFormats("scss,xml,webmanifest,markdown,txt,adoc");
   useLiquidFor(eleventyConfig, "markdown,xml,txt,webmanifest,adoc");
 
-  eleventyConfig.addDataExtension("cjs,yml,yaml", (contents) =>
-    YAML.parse(contents),
-  );
+  eleventyConfig.addDataExtension("cjs,yml,yaml", YAML.parse);
 
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
     excerpt_separator: "<!--more-->",
   });
-
-  eleventyConfig.addFilter("normalizeSkills", normalizeSkills);
 
   eleventyConfig.addExtension("scss", {
     outputFileExtension: "css",
@@ -91,5 +67,6 @@ export default async function (eleventyConfig) {
     },
   });
 
+  configureFilters(eleventyConfig);
   configureCollections(eleventyConfig);
 }
