@@ -1,4 +1,4 @@
-import buildCV from "../cv.js";
+import buildCV from "../../cv.js";
 
 export default class {
   data() {
