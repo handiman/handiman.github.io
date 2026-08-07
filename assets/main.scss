@@ -1,59 +1,26 @@
-@use "tokens";
-@use "typography";
-@use "layout-default";
-@use "nav";
-@use "forms";
-@use "cards";
-@use "competency-summary";
-@use "agreement";
-@use "education";
-@use "experience";
-@use "swatch";
-@use "easter-egg";
-@use "print";
+// Abstracts — tokens, no output of their own
+@use "abstracts/tokens";
 
+// Base — element defaults and global helpers
+@use "base/reset";
+@use "base/typography";
+@use "base/utilities";
 
-/* Baseline grid overlay (optional but amazing) */
-body.debug::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255,0,0,0.15) 1px,
-    transparent 1px
-  );
-  background-size: 100% 4px;
-  z-index: 9999;
-}
+// Layout — page chrome (header/footer/nav shell)
+@use "layout/shell";
+@use "layout/nav";
 
-.hidden {
-    display: none;
-}
+// Components — reusable content patterns
+@use "components/forms";
+@use "components/cards";
+@use "components/competency-summary";
+@use "components/education";
+@use "components/experience";
+@use "components/easter-egg";
 
-address {
-    font-style: normal;
-    &>*:last-child{
-        margin-top: var(--space-2);
-    }
-}
+// Pages — styling scoped to a single page/view
+@use "pages/agreement";
+@use "pages/swatch";
 
-.theme-toggle {
-    position: fixed;
-    cursor: pointer;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    background-color: transparent;
-    color: transparent;
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    border: none;
-}
-
-.flip-text {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-}
+// Print — cross-cutting @media print overrides, loaded last so it wins
+@use "print/print";

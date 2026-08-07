@@ -1,0 +1,19 @@
+/* ============================================
+   RESET — box-sizing + margin/padding baseline
+   ============================================ */
+
+html {
+  font-family: var(--font-family-sans);
+  background-color: var(--color-footer-bg);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
