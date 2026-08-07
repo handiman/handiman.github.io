@@ -77,7 +77,7 @@ export const localizedPermalink = (data, section) => {
  * parningsprincip som getLocalizedCollection() använder.
  */
 export const getHreflangAlternates = (item, allItems, siteUrl) => {
-  const slug = getSlug(item.data);
+  const slug = item && getSlug(item.data);
   if (!slug) return [];
 
   const locales = new Map(); // lang -> url
@@ -93,3 +93,11 @@ export const getHreflangAlternates = (item, allItems, siteUrl) => {
 
   return alternates;
 };
+
+/**
+ * Finds a collections.all entry by its Eleventy `inputPath` — lets a
+ * template that only has the built-in `page` object (e.g. a shared layout,
+ * which has no `item.data` of its own) look up its own full collection item.
+ */
+export const findByInputPath = (items, inputPath) =>
+  items.find((item) => item.inputPath === inputPath);

@@ -1,5 +1,9 @@
 import markdownIt from "markdown-it";
-import { normalizeSkills, getHreflangAlternates } from "./.eleventy.utils.js";
+import {
+  normalizeSkills,
+  getHreflangAlternates,
+  findByInputPath,
+} from "./.eleventy.utils.js";
 
 const md = markdownIt();
 
@@ -26,6 +30,7 @@ export default (eleventyConfig) => {
       return getHreflangAlternates(item, allItems, siteUrl);
     },
   );
+  eleventyConfig.addFilter("findByInputPath", findByInputPath);
   // Real HTML pages, opted out of via `sitemap: false` front matter — feeds,
   // resume exports (.json/.adoc/.markdown/.txt/.webmanifest), robots.txt, etc.
   // are excluded automatically since their output isn't `.html`.
