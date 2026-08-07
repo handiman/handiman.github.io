@@ -1,3 +1,4 @@
+import YAML from "yaml";
 import { toArray } from "./.eleventy.utils.js";
 export * from "./cv.jsonresume.js";
 
@@ -93,5 +94,24 @@ export class CvJson {
   render(data) {
     const cv = buildCV(data);
     return JSON.stringify(cv, null, 2);
+  }
+}
+
+export class CvYaml {
+  constructor(lang) {
+    this.lang = lang;
+  }
+
+  data() {
+    return {
+      permalink: `${this.lang ? `/${this.lang}` : ""}/assets/henrik-becker.yaml`,
+      eleventyExcludeFromCollections: true,
+      layout: null,
+    };
+  }
+
+  render(data) {
+    const cv = buildCV(data);
+    return YAML.stringify(cv);
   }
 }
