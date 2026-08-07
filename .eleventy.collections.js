@@ -1,21 +1,15 @@
 import {
-  getSlug,
-  getLocale,
   toArray,
   normalizeSkills,
   getLocalizedCollection,
-  sortByFilePrefix,
   sortByFilePrefixReversed,
-  early_job,
-  late_job,
-  english,
-  swedish,
 } from "./.eleventy.utils.js";
 
 import { addExperience } from "./experience/experience.js";
 import { addEmployment } from "./employment/employment.js";
 import { addEducation } from "./education/education.js";
 import { addUsps } from "./usp/usp.js";
+import { addFunFacts } from "./fun-facts/fun-facts.js";
 
 export default (eleventyConfig) => {
   addExperience(eleventyConfig);
@@ -38,11 +32,6 @@ const addClients = (eleventyConfig) =>
       "en",
     ),
   );
-
-const addFunFacts = (eleventyConfig) =>
-  eleventyConfig.addCollection("fun_facts", function (collectionApi) {
-    return collectionApi.getFilteredByTag("fun-facts").sort(sortByFilePrefix);
-  });
 
 const addSkills = (eleventyConfig) =>
   eleventyConfig.addCollection("all_skills", function (collectionApi) {
