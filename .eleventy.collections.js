@@ -9,7 +9,7 @@ import {
   early_job,
   late_job,
   english,
-  swedish
+  swedish,
 } from "./.eleventy.utils.js";
 
 import addExperience from "./experience/experience.js";
@@ -38,11 +38,8 @@ export default (eleventyConfig) => {
         .filter(late_job),
       "en",
     );
-    const assignments = collectionApi
-      .getFilteredByTag("assignments")
-      .sort(sortByFilePrefixReversed);
 
-    return employment.map((employer) => mapEmployer(employer, assignments));
+    return employment.map((employer) => mapEmployer(employer, []));
   });
 
   eleventyConfig.addCollection("employment_sv", function (collectionApi) {
@@ -53,11 +50,8 @@ export default (eleventyConfig) => {
         .filter(late_job),
       "sv",
     );
-    const assignments = collectionApi
-      .getFilteredByTag("assignments")
-      .sort(sortByFilePrefixReversed);
 
-    return employment.map((employer) => mapEmployer(employer, assignments));
+    return employment.map((employer) => mapEmployer(employer, []));
   });
 
   eleventyConfig.addCollection("usps", (collectionApi) =>
@@ -98,12 +92,16 @@ export default (eleventyConfig) => {
     ),
   );
 
-  eleventyConfig.addCollection("clients", function (collectionApi) {
-    return collectionApi
-      .getFilteredByTag("assignments")
-      .sort(sortByFilePrefixReversed)
-      .filter((item) => true === item.data.client);
-  });
+  eleventyConfig.addCollection("clients", (collectionApi) =>
+    getLocalizedCollection(
+      collectionApi
+        .getFilteredByTag("assignments")
+        .sort(sortByFilePrefixReversed)
+        .filter((item) => true === item.data.client),
+      "en",
+    ),
+  );
+  
   eleventyConfig.addCollection("fun_facts", function (collectionApi) {
     return collectionApi.getFilteredByTag("fun-facts").sort(sortByFilePrefix);
   });
