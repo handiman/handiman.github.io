@@ -53,8 +53,17 @@ None of these consumers are generated from each other — each is templated inde
 
 `localizedPermalink(data, section)` ([.eleventy.utils.js](.eleventy.utils.js)) is the shared helper for building `/sv/<section>/<slug>/`-style permalinks from front matter.
 
+### Layout hierarchy ([_layouts/](_layouts/))
+
+- [base.liquid](_layouts/base.liquid) is the root `<html>` shell (head, meta/OG tags, `/assets/main.css`, theme-toggle button, `main.js`) — it renders `{{ content }}` directly into `<body>` with no header/main/footer chrome of its own.
+- [page.liquid](_layouts/page.liquid) (`layout: base`) adds the site chrome: `{% include 'header' %}`, `<main id="content">{{ content }}</main>`, `{% include 'footer' %}`. Most content types build on this, directly or transitively.
+- [collection.liquid](_layouts/collection.liquid) (`layout: page`) wraps content in `<div data-section><article><header><h1>{{ title }}</h1></header>{{ content }}</article></div>` — a titled write-up with no extra metadata. Used by `usp` and `fun-facts`.
+- [experience.liquid](_layouts/experience.liquid) (`layout: page`) is `collection.liquid` plus a `roles`/`start_date`–`end_date` line under the `<h1>`. Used by `experience`, `education`, and `employment` — anything with a role and a date range.
+- When adding a content type, pick whichever of `page` / `collection` / `experience` matches its shape rather than writing a new top-level `<html>` layout; only `base.liquid` should ever own the document shell.
+
 ### Eleventy config specifics ([.eleventy.js](.eleventy.js))
 
+- Filters are registered via a colocated [.eleventy.filters.js](.eleventy.filters.js) module (`configureFilters(eleventyConfig)`, called from `.eleventy.js`), mirroring the `.eleventy.collections.js` split described above — add new filters there rather than inline in `.eleventy.js`.
 - `scss` is a custom extension (not the standard 11ty-sass plugin): compiles via `sass.compileString` with load paths `[fileDir, "_sass"]`, skips files whose name starts with `_` (partials), and registers Sass `loadedUrls` as dependencies for incremental builds.
 - `markdown,xml,txt,webmanifest,adoc` are configured to use the Liquid engine (`useLiquidFor`) instead of their usual/no engine, so front matter + Liquid tags work inside `.adoc`/`.txt`/CV export templates.
 - `.cjs,.yml,.yaml` data files are parsed with the `yaml` package via `addDataExtension`.
