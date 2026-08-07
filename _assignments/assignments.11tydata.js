@@ -2,7 +2,7 @@ import { getLocale, localizedPermalink } from "../.eleventy.utils.js";
 
 export default function () {
   return {
-    layout: "project",
+    layout: "experience",
     tags: ["assignments"],
     permalink: (data) => localizedPermalink(data, "assignments"),
   };
