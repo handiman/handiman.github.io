@@ -1,10 +1,10 @@
 ---
 layout: page
 ---
-<div>
+<div data-section="{{ title }}" data-source="{{ page.url | absolute_url }}">
     <article>
         <header>
-            <h1>{{ name }}</h1>
+            <h1>{{ title }}</h1>
             <p>
                 {% if roles %}<span>{% for role in roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>{% endif %}
                 <time>

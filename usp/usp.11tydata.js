@@ -2,7 +2,7 @@ import { getLocale, localizedPermalink } from "../.eleventy.utils.js";
 
 export default function () {
   return {
-    layout: "usp",
+    layout: "collection",
     tags: ["usps"],
     permalink: (data) => localizedPermalink(data, "unique-selling-points"),
   };
