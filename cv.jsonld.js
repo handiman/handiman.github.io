@@ -1,3 +1,5 @@
+import buildCV from "./cv.js";
+
 export class SemanticCV {
   constructor(lang) {
     this.lang = lang;
@@ -12,15 +14,23 @@ export class SemanticCV {
   }
 
   render(data) {
-    const experience = [
-      ...(data.collections.experience ?? []),
-      ...(data.collections.earlier_career ?? []),
-    ];
+    const cv = buildCV(data);
+    const {
+      introduction,
+      certifications,
+      coreSkills,
+      workExperience,
+      earlierCareer,
+      education,
+      languages,
+      interests,
+      recommendations,
+    } = cv;
+    const experience = [...(workExperience ?? []), ...(earlierCareer ?? [])];
     const semanticCV = {
-      ...data.person,
-      knowsLanguage: data.languages?.map((language) => language.name),
-      worksFor: experience.map((item) => {
-        const { data } = item;
+      ...introduction,
+      knowsLanguage: languages?.map((language) => language.name),
+      worksFor: experience.map((data) => {
         return {
           "@type": "Role",
           roleName: data.roles?.join(", "),
@@ -35,8 +45,7 @@ export class SemanticCV {
           },
         };
       }),
-      alumniOf: data.collections.education?.map((item) => {
-        const { data } = item;
+      alumniOf: education?.map((data) => {
         return {
           "@type": "Role",
           description: data.description,

@@ -1,7 +1,5 @@
 import YAML from "yaml";
 import { toArray } from "./.eleventy.utils.js";
-export * from "./cv.jsonresume.js";
-export * from "./cv.jsonld.js";
 
 const mapExperience = (item) => {
   const description = (

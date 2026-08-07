@@ -1,4 +1,5 @@
 import { toArray } from "./.eleventy.utils.js";
+import buildCV from "./cv.js";
 
 export class JsonResume {
   constructor(lang) {
@@ -13,6 +14,19 @@ export class JsonResume {
   }
 
   render(data) {
+    const cv = buildCV(data);
+    const {
+      introduction,
+      certifications,
+      coreSkills,
+      workExperience,
+      earlierCareer,
+      education,
+      languages,
+      interests,
+      recommendations,
+    } = cv;
+    const experience = [...(workExperience ?? []), ...(earlierCareer ?? [])];
     const resume = {
       $schema:
         "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
@@ -23,67 +37,52 @@ export class JsonResume {
           "https://gist.githubusercontent.com/handiman/3881a8e890dd1032cce3f5e655859717/raw/01ba33f00c707670636d902546d7e50c4d4176e4/resume.json",
       },
       basics: {
-        name: data.person.name,
-        label: data.person.jobTitle,
-        image: data.person.image,
-        url: data.person.url,
-        summary: data.person.description,
-        profiles: data.same_as?.map((item) => ({
+        name: introduction.name,
+        label: introduction.jobTitle,
+        image: introduction.image,
+        url: introduction.url,
+        summary: introduction.description,
+        profiles: introduction.same_as?.map((item) => ({
           network: item.network,
           url: item.url,
           username: "GitHub" == item.network ? "handiman" : undefined,
         })),
       },
-      certificates: data.certs?.map((cert) => ({
+      certificates: certifications?.map((cert) => ({
         name: cert.title,
         issuer: cert.issuer,
-        date: cert.achievement_date,
+        date: cert.achievementDate,
         url: cert.link,
       })),
-      skills: data.categorizedSkills?.map((category) => ({
+      skills: coreSkills?.map((category) => ({
         name: category.name,
         level: category.level,
         keywords: category.skills,
       })),
-      work: [
-        ...(data.collections.experience ?? []),
-        ...(data.collections.earlier_career ?? []),
-      ].map((xp) => {
-        const title = xp.data.organization?.name ?? xp.data.title;
-        const name = xp.data.via ? `${title} (via ${xp.data.via})` : title;
+      work: experience?.map((xp) => {
         return {
-          name: name,
-          description: xp.data.organization?.type,
-          position: xp.data.roles.join(", "),
-          startDate: xp.data.start_date,
-          endDate: xp.data.end_date,
-          summary: xp.data.mission ?? xp.data.description ?? xp.data.summary,
-          highlights: xp.data.highlights,
+          name: xp.title,
+          description: xp.description,
+          position: xp.roles.join(", "),
+          startDate: xp.startDate,
+          endDate: xp.endDate,
+          highlights: xp.highlights,
         };
       }),
-      education: data.collections.education?.map((edu) => ({
-        institution: edu.data.title,
-        area: edu.data.description,
-        startDate: `${edu.data.start_year}-01-01`,
-        endDate: `${edu.data.end_year}-01-01`,
+      education: education?.map((edu) => ({
+        institution: edu.title,
+        area: edu.description,
+        startDate: `${edu.start_year}-01-01`,
+        endDate: `${edu.end_year}-01-01`,
       })),
-      languages: data.languages?.map((lang) => ({
+      languages: languages?.map((lang) => ({
         language: lang.name,
         fluency: lang.proficiency,
       })),
-      projects: data.collections.projects?.map((proj) => ({
-        name: proj.data.name,
-        entity: proj.data.organization?.name,
-        description: proj.data.summary ?? proj.data.description,
-        roles: toArray(proj.data.roles),
-        highlights: proj.data.highlights,
-        startDate: proj.data.start_date,
-        endDate: proj.data.end_date,
-      })),
-      interests: data.interests?.map((nerd) => ({
+      interests: interests?.map((nerd) => ({
         name: nerd.name,
       })),
-      references: data.recommendations?.map((ref) => ({
+      references: recommendations?.map((ref) => ({
         name: ref.name,
         reference: ref.text,
       })),

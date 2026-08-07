@@ -1,2 +1,2 @@
-import { JsonResume } from "../cv.js";
+import { JsonResume } from "../cv.jsonresume.js";
 export default JsonResume;

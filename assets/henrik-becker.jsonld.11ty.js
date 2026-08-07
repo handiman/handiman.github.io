@@ -1,2 +1,2 @@
-import { SemanticCV } from "../cv.js";
+import { SemanticCV } from "../cv.jsonld.js";
 export default SemanticCV;
