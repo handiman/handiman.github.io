@@ -9,6 +9,15 @@ roles:
 - Creator
 start_date: 2026-03-01
 end_date: present
+skills:
+  - Nodejs
+  - TypeScript
+  - Cloudflare Workers
+  - Durable objects
+  - R2 object storage
+  - Webhooks
+  - Rest APIs
+  - Message queues
 competencies: 
   - name: Architecture
     weight: 1
