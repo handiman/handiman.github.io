@@ -1,0 +1,9 @@
+{% if lang == "sv" %}
+    {% assign experience = collections.projects_sv %}
+{% else %}
+    {% assign experience = collections.projects %}
+{% endif %}
+<h2>{{ headings.projects }}</h2>
+{% for xp in experience %}
+{% include 'experience' with xp %}
+{% endfor %}
