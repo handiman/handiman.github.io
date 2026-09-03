@@ -1,12 +1,12 @@
 ---
 title: Semantic-CV
-description: Utvecklarorienterat verktyg för att uttrycka ditt CV som JSON-LD och rendera det som HTML, PDF och ATS-vänlig text. Det består av två huvuddelar — ett CLI för att redigera strukturerad data, och en hostingplattform.   
-comment: Sidoprojekt via Henrik Becker Consulting AB
+description: Utvecklarorienterat verktyg för att uttrycka ditt CV som JSON-LD och rendera det som HTML, PDF och ATS-vänlig text. Det består av två huvuddelar — ett CLI för att redigera strukturerad data, och en hostingplattform. Kan ses på https://semantic.cv
+#comment: Sidoprojekt via Henrik Becker Consulting AB
 #name: Semantic-CV
 slug: semantic-cv
 #employer: self-employed
-roles: 
-- Skapare
+#roles: 
+#- Skapare
 start_date: 2026-03-01
 end_date: present
 competencies: 

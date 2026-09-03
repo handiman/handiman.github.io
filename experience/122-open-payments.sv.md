@@ -11,17 +11,17 @@ roles:
 #location: Stockholm, Sweden
 start_date: 2019-12-02
 end_date: 2020-06-30
-skills: 
- - Asp.NET Core
- - C#
- - React
- - Redux
- - TypeScript
- - Azure
- - Azure DevOps
- - Micro Services
- #- OData
- #- Git
+#skills: 
+# - Asp.NET Core
+# - C#
+# - React
+# - Redux
+# - TypeScript
+# - Azure
+# - Azure DevOps
+# - Micro Services
+#- OData
+#- Git
 description: |
   Open Payments erbjuder en PSD2-kompatibel plattform som gör det möjligt för fintech-bolag, e-handelsföretag och andra finansiella aktörer att integrera med europeiska banker via ett enda enhetligt API.
 highlights: 

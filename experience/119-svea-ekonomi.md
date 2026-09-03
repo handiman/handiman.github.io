@@ -15,6 +15,7 @@ skills:
 - C#
 - Asp.NET Web Api
 - CQRS
+- REST API
 - TDD
 - Specification By Example
 - Continuous Integration

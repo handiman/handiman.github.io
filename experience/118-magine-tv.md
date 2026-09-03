@@ -25,18 +25,23 @@ skills:
  - .NET Framework
  - TDD 
  - CQRS
+ - REST API
+ - WCF
+ - Azure Service Bus
  - Continuous Integration
  - Octopus Deploy
  - JavaScript
  - jQuery
  - KnockoutJS
  - NHibernate
+ - Dapper
  - SQL Server
  - Micro Services
  - CSS
  - HTML
  - EPiServer
  - IIS
+ - Git
 ---
 <!--more-->
 ## About the Role

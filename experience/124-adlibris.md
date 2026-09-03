@@ -21,8 +21,9 @@ skills:
  - SQL Server
  - Octopus Deploy
  - Azure App Services
- - Identity Server
+ - Identity Server (OpenID/Oauth)
  - Micro Services
+ - Git 
 description: Adlibris is the largest online bookstore in the Nordics with a growing ecosystem of digital services and applications. In 2021, I joined the Storefront team as a Fullstack Developer to support the ongoing modernization of the customer‑facing platform.
 highlights: 
  - OpenID/Oauth service implemented with Identity Server 4 for the new Adlibris app under development.
@@ -45,7 +46,7 @@ competencies:
   - name: System integration
     weight: .75  
     tech:
-      - Identity Server
+      - Identity Server (OpenID/Oauth)
       - Azure App Services
   - name: Automation      
     weight: .5

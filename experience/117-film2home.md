@@ -19,17 +19,21 @@ skills:
  - .NET Framework
  - TDD 
  - CQRS
+ - REST API
+ - WCF
  - Continuous Integration
  - Octopus Deploy
  - JavaScript
  - jQuery
  - KnockoutJS
  - NHibernate
+ - Dapper
  - SQL Server
  - CSS
  - HTML
  - EPiServer
  - IIS
+ - Git
 description: |
  Fullstack development of the Video On Demand (VOD) services Film2home and Plejmo based on Asp.NET MVC and EpiServer. DevOps tasks including configuring web sites, configuring automated builds and setting up automated deployment. 
 highlights: 

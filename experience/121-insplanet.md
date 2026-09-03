@@ -19,6 +19,7 @@ skills:
  - Azure DevOps
  - Octopus Deploy
  - jQuery
+ - Git
 description: Senior developer engagement stabilizing Insplanet after the departure of their architect and lead developer, focused on documentation, deployment reliability, and CI simplification.
 highlights: 
  - Implemented zero-downtime deployment.

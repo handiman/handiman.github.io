@@ -18,9 +18,11 @@ skills:
  - jQuery
  - CSS3
  - C#
+ - REST API
  - EntityFramework 6
  - Test Driven Development
  - Continuous Integration
+ - Git
 highlights:
  - Extended an in-house application for managing consultant CVs, built on ASP.NET MVC and hosted on Windows Azure.
 ---

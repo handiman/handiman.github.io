@@ -17,10 +17,11 @@ highlights:
 skills: 
  - Octopus Deploy
  - TeamCity
- - Asp.NET Web Api
  - .NET Core
+ - REST API
  - WCF
  - NHibernate
  - C#
+ - Git
 ---
 <!--more-->

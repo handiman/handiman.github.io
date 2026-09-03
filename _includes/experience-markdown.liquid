@@ -1,5 +1,5 @@
 
-**{{ xp.data.roles | join: ' & ' }} — {{ xp.data.title }}** {% if xp.data.via %} *(via {{ xp.data.via | join: ', ' }})*{% endif %} {{ xp.data.start_date | date: '%Y-%m' }} – {{ xp.data.end_date | date: '%Y-%m' }}
+**{% if xp.data.roles %}{{ xp.data.roles | join: ' & ' }} — {% endif %}{{ xp.data.title }}** {% if xp.data.via %} *(via {{ xp.data.via | join: ', ' }})*{% endif %} {{ xp.data.start_date | date: '%Y-%m' }} – {{ xp.data.end_date | date: '%Y-%m' }}
 
 {% capture start_date %}{{ xp.data.start_date | date: '%Y' }}{% endcapture %}
 {% if start_date > 2009 %}

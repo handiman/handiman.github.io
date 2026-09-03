@@ -17,11 +17,13 @@ skills:
  - React
  - Redux
  - TypeScript
+ - Micro Services
+ - REST API
  - Azure
  - Azure DevOps
- - Micro Services
- #- OData
- #- Git
+ - Azure API Management
+ - OData
+ - Git
 description: |
   Open Payments provides a PSD2‑compliant platform that allows FinTech companies, e‑commerce businesses, and other financial actors to integrate with European banks through a single unified API. 
 highlights: 

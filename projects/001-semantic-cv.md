@@ -5,8 +5,8 @@ description: Developer oriented tool for expressing your CV as JSON-LD in format
 #name: Semantic-CV
 slug: semantic-cv
 #employer: self-employed
-roles: 
-- Creator
+#roles: 
+#- Creator
 start_date: 2026-03-01
 end_date: present
 skills:

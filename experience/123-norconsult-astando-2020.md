@@ -19,9 +19,11 @@ skills:
  - KnockoutJS
  - Asp.NET Core
  - Asp.NET Web Forms
+ - REST API
  - WCF
  - TeamCity
  - Octopus Deploy
+ - Git
 description: Fullstack development and legacy modernization for Norconsult Astando, spanning new functionality, deployment automation, and code quality improvements.
 highlights: 
  - Automated deployment using Octopus Deploy.

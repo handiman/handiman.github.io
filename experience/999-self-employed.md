@@ -14,6 +14,16 @@ organization:
   city: Liding&ouml;
 start_date: 2017-07-06
 end_date: present
+skills:
+- Azure API Management
+- GitHub Actions
+- C#
+- .NET
+- ASP.NET
+- Cloudflare Workers
+- Cloudflare D1
+- Cloudflare R2
+- Durable Objects
 #competencies: 
 #  - name: Ruby
 #    weight: 0.2

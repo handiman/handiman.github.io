@@ -28,10 +28,18 @@ skills:
  - Microsoft Orleans
  - Blazor
  - Docker
- - GitHub Actions
  - Kafka
  - SQL Server
  - PostgreSQL
+ - Dapper
+ - Redis
+ - Memcached
+ - Event Sourcing
+ - REST API
+ - WCF
+ - Micro Services
+ - GitHub Actions
+ - AI-assisted code-review (GitHub Copilot, CodeScene)
 competencies:
   - name: Architecture
     weight: .75

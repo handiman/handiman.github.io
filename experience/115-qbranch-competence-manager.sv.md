@@ -18,9 +18,11 @@ skills:
  - jQuery
  - CSS3
  - C#
+ - REST API
  - EntityFramework 6
  - Test Driven Development
  - Continuous Integration
+ - Git
 highlights:
  - Vidareutvecklade en intern applikation för att hantera konsult-CV:n, byggd på ASP.NET MVC och driftsatt på Windows Azure.
 ---
