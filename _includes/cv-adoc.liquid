@@ -14,6 +14,10 @@
 {% include 'experience-adoc' with xp %}
 {% endfor %}
 
+== {{ headings.projects }}{% if lang == "sv" %}{% assign experience = collections.projects_sv %}{% else %}{% assign experience = collections.projects %}{% endif %}{% for xp in experience %}
+{% include 'experience-adoc' with xp %}
+{% endfor %}
+
 == {{ headings.earlier_career }}{% if lang == "sv" %}{% assign experience = collections.earlier_career_sv %}{% else %}{% assign experience = collections.earlier_career %}{% endif %}{% for xp in experience %}
 {% include 'experience-adoc' with xp %}
 {% endfor %}
