@@ -75,10 +75,34 @@
   let parts = s.split("-")
   if parts.len() >= 2 {
     datetime(year: int(parts.at(0)), month: int(parts.at(1)), day: 1).display("[year]-[month]")
-  } 
+  }
   else  {
     s
   }
+}
+
+#let format-date-text(start, end) = {
+  if start == none or start == "" {
+    none
+  } else if end == none [
+    #format-date(start)
+  ] else [
+    #format-date(start) - #format-date(end)
+  ]
+}
+
+#let format-meta-line(roles, start, end) = {
+  let roles-text = if roles == none or roles.len() == 0 { none } else { roles.join(", ") }
+  let date-text = format-date-text(start, end)
+  if roles-text == none and date-text == none {
+    none
+  } else if roles-text == none {
+    date-text
+  } else if date-text == none [
+    *#roles-text*
+  ] else [
+    *#roles-text* | #date-text
+  ]
 }
 
 #let experience(xp) = block(
@@ -92,7 +116,7 @@
   #if xp.type != none [
     _ #xp.type _ \
   ]
-  * #xp.roles.join(", ") * | #format-date(xp.startDate) - #format-date(xp.endDate)
+  #format-meta-line(xp.roles, xp.at("startDate", default: none), xp.at("endDate", default: none))
   
   #xp.description
   
@@ -121,7 +145,7 @@
         fill: luma(250),
         inset: space_2, [
           ===== #ass.title
-            * #ass.roles.join(", ") * | #format-date(ass.startDate) - #format-date(ass.endDate)
+            #format-meta-line(ass.roles, ass.at("startDate", default: none), ass.at("endDate", default: none))
             
             #ass.description
 
