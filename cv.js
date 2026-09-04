@@ -52,6 +52,7 @@ const getCollection = (key, data) =>
 
 export default function buildCV(data) {
   const experience = getCollection("experience", data);
+  const projects = getCollection("projects", data);
   const earlier_career = getCollection("earlier_career", data);
   const education = getCollection("education", data);
   const cv = {
@@ -63,6 +64,7 @@ export default function buildCV(data) {
     coreSkills: [...data.coreSkills],
     headings: { ...data.headings },
     workExperience: experience.map(mapExperience),
+    projects: projects.map(mapExperience),
     earlierCareer: earlier_career.map(mapExperience),
     education: education.map(mapEducation),
     recommendations: [...data.recommendations],

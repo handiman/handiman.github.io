@@ -216,6 +216,13 @@
   ]
 ])
 
+#let projects(projects: cv.projects) = section([
+  == #h.projects
+  #for xp in projects [
+    #experience(xp)
+  ]
+]);
+
 #let early_career(employment: cv.earlierCareer) = section([
   == #h.earlier_career
   #for xp in employment [
@@ -250,5 +257,6 @@
 #languages()
 #certifications()
 #work_experience()
+#projects()
 #early_career()
 #education()

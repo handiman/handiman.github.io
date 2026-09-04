@@ -20,6 +20,7 @@ export class JsonResume {
       certifications,
       coreSkills,
       workExperience,
+      projects,
       earlierCareer,
       education,
       languages,
@@ -64,6 +65,15 @@ export class JsonResume {
           name: xp.title,
           description: xp.description,
           position: xp.roles.join(", "),
+          startDate: xp.startDate,
+          endDate: xp.endDate,
+          highlights: xp.highlights,
+        };
+      }),
+      projects: [...(projects ?? [])].map((xp) => {
+        return {
+          name: xp.title,
+          description: xp.description,
           startDate: xp.startDate,
           endDate: xp.endDate,
           highlights: xp.highlights,
