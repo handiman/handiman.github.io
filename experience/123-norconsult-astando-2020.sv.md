@@ -30,20 +30,20 @@ highlights:
  - Förbättrade kodens läsbarhet och testbarhet.
  - Implementerade ny funktionalitet i äldre system.
 competencies:
-  - name: Backend development
+  - name: Backend-utveckling
     weight: .75
     tech:
       - C#
       - Asp.NET Core
       - Asp.NET Web Forms
       - WCF
-  - name: Frontend development
+  - name: Frontend-utveckling
     weight: .75
     tech:
       - TypeScript
       - JavaScript
       - KnockoutJS
-  - name: Automation
+  - name: Automatisering
     weight: .5
     tech:
       - TeamCity

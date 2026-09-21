@@ -29,22 +29,22 @@ highlights:
  - Förbättrade testautomationen genom att minska behovet av manuell hantering i funktions-/integrationstester.
  - Minskade driftsättningstiden tack vare förbättrad testautomation.
 competencies:
-  - name: Backend development 
+  - name: Backend-utveckling
     weight: .9
     tech:
      - C#
      - Asp.NET Core
-  - name: Frontend development     
+  - name: Frontend-utveckling
     weight: .9
     tech:
       - React
       - Redux
       - TypeScript    
-  - name: System integration
+  - name: Systemintegration
     weight: .5
     tech: 
       - Azure functions      
-  - name: Automation
+  - name: Automatisering
     weight: .3
     tech:
       - Azure DevOps

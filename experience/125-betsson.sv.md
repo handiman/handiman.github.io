@@ -41,7 +41,7 @@ skills:
  - GitHub Actions
  - AI-stödd kodgranskning (GitHub Copilot, CodeScene)
 competencies:
-  - name: Architecture
+  - name: Arkitektur
     weight: .75
     tech:
       - CQRS
@@ -51,13 +51,13 @@ competencies:
       - .NET Aspire
       - Microsoft Orleans
       - Micro Services
-  - name: Automation
+  - name: Automatisering
     weight: .75
     tech:
       - Docker
       - GitHub Actions
       - Octopus Deploy
-  - name: Backend development 
+  - name: Backend-utveckling
     weight: 1 
     tech:
       - C#
@@ -68,7 +68,7 @@ competencies:
       - Blazor
       - SQL Server
       - PostgreSQL
-  - name: System integration
+  - name: Systemintegration
     weight: .9 
     tech:
       - Kafka

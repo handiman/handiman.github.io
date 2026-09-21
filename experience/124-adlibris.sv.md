@@ -30,25 +30,25 @@ highlights:
  - API för kontohantering byggt med Asp.NET Core och .NET 5, driftsatt på Azure.
  - Innehållsmodellering och integration mot Contentful CMS.
 competencies:
-  - name: Backend development 
+  - name: Backend-utveckling
     weight: .9
     tech: 
       - C#
       - Asp.NET Core
       - Asp.NET MVC
       - SQL Server
-  - name: Front end development
+  - name: Frontend-utveckling
     weight: .5
     tech:
       - JavaScript
       - React
       - jQuery
-  - name: System integration
+  - name: Systemintegration
     weight: .75  
     tech:
       - Identity Server (OpenID/Oauth)
       - Azure App Services
-  - name: Automation      
+  - name: Automatisering      
     weight: .5
     tech:
       - Octopus Deploy
