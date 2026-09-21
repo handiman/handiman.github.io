@@ -7,12 +7,15 @@ givenName: Henrik
 familyName: Becker
 image: https://www.henrikbecker.net/assets/img/landscape-800x534.jpg
 description: >-
-  Henrik började arbeta med mjukvaruutveckling 1999 under "IT-boomen" i
-  Stockholm. Genom åren har han vuxit till en senior backend-fokuserad
-  konsult med djup expertis inom systemintegration. Han har arbetat med
-  varje större inkarnation av .NET och ASP.NET, från Web Forms tidiga dagar
-  till moderna molnnativa API:er. Han fokuserar på backend-utveckling med
-  automation, integration och ren kod byggd på SOLID-principer.
+  Henrik har arbetat med mjukvaruutveckling sedan 1999, då han klev in i den
+  stockholmska IT-boomen. Sedan 2017 driver han sitt eget bolag, Henrik
+  Becker Consulting AB, och har vuxit till en senior backend-fokuserad
+  konsult med djup expertis inom systemintegration och automatisering. Vid
+  sidan av uppdragen driver han återkommande egna tekniska projekt från idé
+  till driftsatt produkt. Han har arbetat med varje större inkarnation av
+  .NET från Framework 1.0 till dagens .NET 10, och fokuserar på
+  backend-utveckling med automation, integration och ren kod byggd på
+  SOLID-principer och Domain Driven Design.
 nationality: Svensk
 jobTitle: Senior .NET-utvecklare
 telephone: "+46 (0)73 422 83 43"

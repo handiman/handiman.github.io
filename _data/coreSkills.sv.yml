@@ -1,8 +1,8 @@
 - name: Backendutveckling
   skills: [.NET, C#, ASP.NET Core]
 - name: Systemintegration
-  skills: [REST, message queues, WCF]
+  skills: [REST, SOAP, meddelandedriven arkitektur, Event Sourcing]
 - name: Molnbaserad arkitektur
   skills: [Azure, serverless, containers]
 - name: Automatisering och CI/CD-pipelines
-- name: Ren kod, SOLID-principer och utvecklarupplevelse
+- name: Ren kod, SOLID-principer, TDD, DDD
