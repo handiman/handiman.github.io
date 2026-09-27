@@ -127,7 +127,7 @@ short_cv_since: 2014-11-01
             {% for project in project_items %}<a class="cv-aside__row" href="{{ project.url }}"><span>{{ project.data.title }}</span><span>{{ project.data.start_date | date: '%Y' }}</span></a>
             {% endfor %}
         </section>
-        <section class="cv-aside__formats">
+        <section class="cv-aside__formats no-print">
             <h2 class="label">{{ headings.other_formats }}</h2>
             <div>{% for format in formats %}{% assign format_lang = format.lang | default: "en" %}{% if format_lang == cv_lang and format.name != "PDF" %}<a href="{{ format.url }}">{{ format.name }}</a>{% endif %}{% endfor %}</div>
         </section>
