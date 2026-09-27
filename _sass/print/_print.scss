@@ -93,6 +93,24 @@
   .cv-facts { display: block !important; > section { background: none !important; padding: 0 !important; margin-top: 4mm !important; } }
   .experience, .education { grid-template-columns: 32mm minmax(0, 1fr) !important; padding: 3mm 0 !important; }
   main#content { padding: 0 !important; max-width: none !important; }
+
+  // Short CV: sidebar facts first, as a compact block, then the experience
+  .cv-summary { margin: 4mm 0 0 !important; font-size: 12pt !important; }
+  .cv-short { display: flex !important; flex-direction: column; gap: 6mm !important; padding-top: 6mm !important; }
+  .cv-short__aside {
+    order: -1;
+    display: grid !important;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 5mm 8mm !important;
+    padding: 0 !important;
+    font-size: 10pt;
+    ul { gap: 1mm !important; font-size: 10pt !important; }
+    .cv-aside__item > :first-child, .cv-aside__row { font-size: 10pt !important; }
+  }
+  .cv-short__main > h2.label { border-bottom: none; margin-bottom: 0 !important; }
+  .cv-entry { grid-template-columns: 34mm minmax(0, 1fr) !important; gap: 5mm !important; padding: 3mm 0 !important; page-break-inside: avoid; }
+  .cv-entry__name { font-size: 13pt !important; }
+  .cv-entry__summary, .cv-entry--earlier p { font-size: 10.5pt !important; }
   // </HEADER>
 
 

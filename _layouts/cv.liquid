@@ -66,11 +66,12 @@ short_cv_since: 2014-11-01
     </div>
 </header>
 
+<p class="cv-summary" id="introduction" data-source="{{ page.url }}#introduction">{{ summary }}</p>
+
 <div class="cv-short">
     <div class="cv-short__main">
-        <p class="cv-summary" id="introduction" data-source="{{ page.url }}#introduction">{{ summary }}</p>
 
-        <h2 class="label">{{ headings.selected_experience }}</h2>
+        <h2 class="label cv-short__first">{{ headings.selected_experience }}</h2>
         {%- for xp in recent %}
         {%- capture start_year %}{{ xp.data.start_date | date: '%Y' }}{% endcapture -%}
         {%- if xp.data.end_date == "present" -%}{%- assign end_year = headings.present -%}{%- else -%}{%- capture end_year %}{{ xp.data.end_date | date: '%Y' }}{% endcapture -%}{%- endif %}
@@ -93,7 +94,7 @@ short_cv_since: 2014-11-01
         </div>
 
         {%- assign quote = recommendations | first %}
-        <figure class="cv-quote">
+        <figure class="cv-quote no-print">
             <blockquote>
                 <p>{{ quote.text }}</p>
                 <footer>{{ quote.name }}</footer>

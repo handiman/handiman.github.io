@@ -190,16 +190,17 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) 340px;
   gap: 96px;
-  padding-top: 40px;
+  padding-top: 56px;
 }
 
 .cv-summary {
+  margin-top: 32px;
   font-size: clamp(19px, 1.6vw, 22px);
   line-height: 1.6;
   color: var(--ink);
   max-width: 780px;
 }
-.cv-short__main > h2.label { margin: 64px 0 8px; }
+.cv-short__main > h2.label { margin: 0 0 8px; }
 
 .cv-entry {
   display: grid;
