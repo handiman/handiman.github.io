@@ -2,6 +2,8 @@ import YAML from "yaml";
 import fs from "node:fs";
 import path from "node:path";
 import * as sass from "sass";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import configureCollections from "./.eleventy.collections.js";
 import configureFilters from "./.eleventy.filters.js";
 
@@ -17,6 +19,21 @@ const useLiquidFor = (eleventyConfig, extensions) => {
 
 export default async function (eleventyConfig) {
   eleventyConfig.setLayoutsDirectory("_layouts");
+  eleventyConfig.addPlugin(syntaxHighlight);
+  for (const [type, outputPath] of [["atom", "/blog/feed.xml"], ["rss", "/blog/rss.xml"]]) {
+    eleventyConfig.addPlugin(feedPlugin, {
+      type,
+      outputPath,
+      collection: { name: "posts", limit: 20 },
+      metadata: {
+        language: "en",
+        title: "Henrik Becker — Blog",
+        subtitle: "Notes on .NET, architecture and the things I build off the clock.",
+        base: "https://www.henrikbecker.net/",
+        author: { name: "Henrik Becker" },
+      },
+    });
+  }
 
   eleventyConfig.addPassthroughCopy("favicon.*");
   eleventyConfig.addPassthroughCopy("assets/*.typ");

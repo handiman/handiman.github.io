@@ -11,6 +11,7 @@ import { addEmployment } from "./employment/employment.js";
 import { addEducation } from "./education/education.js";
 import { addUsps } from "./usp/usp.js";
 import { addFunFacts } from "./fun-facts/fun-facts.js";
+import { addPosts } from "./posts/posts.js";
 
 export default (eleventyConfig) => {
   addExperience(eleventyConfig);
@@ -20,6 +21,7 @@ export default (eleventyConfig) => {
   addEducation(eleventyConfig);
   addClients(eleventyConfig);
   addFunFacts(eleventyConfig);
+  addPosts(eleventyConfig);
   addSkills(eleventyConfig);
   addRoles(eleventyConfig);
 };

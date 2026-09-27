@@ -71,6 +71,27 @@ cards:
     <h2><a href="/unique-selling-points/">How I work</a></h2>
     {% include 'usps' %}
 </section>
+{%- if collections.blog.size > 0 %}
+<section id="writing" class="no-print">
+    <div class="section-head">
+        <div>
+            <p class="label">Blog</p>
+            <h2><a href="/blog/">Latest writing</a></h2>
+        </div>
+    </div>
+    <ul class="post-cards">
+        {%- for post in collections.blog limit: 3 %}
+        <li>
+            <a class="post-card" href="{{ post.url }}">
+                <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y-%m-%d' }}</time>
+                <span class="post-card__title">{{ post.data.title }}</span>
+                {% if post.data.description %}<span class="post-card__text">{{ post.data.description }}</span>{% endif %}
+            </a>
+        </li>
+        {%- endfor %}
+    </ul>
+</section>
+{%- endif %}
 <section id="clients" data-source="{{ page.url  }}#clients">
     <h2 class="label">Clients</h2>
     <ul class="client-logos">{% for client in collections.clients %}{% if client.data.logo %}
