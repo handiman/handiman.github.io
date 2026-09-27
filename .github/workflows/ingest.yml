@@ -1,34 +1,28 @@
 name: Ingest Semantic CV
+# Sends the AI document (/assets/henrik-becker.ai) to the CV chat bot after each deploy.
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["pages-build-deployment"]
+    workflows: ["Build and Publish"]
     types:
       - completed
 
 jobs:
   ingest:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
+      # The Pages hostname: the custom domain's bot protection blocks GitHub's runners.
       - name: Download
-        run: |
-          curl -sSL https://www.henrikbecker.net/cv -o cv.html
-          curl -sSL https://www.henrikbecker.net/fun-facts -o fun-facts.html
+        run: curl -fsSL https://henrikbecker.pages.dev/assets/henrik-becker.ai -o henrik-becker.md
 
       - name: Ingest
         env:
-            API_KEY: ${{ secrets.AZURE_OPENAI_APIKEY }}
+          API_KEY: ${{ secrets.AZURE_OPENAI_APIKEY }}
         run: |
-            curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest/henrik \
-            -H "Content-Type: text/plain" \
+          curl -fsS -X POST https://henrikbecker.azurewebsites.net/ai/ingest/henrik \
+            -H "Content-Type: text/markdown; charset=utf-8" \
             -H "Authorization: Bearer $API_KEY" \
-            -H "X-Commit: ${{ github.sha }}" \
+            -H "X-Commit: ${{ github.event.workflow_run.head_sha || github.sha }}" \
             -H "X-Source: github" \
-            --data-binary @cv.html
-
-            curl -X POST https://henrikbecker.azurewebsites.net/ai/ingest/henrik \
-            -H "Content-Type: text/plain" \
-            -H "Authorization: Bearer $API_KEY" \
-            -H "X-Commit: ${{ github.sha }}" \
-            -H "X-Source: github" \
-            --data-binary @fun-facts.html
+            --data-binary @henrik-becker.md
