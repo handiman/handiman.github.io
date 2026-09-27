@@ -15,17 +15,12 @@
     font-size: 15px !important;
   }
 
-  body > header, body > footer  {
-    * {
-      color: var(--color-text) !important;
-    }
-  }
 
   main > section:first-child h2 {
     margin-top: 0 !important;
   }
 
-  body, body > header, body > header div {
+  body {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     padding-block: 0 !important;
@@ -62,44 +57,42 @@
     border: none !important;
   }
 
-  // <HEADER>
-  body>header>div {
-    grid-template-columns: 1fr 300px;
-    border: 1pt solid var(--color-border);
-    border-radius: var(--space-1);
+  // <HEADER> — business card at the top of the printed CV
+  .print-card {
+    display: grid !important;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 0 var(--space-6);
+    margin-bottom: 6mm;
+    border: 1pt solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
 
     picture {
-      width: calc(800px / 4.5) !important;
-      height: calc(1199px / 4.5) !important;
+      grid-column: 2;
+      grid-row: 1;
+      width: 42mm;
+      height: 42mm;
       img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         print-color-adjust: exact;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+        -webkit-print-color-adjust: exact;
       }
     }
-
-    i[class*="fa"] {
-      margin-right: .5rem !important;
-    }
-    
-    &>* {
-        margin-block: 0;
-        margin-right: 0;
-        &:first-child {
-          grid-area: right !important;
-          justify-self: end;
-        }
-        &:last-child {
-          margin-left: var(--space-6);
-          grid-area: left !important;
-        }
-    }
+    > div { grid-column: 1; grid-row: 1; padding: 5mm 0 5mm 8mm; }
+    h1 { font-size: 26pt; margin: 0 0 1mm; }
+    p { margin: 0 0 3mm; color: var(--ink); }
+    ul { font-size: 10pt; }
+    li { padding-left: 0; &::before { display: none; } }
+    i[class*="fa"] { margin-right: .5rem !important; width: 1em; }
   }
 
-  main {
-    // Fix optical illusion when header is business card with border
-    margin-left: 1mm;
-  }
+  .site-header, .cv-head, .skip-link, .site-footer__bottom { display: none !important; }
+  .cv-facts { display: block !important; > section { background: none !important; padding: 0 !important; margin-top: 4mm !important; } }
+  .experience, .education { grid-template-columns: 32mm minmax(0, 1fr) !important; padding: 3mm 0 !important; }
+  main#content { padding: 0 !important; max-width: none !important; }
   // </HEADER>
 
 
@@ -122,7 +115,7 @@
   // </PAGE BREAKS>
 
   /* Footer contact formatting */
-  body > footer {
+  .site-footer {
     display: none;
     text-align: center;
     address div,

@@ -1,0 +1,38 @@
+/* ============================================
+   BUTTONS & LINK STYLES
+   ============================================ */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 26px;
+  border-radius: 10px;
+  border: none;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  &:hover { color: var(--on-accent); filter: brightness(1.08); }
+}
+.button--small { min-height: 48px; padding: 0 22px; font-size: 15px; }
+.button--ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line-strong);
+  min-height: 48px;
+  padding: 0 18px;
+  font-size: 15px;
+  &:hover { color: var(--ink); border-color: var(--ink); filter: none; }
+}
+
+.link-underline {
+  font-weight: 500;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line-strong);
+  padding-bottom: 2px;
+  &:hover { border-color: var(--ink); color: var(--ink); }
+}

@@ -3,12 +3,15 @@
    ============================================ */
 
 html {
-  font-family: var(--font-family-sans);
-  background-color: var(--color-footer-bg);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: var(--bg);
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
 }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 *,
 *::before,
@@ -17,3 +20,5 @@ html {
   margin: 0;
   padding: 0;
 }
+
+img { display: block; max-width: 100%; height: auto; }

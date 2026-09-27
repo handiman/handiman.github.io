@@ -1,9 +1,13 @@
 /* ============================================
-   DESIGN TOKENS — stable foundation
+   DESIGN TOKENS
+   Palette sampled from the portrait (shared with becker-consulting.se):
+   warm grey body text instead of near-black, headings carry the contrast.
    ============================================ */
 
 :root {
-  /* Spacing (4px baseline) */
+  color-scheme: light dark;
+
+  /* Spacing (kept from the previous theme; used across components) */
   --space-1: .5rem;
   --space-2: .75rem;
   --space-3: 1rem;
@@ -11,105 +15,86 @@
   --space-5: 2rem;
   --space-6: 3rem;
 
-  /* Typography scale */
-  --font-size-body: 1.0625rem;
-  --font-size-body-s: .875rem;
-  --font-size-h4: 1.25rem;
-  --font-size-h3: 1.5625rem;
-  --font-size-h2: 2rem;
-  --font-size-h1: 2.5rem;
+  /* Typography */
+  --font-sans: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --font-family-sans: var(--font-sans);
+  --font-size-body: 1.125rem;       /* 18px */
+  --font-size-body-s: .9375rem;     /* 15px */
+  --font-size-h4: 1.125rem;
+  --font-size-h3: 1.3125rem;        /* 21px */
+  --font-size-h2: clamp(1.75rem, 2.4vw, 2.125rem);
+  --font-size-h1: clamp(2.5rem, 4.2vw, 3.75rem);
+  --line-height-body: 1.65;
+  --line-height-heading: 1.15;
 
-  --line-height-body: 1.5;
-  --line-height-heading: 1.2;
+  /* Layout */
+  --gutter: clamp(20px, 5.6vw, 80px);
+  --max: 1440px;
+  --radius: 20px;
 
-  /* Colors (portrait-derived) - Light mode */
-  --color-bg-light: #F3F3F2; 
-  --color-surface-light: #FFFFFF;
-  --color-text-light: #1E2B26;
-  --color-muted-light: #5F6F67;
-  --color-accent-light: #2E463E;
-  --color-border-light: rgba(0,0,0,0.12);
-  --color-footer-bg-light: var(--color-accent-light);
-  --color-footer-text-light: var(--color-surface-light);
-  --gradient-light: var(--color-muted-light);
-  --gradient-alt-light: var(--color-accent-light);
+  /* Light palette */
+  --bg: #F2F1F1;          /* studio backdrop, lifted */
+  --surface: #E3E2E4;     /* studio grey */
+  --card: #EAE8E9;
+  --ink: #2E2429;         /* jacket shadow — headings */
+  --text: #6B6268;        /* jacket highlight — body, 5.2:1 */
+  --line: #D6D2D4;
+  --line-strong: #C9C4C6;
+  --line-dashed: #B9B2B5;
+  --accent: #A4533D;      /* beard copper */
+  --on-accent: #F2F1F1;
+  --band-bg: #2A2126;
+  --code-bg: #2A2126;
+  --code-text: #E6E0E3;
+  --logo-filter: grayscale(100%);
 
-  /* Colors (portrait-derived) - Dark mode */
-    --color-bg-dark: #232725;
-    --color-surface-dark: #1A1D1C;
-    --color-text-dark: #ECEDEB;
-    --color-muted-dark: #A7B0AB;
-    --color-accent-dark: #8FB6A3;
-    --color-border-dark: rgba(255,255,255,0.12);
-    --color-footer-bg-dark: var(--color-surface-dark);
-    --color-footer-text-dark: var(--color-text-dark);
-    --gradient-dark: var(--color-accent-dark);
-    --gradient-alt-dark: var(--color-bg-dark);
+  /* Legacy names, mapped onto the new palette so existing components keep working */
+  --color-bg: var(--bg);
+  --color-surface: var(--card);
+  --color-text: var(--ink);
+  --color-muted: var(--text);
+  --color-accent: var(--accent);
+  --color-border: var(--line);
+  --color-footer-bg: var(--bg);
+  --color-footer-text: var(--ink);
 
-    /* Default colors */
-    --color-bg: var(--color-bg-light);
-    --color-surface: var(--color-surface-light);
-    --color-text: var(--color-text-light);
-    --color-muted: var(--color-muted-light);
-    --color-accent: var(--color-accent-light);
-    --color-border: var(--color-border-light);
-    --color-footer-bg: var(--color-footer-bg-light);
-    --color-footer-text: var(--color-footer-text-light);
-    --gradient: var(--gradient-light);
-    --gradient-alt: var(--gradient-alt-light);
-
-  /* Shadow */
-  --shadow-sm: 0 2px 6px rgba(0,0,0,0.05);
-
-  --logo-filter-light: brightness(1);
-  --logo-filter-dark: brightness(6) contrast(1.1);
-  --logo-filter: var(--logo-filter-light);
-
+  --shadow-sm: 0 10px 28px rgba(46, 36, 41, 0.08);
   --duration-fast: 0.18s;
 }
 
-html.dark {
-    --color-bg: var(--color-bg-dark);
-    --color-surface: var(--color-surface-dark);
-    --color-text: var(--color-text-dark);
-    --color-muted: var(--color-muted-dark);
-    --color-accent: var(--color-accent-dark);
-    --color-border: var(--color-border-dark);
-    --color-footer-bg: var(--color-footer-bg-dark);
-    --color-footer-text: var(--color-footer-text-dark);
-    --gradient: var(--gradient-dark);
-    --gradient-alt: var(--gradient-alt-dark);
-    --logo-filter: var(--logo-filter-dark);
+@mixin dark-palette {
+  --bg: #171517;
+  --surface: #221E21;
+  --card: #221E21;
+  --ink: #EDEAEB;
+  --text: #A69EA2;
+  --line: #332D31;
+  --line-strong: #4A4247;
+  --line-dashed: #5A4F55;
+  --accent: #D9A08F;
+  --on-accent: #171517;
+  --band-bg: #1E1A1D;
+  --code-bg: #1E1A1D;
+  --logo-filter: grayscale(100%) brightness(6) contrast(1.1);
+  --shadow-sm: 0 10px 28px rgba(0, 0, 0, 0.3);
 }
 
-@media screen and  (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: var(--color-bg-dark);
-    --color-surface: var(--color-surface-dark);
-    --color-text: var(--color-text-dark);
-    --color-muted: var(--color-muted-dark);
-    --color-accent: var(--color-accent-dark);
-    --color-border: var(--color-border-dark);
-    --color-footer-bg: var(--color-footer-bg-dark);
-    --color-footer-text: var(--color-footer-text-dark);
-    --gradient: var(--gradient-dark);
-    --gradient-alt: var(--gradient-alt-dark);
-    --logo-filter: var(--logo-filter-dark);
-  }
+/* Follows the system setting unless the theme toggle has picked one */
+@media screen and (prefers-color-scheme: dark) {
+  :root:not(.light) { @include dark-palette; }
 }
+html.dark { @include dark-palette; }
 
 @media print {
-    :root {
-        --color-bg: var(--color-bg-light) !important;
-        --color-surface: var(--color-surface-light) !important;
-        --color-text: var(--color-text-light) !important;
-        --color-muted: var(--color-muted-light) !important;
-        --color-accent: var(--color-accent-light) !important;
-        --color-border: #8FB6A3 !important;
-        --color-footer-bg: var(--color-footer-bg-light) !important;
-        --color-footer-text: var(--color-footer-text-light) !important;
-        --gradient: var(--gradient-light) !important;
-        --gradient-alt: var(--gradient-alt-light) !important;
-        --logo-filter: var(--logo-filter-light) !important;
+  :root, html.dark {
+    --bg: #FFFFFF !important;
+    --surface: #F2F1F1 !important;
+    --card: #FFFFFF !important;
+    --ink: #2E2429 !important;
+    --text: #4A4247 !important;
+    --line: #C9C4C6 !important;
+    --accent: #A4533D !important;
+    --logo-filter: grayscale(100%) !important;
   }
 }

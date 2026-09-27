@@ -1,73 +1,81 @@
-#work-experience {
-  h2 {
-    border-bottom: 1px solid var(--color-border);
-    padding-bottom: var(--space-2);
-    margin-bottom: var(--space-2);
-  }
-  h4 {
-    font-size: var(--font-size-body);
-  }
-}
+/* ============================================
+   EXPERIENCE — CV entries: dates in the left column, content on the right
+   ============================================ */
 
 .experience {
-  padding: 0;
-  margin-bottom: var(--space-4);
-  > header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 0;
-    margin: 0;
-    border: none;
-  }
-  > header time span + span::before {
-    content: " – ";
-  }
-  > header time span:empty {
-    display: none;
-  }
-}
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  column-gap: 32px;
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
 
-.experience > header {
-  h3 {
-    margin: 0;
-    a {
-      text-decoration: none;
-    }
+  > * { grid-column: 2; }
+  > header { display: contents; }
+
+  > header h3 {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 0 8px;
+    font-size: 21px;
+    small { font-size: 15px; font-weight: 400; color: var(--text); letter-spacing: 0; }
+  }
+  > header time {
+    grid-column: 1;
+    grid-row: 1;
+    padding-top: 6px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--text);
+    white-space: nowrap;
+    span + span::before { content: " — "; }
+    span:empty { display: none; }
+  }
+
+  p { font-size: 16px; line-height: 1.65; margin-bottom: 10px; }
+  p:empty { display: none; }
+  .highlights {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 4px 0 12px;
   }
 }
 
 .tech-stack {
-  padding-block: var(--space-2);
-  margin: 0;
+  margin: 4px 0 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--accent);
+
   h4 {
     display: inline;
+    margin: 0 6px 0 0;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text);
   }
-  ul {
+  ul { display: inline; margin: 0; }
+  li {
     display: inline;
-    margin-left: 0;
-    padding-left: 0;
-    list-style: none;
-    li {
-      display: inline;
-      margin: 0;
-      padding: 0;
-      border: none;
-    }
-    li::before {
-      content: "";
-    }
-    li::after {
-      content: ", ";
-    }
-    li:last-child::after {
-      content: "";
-    }
+    padding: 0;
+    &::before { display: none; }
+    &::after { content: " · "; color: var(--line-strong); }
+    &:last-child::after { content: ""; }
+    & + li { margin: 0; }
   }
 }
 
 .earlier-career {
-  .highlights {
-    display: none;
+  .highlights { display: none; }
+}
+
+@media (max-width: 700px) {
+  .experience {
+    grid-template-columns: 1fr;
+    padding: 22px 0;
+    > * { grid-column: 1; }
+    > header time { grid-column: 1; grid-row: 1; padding: 0 0 6px; }
+    > header h3 { grid-column: 1; grid-row: 2; }
   }
 }
