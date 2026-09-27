@@ -73,20 +73,17 @@ cards:
 </section>
 {%- if collections.blog.size > 0 %}
 <section id="writing" class="no-print">
-    <div class="section-head">
-        <div>
-            <p class="label">Blog</p>
-            <h2><a href="/blog/">Latest writing</a></h2>
-        </div>
-    </div>
-    <ul class="post-cards">
+    <h2><a href="/blog/">Latest writing</a></h2>
+    <ul class="cards post-cards">
         {%- for post in collections.blog limit: 3 %}
-        <li>
-            <a class="post-card" href="{{ post.url }}">
-                <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y-%m-%d' }}</time>
-                <span class="post-card__title">{{ post.data.title }}</span>
-                {% if post.data.description %}<span class="post-card__text">{{ post.data.description }}</span>{% endif %}
-            </a>
+        {%- assign post_date = post.date | date: '%Y-%m-%d' %}
+        <li class="card">
+            <time datetime="{{ post_date }}">{{ post_date }}</time>
+            <h3>{{ post.data.title }}</h3>
+            <div class="card-body">
+                {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
+                <a class="more" href="{{ post.url }}">Read more</a>
+            </div>
         </li>
         {%- endfor %}
     </ul>

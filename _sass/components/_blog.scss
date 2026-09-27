@@ -41,32 +41,8 @@
 
 .post-list__feed a { font-family: var(--font-mono); font-size: .8125rem; }
 
-// Home: latest writing
-.post-cards {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-  gap: 1rem;
-  > li::before { content: none; }
-}
-
-.post-card {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-  height: 100%;
-  padding: 1.5rem;
-  border-radius: 16px;
-  background: var(--card);
-  color: var(--text);
-  &:hover .post-card__title { color: var(--accent); }
-  time { font-family: var(--font-mono); font-size: .75rem; color: var(--accent); }
-}
-
-.post-card__title { color: var(--ink); font-size: 1.125rem; font-weight: 600; line-height: 1.35; }
-.post-card__text { font-size: .9375rem; line-height: 1.6; }
+// Home: latest writing (cards share the "How I work" card styles)
+.post-cards time { font-family: var(--font-mono); font-size: .75rem; color: var(--accent); }
 
 // Post footer
 .post-footer {
