@@ -71,9 +71,11 @@
     picture {
       grid-column: 2;
       grid-row: 1;
-      width: 42mm;
-      height: 42mm;
+      // Portrait photo fills the card's height, like the old header.
+      width: 47mm;
+      height: 70mm;
       img {
+        display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -110,7 +112,7 @@
   .cv-short__main > h2.label { border-bottom: none; margin-bottom: 0 !important; }
   .cv-entry { grid-template-columns: 34mm minmax(0, 1fr) !important; gap: 5mm !important; padding: 3mm 0 !important; page-break-inside: avoid; }
   .cv-entry__name { font-size: 13pt !important; }
-  .cv-entry__summary, .cv-entry--earlier p { font-size: 10.5pt !important; }
+  .cv-entry__summary, .cv-entry__highlight, .cv-entry--earlier p { font-size: 10.5pt !important; color: var(--color-text) !important; }
   // </HEADER>
 
 
