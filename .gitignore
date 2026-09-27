@@ -6,7 +6,8 @@
 *.tar
 *.tar.*
 typst-x86_64-unknown-linux-musl
-.claude/
+.claude/*
+!.claude/settings.json
 .venv/
 .wrangler/
 .terraform/
