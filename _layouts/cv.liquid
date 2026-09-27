@@ -22,10 +22,39 @@ headings:
   usps: Unique Selling Points
   clients: Clients
 ---
+{%- if lang == "sv" -%}
+  {%- assign pdf_url = "/sv/assets/henrik-becker.pdf" -%}{%- assign pdf_label = "Ladda ner PDF" -%}
+  {%- assign other_url = "/cv/" -%}{%- assign other_label = "In English" -%}{%- assign other_lang = "en" -%}
+{%- else -%}
+  {%- assign pdf_url = "/assets/henrik-becker.pdf" -%}{%- assign pdf_label = "Download PDF" -%}
+  {%- assign other_url = "/sv/cv/" -%}{%- assign other_label = "På svenska" -%}{%- assign other_lang = "sv" -%}
+{%- endif %}
+<header class="cv-head no-print">
+    <div class="cv-head__id">
+        <div class="cv-head__photo">
+            <picture>
+                <source type="image/webp" srcset="/assets/img/henrik-becker-square.webp">
+                <img src="/assets/img/henrik-becker-square.jpg" width="400" height="400" alt="{{ person.name }}">
+            </picture>
+        </div>
+        <div class="cv-head__text">
+            <p class="label">CV</p>
+            <h1>{{ person.name }}</h1>
+            <p class="cv-head__title">{{ person.jobTitle }} · Lidingö</p>
+        </div>
+    </div>
+    <div class="cv-head__actions">
+        <a class="button button--small" href="{{ pdf_url }}"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v8M4.5 6.5L8 10l3.5-3.5M3 13h10"/></svg> {{ pdf_label }}</a>
+        <a class="button button--ghost" href="{{ other_url }}" hreflang="{{ other_lang }}" lang="{{ other_lang }}">{{ other_label }}</a>
+    </div>
+</header>
+<div class="cv">
+
 <section id="introduction" data-source="{{ page.url }}#introduction">
     <h2>{{ headings.summary }}</h2>
     <p>{{ summary }}</p>
 </section>
+<div class="cv-facts">
 <section id="core-competencies" data-source="{{ page.url }}#core-competencies">
     <h2>{{ headings.core_competencies }}</h2>
     <ul>{% for skillCategory in coreSkills %}
@@ -43,6 +72,7 @@ headings:
     <ul>{% for cert in certs %}<li><strong>{{ cert.title }}:</strong> {% if cert.issuer %}{{ cert.issuer }} {% endif
             %}{% if cert.achievement_date %}(<date>{{ cert.achievement_date }}</date>){% endif %}</li>{% endfor %}</ul>
 </section>
+</div>
 <section id="work-experience">
     {% include 'work-experience' %}
     {% include 'projects' %}
@@ -69,6 +99,7 @@ headings:
         <footer>- {{ recommendation.name }}</footer>
     </blockquote>{% endfor %}
 </section>
+</div>
 <template id="all-roles">
     <h2>{{ headings.all_roles }}</h2> 
     <p>{{ collections.all_roles | join: ", " }}</p>

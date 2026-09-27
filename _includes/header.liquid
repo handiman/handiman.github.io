@@ -1,31 +1,50 @@
-<header>
-    <div>
-        <div>
-            <picture>
-                <source srcset="/assets/img/landscape-800x534.jpg" media="(max-width: 700px)">
-                <img src="/assets/img/portrait-800x1199.jpg" alt="Photo of Henrik Becker" />
-            </picture>
+{%- assign self = collections.all | findByInputPath: page.inputPath -%}
+{%- assign alternates = self | hreflangAlternates: collections.all -%}
+{%- capture nav_links -%}
+  <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a>
+  <a href="{% if lang == 'sv' %}/sv/cv/{% else %}/cv/{% endif %}"{% if page.url contains "/cv/" %} aria-current="page"{% endif %}>CV</a>
+  <a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a>
+  {%- for alt in alternates -%}{%- if alt.lang != lang and alt.lang != "x-default" -%}
+  <a class="nav-lang" href="{{ alt.href }}" hreflang="{{ alt.lang }}" lang="{{ alt.lang }}">{% if alt.lang == "sv" %}Svenska{% else %}English{% endif %}</a>
+  {%- endif -%}{%- endfor -%}
+{%- endcapture -%}
+<header class="site-header no-print">
+    <div class="wrap site-header__inner">
+        <a class="brand" href="/">
+            <span class="brand__mark" aria-hidden="true">b</span>
+            <span>{{ person.name }}</span>
+        </a>
+        <nav class="nav" aria-label="Main">
+            {{ nav_links }}
+        </nav>
+        <div class="site-header__chat">
+            <cv-chat collection="henrik" answer-position="below"></cv-chat>
         </div>
-        <div>
-            <h1><a href="/">{{ person.name }}</a></h1>
-            <p>{{ person.jobTitle }}</p>
-            <section class="print" id="social" data-source="{{ page.url }}#education">
-                <h2 class="hidden">Social</h2>
-                <ul>
-                    <li><i class="fas fa-phone"></i> <span class="flip-text">&#51;&#52;&#32;&#51;&#56;&#32;&#50;&#50;&#52;&#32;&#51;&#55;&#32;&#54;&#52;&#43;</span></li>
-                    <li><i class="fas fa-envelope"></i> <span class="flip-text">&#101;&#115;&#46;&#114;&#101;&#107;&#99;&#101;&#98;&#107;&#105;&#114;&#110;&#101;&#104;&#64;&#116;&#99;&#97;&#116;&#110;&#111;&#99;</span></li>
-                    <li><i class="fas fa-globe"></i> www.henrikbecker.net</li>{% comment %}{% for social in same_as %}{% assign url_parts = social.url | split: "/" %}{% assign path_parts = url_parts | slice: 2, url_parts.size %}
-                    <li><i class="fab fa-{{ social.network | downcase }}"></i> {{ path_parts | join: "/" | replace: 'www.', '' }}</li>{% endfor %}{% endcomment %}
-                </ul>
-            </section>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/cv">CV</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><cv-chat collection="henrik" answer-position="below"></cv-chat></li>
-                </ul>
+        <details class="nav-mobile">
+            <summary aria-label="Menu">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 7h16M3 15h16"/></svg>
+            </summary>
+            <nav class="nav-mobile__panel" aria-label="Main">
+                {{ nav_links }}
             </nav>
-        </div>
+        </details>
     </div>
 </header>
+{%- comment -%} Business card at the top of printed pages (the CV). Not shown on screen. {%- endcomment %}
+<div class="print-card print">
+    <picture>
+        <img src="/assets/img/henrik-becker-square.jpg" alt="Photo of Henrik Becker" width="400" height="400" />
+    </picture>
+    <div>
+        <h1>{{ person.name }}</h1>
+        <p>{{ person.jobTitle }}</p>
+        <section id="social" data-source="{{ page.url }}#education">
+            <h2 class="hidden">Social</h2>
+            <ul>
+                <li><i class="fas fa-phone"></i> <span class="flip-text">&#51;&#52;&#32;&#51;&#56;&#32;&#50;&#50;&#52;&#32;&#51;&#55;&#32;&#54;&#52;&#43;</span></li>
+                <li><i class="fas fa-envelope"></i> <span class="flip-text">&#101;&#115;&#46;&#114;&#101;&#107;&#99;&#101;&#98;&#107;&#105;&#114;&#110;&#101;&#104;&#64;&#116;&#99;&#97;&#116;&#110;&#111;&#99;</span></li>
+                <li><i class="fas fa-globe"></i> www.henrikbecker.net</li>
+            </ul>
+        </section>
+    </div>
+</div>

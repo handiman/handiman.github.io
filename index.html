@@ -1,5 +1,10 @@
 ---
 layout: page
+hero:
+  label: Henrik Becker · Senior .NET Developer
+  title: Authentic Intelligence Since 1969
+  cta: Read my CV
+  secondary: How I work
 ingress: |
   I’m Henrik, a senior backend consultant running a one-person tech company based in Stockholm. Since 1999,
   I’ve helped teams build robust backend solutions with a focus on automation, integration, and long-term
@@ -22,28 +27,52 @@ cards:
     Pragmatic, long‑term decisions that keep systems understandable and scalable. I help teams choose the right
     patterns, avoid unnecessary complexity, and build software that ages well.
 ---
-
-<section id="introduction" data-source="{{ page.url | absolute_url }}#introduction">
-    <h2>Introduction</h2>
-    <p>{{ ingress }}</p>
+<section class="hero" id="introduction" data-source="{{ page.url | absolute_url }}#introduction">
+    <h2 class="hidden">Introduction</h2>
+    <div class="hero__text">
+        <div class="hero__id">
+            <div class="hero__avatar">
+                <picture>
+                    <source type="image/webp" srcset="/assets/img/henrik-becker-square.webp">
+                    <img src="/assets/img/henrik-becker-square.jpg" width="400" height="400" alt="" loading="lazy">
+                </picture>
+            </div>
+            <div class="hero__heading">
+                <p class="label">{{ hero.label | escape | replace: " · ", "&nbsp;· " }}</p>
+                <h1>{{ hero.title | escape }}</h1>
+            </div>
+        </div>
+        <p class="hero__intro">{{ ingress }}</p>
+        <div class="hero__actions">
+            <a class="button" href="/cv/">{{ hero.cta | escape }} <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            <a class="link-underline" href="#unique-selling-points">{{ hero.secondary | escape }}</a>
+        </div>
+    </div>
+    <div class="hero__photo">
+        <picture>
+            <source media="(max-width: 900px)" type="image/webp" srcset="/assets/img/henrik-becker-square.webp">
+            <source type="image/webp" srcset="/assets/img/henrik-becker-800.webp 800w, /assets/img/henrik-becker-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 640px">
+            <img src="/assets/img/henrik-becker-1200.jpg" srcset="/assets/img/henrik-becker-800.jpg 800w, /assets/img/henrik-becker-1200.jpg 1200w" sizes="(max-width: 900px) 100vw, 640px" width="1200" height="1125" alt="{{ person.name }}" fetchpriority="high">
+        </picture>
+    </div>
 </section>
 <section id="offer" data-source="{{ page.url | absolute_url }}#offer">
     <h2>What I offer</h2>
-    <ul class="cards">
+    <ul class="services">
         {% for card in cards %}
-        <li class="card{% if forloop.index > 3 %} print {% endif %}">
+        <li>
             <h3>{{ card.front }}</h3>
-            <div class="card-body">{{ card.back }}</div>
+            <div>{{ card.back }}</div>
         </li>
         {% endfor %}
     </ul>
 </section>
 <section id="unique-selling-points" data-source="{{ page.url }}#unique-selling-points">
-    <h2><a href="/unique-selling-points">How I work</a></h2>
+    <h2><a href="/unique-selling-points/">How I work</a></h2>
     {% include 'usps' %}
 </section>
 <section id="clients" data-source="{{ page.url  }}#clients">
-    <h2>Clients</h2>
+    <h2 class="label">Clients</h2>
     <ul class="client-logos">{% for client in collections.clients %}{% if client.data.logo %}
         <li title="{{ client.data.title }}">
             <img class="client-logo" src="{{ client.data.logo }}" alt="{{ client.data.title }} logo" />

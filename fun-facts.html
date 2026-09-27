@@ -3,10 +3,13 @@ layout: page
 title: Fun Facts
 sitemap: false
 ---
-<div data-section="{{ page.title }}" data-source="{{ page.url | absolute_url }}">
-    <h2>Fun Facts</h2>{% for fact in collections.fun_facts %}
+<div class="reading" data-section="{{ page.title }}" data-source="{{ page.url | absolute_url }}">
+    <header class="page-head">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Fun Facts</span></nav>
+        <h1>Fun Facts</h1>
+    </header>{% for fact in collections.fun_facts %}
     <article{% if fact.lang %} data-language="{{fact.data.lang}}"{% endif %} data-section="Fun Facts" data-source="{{ fact.data.url | absolute_url }}">
-        <h3>{{ fact.data.title }}</h3>
+        <h2><a href="{{ fact.url }}">{{ fact.data.title }}</a></h2>
         {{ fact.content }}
     </article>{% endfor %}    
 </div>
