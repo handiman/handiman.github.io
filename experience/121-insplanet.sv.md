@@ -21,6 +21,7 @@ skills:
  - jQuery
  - Git
 description: Senior utvecklaruppdrag för att stabilisera Insplanet efter att deras arkitekt och lead developer slutat, med fokus på dokumentation, driftsäkerhet och förenklad CI.
+key_highlight: 'Implementerade driftsättning utan driftstopp (zero-downtime)'
 highlights: 
  - Implementerade driftsättning utan driftstopp (zero-downtime).
  - Förenklade CI-processen med Azure DevOps byggpipelines.

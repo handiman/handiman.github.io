@@ -21,6 +21,7 @@ skills:
  - jQuery
  - Git
 description: Senior developer engagement stabilizing Insplanet after the departure of their architect and lead developer, focused on documentation, deployment reliability, and CI simplification.
+key_highlight: 'Implemented zero-downtime deployment'
 highlights: 
  - Implemented zero-downtime deployment.
  - Simplified the CI process using Azure DevOps build pipelines.

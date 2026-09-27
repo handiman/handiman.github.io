@@ -26,6 +26,7 @@ skills:
 - Team Foundation Server
 - DocNet
 description: Första frilansuppdraget, med fokus på backend-utveckling för betallösningen "Svea Checkout" i flera marknader, med tonvikt på test- och dokumentationsrutiner.
+key_highlight: 'Byggde betallösningen "Svea Checkout", som rullades ut i Sverige, Norge och Finland'
 highlights: 
  - Byggde betallösningen "Svea Checkout", som rullades ut i Sverige, Norge och Finland.
  - Förbättrade API-dokumentationen genom att automatisera större delen av dess generering.

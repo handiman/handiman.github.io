@@ -30,6 +30,7 @@ headings:
   download_pdf: Download PDF
   other_language: På svenska
   present: present
+# Jobs can set `key_highlight` in their front matter: one result shown on the web CV.
 # Work history from this date on is listed on the web CV; everything before it
 # is summed up in one line. The full history is in the PDF.
 short_cv_since: 2014-11-01
@@ -80,6 +81,7 @@ short_cv_since: 2014-11-01
             <div class="cv-entry__body">
                 <h3 class="cv-entry__head"><a class="cv-entry__name" href="{{ xp.url }}">{{ xp.data.title }}</a>{% if xp.data.roles %} <span class="cv-entry__role">{{ xp.data.roles | join: ", " }}</span>{% endif %}</h3>
                 {% if xp.data.description %}<div class="cv-entry__summary">{{ xp.data.description | markdownify }}</div>{% endif %}
+                {% if xp.data.key_highlight %}<p class="cv-entry__highlight">{{ xp.data.key_highlight }}</p>{% endif %}
                 {% if xp.data.skills %}<p class="cv-entry__tech">{{ xp.data.skills | slice: 0, 5 | join: " · " }}</p>{% endif %}
             </div>
         </article>

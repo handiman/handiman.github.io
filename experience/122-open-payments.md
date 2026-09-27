@@ -26,6 +26,7 @@ skills:
  - Git
 description: |
   Open Payments provides a PSD2‑compliant platform that allows FinTech companies, e‑commerce businesses, and other financial actors to integrate with European banks through a single unified API. 
+key_highlight: 'Automated customer onboarding process using a React SPA with a .NET Core backend that integrated with Dynamics CRM and a variety of Azure resources'
 highlights: 
  - Automated customer onboarding process using a React SPA with a .NET Core backend that integrated with Dynamics CRM and a variety of Azure resources.
  - Improved test automation by making functional/integration tests require less manual intervention.

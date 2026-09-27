@@ -37,6 +37,7 @@ skills:
  - Git
 description: |
  Fullstackutveckling av VOD-tjänsterna (Video On Demand) Film2home och Plejmo, baserade på Asp.NET MVC och EpiServer. DevOps-uppgifter inklusive konfigurering av webbplatser, automatiserade byggen och automatiserad driftsättning.
+key_highlight: 'Automatiserade driftsättningen och eliminerade därmed den mänskliga faktorn, vilket minskade driftsättningstiden från en timme till några minuter'
 highlights: 
  - Automatiserade driftsättningen och eliminerade därmed den mänskliga faktorn, vilket minskade driftsättningstiden från en timme till några minuter.
  - Ökade prestandan genom att refaktorisera från en traditionell n-skiktsarkitektur till en service bus-arkitektur, vilket avlastade frontend-sajterna.

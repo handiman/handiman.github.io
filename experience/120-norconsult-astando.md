@@ -10,6 +10,7 @@ roles:
 start_date: 2018-04-18
 end_date: 2018-11-30
 description: Automated deployment for Norconsult Astando's IsyRoad project, cutting deployment time and errors dramatically.
+key_highlight: 'Reduced deployment time from around 45 minutes to about 5 minutes per application instance'
 highlights:
  - Automated deployment for the IsyRoad project using Octopus Deploy.
  - Reduced deployment time from around 45 minutes to about 5 minutes per application instance.

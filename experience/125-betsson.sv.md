@@ -2,6 +2,7 @@
 title: Betsson
 comment: Började som konsult via Henrik Becker Consulting AB; övergick till fast anställning 2023-12
 description: Global aktör inom onlinespel och sportsbook. Arbetade i värdeflödet Player Rewards & Gamification, inom tjänsterna Tournaments, Loyalty och Levels.
+key_highlight: 'Optimering av Kafka-meddelandehantering, vilket resulterade i en nästan 1000-procentig ökning av genomströmningen för Tournaments-applikationen'
 highlights: 
 - Design, utveckling och underhåll av händelsedrivna (event-sourced), gamification-inriktade applikationer med Kafka-meddelandehantering i realtid, RESTful API:er och Blazor-baserade back office-verktyg
 - Optimering av Kafka-meddelandehantering, vilket resulterade i en nästan 1000-procentig ökning av genomströmningen för Tournaments-applikationen
