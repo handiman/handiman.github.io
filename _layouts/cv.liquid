@@ -95,13 +95,16 @@ short_cv_since: 2014-11-01
             <p>{{ earlier_names }} {{ headings.and_more }} — <a href="{{ pdf_url }}">{{ headings.see_full_cv }}</a>.</p>
         </div>
 
-        {%- assign quote = recommendations | first %}
-        <figure class="cv-quote no-print">
-            <blockquote>
-                <p>{{ quote.text }}</p>
-                <footer>{{ quote.name }}</footer>
-            </blockquote>
-        </figure>
+        <div class="cv-quotes no-print">
+            {%- for recommendation in recommendations %}
+            <figure class="cv-quote">
+                <blockquote>
+                    <p>{{ recommendation.text }}</p>
+                    <footer>{{ recommendation.name }}</footer>
+                </blockquote>
+            </figure>
+            {%- endfor %}
+        </div>
     </div>
 
     <aside class="cv-short__aside">

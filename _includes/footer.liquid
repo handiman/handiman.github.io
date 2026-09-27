@@ -1,35 +1,12 @@
 <footer class="site-footer" role="contentinfo">
-    <div class="wrap">
-        <div class="site-footer__grid">
-            <section id="links" data-source="{{ page.url }}#links" class="no-print">
-                <h5 class="label">Links</h5>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/cv/">CV</a></li>
-                    <li><a href="/about/">About</a></li>
-                </ul>
-            </section>
-            <section id="download" data-source="{{ page.url }}#download" class="no-print">
-                <h5 class="label">CV for download</h5>
-                <ul>{% for format in formats | limit: 6 %}<li><a href="{{ format.url }}" title="{{ headings.meta.cv_format }} {{ format.name }} ({{ format.lang | default: 'en' }})">{{ format.name }} <span class="site-footer__lang">{{ format.lang | default: 'en' }}</span></a></li>{% endfor %}</ul>
-            </section>
-            <section id="company-info" data-section="Company information" data-source="{{ page.url }}#company-info">
-                <address>
-                    <h5 class="label">{{ company.name }}</h5>
-                    <div>{{ company.address.streetAddress }}</div>
-                    <div>{{ company.address.postalCode }} {{ company.address.addressLocality }}</div>
-                    <div>{{ company.address.addressCountry }}</div>
-                    <div class="print">{{ company.vatId }}</div>
-                </address>
-            </section>
-            <section id="about" data-source="{{ page.url }}#about" class="no-print site-footer__about">
-                <h5 class="label">About {{ person.givenName }}</h5>
-                <p>{{ person.description }}</p>
-            </section>
-        </div>
-        <div class="site-footer__bottom no-print">
-            <div>Copyright &copy; 2017 – {{ site.time | date: '%Y' }} {{ company.name }}</div>
-            <div class="site-footer__social">{% for social in same_as %}<a href="{{ social.url }}" title="{{ social.network }}" aria-label="{{ social.network }}"><i class="fab fa-{{ social.network | downcase }}" aria-hidden="true"></i></a>{% endfor %}</div>
-        </div>
+    <div class="wrap site-footer__inner">
+        <p class="site-footer__legal">{{ company.name }} · Org. nr {{ site.orgNumber }} · Registered in Lidingö, Sweden</p>
+        <p class="site-footer__links">
+            {%- assign email_parts = person.email | split: "@" %}
+            <a href="#contact" id="contact" data-email="{{ email_parts[0] }}|{{ email_parts[1] }}" data-email-text>{{ email_parts[0] }} [at] {{ email_parts[1] }}</a>
+            {%- for social in same_as %}
+            <a href="{{ social.url }}">{{ social.network }}</a>
+            {%- endfor %}
+        </p>
     </div>
 </footer>

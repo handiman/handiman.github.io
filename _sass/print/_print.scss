@@ -89,7 +89,7 @@
     i[class*="fa"] { margin-right: .5rem !important; width: 1em; }
   }
 
-  .site-header, .cv-head, .skip-link, .site-footer__bottom { display: none !important; }
+  .site-header, .cv-head, .skip-link { display: none !important; }
   .cv-facts { display: block !important; > section { background: none !important; padding: 0 !important; margin-top: 4mm !important; } }
   .experience, .education { grid-template-columns: 32mm minmax(0, 1fr) !important; padding: 3mm 0 !important; }
   main#content { padding: 0 !important; max-width: none !important; }

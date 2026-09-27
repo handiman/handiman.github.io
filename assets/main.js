@@ -14,6 +14,16 @@
     });
   }
 
+  // Turns [data-email="user|domain"] links into mailto: links. The address
+  // only exists in the page as separate parts, which keeps most scrapers out.
+  document.querySelectorAll("[data-email]").forEach(function (link) {
+    var parts = link.dataset.email.split("|");
+    if (!parts[0] || !parts[1]) return;
+    var address = parts[0] + "@" + parts[1];
+    link.href = "mailto:" + address;
+    if (link.hasAttribute("data-email-text")) link.textContent = address;
+  });
+
   // Close the mobile menu after picking a link.
   var menu = document.querySelector(".nav-mobile");
   if (menu) {
