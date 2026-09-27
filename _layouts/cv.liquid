@@ -33,7 +33,6 @@ headings:
 # Jobs can set `key_highlight` in their front matter: one result shown on the web CV.
 # Work history from this date on is listed on the web CV; everything before it
 # is summed up in one line. The full history is in the PDF.
-short_cv_since: 2014-11-01
 ---
 {%- if lang == "sv" -%}
   {%- assign pdf_url = "/sv/assets/henrik-becker.pdf" -%}{%- assign other_url = "/cv/" -%}{%- assign other_lang = "en" -%}
@@ -44,8 +43,8 @@ short_cv_since: 2014-11-01
   {%- assign experience_items = collections.experience -%}{%- assign earlier_items = collections.earlier_career -%}
   {%- assign education_items = collections.education -%}{%- assign project_items = collections.projects -%}
 {%- endif -%}
-{%- assign recent = experience_items | startedSince: short_cv_since -%}
-{%- assign older = experience_items | startedSince: short_cv_since, true -%}
+{%- assign recent = experience_items | startedSince: site.shortCvSince -%}
+{%- assign older = experience_items | startedSince: site.shortCvSince, true -%}
 {%- assign cv_lang = lang | default: "en" -%}
 <header class="cv-head no-print">
     <div class="cv-head__id">

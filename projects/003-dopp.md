@@ -1,5 +1,7 @@
 ---
 title: Dopp
+url: https://dopp.becker-consulting.se
+tagline: Water temperatures for open-water swimmers.
 description: Real readings logged by swimmers at their swim spots — not weather forecasts. Log a dip, see the season, find spots nearby.
 #roles: 
 #- Creator

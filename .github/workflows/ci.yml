@@ -6,6 +6,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # Empty until the secret exists; the notify step is skipped then.
+      DISPATCH_TOKEN: ${{ secrets.SHARED_CONTENT_DISPATCH_TOKEN }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
@@ -35,6 +38,16 @@ jobs:
           projectName: henrikbecker
           directory: _site
       
+      # becker-consulting.se reads /assets/site-data.json at build time; ask it to rebuild.
+      # Needs a fine-grained token with Contents: read & write on that repo.
+      - name: Notify becker-consulting.se
+        if: ${{ env.DISPATCH_TOKEN != '' }}
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.SHARED_CONTENT_DISPATCH_TOKEN }}
+          repository: becker-consulting/becker-consulting.github.io
+          event-type: shared-content-updated
+
       - name: Publish gh-pages
         if: false
         uses: s0/git-publish-subdir-action@develop
