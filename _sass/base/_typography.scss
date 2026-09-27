@@ -156,6 +156,10 @@ blockquote {
   line-height: 1.5;
   letter-spacing: -0.01em;
 
+  p { margin: 0; }
+  // Attribution line
+  p + p { font-size: 15px; letter-spacing: 0; color: var(--text); }
+
   &::before {
     content: "";
     width: 36px;

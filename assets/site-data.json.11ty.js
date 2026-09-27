@@ -101,6 +101,21 @@ export default class SiteData {
         title: usp.data.title,
         url: absolute(base, usp.url),
       })),
+      about: (() => {
+        const about = (data.collections.all ?? []).find((item) => item.url === "/about/");
+        if (!about) return null;
+        const quote = data.recommendations?.[about.data.quote];
+        return {
+          title: about.data.title,
+          lead: about.data.lead ?? null,
+          description: about.data.description ?? null,
+          // Headings get ids so consumers can build an "On this page" list.
+          html: String(about.content ?? "")
+            .replace(/<h2>([\s\S]*?)<\/h2>/g, (_, text) => `<h2 id="${text.replace(/<[^>]+>/g, "").toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}">${text}</h2>`)
+            .trim(),
+          quote: quote ? { by: quote.name?.trim(), text: quote.text?.replace(/\s+/g, " ").trim() } : null,
+        };
+      })(),
       services: (data.collections.all ?? []).find((item) => item.url === "/")?.data.cards?.map((card) => ({
         title: card.front,
         text: card.back?.replace(/\s+/g, " ").trim(),
