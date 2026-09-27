@@ -91,3 +91,10 @@
   .token.number, .token.constant, .token.symbol { color: #C9A3C0; }
   .token.punctuation, .token.operator { color: #B8AEB3; }
 }
+
+// Screenshots in posts
+.prose figure.screenshot {
+  margin: 2rem 0;
+  img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 10px; }
+  figcaption { margin-top: .75rem; font-size: .875rem; }
+}
