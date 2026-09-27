@@ -1,58 +1,85 @@
-/* _nav.scss */
-nav {
-    background-color: transparent !important;
-    color: var(--color-footer-text) !important;
-    padding-block: 0 !important;
-    &>ul {
-        margin-block: 0 !important;
-    }
-    img {
-        display: none;    
-    }
-    cv-chat {
-        margin-block: var(--space-4) !important;
-        margin-right: var(--space-2);
-    }
+/* ============================================
+   NAVIGATION — inline on desktop, <details> drop-down on mobile
+   ============================================ */
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  font-size: 15px;
+
+  a {
+    color: var(--text);
+    border: none;
+    &:hover { color: var(--ink); }
+    &[aria-current="page"] { color: var(--ink); font-weight: 500; }
+  }
 }
 
-nav.sticky {
-  background-color: var(--color-footer-bg) !important;    
-  position: fixed;
-  top: 0;
-  left: 0;
+/* "Ask about Henrik" chat input (web component), themed through its custom properties */
+cv-chat {
+  --chat-bg: var(--card);
+  --chat-text: var(--ink);
+  --chat-accent: var(--accent);
+  --chat-radius: 10px;
+  --chat-shadow: 0 12px 32px rgba(23, 21, 23, 0.18);
+  font-family: var(--font-sans);
+}
+.nav { margin-left: auto; }
+
+.nav-lang {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 5px;
+  border: 1px solid var(--line) !important;
+}
+
+.nav-mobile { display: none; position: relative; }
+.nav-mobile summary {
+  list-style: none;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  border-radius: 10px;
+  &::-webkit-details-marker { display: none; }
+}
+.nav-mobile[open] summary { background: var(--surface); }
+.nav-mobile__panel {
+  position: absolute;
   right: 0;
-  z-index: 100;
-  padding-block: var(--space-1) !important;
-  img {
-    display: revert;
+  top: calc(100% + 8px);
+  z-index: 50;
+  min-width: 220px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(23, 21, 23, 0.14);
+
+  a {
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--text);
+    border: none;
+    &:hover { background: var(--surface); color: var(--ink); }
+    &[aria-current="page"] { color: var(--ink); font-weight: 500; }
   }
-  cv-chat {
-    margin-block: 0 !important;
-    margin-inline: 0 !important;
-  }
-  ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  li {
-    display: inline-block;
-    padding-inline: 0 var(--space-2) !important;
-  }
-  li:last-child {
-    flex-grow: 1;              /* stretch the li */
-    display: flex;             /* allow internal alignment */
-    justify-content: flex-end; /* right-align the content */
-  }    
-  @media (max-width: 420px) {
-    ul {
-        display: block;
-    }
-    li {
-        padding-block-end: var(--space-1);
-    }
-    li:last-child {
-        display: block; 
-      } 
-  }
+  .nav-lang { align-self: flex-start; margin: 6px 14px; padding: 4px 8px; font-size: 12px; }
+}
+
+@media (max-width: 900px) {
+  .site-header__inner { padding-block: 18px; flex-wrap: wrap; row-gap: 12px; }
+  .nav-mobile { order: 2; margin-left: auto; }
+  .site-header__chat { order: 3; flex-basis: 100%; }
+  .nav { display: none; }
+  .nav-mobile { display: block; }
 }

@@ -1,0 +1,88 @@
+// Blog index
+.post-list {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  > li {
+    display: grid;
+    grid-template-columns: 7.5rem minmax(0, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--line);
+    &::before { content: none; }
+  }
+
+  time {
+    font-family: var(--font-mono);
+    font-size: .8125rem;
+    padding-top: .3rem;
+  }
+
+  h2, h3 {
+    margin: 0;
+    font-size: 1.375rem;
+    line-height: 1.3;
+    a { color: var(--ink); }
+    a:hover { color: var(--accent); }
+  }
+
+  p { margin: .5rem 0 0; }
+
+  @media (max-width: 40rem) {
+    > li { grid-template-columns: 1fr; gap: .25rem; }
+  }
+}
+
+.post-list__feed,
+.post-list__empty { margin-top: 2rem; }
+
+.post-list__feed a { font-family: var(--font-mono); font-size: .8125rem; }
+
+// Home: latest writing (cards share the "How I work" card styles)
+.post-cards time { font-family: var(--font-mono); font-size: .75rem; color: var(--accent); }
+
+// Post footer
+.post-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-size: .9375rem;
+}
+
+.post-footer__origin { color: var(--text); }
+
+// Syntax highlighting (Prism tokens)
+.prose pre[class*="language-"] {
+  .token.comment, .token.prolog, .token.doctype, .token.cdata { color: #9A9095; }
+  .token.keyword, .token.boolean, .token.important, .token.atrule { color: #D9A08F; }
+  .token.class-name, .token.function, .token.builtin, .token.tag, .token.attr-name { color: #8FB3AD; }
+  .token.string, .token.char, .token.attr-value, .token.regex, .token.url { color: #E0C49B; }
+  .token.number, .token.constant, .token.symbol { color: #C9A3C0; }
+  .token.punctuation, .token.operator { color: #B8AEB3; }
+}
+
+// Screenshots in posts
+.prose figure.screenshot {
+  margin: 2rem 0;
+  img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 10px; }
+  figcaption { margin-top: .75rem; font-size: .875rem; }
+}
+
+// Blog index: latest post in full
+.post-latest {
+  margin-top: 3rem;
+  > h2 { margin: .5rem 0 0; font-size: 2rem; line-height: 1.2; a { color: var(--ink); } a:hover { color: var(--accent); } }
+  .page-meta { margin-top: .5rem; }
+  .prose { margin-top: 1.5rem; }
+  .post-footer { margin-top: 2rem; }
+}
+
+.post-list__heading { margin: 4rem 0 0; font-size: 1.25rem; }
+.post-list__heading + .post-list { margin-top: 1rem; }

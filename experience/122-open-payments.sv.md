@@ -24,6 +24,7 @@ end_date: 2020-06-30
 #- Git
 description: |
   Open Payments erbjuder en PSD2-kompatibel plattform som gör det möjligt för fintech-bolag, e-handelsföretag och andra finansiella aktörer att integrera med europeiska banker via ett enda enhetligt API.
+key_highlight: 'Automatiserade kundonboardingprocessen med en React-SPA och en .NET Core-backend som integrerades med Dynamics CRM och en rad Azure-resurser'
 highlights: 
  - Automatiserade kundonboardingprocessen med en React-SPA och en .NET Core-backend som integrerades med Dynamics CRM och en rad Azure-resurser.
  - Förbättrade testautomationen genom att minska behovet av manuell hantering i funktions-/integrationstester.

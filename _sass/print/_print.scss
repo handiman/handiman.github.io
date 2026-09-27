@@ -15,17 +15,12 @@
     font-size: 15px !important;
   }
 
-  body > header, body > footer  {
-    * {
-      color: var(--color-text) !important;
-    }
-  }
 
   main > section:first-child h2 {
     margin-top: 0 !important;
   }
 
-  body, body > header, body > header div {
+  body {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     padding-block: 0 !important;
@@ -62,44 +57,62 @@
     border: none !important;
   }
 
-  // <HEADER>
-  body>header>div {
-    grid-template-columns: 1fr 300px;
-    border: 1pt solid var(--color-border);
-    border-radius: var(--space-1);
+  // <HEADER> — business card at the top of the printed CV
+  .print-card {
+    display: grid !important;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 0 var(--space-6);
+    margin-bottom: 6mm;
+    border: 1pt solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
 
     picture {
-      width: calc(800px / 4.5) !important;
-      height: calc(1199px / 4.5) !important;
+      grid-column: 2;
+      grid-row: 1;
+      // Portrait photo fills the card's height, like the old header.
+      width: 47mm;
+      height: 70mm;
       img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         print-color-adjust: exact;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+        -webkit-print-color-adjust: exact;
       }
     }
-
-    i[class*="fa"] {
-      margin-right: .5rem !important;
-    }
-    
-    &>* {
-        margin-block: 0;
-        margin-right: 0;
-        &:first-child {
-          grid-area: right !important;
-          justify-self: end;
-        }
-        &:last-child {
-          margin-left: var(--space-6);
-          grid-area: left !important;
-        }
-    }
+    > div { grid-column: 1; grid-row: 1; padding: 5mm 0 5mm 8mm; }
+    h1 { font-size: 26pt; margin: 0 0 1mm; }
+    p { margin: 0 0 3mm; color: var(--ink); }
+    ul { font-size: 10pt; }
+    li { padding-left: 0; &::before { display: none; } }
+    i[class*="fa"] { margin-right: .5rem !important; width: 1em; }
   }
 
-  main {
-    // Fix optical illusion when header is business card with border
-    margin-left: 1mm;
+  .site-header, .cv-head, .skip-link { display: none !important; }
+  .cv-facts { display: block !important; > section { background: none !important; padding: 0 !important; margin-top: 4mm !important; } }
+  .experience, .education { grid-template-columns: 32mm minmax(0, 1fr) !important; padding: 3mm 0 !important; }
+  main#content { padding: 0 !important; max-width: none !important; }
+
+  // Short CV: sidebar facts first, as a compact block, then the experience
+  .cv-summary { margin: 4mm 0 0 !important; font-size: 12pt !important; }
+  .cv-short { display: flex !important; flex-direction: column; gap: 6mm !important; padding-top: 6mm !important; }
+  .cv-short__aside {
+    order: -1;
+    display: grid !important;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 5mm 8mm !important;
+    padding: 0 !important;
+    font-size: 10pt;
+    ul { gap: 1mm !important; font-size: 10pt !important; }
+    .cv-aside__item > :first-child, .cv-aside__row { font-size: 10pt !important; }
   }
+  .cv-short__main > h2.label { border-bottom: none; margin-bottom: 0 !important; }
+  .cv-entry { grid-template-columns: 34mm minmax(0, 1fr) !important; gap: 5mm !important; padding: 3mm 0 !important; page-break-inside: avoid; }
+  .cv-entry__name { font-size: 13pt !important; }
+  .cv-entry__summary, .cv-entry__highlight, .cv-entry--earlier p { font-size: 10.5pt !important; color: var(--color-text) !important; }
   // </HEADER>
 
 
@@ -122,7 +135,7 @@
   // </PAGE BREAKS>
 
   /* Footer contact formatting */
-  body > footer {
+  .site-footer {
     display: none;
     text-align: center;
     address div,

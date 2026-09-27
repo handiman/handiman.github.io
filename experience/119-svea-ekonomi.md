@@ -26,6 +26,7 @@ skills:
 - Team Foundation Server
 - DocNet
 description: First freelance engagement, focused on backend development for the multi-market payment solution "Svea Checkout," with an emphasis on testing and documentation practices.
+key_highlight: 'Built the "Svea Checkout" payment solution, rolled out across Sweden, Norway, and Finland'
 highlights: 
  - Built the "Svea Checkout" payment solution, rolled out across Sweden, Norway, and Finland.
  - Improved API documentation by automating most of its generation.

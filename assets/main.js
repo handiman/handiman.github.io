@@ -1,26 +1,36 @@
 (function () {
   "use strict";
 
-  // Sticky nav that detaches from header after scrolling
-  var header = document.querySelector("body>header");
-  var nav = document.querySelector("header nav");
+  // Theme toggle (the invisible button in the top-left corner). Flips between
+  // light and dark from whatever is showing now, system setting included.
+  var root = document.documentElement;
+  var toggle = document.querySelector(".theme-toggle");
+  if (toggle) {
+    toggle.addEventListener("click", function () {
+      var systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var isDark = root.classList.contains("dark") || (systemDark && !root.classList.contains("light"));
+      root.classList.toggle("dark", !isDark);
+      root.classList.toggle("light", isDark);
+    });
+  }
 
-  var observer = new IntersectionObserver(
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        nav.classList.remove("sticky");
-      } else {
-        nav.classList.add("sticky");
-      }
-    },
-    { threshold: 0 },
-  );
-
-  observer.observe(header);
-
-  document.querySelector(".theme-toggle").addEventListener("click", () => {
-    document.documentElement.classList.toggle("dark");
+  // Turns [data-email="user|domain"] links into mailto: links. The address
+  // only exists in the page as separate parts, which keeps most scrapers out.
+  document.querySelectorAll("[data-email]").forEach(function (link) {
+    var parts = link.dataset.email.split("|");
+    if (!parts[0] || !parts[1]) return;
+    var address = parts[0] + "@" + parts[1];
+    link.href = "mailto:" + address;
+    if (link.hasAttribute("data-email-text")) link.textContent = address;
   });
+
+  // Close the mobile menu after picking a link.
+  var menu = document.querySelector(".nav-mobile");
+  if (menu) {
+    menu.addEventListener("click", function (e) {
+      if (e.target.closest("a")) menu.removeAttribute("open");
+    });
+  }
 
   document.querySelectorAll('.flippable').forEach(card => {
     card.addEventListener('click', () => {

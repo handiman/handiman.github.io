@@ -31,6 +31,13 @@ export default (eleventyConfig) => {
     },
   );
   eleventyConfig.addFilter("findByInputPath", findByInputPath);
+  // Estimated reading time in minutes for a rendered post (about 220 words a minute).
+  // Splits a work-history collection at a date: items that started on or
+  // after `since` (e.g. "2014-11-01"), or with `before: true`, the ones before it.
+  eleventyConfig.addFilter("startedSince", (items = [], since, before = false) => {
+    const cutoff = new Date(since);
+    return items.filter((item) => (new Date(item.data.start_date) >= cutoff) !== before);
+  });
   // Real HTML pages, opted out of via `sitemap: false` front matter — feeds,
   // resume exports (.json/.adoc/.markdown/.txt/.webmanifest), robots.txt, etc.
   // are excluded automatically since their output isn't `.html`.

@@ -10,6 +10,7 @@ roles:
 start_date: 2018-04-18
 end_date: 2018-11-30
 description: Automatiserade driftsättningen för Norconsult Astandos IsyRoad-projekt, vilket kraftigt minskade driftsättningstid och fel.
+key_highlight: 'Minskade driftsättningstiden från cirka 45 minuter till cirka 5 minuter per applikationsinstans'
 highlights:
  - Automatiserade driftsättningen för IsyRoad-projektet med Octopus Deploy.
  - Minskade driftsättningstiden från cirka 45 minuter till cirka 5 minuter per applikationsinstans.

@@ -1,0 +1,48 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+intro: Notes on .NET, architecture and the things I build off the clock — including the parts that went sideways.
+empty: Nothing here yet. The first post is on its way.
+---
+<div class="reading" data-section="Blog" data-source="{{ page.url | absolute_url }}">
+    <header class="page-head">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Blog</span></nav>
+        <h1>{{ title }}</h1>
+        <p class="lead">{{ intro }}</p>
+    </header>
+    {%- if collections.blog.size > 0 %}
+    {%- assign latest = collections.blog | first %}
+    {%- assign latest_date = latest.date | date: '%Y-%m-%d' %}
+    <article class="post-latest">
+        <p class="label">Latest post</p>
+        <h2><a href="{{ latest.url }}">{{ latest.data.title }}</a></h2>
+        <p class="page-meta"><time datetime="{{ latest_date }}">{{ latest_date }}</time></p>
+        <div class="prose">
+            {{ latest.content }}
+        </div>
+        <footer class="post-footer no-print">
+            <a class="link-underline" href="{{ latest.url }}">Permalink</a>
+            {% if latest.data.original_url %}<a class="post-footer__origin" href="{{ latest.data.original_url }}">{{ latest.data.original_label | default: "Originally posted on LinkedIn" }}</a>{% endif %}
+        </footer>
+    </article>
+    {%- if collections.blog.size > 1 %}
+    <h2 class="post-list__heading">Earlier posts</h2>
+    <ul class="post-list">
+        {%- for post in collections.blog offset: 1 %}
+        {%- assign post_date = post.date | date: '%Y-%m-%d' %}
+        <li>
+            <time datetime="{{ post_date }}">{{ post_date }}</time>
+            <div>
+                <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
+            </div>
+        </li>
+        {%- endfor %}
+    </ul>
+    {%- endif %}
+    <p class="post-list__feed"><a href="/blog/feed.xml">Atom</a> · <a href="/blog/rss.xml">RSS</a></p>
+    {%- else %}
+    <p class="post-list__empty">{{ empty }}</p>
+    {%- endif %}
+</div>

@@ -2,6 +2,7 @@
 title: Betsson
 comment: Joined as a consultant via Henrik Becker Consulting AB; converted to permanent employment 2023-12
 description: Global online gaming & sportsbook enterprise. Worked in the Player Rewards & Gamification value stream across the services Tournaments, Loyalty, and Levels.
+key_highlight: 'Kafka message processing optimization, resulting in a nearly 1000% increase in throughput for the Tournaments application'
 highlights: 
 - Design, development, and maintenance of event-sourced, gamification-oriented applications with real-time Kafka message processing, RESTful APIs, and Blazor-based back-office tools
 - Kafka message processing optimization, resulting in a nearly 1000% increase in throughput for the Tournaments application

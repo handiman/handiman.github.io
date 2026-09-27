@@ -2,8 +2,12 @@
 title: About Henrik
 layout: page
 ---
-<section id="about" data-source="{{ page.url | absolute_url }}#about">
-    <h2>About Henrik</h2>
+<header class="page-head">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav>
+    <h1>{{ title }}</h1>
+</header>
+<section id="about" class="reading" data-source="{{ page.url | absolute_url }}#about">
+    <h2 class="hidden">About Henrik</h2>
     <p>
         Henrik is a senior backend consultant based in Stockholm, Sweden. 
         He started coding professionally in 1999 and has since worked across industries including finance, insurance and online gaming. 

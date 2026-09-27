@@ -1,0 +1,112 @@
+// Shared content for other sites (becker-consulting.se reads this at build time).
+// Treat the shape as a public contract: add fields freely, but rename or remove
+// only together with the consumers.
+const year = (date) => (date === "present" ? "present" : new Date(date).getFullYear());
+
+const years = (start, end) => {
+  const from = year(start);
+  const to = year(end ?? "present");
+  return from === to ? `${from}` : `${from} — ${to === "present" ? "present" : to}`;
+};
+
+const absolute = (base, url) => (url ? new URL(url, base).href : null);
+
+export default class SiteData {
+  data() {
+    return {
+      permalink: "/assets/site-data.json",
+      eleventyExcludeFromCollections: true,
+      layout: null,
+      // Re-render when these change during --serve (incremental builds).
+      eleventyImport: { collections: ["experience", "projects", "usps"] },
+    };
+  }
+
+  render(data) {
+    const base = data.site.production_url;
+    const since = new Date(data.site.shortCvSince);
+    const experience = data.collections.experience ?? [];
+    const recent = experience.filter((xp) => new Date(xp.data.start_date) >= since);
+    const older = experience.filter((xp) => new Date(xp.data.start_date) < since);
+    const olderYears = older.flatMap((xp) => [year(xp.data.start_date), year(xp.data.end_date ?? xp.data.start_date)]).filter((y) => y !== "present");
+
+    const shared = {
+      version: 1,
+      generated: new Date().toISOString(),
+      source: base,
+      person: {
+        name: data.person.name,
+        jobTitle: data.person.jobTitle,
+        email: data.person.email,
+        url: base,
+        sameAs: data.same_as,
+      },
+      summary: data.summary,
+      downloads: Object.fromEntries(
+        (data.formats ?? []).map((format) => [
+          `${format.name}${format.lang && format.lang !== "en" ? `_${format.lang}` : ""}`.toLowerCase().replace(/[^a-z_]+/g, "_"),
+          absolute(base, format.url),
+        ]),
+      ),
+      experience: recent.map((xp) => ({
+        id: xp.fileSlug,
+        name: xp.data.title,
+        organizationId: xp.data.organization?.id ?? null,
+        url: absolute(base, xp.url),
+        years: years(xp.data.start_date, xp.data.end_date),
+        startDate: xp.data.start_date,
+        endDate: xp.data.end_date,
+        roles: xp.data.roles ?? [],
+        description: xp.data.description ?? null,
+        descriptionHtml: xp.data.description ? this.markdownify(xp.data.description).trim() : null,
+        keyHighlight: xp.data.key_highlight ?? null,
+        skills: xp.data.skills ?? [],
+      })),
+      earlier: {
+        years: olderYears.length ? `${Math.min(...olderYears)} — ${Math.max(...olderYears)}` : null,
+        names: older.map((xp) => xp.data.title),
+      },
+      coreSkills: (data.coreSkills ?? []).map((item) => ({
+        name: item.name?.trim(),
+        skills: item.skills ?? [],
+      })),
+      certifications: (data.certs ?? []).map((cert) => ({
+        name: cert.title,
+        issuer: cert.issuer,
+        year: year(cert.achievement_date),
+        url: cert.link ?? null,
+      })),
+      languages: (data.languages ?? []).map((language) => ({
+        name: language.name,
+        proficiency: language.proficiency,
+      })),
+      recommendations: (data.recommendations ?? []).map((recommendation) => ({
+        by: recommendation.name?.trim(),
+        url: recommendation.link ?? null,
+        text: recommendation.text?.replace(/\s+/g, " ").trim(),
+      })),
+      projects: (data.collections.projects ?? []).map((project) => ({
+        id: project.fileSlug,
+        name: project.data.name ?? project.data.title,
+        url: project.data.url ?? null,
+        page: absolute(base, project.url),
+        tagline: project.data.tagline ?? null,
+        summary: project.data.summary ?? project.data.description ?? null,
+        badge: project.data.badge ?? null,
+        skills: project.data.skills ?? [],
+        since: year(project.data.start_date),
+      })),
+      usps: (data.collections.usps ?? []).map((usp) => ({
+        id: usp.fileSlug,
+        title: usp.data.title,
+        url: absolute(base, usp.url),
+      })),
+      services: (data.collections.all ?? []).find((item) => item.url === "/")?.data.cards?.map((card) => ({
+        title: card.front,
+        text: card.back?.replace(/\s+/g, " ").trim(),
+      })) ?? [],
+    };
+
+    return JSON.stringify(shared, null, 2);
+  }
+}

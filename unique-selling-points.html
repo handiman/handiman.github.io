@@ -6,10 +6,11 @@ ingress: This page goes deeper into how I work — the principles I rely on, the
 
 <div>
     <article data-section="Unique Selling Points" data-source="{{ page.url | absolute_url }}">
-        <header>
-            <h2>{{ title }}</h2>
+        <header class="page-head">
+            <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">{{ title }}</span></nav>
+            <h1>{{ title }}</h1>
+            <p class="lead">{{ ingress }}</p>
         </header>
-        <p>{{ ingress }}</p>
         {% include 'usps' %}
     </article>
 </div>
