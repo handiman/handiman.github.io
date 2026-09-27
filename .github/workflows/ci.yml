@@ -31,12 +31,12 @@ jobs:
         run: npm run typst
 
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        # cloudflare/pages-action was retired; wrangler-action is its replacement.
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId:  ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: henrikbecker
-          directory: _site
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy _site --project-name=henrikbecker
       
       # becker-consulting.se reads /assets/site-data.json at build time; ask it to rebuild.
       # Needs a fine-grained token with Contents: read & write on that repo.
