@@ -21,7 +21,7 @@
     padding-top: .3rem;
   }
 
-  h2 {
+  h2, h3 {
     margin: 0;
     font-size: 1.375rem;
     line-height: 1.3;
@@ -98,3 +98,15 @@
   img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 10px; }
   figcaption { margin-top: .75rem; font-size: .875rem; }
 }
+
+// Blog index: latest post in full
+.post-latest {
+  margin-top: 3rem;
+  > h2 { margin: .5rem 0 0; font-size: 2rem; line-height: 1.2; a { color: var(--ink); } a:hover { color: var(--accent); } }
+  .page-meta { margin-top: .5rem; }
+  .prose { margin-top: 1.5rem; }
+  .post-footer { margin-top: 2rem; }
+}
+
+.post-list__heading { margin: 4rem 0 0; font-size: 1.25rem; }
+.post-list__heading + .post-list { margin-top: 1rem; }
