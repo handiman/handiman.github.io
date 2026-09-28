@@ -3,9 +3,9 @@ title: Delivery Automation
 slug: automated-delivery
 sitemap: true
 ---
-I’ve spent years helping teams automate their delivery processes using **GitHub Actions**, **Azure Pipelines**, **Octopus Deploy**, and **TeamCity**.
+Deployments should be boring. At Norconsult Astando I took them from about 45 minutes to about 5; at Plejmo, from an hour to minutes.
 
-A reliable delivery pipeline saves time, reduces stress, and frees teams to focus on building the product instead of babysitting deployments.
+**GitHub Actions**, **Azure Pipelines**, **Octopus Deploy** or **TeamCity**, whatever the team already has.
 <!--more-->It also brings a few practical advantages:
 - **It saves time** — deployments become a non‑event instead of a time sink
 - **It’s reliable** — the same steps run the same way every time

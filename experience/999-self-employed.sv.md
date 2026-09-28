@@ -3,7 +3,7 @@ title: Henrik Becker Consulting AB
 #name: Self Employed
 slug: becker-consulting
 #sitemap: true
-description: Erbjuder fullstack .NET- och DevOps-expertis på frilansbasis i Stockholmsregionen.
+description: Uppdrag inom backend, integration och DevOps som oberoende konsult i Stockholm.
 comment: Uppdragen nedan från och med oktober 2017 utfördes som konsult genom Henrik Becker Consulting AB, om inget annat anges.
 roles: 
  - Ägare

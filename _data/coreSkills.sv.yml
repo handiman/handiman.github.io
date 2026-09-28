@@ -2,7 +2,7 @@
   skills: [.NET, C#, ASP.NET Core]
 - name: Systemintegration
   skills: [REST, SOAP, meddelandedriven arkitektur, Event Sourcing]
-- name: Molnbaserad arkitektur
-  skills: [Azure, serverless, containers]
+- name: Applikationsutveckling i Azure
+  skills: [Functions, Service Bus, API Management]
 - name: Automatisering och CI/CD-pipelines
 - name: Ren kod, SOLID-principer, TDD, DDD
