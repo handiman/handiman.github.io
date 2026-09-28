@@ -18,7 +18,7 @@ highlights:
   - Optimerade Kafka-behandlingen, vilket resulterade i nästan 1000 % högre genomströmning för Tournaments-applikationen.
   - Utvecklade proof of concepts för nya system och funktioner.
   - Samarbetade med Enterprise Architect och Engineering Manager för att säkerställa arkitektonisk och regulatorisk efterlevnad.
-  - Genomförde och bedömde tekniska intervjuer för att stödja rekrytering och lagutveckling.
+  - Mentor för juniora utvecklare genom kunskapsdelning och parprogrammering, samt tekniska intervjuer.
 description: |
   Jag anslöt till Betsson som konsult och övergick senare direkt till en heltidsroll som Senior Software Engineer. Jag arbetade i value streamen Player Rewards & Gamification med fokus på tre tjänster: Tournaments, Loyalty och Levels. Tournaments var där jag spenderade mest tid. Loyalty var ett äldre system, och Levels var den nyare tjänsten som var tänkt att ersätta det.
 ---
@@ -45,6 +45,10 @@ Levels var den planerade efterföljaren till Loyalty, med prestationer, progress
 
 ### Loyalty
 - Förvaltning och mindre förbättringar
+
+### Team
+- Mentor för juniora utvecklare genom kunskapsdelningstillfällen och parprogrammering
+- Deltog i tekniska intervjuer för nya teammedlemmar
 
 ## Varför jag slutade
 Jag trivdes på Betsson och med kollegorna. Jag slutade bara för att jag saknade att vara min egen chef.

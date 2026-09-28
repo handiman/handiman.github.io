@@ -18,7 +18,7 @@ highlights:
 - Optimized Kafka message processing, resulting in a nearly 1000% increase in throughput for the Tournaments application.
 - Developed proofs of concept for new systems and features.
 - Collaborated with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance.
-- Conducted and assessed technical interviews to support recruitment and team growth.
+- Mentored junior developers through knowledge-sharing sessions and pair programming, and took part in technical interviews.
 description: |
   I joined Betsson as a consultant and later transitioned directly into a full‑time role as a Senior Software Engineer. I worked in the Player Rewards & Gamification value stream, focusing on three services: Tournaments, Loyalty, and Levels. Tournaments was where I spent most of my time. Loyalty was a legacy system, and Levels was the newer service intended to replace it.  
 ---
@@ -45,6 +45,10 @@ Levels was the planned successor to Loyalty, with achievements, progression and 
 
 ### Loyalty
 - Maintenance and smaller improvements
+
+### Team
+- Mentored junior developers through knowledge-sharing sessions and pair programming
+- Took part in technical interviews for new team members
 
 ## Why I left
 I enjoyed my time at Betsson and the people I worked with. I left only because I missed being my own boss.
