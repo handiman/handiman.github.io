@@ -15,11 +15,4 @@ end_date: 2007-12-01
 ---
 <!--more-->
 ## Om rollen
-Jag anställdes av Inverso medan jag fortsatte mitt arbete som fullstackutvecklare på **hitta.se**.
-
-## Vad jag arbetade med
-### Fullstackutveckling på hitta.se
-Jag bidrog till pågående utvecklingsarbete på hitta.se, med fokus på funktionsimplementation och förbättringar av den befintliga plattformen.
-
-## Reflektion
-Ännu en kort anställning som användes för att hålla mitt arbete på hitta.se igång utan avbrott.
+Jag var anställd av Inverso medan jag fortsatte som fullstackutvecklare på **hitta.se**.

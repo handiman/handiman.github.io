@@ -18,12 +18,12 @@ highlights:
 skills: 
  - Octopus Deploy
  - TeamCity
- - Asp.NET
- - .NET Core
- - REST API
- - WCF
- - NHibernate
  - C#
+ - .NET Core
+ - WCF
+ - Asp.NET
+ - REST API
+ - NHibernate
  - Git
 ---
 <!--more-->

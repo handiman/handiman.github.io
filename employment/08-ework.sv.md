@@ -15,11 +15,7 @@ end_date: 2005-03-31
 ---
 <!--more-->
 ## Om rollen
-Efter att Icon Medialab gått i konkurs blev eWork den administrativa arbetsgivaren som gjorde det möjligt för mig att fortsätta mitt arbete för **Hewlett-Packard Sweden** utan avbrott.
+Efter Icon Medialabs konkurs blev eWork min formella arbetsgivare, så att jag kunde fortsätta arbeta åt **Hewlett-Packard Sverige** utan avbrott.
 
-## Vad jag arbetade med
-Webbutveckling för Hewlett-Packard Sweden
-Jag arbetade med webbutvecklingsuppgifter för **HP Sweden**, och bidrog till underhållet och vidareutvecklingen av deras närvaro på nätet under denna period.
-
-## Reflektion
-Ett långt uppdrag hos HP, kanaliserat via eWork av administrativa skäl, men som representerade en sammanhängande period av praktisk webbutveckling.
+## Vad jag gjorde
+- Webbutveckling åt HP Sverige

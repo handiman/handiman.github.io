@@ -19,17 +19,17 @@ highlights:
  - Designed version 2 of Plejmo's Rest API.
  - Continued improving the CI/CD processes set up at Film2Home
 skills:
- - Asp.NET MVC
- - Asp.NET Web Api
  - C#
- - .NET Framework
- - TDD 
+ - Asp.NET Web Api
+ - Azure Service Bus
  - CQRS
+ - Octopus Deploy
+ - Asp.NET MVC
+ - .NET Framework
+ - TDD
  - REST API
  - WCF
- - Azure Service Bus
  - Continuous Integration
- - Octopus Deploy
  - JavaScript
  - jQuery
  - KnockoutJS

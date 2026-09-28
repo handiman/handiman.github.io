@@ -15,18 +15,11 @@ end_date: 2012-03-09
 ---
 <!--more-->
 ## Om rollen
-Jag arbetade som IT-konsult och systemutvecklare hos Avega, och tog på mig uppdrag för flera storföretagskunder i Stockholm.
+Konsult och systemutvecklare på Avega, med uppdrag åt flera kunder i Stockholm.
 
-## Vad jag arbetade med
-### Kunduppdrag
-Jag levererade utvecklings- och integrationsarbete för:
+## Uppdrag
 - Länsförsäkringar
 - Cale Access
-- Cash Guard
+- CashGuard
 - Tradera
 - Astando
-
-Uppdragen varierade i omfattning och teknik, men centrerade alla kring att bygga eller förbättra system som användes i den dagliga verksamheten.
-
-## Reflektion
-Den här perioden gav mig bred erfarenhet över olika branscher och tekniska miljöer, och den lade grunden för de mer specialiserade roller jag tog på mig senare.

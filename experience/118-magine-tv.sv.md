@@ -18,6 +18,30 @@ highlights:
  - Fortsatte utvecklingen av VOD-sajten Plejmo.
  - Designade version 2 av Plejmos REST-API.
  - Fortsatte förbättra de CI/CD-processer som etablerats hos Film2Home.
+skills:
+ - C#
+ - Asp.NET Web Api
+ - Azure Service Bus
+ - CQRS
+ - Octopus Deploy
+ - Asp.NET MVC
+ - .NET Framework
+ - TDD
+ - REST API
+ - WCF
+ - Continuous Integration
+ - JavaScript
+ - jQuery
+ - KnockoutJS
+ - NHibernate
+ - Dapper
+ - SQL Server
+ - Micro Services
+ - CSS
+ - HTML
+ - EPiServer
+ - IIS
+ - Git
 ---
 <!--more-->
 ## Om rollen

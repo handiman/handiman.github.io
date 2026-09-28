@@ -29,4 +29,4 @@ Mellan kunduppdrag på Avega Group gick jag in i ett internt team som byggde ett
 - Funktioner och UI-komponenter i **C#**, **WPF** och **WCF**
 - Dataåtkomst med **NHibernate**
 
-[lf]: {{ '/assignments/lansforsakringar' }}
+[lf]: /sv/experience/lansforsakringar/

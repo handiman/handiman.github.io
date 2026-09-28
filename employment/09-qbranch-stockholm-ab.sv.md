@@ -17,24 +17,11 @@ end_date: 2007-04-01
 ---
 <!--more-->
 ## Om rollen
-Det här var min första period hos Qbranch, där jag arbetade som IT-konsult och systemutvecklare för både externa kunder och interna integrationsprojekt.
+Min första period på Qbranch, som konsult och systemutvecklare.
 
-## Vad jag arbetade med
-### Fullstackutvecklare på hitta.se
-Jag arbetade som fullstackutvecklare på **hitta.se**, och bidrog till utvecklingen av deras plattform under en period av snabb tillväxt och funktionsexpansion.
-
-### Systemintegrationskonsulting
-Jag tog på mig integrationsfokuserade uppdrag hos flera organisationer, inklusive:
-- Sigtuna kommun
-- Taxi Stockholm
-- ICA Banken
-- Sveriges Television (SVT)
-
-Hos ICA Banken arbetade jag med kvalitetssäkringsuppgifter och skrev ett inventeringsskript som samlade information om deras SQL Server-instanser.
-Hos SVT hanterade jag mindre underhållsuppgifter för deras inventeringssystem.
-
-### Identitetshantering — Sigtuna kommun
-Jag var ensam utvecklare på ett identitetshanteringsprojekt för **Sigtuna kommun**, byggt kring **Microsoft Identity Integration Server (MIIS)**. Implementationen blev **Microsofts referensprojekt** för MIIS, vilket belyste lösningens kvalitet och fullständighet.
-
-## Reflektion
-Den här perioden etablerade min tidiga erfarenhet inom systemintegration och fullstackutveckling. MIIS-projektet hos Sigtuna kommun sticker ut som ett tekniskt krävande uppdrag som gav långsiktigt värde och fick extern uppmärksamhet.
+## Vad jag gjorde
+- Fullstackutvecklare på **hitta.se**
+- Ensam utvecklare i ett projekt för identitetshantering åt **Sigtuna kommun**, byggt på **Microsoft Identity Integration Server (MIIS)**. Det blev Microsofts referensprojekt för MIIS.
+- Migrerade **Taxi Stockholms** intranät och webbplats till EPiServer och integrerade det med deras bokningssystem
+- Löste ett fastlåst prestandaproblem i SQL Server på **ICA Banken** och skrev ett inventeringsskript för deras SQL Server-instanser
+- Mindre förvaltning av ett inventeringssystem på **Sveriges Television (SVT)**

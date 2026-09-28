@@ -19,36 +19,19 @@ buzzwords:
 highlights:
  - Development of the Video on Demand sites Film2Home and Plejmo.
  - Designed version 1 of Plejmo's Rest API.
- - Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
+ - Automated deployment, cutting deployment time from about an hour to under two minutes.
  - Increased performance by refactoring from a traditional n-tier architecture to a service bus architecture thus offloading the front end sites.
 ---
 <!--more-->
-## About the Role
-I joined Film2Home to work on their Video‑on‑Demand platforms **Film2Home** and **Plejmo**. This was the beginning of my long involvement with Plejmo — designing its first public API, improving performance, and modernizing how the platform was built and deployed.
+## About the role
+I joined Film2Home to work on its Video-on-Demand services **Film2Home** and **Plejmo**. It was the start of a long stretch with Plejmo.
 
-## What I Worked On
-### Platform Development
-I worked across the full stack on both Film2Home and Plejmo, implementing new features, improving stability, and cleaning up legacy code paths as the services evolved.
-
+## What I did
 ### Plejmo REST API v1
-I designed and implemented the first version of Plejmo’s REST API. The goals were:
-
-- a clear, consistent resource model
-- predictable behavior for clients
-- a foundation that could evolve without breaking compatibility
-
-### CQRS and Service‑Bus Architecture
-A major part of my work was rethinking how the platform handled load and complexity. I introduced **CQRS** and moved the system from a traditional n‑tier architecture to a **service‑bus‑based** design. This shift:
-- separated reads and writes for better performance and clarity
-- offloaded heavy work from the frontend sites
-- enabled asynchronous processing of tasks
-- made the system more modular and easier to extend
-
-### CI/CD Automation
-I automated the deployment process using **Octopus Deploy**, replacing a slow, manual, error‑prone workflow. The results were:
-- deployment time reduced from about an hour to a few minutes
-- fewer mistakes and rollbacks
-- a predictable, repeatable release process
-
-## Reflection
-Film2Home was where Plejmo’s technical foundations were laid — the API, the CQRS and service‑bus architecture, and the CI/CD pipeline. It set the stage for everything I later did at Magine, and eventually influenced my work with event‑driven systems and gamification at Betsson
+- Designed and implemented the first version of Plejmo's REST API
+### CQRS and service bus
+- Introduced **CQRS** and moved the platform from a traditional n-tier architecture to a **service bus** design, with heavy work processed asynchronously instead of in the frontend sites
+### Deployment automation
+- Automated deployments with **Octopus Deploy**: from about an hour to under two minutes, with virtually no deployment errors
+### Platform
+- Fullstack work on both Film2Home and Plejmo

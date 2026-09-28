@@ -27,8 +27,6 @@ Benefits included:
 - Reduced ambiguity and safer refactoring through meaningful test coverage
 - A more iterative, collaborative way of working across the whole development cycle
 
-This created a more predictable development process and a healthier foundation for long‑term maintainability.
-
 ### CashGuard
 
 StoreManager had drifting Word‑based requirements and no automated way to verify behavior. I introduced Specification by Example and turned existing user stories into executable specifications using SpecFlow. This created a shared language between developers, testers, and product owners and formed the basis for automated regression testing.
@@ -38,5 +36,3 @@ Benefits included:
 - Automated regression tests that reflected real business behavior
 - Living documentation that stayed in sync with the system
 - Better communication and fewer misunderstandings across the team
-
-This gave the team a foundation for meaningful tests and more predictable development.

@@ -24,18 +24,18 @@ end_date: 2025-12-05
 skills:
  - C#
  - .NET 5-9
+ - Kafka
+ - Event Sourcing
  - .NET Aspire
  - Asp.NET Core
  - Microsoft Orleans
  - Blazor
  - Docker
- - Kafka
  - SQL Server
  - PostgreSQL
  - Dapper
  - Redis
  - Memcached
- - Event Sourcing
  - REST API
  - WCF
  - Micro Services

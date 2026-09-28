@@ -15,17 +15,11 @@ end_date: 2002-01-01
 ---
 <!--more-->
 ## Om rollen
-Jag anslöt till Icon Medialab under it-boomen i slutet av 90-talet — ofta kallad "Shining Stockholm" i media. Icon var ett av den erans mest framstående bolag, känt för sitt höga tempo, ambitiösa projekt och tvärvetenskapliga team. Det var mitt första riktiga steg in i professionell webbutveckling.
+Jag kom till Icon Medialab under boomen i slutet av 90-talet, "Shining Stockholm" som medierna kallade det. Icon var ett av de mest uppmärksammade bolagen under den tiden, och det var mitt första riktiga steg in i professionell webbutveckling.
 
-## Vad jag arbetade med
-### Webbutveckling för storföretagskunder
-Jag bidrog till webbutvecklingsprojekt för:
-- **Hewlett-Packard Sweden**
+## Vad jag gjorde
+Webbutveckling åt:
+- **Hewlett-Packard Sverige**
 - **Compaq**
 - **Siemens Medical**
-- **Icon Medialabs** interna intranät
-
-Arbetet varierade från att bygga nya funktioner till att underhålla och förbättra befintliga system. Det var en blandning av praktisk kodning, samarbete med designers och projektledare, samt anpassning till tidens snabbt föränderliga webbstandarder.
-
-## Reflektion
-En formativ tidig period av att arbeta med stora kunder under en snabbrörlig fas i webbindustrin. Icon Medialab lärde mig att leverera under press, arbeta tvärvetenskapligt och navigera energin och osäkerheten under dotcom-eran — lärdomar som stannade kvar långt efter att bubblan sprack.
+- Icon Medialabs eget intranät

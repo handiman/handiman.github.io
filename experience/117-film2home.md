@@ -13,16 +13,17 @@ roles:
 start_date: 2014-11-03
 end_date: 2015-09-01
 skills:
- - Asp.NET MVC
- - Asp.NET Web Api
  - C#
- - .NET Framework
- - TDD 
+ - Asp.NET MVC
+ - Azure Service Bus
  - CQRS
+ - Octopus Deploy
+ - Asp.NET Web Api
+ - .NET Framework
+ - TDD
  - REST API
  - WCF
  - Continuous Integration
- - Octopus Deploy
  - JavaScript
  - jQuery
  - KnockoutJS

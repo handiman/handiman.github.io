@@ -15,11 +15,4 @@ end_date: 2008-01-01
 --- 
 <!--more-->
 ## Om rollen
-En kort anställning som användes som ett sätt att hålla mig arbetande på **hitta.se** under en övergångsperiod.
-
-## Vad jag arbetade med
-### Fullstackutveckling på hitta.se
-Jag fortsatte mitt arbete som fullstackutvecklare på hitta.se, och bidrog till funktionsutveckling och förbättringar av den befintliga plattformen.
-
-## Reflektion
-En kort administrativ omväg, men en del av samma sammanhängande period av arbete på hitta.se.
+En kort anställning som gjorde att jag kunde fortsätta arbeta på **hitta.se** under en övergångsperiod.

@@ -30,17 +30,9 @@ highlights:
 ---
 <!--more-->
 ## Om rollen
-Jag arbetade som lead developer hos Wasa Kredit, med fokus på att förbättra kodkvalitet, utvecklingspraxis och samarbete mellan team.
+Lead developer på Wasa Kredit, med fokus på kodkvalitet, utvecklingspraxis och hur teamen arbetade tillsammans.
 
-## Vad jag arbetade med
-### Minskad komplexitet
-Jag refaktoriserade viktiga delar av kodbasen för att göra systemet lättare att förstå, underhålla och utöka. Det här minskade onödig komplexitet och förbättrade den långsiktiga stabiliteten.
-
-### Exekverbara specifikationer
-Jag introducerade **levande dokumentation** genom exekverbara specifikationer. Det gjorde kraven entydiga, testbara och alltid aktuella, vilket förbättrade både kommunikation och kvalitet.
-
-### Mer samarbetsinriktad, agil utveckling
-Jag hjälpte till att leda teamen mot ett mer agilt arbetssätt, där produktägare, analytiker, testare och utvecklare samarbetade genom hela utvecklingscykeln istället för att lämna över arbete i etapper.
-
-## Reflektion
-Den här rollen handlade om att göra utvecklingen smidigare och mer förutsägbar — genom att förenkla kodbasen, förtydliga kraven och förbättra hur team arbetade tillsammans.
+## Vad jag gjorde
+- Refaktoriserade centrala delar av kodbasen, och skrev förslag på omskrivning av de delar som var för hårt kopplade för att refaktoriseras
+- Införde **levande dokumentation** i form av exekverbara specifikationer
+- Hjälpte teamen arbeta mer iterativt, med produktägare, analytiker, testare och utvecklare som samarbetade genom hela cykeln i stället för att lämna över arbetet i etapper

@@ -5,7 +5,7 @@ slug: qbranch-competence-manager
 #sitemap: true
 via: 
 - Qbranch
-description: Intern applikation för att hantera konsult-CV:n.
+description: Intern applikation där konsulterna skötte sina CV:n och säljarna matchade konsulter mot uppdrag.
 roles: 
  - Fullstack-utvecklare
 #employer: qbranch-stockholm-ab-2
@@ -24,11 +24,11 @@ skills:
  - Continuous Integration
  - Git
 highlights:
- - Vidareutvecklade en intern applikation för att hantera konsult-CV:n, byggd på ASP.NET MVC och driftsatt på Windows Azure.
+ - Vidareutvecklade en intern applikation för konsult-CV:n och matchning av konsulter mot uppdrag, byggd på ASP.NET MVC och driftsatt på Windows Azure.
 ---
 <!--more-->
 ## Kontext
-2014 återvände jag till Qbranch. Mellan kunduppdrag arbetade jag med ett internt system för konsult-CV:n, som utvecklare mellan uppdrag turades om att bygga vidare på. Det låg i **Microsoft Azure**, min första praktiska erfarenhet av molnet.
+2014 återvände jag till Qbranch. Mellan kunduppdrag arbetade jag med ett internt system där konsulterna skötte sina CV:n och säljarna matchade konsulter mot uppdrag. Utvecklare mellan uppdrag turades om att bygga vidare på det. Det låg i **Microsoft Azure**, min första praktiska erfarenhet av molnet.
 
 ## Arbete
 - Funktioner för att skapa, redigera och organisera konsult-CV:n

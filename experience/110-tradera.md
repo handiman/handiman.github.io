@@ -29,4 +29,4 @@ Between client assignments at Avega Group, I joined an internal team building a 
 - Features and UI components in **C#**, **WPF** and **WCF**
 - Data access with **NHibernate**
 
-[lf]: {{ '/assignments/lansforsakringar' }}
+[lf]: /experience/lansforsakringar/

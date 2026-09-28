@@ -14,19 +14,12 @@ end_date: 2012-03-09
 #- IT Consultant with assignments at Länsförsäkringar, Cale Access, Cash Guard, Tradera and Astando.
 ---
 <!--more-->
-## About the Role
-I worked as an IT consultant and system developer at Avega, taking on assignments for several enterprise clients in Stockholm.
+## About the role
+Consultant and system developer at Avega, with assignments for several clients in Stockholm.
 
-## What I Worked On
-### Client Assignments
-I delivered development and integration work for:
+## Assignments
 - Länsförsäkringar
 - Cale Access
-- Cash Guard
+- CashGuard
 - Tradera
 - Astando
-
-The assignments varied in scope and technology, but all centered on building or improving systems used in day‑to‑day operations.
-
-## Reflection
-This period gave me broad experience across different industries and technical environments, and it set the stage for the more specialized roles I took on later.

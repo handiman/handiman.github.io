@@ -5,7 +5,7 @@ url: https://uiaas.becker-consulting.se/
 tagline: Enterprise-grade nonsense, delivered instantly.
 summary: 'Useless Information as a Service: a versioned, Swagger-documented API for facts nobody asked for.'
 badge: 'usefulness: 0'
-description: Designed and built a complete SaaS-style REST API from scratch in a single afternoon, using Claude Code for AI-assisted development. Deployed on Cloudflare Workers with a Cloudflare D1 database, with the API fully documented via OpenAPI/Swagger. Live in production at uiaas.becker-consulting.se. Demonstrates rapid, AI-assisted full-stack delivery — data model, API, and deployment — within a single working session.
+description: A REST API for useless facts, built in an afternoon with Claude Code. Runs on Cloudflare Workers with a Cloudflare D1 database and is documented with OpenAPI/Swagger. Live at uiaas.becker-consulting.se.
 #roles: 
 #- Creator
 start_date: 2026-09-03

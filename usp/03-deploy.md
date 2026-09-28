@@ -38,5 +38,5 @@ Using **Octopus Deploy** we were able to:
 
 The deployment process became so quick and painless that we could (and sometimes did) deploy several times a day ‐ even during peak hours.
 
-[astando]: /assignments/norconsult-astando-2018
-[plejmo]: /projects/film2home
+[astando]: /experience/norconsult-astando/
+[plejmo]: /experience/film2home/
