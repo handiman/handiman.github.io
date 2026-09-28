@@ -1,6 +1,6 @@
 ---
 title: Semantic-CV
-description: Utvecklarorienterat verktyg för att uttrycka ditt CV som JSON-LD och rendera det som HTML, PDF och ATS-vänlig text. Det består av två huvuddelar — ett CLI för att redigera strukturerad data, och en hostingplattform. Kan ses på https://semantic.cv
+description: Ett utvecklarverktyg för att skriva ditt CV som schema.org JSON-LD och publicera det som webbsida, ATS-vänlig PDF och designad PDF. Det har två delar, ett CLI för att redigera datan och en sajt där du kan lägga upp ditt CV. Live på https://semantic.cv
 #comment: Sidoprojekt via Henrik Becker Consulting AB
 #name: Semantic-CV
 slug: semantic-cv
@@ -37,8 +37,8 @@ competencies:
 # - Semantic-CV is a developer oriented tool for expressing your CV as JSON-LD in format. 
 # - It's made up two main parts - a CLI for simplifying editing the structured data and a where users can optionally host their CVs.    
 ---
-Semantic-CV är ett utvecklarorienterat verktyg för att uttrycka ditt CV som JSON-LD i [schema.org/Person](https://schema.org/Person)-format.
-Det består av två huvuddelar — ett CLI för att förenkla redigeringen av den strukturerade datan och en [webbplats](https://semantic.cv) där användare valfritt kan hosta sina CV:n.
+Semantic CV är ett utvecklarverktyg för att skriva ditt CV som JSON-LD i [schema.org/Person](https://schema.org/Person)-format.
+Det har två delar: ett CLI för att redigera den strukturerade datan, och en [webbplats](https://semantic.cv) där du kan lägga upp ditt CV om du vill.
 <!--more-->
 
 

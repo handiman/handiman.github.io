@@ -5,7 +5,7 @@ url: https://semantic.cv
 tagline: Your CV as schema.org JSON-LD.
 summary: A structured-data alternative to JSON Resume. One source file, published as a web page, an ATS-friendly PDF and a designed PDF.
 #comment: Side project via Henrik Becker Consulting AB
-description: Developer oriented tool for expressing your CV as JSON-LD in format and rendering as HTML, PDF and ATS-friendly text. It's made up two main parts - a CLI for editing structured data, and a hosting platform. Live at https://semantic.cv
+description: A developer tool for writing your CV as schema.org JSON-LD and publishing it as a web page, an ATS-friendly PDF and a designed PDF. It has two parts, a CLI for editing the data and a site for hosting your CV. Live at https://semantic.cv
 #name: Semantic-CV
 slug: semantic-cv
 #employer: self-employed
@@ -52,8 +52,8 @@ competencies:
 # - Semantic-CV is a developer oriented tool for expressing your CV as JSON-LD in format. 
 # - It's made up two main parts - a CLI for simplifying editing the structured data and a where users can optionally host their CVs.    
 ---
-Semantic-CV is a developer oriented tool for expressing your CV as JSON-LD in [schema.org/Person](https://schema.org/Person) format. 
-It's made up two main parts - a CLI for simplifying editing the structured data and a [website](https://semantic.cv) where users can optionally host their CVs.
+Semantic CV is a developer tool for writing your CV as JSON-LD in [schema.org/Person](https://schema.org/Person) format.
+It has two parts: a CLI for editing the structured data, and a [website](https://semantic.cv) where you can host your CV if you want to.
 <!--more-->
 
 

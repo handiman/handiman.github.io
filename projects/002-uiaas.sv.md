@@ -1,6 +1,6 @@
 ---
 title: UIaaS (Useless Information as a Service)
-description: Designade och byggde ett komplett SaaS-liknande REST-API från grunden på en eftermiddag, med Claude Code för AI-assisterad utveckling. Driftsatt på Cloudflare Workers med Cloudflare D1 som databas, och API:et är fullt dokumenterat via OpenAPI/Swagger. Live i produktion på uiaas.becker-consulting.se. Visar snabb, AI-assisterad helstack-leverans — datamodell, API och driftsättning — inom en enda arbetssession. 
+description: Ett REST-API för onödiga fakta, byggt på en eftermiddag med Claude Code. Körs på Cloudflare Workers med Cloudflare D1 som databas och är dokumenterat med OpenAPI/Swagger. Live på uiaas.becker-consulting.se.
 #roles: 
 #- Creator
 #start_date: 2026-03-01
