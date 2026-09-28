@@ -24,32 +24,14 @@ end_date: present
 ---
 <!--more-->
 ## Om företaget
-Jag grundade Henrik Becker Consulting AB 2017 som ett sätt att arbeta självständigt och hålla mig nära hantverket. Baserad i Lidingö och verksam i Stockholmsregionen eller helt på distans erbjuder jag fullstack .NET- och DevOps-expertis på frilansbasis. Genom att hålla bolaget litet kan jag fokusera på det som betyder något: att förstå system, arbeta direkt med team och leverera lösningar som minskar komplexitet istället för att öka den.
+Jag startade Henrik Becker Consulting AB 2017, efter nästan tjugo år av kodande som anställd och som konsult via andra bolag. Det är ett enmansföretag på Lidingö. Jag jobbar på plats i Stockholmsområdet eller på distans.
 
-Jag har kodat professionellt sedan 1999, och bolaget är där den erfarenheten kommer samman — arkitektur, integration, automation och det långsiktiga tänkande som gör att mjukvara åldras med värdighet.
+Undantaget var Betsson, där jag började som konsult och stannade två år som anställd, för att jag trivdes med både företaget och kollegorna. Till slut saknade jag friheten och variationen i konsultlivet, så jag gick tillbaka – med perfekt tajming: konsultmarknaden bestämde sig för att hoppa från ett stup. Fördelen är att jag är tillgänglig.
 
 ## Vad jag gör
-Mitt arbete kretsar kring backend-utveckling och infrastrukturen runt omkring: API:erna, integrationerna, pipelines och de arkitektoniska beslut som formar hur ett system beter sig över tid.
+Mest backendutveckling i C# och .NET, systemintegration och leveransautomatisering, och arkitektur när ett team behöver det. Detaljerna finns på [startsidan](/#offer). Jag gillar att lämna koden lite enklare än jag hittade den.
 
-Jag hjälper kunder med:
-- **Backend-utveckling**   
-  Moderna .NET- och C#-lösningar byggda för tydlighet, underhållbarhet och skalbarhet.
-- **Systemintegration**   
-  REST, GraphQL, meddelandeköer och molnnativa verktyg för att koppla samman tjänster på ett pålitligt sätt.
-- **Automation & DevOps**   
-  CI/CD-pipelines, skriptning och infrastructure as code för snabbare, säkrare leveranser.
-- **Arkitektur & teknisk vägledning**  
-  Strukturerar nya projekt, refaktoriserar gamla, och hjälper team fatta sunda tekniska beslut.
-
-Mitt mål är alltid detsamma: att bygga system som är lättare att förstå, lättare att underhålla och lättare att vidareutveckla.
-
-## Utvalda kunder
-Genom åren har jag arbetat med organisationer inom finans, e-handel, spel och offentlig infrastruktur. Några av de kunder jag samarbetat med:
-{% for client in clients reversed %}* [{{client.name}}]({{ client.url }})
+## Kunder
+Några av de organisationer jag har arbetat med genom åren:
+{% for client in collections.clients %}* {% if client.data.organization.url %}[{{ client.data.title }}]({{ client.data.organization.url }}){% else %}{{ client.data.title }}{% endif %}
 {% endfor %}
-{% assign clients = nil %}
-Arbetet har spänt från backend-utveckling och integrationer till automationspipelines och arkitekturstöd.
-
-## Tillvägagångssätt
-Jag beskriver mig själv som en "simplifikator" eftersom det är kärnan i det jag gör: ta något komplext och göra det tydligare utan att förlora dess djup. Ibland innebär det att skriva om ett subsystem. Ibland innebär det att omorganisera en modell. Ibland är det en enda mening dokumentation som till slut får allt att falla på plats.
-Att frilansa ger mig friheten att välja projekt där jag kan göra verklig skillnad, och att hålla mig nära själva arbetet, där detaljerna spelar roll.
