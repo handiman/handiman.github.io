@@ -75,6 +75,33 @@
 .hero__intro { font-size: 20px; max-width: 540px; margin: 0; }
 .hero__actions { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; padding-top: 8px; }
 .hero__avatar { display: none; }
+
+/* "Ask my CV": buttons that hand a question to the chat in the header */
+.hero__actions button.link-underline {
+  background: none;
+  border-width: 0 0 1px;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+.hero__questions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  .label { margin-right: 4px; }
+}
+.ask-chip {
+  font: inherit;
+  font-size: 14px;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 14px;
+  cursor: pointer;
+  &:hover { color: var(--ink); border-color: var(--line-strong); }
+}
 .hero__photo {
   height: 560px;
   border-radius: var(--radius);

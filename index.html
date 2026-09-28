@@ -4,7 +4,12 @@ hero:
   label: Henrik Becker · Senior .NET Consultant
   title: Authentic Intelligence Since 1969
   cta: Read my CV
-  secondary: How I work
+  secondary: Ask my CV
+  questions_label: Try asking
+  questions:
+  - Has he worked with Kafka?
+  - What has he built in .NET?
+  - What was his first job?
 ingress: |
   I'm Henrik. I've built backends in .NET for as long as .NET has existed and run my own consulting company
   in Stockholm. This is where my CV lives, and where I write about software, AI tools, side projects and
@@ -58,7 +63,13 @@ cards:
         <p class="hero__intro">{{ ingress }}</p>
         <div class="hero__actions">
             <a class="button" href="/cv/">{{ hero.cta | escape }} <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-            <a class="link-underline" href="#unique-selling-points">{{ hero.secondary | escape }}</a>
+            <button type="button" class="link-underline" data-ask>{{ hero.secondary | escape }}</button>
+        </div>
+        <div class="hero__questions no-print">
+            <span class="label">{{ hero.questions_label | escape }}</span>
+            {%- for question in hero.questions %}
+            <button type="button" class="ask-chip" data-ask="{{ question | escape }}">{{ question | escape }}</button>
+            {%- endfor %}
         </div>
     </div>
     <div class="hero__photo">
