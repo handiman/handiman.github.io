@@ -1,4 +1,4 @@
-name: Ingest Semantic CV
+name: Ingest CV
 # Sends the AI document (/assets/henrik-becker.ai) to the CV chat bot after each deploy.
 on:
   workflow_dispatch:
