@@ -9,15 +9,35 @@ ingress: |
   I'm Henrik. I've built backends in .NET for as long as .NET has existed and run my own consulting company
   in Stockholm. This is where my CV lives, and where I write about software, AI tools and the occasional
   deliberately useless project.
+# front/back: the short cards on this page.
+# title/text: the longer versions shared with becker-consulting.se via /assets/site-data.json.
 cards:
 - front: Backend development
   back: C# and .NET systems built to last.
+  title: Backend development
+  text: >-
+    APIs, domain logic and data layers in C# and .NET, with clear boundaries and tests that describe behaviour.
+    Most recently at Betsson: event-sourced microservices on Kafka, where I optimized message processing
+    for a nearly tenfold throughput increase.
 - front: Integration & migration
   back: Queues, APIs and moving data without losing any.
+  title: Integration & migration
+  text: >-
+    Queues, REST APIs and cloud services that talk to each other predictably. I've connected systems over
+    Azure Service Bus and Kafka, and moved production data from on-prem SQL Server to PostgreSQL in AWS.
 - front: Automation & DevOps
   back: Pipelines that make release day boring.
+  title: Automation & DevOps
+  text: >-
+    Pipelines that make deployments boring. At Norconsult Astando I took deployments from about 45 minutes
+    to about 5, with Octopus Deploy and TeamCity; these days it's mostly GitHub Actions and Azure Pipelines.
+    I'd rather automate a step than document it.
 - front: Architecture
   back: Pragmatic choices, written down.
+  title: Architecture guidance
+  text: >-
+    Decisions that still make sense in five years. I help teams pick patterns that fit the problem,
+    skip the ones that don't, and write down why.
 ---
 <section class="hero" id="introduction" data-source="{{ page.url | absolute_url }}#introduction">
     <h2 class="hidden">Introduction</h2>
