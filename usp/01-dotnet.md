@@ -5,7 +5,7 @@ sitemap: true
 ---
 I’ve worked with .NET since the first version, and C# is the language I think in.
 
-Lately that means .NET 9 and 10, Aspire and Orleans, and VB.NET when a project needs it.
+Lately that means .NET 9 and 10, Aspire and Orleans.
 <!--more-->
 If you need someone who understands the platform across its entire history — the old frameworks, the new patterns, the migration paths, the pitfalls, the tooling — I can help you build, modernize, or untangle just about anything in the .NET world.
 
