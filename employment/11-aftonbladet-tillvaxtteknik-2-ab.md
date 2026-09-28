@@ -14,12 +14,5 @@ end_date: 2008-01-01
 # - Fullstack Developer at hitta.se
 --- 
 <!--more-->
-## About the Role
-A short employment used as a way to keep me working at **hitta.se** during a transition period.
-
-## What I Worked On
-### Fullstack Development at hitta.se
-I continued my work as a fullstack developer at hitta.se, contributing to feature development and improvements to the existing platform.
-
-## Reflection
-A brief administrative detour, but part of the same continuous period of work at hitta.se.
+## About the role
+A short employment that kept me working at **hitta.se** during a transition period.

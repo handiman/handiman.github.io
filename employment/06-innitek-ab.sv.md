@@ -16,13 +16,8 @@ end_date: 1999-07-31
 ---
 <!--more-->
 ## Om rollen
-Innitek var en kortlivad IT-konsultfirma startad av VD:n för Looström & Gelin för att utforska möjligheter på den växande mjukvaruutvecklingsmarknaden. Jag arbetade där som IT-konsult under dess korta livstid.
+Innitek var en kortlivad IT-konsultfirma som vd:n för Looström & Gelin startade för att pröva den växande mjukvarumarknaden. Jag arbetade där som konsult under dess korta tid. Det var mitt första jobb som utvecklare.
 
-## Vad jag arbetade med
-### Dokumenthanteringssystem för Looström & Gelin
-Jag utvecklade ett dokumenthanteringssystem i **Visual Basic 5** för Looström & Gelin AB, till stöd för deras interna arbetsflöden.
-### Företagets webbplats
-Jag byggde Inniteks företagswebbplats med **ASP**, vilket gav den nya konsultfirman en närvaro på nätet.
-
-## Reflektion
-En kort men produktiv period där jag levererade konkret mjukvara för både Looström & Gelin och Innitek självt.
+## Vad jag gjorde
+- Utvecklade ett dokumenthanteringssystem i **Visual Basic 5** åt Looström & Gelin AB
+- Byggde Innitek:s webbplats i **ASP**

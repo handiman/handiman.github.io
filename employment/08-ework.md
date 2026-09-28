@@ -14,12 +14,8 @@ end_date: 2005-03-31
 # - Web development for Hewlett Packard Sweden
 ---
 <!--more-->
-## About the Role
-After Icon Medialab went bankrupt, eWork became the administrative employer that allowed me to continue my work for **Hewlett‑Packard Sweden** without interruption.
+## About the role
+After Icon Medialab went bankrupt, eWork became my employer on paper so that I could keep working for **Hewlett-Packard Sweden** without a break.
 
-## What I Worked On
-Web Development for Hewlett‑Packard Sweden
-I worked on web development tasks for **HP Sweden**, contributing to the maintenance and evolution of their online presence during this period.
-
-## Reflection
-A long engagement with HP, routed through eWork for administrative reasons, but representing a continuous stretch of hands‑on web development work.
+## What I did
+- Web development for HP Sweden

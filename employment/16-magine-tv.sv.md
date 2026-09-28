@@ -20,36 +20,24 @@ highlights:
 ---
 <!--more-->
 ## Om rollen
-Jag anslöt till Magine TV för att fortsätta utvecklingen av **Plejmo**, en Video-on-Demand-tjänst som Magine hade förvärvat från Film2Home. Eftersom jag redan hade arbetat med Plejmo hos Film2Home var den här rollen en naturlig fortsättning — att förbättra plattformen, utöka API:et och underhålla den CI/CD-pipeline jag ursprungligen byggt.
+Jag kom till Magine TV för att fortsätta utveckla **Plejmo**, som Magine hade köpt från Film2Home. Jag hade redan arbetat med Plejmo på Film2Home, så det var en naturlig fortsättning.
 
-## Vad jag arbetade med
-### Utveckling av Plejmo-plattformen
-Jag arbetade över hela stacken för att vidareutveckla Plejmo-tjänsten, med fokus på stabilitet, underhållbarhet och stegvisa förbättringar av både backend- och frontend-komponenter.
-
-### Plejmo REST API
-Jag höll **API v1** stabilt och bakåtkompatibelt samtidigt som jag designade och implementerade **API v2**, som introducerade:
+## Vad jag gjorde
+### Plejmos REST-API
+Jag höll **API v1** stabilt och bakåtkompatibelt medan jag designade och implementerade **API v2**, som tillförde:
 
 - OAuth-baserad tokenautentisering
-- en ny, renare modell för att leverera metadatainnehåll
-- nya endpoints avsedda för den kommande Plejmo-appen
-- stöd för tredjepartsintegrationer, inklusive MovieZine och en finsk VOD-tjänst i Vasa (Whatson)
+- en renare modell för att leverera metadata
+- nya endpoints för den kommande Plejmo-appen
+- stöd för tredjepartsintegrationer, bland annat MovieZine och Whatson, en finsk VOD-tjänst i Vasa
 
-### Gamification Proof of Concept
-Jag byggde en proof-of-concept för ett **nivå- och prestationssystem**. Eftersom jag ursprungligen hade implementerat Plejmos **service bus-arkitektur** hos Film2Home var det enkelt att lägga till en fristående tjänst som prenumererade på relevanta händelser. PoC:n:
+### Proof of concept för gamification
+Jag byggde en proof of concept för **nivåer och prestationer**. Eftersom Plejmo redan körde på den **service bus-arkitektur** jag byggt på Film2Home var det enkelt att lägga till en fristående tjänst som prenumererade på användarhändelser och delade ut prestationer och progression.
 
-- konsumerade användaraktivitetshändelser från service busen
-- delade ut prestationer och progression baserat på dessa händelser
+Idén kom tillbaka flera år senare på Betsson, där nivåer och prestationer blev mitt dagliga jobb.
 
-### Analysintegration (Segment.io)
-Segment.io var en del av produktionssystemet. Jag implementerade händelsepublicering så att användaraktivitet och plattformshändelser kunde spåras konsekvent över klienter och tjänster.
+### Analys (Segment.io)
+- Implementerade händelsepublicering till Segment.io, så att användaraktivitet kunde följas över klienter och tjänster
 
-### CI/CD-pipeline
-CI/CD-pipelinen byggd kring **Octopus Deploy** var redan i gott skick tack vare arbetet jag gjort hos Film2Home.
-Hos Magine handlade det mer om förvaltning än nyskapande. Mitt fokus låg på:
-
-- att hålla pipelinen stabil och tillförlitlig
-- att uppgradera Octopus Deploy och relaterade verktyg
-- att fördjupa min förståelse för Octopus och tillämpa förbättringar där det var användbart
-
-## Reflektion
-Magine var en fortsättning på arbetet jag påbörjat hos Film2Home, men inom ett större streamingfokuserat bolag. Det var stadig, praktisk utveckling på en produkt jag kände väl, med utrymme att modernisera de delar som behövde det och utrymme att utforska tidiga idéer kring gamification som senare blev en större del av mitt arbete.
+### CI/CD
+- Höll Octopus Deploy-pipelinen från Film2Home igång och uppgraderade Octopus och tillhörande verktyg

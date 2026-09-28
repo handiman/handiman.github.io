@@ -14,12 +14,5 @@ end_date: 2007-12-01
 # - Fullstack Developer at hitta.se
 ---
 <!--more-->
-## About the Role
-I was employed by Inverso while continuing my work as a fullstack developer at **hitta.se**.
-
-## What I Worked On
-### Fullstack Development at hitta.se
-I contributed to ongoing development work at hitta.se, focusing on feature implementation and improvements to the existing platform.
-
-## Reflection
-Another short employment used to keep my work at hitta.se moving without interruption.
+## About the role
+I was employed by Inverso while continuing as a fullstack developer at **hitta.se**.

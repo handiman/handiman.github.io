@@ -14,19 +14,9 @@ end_date: 2014-09-30
 # - Development of Qbranch Competence Manager used for finding the right consultant for an assignment.
 --- 
 <!--more-->
-## About the Role
-This was my second period at Qbranch. I split my time between **resource consulting** and contributing to internal development work that supported Qbranch’s consultant organization.
+## About the role
+My second period at Qbranch, split between a client assignment and internal development.
 
-## What I Worked On
-### Resource Consulting — Arbetsförmedlingen
-My main external assignment during this period was at **Arbetsförmedlingen**, where I handled day‑to‑day technical tasks and short‑term operational needs.
-
-### Qbranch Competence Manager
-I contributed to the development of Qbranch Competence Manager, an internal tool for matching consultants with incoming assignments. It was the kind of in‑house project consultants worked on between client engagements. It was also my first hands‑on experience with **Microsoft Azure**, which we used to host and run the system. My work included:
-
-- implementing features for searching and filtering consultants by skills and availability
-- improving how assignment requirements were represented
-- helping make the tool more usable for sales and delivery teams
-
-## Reflection
-This was a short but productive period — a mix of consulting at Arbetsförmedlingen and contributing to an internal tool that streamlined how Qbranch matched consultants to assignments. It also marked my first real exposure to Azure, which became useful in later roles.
+## What I did
+- Maintenance of a legacy requisition system at **Arbetsförmedlingen**
+- Development of **Qbranch Competence Manager**, an internal tool for consultant CVs, which developers between client assignments took turns working on. Hosted in **Microsoft Azure**, my first hands-on experience with it.

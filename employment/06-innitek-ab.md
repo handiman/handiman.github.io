@@ -15,15 +15,9 @@ end_date: 1999-07-31
 # - Built the company web site based on ASP
 ---
 <!--more-->
-## About the Role
-Innitek was a short‑lived IT consultancy started by the CEO of Looström & Gelin to explore opportunities in the growing software development market. I worked there as an IT consultant during its brief run.
+## About the role
+Innitek was a short-lived IT consultancy started by the CEO of Looström & Gelin to try the growing software market. I worked there as a consultant for its brief run. It was my first job as a developer.
 
-## What I Worked On
-### Document Management System for Looström & Gelin
-I developed a document management system in **Visual Basic 5** for Looström & Gelin AB, supporting their internal workflows.
-### Company Website
-I built Innitek’s company website using **ASP**, giving the new consultancy an online presence.
-
-## Reflection
-A brief but productive period where I delivered concrete software for both Looström & Gelin and Innitek itself.
-
+## What I did
+- Developed a document management system in **Visual Basic 5** for Looström & Gelin AB
+- Built Innitek's company website in **ASP**
