@@ -24,9 +24,6 @@ highlights:
 Jag anslöt till Magine TV för att fortsätta utvecklingen av **Plejmo**, en Video-on-Demand-tjänst som Magine hade förvärvat från Film2Home. Eftersom jag redan hade arbetat med Plejmo hos Film2Home var den här rollen en naturlig fortsättning — att förbättra plattformen, utöka API:et och underhålla den CI/CD-pipeline jag ursprungligen byggt.
 
 ## Vad jag arbetade med
-### Utveckling av Plejmo-plattformen
-Jag arbetade över hela stacken för att vidareutveckla Plejmo-tjänsten, med fokus på stabilitet, underhållbarhet och stegvisa förbättringar av både backend- och frontend-komponenter.
-
 ### Plejmo REST API
 Jag höll **API v1** stabilt och bakåtkompatibelt samtidigt som jag designade och implementerade **API v2**, som introducerade:
 
@@ -41,6 +38,8 @@ Jag byggde en proof-of-concept för ett **nivå- och prestationssystem**. Efters
 - konsumerade användaraktivitetshändelser från service busen
 - delade ut prestationer och progression baserat på dessa händelser
 
+Idén kom tillbaka flera år senare på Betsson, där nivåer och prestationer blev mitt dagliga jobb.
+
 ### Analysintegration (Segment.io)
 Segment.io var en del av produktionssystemet. Jag implementerade händelsepublicering så att användaraktivitet och plattformshändelser kunde spåras konsekvent över klienter och tjänster.
 
@@ -50,8 +49,3 @@ Hos Magine handlade det mer om förvaltning än nyskapande. Mitt fokus låg på:
 
 - att hålla pipelinen stabil och tillförlitlig
 - att uppgradera Octopus Deploy och relaterade verktyg
-- att fördjupa min förståelse för Octopus och tillämpa förbättringar där det var användbart
-
-## Reflektion
-Magine var en fortsättning på arbetet jag påbörjat hos Film2Home, men inom ett större streamingfokuserat bolag. Det var stadig, praktisk utveckling på en produkt jag kände väl, med utrymme att modernisera de delar som behövde det och utrymme att utforska tidiga idéer kring gamification som senare blev en större del av mitt arbete.
-

@@ -36,9 +36,9 @@ skills:
  - Git
 description: |
  Fullstack development of the Video On Demand (VOD) services Film2home and Plejmo based on Asp.NET MVC and EpiServer. DevOps tasks including configuring web sites, configuring automated builds and setting up automated deployment. 
-key_highlight: 'Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes'
+key_highlight: 'Automated deployment, cutting deployment time from about an hour to under two minutes'
 highlights: 
- - Automated deployment thus eliminating the human factor and reducing deployment time from 1 hour to a couple of minutes.
+ - Automated deployment, cutting deployment time from about an hour to under two minutes.
  - Increased performance by refactoring from a traditional n-tier architecture to a service bus architecture thus offloading the front end sites.
  - Designed Plejmo's REST API.
 competencies:
@@ -77,57 +77,35 @@ competencies:
 ---
 <!--more-->
 ## Context
-Film2Home was originally a standalone Video‑on‑Demand company owned by Bonver. After the company went bankrupt, it was acquired by Magine TV, who continued operating and evolving the platform under both the Film2Home and Plejmo brands.
+Film2Home was a Video-on-Demand company owned by Bonver. After Bonver went bankrupt it was acquired by Magine TV, which kept running the platform under both the Film2Home and Plejmo brands.
 
-From 2014 to 2017, I worked as a Fullstack Developer and DevOps engineer on these services. The platform combined ASP.NET MVC applications, EPiServer‑based content management, and a growing set of backend services supporting catalog, payments, user accounts, and content metadata.
-
-The work spanned full‑stack development, system integration, and DevOps in an environment where rapid iteration, stability, and deployment reliability were equally important.
+From 2014 to 2017 I worked on these services as a fullstack developer and also did the DevOps work. The platform was ASP.NET MVC applications with EPiServer for content, plus backend services for catalog, payments, user accounts and content metadata.
 
 ## Problem
-The existing system faced several challenges typical of maturing VOD platforms:
-
-- A traditional n‑tier architecture that struggled with performance under load
-- Manual deployments that were slow, error‑prone, and difficult to coordinate
-- Increasing complexity around third‑party integrations (payments, metadata providers, etc.)
-- A need for a more modern API surface as new clients and web applications were introduced
-
-The goal was to improve performance, reduce operational friction, and support the evolution of the platform without destabilizing ongoing operations.
+- A traditional n-tier architecture that struggled under load
+- Manual deployments that took about an hour and were error-prone
+- Third-party integrations for payments and metadata that were getting harder to manage
+- No API for the new clients that were on the way
 
 ## Approach
-My work combined architectural refactoring, backend development, frontend improvements and DevOps automation. Key areas included:
 ### Architecture
-- Introduced CQRS patterns to separate reads from writes and improve scalability
-- Refactored parts of the system toward a service‑bus‑driven architecture using Azure Service Bus
-- Created microservices for third‑party integrations to reduce coupling and improve reliability
-- Enabled rapid experimentation by decoupling components, making it straightforward to plug in new features and services
-### Backend Development
-- Built and maintained ASP.NET MVC and ASP.NET Web API applications
-- Designed and implemented version 1 of Plejmo’s REST API
-- Developed domain logic using C#, .NET Framework, NHibernate, and SQL Server
-- Built a proof‑of‑concept gamification service (levels, achievements, etc.) that integrated cleanly thanks to the new service‑bus architecture
-### Frontend Development
-- Implemented UI features using JavaScript, jQuery, and KnockoutJS
-- Improved client‑side performance and responsiveness
-- Collaborated with designers and content teams working in EPiServer
-### System Integration
-- Built and maintained integrations with external metadata and payment providers
-- Developed and maintained REST and WCF services for internal and external consumers
+- Introduced CQRS to separate reads from writes
+- Moved parts of the system to a service bus architecture on Azure Service Bus
+- Moved third-party integrations into separate services
+### Backend development
+- Built and maintained ASP.NET MVC and ASP.NET Web API applications with C#, NHibernate and SQL Server
+- Designed and implemented version 1 of Plejmo's REST API
+- Built a gamification proof of concept (levels and achievements) on top of the service bus
+### Frontend development
+- Built UI features in JavaScript, jQuery and KnockoutJS
+- Worked with the designers and editors using EPiServer
+### System integration
+- Built and maintained integrations with metadata and payment providers
+- Built REST and WCF services for internal and external consumers
 ### Automation & DevOps
-- Configured automated builds and deployment pipelines using Octopus Deploy
-- Reduced deployment time from roughly one hour to a few minutes
-- Eliminated manual deployment errors through automation and environment consistency
-- Managed IIS configurations and site setup across multiple environments
+- Set up automated builds and deployments with Octopus Deploy
+- Managed IIS configuration across environments
 
-## Outcome
-- Delivered the Film2Home and Plejmo web platforms across multiple markets
-- Designed and shipped Plejmo’s first REST API, enabling new clients and integrations
-- Reduced deployment time dramatically and improved operational stability through automation
-- Increased system performance by refactoring from a traditional n‑tier architecture to a service‑bus‑oriented approach
-- Improved scalability and reliability by isolating third‑party integrations into dedicated services
-- Demonstrated the architectural flexibility of the new system through a gamification proof of concept that could be added with minimal friction
-
-## Reflection
-This project highlighted the value of combining full‑stack development with DevOps discipline. Many of the most impactful improvements came from simplifying architecture, reducing deployment friction, and clarifying system boundaries.
-Working on a consumer‑facing VOD platform also reinforced the importance of performance, stability, and predictable delivery — especially when customers expect instant access to content.
-
-
+## Results
+- Deployment time went from about an hour to under two minutes, with virtually no deployment errors
+- Better performance under load after moving from n-tier to the service bus architecture

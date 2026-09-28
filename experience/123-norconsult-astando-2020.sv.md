@@ -51,56 +51,30 @@ competencies:
 ---
 <!--more-->
 ## Kontext
-Min relation till Norconsult Astando går tillbaka till 2008–2009, när jag arbetade med dem som konsult från Avega Group AB. Nästan ett decennium senare, efter att ha sett på [LinkedIn](https://www.linkedin.com/in/prettygoodprogrammer) att jag hade börjat frilansa, hörde de av sig och frågade om jag var tillgänglig för ett nytt uppdrag. Jag återvände 2018 för att modernisera driftsättningsflöden, och igen 2020 för att stötta fullstackutveckling och modernisering av äldre system.
+Min relation till Norconsult Astando går tillbaka till 2008–2009, när jag arbetade med dem som konsult från Avega Group AB. Nästan tio år senare såg de på [LinkedIn](https://www.linkedin.com/in/prettygoodprogrammer) att jag hade börjat frilansa och frågade om jag var ledig. Jag kom tillbaka 2018 för att automatisera deras driftsättningar, och igen 2020 för fullstackutveckling i deras äldre system.
 
-Norconsult Astando utvecklar GIS-drivna lösningar för kommuner och infrastrukturorganisationer. Systemen jag arbetade med byggdes främst på ASP.NET Core, ASP.NET Web API och WCF-tjänster, med frontend-komponenter i JavaScript/TypeScript och KnockoutJS. Driftsättningar hanterades via TeamCity och Octopus Deploy.
+Norconsult Astando utvecklar GIS-baserade lösningar för kommuner och infrastrukturorganisationer. Systemen jag arbetade med byggde på ASP.NET Core, ASP.NET Web API och WCF-tjänster, med frontendkomponenter i JavaScript/TypeScript och KnockoutJS. Driftsättningarna gick via TeamCity och Octopus Deploy.
 
-## 2018 års uppdrag — DevOps & backend-utveckling
+## 2018 — DevOps & backend
 ### Problem
-IsyRoad-projektet led av långsamma, manuella och felbenägna driftsättningar. Varje driftsättning tog cirka 45 minuter per applikationsinstans, och processen orsakade ofta mänskliga fel.
+Driftsättningarna för IsyRoad-projektet var manuella, tog cirka 45 minuter per applikationsinstans och gick ofta fel.
 
 ### Tillvägagångssätt
-
 #### Automation & DevOps
-- Introducerade automatiserade driftsättningspipelines med Octopus Deploy
-- Integrerade TeamCity-byggsteg med driftsättningsflöden
-- Standardiserade konfigurations- och miljöhantering
-
-#### Backend-utveckling
-- Bidrog till ASP.NET Web API- och .NET Core-tjänster
-- Förbättrade underhållbarhet och tillförlitlighet i backend-komponenter
+- Införde automatiserade driftsättningspipelines med Octopus Deploy
+- Kopplade ihop byggsteg i TeamCity med driftsättningsflödet
+- Standardiserade konfigurations- och miljöhanteringen
+#### Backendutveckling
+- Arbetade med ASP.NET Web API- och .NET Core-tjänster
 - Arbetade med NHibernate och WCF-baserade integrationer
 
 ### Resultat
-- Driftsättningstiden minskade från ~45 minuter till ~5 minuter per instans
-- Driftsättningsrelaterade fel minskade med nästan 100 %
-- En mer förutsägbar och underhållbar leveranspipeline för teamet
+- Driftsättningstiden gick från cirka 45 minuter till cirka 5 minuter per instans
+- I stort sett inga driftsättningsrelaterade fel efteråt
+- Automatiserad driftsättning infördes sedan även för Isy Map och Isy Case
 
-
-
-## 2020 års uppdrag — Fullstackutveckling & modernisering av äldre system
-
-### Problem
-Flera äldre system behövde ny funktionalitet, förbättrad läsbarhet och bättre testbarhet. Driftsättningsautomationen behövde också förfinas för att stötta pågående utveckling.
-
-### Tillvägagångssätt
-
-#### Backend-utveckling
+## 2020 — Fullstackutveckling i äldre system
 - Implementerade nya funktioner i ASP.NET Core- och ASP.NET Web Forms-applikationer
-- Förbättrade struktur och tydlighet i befintliga kodbaser
-- Förbättrade testbarheten genom tydligare separation av ansvar
-#### Frontend-utveckling
-- Levererade ny UI-funktionalitet med TypeScript, JavaScript och KnockoutJS
-- Förbättrade underhållbarheten hos äldre frontend-komponenter
-#### Automation
-- Vidareutvecklade och förfinade driftsättningsautomationen med Octopus Deploy
-- Bidrog till TeamCity-byggpipelines
-#### Resultat
-- Levererade ny funktionalitet i flera äldre system
-- Förbättrade kodens läsbarhet och testbarhet, vilket minskade friktionen för framtida utveckling
-- Stärkte driftsättningsautomationen för pågående arbete
-
-
-## Reflektion
-Över alla tre perioderna — 2008, 2018 och 2020 — kombinerade arbetet pragmatisk utveckling med meningsfulla förbättringar av leveransflödena.
-Den långvariga relationen med Norconsult Astando speglar ett mönster av förtroende byggt över tid: lösa verkliga problem, förbättra de system som betyder något, och göra livet lättare för de team som underhåller dem.
+- Förbättrade struktur och testbarhet i den befintliga koden
+- Byggde ny UI-funktionalitet i TypeScript, JavaScript och KnockoutJS
+- Byggde vidare på driftsättningsautomationen i Octopus Deploy och TeamCity

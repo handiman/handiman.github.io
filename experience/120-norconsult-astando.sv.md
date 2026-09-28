@@ -9,12 +9,12 @@ roles:
 #location: Stockholm, Sweden
 start_date: 2018-04-18
 end_date: 2018-11-30
-description: Automatiserade driftsättningen för Norconsult Astandos IsyRoad-projekt, vilket kraftigt minskade driftsättningstid och fel.
+description: Automatiserade driftsättningen för Norconsult Astandos IsyRoad-projekt, vilket minskade driftsättningstiden från cirka 45 till cirka 5 minuter per instans.
 key_highlight: 'Minskade driftsättningstiden från cirka 45 minuter till cirka 5 minuter per applikationsinstans'
 highlights:
  - Automatiserade driftsättningen för IsyRoad-projektet med Octopus Deploy.
  - Minskade driftsättningstiden från cirka 45 minuter till cirka 5 minuter per applikationsinstans.
- - Minskade driftsättningsrelaterade fel med nästan 100 %.
+ - Eliminerade i stort sett alla driftsättningsrelaterade fel.
 skills: 
  - Octopus Deploy
  - TeamCity

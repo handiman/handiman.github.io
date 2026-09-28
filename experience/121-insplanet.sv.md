@@ -28,24 +28,15 @@ highlights:
 ---
 <!--more-->
 ## Kontext
-Insplanet tog in mig som senior utvecklare under en övergångsperiod. Deras arkitekt och lead developer hade nyligen slutat, och de behövde någon som kunde stabilisera situationen, bevara kritisk kunskap och hålla utvecklingen igång. Mitt arbete fokuserade på dokumentation, driftsäkerhet och att förenkla teamets bygg- och leveransprocesser.
+Insplanet tog in mig under en övergångsperiod. Deras arkitekt och lead developer hade nyligen slutat, och de behövde någon som höll utvecklingen igång och såg till att kunskapen inte försvann med dem. Mitt arbete handlade om dokumentation, säkrare driftsättningar och att förenkla bygg- och leveransprocessen.
 
 ## Arbete
-### Arkitektur & kunskapsbevarande
-- Fångade och organiserade arkitekturell kunskap för att förhindra förlust under övergången
-- Uppdaterade och förtydligade befintlig dokumentation för att göra systemet lättare att förstå och underhålla
-### Bygg- & driftsättningsförbättringar
-- Implementerade **driftsättning utan driftstopp** för att minska operativ friktion
-- Förenklade CI-pipelinen med **Azure DevOps** byggpipelines
-- Effektiviserade driftsättningsflödena med **Octopus Deploy**
+### Arkitektur & kunskap
+- Dokumenterade arkitekturen innan kunskapen försvann
+- Uppdaterade och förtydligade den befintliga dokumentationen
+### Bygg & driftsättning
+- Införde **driftsättning utan driftstopp**
+- Förenklade CI-pipelinen med byggpipelines i **Azure DevOps**
+- Arbetade med driftsättningsuppsättningen i **Octopus Deploy**
 ### Utveckling
-- Bidrog till pågående utveckling över en blandad teknikstack: **ASP.NET MVC**, **ASP.NET Web API**, **.NET Core**, **C#**, **jQuery**, **React** och **TypeScript**
-
-## Resultat
-- Säkerställde kontinuitet efter att nyckelpersoner slutat
-- Minskade driftsättningsrisk genom driftsättningar utan driftstopp
-- Gjorde bygg- och driftsättningsprocessen snabbare, tydligare och lättare att underhålla
-- Lämnade teamet med bättre dokumentation och en mer förutsägbar leveranspipeline
-
-## Reflektion
-Det här uppdraget handlade mindre om att bygga nya funktioner och mer om att stabilisera ett team i övergång. Det var en chans att tillämpa senior teknisk bedömning, minska operativ komplexitet och lämna kunden med en tydligare, mer underhållbar uppsättning än den jag klev in i.
+- Löpande utveckling i en blandad stack: **ASP.NET MVC**, **ASP.NET Web API**, **.NET Core**, **C#**, **jQuery**, **React** och **TypeScript**

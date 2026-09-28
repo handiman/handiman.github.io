@@ -34,25 +34,20 @@ highlights:
 ---
 <!--more-->
 ## Context
-[Svea Ekonomi](https://www.svea.com) was my first assignment as a freelancer. I joined the team responsible for **Svea Checkout**, a payment solution being rolled out across Sweden, Norway, and Finland. The work combined backend development with a strong focus on engineering practices, particularly around testing and documentation. I also took on a mentoring role, helping the team strengthen its approach to TDD and executable specifications.
+[Svea Ekonomi](https://www.svea.com) was my first assignment as a freelancer. I joined the team building **Svea Checkout**, a payment solution rolled out in Sweden, Norway and Finland. Besides backend development I coached the team in TDD and executable specifications.
 
 ## Work
-### Backend Development
+### Backend development
 - Built and extended APIs using **C#** and **ASP.NET Web API**
-- Applied **CQRS** patterns to separate read and write concerns
+- Applied **CQRS** to separate reads from writes
 - Worked with **Entity Framework** for data access
 - Contributed to deployment workflows using **Octopus Deploy**
-### Engineering Practices
-- Introduced and coached **test‑driven development** to improve code quality and confidence
-- Rewrote existing tests as **executable specifications** to make intent clearer and behavior easier to understand
-- Improved API documentation by generating most of it automatically, reducing manual effort and inconsistencies
-- Helped strengthen the team’s **continuous integration** routines
+### Engineering practices
+- Introduced and coached **test-driven development**
+- Rewrote existing tests as **executable specifications** so they described behaviour
+- Automated most of the API documentation, which had been written by hand
+- Worked on the team's **continuous integration** setup
 
-## Outcome
-- Contributed to the rollout of Svea Checkout across multiple Nordic markets
-- Improved the clarity and maintainability of the test suite through executable specifications
-- Reduced documentation drift by automating large parts of the API documentation
-- Supported the team in adopting more consistent and sustainable engineering practices
-
-## Reflection
-This assignment marked the beginning of my freelance career and set the tone for how I like to work: combining hands‑on engineering with a focus on clarity, testing, and sustainable development practices. It was a chance to contribute to a real‑world payment product while helping a team level up its approach to quality.
+## Results
+- Svea Checkout rolled out in Sweden, Norway and Finland
+- API documentation generated from the code instead of drifting away from it

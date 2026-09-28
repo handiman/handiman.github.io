@@ -3,7 +3,7 @@ title: Delivery Automation
 slug: automated-delivery
 sitemap: true
 ---
-Deployments should be boring. At Norconsult Astando I took them from about 45 minutes to about 5; at Plejmo, from an hour to minutes.
+Deployments should be boring. At Norconsult Astando I took them from about 45 minutes to about 5; at Plejmo, from an hour to under two.
 
 **GitHub Actions**, **Azure Pipelines**, **Octopus Deploy** or **TeamCity**, whatever the team already has.
 <!--more-->It also brings a few practical advantages:
@@ -32,7 +32,7 @@ The success of the pilot project lead to setting up automated deploy for their p
 stole a lot of time from the small development team ‐ time that should be used to develop the product. 
 Using **Octopus Deploy** we were able to: 
 
-* Reduce deployment time from ~1 hour to ~10 minutes.
+* Reduce deployment time from ~1 hour to under 2 minutes.
 * Automate database deployment.
 * Virtually eliminate deployment related errors.
 
