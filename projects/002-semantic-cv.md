@@ -22,6 +22,9 @@ skills:
   - Webhooks
   - Rest APIs
   - Azure Service Bus
+  - C#
+  - .NET
+  - Azure Functions (containerized)
 competencies: 
   - name: Architecture
     weight: 1
