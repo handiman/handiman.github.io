@@ -22,11 +22,11 @@ end_date: present
 #      - data serialization
 #      - build pipeline automation
 skills:
-- Azure API Management
-- GitHub Actions
 - C#
 - .NET
 - ASP.NET
+- GitHub Actions
+- Azure API Management
 - Cloudflare Workers
 - Cloudflare D1
 - Cloudflare R2

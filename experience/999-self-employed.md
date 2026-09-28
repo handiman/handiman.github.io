@@ -15,11 +15,11 @@ organization:
 start_date: 2017-07-06
 end_date: present
 skills:
-- Azure API Management
-- GitHub Actions
 - C#
 - .NET
 - ASP.NET
+- GitHub Actions
+- Azure API Management
 - Cloudflare Workers
 - Cloudflare D1
 - Cloudflare R2
