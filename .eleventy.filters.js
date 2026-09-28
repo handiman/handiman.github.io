@@ -21,6 +21,33 @@ export default (eleventyConfig) => {
   );
   eleventyConfig.addFilter("normalizeSkills", normalizeSkills);
   eleventyConfig.addFilter("jsonify", (variable) => JSON.stringify(variable));
+  // Rendered HTML → readable plain text (for the AI ingestion file): drops <style>/<script>,
+  // keeps list items and paragraphs on their own lines.
+  eleventyConfig.addFilter("plainText", (html = "", headingOffset = 1) =>
+    String(html)
+      .replace(/<(style|script)[\s\S]*?<\/\1>/gi, "")
+      // Headings become Markdown; headingOffset pushes them below the section they are placed in.
+      .replace(/<h([1-5])[^>]*>/gi, (_, level) => `\n${"#".repeat(Number(level) + headingOffset)} `)
+      // Absolute links keep their target.
+      .replace(/<a[^>]*href="(https?:[^"]+)"[^>]*>([\s\S]*?)<\/a>/gi, (_, href, text) => `${text} (${href})`)
+      .replace(/<li[^>]*>/gi, "\n- ")
+      .replace(/<\/(p|h[1-6]|li|ul|ol|div|blockquote)>|<br\s*\/?>/gi, "\n")
+      .replace(/<[^>]+>/g, "")
+      .replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+      .split("\n").map((line) => line.replace(/\s+/g, " ").trim()).join("\n")
+      .replace(/\n{3,}/g, "\n\n")
+      .replace(/\n\n- /g, "\n- ")
+      .trim(),
+  );
+  // Distinct values of a front matter list (e.g. "skills", "roles") across items, sorted.
+  eleventyConfig.addFilter("collectValues", (items = [], key) =>
+    [...new Map(items.flatMap((item) => [].concat(item.data?.[key] ?? []))
+      .map((value) => String(value).trim()).filter(Boolean)
+      .map((value) => [value.toLowerCase(), value])).values()]
+      .sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" })),
+  );
+  // Collapse all whitespace (including newlines) to single spaces.
+  eleventyConfig.addFilter("oneLine", (text = "") => String(text).replace(/\s+/g, " ").trim());
   eleventyConfig.addFilter("markdownify", (variable) =>
     md.render(variable ?? ""),
   );
