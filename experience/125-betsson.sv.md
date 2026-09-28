@@ -8,7 +8,7 @@ highlights:
 - Optimering av Kafka-meddelandehantering, vilket resulterade i en nästan 1000-procentig ökning av genomströmningen för Tournaments-applikationen
 - Proof of concepts för nya system och funktioner
 - Nära samarbete med Enterprise Architect och Engineering Manager för att säkerställa arkitektonisk och regulatorisk efterlevnad
-- Genomförande och bedömning av tekniska intervjuer för att stödja rekrytering och teamets tillväxt
+- Mentorskap för juniora utvecklare genom kunskapsdelning och parprogrammering, samt tekniska intervjuer
 #name: Betsson Group
 #employer: self-employed
 logo: /assets/img/logo-betsson-group.svg
@@ -106,6 +106,7 @@ Exempel på projekt: Tournaments, Loyalty Points, Levels & Achievements.
 - Optimerade Kafka-meddelandehanteringen i Tournaments-applikationen
 - Designade och förvaltade REST-API:er och äldre WCF-integrationer
 ### Team
+- Mentor för juniora utvecklare genom kunskapsdelningstillfällen och parprogrammering
 - Deltog i tekniska intervjuer och kandidatbedömningar
 - Gav arkitektur- och implementationsstöd till teammedlemmar
 

@@ -8,7 +8,7 @@ highlights:
 - Kafka message processing optimization, resulting in a nearly 1000% increase in throughput for the Tournaments application
 - Proofs of concept for new systems and features
 - Close collaboration with Enterprise Architect and Engineering Manager to ensure architectural and regulatory compliance
-- Conducting and assessing technical interviews to support recruitment and team growth
+- Mentored junior developers through knowledge-sharing sessions and pair programming, and took part in technical interviews
 #name: Betsson Group
 #employer: self-employed
 logo: /assets/img/logo-betsson-group.svg
@@ -106,6 +106,7 @@ Examples of projects: Tournaments, Loyalty Points, Levels & Achievements.
 - Optimized the Kafka message processing in the Tournaments application
 - Designed and maintained REST APIs and legacy WCF integrations
 ### Team
+- Mentored junior developers through knowledge-sharing sessions and pair programming
 - Took part in technical interviews and candidate assessments
 - Gave architectural and implementation guidance to team members
 
