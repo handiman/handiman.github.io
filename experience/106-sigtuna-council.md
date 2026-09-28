@@ -30,25 +30,21 @@ highlights:
 ---
 <!--more-->
 ## Context
-While at QBranch, I served as the sole developer on an identity management initiative for Sigtuna Council. The project was built on **Microsoft Identity Integration Server (MIIS)** — at the time a brand‑new product, largely unknown in Sweden. This implementation became one of the first MIIS deployments in the country and was later used by Microsoft as a **reference case**, which meant I was briefly part of a very small group of people in Sweden with real hands‑on MIIS experience.
+While at Qbranch I was the sole developer on an identity management project for Sigtuna Council, built on **Microsoft Identity Integration Server (MIIS)**. MIIS was brand new and hardly known in Sweden at the time. It became one of the first MIIS deployments in the country and was later used by Microsoft as a **reference case**.
+
+It was also my first real Scrum project. The project manager and I held our daily stand-ups in the car on the way to the client. Daily sit-downs, technically.
 
 ## Work
-### Management Agents
-- Implemented MIIS management agents for the council’s HR system, Novell eDirectory, and Active Directory
-- Designed and built attribute flows, join rules, and provisioning logic across multiple directory services
-### Provisioning & Automation
+### Management agents
+- Implemented MIIS management agents for the council's HR system, Novell eDirectory and Active Directory
+- Built attribute flows, join rules and provisioning logic across the directory services
+### Provisioning & automation
 - Automated creation of GroupWise accounts using the GroupWise Administrative Objects API
 - Automated creation of Novell server home directories via the Novell C API
-- Ensured consistent identity lifecycle management across heterogeneous systems
-### Integration & Messaging
-- Used C#, SQL Server, and MSMQ to support synchronization workflows and operational reliability
-- Built custom extensions to handle edge cases and domain‑specific rules
-## Outcome
-- Delivered one of Sweden’s first MIIS‑based identity management solutions
-- Provided Microsoft with a real‑world reference case for MIIS
-- Unified identity provisioning across HR, eDirectory, Active Directory, and GroupWise
-- Reduced manual account creation and improved consistency across systems
-## Reflection
-This project was also my first real exposure to Scrum. The project manager and I held our “daily stand‑ups” in the car while driving to the client — daily sit‑downs, technically — but the cadence and transparency made a difference. Scrum helped us stay aligned and deliver on time despite the complexity of integrating multiple directory services and legacy systems.
+### Integration
+- C#, SQL Server and MSMQ for the synchronisation workflows
+- Custom rules extensions for edge cases and domain-specific rules
 
-Working as the sole developer on one of Sweden’s first MIIS implementations taught me how to navigate heterogeneous environments, design robust synchronization logic, and automate identity provisioning across systems that were never designed to talk to each other. It remains one of the more technically unique projects from my early consulting years.
+## Results
+- One of Sweden's first MIIS deployments, used by Microsoft as a reference case
+- Accounts created automatically across HR, eDirectory, Active Directory and GroupWise instead of by hand

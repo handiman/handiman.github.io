@@ -24,36 +24,23 @@ skills:
  - XSLT
 description: Led development and process improvement at Wasa Kredit, reducing technical debt and introducing a more iterative, example-driven way of working.
 highlights: 
- - Reduced complexity and slowed system decay through refactoring and established architecture patterns.
+ - Refactored legacy code, mainly with the Strategy pattern, and wrote rewrite proposals for components too coupled to refactor.
  - Guided the team toward an iterative way of working, bringing product owners, analysts, testers, and developers together throughout the development cycle.
  - Introduced living documentation through executable specifications.
 ---
 <!--more-->
 ## Context
-I joined Wasa Kredit (now [LF Finans](https://www.lffinans.se/)) as **Lead Developer**, working with a team responsible for several internal financial systems. The environment had accumulated years of technical debt, duplicated logic, and inconsistent architectural patterns. My role combined hands‑on development with guiding the team toward more sustainable ways of working.
+I joined Wasa Kredit (now [LF Finans](https://www.lffinans.se/)) as **Lead Developer** for a team responsible for several internal financial systems. They had years of technical debt, duplicated logic and inconsistent patterns. My role was hands-on development plus helping the team change how it worked.
 
 ## Work
-### Reducing Complexity & System Decay
-- Refactored legacy components to reduce unnecessary complexity and slow ongoing system decay
-- Applied architectural patterns — primarily the **Strategy pattern** — to bring structure and consistency to previously divergent code paths
-- Analyzed older, tightly coupled components that were impractical to refactor and produced clear proposals for how they could be rewritten in a more maintainable form
-### Guiding Iterative Development
-- Helped shift the team toward a more iterative and collaborative way of working
-- Facilitated sessions where developers, testers, and business stakeholders sat together to discuss requirements and write **Gherkin** examples before implementation
-- Strengthened shared understanding by grounding discussions in concrete examples rather than abstract requirements
-### Living Documentation & Executable Specifications
-- Introduced the concept of **living documentation** using **SpecFlow**
-- Translated business rules into executable specifications that served as both tests and documentation
-- Helped the team understand how BDD/TDD practices could reduce ambiguity and improve long‑term maintainability
-### Application Development
-- Worked across a broad technical stack including **C#**, **WinForms**, **ASP.NET MVC4**, **WCF**, **XML**, and **XSLT**
-- Contributed to both backend services and user‑facing applications
-- Used **Team Foundation Server** and **continuous integration** to maintain build quality and support iterative delivery
-## Outcome
-- Reduced technical debt and improved the structure of key systems through targeted refactoring
-- Helped the team adopt a more collaborative, example‑driven approach to requirements and development
-- Established executable specifications as a practical tool for clarifying business rules and improving test coverage
-- Provided architectural guidance for rewriting legacy components that could not be safely refactored
-
-## Reflection
-This role blended technical leadership with hands‑on engineering. It was a chance to bring order to a complex environment, support healthier development practices, and introduce tools that made requirements and system behavior easier to understand. It also marked a shift in my career toward roles where architecture, process, and code quality intersect.
+### Legacy code
+- Refactored legacy components, mainly using the **Strategy pattern** to bring divergent code paths together
+- Analysed the tightly coupled components that were impractical to refactor and wrote proposals for how to rewrite them
+### Iterative development
+- Helped the team move to a more iterative way of working
+- Ran sessions where developers, testers and business people wrote **Gherkin** examples together before implementation
+### Living documentation
+- Introduced living documentation with **SpecFlow**: business rules as executable specifications that served as both tests and documentation
+### Development
+- **C#**, **WinForms**, **ASP.NET MVC4**, **WCF**, **XML** and **XSLT**
+- **Team Foundation Server** and **continuous integration**

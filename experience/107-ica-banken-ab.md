@@ -26,27 +26,17 @@ highlights:
 ---
 <!--more-->
 ## Context
-After the Sigtuna Council project, I was brought in by ICA Banken to troubleshoot a long‑running performance issue in one of their SQL Server processes. A stored procedure that previously completed in minutes had suddenly begun running for nearly a full day before failing silently. Their senior developers had spent weeks investigating the database logic without finding the cause.
+After Sigtuna, ICA Banken brought me in to look at a SQL Server stored procedure that used to finish in minutes but had started running for nearly a full day before failing silently. Their senior developers had spent weeks on the database logic without finding the cause.
 
 ## Work
-### Debugging & Optimization
-- Analyzed a complex stored procedure used for data import and maintenance
-- Investigated not only the SQL logic but also the external tools and processes the procedure depended on
-- Identified that the root cause was not in the database at all, but in a change to an external component that caused the process to pause indefinitely
-- Resolved the issue within hours and helped stabilize the surrounding workflow
-### Database Quality Analysis
-- Performed a review of database design and operational practices
-- Identified areas where security and maintainability could be improved
-- Provided recommendations that strengthened the overall environment
-### Inventory & Automation
-- Developed a VBScript‑based SQL Server inventory tool using WMI
-- Helped ICA Banken gain better visibility into their server landscape and configuration
+### Debugging
+- Looked at the whole workflow around the stored procedure, not just the SQL
+- Found that the cause wasn't in the database at all, but in a change to an external component that made the process pause indefinitely
+- Fixed it within hours
+### Database review
+- Reviewed database design and operational practices, with recommendations on security and maintainability
+### Tooling
+- Built a VBScript-based SQL Server inventory tool using WMI
 
-## Outcome
-- Resolved a high‑visibility production issue that had blocked the team for weeks
-- Improved database security and operational hygiene
-- Delivered tooling that simplified server inventory and administration
-- Left a strong impression on both ICA Banken and QBranch leadership
-
-## Reflection
-This assignment became one of those classic consulting moments where the real issue turned out to be outside the code everyone had been scrutinizing. By stepping back and looking at the entire workflow — not just the SQL — the root cause became clear. It reinforced an important lesson early in my career: sometimes the fastest path to a solution is to question the assumptions everyone else has already accepted.
+## Results
+- A problem that had blocked the team for weeks was solved within hours

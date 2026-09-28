@@ -37,21 +37,15 @@ highlights:
 ---
 <!--more-->
 ## Kontext
-Under min tid på IconMedialab (och senare via eWork) arbetade jag med Compaq på flera webbaserade system för Skandinavien och EMEA-regionen. När Hewlett-Packard förvärvade Compaq fortsatte arbetet under HP-varumärket — vilket innebar att jag bidrog till både Compaq- och HP-lösningar under den här perioden.
-Teknikstacken spände över klassisk ASP, VBScript, tidig .NET, SQL Server, XML/XSLT och EPiServer, vilket speglade webbutvecklingens övergångsera vid millennieskiftet.
+Via IconMedialab, och senare eWork, arbetade jag med Compaq på webbsystem för Skandinavien och EMEA. När HP köpte Compaq fortsatte arbetet under HP:s varumärke. Stacken var klassisk ASP, VBScript, tidig .NET, SQL Server, XML/XSLT och EPiServer.
+
 ## Arbete
 ### Eventadministration (EMEA)
-- Kravanalys, use case-design och utveckling av ett webbaserat administrationsgränssnitt för att hantera information och anmälningar till kundevenemang inom EMEA
-- Implementerade funktionalitet i klassisk ASP, VBScript och SQL Server
+- Kravanalys, användningsfall och utveckling av ett administrationsgränssnitt för kundevent och anmälningar i hela EMEA
+- Klassisk ASP, VBScript och SQL Server
 ### Skandinavisk produktdatabas
-- Kravanalys, design och utveckling av ett webbaserat administrationsgränssnitt för den skandinaviska produktkatalogen
-- Byggde datadrivna funktioner med ASP, T-SQL och XML/XSLT
-### Intranät & webbnärvaro
-- Utvecklade mallar och komponenter för det EPiServer-baserade intranätet
-- Bidrog till underhåll och vidareutveckling av [www.hp.se](https:://www.hp.se), inklusive innehållsuppdateringar, layoutjusteringar och mindre funktionella förbättringar
-## Resultat
-- Levererade flera interna och externa webblösningar som användes inom Compaqs och senare HP:s skandinaviska och EMEA-verksamhet
-- Hjälpte till att modernisera delar av HP Sveriges webbnärvaro under en period av snabb teknisk förändring
-- Byggde tidig erfarenhet av kravarbete, systemdesign och fullstack-webbutveckling inom klassisk ASP och tidig .NET
-## Reflektion
-Det här projektet representerar en formativ period i min karriär — att arbeta över två stora globala varumärken under en tid av föränderlig teknik och utvecklande webbstandarder. Det lärde mig hur man samarbetar med stora organisationer, omsätter krav till fungerande system och levererar praktiska lösningar i en era innan moderna ramverk och verktyg.
+- Kravanalys, design och utveckling av ett administrationsgränssnitt för den skandinaviska produktkatalogen
+- ASP, T-SQL och XML/XSLT
+### Intranät & webb
+- Mallar och komponenter för det EPiServer-baserade intranätet
+- Förvaltning och vidareutveckling av [www.hp.se](https://www.hp.se)
