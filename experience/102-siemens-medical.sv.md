@@ -29,19 +29,10 @@ highlights:
 ---
 <!--more-->
 ## Kontext
-Under min tid på IconMedialab arbetade jag med Siemens Medical på deras globala intranätplattform, EMPower. Systemet byggdes med klassisk ASP, COM-komponenter och en blandning av XML/XSLT för innehållsrendering — typiskt för stora företagsintranät vid den tiden.
+Under min tid på IconMedialab arbetade jag med Siemens Medicals globala intranät, EMPower, byggt på klassisk ASP, COM-komponenter och XML/XSLT.
 
 ## Arbete
-- Stöttade utveckling och underhåll av EMPower-intranätet
-- Utförde kvalitetssäkring, testning och verifiering av nya funktioner och uppdateringar
-- Hjälpte kollegor med felsökning, integrationsfrågor och innehållsrelaterade arbetsflöden
+- Utveckling och förvaltning av intranätet EMPower
+- QA, testning och verifiering av nya funktioner och uppdateringar
+- Hjälpte kollegor med felsökning och integrationsproblem
 - Arbetade med klassisk ASP, VB6/COM-komponenter, JavaScript och SQL Server
-- Bidrog till mindre förbättringar och rättningar i intranätets kodbas
-
-## Resultat
-- Hjälpte till att underhålla ett stort, verksamhetskritiskt intranät som användes inom hela Siemens Medical
-- Förbättrade stabilitet och kvalitet genom strukturerad kvalitetssäkring och support
-- Fick erfarenhet av att arbeta i en stor, distribuerad företagsmiljö med flera team och teknologier
-
-## Reflektion
-Det här projektet var en del av min tidiga professionella utveckling — en chans att arbeta inuti ett stort företagsintranät med verkliga användare, verkliga deadlines och en blandning av äldre och moderniserande teknik. Det stärkte min förståelse för teamarbetsflöden, kvalitetssäkringspraxis och verkligheten i att underhålla långlivade företagssystem.

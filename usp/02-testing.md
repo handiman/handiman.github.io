@@ -3,9 +3,9 @@ title: Tests That Make Sense
 slug: meaningful-tests
 sitemap: true
 ---
-I’ve spent years working with TDD, BDD, and Specification by Example — not as buzzwords, but as everyday practice.
+TDD, BDD and Specification by Example as everyday practice.
 
-I help teams write tests that actually say something: tests that read like documentation, fail in meaningful ways, and describe behaviour instead of just asserting it.
+Tests that read like documentation and, when they fail, tell you what actually broke.
 <!--more-->
 If your test suite is slow, brittle, unreadable, or full of mysterious red failures, I can help you turn it into something you trust — or even reshape it into executable specifications that guide development instead of dragging behind it.
 

@@ -117,8 +117,8 @@ export default class SiteData {
         };
       })(),
       services: (data.collections.all ?? []).find((item) => item.url === "/")?.data.cards?.map((card) => ({
-        title: card.front,
-        text: card.back?.replace(/\s+/g, " ").trim(),
+        title: card.title ?? card.front,
+        text: (card.text ?? card.back)?.replace(/\s+/g, " ").trim(),
       })) ?? [],
     };
 

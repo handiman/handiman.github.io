@@ -14,14 +14,8 @@ description: PC-tekniker med ansvar för Lidingö Stads kommunala IT-miljö, ink
 ---
 <!--more-->
 ## Om rollen
-Jag arbetade som PC-tekniker för Lidingö Stad och stödde kommunens IT-miljö under slutet av 90-talet.
+Jag arbetade som PC-tekniker för Lidingö stad i slutet av 90-talet.
 
-## Vad jag arbetade med
-### PC-installation och konfigurering
-Jag konfigurerade och distribuerade datorer i ett Novell-nätverk som körde på en Token Ring-topologi.
-
-### Support för hjälpdesk
-Jag hanterade dagliga supportärenden för kommunalt personal, inklusive både hårdvaru- och mjukvaruproblem.
-
-## Reflektion
-En praktisk tidig roll som gav mig hands-on erfarenhet av nätverk, operativsystem och användarstöd.
+## Vad jag gjorde
+- Konfigurerade och installerade datorer i ett **Novell-nätverk** med **Token Ring**-topologi
+- Helpdesksupport för kommunens personal, både hårdvara och mjukvara

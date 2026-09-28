@@ -6,7 +6,7 @@ key_highlight: 'Optimering av Kafka-meddelandehantering, vilket resulterade i en
 highlights: 
 - Design, utveckling och underhåll av händelsedrivna (event-sourced), gamification-inriktade applikationer med Kafka-meddelandehantering i realtid, RESTful API:er och Blazor-baserade back office-verktyg
 - Optimering av Kafka-meddelandehantering, vilket resulterade i en nästan 1000-procentig ökning av genomströmningen för Tournaments-applikationen
-- Proof of concepts för nya system och funktioner för att utvärdera genomförbarhet och driva innovation
+- Proof of concepts för nya system och funktioner
 - Nära samarbete med Enterprise Architect och Engineering Manager för att säkerställa arkitektonisk och regulatorisk efterlevnad
 - Genomförande och bedömning av tekniska intervjuer för att stödja rekrytering och teamets tillväxt
 #name: Betsson Group
@@ -85,49 +85,32 @@ competencies:
 ---
 <!--more-->
 ## Kontext
-Från 2021 till 2025 arbetade jag som Senior Software Engineer inom Betsson Groups värdeflöde Player Rewards & Gamification.
-Teamet ansvarade för att bygga och underhålla händelsedrivna (event-sourced), gamification-inriktade system som stöttar storskaligt, realtidsbaserat kundengagemang över flera varumärken och marknader.
-Miljön kombinerade höga krav på genomströmning, strikta regulatoriska begränsningar och en komplex distribuerad arkitektur — en kombination som krävde tydlighet i design och disciplinerad utveckling.
+Från 2021 till 2025 arbetade jag som Senior Software Engineer i Betsson Groups värdeflöde Player Rewards & Gamification. Teamet byggde och förvaltade event-sourcade gamification-system som används i realtid över många varumärken och marknader, under hög belastning och strikt reglering.
 
-Exempel på projekt inkluderar Tournaments, Loyalty Points, Levels & Achievements.
+Exempel på projekt: Tournaments, Loyalty Points, Levels & Achievements.
 
-## Problem
-Kärnsystemen behövde bearbeta stora volymer realtidshändelser, upprätthålla konsekvent tillstånd över distribuerade tjänster och exponera pålitliga API:er för både interna och externa konsumenter. Prestandaflaskhalsar och arkitekturell glidning var återkommande utmaningar.
-Organisationen behövde också ett sätt att snabbt utvärdera nya idéer utan att störa pågående utveckling.
-
-## Tillvägagångssätt
-Mitt arbete kretsade kring att förbättra arkitekturell tydlighet, stärka automation och öka systemets genomströmning. Viktiga områden inkluderade:
-
+## Arbete
 ### Arkitektur
-- Tillämpade CQRS, domändriven design, Event Modeling och Event Sourcing för att förtydliga domängränser och förbättra systemets motståndskraft
-- Introducerade [.NET Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/) för att förenkla utveckling och testning av distribuerade applikationer
-- Byggde proof of concepts för att implementera actor-mönstret med Microsoft Orleans
-- Samarbetade nära med Enterprise Architect och Engineering Manager för att säkerställa samstämmighet med regulatoriska och organisatoriska krav
-
-### Backend-utveckling
-- Byggde och underhöll tjänster med C#, .NET 5–9 och ASP.NET Core
-- Utvecklade Blazor-baserade back office-verktyg för intern verksamhet
-- Designade och optimerade datamodeller för SQL Server och PostgreSQL
-
+- Använde CQRS, domändriven design, Event Modeling och Event Sourcing
+- Införde [.NET Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/) för att förenkla utveckling och testning av de distribuerade applikationerna
+- Byggde proof of concepts för actor-mönstret med Microsoft Orleans
+- Arbetade nära Enterprise Architect och Engineering Manager med arkitektoniska och regulatoriska krav
+### Backendutveckling
+- Byggde och förvaltade tjänster med C#, .NET 5–9 och ASP.NET Core
+- Byggde Blazor-baserade back office-verktyg
+- Designade PostgreSQL-datamodellen för Levels-applikationen
 ### Automation
-- Underhöll och förbättrade befintliga CI/CD-pipelines byggda på GitHub Actions och Octopus Deploy
-- Containeriserade tjänster med Docker för att förbättra konsekvens och driftsättningshastighet
-
+- Förvaltade och förbättrade CI/CD-pipelines i GitHub Actions och Octopus Deploy
+- Containeriserade Levels-applikationen med Docker
 ### Systemintegration
-- Förbättrade Kafka-baserade händelsebearbetningspipelines
-- Designade och underhöll REST-API:er och äldre WCF-integrationer
-
-### Team & samarbete
-- Deltog i tekniska intervjuer och kandidatbedömningar för att stötta teamets tillväxt
-- Gav arkitekturell och implementationsmässig vägledning till teammedlemmar
+- Optimerade Kafka-meddelandehanteringen i Tournaments-applikationen
+- Designade och förvaltade REST-API:er och äldre WCF-integrationer
+### Team
+- Deltog i tekniska intervjuer och kandidatbedömningar
+- Gav arkitektur- och implementationsstöd till teammedlemmar
 
 ## Resultat
-- Ökade Kafka-meddelandegenomströmningen med nästan 1000 % för en av kärnapplikationerna, vilket avsevärt förbättrade systemets responsivitet och driftstabilitet
-- Levererade flera proof of concepts för att utforska nya arkitekturella tillvägagångssätt och validera idéer innan full investering
-- Förbättrade utvecklarupplevelsen och driftstillförlitligheten genom automation och tydligare arkitekturmönster
-- Stöttade teamets tillväxt genom att genomföra tekniska intervjuer och bidra till rekryteringsbeslut
+- Nästan 1000 % högre genomströmning av Kafka-meddelanden i Tournaments-applikationen
 
-## Reflektion
-Det här projektet förstärkte värdet av att göra system lättare att förstå och snabbare att arbeta med — inte genom stora omskrivningar, utan genom att förtydliga ansvar, förbättra observerbarhet och ta bort de små friktionspunkter som saktar ner team. Att arbeta i en storskalig, reglerad miljö skärpte min förmåga att balansera innovation med regelefterlevnad och att designa system som förblir begripliga även när de växer.
-
-Mina fyra år på Betsson — först som konsult i ungefär två år, sedan som heltidsanställd i ytterligare två — var ett medvetet undantag från min vanliga frilansbana. Jag stannade för att jag verkligen trivdes med bolaget och kollegorna, och slutade bara för att jag så småningom saknade friheten och variationen i konsultarbete.
+## Konsult, sedan anställd
+Mina fyra år på Betsson — först som konsult i ungefär två år, sedan som anställd i ytterligare två — var ett undantag från mitt vanliga frilansande. Jag stannade för att jag trivdes med både bolaget och kollegorna, och slutade bara för att jag till slut saknade friheten och variationen i konsultlivet.

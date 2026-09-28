@@ -55,49 +55,22 @@ competencies:
 ---
 <!--more-->
 ## Kontext
-[Adlibris](https://www.adlibris.com/) är Nordens största nätbokhandel med ett växande ekosystem av digitala tjänster och applikationer. År 2021 gick jag med i Storefront-teamet som fullstackutvecklare för att stötta den pågående moderniseringen av den kundvända plattformen.
+[Adlibris](https://www.adlibris.com/) är Nordens största nätbokhandel. År 2021 gick jag in i Storefront-teamet som fullstackutvecklare. Teamet var mitt i två saker:
 
-Teamet var mitt uppe i två stora initiativ:
+- att successivt flytta storefronten från jQuery till React
+- att bryta ut delar av en långlivad backendmonolit till egna tjänster
 
-- successiv migrering av storefronten från jQuery till React
-- refaktorisering av delar av en långlivad backend-monolit till tydligare, mer underhållbara tjänster
+Samtidigt byggdes en ny mobilapp, och Adlibris utvärderade alternativ för ett nytt CMS.
 
-Samtidigt utvärderade Adlibris alternativ för ett framtida innehållshanteringssystem, och flera grundläggande delar — identitet, autentiseringsflöden och innehållsmodellering — behövde uppmärksamhet för att stötta både den föränderliga storefronten och en ny mobilapp under utveckling.
-
-## Problem
-Storefront-teamet behövde modernisera både frontend och backend samtidigt som de fortsatte leverera funktioner. Viktiga luckor inkluderade:
-
-- ingen modern OpenID Connect/OAuth2-identitetstjänst för storefronten eller den nya appen
-- saknade integrationspunkter som behövdes av Account Management-teamet
-- behovet av att utforska strukturerad innehållsmodellering som en del av utvärderingen av nya CMS-alternativ
-- driftsättningsautomation som behövde stötta nya tjänster
-- en frontend delad mellan äldre jQuery och nya React-komponenter
-
-Utmaningen var att stärka grunden medan storefronten aktivt byggdes om.
-
-## Tillvägagångssätt
-### Backend-utveckling
-- Implementerade en OpenID Connect/OAuth2-identitetstjänst med IdentityServer4, avsedd för både den nya appen och storefronten
-- Byggde stödjande API:er i ASP.NET Core och .NET 5 som användes av Storefront- och Account Management-teamen
-- Bidrog till refaktoriseringsarbetet i backend-monoliten
-### Frontend-utveckling
-- Bidrog till den successiva migreringen från jQuery till React
-- Implementerade React-komponenter som användes i den föränderliga storefronten
-- Levererade mindre UI-förbättringar i JavaScript och jQuery där det behövdes
-### Systemintegration
-- Levererade en IdentityServer4-lösning förberedd för integration med både den nya appen och framtida autentiseringsflöden för storefronten
-- Byggde en proof-of-concept för strukturerad innehållsmodellering i Contentful som en del av utvärderingen av framtida CMS-alternativ
-- Säkerställde smidig kommunikation mellan backend-tjänster och Azure-hostad infrastruktur
+## Arbete
+### Backendutveckling
+- Byggde en OpenID Connect/OAuth2-identitetstjänst med IdentityServer4, för både den nya appen och storefronten
+- Byggde API:er i ASP.NET Core och .NET 5 som användes av Storefront- och Account Management-teamen
+- Arbetade med att bryta upp backendmonoliten
+### Frontendutveckling
+- Arbetade med flytten från jQuery till React och byggde React-komponenter för storefronten
+- Mindre UI-rättningar i JavaScript och jQuery
+### CMS-utvärdering
+- Byggde en proof of concept för strukturerad innehållsmodellering i Contentful, som användes i CMS-utvärderingen
 ### Automation
-- Använde Octopus Deploy för att automatisera driftsättningar för nya och befintliga tjänster
-- Förbättrade driftsättningskonsekvensen över miljöer
-
-## Resultat
-- Levererade en produktionsklar IdentityServer4-baserad autentiseringstjänst avsedd för både den nya appen och storefronten
-- Byggde stödjande API:er som användes av Storefront- och Account Management-teamen
-- Tog fram en Contentful-proof-of-concept som informerade Adlibris utvärdering av framtida CMS-plattformar
-- Bidrog till React-migreringen och backend-refaktoriseringsarbetet
-- Stärkte driftsättningsautomationen för Storefront-tjänster
-
-## Reflektion
-Det här projektet kombinerade identitetsteknik, API-design, frontend-modernisering och arkitekturell utforskning. Det förstärkte värdet av att förbättra grundläggande system samtidigt som en stor, kundvänd plattform moderniserades stegvis, och vikten av att kliva in och lösa de problem som behöver lösas, även när de faller utanför den ursprungliga planen.
+- Satte upp driftsättningar för nya tjänster i Octopus Deploy

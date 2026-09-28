@@ -23,22 +23,13 @@ highlights:
 ---
 <!--more-->
 ## Kontext
-Under min tid på QBranch arbetade jag med Taxi Stockholm på migreringen av deras intranät och publika webbplats från Spirello till EPiServer 4. Vid sidan av CMS-arbetet krävde projektet integration med Taxi Stockholms Unix-baserade bokningssystem — en äldre plattform som använde ett proprietärt protokoll, odokumenterat utanför företaget.
+Under min tid på Qbranch arbetade jag med Taxi Stockholm på att flytta deras intranät och publika webbplats från Spirello till EPiServer 4. Den nya sajten behövde också prata med deras Unix-baserade bokningssystem via ett proprietärt binärt protokoll som inte var dokumenterat utanför företaget.
 
 ## Arbete
 ### EPiServer-migrering
-- Migrerade intranätet och den externa webbplatsen från Spirello till EPiServer 4
-- Byggde om mallar, innehållsstrukturer och administrativa arbetsflöden
-- Implementerade funktioner i ASP.NET och C#, med SQL Server i botten
-### Integration med bokningssystem
-- Integrerade den EPiServer-baserade webbplatsen med Taxi Stockholms Unix-bokningssystem
-- Arbetade direkt med ett proprietärt binärprotokoll som krävde lågnivå-socketprogrammering i .NET
-- Tolkade och implementerade protokollspecifikationer som involverade bytearrayer, offsets och anpassade meddelandeformat
-- Byggde kommunikationskomponenter som översatte mellan webbapplikationen och den äldre backenden
-## Resultat
-- Levererade ett fungerande EPiServer-baserat intranät och publik webbplats
-- Etablerade en pålitlig integrationsväg mellan .NET-applikationen och Unix-bokningssystemet
-- Fick praktisk erfarenhet av lågnivånätverk, binärprotokoll och interoperabilitet med äldre system
-
-## Reflektion
-Det här projektet var en blandning av modernt CMS-arbete och djup teknisk grävning. Integrationen mot det proprietära protokollet drev mig in i lågnivånätverk, binärparsning och noggrann läsning av sparsam dokumentation — en påminnelse om att de mest intressanta utmaningarna ibland ligger långt under UI-lagret.
+- Migrerade intranätet och den publika webbplatsen från Spirello till EPiServer 4
+- Byggde om mallar, innehållsstrukturer och redaktionella flöden
+- ASP.NET, C# och SQL Server
+### Integration med bokningssystemet
+- Integrerade sajten med Unix-bokningssystemet via socketprogrammering på låg nivå i .NET
+- Implementerade protokollet utifrån knapphändiga specifikationer: byte-arrayer, offsets och egna meddelandeformat

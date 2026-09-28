@@ -28,22 +28,9 @@ highlights:
 ---
 <!--more-->
 ## Kontext
-2014 återvände jag till Qbranch. Medan jag väntade på mitt nästa kunduppdrag bidrog jag till ett pågående internt system för att hantera konsult-CV:n. Applikationen hade varit i bruk ett tag, och utvecklare som var "mellan projekt" hoppade in för att vidareutveckla och förbättra den. Teamet arbetade enligt **Scrum**, och systemet driftsattes i **Microsoft Azure**, vilket gav mig min första praktiska erfarenhet av molnbaserad driftsättning och drift.
+2014 återvände jag till Qbranch. Mellan kunduppdrag arbetade jag med ett internt system för konsult-CV:n, som utvecklare mellan uppdrag turades om att bygga vidare på. Det låg i **Microsoft Azure**, min första praktiska erfarenhet av molnet.
 
 ## Arbete
-### Applikationsutveckling
-- Lade till och förbättrade funktioner för att skapa, redigera och organisera konsult-CV:n
-- Implementerade UI-uppdateringar och interaktioner med **HTML5**, **CSS3** och **jQuery**
-- Utvecklade backend-funktionalitet i **C#** med **Entity Framework 6**
-### Utvecklingspraxis
-- Tillämpade **testdriven utveckling** för att hålla ändringar säkra och underhållbara
-- Använde **kontinuerlig integration** för att upprätthålla byggkvalitet och korta ner feedbackloopar
-- Deltog i teamets **Scrum**-process, bidrog till planering, förfining och iterativ leverans
-
-## Resultat
-- Bidrog med stegvisa förbättringar till ett internt verktyg som användes dagligen inom organisationen
-- Fick praktisk erfarenhet av att arbeta med Azure-driftsatta applikationer
-
-## Reflektion
-Det här var ett kort, praktiskt internt uppdrag; den typen av arbete som fyller luckorna mellan kunduppdrag samtidigt som det erbjuder meningsfulla bidrag.
-Det gav en balanserad blandning av frontend- och backend-utveckling och introducerade mig till Azure på ett praktiskt sätt.
+- Funktioner för att skapa, redigera och organisera konsult-CV:n
+- UI i **HTML5**, **CSS3** och **jQuery**, backend i **C#** med **Entity Framework 6**
+- **Testdriven utveckling** och **kontinuerlig integration** i ett **Scrum**-team

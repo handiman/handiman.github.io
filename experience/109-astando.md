@@ -30,30 +30,13 @@ highlights:
 ---
 <!--more-->
 ## Context
-Astando (now Norconsult Astando, following acquisition by [Norconsult](https://www.norconsultastando.se/)) is one of Sweden’s leading companies in the GIS domain and a key contributor to the Local Road Database (LV) concept — the national foundation for applications related to road networks, traffic, and road‑user information.
+Astando (now Norconsult Astando, after being acquired by [Norconsult](https://www.norconsultastando.se/)) works in the GIS domain and was a key contributor to the Local Road Database (LV) concept, the national foundation for road network and traffic applications.
 
-In 2008–2009, I joined Astando as a consultant from [Avega Group AB](https://avega.se/) to contribute to the continued development of a client/server application used by Stockholm and Gothenburg for importing, processing, and presenting traffic measurement data.
+In 2008–2009 I worked there as a consultant from [Avega Group AB](https://avega.se/) on a client/server application that Stockholm and Gothenburg used to import, process and present traffic measurement data.
 
-## Problem
-Municipal traffic departments needed a reliable way to import large volumes of traffic measurement data from various sensors and systems, normalize it, and present it in a way that supported analysis and operational decision‑making. The existing application was already in use but required ongoing development, refinement, and new capabilities.
-
-## Approach
-### Application Development
-- Contributed to the continued development of a WinForms‑based client application for visualizing and working with traffic measurement data
-- Extended backend components and Windows Services responsible for data import, transformation, and processing
-- Implemented data access using Oracle and NHibernate
-### Architecture & Engineering Practices
-- Used Spring.NET for dependency injection and modularization
-- Applied Test‑Driven Development to improve reliability and maintainability
-- Participated in early Continuous Integration workflows to ensure stable builds and predictable delivery
-### Domain Integration
-- Worked with the Local Road Database (LV) model to align traffic measurement data with the national road network
-- Ensured compatibility with municipal data formats and operational workflows
-
-## Outcome
-- Strengthened and extended a production system used by Stockholm and Gothenburg for traffic data import and presentation
-- Improved data processing reliability through automated services and structured data handling
-- Enhanced code quality and delivery consistency through TDD and CI practices
-
-## Reflection
-This engagement combined desktop application development, backend processing, and GIS‑related domain modeling. It was an early opportunity to work within an established codebase, contribute to a complex data‑driven system, and apply disciplined engineering practices — experience that later helped shape my long‑term relationship with Norconsult Astando.
+## Work
+- Extended the WinForms client used to view and work with the traffic data
+- Extended the Windows Services that imported and transformed the measurement data
+- Data access with Oracle and NHibernate, dependency injection with Spring.NET
+- Test-driven development and early continuous integration
+- Mapped the traffic data to the national road network in the LV model

@@ -3,7 +3,7 @@ title: Henrik Becker Consulting AB
 #name: Self Employed
 slug: becker-consulting
 #sitemap: true
-description: Providing Fullstack .NET and DevOps expertise on a freelance basis in the Stockholm urban area.
+description: Backend, integration and DevOps assignments as an independent consultant in Stockholm.
 comment: Assignments listed below from October 2017 onward were delivered as a contractor through Henrik Becker Consulting AB, unless noted otherwise.
 roles: 
  - Owner
@@ -33,33 +33,15 @@ skills:
 #      - build pipeline automation
 ---
 <!--more-->
-## About the Company
-I founded Henrik Becker Consulting AB in 2017 as a way to work independently and stay close to the craft. Based in Lidingö and working across the Stockholm region or fully remote, I provide full‑stack .NET and DevOps expertise on a freelance basis. Keeping the company small lets me focus on what matters: understanding systems, working directly with teams, and delivering solutions that reduce complexity rather than add to it.
+## About the company
+I started Henrik Becker Consulting AB in 2017, after almost twenty years of writing code as an employee and as a consultant through other firms. It's a one-person company in Lidingö. I work on site in the Stockholm area or remotely.
 
-I’ve been coding professionally since 1999, and the company is where that experience comes together — architecture, integration, automation, and the long‑term thinking that makes software age gracefully.
+The exception was Betsson, where I started as a consultant and stayed on as an employee for two years because I liked the place and the people. In the end I missed the freedom and variety of consulting, so I came back to it, with perfect timing: the consultant market decided to jump off a cliff. The upside is that I'm available.
 
-## What I Do
-My work centers on backend engineering and the infrastructure around it: the APIs, integrations, pipelines, and architectural decisions that shape how a system behaves over time.
+## What I do
+Mostly backend development in C# and .NET, system integration and delivery automation, and architecture when a team needs it. The details are on the [home page](/#offer). I like leaving code a bit simpler than I found it.
 
-I help clients with:
-- **Backend Development**   
-  Modern .NET and C# solutions built for clarity, maintainability, and scale.
-- **System Integration**   
-  REST, GraphQL, message queues, and cloud‑native tooling to connect services reliably.
-- **Automation & DevOps**   
-  CI/CD pipelines, scripting, and infrastructure as code for faster, safer delivery.
-- **Architecture & Technical Guidance**  
-  Structuring new projects, refactoring old ones, and helping teams make sound technical decisions.
-
-My goal is always the same: build systems that are easier to understand, easier to maintain, and easier to evolve.
-
-## Selected Clients
-Over the years I’ve worked with organizations across finance, e‑commerce, gaming, and public infrastructure. Some of the clients I’ve partnered with include:
-{% for client in clients reversed %}* [{{client.name}}]({{ client.url }})
+## Clients
+Some of the organisations I've worked with over the years:
+{% for client in collections.clients %}* {% if client.data.organization.url %}[{{ client.data.title }}]({{ client.data.organization.url }}){% else %}{{ client.data.title }}{% endif %}
 {% endfor %}
-{% assign clients = nil %}
-The work has ranged from backend development and integrations to automation pipelines and architectural support.
-
-## Approach
-I describe myself as a “simplificator” because that’s the core of what I do: take something complex and make it clearer without losing its depth. Sometimes that means rewriting a subsystem. Sometimes it means reorganizing a model. Sometimes it’s a single sentence of documentation that finally makes everything click.
-Freelancing gives me the freedom to choose projects where I can make a meaningful difference and to stay close to the work itself, where the details matter.

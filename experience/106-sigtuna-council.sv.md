@@ -30,25 +30,21 @@ highlights:
 ---
 <!--more-->
 ## Kontext
-Under min tid på QBranch var jag ensam utvecklare på ett identitetshanteringsinitiativ för Sigtuna kommun. Projektet byggdes på **Microsoft Identity Integration Server (MIIS)** — vid den tiden en helt ny produkt, i stort sett okänd i Sverige. Den här implementationen blev en av de första MIIS-driftsättningarna i landet och användes senare av Microsoft som ett **referensfall**, vilket innebar att jag kortvarigt tillhörde en mycket liten grupp människor i Sverige med verklig praktisk MIIS-erfarenhet.
+Under min tid på Qbranch var jag ensam utvecklare i ett projekt för identitetshantering åt Sigtuna kommun, byggt på **Microsoft Identity Integration Server (MIIS)**. MIIS var helt nytt och knappt känt i Sverige då. Det blev en av de första MIIS-installationerna i landet och användes senare av Microsoft som **referenscase**.
+
+Det var också mitt första riktiga Scrum-projekt. Projektledaren och jag höll våra daily stand-ups i bilen på väg till kunden. Daily sit-downs, tekniskt sett.
 
 ## Arbete
 ### Management agents
 - Implementerade MIIS management agents för kommunens HR-system, Novell eDirectory och Active Directory
-- Designade och byggde attributflöden, join-regler och provisioneringslogik över flera katalogtjänster
+- Byggde attributflöden, join-regler och provisioneringslogik mellan katalogtjänsterna
 ### Provisionering & automation
 - Automatiserade skapandet av GroupWise-konton med GroupWise Administrative Objects API
-- Automatiserade skapandet av hemkataloger på Novell-servrar via Novell C API
-- Säkerställde konsekvent hantering av identitetslivscykeln över heterogena system
-### Integration & meddelandehantering
-- Använde C#, SQL Server och MSMQ för att stötta synkroniseringsflöden och driftsäkerhet
-- Byggde anpassade tillägg för att hantera specialfall och domänspecifika regler
-## Resultat
-- Levererade en av Sveriges första MIIS-baserade identitetshanteringslösningar
-- Gav Microsoft ett verkligt referensfall för MIIS
-- Enade identitetsprovisionering över HR, eDirectory, Active Directory och GroupWise
-- Minskade manuellt kontoskapande och förbättrade konsekvensen över systemen
-## Reflektion
-Det här projektet var också min första riktiga kontakt med Scrum. Projektledaren och jag höll våra "daily stand-ups" i bilen på väg till kunden — dagliga avstämningar, tekniskt sett — men taktfastheten och öppenheten gjorde skillnad. Scrum hjälpte oss hålla oss samordnade och leverera i tid trots komplexiteten i att integrera flera katalogtjänster och äldre system.
+- Automatiserade skapandet av hemkataloger på Novell-servrar via Novells C-API
+### Integration
+- C#, SQL Server och MSMQ för synkroniseringsflödena
+- Egna rules extensions för specialfall och domänspecifika regler
 
-Att arbeta som ensam utvecklare på en av Sveriges första MIIS-implementationer lärde mig hur man navigerar heterogena miljöer, designar robust synkroniseringslogik och automatiserar identitetsprovisionering över system som aldrig var designade för att prata med varandra. Det förblir ett av de mer tekniskt unika projekten från mina tidiga konsultår.
+## Resultat
+- En av Sveriges första MIIS-installationer, använd av Microsoft som referenscase
+- Konton skapades automatiskt i HR, eDirectory, Active Directory och GroupWise i stället för för hand

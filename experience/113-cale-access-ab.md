@@ -29,28 +29,17 @@ highlights:
 ---
 <!--more-->
 ## Context
-Cale is one of the world’s leading manufacturers of parking meters. I joined the team working on **Cale Web Office 2**, specifically the **TrueUp** subsystem — a set of financial rules governing compensation between the City of Chicago and Chicago Parking Meters. The agreement between the two parties spans **80 years**, which meant the system needed to handle not only complex business rules but also future data volumes on a massive scale.
+Cale is one of the world's leading manufacturers of parking meters. I worked on **Cale Web Office 2**, in the **TrueUp** subsystem: the financial rules governing compensation between the City of Chicago and Chicago Parking Meters under an agreement that runs for **80 years**.
 
-This was my final assignment with Avega Group, and the team dynamic was exceptional. One of those rare groups that clicked both personally and professionally. We worked in a Scrum setup, and the collaboration made the complexity of the domain much easier to navigate.
+This was my last assignment with Avega Group, and one of those rare teams that clicked both personally and professionally.
 
 ## Work
-### Historical Changes in TrueUp
-- Worked on the **Historical Changes** project, enabling the system to correctly process and account for retroactive adjustments
-- Helped refine and implement business rules governing long‑term financial compensation
-- Navigated a domain model with many interdependent rules, edge cases, and time‑dependent calculations
-### Engineering Practices
-- Contributed to the team’s **test‑driven development** workflow
-- Used **SpecFlow** to express business rules as executable specifications
-- Applied **NInject** for dependency injection and improved testability
-- Worked with **Team Foundation Server** and **continuous integration** to maintain build quality
-### Application Development
-- Developed features in C# across a mix of WCF services and ASP.NET Web Forms
-- Worked with SQL Server to store and query large and evolving datasets
-
-## Outcome
-- Implemented and verified complex financial rules within the TrueUp subsystem
-- Contributed to a team that delivered reliably within a demanding and highly regulated domain
-- Supported development practices that improved code quality and maintainability
-
-## Reflection
-This project stands out for its mix of technical challenge, domain complexity, and strong team collaboration. Working on a system tied to an 80‑year financial agreement was unlike anything I’d encountered before, and it pushed me to think about long‑term data and rule evolution in new ways. It was also a genuinely enjoyable assignment thanks to a team that worked exceptionally well together.
+### Historical changes in TrueUp
+- Worked on the **Historical Changes** project, so the system could handle retroactive adjustments correctly
+- Implemented business rules for long-term financial compensation, with many interdependent and time-dependent rules
+### Engineering practices
+- **Test-driven development**, with **SpecFlow** for business rules as executable specifications
+- **NInject** for dependency injection
+- **Team Foundation Server** and **continuous integration** in a Scrum team
+### Development
+- C# across WCF services and ASP.NET Web Forms, with SQL Server

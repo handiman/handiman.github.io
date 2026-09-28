@@ -2,7 +2,7 @@
   skills: [.NET, C#, ASP.NET]
 - name: System integration
   skills: [REST, SOAP, Messaging based architecture, Event Sourcing]
-- name: Cloud-native architecture
-  skills: [Azure, serverless, containers]
+- name: Application development in Azure
+  skills: [Functions, Service Bus, API Management]
 - name: Automation and CI/CD pipelines
 - name: Clean code, SOLID principles, TDD, DDD

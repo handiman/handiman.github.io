@@ -14,14 +14,7 @@ description: Vikarierande studiecirkelledare för ett gemenskapsdrivet jazzensem
 ---
 <!--more-->
 ## Om rollen
-Jag fungerade som vikande studiecirkelledare för Sollentuna Jazz Workshop, ett gemenskapsdrivet musikprogram som erbjöd ensembleövningar och jazzundervisning.
+Jag vikarierade för en av de ordinarie studiecirkelledarna på Sollentuna Jazz Workshop, en lokal verksamhet för ensemblespel och jazzutbildning. Det hängde ihop med mina egna musikstudier vid den tiden.
 
-## Vad jag arbetade med
-### Ensembleledning
-Jag ledde repetitioner och stödde deltagarna i att utveckla sin ensemblespel, rytm och improvisationsförmåga.
-
-### Vikande ledarskap
-Jag trädde in som ersättare för en av de ordinarie ledarna under denna period och hjälpte till att hålla gruppen igång smidigt.
-
-## Reflektion
-En kort men meningsfull roll kopplad till mina musikstudier, och en chans att bidra till ett lokalt jazzgemenskap som jag var en del av då.
+## Vad jag gjorde
+- Ledde repetitioner och hjälpte deltagarna med ensemblespel, timing och improvisation

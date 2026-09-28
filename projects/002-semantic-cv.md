@@ -21,7 +21,10 @@ skills:
   - R2 object storage
   - Webhooks
   - Rest APIs
-  - Message queues
+  - Azure Service Bus
+  - C#
+  - .NET
+  - Azure Functions (containerized)
 competencies: 
   - name: Architecture
     weight: 1
@@ -44,7 +47,7 @@ competencies:
     weight: .9
     tech:
     - Rest APIs
-    - Message queues
+    - Azure Service Bus
 #highlights:
 # - Semantic-CV is a developer oriented tool for expressing your CV as JSON-LD in format. 
 # - It's made up two main parts - a CLI for simplifying editing the structured data and a where users can optionally host their CVs.    
