@@ -11,6 +11,7 @@ Keep facts that are easy to get wrong (birth date, years of experience) at the t
 ## Key facts
 - **Name:** {{ person.name }}
 - **Role:** {{ person.jobTitle }}
+- **Current status:** {{ site.currentStatus }}
 - **Born:** {{ person.birthDate }} ({{ person.birthDate | date: '%Y' }})
 - **Nationality:** {{ person.nationality }}
 - **Location:** Lidingö, Stockholm, Sweden

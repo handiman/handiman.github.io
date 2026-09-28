@@ -1,6 +1,6 @@
 ---
 title: Betsson
-comment: Joined as a consultant via Henrik Becker Consulting AB; converted to permanent employment 2023-12
+comment: Joined as a consultant via Henrik Becker Consulting AB; converted to permanent employment 2023-12; left 2025-12 and went back to freelancing
 description: Global online gaming & sportsbook enterprise. Worked in the Player Rewards & Gamification value stream across the services Tournaments, Loyalty, and Levels.
 key_highlight: 'Kafka message processing optimization, resulting in a nearly 1000% increase in throughput for the Tournaments application'
 highlights: 
