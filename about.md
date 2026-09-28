@@ -10,7 +10,7 @@ quote: 0
 ---
 ## How I work
 
-Most of my assignments have been in finance, insurance and online gaming, where the backend has to be right, not just fast. I work closely with the people who own the problem, look for the pragmatic solution, and write code that's easy to read, test and change. Tests work as executable specifications where that makes sense, and I automate the path to production early so shipping stays boring.
+I've worked in a wide range of industries, most recently finance, insurance and online gaming, where the backend has to be right, not just fast. I work closely with the people who own the problem, look for the pragmatic solution, and write code that's easy to read, test and change. Tests work as executable specifications where that makes sense, and I automate the path to production early so shipping stays boring.
 
 ## On AI
 
