@@ -7,34 +7,23 @@ I’ve worked with .NET since the first version, and C# is the language I think 
 
 Lately that means .NET 9 and 10, Aspire and Orleans.
 <!--more-->
-If you need someone who understands the platform across its entire history — the old frameworks, the new patterns, the migration paths, the pitfalls, the tooling — I can help you build, modernize, or untangle just about anything in the .NET world.
+I've followed .NET from the first Framework versions through .NET Core to .NET 10, so I know both the new patterns and the older code most teams still live with.
 
-Modern .NET isn’t just about using the latest SDK. It’s about building systems that are maintainable, observable, testable, and pleasant to work with — both today and five years from now. I help teams move toward architectures that reduce friction, increase clarity, and make it easier to deliver value without fighting the codebase.
+Two examples:
 
-Below are two examples of how I’ve applied modern .NET thinking in real projects.
+### [Betsson — Levels application][betsson]
+When we built the Levels application, I introduced **.NET Aspire** from the start for service composition, observability and local orchestration.
 
-### [Betsson — Levels Application][betsson]
-As part of building a new internal application, I focused on establishing a modern .NET architecture from the start. This included adopting **.NET Aspire** for service composition, observability, and environment orchestration, along with clear architectural boundaries and maintainable patterns.
-
-#### Benefits included:
-- A clean, modern .NET foundation aligned with current best practices
-- Built‑in diagnostics and observability through Aspire
-- Faster onboarding for both new and rotating team members thanks to predictable structure and clear service boundaries
-- Consistent local and cloud environments, reducing “works on my machine” issues
-- More realistic integration testing through Aspire’s orchestrated service environments — simpler and more maintainable than equivalent Docker Compose setups
-- A development experience where new features could be added without fighting the architecture
-
-A chance to apply modern .NET thinking in a greenfield setting and set the team up for long‑term success.
+- Integration tests ran against Aspire's orchestrated environment, which was simpler to maintain than an equivalent Docker Compose setup
+- New and rotating team members got up to speed faster thanks to a predictable structure
+- Local and cloud environments behaved the same
 
 ### [Plejmo (Film2Home)][plejmo]
-The platform originally followed a traditional n‑tier architecture, which made scaling and performance increasingly difficult. I refactored the system toward asynchronous processing using a **Service Bus** and **CQRS**, separating reads from writes and removing unnecessary coupling.
-#### Benefits included:
-- More resilient and scalable processing
+The platform had a traditional n-tier architecture that struggled under load. I moved it to asynchronous processing with **Azure Service Bus** and **CQRS**, separating reads from writes.
+
+- Better performance under load
 - Clearer separation of responsibilities
-- Faster, more predictable performance under load
-- A codebase that was easier to evolve and reason about
+- Easier to change
 
-A good example of choosing the right architecture — even when it meant significant refactoring.
-
-[plejmo]: /projects/film2home
-[betsson]: /assignments/betsson
+[plejmo]: /experience/film2home/
+[betsson]: /experience/betsson/
