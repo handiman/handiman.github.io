@@ -1,0 +1,86 @@
+---
+permalink: /assets/henrik-becker.ai
+eleventyExcludeFromCollections: true
+---
+{%- comment -%}
+Everything about Henrik in one Markdown document, for AI ingestion (the CV chat bot).
+Keep facts that are easy to get wrong (birth date, years of experience) at the top.
+{%- endcomment -%}
+# About {{ person.name }}
+
+## Key facts
+- **Name:** {{ person.name }}
+- **Role:** {{ person.jobTitle }}
+- **Born:** {{ person.birthDate }} ({{ person.birthDate | date: '%Y' }})
+- **Nationality:** {{ person.nationality }}
+- **Location:** Lidingö, Stockholm, Sweden
+- **Working professionally with software since:** 1999
+- **Company:** {{ company.name }}, founded 2017 (org. nr {{ site.orgNumber }}). Assignments since October 2017 have been delivered through it, unless noted otherwise.
+- **Website:** {{ site.production_url }}
+- **Email:** {{ person.email }}
+{% for social in same_as %}- **{{ social.network }}:** {{ social.url }}
+{% endfor %}
+## Description
+{{ person.description }}
+
+{% include 'cv-markdown' %}
+
+## About
+{%- for item in collections.all %}{% if item.url == "/about/" %}
+{{ item.data.lead }}
+
+{{ item.content | plainText }}
+{%- endif %}{% endfor %}
+
+## What I offer
+{%- for item in collections.all %}{% if item.url == "/" %}{% for card in item.data.cards %}
+- **{{ card.front }}:** {{ card.back | oneLine }}{% endfor %}{% endif %}{% endfor %}
+
+## How I work
+{%- for usp in collections.usps %}
+### {{ usp.data.title }}
+{{ usp.content | plainText: 2 }}
+
+Read more: {{ usp.url | absolute_url }}
+{% endfor %}
+
+## Skills by category
+{%- for skillCategory in categorizedSkills %}
+- **{{ skillCategory.name | strip }}** ({{ skillCategory.level }}): {{ skillCategory.skills | join: ', ' }}{% endfor %}
+
+{%- assign english_items = collections.experience | concat: collections.projects | concat: collections.earlier_career %}
+## All roles
+{{ english_items | collectValues: "roles" | join: ", " }}
+
+## All skills
+{{ english_items | collectValues: "skills" | join: ", " }}
+
+## Clients
+{%- for client in collections.clients reversed %}
+- {{ client.data.name | default: client.data.title }}{% endfor %}
+
+## {{ headings.recommendations | default: "Recommendations" }}
+{%- for recommendation in recommendations %}
+> {{ recommendation.text | oneLine }}
+>
+> — {{ recommendation.name | strip }}
+{% endfor %}
+
+## Taglines
+{%- for tagline in taglines %}
+- {{ tagline.tagline }}{% endfor %}
+- **Building the right software right:** I believe great software starts with the right conversations. While many developers focus on building software the right way — clean code, scalable architecture, elegant design — I go one step further: I make sure we're building the right software to begin with. That means diving deep into business needs, challenging assumptions, and translating complexity into clarity.
+
+## Interests
+{%- for interest in interests %}
+- {{ interest.name }}{% endfor %}
+
+## Fun facts
+{%- for fact in collections.fun_facts %}
+### {{ fact.data.title }}
+{{ fact.content | plainText }}
+{% endfor %}
+
+## Writing
+{%- for post in collections.blog %}
+- {{ post.date | date: '%Y-%m-%d' }} — [{{ post.data.title }}]({{ post.url | absolute_url }}){% if post.data.description %}: {{ post.data.description }}{% endif %}{% endfor %}
