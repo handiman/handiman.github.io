@@ -10,14 +10,14 @@ roles:
 start_date: 2019-01-07
 end_date: 2019-06-13
 skills: 
- - Asp.NET MVC
- - Asp.NET Web Api
- - .NET Core
  - C#
+ - .NET Core
  - React
- - TypeScript
  - Azure DevOps
  - Octopus Deploy
+ - Asp.NET MVC
+ - Asp.NET Web Api
+ - TypeScript
  - jQuery
  - Git
 description: Senior developer engagement stabilizing Insplanet after the departure of their architect and lead developer, focused on documentation, deployment reliability, and CI simplification.

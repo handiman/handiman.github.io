@@ -14,16 +14,16 @@ end_date: 2021-10-10
 skills: 
  - C#
  - Asp.NET Core
+ - React
+ - Identity Server (OpenID/Oauth)
+ - jQuery
  - Asp.NET MVC
  - JavaScript
- - jQuery
- - React
  - SQL Server
  - Octopus Deploy
  - Azure App Services
- - Identity Server (OpenID/Oauth)
  - Micro Services
- - Git 
+ - Git
 description: Adlibris är Nordens största nätbokhandel med ett växande ekosystem av digitala tjänster och applikationer. År 2021 gick jag med i Storefront-teamet som fullstackutvecklare för att stötta den pågående moderniseringen av den kundvända plattformen.
 highlights: 
  - OpenID/OAuth-tjänst implementerad med Identity Server 4 för den nya Adlibris-appen under utveckling.

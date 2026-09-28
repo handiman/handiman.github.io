@@ -49,6 +49,19 @@ competencies:
     weight: .3
     tech:
       - Azure DevOps
+skills: 
+ - Asp.NET Core
+ - C#
+ - React
+ - Redux
+ - TypeScript
+ - Micro Services
+ - REST API
+ - Azure
+ - Azure DevOps
+ - Azure API Management
+ - OData
+ - Git
 ---
 <!--more-->
 ## Kontext

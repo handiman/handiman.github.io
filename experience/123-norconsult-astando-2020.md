@@ -14,15 +14,15 @@ start_date: 2020-10-19
 end_date: 2021-01-15
 skills: 
  - C#
- - TypeScript
- - JavaScript
- - KnockoutJS
  - Asp.NET Core
+ - TypeScript
+ - KnockoutJS
+ - Octopus Deploy
+ - JavaScript
  - Asp.NET Web Forms
  - REST API
  - WCF
  - TeamCity
- - Octopus Deploy
  - Git
 description: Fullstack development and legacy modernization for Norconsult Astando, spanning new functionality, deployment automation, and code quality improvements.
 highlights: 

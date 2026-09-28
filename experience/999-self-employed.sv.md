@@ -21,6 +21,16 @@ end_date: present
 #      - Jekyll plugin development
 #      - data serialization
 #      - build pipeline automation
+skills:
+- Azure API Management
+- GitHub Actions
+- C#
+- .NET
+- ASP.NET
+- Cloudflare Workers
+- Cloudflare D1
+- Cloudflare R2
+- Durable Objects
 ---
 <!--more-->
 ## Om företaget
