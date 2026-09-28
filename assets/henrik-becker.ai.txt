@@ -66,11 +66,6 @@ Read more: {{ usp.url | absolute_url }}
 > — {{ recommendation.name | strip }}
 {% endfor %}
 
-## Taglines
-{%- for tagline in taglines %}
-- {{ tagline.tagline }}{% endfor %}
-- **Building the right software right:** I believe great software starts with the right conversations. While many developers focus on building software the right way — clean code, scalable architecture, elegant design — I go one step further: I make sure we're building the right software to begin with. That means diving deep into business needs, challenging assumptions, and translating complexity into clarity.
-
 ## Interests
 {%- for interest in interests %}
 - {{ interest.name }}{% endfor %}

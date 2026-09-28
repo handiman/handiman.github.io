@@ -225,26 +225,6 @@ headings:
         <date>{{ person.birthDate }}</date>
     </p>
 </template>
-<template id="taglines">
-    <h2>{{ headings.taglines }}</h2>
-    <ul>{% for tagline in taglines %}
-        <li>{{ tagline.tagline }}</li>{% endfor %}
-        <li>
-            <h3>Building the right software right</h3>
-            <p>
-                I believe great software starts with the right conversations. While many developers focus on building
-                software the right way — clean code, scalable architecture, elegant design — I go one step further: I
-                make sure we're building the right software to begin with.
-                That means diving deep into business needs, challenging assumptions, and translating complexity into
-                clarity. I bridge the gap between stakeholders and systems, turning fuzzy ideas into functional products
-                that deliver real value.
-                Whether I’m prototyping a new feature, leading a team, or refining a user flow, I bring a mindset that’s
-                equal parts strategic, technical, and creative.
-                Let’s build something that matters — and build it well.
-            </p>
-        </li>
-    </ul>
-</template>
 <template id="unique-selling-points">
     <h2>{{ headings.usps }}</h2>
     <ul>{% for usp in collections.usps %}<li>{{ usp.data.page.excerpt | strip | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</li>{% endfor %}</ul>
