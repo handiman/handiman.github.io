@@ -18,7 +18,7 @@ I use Claude Code every day, and I build with AI too: the [CV chatbot](https://w
 
 ## Off the clock
 
-I build small things to learn new stacks, including [one that is useless on purpose](https://uiaas.becker-consulting.se/). I'm a Wim Hof nerd and enjoy open water bathing, which is why [Dopp](https://dopp.becker-consulting.se) exists.
+I build small things to learn new stacks, including [one that is useless on purpose](https://uiaas.becker-consulting.se/). I'm also a Wim Hof nerd and enjoy open water bathing, which is why [Dopp](https://dopp.becker-consulting.se) exists.
 
 ## What I do
 
