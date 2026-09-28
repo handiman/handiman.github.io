@@ -5,7 +5,7 @@ slug: qbranch-competence-manager
 #sitemap: true
 via: 
 - Qbranch
-description: In-house application for managing consultant CVs.
+description: In-house application where consultants managed their CVs and sales matched consultants to assignments.
 roles: 
  - Fullstack Developer
 #employer: qbranch-stockholm-ab-2
@@ -24,11 +24,11 @@ skills:
  - Continuous Integration
  - Git
 highlights:
- - Extended an in-house application for managing consultant CVs, built on ASP.NET MVC and hosted on Windows Azure.
+ - Extended an in-house application for consultant CVs and matching consultants to assignments, built on ASP.NET MVC and hosted on Windows Azure.
 ---
 <!--more-->
 ## Context
-In 2014 I returned to Qbranch. Between client assignments I worked on an internal system for managing consultant CVs, which developers between projects took turns extending. It was hosted in **Microsoft Azure**, my first hands-on experience with the cloud.
+In 2014 I returned to Qbranch. Between client assignments I worked on an internal system where consultants managed their CVs and sales matched consultants to assignments. Developers between projects took turns extending it. It was hosted in **Microsoft Azure**, my first hands-on experience with the cloud.
 
 ## Work
 - Features for creating, editing and organising consultant CVs

@@ -19,4 +19,4 @@ My second period at Qbranch, split between a client assignment and internal deve
 
 ## What I did
 - Maintenance of a legacy requisition system at **Arbetsförmedlingen**
-- Development of **Qbranch Competence Manager**, an internal tool for consultant CVs, which developers between client assignments took turns working on. Hosted in **Microsoft Azure**, my first hands-on experience with it.
+- Development of **Qbranch Competence Manager**, an internal tool where consultants managed their CVs and sales matched consultants to assignments. Developers between client assignments took turns working on it. Hosted in **Microsoft Azure**, my first hands-on experience with it.

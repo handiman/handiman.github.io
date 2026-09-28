@@ -19,4 +19,4 @@ Min andra period på Qbranch, uppdelad mellan ett kunduppdrag och intern utveckl
 
 ## Vad jag gjorde
 - Förvaltning av ett äldre rekvisitionssystem på **Arbetsförmedlingen**
-- Utveckling av **Qbranch Competence Manager**, ett internt verktyg för konsult-CV:n som utvecklare mellan kunduppdrag turades om att arbeta med. Det låg i **Microsoft Azure**, min första praktiska erfarenhet av det.
+- Utveckling av **Qbranch Competence Manager**, ett internt verktyg där konsulterna skötte sina CV:n och säljarna matchade konsulter mot uppdrag. Utvecklare mellan kunduppdrag turades om att arbeta med det. Det låg i **Microsoft Azure**, min första praktiska erfarenhet av det.
