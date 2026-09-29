@@ -28,7 +28,7 @@
     <meta name="twitter:description" content="{{ metaDescription | escape }}" />
     <link rel="apple-touch-icon" href="/favicon.png" />
     {%- comment %} The chat widget's styles load without blocking the page; the widget itself needs JavaScript anyway. {%- endcomment %}
-    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.26/dist/collection/cv-chat.css" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.27/dist/collection/cv-chat.css" onload="this.onload=null;this.rel='stylesheet'" />
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#F2F1F1" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#171517" media="(prefers-color-scheme: dark)" />
@@ -41,7 +41,7 @@
     {% endfor %}{% for format in formats %}<link rel="alternate" type="{{ format.mime_type }}" title="{{ headings.meta.cv_format }} {{ format.name }} ({{ format.lang | default: 'en' }})" href="{{ format.url }}" />
     {% endfor %}
     <script type="module">
-        import { defineCustomElements } from 'https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.26/dist/esm/loader.js';
+        import { defineCustomElements } from 'https://cdn.jsdelivr.net/gh/handiman/henrikbecker.net.chat.ui@0.0.27/dist/esm/loader.js';
         defineCustomElements();
     </script>        
 </head>
