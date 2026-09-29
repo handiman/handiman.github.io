@@ -74,4 +74,11 @@ export default (eleventyConfig) => {
       (item) => item.data.sitemap !== false && item.outputPath?.endsWith(".html"),
     ),
   );
+  // Person structured data with an @id, and worksFor pointing at the company
+  // (the same @id as on becker-consulting.se), so search engines connect the two.
+  eleventyConfig.addFilter("personLd", (person, baseUrl, company) => ({
+    ...person,
+    "@id": `${baseUrl}/#person`,
+    worksFor: { "@id": company["@id"] },
+  }));
 };

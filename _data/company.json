@@ -13,6 +13,7 @@
   ],
   "founder": {
     "@type": "Person",
+    "@id": "https://www.henrikbecker.net/#person",
     "name": "Henrik Becker"
   },
   "address": {
