@@ -90,6 +90,6 @@ export default {
   headings: (data) => getLocalizedData("headings", data),
   metaTitle,
   metaDescription,
-  ogLocale: (data) => (getLocale(data) === "sv" ? "sv_SE" : "en_GB"),
+  ogLocale: (data) => (getLocale(data) === "sv" ? "sv_SE" : "en_AU"),
   ogType: (data) => (section(data) === "posts" ? "article" : "website"),
 };
