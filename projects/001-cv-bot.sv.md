@@ -1,5 +1,8 @@
 ---
 title: CV-bot
+url: https://www.henrikbecker.net/sv/
+tagline: Ställ en fråga till mitt CV.
+summary: En chattassistent som svarar på rekryterares frågor om mig, på deras eget språk. Chattrutan i sidhuvudet på henrikbecker.net.
 description: En chattassistent på henrikbecker.net som svarar på frågor om min erfarenhet, på det språk frågan ställs på. ASP.NET Core minimal API på .NET 10 med Semantic Kernel och Azure OpenAI (GPT-4.1), driftsatt på Azure App Service. Började med embeddings och vektorsökning; nu skickas hela CV:t med i prompten, vilket visade sig vara enklare och ge träffsäkrare svar för ett dokument i den här storleken.
 #roles: 
 #- Creator

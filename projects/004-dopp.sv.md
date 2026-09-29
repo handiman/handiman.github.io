@@ -1,5 +1,7 @@
 ---
 title: Dopp
+url: https://dopp.becker-consulting.se
+tagline: Vattentemperaturer för utomhusbadare.
 description: Riktiga mätningar som badare loggar vid sina badplatser — inte väderprognoser. Logga ett dopp, följ säsongen, hitta badplatser i närheten.
 summary: Riktiga mätningar som badare loggar vid sina badplatser — inte väderprognoser. Logga ett dopp, följ säsongen, hitta badplatser i närheten.
 #roles: 
