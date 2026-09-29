@@ -40,7 +40,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon.*");
   eleventyConfig.addPassthroughCopy("assets/*.typ");
   eleventyConfig.addPassthroughCopy("assets/main.js");
-  eleventyConfig.addPassthroughCopy("assets/fontawesome");
   eleventyConfig.addPassthroughCopy("assets/fonts");
   eleventyConfig.addPassthroughCopy("assets/img");
   eleventyConfig.addPassthroughCopy("googlef0bc3dbe928e1f73.html");
