@@ -1,7 +1,8 @@
 User-agent: *
 
-Disallow: /assets/
+# CV exports and shared data stay out of search; CSS, JS, fonts and images stay crawlable.
+Disallow: /assets/henrik-becker
+Disallow: /assets/site-data.json
 Disallow: /sv/assets/
-Disallow: 404.html
 
 Sitemap: https://www.henrikbecker.net/sitemap.xml
