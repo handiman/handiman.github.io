@@ -4,7 +4,7 @@
   "@id": "https://www.becker-consulting.se/#organization",
   "url": "https://www.becker-consulting.se/",
   "name": "Henrik Becker Consulting AB",
-  "alternateName": "Becker Consulting",
+  "alternateName": ["Becker Solutions", "Becker Consulting"],
   "description": "Building the right software right",
   "vatID": "SE559120214701",
   "sameAs": [
