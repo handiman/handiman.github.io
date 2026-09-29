@@ -20,3 +20,20 @@ education: Education
 
 meta:
   cv_format: My CV as 
+
+# Site chrome: navigation, breadcrumbs, footer and links between sections.
+ui:
+  home: Home
+  home_url: /
+  cv: CV
+  cv_url: /cv/
+  blog: Blog
+  about: About
+  about_url: /about/
+  how_i_work: How I work
+  usps_url: /unique-selling-points/
+  fun_facts: Fun Facts
+  fun_facts_url: /fun-facts/
+  read_more: Read more
+  org_nr: Org. nr
+  registered: Registered in Lidingö, Sweden

@@ -6,7 +6,7 @@ layout: page
 <div class="reading" data-section="{{ title }}" data-source="{{ page.url | absolute_url }}">
     <article class="post">
         <header class="page-head">
-            <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/blog/">Blog</a></nav>
+            <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ headings.ui.home_url }}">{{ headings.ui.home }}</a><span aria-hidden="true">/</span><a href="/blog/">Blog</a></nav>
             <h1>{{ title }}</h1>
             <p class="page-meta"><time datetime="{{ post_date }}">{{ post_date }}</time></p>
             {% if description %}<p class="lead">{{ description }}</p>{% endif %}

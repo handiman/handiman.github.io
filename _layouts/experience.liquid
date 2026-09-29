@@ -1,13 +1,13 @@
 ---
 layout: page
 ---
-{%- if tags contains "usps" -%}{%- assign crumb_label = "How I work" -%}{%- assign crumb_url = "/unique-selling-points/" -%}
-{%- elsif tags contains "fun-facts" -%}{%- assign crumb_label = "Fun Facts" -%}{%- assign crumb_url = "/fun-facts/" -%}
-{%- else -%}{%- assign crumb_label = "CV" -%}{%- if lang == "sv" -%}{%- assign crumb_url = "/sv/cv/" -%}{%- else -%}{%- assign crumb_url = "/cv/" -%}{%- endif -%}{%- endif -%}
+{%- if tags contains "usps" -%}{%- assign crumb_label = headings.ui.how_i_work -%}{%- assign crumb_url = headings.ui.usps_url -%}
+{%- elsif tags contains "fun-facts" -%}{%- assign crumb_label = headings.ui.fun_facts -%}{%- assign crumb_url = headings.ui.fun_facts_url -%}
+{%- else -%}{%- assign crumb_label = headings.ui.cv -%}{%- assign crumb_url = headings.ui.cv_url -%}{%- endif -%}
 <div class="reading" data-section="{{ title }}" data-source="{{ page.url | absolute_url }}">
     <article>
         <header class="page-head">
-            <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="{{ crumb_url }}">{{ crumb_label }}</a></nav>
+            <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ headings.ui.home_url }}">{{ headings.ui.home }}</a><span aria-hidden="true">/</span><a href="{{ crumb_url }}">{{ crumb_label }}</a></nav>
             <h1>{{ title }}</h1>
             <p class="page-meta">
                 {% if roles %}<span>{% for role in roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>{% endif %}

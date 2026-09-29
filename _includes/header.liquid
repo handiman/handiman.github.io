@@ -1,17 +1,17 @@
 {%- assign self = collections.all | findByInputPath: page.inputPath -%}
 {%- assign alternates = self | hreflangAlternates: collections.all -%}
 {%- capture nav_links -%}
-  <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a>
-  <a href="{% if lang == 'sv' %}/sv/cv/{% else %}/cv/{% endif %}"{% if page.url contains "/cv/" %} aria-current="page"{% endif %}>CV</a>
-  <a href="/blog/"{% if page.url contains "/blog/" %} aria-current="page"{% endif %}>Blog</a>
-  <a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a>
+  <a href="{{ headings.ui.home_url }}"{% if page.url == headings.ui.home_url %} aria-current="page"{% endif %}>{{ headings.ui.home }}</a>
+  <a href="{{ headings.ui.cv_url }}"{% if page.url contains "/cv/" %} aria-current="page"{% endif %}>{{ headings.ui.cv }}</a>
+  <a href="/blog/"{% if page.url contains "/blog/" %} aria-current="page"{% endif %}>{{ headings.ui.blog }}</a>
+  <a href="{{ headings.ui.about_url }}"{% if page.url == headings.ui.about_url %} aria-current="page"{% endif %}>{{ headings.ui.about }}</a>
   {%- for alt in alternates -%}{%- if alt.lang != lang and alt.lang != "x-default" -%}
   <a class="nav-lang" href="{{ alt.href }}" hreflang="{{ alt.lang }}" lang="{{ alt.lang }}">{% if alt.lang == "sv" %}Svenska{% else %}English{% endif %}</a>
   {%- endif -%}{%- endfor -%}
 {%- endcapture -%}
 <header class="site-header no-print">
     <div class="wrap site-header__inner">
-        <a class="brand" href="/">
+        <a class="brand" href="{{ headings.ui.home_url }}">
             <span class="brand__mark" aria-hidden="true">b</span>
             <span>{{ person.name }}</span>
         </a>
