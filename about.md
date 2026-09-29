@@ -10,19 +10,19 @@ quote: 0
 ---
 ## How I work
 
-I've worked in a wide range of industries, most recently finance, insurance and online gaming. I work closely with the people who own the problem and write code that's easy to read, test and change. Tests work as executable specifications where that makes sense, and I automate the path to production early.
+I've worked in a wide range of industries, most recently finance, insurance and online gaming. I work closely with the people who own the problem and write code that's easy to read, test and maintain. Tests work as executable specifications where that makes sense, and I automate the path to production early.
 
 ## On AI
 
-I use Claude Code every day, and I build with AI too: the [CV chatbot](https://www.henrikbecker.net/projects/cv-bot/) on henrikbecker.net runs on .NET and Semantic Kernel. Language models don't know when they're wrong though, so someone who does has to stay in the loop. [More on that →](https://www.henrikbecker.net/blog/ai-and-domain-knowledge/)
+I use Claude Code more or less daily, and I build with AI too: the [CV chatbot](https://www.henrikbecker.net/projects/cv-bot/) on henrikbecker.net runs on .NET and Semantic Kernel. Language models don't know when they're wrong though, so an Authentic Intelligence has to stay in the loop. [More on that →](https://www.henrikbecker.net/blog/ai-and-domain-knowledge/)
 
 ## Off the clock
 
-I build small things to learn new stacks, including [one that is useless on purpose](https://uiaas.becker-consulting.se/). I'm also a Wim Hof nerd and enjoy open water bathing, which is why [Dopp](https://dopp.becker-consulting.se) exists.
+I build small things to learn new stacks and/or just for fun, including [one that is useless on purpose](https://uiaas.becker-consulting.se/). I'm also a Wim Hof nerd and enjoy open water bathing, which is why I built [Dopp](https://dopp.becker-consulting.se).
 
 ## What I do
 
 - **Backend development** in .NET and C#
-- **System integration**: REST, message queues and legacy systems
+- **System integration**: REST, message queues, WCF and legacy systems
 - **Automation & DevOps**: CI/CD pipelines, scripting and infrastructure as code (Bicep)
 - **Architecture**: structuring new projects, untangling old ones, codebase reviews

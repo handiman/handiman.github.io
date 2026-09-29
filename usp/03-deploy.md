@@ -2,11 +2,11 @@
 title: Delivery Automation
 slug: automated-delivery
 sitemap: true
-description: Boring, automated deployments with GitHub Actions, Azure Pipelines, Octopus Deploy or TeamCity. From 45 minutes to 5 at Norconsult Astando.
+description: Boring, automated deployments with GitHub Actions, Azure Pipelines, Octopus Deploy oor whatever the team already has. From 45 minutes to 5 at Norconsult Astando.
 ---
 Deployments should be boring. At Norconsult Astando I took them from about 45 minutes to about 5; at Plejmo, from an hour to under two.
 
-**GitHub Actions**, **Azure Pipelines**, **Octopus Deploy** or **TeamCity**, whatever the team already has.
+**GitHub Actions**, **Azure Pipelines**, **Octopus Deploy** or whatever the team already has.
 <!--more-->It also brings a few practical advantages:
 - **It saves time** — deployments become a non‑event instead of a time sink
 - **It’s reliable** — the same steps run the same way every time
@@ -37,7 +37,7 @@ Using **Octopus Deploy** we were able to:
 * Automate database deployment.
 * Virtually eliminate deployment related errors.
 
-The deployment process became so quick and painless that we could (and sometimes did) deploy several times a day ‐ even during peak hours.
+The deployment process became so quick and painless that we could (and often did) deploy several times a day ‐ even during peak hours.
 
 [astando]: /experience/norconsult-astando/
 [plejmo]: /experience/film2home/
