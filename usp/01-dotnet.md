@@ -2,6 +2,7 @@
 title: Modern .NET Development
 slug: dotnet-development
 sitemap: true
+description: Modern .NET and C# development from .NET Framework to .NET 10, Aspire and Orleans, including the older code most teams still live with.
 ---
 I’ve worked with .NET since the first version, and C# is the language I think in.
 

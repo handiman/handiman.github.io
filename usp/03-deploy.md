@@ -2,6 +2,7 @@
 title: Delivery Automation
 slug: automated-delivery
 sitemap: true
+description: Boring, automated deployments with GitHub Actions, Azure Pipelines, Octopus Deploy or TeamCity. From 45 minutes to 5 at Norconsult Astando.
 ---
 Deployments should be boring. At Norconsult Astando I took them from about 45 minutes to about 5; at Plejmo, from an hour to under two.
 
