@@ -6,7 +6,7 @@
   <a href="/blog/"{% if page.url contains "/blog/" %} aria-current="page"{% endif %}>{{ headings.ui.blog }}</a>
   <a href="{{ headings.ui.about_url }}"{% if page.url == headings.ui.about_url %} aria-current="page"{% endif %}>{{ headings.ui.about }}</a>
   {%- for alt in alternates -%}{%- if alt.lang != lang and alt.lang != "x-default" -%}
-  <a class="nav-lang" href="{{ alt.href }}" hreflang="{{ alt.lang }}" lang="{{ alt.lang }}">{% if alt.lang == "sv" %}Svenska{% else %}English{% endif %}</a>
+  <a class="nav-lang" href="{{ alt.path }}" hreflang="{{ alt.lang }}" lang="{{ alt.lang }}">{% if alt.lang == "sv" %}Svenska{% else %}English{% endif %}</a>
   {%- endif -%}{%- endfor -%}
 {%- endcapture -%}
 <header class="site-header no-print">
