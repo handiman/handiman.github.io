@@ -1,11 +1,12 @@
 import markdownIt from "markdown-it";
+import { useEmoji } from "./.eleventy.markdown.js";
 import {
   normalizeSkills,
   getHreflangAlternates,
   findByInputPath,
 } from "./.eleventy.utils.js";
 
-const md = markdownIt();
+const md = useEmoji(markdownIt());
 
 export default (eleventyConfig) => {
   eleventyConfig.addFilter(

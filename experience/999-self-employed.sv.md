@@ -36,7 +36,7 @@ skills:
 ## Om företaget
 Jag startade Henrik Becker Consulting AB 2017, efter nästan tjugo år av kodande som anställd och som konsult via andra bolag. Det är ett enmansföretag på Lidingö. Jag jobbar på plats i Stockholmsområdet eller på distans.
 
-Undantaget var Betsson, där jag började som konsult och stannade två år som anställd, för att jag trivdes med både företaget och kollegorna. Till slut saknade jag friheten och variationen i konsultlivet, så jag gick tillbaka – med perfekt tajming: konsultmarknaden bestämde sig för att hoppa från ett stup. Fördelen är att jag är tillgänglig.
+Undantaget var Betsson, där jag började som konsult och stannade två år som anställd, för att jag trivdes med både företaget och kollegorna. Till slut saknade jag friheten och variationen i konsultlivet, så jag gick tillbaka till det. Perfekt tajming: konsultmarknaden bestämde sig för att testa bungyjump utan rep. Fördelen är att jag är tillgänglig.
 
 ## Vad jag gör
 Mest backendutveckling i C# och .NET, systemintegration och leveransautomatisering, och arkitektur när ett team behöver det. Detaljerna finns på [startsidan](/#offer). Jag gillar att lämna koden lite enklare än jag hittade den.

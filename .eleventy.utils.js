@@ -79,17 +79,23 @@ export const localizedPermalink = (data, section) => {
 export const getHreflangAlternates = (item, allItems, siteUrl) => {
   const slug = item && getSlug(item.data);
   if (!slug) return [];
+  // Slugs repeat across sections (employment/betsson and experience/betsson),
+  // so a translation must also be in the same section.
+  const section = (url) => String(url).replace(/^\/sv\//, "/").split("/")[1] ?? "";
+  const itemSection = section(item.url);
 
-  const locales = new Map(); // lang -> url
+  const locales = new Map(); // lang -> site-relative url
   for (const other of allItems) {
-    if (getSlug(other.data) !== slug) continue;
+    if (getSlug(other.data) !== slug || section(other.url) !== itemSection) continue;
     const lang = getLocale(other.data);
-    if (!locales.has(lang)) locales.set(lang, siteUrl + other.url);
+    if (!locales.has(lang)) locales.set(lang, other.url);
   }
 
-  const alternates = Array.from(locales, ([lang, href]) => ({ lang, href }));
-  const defaultHref = locales.get("en");
-  if (defaultHref) alternates.push({ lang: "x-default", href: defaultHref });
+  // href is absolute (hreflang tags and the sitemap need that); path is
+  // site-relative, for links a visitor clicks, so they work locally too.
+  const alternates = Array.from(locales, ([lang, path]) => ({ lang, href: siteUrl + path, path }));
+  const defaultPath = locales.get("en");
+  if (defaultPath) alternates.push({ lang: "x-default", href: siteUrl + defaultPath, path: defaultPath });
 
   return alternates;
 };

@@ -20,7 +20,7 @@ highlights:
 ---
 <!--more-->
 ## Om rollen
-Jag kom till Magine TV för att fortsätta utveckla **Plejmo**, som Magine hade köpt från Film2Home. Jag hade redan arbetat med Plejmo på Film2Home, så det var en naturlig fortsättning.
+Efter Film2Homes konkurs köpte Magine TV **Plejmo** och handplockade några av utvecklarna. Jag var en av dem.
 
 ## Vad jag gjorde
 ### Plejmos REST-API
@@ -34,7 +34,7 @@ Jag höll **API v1** stabilt och bakåtkompatibelt medan jag designade och imple
 ### Proof of concept för gamification
 Jag byggde en proof of concept för **nivåer och prestationer**. Eftersom Plejmo redan körde på den **service bus-arkitektur** jag byggt på Film2Home var det enkelt att lägga till en fristående tjänst som prenumererade på användarhändelser och delade ut prestationer och progression.
 
-Idén kom tillbaka flera år senare på Betsson, där nivåer och prestationer blev mitt dagliga jobb.
+Erfarenheten kom väl till pass flera år senare på Betsson i projektet Levels & Achievements.
 
 ### Analys (Segment.io)
 - Implementerade händelsepublicering till Segment.io, så att användaraktivitet kunde följas över klienter och tjänster

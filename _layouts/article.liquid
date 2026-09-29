@@ -4,7 +4,7 @@ layout: page
 {%- comment -%} A plain content page: breadcrumb, title, optional lead, prose, and an optional recommendation (front matter `quote:` index into recommendations). {%- endcomment -%}
 <div class="reading" data-section="{{ title }}" data-source="{{ page.url | absolute_url }}">
     <header class="page-head">
-        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">{{ breadcrumb | default: title }}</span></nav>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ headings.ui.home_url }}">{{ headings.ui.home }}</a><span aria-hidden="true">/</span><span aria-current="page">{{ breadcrumb | default: title }}</span></nav>
         <h1>{{ title }}</h1>
         {% if lead %}<p class="lead">{{ lead }}</p>{% endif %}
     </header>

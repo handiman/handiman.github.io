@@ -31,3 +31,20 @@ other_formats: Andra format
 download_pdf: Ladda ner PDF
 other_language: In English
 present: nu
+
+# Sidans ramverk: navigering, brödsmulor, sidfot och länkar mellan avsnitt.
+ui:
+  home: Hem
+  home_url: /sv/
+  cv: CV
+  cv_url: /sv/cv/
+  blog: Blogg
+  about: Om mig
+  about_url: /sv/about/
+  how_i_work: Hur jag arbetar
+  usps_url: /sv/unique-selling-points/
+  fun_facts: Kul att veta
+  fun_facts_url: /sv/fun-facts/
+  read_more: Läs mer
+  org_nr: Org.nr
+  registered: Säte i Lidingö

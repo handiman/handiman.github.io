@@ -6,6 +6,7 @@ import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import configureCollections from "./.eleventy.collections.js";
 import configureFilters from "./.eleventy.filters.js";
+import { useEmoji } from "./.eleventy.markdown.js";
 
 const useLiquidFor = (eleventyConfig, extensions) => {
   for (const extension of extensions.split(",")) {
@@ -19,6 +20,7 @@ const useLiquidFor = (eleventyConfig, extensions) => {
 
 export default async function (eleventyConfig) {
   eleventyConfig.setLayoutsDirectory("_layouts");
+  eleventyConfig.amendLibrary("md", useEmoji);
   eleventyConfig.addPlugin(syntaxHighlight);
   for (const [type, outputPath] of [["atom", "/blog/feed.xml"], ["rss", "/blog/rss.xml"]]) {
     eleventyConfig.addPlugin(feedPlugin, {

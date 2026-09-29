@@ -1,5 +1,5 @@
 summary: Introduction
-core_competencies: Skills & Expertise
+core_competencies: Core Competencies
 
 languages: Languages
 language: Language
@@ -18,5 +18,42 @@ date: Date
 
 education: Education
 
+employment: Work Experience
+recommendations: Recommendations
+interests: Interests
+all_roles: Roles
+all_skills: All skills
+skills_by_category: Skills
+location: Location
+taglines: Taglines
+usps: Unique Selling Points
+clients: Clients
+short_cv: Short version
+selected_experience: Selected experience
+earlier: Earlier
+and_more: and more
+see_full_cv: see the full CV
+other_formats: Other formats
+download_pdf: Download PDF
+other_language: På svenska
+present: present
+
 meta:
   cv_format: My CV as 
+
+# Site chrome: navigation, breadcrumbs, footer and links between sections.
+ui:
+  home: Home
+  home_url: /
+  cv: CV
+  cv_url: /cv/
+  blog: Blog
+  about: About
+  about_url: /about/
+  how_i_work: How I work
+  usps_url: /unique-selling-points/
+  fun_facts: Fun Facts
+  fun_facts_url: /fun-facts/
+  read_more: Read more
+  org_nr: Org. nr
+  registered: Registered in Lidingö, Sweden

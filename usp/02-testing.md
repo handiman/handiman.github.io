@@ -2,13 +2,13 @@
 title: Tests That Make Sense
 slug: meaningful-tests
 sitemap: true
-description: TDD, BDD and Specification by Example as everyday practice. Tests that read like documentation and tell you what actually broke.
+description: TDD, BDD and Specification by Example as everyday practice. Tests that read like documentation and, when they fail, tell you what actually broke.
 ---
 TDD, BDD and Specification by Example as everyday practice.
 
 Tests that read like documentation and, when they fail, tell you what actually broke.
 <!--more-->
-If your test suite is slow, brittle, unreadable, or full of mysterious red failures, I can help you turn it into something you trust — or even reshape it into executable specifications that guide development instead of dragging behind it.
+If your test suite is slow, flaky, unreadable, or full of mysterious red failures, I can help you turn it into something you trust — or even reshape it into executable specifications that guide development instead of dragging behind it.
 
 ## Examples
 I’ve created a few small demo projects to help teams understand how to write meaningful tests in practice. They’re a few years old, but the ideas still hold up:

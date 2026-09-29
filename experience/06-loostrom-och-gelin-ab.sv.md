@@ -15,7 +15,7 @@ skills:
  - Visual Basic 5
  - COM
  - ASP
-description: Första professionella uppdraget inom mjukvaruutveckling — byggde ett dokumenthanteringssystem i Visual Basic 5.
+description: Första professionella uppdraget inom mjukvaruutveckling. Byggde ett dokumenthanteringssystem i Visual Basic 5.
 highlights:
  - Designade och utvecklade ett dokumenthanteringssystem baserat på Visual Basic 5.
  - Assisterade i utvecklingen av företagets webbplats med klassisk ASP.

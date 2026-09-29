@@ -1,6 +1,6 @@
 <footer class="site-footer" role="contentinfo">
     <div class="wrap site-footer__inner">
-        <p class="site-footer__legal">{{ company.name }} · Org. nr {{ site.orgNumber }} · Registered in Lidingö, Sweden</p>
+        <p class="site-footer__legal">{{ company.name }} · {{ headings.ui.org_nr }} {{ site.orgNumber }} · {{ headings.ui.registered }}</p>
         <p class="site-footer__links">
             {%- assign email_parts = person.email | split: "@" %}
             <a href="#contact" id="contact" data-email="{{ email_parts[0] }}|{{ email_parts[1] }}" data-email-text>{{ email_parts[0] }} [at] {{ email_parts[1] }}</a>

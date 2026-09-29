@@ -1,5 +1,8 @@
 ---
 title: CV-bot
+url: https://www.henrikbecker.net/sv/
+tagline: Ställ en fråga till mitt CV.
+summary: En chattassistent som svarar på rekryterares frågor om mig, på deras eget språk. Chattrutan i sidhuvudet på henrikbecker.net.
 description: En chattassistent på henrikbecker.net som svarar på frågor om min erfarenhet, på det språk frågan ställs på. ASP.NET Core minimal API på .NET 10 med Semantic Kernel och Azure OpenAI (GPT-4.1), driftsatt på Azure App Service. Började med embeddings och vektorsökning; nu skickas hela CV:t med i prompten, vilket visade sig vara enklare och ge träffsäkrare svar för ett dokument i den här storleken.
 #roles: 
 #- Creator
@@ -15,7 +18,7 @@ skills:
 - GitHub Actions
 - Web Components
 ---
-Chattrutan i sidhuvudet på den här sajten är en liten AI-assistent som svarar på frågor om mitt CV — på det språk du frågar på.
+Chattrutan i sidhuvudet på den här sajten är en liten AI-assistent som svarar på frågor om mitt CV, på det språk du frågar på.
 
 Backend är ett ASP.NET Core minimal API på .NET 10 som använder Semantic Kernel med Azure OpenAI (GPT-4.1) och körs på Azure App Service. Efter varje driftsättning av sajten skickar ett GitHub Actions-flöde en uppdaterad Markdown-version av mitt CV till boten, som sparar den i Azure Blob Storage.
 

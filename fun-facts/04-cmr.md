@@ -1,6 +1,5 @@
 ---
-title: Jag är Civil MC-resurs
+title: I'm a Civil MC Resource
 slug: cmr
-lang: sv
 ---
-En [civil Motorcykel-resurs (CMR)](https://www.fmck.se/civil-mcresurs) är en frivillig motorcykelförare som stödjer samhället vid olyckor, kriser eller andra extraordinära händelser.
+A [Civil Motorcycle Resource (CMR)](https://www.fmck.se/civil-mcresurs) is a volunteer motorcyclist who supports the community during accidents, crises and other extraordinary events.
