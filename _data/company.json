@@ -1,12 +1,16 @@
 {
   "@context": "http://schema.org",
   "@type": "Organization",
-  "url": "https://www.henrikbecker.net/",
+  "@id": "https://www.becker-consulting.se/#organization",
+  "url": "https://www.becker-consulting.se/",
   "name": "Henrik Becker Consulting AB",
   "alternateName": "Becker Consulting",
   "description": "Building the right software right",
-  "vatId": "SE559120214701",
-  "sameAs": "https://becker-consulting.github.io/",
+  "vatID": "SE559120214701",
+  "sameAs": [
+    "https://github.com/handiman",
+    "https://www.linkedin.com/in/prettygoodprogrammer"
+  ],
   "founder": {
     "@type": "Person",
     "name": "Henrik Becker"
@@ -16,7 +20,7 @@
     "streetAddress": "Torsvikssvängen 37",
     "postalCode": "18134",
     "addressLocality": "Lidingö",
-    "adressRegion": "Stockholm",
-    "addressCountry": "Sweden"
+    "addressRegion": "Stockholm",
+    "addressCountry": "SE"
   }
 }
