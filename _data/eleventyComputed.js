@@ -82,7 +82,9 @@ const metaDescription = (data) => {
 export default {
   lang: getLocale,
   languages: (data) => getLocalizedData("languages", data),
-  summary: (data) => getLocalizedData("summary", data),
+  // Projects have their own short `summary` (shared with becker-consulting.se); only
+  // other pages get the CV summary for their language.
+  summary: (data) => (data.tags?.includes("projects") ? data.summary : getLocalizedData("summary", data)),
   coreSkills: (data) => getLocalizedData("coreSkills", data),
   categorizedSkills: (data) => getLocalizedData("categorizedSkills", data),
   featuredSkills: (data) => getLocalizedData("featuredSkills", data),
