@@ -2,6 +2,7 @@
 title: Tests That Make Sense
 slug: meaningful-tests
 sitemap: true
+description: TDD, BDD and Specification by Example as everyday practice. Tests that read like documentation and tell you what actually broke.
 ---
 TDD, BDD and Specification by Example as everyday practice.
 

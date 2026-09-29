@@ -78,7 +78,7 @@ competencies:
 ---
 <!--more-->
 ## Context
-Film2Home was a Video-on-Demand company owned by Bonver. After Bonver went bankrupt it was acquired by Magine TV, which kept running the platform under both the Film2Home and Plejmo brands.
+Film2Home was a Video-on-Demand company and a subsidiary of Bonver. After Film2Home went bankrupt it was acquired by Magine TV, which kept running the platform under both the Film2Home and Plejmo brands.
 
 From 2014 to 2017 I worked on these services as a fullstack developer and also did the DevOps work. The platform was ASP.NET MVC applications with EPiServer for content, plus backend services for catalog, payments, user accounts and content metadata.
 

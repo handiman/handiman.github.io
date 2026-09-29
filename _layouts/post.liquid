@@ -2,6 +2,7 @@
 layout: page
 ---
 {%- assign post_date = page.date | date: '%Y-%m-%d' -%}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":{{ title | jsonify }},"description":{{ metaDescription | jsonify }},"datePublished":{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' | jsonify }},"url":{{ page.url | absolute_url | jsonify }},"mainEntityOfPage":{{ page.url | absolute_url | jsonify }},"inLanguage":"en","image":{{ person.image | jsonify }},"author":{"@type":"Person","name":{{ person.name | jsonify }},"url":"https://www.henrikbecker.net/"}{% if original_url %},"sameAs":{{ original_url | jsonify }}{% endif %}}</script>
 <div class="reading" data-section="{{ title }}" data-source="{{ page.url | absolute_url }}">
     <article class="post">
         <header class="page-head">

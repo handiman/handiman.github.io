@@ -84,8 +84,8 @@
       }
     }
     > div { grid-column: 1; grid-row: 1; padding: 5mm 0 5mm 8mm; }
-    h1 { font-size: 26pt; margin: 0 0 1mm; }
     p { margin: 0 0 3mm; color: var(--ink); }
+    .print-card__name { font-size: 26pt; font-weight: 600; line-height: 1.1; margin: 0 0 1mm; }
     ul { font-size: 10pt; }
     li { padding-left: 0; &::before { display: none; } }
     i[class*="fa"] { margin-right: .5rem !important; width: 1em; }
