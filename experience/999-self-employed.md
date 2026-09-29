@@ -36,7 +36,7 @@ skills:
 ## About the company
 I started Henrik Becker Consulting AB in 2017, after almost twenty years of writing code as an employee and as a consultant through other firms. It's a one-person company in Lidingö. I work on site in the Stockholm area or remotely.
 
-The exception was Betsson, where I started as a consultant and stayed on as an employee for two years because I liked the place and the people. In the end I missed the freedom and variety of consulting, so I came back to it, with perfect timing: the consultant market decided to jump off a cliff. The upside is that I'm available.
+The exception was Betsson, where I started as a consultant and stayed on as an employee for two years because I liked the place and the people. In the end I missed the freedom and variety of consulting, so I came back to it, with perfect timing: the consultant market decided to try bungy jump without a rope. The upside is that I'm available.
 
 ## What I do
 Mostly backend development in C# and .NET, system integration and delivery automation, and architecture when a team needs it. The details are on the [home page](/#offer). I like leaving code a bit simpler than I found it.

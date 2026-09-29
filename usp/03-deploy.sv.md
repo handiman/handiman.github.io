@@ -2,16 +2,16 @@
 title: Automatiserad deploy
 slug: automated-delivery
 sitemap: true
-description: Tråkiga, automatiserade driftsättningar med GitHub Actions, Azure Pipelines, Octopus Deploy eller det teamet redan har. Från 45 minuter till 5 på Norconsult Astando.
+description: Tråkiga, automatiserade driftsättningar med GitHub Actions, Azure Pipelines, Octopus Deploy, eller det teamet redan har. Från 45 minuter till 5 på Norconsult Astando.
 ---
 Deploy ska vara tråkigt. På Norconsult Astando kortade jag deploytiden från runt 45 minuter till cirka 5; på Plejmo från cirka en timme till under två minuter.
 
-Jag använder **GitHub Actions**, **Azure Pipelines**, **Octopus Deploy** – eller det teamet redan har.   
+Jag använder **GitHub Actions**, **Azure Pipelines**, **Octopus Deploy**, eller det teamet redan har.   
 <!--more-->
 Automatiserad deploy har många praktiska fördelar:
-- **Det sparar tid** – deploy slutar vara en tidstjuv
-- **Det är pålitligt** – samma steg körs på samma sätt varje gång
-- **Det är personoberoende** – vem som helst kan starta en release, eller så sker den helt automatiskt
+- **Det sparar tid**: deploy blir inte längre en tidstjuv
+- **Det är pålitligt**: samma steg körs på samma sätt varje gång
+- **Det är personoberoende**: vem som helst kan starta en release, eller så sker den helt automatiskt
 
 Här är två exempel på hur jag har hjälpt team att gå från manuella driftsättningar till förutsägbar, automatiserad deploy.
 
@@ -21,7 +21,7 @@ Här är två exempel på hur jag har hjälpt team att gå från manuella drifts
 Dokumentationen var utspridd över flera dokument och inte uppdaterad.
 Jag hjälpte kunden att sätta upp automatiserad deploy för Isy Road som ett pilotprojekt. Vi använde **Octopus Deploy**, och fördelarna var bland annat:
 
-* Deploytiden minskade från ~45 minuter till ~5 minuter per applikationsinstans – 15 stycken vid den tiden.
+* Deploytiden minskade från ~45 minuter till ~5 minuter per applikationsinstans (15 stycken vid den tiden).
 * Automatiserad databasdeploy.
 * Större förtroende för processen.
 * I stort sett inga deployrelaterade fel.
@@ -37,7 +37,7 @@ Med **Octopus Deploy** kunde vi:
 * Automatisera databasdeploy.
 * I stort sett eliminera deployrelaterade fel.
 
-Deployprocessen blev så snabb och smärtfri att vi kunde driftsätta flera gånger om dagen (vilket vi också ofta gjorde) – även när trycket var som störst.
+Deployprocessen blev så snabb och smärtfri att vi kunde driftsätta flera gånger om dagen även när trycket var som störst (vilket vi också ofta gjorde).
 
 [astando]: /sv/experience/norconsult-astando/
 [plejmo]: /sv/experience/film2home/

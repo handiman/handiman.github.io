@@ -114,4 +114,4 @@ Exempel på projekt: Tournaments, Loyalty Points, Levels & Achievements.
 - Nästan 1000 % högre genomströmning av Kafka-meddelanden i Tournaments-applikationen
 
 ## Konsult, sedan anställd
-Mina fyra år på Betsson — först som konsult i ungefär två år, sedan som anställd i ytterligare två — var ett undantag från mitt vanliga frilansande. Jag stannade för att jag trivdes med både bolaget och kollegorna, och slutade bara för att jag till slut saknade friheten och variationen i konsultlivet.
+Mina fyra år på Betsson - först som konsult i ungefär två år, sedan som anställd i ytterligare två - var ett undantag från mitt vanliga frilansande. Jag stannade för att jag trivdes med både bolaget och kollegorna, och slutade bara för att jag till slut saknade känslan av frihet som eget företagande för med sig.

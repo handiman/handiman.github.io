@@ -2,15 +2,15 @@
 title: Delivery Automation
 slug: automated-delivery
 sitemap: true
-description: Boring, automated deployments with GitHub Actions, Azure Pipelines, Octopus Deploy oor whatever the team already has. From 45 minutes to 5 at Norconsult Astando.
+description: Boring, automated deployments with GitHub Actions, Azure Pipelines, Octopus Deploy or whatever the team already has. From 45 minutes to 5 at Norconsult Astando.
 ---
 Deployments should be boring. At Norconsult Astando I took them from about 45 minutes to about 5; at Plejmo, from an hour to under two.
 
 **GitHub Actions**, **Azure Pipelines**, **Octopus Deploy** or whatever the team already has.
 <!--more-->It also brings a few practical advantages:
-- **It saves time** — deployments become a non‑event instead of a time sink
-- **It’s reliable** — the same steps run the same way every time
-- **It’s person‑independent** — anyone can trigger a release, or it can run fully automatically
+- **It saves time**: deployments become a non‑event instead of a time sink
+- **It’s reliable**: the same steps run the same way every time
+- **It’s person‑independent**: anyone can trigger a release, or it can run fully automatically
 
 Below are two examples of how I’ve helped teams move from manual deployments to predictable, automated delivery.
 

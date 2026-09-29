@@ -2,8 +2,8 @@
 title: Dopp
 url: https://dopp.becker-consulting.se
 tagline: Vattentemperaturer för utomhusbadare.
-description: Riktiga mätningar som badare loggar vid sina badplatser — inte väderprognoser. Logga ett dopp, följ säsongen, hitta badplatser i närheten.
-summary: Riktiga mätningar som badare loggar vid sina badplatser — inte väderprognoser. Logga ett dopp, följ säsongen, hitta badplatser i närheten.
+description: Temperaturmätningar av badare för badare. Logga ett dopp, följ säsongen, hitta badplatser i närheten.
+summary: Temperaturmätningar av badare för badare. Logga ett dopp, följ säsongen, hitta badplatser i närheten.
 #roles: 
 #- Creator
 start_date: 2026-09-03
@@ -14,6 +14,6 @@ skills:
 - Cloudflare Workers
 - Cloudflare D1 
 ---
-Dopp håller koll på vattentemperaturen vid dina favoritplatser, visar hur den förändras över säsongerna och delar vad badare i närheten mäter just nu — riktiga mätningar från riktiga dopp, inte en satellitprognos.
+Dopp håller koll på vattentemperaturen vid dina favoritplatser, visar hur den förändras över säsongerna och delar vad badare i närheten mäter just nu. Riktiga mätningar från riktiga dopp, inte en väderprognos.
 
 [https://dopp.becker-consulting.se](https://dopp.becker-consulting.se)

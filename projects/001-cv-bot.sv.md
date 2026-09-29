@@ -18,7 +18,7 @@ skills:
 - GitHub Actions
 - Web Components
 ---
-Chattrutan i sidhuvudet på den här sajten är en liten AI-assistent som svarar på frågor om mitt CV — på det språk du frågar på.
+Chattrutan i sidhuvudet på den här sajten är en liten AI-assistent som svarar på frågor om mitt CV, på det språk du frågar på.
 
 Backend är ett ASP.NET Core minimal API på .NET 10 som använder Semantic Kernel med Azure OpenAI (GPT-4.1) och körs på Azure App Service. Efter varje driftsättning av sajten skickar ett GitHub Actions-flöde en uppdaterad Markdown-version av mitt CV till boten, som sparar den i Azure Blob Storage.
 
