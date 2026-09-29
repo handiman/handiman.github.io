@@ -48,3 +48,5 @@ ui:
   read_more: Läs mer
   org_nr: Org.nr
   registered: Säte i Lidingö
+  chat_placeholder: Fråga min CV-bot vad som helst...
+  chat_error: Min hjärna svarar inte just nu. Försök igen om en liten stund.

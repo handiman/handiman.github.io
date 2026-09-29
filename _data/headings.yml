@@ -57,3 +57,5 @@ ui:
   read_more: Read more
   org_nr: Org. nr
   registered: Registered in Lidingö, Sweden
+  chat_placeholder: Ask my CV bot anything...
+  chat_error: My brain isn't answering right now. Please try again in a moment.
