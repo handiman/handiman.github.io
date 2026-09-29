@@ -13,6 +13,18 @@ slug: semantic-cv
 #- Skapare
 start_date: 2026-03-01
 end_date: present
+skills:
+  - Nodejs
+  - TypeScript
+  - Cloudflare Workers
+  - Durable objects
+  - R2 object storage
+  - Webhooks
+  - Rest APIs
+  - Azure Service Bus
+  - C#
+  - .NET
+  - Azure Functions (containerized)
 competencies: 
   - name: Architecture
     weight: 1
