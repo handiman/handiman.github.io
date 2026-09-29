@@ -1,5 +1,7 @@
 ---
-layout: page
+layout: home
+# Pairs the English and Swedish home pages (the root index.html has no fileSlug of its own).
+slug: home
 hero:
   label: Henrik Becker · Senior .NET Consultant
   title: Authentic Intelligence Since 1969
@@ -44,81 +46,12 @@ cards:
   text: >-
     Decisions that still make sense in five years. I help teams pick patterns that fit the problem,
     skip the ones that don't, and write down why.
+labels:
+  introduction: Introduction
+  offer: What I offer
+  working_with_me: Working with me →
+  working_with_me_url: https://www.becker-consulting.se/
+  latest_writing: Latest writing
+  clients: Clients
+  logo: logo
 ---
-<section class="hero" id="introduction" data-source="{{ page.url | absolute_url }}#introduction">
-    <h2 class="hidden">Introduction</h2>
-    <div class="hero__text">
-        <div class="hero__id">
-            <div class="hero__avatar">
-                <picture>
-                    <source type="image/webp" srcset="/assets/img/henrik-becker-square.webp">
-                    <img src="/assets/img/henrik-becker-square.jpg" width="400" height="400" alt="" loading="lazy">
-                </picture>
-            </div>
-            <div class="hero__heading">
-                <p class="label">{{ hero.label | escape | replace: " · ", "&nbsp;· " }}</p>
-                <h1>{{ hero.title | escape }}</h1>
-            </div>
-        </div>
-        <p class="hero__intro">{{ ingress }}</p>
-        <div class="hero__actions">
-            <a class="button" href="/cv/">{{ hero.cta | escape }} <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-            <button type="button" class="link-underline" data-ask>{{ hero.secondary | escape }}</button>
-        </div>
-        <div class="hero__questions no-print">
-            <span class="label">{{ hero.questions_label | escape }}</span>
-            {%- for question in hero.questions %}
-            <button type="button" class="ask-chip" data-ask="{{ question | escape }}">{{ question | escape }}</button>
-            {%- endfor %}
-        </div>
-    </div>
-    <div class="hero__photo">
-        <picture>
-            <source media="(max-width: 900px)" type="image/webp" srcset="/assets/img/henrik-becker-square.webp">
-            <source type="image/webp" srcset="/assets/img/henrik-becker-800.webp 800w, /assets/img/henrik-becker-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 640px">
-            <img src="/assets/img/henrik-becker-1200.jpg" srcset="/assets/img/henrik-becker-800.jpg 800w, /assets/img/henrik-becker-1200.jpg 1200w" sizes="(max-width: 900px) 100vw, 640px" width="1200" height="1125" alt="{{ person.name }}" fetchpriority="high">
-        </picture>
-    </div>
-</section>
-<section id="offer" data-source="{{ page.url | absolute_url }}#offer">
-    <h2>What I offer</h2>
-    <ul class="services">
-        {% for card in cards %}
-        <li>
-            <h3>{{ card.front }}</h3>
-            <div>{{ card.back }}</div>
-        </li>
-        {% endfor %}
-    </ul>
-    <p><a class="link-underline" href="https://www.becker-consulting.se/">Working with me →</a></p>
-</section>
-<section id="unique-selling-points" data-source="{{ page.url }}#unique-selling-points">
-    <h2><a href="/unique-selling-points/">How I work</a></h2>
-    {% include 'usps' %}
-</section>
-{%- if collections.blog.size > 0 %}
-<section id="writing" class="no-print">
-    <h2><a href="/blog/">Latest writing</a></h2>
-    <ul class="cards post-cards">
-        {%- for post in collections.blog limit: 3 %}
-        {%- assign post_date = post.date | date: '%Y-%m-%d' %}
-        <li class="card">
-            <time datetime="{{ post_date }}">{{ post_date }}</time>
-            <h3>{{ post.data.title }}</h3>
-            <div class="card-body">
-                {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
-                <a class="more" href="{{ post.url }}">Read more</a>
-            </div>
-        </li>
-        {%- endfor %}
-    </ul>
-</section>
-{%- endif %}
-<section id="clients" data-source="{{ page.url  }}#clients">
-    <h2 class="label">Clients</h2>
-    <ul class="client-logos">{% for client in collections.clients %}{% if client.data.logo %}
-        <li title="{{ client.data.title }}">
-            <img class="client-logo" src="{{ client.data.logo }}" alt="{{ client.data.title }} logo" />
-        </li>{% endif %}{% endfor %}
-    </ul>
-</section>
