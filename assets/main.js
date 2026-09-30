@@ -1,19 +1,6 @@
 (function () {
   "use strict";
 
-  // Theme toggle (the invisible button in the top-left corner). Flips between
-  // light and dark from whatever is showing now, system setting included.
-  var root = document.documentElement;
-  var toggle = document.querySelector(".theme-toggle");
-  if (toggle) {
-    toggle.addEventListener("click", function () {
-      var systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      var isDark = root.classList.contains("dark") || (systemDark && !root.classList.contains("light"));
-      root.classList.toggle("dark", !isDark);
-      root.classList.toggle("light", isDark);
-    });
-  }
-
   // Turns [data-email="user|domain"] links into mailto: links. The address
   // only exists in the page as separate parts, which keeps most scrapers out.
   document.querySelectorAll("[data-email]").forEach(function (link) {

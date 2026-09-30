@@ -50,7 +50,8 @@
 </head>
 <body class="{% if page.url == '/' or page.url == '/sv/' %}site-home{% endif %}{% if class %} {{ class }}{% endif %}">
   {{ content }}
-  <button class="theme-toggle" title="Toggle dark mode">.</button>
+  <button class="theme-toggle" type="button" title="Toggle dark mode" aria-label="Toggle dark mode"></button>
+  <script src="{{ site.sharedAssets }}/assets/js/theme.js" defer></script>
   <script src="/assets/main.js"></script>
   <script src="{{ site.sharedAssets }}/assets/js/toc.js" defer></script>
 </body>

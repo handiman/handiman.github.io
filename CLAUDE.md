@@ -107,7 +107,7 @@ Trunk-based development with short-lived feature branches.
 
 ## Shared design (becker-consulting.se)
 
-- The look both sites share lives in the becker-consulting.github.io repo, not here: `https://www.becker-consulting.se/assets/css/shared.css` (fonts, palette incl. dark mode, base elements, buttons, header, footer, content pages), `/assets/js/toc.js` (marks the current "On this page" section) and the Geist fonts. `_layouts/base.liquid` links them through `site.sharedAssets` ([_data/site.js](_data/site.js)).
+- The look both sites share lives in the becker-consulting.github.io repo, not here: `https://www.becker-consulting.se/assets/css/shared.css` (fonts, palette incl. dark mode, base elements, buttons, header, footer, content pages), `/assets/js/toc.js` (marks the current "On this page" section), `/assets/js/theme.js` (the invisible dark-mode toggle) and the Geist fonts. `_layouts/base.liquid` links them through `site.sharedAssets` ([_data/site.js](_data/site.js)).
 - `assets/main.scss` and `_sass/` hold only what this site adds or does differently (the CV chat in the header, legacy tokens, element defaults, blog, CV, print). Change shared styles in the other repo.
 - Local work on both sites: run becker-consulting.github.io with `npm start` (port 8080) and this one with `SHARED_ASSETS=http://localhost:8080 npm run serve`.
 
