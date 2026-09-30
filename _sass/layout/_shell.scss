@@ -1,22 +1,13 @@
 /* ============================================
-   SITE SHELL — header, main column, footer
+   SITE SHELL — main column, and where the header and footer differ from
+   shared.css (which has .wrap, .skip-link, .brand and the footer)
    ============================================ */
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.wrap,
 main#content {
   width: 100%;
   max-width: var(--max);
   margin-inline: auto;
   padding-inline: var(--gutter);
-}
-
-main#content {
   flex: 1 0 auto;
   padding-bottom: var(--space-6);
 }
@@ -29,13 +20,6 @@ main > div > section {
   > h2:first-child { margin-top: 0; }
 }
 
-.skip-link {
-  position: absolute; left: 16px; top: -100px; z-index: 10;
-  padding: 10px 16px; border-radius: 8px;
-  background: var(--ink); color: var(--bg); border: none;
-  &:focus { top: 16px; color: var(--bg); }
-}
-
 /* ---- Header ------------------------------------------------------------ */
 
 .site-header {
@@ -43,66 +27,12 @@ main > div > section {
   .site-home & { border-bottom-color: transparent; }
 }
 
-.site-header__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  padding-block: 28px;
-}
-
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  color: var(--ink);
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  border: none;
-  &:hover { color: var(--ink); }
-}
-.brand__mark {
-  width: 28px;
-  height: 28px;
-  border-radius: 7px;
-  display: grid;
-  place-items: center;
-  background: var(--ink);
-  color: var(--bg);
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 1;
-}
+/* A little tighter than becker-consulting.se: this header also holds the CV chat */
+.site-header__inner { padding-block: 28px; }
 
 /* ---- Footer ------------------------------------------------------------ */
 
-.site-footer {
-  margin-top: 96px;
-  border-top: 1px solid var(--line);
-  font-size: 14px;
-}
-.site-footer__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px 32px;
-  flex-wrap: wrap;
-  padding-block: 32px 40px;
-}
 .site-footer__inner p { margin: 0; }
-.site-footer__links {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-  a { color: var(--ink); border: none; &:hover { color: var(--accent); } }
-}
-
-@media (max-width: 700px) {
-  .site-footer { margin-top: 64px; }
-  .site-footer__inner { flex-direction: column; align-items: flex-start; padding-block: 24px 32px; }
-  .site-footer__links { gap: 24px; }
-}
 
 /* ---- Client logos ------------------------------------------------------ */
 

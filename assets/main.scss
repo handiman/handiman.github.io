@@ -1,3 +1,7 @@
+// Fonts, the palette, base elements, buttons, header, footer and the content-page
+// layout come from shared.css on becker-consulting.se (linked before this file in
+// _layouts/base.liquid). This file only has what henrikbecker.net adds or does differently.
+
 // Abstracts — tokens, no output of their own
 @use "abstracts/tokens";
 
@@ -13,7 +17,6 @@
 
 // Components — reusable content patterns
 @use "components/forms";
-@use "components/buttons";
 @use "components/blog";
 @use "components/cards";
 @use "components/competency-summary";
