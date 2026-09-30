@@ -1,286 +1,251 @@
+// CV as PDF, compiled post-build from the same buildCV JSON as the HTML CV.
+// Kept ATS-friendly on purpose: one column, no photo, no icons, no boxes or
+// tables around text, real headings, plain-text contact details and links
+// that spell out their address, and no hyphenation (split words confuse
+// text extraction).
+
 #let data-file = sys.inputs.at("data", default: "henrik-becker.json")
 #let lang = sys.inputs.at("lang", default: "en")
 #let cv = json(data-file)
 #let h = cv.headings
-#let border_radius = 8pt
-#let border_color = rgb("#5F6F67");
-#let border = 0.5pt + border_color
-#let space_1 = 8pt
-#let space_2 = 14pt
-#let space_3 = 26pt
+#let intro = cv.introduction
+
+// Palette from the shared site design (becker-consulting.se), darkened
+// body text for print. Geist, as on the sites (static TTFs in /fonts).
+#let ink = rgb("#2E2429")
+#let body-text = rgb("#3D3439")
+#let muted = rgb("#6B6268")
+#let accent = rgb("#A4533D")
+#let rule = 0.5pt + rgb("#C9C4C6")
+
+#let space_1 = 4pt
+#let space_2 = 8pt
+#let space_3 = 16pt
+
+#set document(
+  title: intro.name + " – " + intro.jobTitle,
+  author: intro.name,
+  description: intro.description,
+  keywords: cv.coreSkills.map(c => c.name) + cv.coreSkills
+    .map(c => c.at("skills", default: ()))
+    .flatten(),
+)
 
 #set page(
   paper: "a4",
-  margin: (x: 2cm, y: 2cm),
-  numbering: "1/1"
-)
-
-#set par(
-  justify: true,
-  leading: 0.52em,
-  spacing: space_2
+  margin: (x: 2cm, top: 1.8cm, bottom: 1.8cm),
+  footer: context {
+    set text(size: 8pt, fill: muted)
+    intro.name
+    std.h(1fr)
+    counter(page).display("1/1", both: true)
+  },
 )
 
 #set text(
-  font: "IBM Plex Sans",
-  size: 12pt,
+  font: "Geist",
+  size: 10pt,
   lang: lang,
-  weight: "light"
+  weight: "regular",
+  fill: body-text,
+  hyphenate: false,
 )
-#show strong: set text(weight: "thin")
+// Non-breaking hyphens (U+2011) in the data aren't in Geist and don't match
+// a plain-text keyword search; print ordinary hyphens.
+#show "\u{2011}": "-"
+#set par(justify: false, leading: 0.6em, spacing: space_2 + 2pt)
+#show strong: set text(weight: "semibold", fill: ink)
+#show link: set text(fill: ink)
 
-#set list(
-  marker: none,
-  body-indent: 0pt
-)
-#show list: set block(below: space_3)
+#set list(marker: [•], indent: 0pt, body-indent: 0.5em, spacing: 0.55em)
 
-#set document(
-  title: cv.introduction.name
-)
+#show title: set text(size: 22pt, weight: "medium", fill: ink)
+#show title: set block(below: 0.35em)
 
-#show title: set text(size: 24pt, weight: "regular") 
-#show heading.where(level: 2): set text(size: 20pt, weight: "regular")
-#show heading.where(level: 2): set block(
-  above: space_3,
-  below: space_2,
-  inset: (bottom: space_2),
-  stroke: (bottom: border),
-  width: 100%
+#show heading: set text(fill: ink)
+#show heading.where(level: 2): it => block(
+  above: space_3 + 6pt,
+  below: space_2 + 2pt,
+  width: 100%,
+  stroke: (bottom: rule),
+  inset: (bottom: 5pt),
+  text(size: 13pt, weight: "medium", it.body),
 )
-#show heading.where(level: 3): set text(
-  size: 18pt, 
-  weight: "regular"
-)
-#show heading.where(level: 3): set block(
-  above: space_2,
-  below: space_2
-)
-#show heading.where(level: 4): set text(size: 14pt, weight: "regular")
-#show heading.where(level: 4): set block(
-  above: space_2,
-  below: space_2
-)
-#show heading.where(level: 5): set text(size: 14pt, weight: "regular")
-#show heading.where(level: 5): set block(
-  above: space_2,
-  below: space_2
-)
-#let section(body) = block(
-  inset: ( top: space_3 ),
-  body
+#show heading.where(level: 3): set text(size: 11.5pt, weight: "semibold")
+#show heading.where(level: 3): set block(above: space_3, below: space_1 + 2pt)
+#show heading.where(level: 4): set text(size: 10.5pt, weight: "semibold")
+#show heading.where(level: 4): set block(above: space_2 + 4pt, below: space_1 + 2pt)
+
+// Small run-in label ("Highlights", "Tech & Methods").
+#let label(body) = block(
+  above: space_2 + 2pt,
+  below: space_1 + 2pt,
+  text(size: 9pt, weight: "semibold", fill: accent, body),
 )
 
+// ---------------------------------------------------------------- dates --
+
+#let months = if lang == "sv" {
+  ("jan", "feb", "mar", "apr", "maj", "jun", "jul", "aug", "sep", "okt", "nov", "dec")
+} else {
+  ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+}
+
+// "2021-10-11T00:00:00.000Z" -> "Oct 2021"; anything else passes through.
 #let format-date(s) = {
+  if s == none or s == "" { return none }
+  if s == "present" { return h.at("present", default: "present") }
   let parts = s.split("-")
   if parts.len() >= 2 {
-    datetime(year: int(parts.at(0)), month: int(parts.at(1)), day: 1).display("[year]-[month]")
-  }
-  else  {
+    months.at(int(parts.at(1)) - 1) + " " + parts.at(0)
+  } else {
     s
   }
 }
 
-#let format-date-text(start, end) = {
-  if start == none or start == "" {
-    none
-  } else if end == none [
-    #format-date(start)
-  ] else [
-    #format-date(start) - #format-date(end)
-  ]
+#let format-period(start, end) = {
+  let a = format-date(start)
+  let b = format-date(end)
+  if a == none { none } else if b == none or a == b { a } else { a + " – " + b }
 }
 
-#let format-meta-line(roles, start, end) = {
+// Role(s) in bold, period right-aligned on the same line.
+#let meta-line(roles, start, end) = {
   let roles-text = if roles == none or roles.len() == 0 { none } else { roles.join(", ") }
-  let date-text = format-date-text(start, end)
-  if roles-text == none and date-text == none {
-    none
-  } else if roles-text == none {
-    date-text
-  } else if date-text == none [
-    *#roles-text*
-  ] else [
-    *#roles-text* | #date-text
-  ]
+  let period = format-period(start, end)
+  if roles-text == none and period == none { return }
+  block(above: 0pt, below: space_2, {
+    if roles-text != none [*#roles-text*]
+    if period != none {
+      std.h(1fr)
+      text(fill: muted, period)
+    }
+  })
 }
 
-#let experience(xp) = block(
-  breakable: true, 
-  inset: ( y: space_1 ), [
-  #set list(
-    marker: [•],
-    body-indent: 0.5em
-  )
-  === #xp.title
-  #if xp.type != none [
-    _ #xp.type _ \
-  ]
-  #format-meta-line(xp.roles, xp.at("startDate", default: none), xp.at("endDate", default: none))
-  
-  #xp.description
-  
-  #let highlights = xp.at("highlights", default: none)
-  #if highlights != none [
-    * #h.highlights *
-    #for highlight in highlights [
-      - #highlight
-    ]
-  ]
+// ------------------------------------------------------------ entries --
 
-  #let competencies = xp.at("competencies", default: none)
-  #if competencies != none [
-    * #h.tech_stack *
-    #for category in competencies [
-      - *#category.name:* #category.tech.join(", ")
-    ]
-  ]
-
-  #let assignments = xp.at("assignments", default: none)
-  #if assignments != none [
-    #for ass in assignments [
-      #block(
-        breakable: false, 
-        stroke: (left: 1pt + luma(240)),
-        fill: luma(250),
-        inset: space_2, [
-          ===== #ass.title
-            #format-meta-line(ass.roles, ass.at("startDate", default: none), ass.at("endDate", default: none))
-            
-            #ass.description
-
-            #let highlights = ass.at("highlights", default: none)
-            #if highlights != none [
-              * #h.highlights *
-              #for highlight in highlights [
-                - #highlight
-              ]
-            ]
-
-            #let competencies = ass.at("competencies", default: none)
-            #if competencies != none [
-              * #h.tech_stack *
-              #for category in competencies [
-                - *#category.name:* #category.tech.join(", ")
-              ]
-            ]
-        ]
-      )
-    ]
-  ]
-])
-
-#let masthead(
-  name: cv.introduction.name,
-  job_title: cv.introduction.jobTitle,
-  email: cv.introduction.email,
-  phone: cv.introduction.telephone,
-  same_as: cv.introduction.sameAs,
-  photo: "img/portrait-800x1199.jpg",
-  scale: 6
-) = {
-  let img_width = 800pt / scale
-  let img_height = 1199pt / scale
-  box(
-    stroke: border, 
-    radius: border_radius,
-    grid(
-      columns: (2fr, 1fr),
-      grid.cell(align: horizon, inset: (left: space_3), [
-        #title()
-        ==== #job_title
-        #link("mailto:\"" + name + "\"<" + email + ">", email) \
-        #link("tel:" + phone.replace("(0)", "").replace(" ", ""), phone) \
-        #for social in same_as [
-          #link(social, social.replace("https://", "").replace("www.linkedin", "linkedin")) \
-        ]
-      ]),
-      grid.cell(align: right, inset: (bottom: 0.5pt), [
-        #box(
-          width: img_width,
-          height: img_height,
-          stroke: none,
-          clip: true,
-          radius: (
-            top-left: 0pt,
-            bottom-left: 0pt,
-            top-right: border_radius,
-            bottom-right: border_radius
-          ),
-          image(photo, width: img_width, height: img_height))
-      ])
-    )
-  )
+#let highlights-list(item) = {
+  let highlights = item.at("highlights", default: none)
+  if highlights != none and highlights.len() > 0 {
+    label(h.highlights)
+    for highlight in highlights [- #highlight]
+  }
 }
 
-#let introduction() = section([
+#let competencies-list(item) = {
+  let competencies = item.at("competencies", default: none)
+  if competencies != none and competencies.len() > 0 {
+    label(h.tech_stack)
+    set text(size: 9.5pt)
+    for category in competencies [- *#category.name:* #category.tech.join(", ")]
+  }
+}
+
+#let entry(xp, level: 3) = {
+  heading(level: level, xp.title)
+  let kind = xp.at("type", default: none)
+  if kind != none {
+    block(above: 0pt, below: space_1 + 1pt, text(fill: muted, style: "italic", kind))
+  }
+  meta-line(
+    xp.at("roles", default: none),
+    xp.at("startDate", default: none),
+    xp.at("endDate", default: none),
+  )
+  if xp.at("description", default: none) != none [#xp.description]
+  highlights-list(xp)
+  competencies-list(xp)
+
+  let assignments = xp.at("assignments", default: none)
+  if assignments != none {
+    pad(left: 1em, for ass in assignments { entry(ass, level: 4) })
+  }
+}
+
+// ------------------------------------------------------------- blocks --
+
+#let masthead() = {
+  // Phone without the "(0)" trunk prefix, which parsers tend to mangle.
+  let phone = intro.telephone.replace("(0)", "").replace("  ", " ")
+  let pretty(url) = url.replace("https://", "").replace("http://", "").replace("www.", "")
+  let contacts = (
+    link("mailto:" + intro.email, intro.email),
+    link("tel:" + phone.replace(" ", ""), phone),
+  )
+  // schema.org PostalAddress from person.yml, shown as "Lidingö, Stockholm".
+  let address = intro.at("address", default: none)
+  if address != none {
+    let place = ("addressLocality", "addressRegion")
+      .map(k => address.at(k, default: none))
+      .filter(v => v != none)
+    if place.len() > 0 { contacts.insert(0, place.join(", ")) }
+  }
+  let socials = ()
+  let url = intro.at("url", default: none)
+  if url != none { contacts.push(link(url, pretty(url))) }
+  for social in intro.at("sameAs", default: ()) { socials.push(link(social, pretty(social))) }
+
+  title(intro.name)
+  block(above: 0pt, below: space_2, text(size: 12.5pt, fill: accent, weight: "medium", intro.jobTitle))
+  // One contact per unbreakable box so an address never splits over lines.
+  let line(items) = items.map(box).join([#std.h(0.4em)|#std.h(0.4em)])
+  block(below: space_2, text(size: 9.5pt)[#line(contacts) \ #line(socials)])
+}
+
+#let introduction() = [
   == #h.summary
-  #cv.introduction.description
-])
+  #intro.description
+]
 
-#let core_competencies(coreSkills: cv.coreSkills) = section([
+#let core_competencies(coreSkills: cv.coreSkills) = [
   == #h.core_competencies
-  #set list(
-    marker: [•],
-    body-indent: 0.5em
-  )
-  #for category in coreSkills [
-    #let skills = category.at("skills", default: none)
-    - #category.name
-      #if skills != none [
-        (#skills.join(", "))
-      ]
-  ]
-])
+  #for category in coreSkills {
+    let skills = category.at("skills", default: none)
+    [- *#category.name*#if skills != none [: #skills.join(", ")]]
+  }
+]
 
-#let work_experience(employment: cv.workExperience) = section([
+#let work_experience(employment: cv.workExperience) = [
   == #h.experience
-  #for xp in employment [
-    #experience(xp)
-  ]
-])
+  #for xp in employment { entry(xp) }
+]
 
-#let projects(projects: cv.projects) = section([
+#let projects(projects: cv.projects) = [
   == #h.projects
-  #for xp in projects [
-    #experience(xp)
-  ]
-]);
+  #for xp in projects { entry(xp) }
+]
 
-#let early_career(employment: cv.earlierCareer) = section([
+#let early_career(employment: cv.earlierCareer) = [
   == #h.earlier_career
-  #for xp in employment [
-    #experience(xp)
-  ]
-])
+  #for xp in employment { entry(xp) }
+]
 
-#let languages(languages: cv.languages) = section([
+#let languages(languages: cv.languages) = [
   == #h.languages
-  #for language in languages [
-    - *#language.name:* #language.proficiency
-  ]
-])
+  #for language in languages [- *#language.name:* #language.proficiency]
+]
 
-#let certifications(certifications: cv.certifications) = section([
+#let certifications(certifications: cv.certifications) = [
   == #h.certs
   #for cert in certifications [
-    - *#cert.title:* #cert.issuer (#cert.achievementDate)
+    - *#cert.title*, #cert.issuer, #cert.achievementDate.slice(0, 4)
   ]
-])
+]
 
-#let education(education: cv.education) = section([
+#let education(education: cv.education) = [
   == #h.education
   #for edu in education [
-    - *#edu.title:* #edu.description (#edu.period)
+    - *#edu.title*, #edu.description, #edu.period
   ]
-])
+]
 
 #masthead()
 #introduction()
 #core_competencies()
-#languages()
 #certifications()
 #work_experience()
 #projects()
 #early_career()
 #education()
+#languages()

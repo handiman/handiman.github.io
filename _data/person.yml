@@ -17,6 +17,11 @@ nationality: Swedish
 jobTitle: Senior .NET Consultant
 telephone: "+46 (0)73 422 83 43"
 email: henrik@becker-consulting.se
+address:
+  "@type": PostalAddress
+  addressLocality: Lidingö
+  addressRegion: Stockholm
+  addressCountry: SE
 birthDate: "1969-06-23"
 url: https://www.henrikbecker.net
 sameAs:
