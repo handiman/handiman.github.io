@@ -55,6 +55,7 @@ ui:
   fun_facts: Fun Facts
   fun_facts_url: /fun-facts/
   read_more: Read more
+  on_this_page: On this page
   org_nr: Org. nr
   registered: Registered in Lidingö, Sweden
   chat_placeholder: Ask my CV bot anything...

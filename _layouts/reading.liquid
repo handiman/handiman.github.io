@@ -1,0 +1,24 @@
+---
+layout: page
+---
+{%- comment -%}
+Content pages (about, blog posts, CV entries, USPs, fun facts, projects): the text in a
+centred column with an "On this page" list beside it that follows the reader, the same
+layout as on becker-consulting.se. The styles (.article-layout, .article, .toc, .prose)
+and the script that marks the current section come from there, see site.sharedAssets.
+The list shows when a page has two or more <h2>s; they get ids here.
+{%- endcomment -%}
+{%- assign body = content | headingIds -%}
+{%- assign toc = body | toc -%}
+<div class="article-layout">
+    <article class="article{% if article_class %} {{ article_class }}{% endif %}" data-section="{{ title }}" data-source="{{ page.url | absolute_url }}">
+        {{ body }}
+    </article>
+    {%- if toc.size > 1 %}
+    <aside class="toc no-print" aria-label="{{ headings.ui.on_this_page }}">
+        <p class="label">{{ headings.ui.on_this_page }}</p>
+        {% for item in toc %}<a href="#{{ item.id }}">{{ item.text }}</a>
+        {% endfor %}
+    </aside>
+    {%- endif %}
+</div>

@@ -107,3 +107,25 @@ export const getHreflangAlternates = (item, allItems, siteUrl) => {
  */
 export const findByInputPath = (items, inputPath) =>
   items.find((item) => item.inputPath === inputPath);
+
+// Heading ids for "On this page" lists, here and on becker-consulting.se; å/ä/ö become a/a/o.
+export const headingId = (text) =>
+  text
+    .replace(/<[^>]+>/g, "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+
+// Gives every plain <h2> in rendered HTML an id built from its text.
+export const addHeadingIds = (html = "") =>
+  String(html).replace(/<h2>([\s\S]*?)<\/h2>/g, (_, text) => `<h2 id="${headingId(text)}">${text}</h2>`);
+
+// The "On this page" list: every <h2 id="…"> in rendered HTML, as { id, text }.
+export const tableOfContents = (html = "") =>
+  [...String(html).matchAll(/<h2[^>]*\sid="([^"]+)"[^>]*>([\s\S]*?)<\/h2>/g)].map(([, id, text]) => ({
+    id,
+    text: text.replace(/<[^>]+>/g, "").trim(),
+  }));

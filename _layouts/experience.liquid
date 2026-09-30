@@ -1,24 +1,20 @@
 ---
-layout: page
+layout: reading
 ---
 {%- if tags contains "usps" -%}{%- assign crumb_label = headings.ui.how_i_work -%}{%- assign crumb_url = headings.ui.usps_url -%}
 {%- elsif tags contains "fun-facts" -%}{%- assign crumb_label = headings.ui.fun_facts -%}{%- assign crumb_url = headings.ui.fun_facts_url -%}
 {%- else -%}{%- assign crumb_label = headings.ui.cv -%}{%- assign crumb_url = headings.ui.cv_url -%}{%- endif -%}
-<div class="reading" data-section="{{ title }}" data-source="{{ page.url | absolute_url }}">
-    <article>
-        <header class="page-head">
-            <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ headings.ui.home_url }}">{{ headings.ui.home }}</a><span aria-hidden="true">/</span><a href="{{ crumb_url }}">{{ crumb_label }}</a></nav>
-            <h1>{{ title }}</h1>
-            <p class="page-meta">
-                {% if roles %}<span>{% for role in roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>{% endif %}
-                <time>
-                    <span>{{ start_date | date: '%Y-%m'}}</span>
-                    <span>{{ end_date | date: '%Y-%m' }}</span>
-                </time>
-            </p>
-        </header>
-        <div class="prose">
-            {{ content }}
-        </div>
-    </article>
+<header>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ headings.ui.home_url }}">{{ headings.ui.home }}</a><span aria-hidden="true">/</span><a href="{{ crumb_url }}">{{ crumb_label }}</a></nav>
+    <h1>{{ title }}</h1>
+    <p class="meta page-meta">
+        {% if roles %}<span>{% for role in roles %}{{ role }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>{% endif %}
+        <time>
+            <span>{{ start_date | date: '%Y-%m'}}</span>
+            <span>{{ end_date | date: '%Y-%m' }}</span>
+        </time>
+    </p>
+</header>
+<div class="prose">
+    {{ content }}
 </div>

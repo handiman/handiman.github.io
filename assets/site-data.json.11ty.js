@@ -5,6 +5,8 @@
 // Rendered once per language: /assets/site-data.json (English) and
 // /sv/assets/site-data.json (Swedish). Same shape; `lang` says which one it is.
 // Recommendations, certifications and download links are the same in both.
+import { addHeadingIds } from "../.eleventy.utils.js";
+
 const year = (date) => (date === "present" ? "present" : new Date(date).getFullYear());
 
 const years = (start, end) => {
@@ -14,17 +16,6 @@ const years = (start, end) => {
 };
 
 const absolute = (base, url) => (url ? new URL(url, base).href : null);
-
-// Heading ids for consumers' "On this page" lists; å/ä/ö become a/a/o.
-const headingId = (text) =>
-  text
-    .replace(/<[^>]+>/g, "")
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
 
 export default class SiteData {
   data() {
@@ -136,9 +127,7 @@ export default class SiteData {
           lead: about.data.lead ?? null,
           description: about.data.description ?? null,
           // Headings get ids so consumers can build an "On this page" list.
-          html: String(about.content ?? "")
-            .replace(/<h2>([\s\S]*?)<\/h2>/g, (_, text) => `<h2 id="${headingId(text)}">${text}</h2>`)
-            .trim(),
+          html: addHeadingIds(about.content).trim(),
           quote: quote ? { by: quote.name?.trim(), text: quote.text?.replace(/\s+/g, " ").trim() } : null,
         };
       })(),
