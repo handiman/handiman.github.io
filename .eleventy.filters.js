@@ -4,6 +4,8 @@ import {
   normalizeSkills,
   getHreflangAlternates,
   findByInputPath,
+  addHeadingIds,
+  tableOfContents,
 } from "./.eleventy.utils.js";
 
 const md = useEmoji(markdownIt());
@@ -21,6 +23,8 @@ export default (eleventyConfig) => {
     },
   );
   eleventyConfig.addFilter("normalizeSkills", normalizeSkills);
+  eleventyConfig.addFilter("headingIds", addHeadingIds);
+  eleventyConfig.addFilter("toc", tableOfContents);
   eleventyConfig.addFilter("jsonify", (variable) => JSON.stringify(variable));
   // Rendered HTML → readable plain text (for the AI ingestion file): drops <style>/<script>,
   // keeps list items and paragraphs on their own lines.

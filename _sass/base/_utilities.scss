@@ -28,20 +28,6 @@ address {
     }
 }
 
-.theme-toggle {
-    position: fixed;
-    cursor: pointer;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    background-color: transparent;
-    color: transparent;
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    border: none;
-}
-
 .flip-text {
   unicode-bidi: bidi-override;
   direction: rtl;

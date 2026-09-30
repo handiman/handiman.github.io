@@ -1,5 +1,5 @@
 /* ============================================
-   PAGE PATTERNS — page heads, reading column, prose, home hero
+   PAGE PATTERNS — page heads, reading column, home hero, CV
    ============================================ */
 
 /* ---- Page head (h1 + breadcrumb/meta) ----------------------------------- */
@@ -12,17 +12,6 @@
 
   h1 { margin: 0; }
   .lead { margin-top: 12px; max-width: 760px; }
-}
-
-.breadcrumb {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  font-family: var(--font-mono);
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  a { color: var(--text); border: none; &:hover { color: var(--ink); } }
-  [aria-current] { color: var(--ink); }
 }
 
 .page-meta {
@@ -43,20 +32,24 @@
   > article > header.page-head { padding-top: 64px; }
 }
 
+/* Prose comes from shared.css; these are this site's additions */
 .prose {
   margin-top: 40px;
-  font-size: var(--font-size-body);
-  line-height: 1.75;
-
-  > * + * { margin-top: 18px; }
-  h2 { margin-top: 64px; font-size: 30px; }
-  h3 { margin-top: 44px; font-size: 22px; }
   h4 { margin-top: 28px; font-size: 18px; }
-  h2 + *, h3 + *, h4 + * { margin-top: 14px; }
+  h4 + * { margin-top: 14px; }
   p { margin-bottom: 0; }
-  ul, ol { margin: 0; }
-  img { border-radius: 14px; }
 }
+
+/* ---- Content pages ------------------------------------------------------ */
+
+/* .article-layout, .article, .toc (shared.css) hold the about page, posts, CV
+   entries, USPs and fun facts; see _layouts/reading.liquid */
+.article .page-meta { margin-top: 16px; }
+
+/* Plain bullets in the text, as on becker-consulting.se, instead of this site's dots */
+.article .prose :is(ul, ol) { line-height: inherit; }
+.article .prose ul { list-style: disc; }
+.article .prose ul > li { padding-left: 0; &::before { content: none; } }
 
 /* ---- Home hero ---------------------------------------------------------- */
 

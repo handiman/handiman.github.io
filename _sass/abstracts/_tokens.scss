@@ -1,12 +1,12 @@
 /* ============================================
-   DESIGN TOKENS
-   Palette sampled from the portrait (shared with becker-consulting.se):
-   warm grey body text instead of near-black, headings carry the contrast.
+   DESIGN TOKENS — this site's additions
+   The palette, fonts and layout tokens (--bg, --ink, --text, --accent,
+   --font-sans, --gutter, --max, …) come from shared.css on
+   becker-consulting.se, including dark mode and the .light/.dark classes
+   the theme toggle sets. Only what this site adds on top lives here.
    ============================================ */
 
 :root {
-  color-scheme: light dark;
-
   /* Spacing (kept from the previous theme; used across components) */
   --space-1: .5rem;
   --space-2: .75rem;
@@ -16,8 +16,6 @@
   --space-6: 3rem;
 
   /* Typography */
-  --font-sans: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
   --font-family-sans: var(--font-sans);
   --font-size-body: 1.125rem;       /* 18px */
   --font-size-body-s: .9375rem;     /* 15px */
@@ -28,28 +26,9 @@
   --line-height-body: 1.65;
   --line-height-heading: 1.15;
 
-  /* Layout */
-  --gutter: clamp(20px, 5.6vw, 80px);
-  --max: 1440px;
-  --radius: 20px;
-
-  /* Light palette */
-  --bg: #F2F1F1;          /* studio backdrop, lifted */
-  --surface: #E3E2E4;     /* studio grey */
-  --card: #EAE8E9;
-  --ink: #2E2429;         /* jacket shadow — headings */
-  --text: #6B6268;        /* jacket highlight — body, 5.2:1 */
-  --line: #D6D2D4;
-  --line-strong: #C9C4C6;
-  --line-dashed: #B9B2B5;
-  --accent: #A4533D;      /* beard copper */
-  --on-accent: #F2F1F1;
-  --band-bg: #2A2126;
-  --code-bg: #2A2126;
-  --code-text: #E6E0E3;
   --logo-filter: grayscale(100%);
 
-  /* Legacy names, mapped onto the new palette so existing components keep working */
+  /* Legacy names, mapped onto the shared palette so existing components keep working */
   --color-bg: var(--bg);
   --color-surface: var(--card);
   --color-text: var(--ink);
@@ -64,18 +43,6 @@
 }
 
 @mixin dark-palette {
-  --bg: #171517;
-  --surface: #221E21;
-  --card: #221E21;
-  --ink: #EDEAEB;
-  --text: #A69EA2;
-  --line: #332D31;
-  --line-strong: #4A4247;
-  --line-dashed: #5A4F55;
-  --accent: #D9A08F;
-  --on-accent: #171517;
-  --band-bg: #1E1A1D;
-  --code-bg: #1E1A1D;
   --logo-filter: grayscale(100%) brightness(6) contrast(1.1);
   --shadow-sm: 0 10px 28px rgba(0, 0, 0, 0.3);
 }
