@@ -1,16 +1,14 @@
 ---
-layout: page
+layout: reading
 title: Fun Facts
 sitemap: false
 ---
 {%- if lang == "sv" -%}{%- assign facts = collections.fun_facts_sv -%}{%- else -%}{%- assign facts = collections.fun_facts -%}{%- endif -%}
-<div class="reading" data-section="{{ page.title }}" data-source="{{ page.url | absolute_url }}">
-    <header class="page-head">
-        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ headings.ui.home_url }}">{{ headings.ui.home }}</a><span aria-hidden="true">/</span><span aria-current="page">{{ title }}</span></nav>
-        <h1>{{ title }}</h1>
-    </header>{% for fact in facts %}
-    <article data-section="Fun Facts" data-source="{{ fact.url | absolute_url }}">
-        <h2><a href="{{ fact.url }}">{{ fact.data.title }}</a></h2>
-        {{ fact.content }}
-    </article>{% endfor %}
-</div>
+<header>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ headings.ui.home_url }}">{{ headings.ui.home }}</a><span aria-hidden="true">/</span><span aria-current="page">{{ title }}</span></nav>
+    <h1>{{ title }}</h1>
+</header>{% for fact in facts %}
+<article data-section="Fun Facts" data-source="{{ fact.url | absolute_url }}">
+    <h2><a href="{{ fact.url }}">{{ fact.data.title }}</a></h2>
+    {{ fact.content }}
+</article>{% endfor %}

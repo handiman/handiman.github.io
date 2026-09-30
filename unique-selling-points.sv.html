@@ -1,16 +1,12 @@
 ---
-layout: page
+layout: reading
 title: Hur jag arbetar
 permalink: /sv/unique-selling-points/
 ingress: "Här går jag djupare in på hur jag arbetar: principer jag lutar mig mot, mönster jag ofta återkommer till och verkliga projekt där idéerna har visat sig hålla."
 ---
-<div>
-    <article data-section="Unique Selling Points" data-source="{{ page.url | absolute_url }}">
-        <header class="page-head">
-            <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ headings.ui.home_url }}">{{ headings.ui.home }}</a><span aria-hidden="true">/</span><span aria-current="page">{{ title }}</span></nav>
-            <h1>{{ title }}</h1>
-            <p class="lead">{{ ingress }}</p>
-        </header>
-        {% include 'usps' %}
-    </article>
-</div>
+<header>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ headings.ui.home_url }}">{{ headings.ui.home }}</a><span aria-hidden="true">/</span><span aria-current="page">{{ title }}</span></nav>
+    <h1>{{ title }}</h1>
+    <p class="lead">{{ ingress }}</p>
+</header>
+{% include 'usps' %}
