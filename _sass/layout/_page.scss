@@ -25,13 +25,6 @@
   time span:empty { display: none; }
 }
 
-/* ---- Reading column ----------------------------------------------------- */
-
-.reading {
-  max-width: 760px;
-  > article > header.page-head { padding-top: 64px; }
-}
-
 /* Prose comes from shared.css; these are this site's additions */
 .prose {
   margin-top: 40px;
@@ -42,8 +35,8 @@
 
 /* ---- Content pages ------------------------------------------------------ */
 
-/* .article-layout, .article, .toc (shared.css) hold the about page, posts, CV
-   entries, USPs and fun facts; see _layouts/reading.liquid */
+/* .article-layout, .article, .toc (shared.css) hold the about page, blog, posts,
+   CV entries, USPs and fun facts; see _layouts/reading.liquid */
 .article .page-meta { margin-top: 16px; }
 
 /* Plain bullets in the text, as on becker-consulting.se, instead of this site's dots */
@@ -202,7 +195,8 @@
   .cv-head__title { font-size: 17px; }
 }
 
-.page-head + .cards { margin-top: 48px; }
+.page-head + .cards,
+.article > header + .cards { margin-top: 48px; }
 
 /* ---- Short CV (web) ----------------------------------------------------- */
 

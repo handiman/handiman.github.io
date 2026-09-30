@@ -1,15 +1,11 @@
 ---
-layout: page
+layout: reading
 title: How I work
 ingress: This page goes deeper into how I work — the principles I rely on, the patterns I return to, and the real‑world projects where these ideas have proven themselves.
 ---
-<div>
-    <article data-section="Unique Selling Points" data-source="{{ page.url | absolute_url }}">
-        <header class="page-head">
-            <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ headings.ui.home_url }}">{{ headings.ui.home }}</a><span aria-hidden="true">/</span><span aria-current="page">{{ title }}</span></nav>
-            <h1>{{ title }}</h1>
-            <p class="lead">{{ ingress }}</p>
-        </header>
-        {% include 'usps' %}
-    </article>
-</div>
+<header>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ headings.ui.home_url }}">{{ headings.ui.home }}</a><span aria-hidden="true">/</span><span aria-current="page">{{ title }}</span></nav>
+    <h1>{{ title }}</h1>
+    <p class="lead">{{ ingress }}</p>
+</header>
+{% include 'usps' %}
