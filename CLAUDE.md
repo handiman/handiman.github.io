@@ -55,11 +55,13 @@ None of these consumers are generated from each other — each is templated inde
 
 ### Layout hierarchy ([_layouts/](_layouts/))
 
-- [base.liquid](_layouts/base.liquid) is the root `<html>` shell (head, meta/OG tags, `/assets/main.css`, theme-toggle button, `main.js`) — it renders `{{ content }}` directly into `<body>` with no header/main/footer chrome of its own.
+- [base.liquid](_layouts/base.liquid) is the root `<html>` shell (head, meta/OG tags, the shared stylesheet and `/assets/main.css`, theme-toggle button, `main.js`) — it renders `{{ content }}` directly into `<body>` with no header/main/footer chrome of its own.
 - [page.liquid](_layouts/page.liquid) (`layout: base`) adds the site chrome: `{% include 'header' %}`, `<main id="content">{{ content }}</main>`, `{% include 'footer' %}`. Most content types build on this, directly or transitively.
-- [collection.liquid](_layouts/collection.liquid) (`layout: page`) wraps content in `<div data-section><article><header><h1>{{ title }}</h1></header>{{ content }}</article></div>` — a titled write-up with no extra metadata. Used by `usp` and `fun-facts`.
-- [experience.liquid](_layouts/experience.liquid) (`layout: page`) is `collection.liquid` plus a `roles`/`start_date`–`end_date` line under the `<h1>`. Used by `experience`, `education`, and `employment` — anything with a role and a date range.
-- When adding a content type, pick whichever of `page` / `collection` / `experience` matches its shape rather than writing a new top-level `<html>` layout; only `base.liquid` should ever own the document shell.
+- [reading.liquid](_layouts/reading.liquid) (`layout: page`) is the content-page frame, the same as on becker-consulting.se: the text in a centred column (`.article-layout` / `.article`) and an "On this page" list (`.toc`) beside it that follows the reader. It gives plain `<h2>`s ids (`headingIds` filter) and shows the list when there are two or more (`toc` filter). `article`, `collection`, `experience` and `post` build on it; the landing page, CV and list pages (blog, USPs, fun facts) don't.
+- [article.liquid](_layouts/article.liquid) (`layout: reading`) is breadcrumb, title, optional lead, prose and an optional recommendation. Used by the About page.
+- [collection.liquid](_layouts/collection.liquid) (`layout: reading`) is a breadcrumb back to its list, the title and prose — a titled write-up with no extra metadata. Used by `usp` and `fun-facts`.
+- [experience.liquid](_layouts/experience.liquid) (`layout: reading`) is `collection.liquid` plus a `roles`/`start_date`–`end_date` line under the `<h1>`. Used by `experience`, `education`, and `employment` — anything with a role and a date range.
+- When adding a content type, pick whichever of `page` / `article` / `collection` / `experience` matches its shape rather than writing a new top-level `<html>` layout; only `base.liquid` should ever own the document shell.
 
 ### Eleventy config specifics ([.eleventy.js](.eleventy.js))
 
@@ -102,3 +104,10 @@ Trunk-based development with short-lived feature branches.
 - `assets/site-data.json.11ty.js` publishes them as `/assets/site-data.json` (English) and `/sv/assets/site-data.json` (Swedish, same shape, `lang: "sv"`) (short CV = assignments started on or after `site.shortCvSince`). Swedish values come from the `.sv` content and data files, falling back to English. Treat its shape as a contract: add fields freely; rename/remove only together with `_data/shared.js`, `cv.js` and `projects.js` in the becker-consulting.github.io repo, and bump `version` for breaking changes.
 - Project cards there use `name`, `url`, `tagline`, `summary`, `badge` and `skills` from `projects/*.md` front matter.
 - After deploying, CI sends a `shared-content-updated` repository_dispatch to becker-consulting/becker-consulting.github.io (secret `SHARED_CONTENT_DISPATCH_TOKEN`), which rebuilds that site.
+
+## Shared design (becker-consulting.se)
+
+- The look both sites share lives in the becker-consulting.github.io repo, not here: `https://www.becker-consulting.se/assets/css/shared.css` (fonts, palette incl. dark mode, base elements, buttons, header, footer, content pages), `/assets/js/toc.js` (marks the current "On this page" section) and the Geist fonts. `_layouts/base.liquid` links them through `site.sharedAssets` ([_data/site.js](_data/site.js)).
+- `assets/main.scss` and `_sass/` hold only what this site adds or does differently (the CV chat in the header, legacy tokens, element defaults, blog, CV, print). Change shared styles in the other repo.
+- Local work on both sites: run becker-consulting.github.io with `npm start` (port 8080) and this one with `SHARED_ASSETS=http://localhost:8080 npm run serve`.
+
