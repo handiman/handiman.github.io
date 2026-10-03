@@ -1,0 +1,8 @@
+# The blog moved to becker-consulting.se on 2026-10-03. "Web 1.0" didn't
+# move; it points at its LinkedIn original. Most specific rules first.
+/blog/web-1-0/                    https://www.linkedin.com/feed/update/urn:li:activity:7435643974310105088/ 301
+/blog/web-1-0                     https://www.linkedin.com/feed/update/urn:li:activity:7435643974310105088/ 301
+/blog/feed.xml                    https://www.becker-consulting.se/en/blog/feed.xml 301
+/blog/rss.xml                     https://www.becker-consulting.se/en/blog/feed.xml 301
+/blog                             https://www.becker-consulting.se/en/blog/ 301
+/blog/*                           https://www.becker-consulting.se/en/blog/:splat 301

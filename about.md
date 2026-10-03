@@ -14,7 +14,7 @@ I've worked in a wide range of industries, most recently finance, insurance and 
 
 ## On AI
 
-I use Claude Code more or less daily, and I build with AI too: the [CV chatbot](https://www.henrikbecker.net/projects/cv-bot/) on henrikbecker.net runs on .NET and Semantic Kernel. Language models don't know when they're wrong though, so an Authentic Intelligence has to stay in the loop. [More on that →](https://www.henrikbecker.net/blog/ai-and-domain-knowledge/)
+I use Claude Code more or less daily, and I build with AI too: the [CV chatbot](https://www.henrikbecker.net/projects/cv-bot/) on henrikbecker.net runs on .NET and Semantic Kernel. Language models don't know when they're wrong though, so an Authentic Intelligence has to stay in the loop. [More on that →](https://www.becker-consulting.se/en/blog/ai-and-domain-knowledge/)
 
 ## Off the clock
 
