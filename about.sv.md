@@ -14,7 +14,7 @@ Jag har arbetat i många olika branscher, senast inom finans, försäkring och o
 
 ## Om AI
 
-Jag använder Claude Code mer eller mindre dagligen och bygger också med AI: [CV-chattboten](https://www.henrikbecker.net/sv/projects/cv-bot/) på henrikbecker.net körs på .NET och Semantic Kernel. Språkmodeller vet dock inte när de har fel, så en autentisk intelligens måste finnas med i loopen. [Mer om det (på engelska) →](https://www.henrikbecker.net/blog/ai-and-domain-knowledge/)
+Jag använder Claude Code mer eller mindre dagligen och bygger också med AI: [CV-chattboten](https://www.henrikbecker.net/sv/projects/cv-bot/) på henrikbecker.net körs på .NET och Semantic Kernel. Språkmodeller vet dock inte när de har fel, så en autentisk intelligens måste finnas med i loopen. [Mer om det (på engelska) →](https://www.becker-consulting.se/en/blog/ai-and-domain-knowledge/)
 
 ## På fritiden
 

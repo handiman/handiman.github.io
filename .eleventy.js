@@ -3,7 +3,6 @@ import fs from "node:fs";
 import path from "node:path";
 import * as sass from "sass";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
-import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import configureCollections from "./.eleventy.collections.js";
 import configureFilters from "./.eleventy.filters.js";
 import { useEmoji } from "./.eleventy.markdown.js";
@@ -22,22 +21,10 @@ export default async function (eleventyConfig) {
   eleventyConfig.setLayoutsDirectory("_layouts");
   eleventyConfig.amendLibrary("md", useEmoji);
   eleventyConfig.addPlugin(syntaxHighlight);
-  for (const [type, outputPath] of [["atom", "/blog/feed.xml"], ["rss", "/blog/rss.xml"]]) {
-    eleventyConfig.addPlugin(feedPlugin, {
-      type,
-      outputPath,
-      collection: { name: "posts", limit: 20 },
-      metadata: {
-        language: "en",
-        title: "Henrik Becker — Blog",
-        subtitle: "Notes on .NET, architecture and the things I build off the clock.",
-        base: "https://www.henrikbecker.net/",
-        author: { name: "Henrik Becker" },
-      },
-    });
-  }
 
   eleventyConfig.addPassthroughCopy("favicon.*");
+  // Cloudflare Pages redirects: the blog moved to becker-consulting.se.
+  eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("assets/*.typ");
   eleventyConfig.addPassthroughCopy("assets/main.js");
   eleventyConfig.addPassthroughCopy("assets/fonts");

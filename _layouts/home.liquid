@@ -53,24 +53,6 @@ layout: page
     <h2><a href="{{ headings.ui.usps_url }}">{{ headings.ui.how_i_work }}</a></h2>
     {% include 'usps' %}
 </section>
-{%- if collections.blog.size > 0 %}
-<section id="writing" class="no-print">
-    <h2><a href="/blog/">{{ labels.latest_writing }}</a></h2>
-    <ul class="cards post-cards">
-        {%- for post in collections.blog limit: 3 %}
-        {%- assign post_date = post.date | date: '%Y-%m-%d' %}
-        <li class="card">
-            <time datetime="{{ post_date }}">{{ post_date }}</time>
-            <h3>{{ post.data.title }}</h3>
-            <div class="card-body">
-                {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
-                <a class="more" href="{{ post.url }}">{{ headings.ui.read_more }}</a>
-            </div>
-        </li>
-        {%- endfor %}
-    </ul>
-</section>
-{%- endif %}
 <section id="clients" data-source="{{ page.url  }}#clients">
     <h2 class="label">{{ labels.clients }}</h2>
     <ul class="client-logos">{% for client in collections.clients %}{% if client.data.logo %}
