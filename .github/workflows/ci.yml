@@ -32,7 +32,7 @@ jobs:
 
       - name: Publish to Cloudflare Pages
         # cloudflare/pages-action was retired; wrangler-action is its replacement.
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -42,7 +42,7 @@ jobs:
       # Needs a fine-grained token with Contents: read & write on that repo.
       - name: Notify becker-consulting.se
         if: ${{ env.DISPATCH_TOKEN != '' }}
-        uses: peter-evans/repository-dispatch@v3
+        uses: peter-evans/repository-dispatch@v4
         with:
           token: ${{ secrets.SHARED_CONTENT_DISPATCH_TOKEN }}
           repository: becker-consulting/becker-consulting.github.io
