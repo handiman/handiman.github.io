@@ -99,6 +99,7 @@ Trunk-based development with short-lived feature branches.
 - This repo is the single source for the CV, side projects, client logos and recommendations shown on becker-consulting.se.
 - `assets/site-data.json.11ty.js` publishes them as `/assets/site-data.json` (English) and `/sv/assets/site-data.json` (Swedish, same shape, `lang: "sv"`) (short CV = assignments started on or after `site.shortCvSince`). Swedish values come from the `.sv` content and data files, falling back to English. Treat its shape as a contract: add fields freely; rename/remove only together with `_data/shared.js`, `cv.js` and `projects.js` in the becker-consulting.github.io repo, and bump `version` for breaking changes.
 - Project cards there use `name`, `url`, `tagline`, `summary`, `badge` and `skills` from `projects/*.md` front matter.
+- The short CV is shared as finished HTML: `_includes/short-cv.liquid` renders it for `/cv/` and `/sv/cv/` and for the fragments `/assets/short-cv.html` and `/sv/assets/short-cv.html` (absolute links; `__OTHER_CV_URL__` is replaced by becker-consulting.se with its own CV page). Its styles are in `shared.css` on becker-consulting.se. Change the CV here and both sites follow.
 - After deploying, CI sends a `shared-content-updated` repository_dispatch to becker-consulting/becker-consulting.github.io (secret `SHARED_CONTENT_DISPATCH_TOKEN`), which rebuilds that site.
 
 ## Shared design (becker-consulting.se)

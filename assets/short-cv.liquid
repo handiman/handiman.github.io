@@ -1,0 +1,11 @@
+---
+# The short CV as a ready-made HTML fragment for becker-consulting.se, which shows it
+# on its own CV page so both sites have the same CV. Same include as /cv/.
+permalink: /assets/short-cv.html
+layout: null
+eleventyExcludeFromCollections: true
+sitemap: false
+---
+{%- assign cv_base = site.production_url -%}
+{%- assign cv_other_url = "__OTHER_CV_URL__" -%}
+{% include 'short-cv' %}
