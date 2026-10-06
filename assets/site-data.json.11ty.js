@@ -26,7 +26,7 @@ export default class SiteData {
       eleventyExcludeFromCollections: true,
       layout: null,
       // Re-render when these change during --serve (incremental builds).
-      eleventyImport: { collections: ["experience", "experience_sv", "projects", "projects_sv", "usps", "usps_sv"] },
+      eleventyImport: { collections: ["experience", "experience_sv", "projects", "projects_sv", "usps", "usps_sv", "clients"] },
     };
   }
 
@@ -113,6 +113,15 @@ export default class SiteData {
         skills: project.data.skills ?? [],
         since: year(project.data.start_date),
       })),
+      // Client logos (assignments marked `client: true` that have a logo). Names and logos
+      // are the same in both languages; the link goes to the assignment in this language.
+      clients: (data.collections.clients ?? [])
+        .filter((client) => client.data.logo)
+        .map((client) => ({
+          name: client.data.title,
+          logo: absolute(base, client.data.logo),
+          url: absolute(base, sv ? `/sv${client.url}` : client.url),
+        })),
       usps: collection("usps").map((usp) => ({
         id: usp.fileSlug,
         title: usp.data.title,
