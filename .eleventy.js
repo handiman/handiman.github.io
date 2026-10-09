@@ -25,8 +25,11 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon.*");
   // Cloudflare Pages redirects: the blog moved to becker-consulting.se.
   eleventyConfig.addPassthroughCopy("_redirects");
+  // Cloudflare Pages response headers: security headers and the Content-Security-Policy.
+  eleventyConfig.addPassthroughCopy("_headers");
   eleventyConfig.addPassthroughCopy("assets/*.typ");
   eleventyConfig.addPassthroughCopy("assets/main.js");
+  eleventyConfig.addPassthroughCopy("assets/cv-chat.js");
   eleventyConfig.addPassthroughCopy("assets/fonts");
   eleventyConfig.addPassthroughCopy("assets/img");
   eleventyConfig.addPassthroughCopy("googlef0bc3dbe928e1f73.html");
