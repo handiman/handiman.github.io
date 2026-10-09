@@ -34,6 +34,21 @@
     });
   }
 
+  // [data-show="id"] reveals the element with that id; [data-hide] hides itself when clicked.
+  document.querySelectorAll("[data-show]").forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      var target = document.getElementById(link.getAttribute("data-show"));
+      if (!target) return;
+      e.preventDefault();
+      target.style.display = "block";
+    });
+  });
+  document.querySelectorAll("[data-hide]").forEach(function (el) {
+    el.addEventListener("click", function () {
+      el.style.display = "none";
+    });
+  });
+
   document.querySelectorAll('.flippable').forEach(card => {
     card.addEventListener('click', () => {
       card.classList.toggle('flipped');

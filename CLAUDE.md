@@ -77,6 +77,10 @@ None of these consumers are generated from each other — each is templated inde
 - The generated `assets/henrik-becker.resume.json` is also pushed to a public Gist as part of the same job.
 - A second workflow (`ingest.yml`) fires after the Pages deployment completes and POSTs the live `/cv` and `/fun-facts` HTML to an external AI ingestion endpoint (`henrikbecker.azurewebsites.net`) — unrelated to the Eleventy build itself, just a post-deploy side effect.
 
+### Security headers ([_headers](_headers))
+
+Cloudflare Pages sends the headers in `_headers` (passthrough-copied) on every response: HSTS, nosniff, X-Frame-Options, Referrer-Policy, Permissions-Policy and an enforced Content-Security-Policy. The CSP allows no inline script and no inline event handlers (`onclick=`, `onload=`, `javascript:` links): put behaviour in `assets/main.js` (see `[data-show]`/`[data-hide]`) or another file under `assets/`. JSON-LD `<script>` blocks are fine. A script, style, font, image or fetch from a new host needs the policy updated first. The chat widget's version lives in `assets/cv-chat.js`.
+
 ## Branching
 Trunk-based development with short-lived feature branches.
 

@@ -1,0 +1,19 @@
+# Cloudflare Pages response headers, the same set as Dopp
+# (dopp-site docs/adr/0047-security-headers.md), with the Content-Security-Policy
+# enforced from the start: the site is static and its scripts are known.
+#
+# The CSP allows no inline script and no inline event handler (onclick="..." and
+# the like). Scripts come from this site, becker-consulting.se (theme.js,
+# toc.js) and jsDelivr (the chat widget, see assets/cv-chat.js). Anything new
+# that loads from another host, or runs inline, needs a change here first.
+#
+# Cloudflare's bot "JavaScript detections" injects an inline script, which this
+# policy blocks. That only shows up as a console error and a failed detection;
+# Cloudflare doesn't block visitors over it unless a WAF rule says so.
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=(), usb=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://www.becker-consulting.se/assets/ https://cdn.jsdelivr.net/gh/handiman/; style-src 'self' 'unsafe-inline' https://www.becker-consulting.se/assets/ https://cdn.jsdelivr.net/gh/handiman/; font-src 'self' https://www.becker-consulting.se/assets/; img-src 'self' data:; connect-src 'self' https://ai-worker.henrik-becker.workers.dev; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'
