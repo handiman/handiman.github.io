@@ -58,6 +58,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Publish gist
+        if: false
         uses: exuanbo/actions-deploy-gist@v1
         with:
           token: ${{ secrets.AUTH_TOKEN }}
