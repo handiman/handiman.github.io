@@ -75,7 +75,7 @@ None of these consumers are generated from each other — each is templated inde
 
 - Push to `master` builds the site, compiles CV PDFs (Typst installed manually via curl, no package manager), and deploys `_site` to Cloudflare Pages (project `henrikbecker`, see [wrangler.toml](wrangler.toml)).
 - The generated `assets/henrik-becker.resume.json` is also pushed to a public Gist as part of the same job.
-- A second workflow (`ingest.yml`) fires after the Pages deployment completes and POSTs `/assets/henrik-becker.ai` to the CV bot Worker (`INGEST_URL`, Bearer `INGEST_TOKEN`; the henrikbecker.py repo) — unrelated to the Eleventy build itself, just a post-deploy side effect.
+- A second workflow (`ingest.yml`) fires after the Pages deployment completes and POSTs `/assets/henrik-becker.ai` to the CV bot Worker (`INGEST_URL`, Bearer `INGEST_TOKEN`; the henrikbecker.net.chat repo) — unrelated to the Eleventy build itself, just a post-deploy side effect.
 
 ### Security headers ([_headers](_headers))
 
