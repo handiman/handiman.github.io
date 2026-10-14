@@ -16,4 +16,4 @@
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=(), usb=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://www.becker-consulting.se/assets/ https://cdn.jsdelivr.net/gh/handiman/; style-src 'self' 'unsafe-inline' https://www.becker-consulting.se/assets/ https://cdn.jsdelivr.net/gh/handiman/; font-src 'self' https://www.becker-consulting.se/assets/; img-src 'self' data:; connect-src 'self' https://chat-worker.henrik-becker.workers.dev; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://www.becker-consulting.se/assets/ https://cdn.jsdelivr.net/gh/handiman/; style-src 'self' 'unsafe-inline' https://www.becker-consulting.se/assets/ https://cdn.jsdelivr.net/gh/handiman/; font-src 'self' https://www.becker-consulting.se/assets/; img-src 'self' data:; connect-src 'self' https://chat.henrik-becker.workers.dev; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'
