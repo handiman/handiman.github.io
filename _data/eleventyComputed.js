@@ -1,4 +1,4 @@
-import { getLocale } from "../.eleventy.utils.js";
+import { getLocale, stripTags } from "../.eleventy.utils.js";
 
 const getLocalizedData = (key, data) => {
   const lang = getLocale(data);
@@ -11,7 +11,7 @@ const MAX_DESCRIPTION = 160;
 
 const clean = (text) =>
   typeof text === "string"
-    ? text.replace(/<[^>]+>/g, "").replace(/\*\*|__|`/g, "").replace(/\s+/g, " ").trim()
+    ? stripTags(text).replace(/\*\*|__|`/g, "").replace(/\s+/g, " ").trim()
     : "";
 
 // Cut at a word boundary so snippets don't end mid-word.

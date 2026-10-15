@@ -6,6 +6,8 @@ import {
   findByInputPath,
   addHeadingIds,
   tableOfContents,
+  replaceUntilStable,
+  stripTags,
 } from "./.eleventy.utils.js";
 
 const md = useEmoji(markdownIt());
@@ -28,22 +30,22 @@ export default (eleventyConfig) => {
   eleventyConfig.addFilter("jsonify", (variable) => JSON.stringify(variable));
   // Rendered HTML → readable plain text (for the AI ingestion file): drops <style>/<script>,
   // keeps list items and paragraphs on their own lines.
-  eleventyConfig.addFilter("plainText", (html = "", headingOffset = 1) =>
-    String(html)
-      .replace(/<(style|script)[\s\S]*?<\/\1>/gi, "")
+  eleventyConfig.addFilter("plainText", (html = "", headingOffset = 1) => {
+    const withBreaks = replaceUntilStable(String(html), /<(style|script)[\s\S]*?<\/\1>/gi)
       // Headings become Markdown; headingOffset pushes them below the section they are placed in.
       .replace(/<h([1-5])[^>]*>/gi, (_, level) => `\n${"#".repeat(Number(level) + headingOffset)} `)
       // Absolute links keep their target.
       .replace(/<a[^>]*href="(https?:[^"]+)"[^>]*>([\s\S]*?)<\/a>/gi, (_, href, text) => `${text} (${href})`)
       .replace(/<li[^>]*>/gi, "\n- ")
-      .replace(/<\/(p|h[1-6]|li|ul|ol|div|blockquote)>|<br\s*\/?>/gi, "\n")
-      .replace(/<[^>]+>/g, "")
-      .replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+      .replace(/<\/(p|h[1-6]|li|ul|ol|div|blockquote)>|<br\s*\/?>/gi, "\n");
+    return stripTags(withBreaks)
+      // &amp; last, so "&amp;lt;" becomes "&lt;" and not "<".
+      .replace(/&nbsp;/g, " ").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, "&")
       .split("\n").map((line) => line.replace(/\s+/g, " ").trim()).join("\n")
       .replace(/\n{3,}/g, "\n\n")
       .replace(/\n\n- /g, "\n- ")
-      .trim(),
-  );
+      .trim();
+  });
   // Distinct values of a front matter list (e.g. "skills", "roles") across items, sorted.
   eleventyConfig.addFilter("collectValues", (items = [], key) =>
     [...new Map(items.flatMap((item) => [].concat(item.data?.[key] ?? []))
