@@ -11,6 +11,8 @@ jobs:
   ingest:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       # The Pages hostname: the custom domain's bot protection blocks GitHub's runners.
       - name: Download

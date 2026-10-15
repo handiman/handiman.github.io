@@ -6,12 +6,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     env:
       # Empty until the secret exists; the notify step is skipped then.
       DISPATCH_TOKEN: ${{ secrets.SHARED_CONTENT_DISPATCH_TOKEN }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Install Typst
         run: |
@@ -32,7 +34,7 @@ jobs:
 
       - name: Publish to Cloudflare Pages
         # cloudflare/pages-action was retired; wrangler-action is its replacement.
-        uses: cloudflare/wrangler-action@v4
+        uses: cloudflare/wrangler-action@953926a2e2182532811c01a25e53647d93bf07c0 # v4.1.3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -42,14 +44,14 @@ jobs:
       # Needs a fine-grained token with Contents: read & write on that repo.
       - name: Notify becker-consulting.se
         if: ${{ env.DISPATCH_TOKEN != '' }}
-        uses: peter-evans/repository-dispatch@v4
+        uses: peter-evans/repository-dispatch@28959ce8df70de7be546dd1250a005dd32156697 # v4.0.1
         with:
           token: ${{ secrets.SHARED_CONTENT_DISPATCH_TOKEN }}
           repository: becker-consulting/becker-consulting.github.io
           event-type: shared-content-updated
       
       - name: Publish gist
-        uses: exuanbo/actions-deploy-gist@v1
+        uses: exuanbo/actions-deploy-gist@47697fceaeea2006a90594ee24eb9cd0a1121ef8 # v1.1.4
         with:
           token: ${{ secrets.GIST_TOKEN }}
           gist_id: 3881a8e890dd1032cce3f5e655859717

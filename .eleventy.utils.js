@@ -108,10 +108,23 @@ export const getHreflangAlternates = (item, allItems, siteUrl) => {
 export const findByInputPath = (items, inputPath) =>
   items.find((item) => item.inputPath === inputPath);
 
+// Applies a replacement until the text stops changing, so nested fragments like <scr<b>ipt>
+// cannot reassemble into a match once the inner part is removed.
+export const replaceUntilStable = (text, pattern, replacement = "") => {
+  let previous;
+  do {
+    previous = text;
+    text = text.replace(pattern, replacement);
+  } while (text !== previous);
+  return text;
+};
+
+// Removes HTML tags from a string.
+export const stripTags = (text) => replaceUntilStable(text, /<[^>]*>/g);
+
 // Heading ids for "On this page" lists, here and on becker-consulting.se; å/ä/ö become a/a/o.
 export const headingId = (text) =>
-  text
-    .replace(/<[^>]+>/g, "")
+  stripTags(text)
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
@@ -127,5 +140,6 @@ export const addHeadingIds = (html = "") =>
 export const tableOfContents = (html = "") =>
   [...String(html).matchAll(/<h2[^>]*\sid="([^"]+)"[^>]*>([\s\S]*?)<\/h2>/g)].map(([, id, text]) => ({
     id,
-    text: text.replace(/<[^>]+>/g, "").trim(),
+    // Anything left over is escaped, since the text ends up in HTML.
+    text: stripTags(text).replace(/</g, "&lt;").replace(/>/g, "&gt;").trim(),
   }));
