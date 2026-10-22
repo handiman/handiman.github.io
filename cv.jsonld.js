@@ -18,15 +18,36 @@ export class SemanticCV {
     const {
       introduction,
       certifications,
-      coreSkills,
+      projects,
       workExperience,
       earlierCareer,
       education,
       languages,
-      interests,
-      recommendations,
     } = cv;
-    const experience = [...(workExperience ?? []), ...(earlierCareer ?? [])];
+    const withType = (items, type) =>
+      (items ?? []).map((item) => ({ ...item, type }));
+
+    const toIsoDate = (value) =>
+      value instanceof Date ? value.toISOString().slice(0, 10) : value;
+
+    const toDefinedTerms = (competencies) => {
+      const seen = new Map();
+      for (const tech of (competencies ?? []).flatMap((c) => c.tech ?? [])) {
+        const key = tech.trim().toLowerCase();
+        if (key && !seen.has(key)) seen.set(key, tech.trim());
+      }
+      return [...seen.values()].map((name) => ({
+        "@type": "DefinedTerm",
+        name,
+      }));
+    };
+
+    const experience = [
+      ...withType(workExperience, "Organization"),
+      ...withType(earlierCareer, "Organization"),
+      ...withType(projects, "Project"),
+    ];
+
     const semanticCV = {
       ...introduction,
       knowsLanguage: languages?.map((language) => language.name),
@@ -34,15 +55,16 @@ export class SemanticCV {
         return {
           "@type": "Role",
           roleName: data.roles?.join(", "),
-          startDate: data.start_date,
-          endDate: data.end_date,
+          startDate: toIsoDate(data.startDate),
+          endDate: toIsoDate(data.endDate),
           description: data.highlights
             ? `${data.description ? `${data.description}\n\n` : ""}${data.highlights.map((item) => `- ${item}`).join("\n")}`
             : data.description,
           worksFor: {
-            "@type": "Organization",
+            "@type": data.type,
             name: data.title,
           },
+          keywords: toDefinedTerms(data.competencies),
         };
       }),
       alumniOf: education?.map((data) => {
@@ -55,6 +77,19 @@ export class SemanticCV {
             "@type": "EducationalOrganization",
             name: data.title,
             location: data.location,
+          },
+        };
+      }),
+      hasCertification: certifications?.map((data) => {
+        return {
+          "@type": "Certification",
+          name: data.title,
+          certificationIdentification: data.certNumber,
+          datePublished: data.achievementDate,
+          url: data.link,
+          issuedBy: {
+            "@type": "Organization",
+            name: data.issuer,
           },
         };
       }),
