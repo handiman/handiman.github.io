@@ -11,8 +11,6 @@ jobs:
     env:
       # Empty until the secret exists; the notify step is skipped then.
       DISPATCH_TOKEN: ${{ secrets.SHARED_CONTENT_DISPATCH_TOKEN }}
-      # Same for the profile repo step: skipped until the secret exists.
-      PROFILE_REPO_TOKEN: ${{ secrets.PROFILE_REPO_TOKEN }}
     steps:
       - name: Checkout code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -51,51 +49,3 @@ jobs:
           token: ${{ secrets.SHARED_CONTENT_DISPATCH_TOKEN }}
           repository: becker-consulting/becker-consulting.github.io
           event-type: shared-content-updated
-      
-      # A gist is a git repo: commit only when resume.json actually changed.
-      - name: Publish gist
-        env:
-          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
-          # Hands the token to git without putting it in the URL or .git/config.
-          GIT_CONFIG_COUNT: 1
-          GIT_CONFIG_KEY_0: credential.helper
-          GIT_CONFIG_VALUE_0: '!f() { echo username=x-access-token; echo "password=${GIST_TOKEN}"; }; f'
-        run: |
-          git clone --depth 1 https://gist.github.com/3881a8e890dd1032cce3f5e655859717.git _gist
-          cp _site/assets/henrik-becker.resume.json _gist/resume.json
-          cd _gist
-          git add resume.json
-          if git diff --cached --quiet; then
-            echo "resume.json unchanged, nothing to commit"
-            exit 0
-          fi
-          git config user.name "Henrik Becker"
-          git config user.email "824009+handiman@users.noreply.github.com"
-          git commit -m "Update resume.json"
-          git push
-
-      # Publishes the JSON-LD CV as cv.json in the root of the profile repo (handiman/handiman).
-      # Needs a fine-grained token with Contents: read & write on that repo.
-      - name: Publish cv.json to profile repo
-        env:
-          # Hands the token to git without putting it in the URL or .git/config.
-          GIT_CONFIG_COUNT: 1
-          GIT_CONFIG_KEY_0: credential.helper
-          GIT_CONFIG_VALUE_0: '!f() { echo username=x-access-token; echo "password=${PROFILE_REPO_TOKEN}"; }; f'
-        run: |
-          if [ -z "$PROFILE_REPO_TOKEN" ]; then
-            echo "::warning::PROFILE_REPO_TOKEN is not set, skipping cv.json publish"
-            exit 0
-          fi
-          git clone --depth 1 https://github.com/handiman/handiman.git _profile
-          cp _site/assets/henrik-becker.jsonld _profile/cv.json
-          cd _profile
-          git add cv.json
-          if git diff --cached --quiet; then
-            echo "cv.json unchanged, nothing to commit"
-            exit 0
-          fi
-          git config user.name "Henrik Becker"
-          git config user.email "824009+handiman@users.noreply.github.com"
-          git commit -m "Update cv.json"
-          git push
