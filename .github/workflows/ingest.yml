@@ -7,6 +7,10 @@ on:
     types:
       - completed
 
+concurrency:
+  group: ingest
+  cancel-in-progress: false
+
 jobs:
   ingest:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}

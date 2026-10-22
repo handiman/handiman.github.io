@@ -3,6 +3,9 @@ on:
   workflow_dispatch:
   push:
     branches: [ master ]
+concurrency:
+  group: build-and-publish
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -7,6 +7,10 @@ on:
     types:
       - completed
 
+concurrency:
+  group: publish-gist
+  cancel-in-progress: false
+
 jobs:
   gist:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
