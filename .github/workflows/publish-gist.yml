@@ -6,6 +6,8 @@ on:
     workflows: ["Build and Publish"]
     types:
       - completed
+    branches:
+      - master
 
 concurrency:
   group: publish-gist
@@ -29,6 +31,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GIST_TOKEN }}
         run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::GIST_TOKEN is not set, skipping gist publish"
+            exit 0
+          fi
           # The gist is public, so the current file can be read without a token.
           git clone --depth 1 "https://gist.github.com/${GIST_ID}.git" _gist
           if cmp -s resume.json _gist/resume.json; then

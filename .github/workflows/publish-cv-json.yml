@@ -7,6 +7,8 @@ on:
     workflows: ["Build and Publish"]
     types:
       - completed
+    branches:
+      - master
 
 concurrency:
   group: publish-cv-json
