@@ -1,4 +1,4 @@
-name: Publish gist
+name: Publish resume.json
 # Publishes the JSON resume (/assets/henrik-becker.resume.json) to the gist after each deploy, when it changed.
 on:
   workflow_dispatch:
