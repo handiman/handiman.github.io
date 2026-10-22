@@ -6,6 +6,8 @@ on:
     workflows: ["Build and Publish"]
     types:
       - completed
+    branches:
+      - master
 
 concurrency:
   group: publish-gist
@@ -17,18 +19,32 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      actions: read
     env:
       GIST_ID: 3881a8e890dd1032cce3f5e655859717
     steps:
-      # The Pages hostname: the custom domain's bot protection blocks GitHub's runners.
+      # The build run's own artifact, so it can't be stale like the live site might be right after a deploy.
+      # A manual dispatch uses the latest successful build on master.
       - name: Download
-        run: curl -fsSL https://henrikbecker.pages.dev/assets/henrik-becker.resume.json -o resume.json
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+        run: |
+          if [ -z "$RUN_ID" ]; then
+            RUN_ID=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow ci.yml --branch master --status success --limit 1 --json databaseId --jq '.[0].databaseId')
+          fi
+          gh run download "$RUN_ID" --repo "$GITHUB_REPOSITORY" --name cv-exports --dir _exports
+          cp _exports/henrik-becker.resume.json resume.json
 
       # Fine-grained tokens can't push to a gist over git (403), but the REST API accepts them.
       - name: Publish
         env:
           GH_TOKEN: ${{ secrets.GIST_TOKEN }}
         run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::GIST_TOKEN is not set, skipping gist publish"
+            exit 0
+          fi
           # The gist is public, so the current file can be read without a token.
           git clone --depth 1 "https://gist.github.com/${GIST_ID}.git" _gist
           if cmp -s resume.json _gist/resume.json; then
