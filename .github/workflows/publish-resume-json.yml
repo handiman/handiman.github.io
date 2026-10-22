@@ -45,9 +45,8 @@ jobs:
             echo "::warning::GIST_TOKEN is not set, skipping gist publish"
             exit 0
           fi
-          # The gist is public, so the current file can be read without a token.
-          git clone --depth 1 "https://gist.github.com/${GIST_ID}.git" _gist
-          if cmp -s resume.json _gist/resume.json; then
+          gh api "gists/${GIST_ID}" | jq -j '.files["resume.json"].content' > current.json
+          if cmp -s resume.json current.json; then
             echo "resume.json unchanged, nothing to publish"
             exit 0
           fi
