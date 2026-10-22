@@ -10,7 +10,7 @@ on:
       - master
 
 concurrency:
-  group: publish-gist
+  group: publish-resume-json
   cancel-in-progress: false
 
 jobs:
