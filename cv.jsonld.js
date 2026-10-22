@@ -52,6 +52,7 @@ export class SemanticCV {
       ...introduction,
       knowsLanguage: languages?.map((language) => language.name),
       worksFor: experience.map((data) => {
+        const keywords = toDefinedTerms(data.competencies);
         return {
           "@type": "Role",
           roleName: data.roles?.join(", "),
@@ -64,7 +65,7 @@ export class SemanticCV {
             "@type": data.type,
             name: data.title,
           },
-          keywords: toDefinedTerms(data.competencies),
+          ...(keywords.length && { keywords }),
         };
       }),
       alumniOf: education?.map((data) => {
@@ -85,7 +86,7 @@ export class SemanticCV {
           "@type": "Certification",
           name: data.title,
           certificationIdentification: data.certNumber,
-          datePublished: data.achievementDate,
+          datePublished: toIsoDate(data.achievementDate),
           url: data.link,
           issuedBy: {
             "@type": "Organization",
