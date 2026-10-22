@@ -35,7 +35,7 @@ jobs:
       - name: Compile CV PDFs
         run: npm run typst
 
-      # The publish-gist and publish-cv-json workflows read these from the run, not from the live site.
+      # The publish-resume-json and publish-cv-json workflows read these from the run, not from the live site.
       - name: Upload CV exports
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
