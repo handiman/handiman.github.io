@@ -1,0 +1,50 @@
+name: Publish cv.json
+# Publishes the JSON-LD CV (/assets/henrik-becker.jsonld) as cv.json in the profile repo (handiman/handiman)
+# after each deploy, when it changed. Semantic-CV picks it up from there.
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Build and Publish"]
+    types:
+      - completed
+
+concurrency:
+  group: publish-cv-json
+  cancel-in-progress: false
+
+jobs:
+  cv-json:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      # The Pages hostname: the custom domain's bot protection blocks GitHub's runners.
+      - name: Download
+        run: curl -fsSL https://henrikbecker.pages.dev/assets/henrik-becker.jsonld -o cv.json
+
+      # Needs a fine-grained token with Contents: read & write on the profile repo.
+      - name: Publish
+        env:
+          PROFILE_REPO_TOKEN: ${{ secrets.PROFILE_REPO_TOKEN }}
+          # Hands the token to git without putting it in the URL or .git/config.
+          GIT_CONFIG_COUNT: 1
+          GIT_CONFIG_KEY_0: credential.helper
+          GIT_CONFIG_VALUE_0: '!f() { echo username=x-access-token; echo "password=${PROFILE_REPO_TOKEN}"; }; f'
+        run: |
+          if [ -z "$PROFILE_REPO_TOKEN" ]; then
+            echo "::warning::PROFILE_REPO_TOKEN is not set, skipping cv.json publish"
+            exit 0
+          fi
+          git clone --depth 1 https://github.com/handiman/handiman.git _profile
+          cp cv.json _profile/cv.json
+          cd _profile
+          git add cv.json
+          if git diff --cached --quiet; then
+            echo "cv.json unchanged, nothing to commit"
+            exit 0
+          fi
+          git config user.name "Henrik Becker"
+          git config user.email "824009+handiman@users.noreply.github.com"
+          git commit -m "Update cv.json"
+          git push

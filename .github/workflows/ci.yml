@@ -3,6 +3,9 @@ on:
   workflow_dispatch:
   push:
     branches: [ master ]
+concurrency:
+  group: build-and-publish
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -49,11 +52,3 @@ jobs:
           token: ${{ secrets.SHARED_CONTENT_DISPATCH_TOKEN }}
           repository: becker-consulting/becker-consulting.github.io
           event-type: shared-content-updated
-      
-      - name: Publish gist
-        uses: exuanbo/actions-deploy-gist@47697fceaeea2006a90594ee24eb9cd0a1121ef8 # v1.1.4
-        with:
-          token: ${{ secrets.GIST_TOKEN }}
-          gist_id: 3881a8e890dd1032cce3f5e655859717
-          gist_file_name: resume.json
-          file_path: ./_site/assets/henrik-becker.resume.json

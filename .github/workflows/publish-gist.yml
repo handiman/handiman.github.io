@@ -1,0 +1,39 @@
+name: Publish gist
+# Publishes the JSON resume (/assets/henrik-becker.resume.json) to the gist after each deploy, when it changed.
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Build and Publish"]
+    types:
+      - completed
+
+concurrency:
+  group: publish-gist
+  cancel-in-progress: false
+
+jobs:
+  gist:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      GIST_ID: 3881a8e890dd1032cce3f5e655859717
+    steps:
+      # The Pages hostname: the custom domain's bot protection blocks GitHub's runners.
+      - name: Download
+        run: curl -fsSL https://henrikbecker.pages.dev/assets/henrik-becker.resume.json -o resume.json
+
+      # Fine-grained tokens can't push to a gist over git (403), but the REST API accepts them.
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ secrets.GIST_TOKEN }}
+        run: |
+          # The gist is public, so the current file can be read without a token.
+          git clone --depth 1 "https://gist.github.com/${GIST_ID}.git" _gist
+          if cmp -s resume.json _gist/resume.json; then
+            echo "resume.json unchanged, nothing to publish"
+            exit 0
+          fi
+          jq -Rs '{files: {"resume.json": {content: .}}}' resume.json \
+            | gh api --method PATCH "gists/${GIST_ID}" --input - --silent

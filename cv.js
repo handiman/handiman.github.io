@@ -43,6 +43,8 @@ const mapCertification = (item) => ({
   title: item.title,
   issuer: item.issuer,
   achievementDate: item.achievement_date,
+  certNumber: item.cert_number,
+  link: item.link,
 });
 
 const getCollection = (key, data) =>
