@@ -49,7 +49,16 @@ export class SemanticCV {
     ];
 
     const semanticCV = {
+      "@context": [
+        "https://schema.org",
+        "https://semantic.cv/context/latest.jsonld",
+      ],
+      "@type": "Person",
       ...introduction,
+      theme: {
+        "@type": "Theme",
+        name: "alice",
+      },
       knowsLanguage: languages?.map((language) => language.name),
       worksFor: experience.map((data) => {
         const keywords = toDefinedTerms(data.competencies);
