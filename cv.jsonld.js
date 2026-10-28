@@ -57,7 +57,7 @@ export class SemanticCV {
       ...introduction,
       theme: {
         "@type": "Theme",
-        name: "alice",
+        name: "boiling-diesel",
       },
       knowsLanguage: languages?.map((language) => language.name),
       worksFor: experience.map((data) => {
