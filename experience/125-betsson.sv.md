@@ -46,7 +46,7 @@ competencies:
     weight: .75
     tech:
       - CQRS
-      - Domain Driven Desing
+      - Domain Driven Design
       - Event Modeling
       - Event Sourcing
       - .NET Aspire
