@@ -12,6 +12,8 @@ roles:
 start_date: 2019-12-02
 end_date: 2020-06-30
 skills: 
+ - .NET
+ - Asp.NET
  - Asp.NET Core
  - C#
  - React
@@ -35,6 +37,8 @@ competencies:
   - name: Backend development 
     weight: .9
     tech:
+     - .NET
+     - Asp.NET
      - C#
      - Asp.NET Core
   - name: Frontend development     

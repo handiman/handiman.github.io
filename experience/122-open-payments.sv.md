@@ -33,6 +33,8 @@ competencies:
   - name: Backend-utveckling
     weight: .9
     tech:
+     - .NET
+     - Asp.NET
      - C#
      - Asp.NET Core
   - name: Frontend-utveckling
@@ -50,6 +52,8 @@ competencies:
     tech:
       - Azure DevOps
 skills: 
+ - .NET
+ - Asp.NET
  - Asp.NET Core
  - C#
  - React

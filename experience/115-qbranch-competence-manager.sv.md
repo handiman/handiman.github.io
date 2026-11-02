@@ -13,6 +13,8 @@ roles:
 start_date: 2014-04-28
 end_date: 2014-06-23
 skills:
+ - .NET
+ - Asp.NET
  - Asp.NET MVC
  - HTML5
  - jQuery

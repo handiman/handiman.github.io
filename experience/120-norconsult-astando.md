@@ -16,6 +16,8 @@ highlights:
  - Reduced deployment time from around 45 minutes to about 5 minutes per application instance.
  - Virtually eliminated deployment-related errors.
 skills: 
+ - .NET
+ - Asp.NET
  - Octopus Deploy
  - TeamCity
  - C#

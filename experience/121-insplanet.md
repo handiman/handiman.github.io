@@ -10,6 +10,8 @@ roles:
 start_date: 2019-01-07
 end_date: 2019-06-13
 skills: 
+ - .NET
+ - Asp.NET
  - C#
  - .NET Core
  - React

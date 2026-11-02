@@ -22,6 +22,8 @@ roles:
 start_date: 2021-10-11
 end_date: 2025-12-05
 skills:
+ - .NET
+ - Asp.NET
  - C#
  - .NET 5-9
  - Kafka
@@ -61,6 +63,8 @@ competencies:
   - name: Backend-utveckling
     weight: 1 
     tech:
+      - .NET
+      - Asp.NET
       - C#
       - .NET 5-9
       - .NET Aspire

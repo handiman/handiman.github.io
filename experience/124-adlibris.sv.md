@@ -12,6 +12,8 @@ roles:
 start_date: 2021-02-22
 end_date: 2021-10-10
 skills: 
+ - .NET
+ - Asp.NET
  - C#
  - Asp.NET Core
  - React
@@ -33,6 +35,8 @@ competencies:
   - name: Backend-utveckling
     weight: .9
     tech: 
+      - .NET
+      - Asp.NET
       - C#
       - Asp.NET Core
       - Asp.NET MVC

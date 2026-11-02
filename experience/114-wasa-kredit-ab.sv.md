@@ -9,6 +9,8 @@ roles:
 start_date: 2012-03-12
 end_date: 2013-11-14
 skills:
+ - .NET
+ - Asp.NET
  - C#
  - WinForms
  - Asp.NET MVC4 

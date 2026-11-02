@@ -13,6 +13,8 @@ roles:
 start_date: 2014-11-03
 end_date: 2015-09-01
 skills:
+ - .NET
+ - Asp.NET
  - C#
  - Asp.NET MVC
  - Azure Service Bus
@@ -47,6 +49,8 @@ competencies:
   - name: Backend development
     weight: .9
     tech:
+      - .NET
+      - Asp.NET
       - C#
       - .NET Framework
       - Asp.NET MVC
