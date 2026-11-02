@@ -13,6 +13,8 @@ roles:
 start_date: 2020-10-19
 end_date: 2021-01-15
 skills: 
+ - .NET
+ - Asp.NET
  - C#
  - Asp.NET Core
  - TypeScript
@@ -33,6 +35,8 @@ competencies:
   - name: Backend development
     weight: .75
     tech:
+      - .NET
+      - Asp.NET
       - C#
       - Asp.NET Core
       - Asp.NET Web Forms

@@ -19,6 +19,8 @@ highlights:
  - Designed version 2 of Plejmo's Rest API.
  - Continued improving the CI/CD processes set up at Film2Home
 skills:
+ - .NET
+ - Asp.NET
  - C#
  - Asp.NET Web Api
  - Azure Service Bus

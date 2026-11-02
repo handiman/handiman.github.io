@@ -16,6 +16,7 @@ highlights:
  - Minskade driftsättningstiden från cirka 45 minuter till cirka 5 minuter per applikationsinstans.
  - Eliminerade i stort sett alla driftsättningsrelaterade fel.
 skills: 
+ - .NET
  - Octopus Deploy
  - TeamCity
  - C#

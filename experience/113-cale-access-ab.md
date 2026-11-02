@@ -12,6 +12,8 @@ roles:
 start_date: 2011-09-01
 end_date: 2012-03-09
 skills:
+ - .NET
+ - Asp.NET
  - Test Driven Development
  - SpecFlow
  - NInject

@@ -12,6 +12,8 @@ roles:
 start_date: 2017-10-11
 end_date: 2018-04-11
 skills: 
+- .NET
+- Asp.NET
 - C#
 - Asp.NET Web Api
 - CQRS
