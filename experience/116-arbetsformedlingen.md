@@ -12,7 +12,6 @@ roles:
 start_date: 2014-06-24
 end_date: 2014-09-26
 skills:
- - C#
  - .NET
  - Asp.NET
  - VB.NET
