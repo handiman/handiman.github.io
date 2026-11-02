@@ -13,7 +13,6 @@ start_date: 2011-06-01
 end_date: 2011-09-01
 skills:
  - .NET
- - Asp.NET
  - Specification by Example
  - SpecFlow
  - C#
