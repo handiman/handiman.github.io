@@ -7,33 +7,39 @@ concurrency:
   group: build-and-publish
   cancel-in-progress: false
 jobs:
+  # No secrets in this job, so it can run on a self-hosted runner.
+  # Needs node/npm, curl and xz on the runner; Typst is installed without sudo.
   build:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux]
     permissions:
       contents: read
-    env:
-      # Empty until the secret exists; the notify step is skipped then.
-      DISPATCH_TOKEN: ${{ secrets.SHARED_CONTENT_DISPATCH_TOKEN }}
     steps:
       - name: Checkout code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Install Typst
         run: |
-          sudo apt-get update 
-          sudo apt-get install -y curl xz-utils
-          curl -L https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz -o _typst.tar.xz
-          tar -xf _typst.tar.xz
-          sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
-          sudo chmod +x /usr/local/bin/typst
+          mkdir -p "$RUNNER_TEMP/typst-bin" "$RUNNER_TEMP/typst-src"
+          curl -fsSL https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz -o "$RUNNER_TEMP/typst.tar.xz"
+          tar -xf "$RUNNER_TEMP/typst.tar.xz" -C "$RUNNER_TEMP/typst-src"
+          mv "$RUNNER_TEMP"/typst-src/typst-x86_64-unknown-linux-musl/typst "$RUNNER_TEMP/typst-bin/typst"
+          echo "$RUNNER_TEMP/typst-bin" >> "$GITHUB_PATH"
 
-      - name: Build gh-pages
+      # npm run build also compiles the CV PDFs with Typst.
+      - name: Build site
         run: |
-           npm install
-           npm run build
+          npm install
+          npm run build
 
-      - name: Compile CV PDFs
-        run: npm run typst
+      # The deploy job publishes exactly this, so what was built is what goes live.
+      - name: Upload site
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: site
+          path: _site
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 1
 
       # The publish-resume-json and publish-cv-json workflows read these from the run, not from the live site.
       - name: Upload CV exports
@@ -46,6 +52,22 @@ jobs:
           if-no-files-found: error
           retention-days: 7
 
+  # Holds the Cloudflare secrets, so it stays on a GitHub-hosted runner.
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Download site
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: site
+          path: _site
+
       - name: Publish to Cloudflare Pages
         # cloudflare/pages-action was retired; wrangler-action is its replacement.
         uses: cloudflare/wrangler-action@953926a2e2182532811c01a25e53647d93bf07c0 # v4.1.3
@@ -53,9 +75,17 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy _site --project-name=henrikbecker
-      
-      # becker-consulting.se reads /assets/site-data.json at build time; ask it to rebuild.
-      # Needs a fine-grained token with Contents: read & write on that repo.
+
+  # becker-consulting.se reads /assets/site-data.json at build time; ask it to rebuild.
+  # Needs a fine-grained token with Contents: read & write on that repo.
+  notify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions: {}
+    env:
+      # Empty until the secret exists; the notify step is skipped then.
+      DISPATCH_TOKEN: ${{ secrets.SHARED_CONTENT_DISPATCH_TOKEN }}
+    steps:
       - name: Notify becker-consulting.se
         if: ${{ env.DISPATCH_TOKEN != '' }}
         uses: peter-evans/repository-dispatch@28959ce8df70de7be546dd1250a005dd32156697 # v4.0.1
