@@ -24,7 +24,6 @@
 @use "components/easter-egg";
 
 // Pages — styling scoped to a single page/view
-@use "pages/agreement";
 @use "pages/swatch";
 
 // Print — cross-cutting @media print overrides, loaded last so it wins
