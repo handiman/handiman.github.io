@@ -12,13 +12,11 @@ Keep facts that are easy to get wrong (birth date, years of experience) at the t
 - **Name:** {{ person.name }}
 - **Role:** {{ person.jobTitle }}
 - **Current status:** {{ site.currentStatus }}
-- **Born:** {{ person.birthDate }} ({{ person.birthDate | date: '%Y' }})
 - **Nationality:** {{ person.nationality }}
 - **Location:** Lidingö, Stockholm, Sweden
 - **Working professionally with software since:** 1999
 - **Company:** {{ company.name }}, founded 2017 (org. nr {{ site.orgNumber }}). Assignments since October 2017 have been delivered through it, unless noted otherwise.
 - **Website:** {{ site.production_url }}
-- **Email:** {{ person.email }}
 {% for social in same_as %}- **{{ social.network }}:** {{ social.url }}
 {% endfor %}
 ## Description
