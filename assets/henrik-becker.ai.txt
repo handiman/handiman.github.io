@@ -8,10 +8,10 @@ Keep facts that are easy to get wrong (birth date, years of experience) at the t
 {%- endcomment -%}
 # About {{ person.name }}
 
-## Key facts
 - **Name:** {{ person.name }}
 - **Role:** {{ person.jobTitle }}
 - **Current status:** {{ site.currentStatus }}
+- **Born:** 1969
 - **Nationality:** {{ person.nationality }}
 - **Location:** Lidingö, Stockholm, Sweden
 - **Working professionally with software since:** 1999
