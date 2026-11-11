@@ -166,13 +166,8 @@
 // ------------------------------------------------------------- blocks --
 
 #let masthead() = {
-  // Phone without the "(0)" trunk prefix, which parsers tend to mangle.
-  let phone = intro.telephone.replace("(0)", "").replace("  ", " ")
   let pretty(url) = url.replace("https://", "").replace("http://", "").replace("www.", "")
-  let contacts = (
-    link("mailto:" + intro.email, intro.email),
-    link("tel:" + phone.replace(" ", ""), phone),
-  )
+  let contacts = ()
   // schema.org PostalAddress from person.yml, shown as "Lidingö, Stockholm".
   let address = intro.at("address", default: none)
   if address != none {

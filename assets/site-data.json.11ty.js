@@ -54,7 +54,6 @@ export default class SiteData {
       person: {
         name: person.name,
         jobTitle: person.jobTitle,
-        email: person.email,
         url: base,
         sameAs: data.same_as,
       },
