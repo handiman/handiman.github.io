@@ -7,7 +7,6 @@ import {
 
 import { addExperience } from "./experience/experience.js";
 import { addProjects } from "./projects/projects.js";
-import { addEmployment } from "./employment/employment.js";
 import { addEducation } from "./education/education.js";
 import { addUsps } from "./usp/usp.js";
 import { addFunFacts } from "./fun-facts/fun-facts.js";
@@ -16,7 +15,6 @@ export default (eleventyConfig) => {
   addExperience(eleventyConfig);
   addProjects(eleventyConfig);
   addUsps(eleventyConfig);
-  addEmployment(eleventyConfig);
   addEducation(eleventyConfig);
   addClients(eleventyConfig);
   addFunFacts(eleventyConfig);

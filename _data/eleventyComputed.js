@@ -37,7 +37,7 @@ const metaTitle = (data) => {
   if (!title) return `${name} – ${jobTitle(data)}, Stockholm`;
   if (title.includes(name)) return `${title} – ${jobTitle(data)}`;
   // Work history and side projects: say what the page is about, not just the company name.
-  const extra = ["experience", "employment"].includes(section(data))
+  const extra = section(data) === "experience"
     ? clean((data.roles || [])[0])
     : section(data) === "projects"
       ? clean(data.tagline).replace(/\.$/, "")
@@ -59,16 +59,7 @@ const metaDescription = (data) => {
   const own = [data.description, data.lead, data.ingress, data.intro].map(clean).find(Boolean);
   if (own) return clip(own);
   const title = clean(data.title);
-  const roles = (data.roles || []).map(clean).filter(Boolean).join(", ");
   switch (section(data)) {
-    case "employment": {
-      const type = clean(data.organization?.type);
-      const period = `${year(data.start_date, lang)}–${year(data.end_date, lang)}`;
-      return clip(
-        `${title}${type ? ` (${type})` : ""}: ${roles ? `${roles}, ` : ""}${period}. ` +
-          (sv ? "Ur Henrik Beckers arbetshistorik." : "From Henrik Becker's work history.")
-      );
-    }
     case "fun-facts":
       return clip(
         sv ? `Kul fakta om Henrik Becker, senior .NET-konsult i Stockholm: ${title}.`

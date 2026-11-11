@@ -79,7 +79,7 @@ export const localizedPermalink = (data, section) => {
 export const getHreflangAlternates = (item, allItems, siteUrl) => {
   const slug = item && getSlug(item.data);
   if (!slug) return [];
-  // Slugs repeat across sections (employment/betsson and experience/betsson),
+  // Slugs repeat across sections (experience, projects, fun-facts),
   // so a translation must also be in the same section.
   const section = (url) => String(url).replace(/^\/sv\//, "/").split("/")[1] ?? "";
   const itemSection = section(item.url);
