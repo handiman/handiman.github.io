@@ -25,16 +25,16 @@ The Typst steps require the `typst` CLI binary to be on PATH (installed separate
 
 ### Content model: one Markdown file per item, localized via `.md` / `.sv.md` siblings
 
-Most content types (`experience/`, `employment/`, `education/`) are directories of Markdown files named `NN-slug.md` (English) and `NN-slug.sv.md` (Swedish). The two are paired at build time, not by filename alone:
+Most content types (`experience/`, `education/`) are directories of Markdown files named `NN-slug.md` (English) and `NN-slug.sv.md` (Swedish). The two are paired at build time, not by filename alone:
 
 - `getLocale()` ([.eleventy.utils.js](.eleventy.utils.js)) detects language from a `.sv.` infix in the filename (falls back to `data.lang`, default `en`).
 - `getSlug()` reads front matter `slug` (or derives it from the filename, stripping the numeric prefix and `.sv`).
 - `getLocalizedCollection(items, targetLocale)` dedupes by slug, preferring the target-locale item and falling back to English when no Swedish version exists yet. This is why a new `experience/15-foo.sv.md` isn't required immediately — the English version renders on `/sv` until it is.
 - The leading `NN-` numeric prefix drives ordering (`sortByFilePrefix` / `sortByFilePrefixReversed` in [.eleventy.utils.js](.eleventy.utils.js)), not the date — keep prefixes consistent when inserting new entries.
 
-Collection registration follows a per-content-type module pattern: each type owns an `add<Type>(eleventyConfig)` function in a file next to its content (`experience/experience.js`, `employment/employment.js`, `education/education.js`, `usp/usp.js`, `fun-facts/fun-facts.js`). Most of these register an English and a `_sv` variant (e.g. `employment` / `employment_sv`, `experience` / `experience_sv`) — `fun_facts` is the exception, registering a single unsplit collection since that content isn't paired per-locale. [.eleventy.collections.js](.eleventy.collections.js) just imports and calls these `add*` functions, plus defines the remaining cross-cutting collections inline (`clients`, `all_skills`, `all_roles`). Templates pick the localized variant based on `lang`. When adding a new content type that needs its own collection, follow this pattern (a colocated `<dir>/<dir>.js` exporting `add<Type>`) rather than growing `.eleventy.collections.js` directly.
+Collection registration follows a per-content-type module pattern: each type owns an `add<Type>(eleventyConfig)` function in a file next to its content (`experience/experience.js`, `education/education.js`, `usp/usp.js`, `fun-facts/fun-facts.js`). Most of these register an English and a `_sv` variant (e.g. `experience` / `experience_sv`) — `fun_facts` is the exception, registering a single unsplit collection since that content isn't paired per-locale. [.eleventy.collections.js](.eleventy.collections.js) just imports and calls these `add*` functions, plus defines the remaining cross-cutting collections inline (`clients`, `all_skills`, `all_roles`). Templates pick the localized variant based on `lang`. When adding a new content type that needs its own collection, follow this pattern (a colocated `<dir>/<dir>.js` exporting `add<Type>`) rather than growing `.eleventy.collections.js` directly.
 
-Work history is split into two eras: `early_job`/`late_job` (in `.eleventy.utils.js`) partition `experience`/`employment` at year 2008 into `experience` vs `earlier_career` (and localized variants) — this is a hardcoded cutoff, not configurable data.
+Work history is split into two eras: `early_job`/`late_job` (in `.eleventy.utils.js`) partition `experience` at year 2008 into `experience` vs `earlier_career` (and localized variants) — this is a hardcoded cutoff, not configurable data.
 
 ### CV generation is one dataset rendered to multiple output formats
 
@@ -60,7 +60,7 @@ None of these consumers are generated from each other — each is templated inde
 - [reading.liquid](_layouts/reading.liquid) (`layout: page`) is the content-page frame, the same as on becker-consulting.se: the text in a centred column (`.article-layout` / `.article`) and an "On this page" list (`.toc`) beside it that follows the reader. It gives plain `<h2>`s ids (`headingIds` filter) and shows the list when there are two or more (`toc` filter). `article`, `collection` and `experience` build on it, and so do the section pages (`unique-selling-points.html`, `fun-facts.html` and their `.sv` versions); the landing page and CV don't.
 - [article.liquid](_layouts/article.liquid) (`layout: reading`) is breadcrumb, title, optional lead, prose and an optional recommendation. Used by the About page.
 - [collection.liquid](_layouts/collection.liquid) (`layout: reading`) is a breadcrumb back to its list, the title and prose — a titled write-up with no extra metadata. Used by `usp` and `fun-facts`.
-- [experience.liquid](_layouts/experience.liquid) (`layout: reading`) is `collection.liquid` plus a `roles`/`start_date`–`end_date` line under the `<h1>`. Used by `experience`, `education`, and `employment` — anything with a role and a date range.
+- [experience.liquid](_layouts/experience.liquid) (`layout: reading`) is `collection.liquid` plus a `roles`/`start_date`–`end_date` line under the `<h1>`. Used by `experience` and `education` — anything with a role and a date range.
 - When adding a content type, pick whichever of `page` / `article` / `collection` / `experience` matches its shape rather than writing a new top-level `<html>` layout; only `base.liquid` should ever own the document shell.
 
 ### Eleventy config specifics ([.eleventy.js](.eleventy.js))

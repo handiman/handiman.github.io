@@ -6,3 +6,7 @@
 /blog/rss.xml                     https://www.becker-consulting.se/en/blog/feed.xml 301
 /blog                             https://www.becker-consulting.se/en/blog/ 301
 /blog/*                           https://www.becker-consulting.se/en/blog/:splat 301
+
+# The old per-employer pages under /employment/ are gone (the CV's experience section covers them).
+/employment/*                     /cv/ 301
+/sv/employment/*                  /sv/cv/ 301
