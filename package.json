@@ -19,7 +19,7 @@
     "markdown-it": "^15.0.3",
     "markdown-it-emoji": "^3.1.0",
     "rimraf": "^6.1.4",
-    "sass": "^1.107.1",
+    "sass": "^1.108.2",
     "yaml": "^2.9.1"
   },
   "overrides": {
